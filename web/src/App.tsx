@@ -3,10 +3,12 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { loadSiteData } from "./lib/data";
+import { newModelRecordsLast24Hours } from "./lib/newModels";
 import { dropRecordsLast24Hours } from "./lib/priceDrops";
 import { DropsPage } from "./pages/DropsPage";
 import { HomePage } from "./pages/HomePage";
 import { ModelDetailPage } from "./pages/ModelDetailPage";
+import { NewModelsPage } from "./pages/NewModelsPage";
 import type { SiteData } from "./types";
 
 export function App() {
@@ -47,12 +49,20 @@ export function App() {
 
   const dropsLast24h = dropRecordsLast24Hours(data.priceEvents);
   const dropCount = dropsLast24h.length;
+  const newModelsLast24h = newModelRecordsLast24Hours(data.newModelEvents);
+  const newModelCount = newModelsLast24h.length;
 
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, "")}>
       <Routes>
         <Route
-          element={<Layout meta={data.meta} dropCount={dropCount} />}
+          element={
+            <Layout
+              meta={data.meta}
+              dropCount={dropCount}
+              newModelCount={newModelCount}
+            />
+          }
         >
           <Route
             index
@@ -60,7 +70,18 @@ export function App() {
               <HomePage
                 models={data.models.models}
                 dropCount={dropCount}
+                newModelCount={newModelCount}
                 lastUpdated={data.meta.generated_at}
+              />
+            }
+          />
+          <Route
+            path="new"
+            element={
+              <NewModelsPage
+                models={newModelsLast24h}
+                events={data.newModelEvents}
+                enriched={data.models.models}
               />
             }
           />

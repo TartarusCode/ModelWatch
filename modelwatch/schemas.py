@@ -136,6 +136,34 @@ class PriceEventRecord(BaseModel):
     saved_per_million_usd: str
 
 
+class NewModelRecord(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    detected_at: datetime | None = None
+    model_id: str
+    name: str
+    canonical_slug: str
+    created: int
+
+
+class NewModelEventRecord(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    detected_at: datetime
+    model_id: str
+    name: str
+    canonical_slug: str
+    created: int
+
+
+class NewModelsOutput(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    generated_at: datetime
+    window_hours: int = 24
+    models: list[NewModelRecord]
+
+
 class BuildMeta(BaseModel):
     model_config = ConfigDict(frozen=True)
 

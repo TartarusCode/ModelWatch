@@ -4,6 +4,7 @@ import type { BuildMeta } from "../types";
 interface LayoutProps {
   meta: BuildMeta | null;
   dropCount: number;
+  newModelCount: number;
 }
 
 function formatRelativeTime(iso: string): string {
@@ -23,7 +24,7 @@ function formatRelativeTime(iso: string): string {
   return new Date(iso).toLocaleDateString();
 }
 
-export function Layout({ meta, dropCount }: LayoutProps) {
+export function Layout({ meta, dropCount, newModelCount }: LayoutProps) {
   return (
     <div className="app">
       <aside className="sidebar">
@@ -47,6 +48,20 @@ export function Layout({ meta, dropCount }: LayoutProps) {
               ⊞
             </span>
             Models
+          </NavLink>
+          <NavLink
+            to="/new"
+            className={({ isActive }) =>
+              `sidebar__link${isActive ? " sidebar__link--active" : ""}`
+            }
+          >
+            <span className="sidebar__link-icon" aria-hidden>
+              +
+            </span>
+            New models
+            {newModelCount > 0 ? (
+              <span className="sidebar__badge">{newModelCount}</span>
+            ) : null}
           </NavLink>
           <NavLink
             to="/drops"

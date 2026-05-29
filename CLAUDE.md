@@ -30,12 +30,21 @@ Implemented in `modelwatch/pricing.py`:
 - `price-drops.json` lists drops from the last **24 hours** of events (30m builds); UI counts/banner match that window.
 - JSON artifacts use `modelwatch.json_output` (`sort_keys=True` at every object level) for stable git diffs.
 
+## New-model tracking
+
+Implemented in `modelwatch/new_models.py`:
+
+- Compare current snapshot IDs to `data/snapshots/previous.json`; any new `model.id` is an addition.
+- Events append to `web/public/data/new-model-events.jsonl` (max 500 lines).
+- `new-models.json` lists additions from the last **24 hours** of events; UI stat card, banner, and `/new` page match that window.
+- First build has no `previous.json` → no new-model events until the second run.
+
 ## GitHub Pages
 
 - Repo: https://github.com/TartarusCode/ModelWatch
 - Site: https://tartaruscode.github.io/ModelWatch/
 - Vite `base` is `/ModelWatch/` — change in `web/vite.config.ts` if the repo is renamed.
-- SPA deep links: `web/public/404.html` + redirect snippet in `index.html` (rafgraph/spa-github-pages) so `/drops` reload works on GitHub Pages.
+- SPA deep links: `web/public/404.html` + redirect snippet in `index.html` (rafgraph/spa-github-pages) so `/drops` and `/new` reload work on GitHub Pages.
 - Enable Pages: **Settings → Pages → Source: GitHub Actions**.
 - Optional secret: `OPENROUTER_API_KEY` for authenticated models API calls.
 

@@ -115,6 +115,28 @@ export interface PriceEventRecord {
   saved_per_million_usd: string;
 }
 
+export interface NewModelRecord {
+  detected_at?: string | null;
+  model_id: string;
+  name: string;
+  canonical_slug: string;
+  created: number;
+}
+
+export interface NewModelsOutput {
+  generated_at: string;
+  window_hours?: number;
+  models: NewModelRecord[];
+}
+
+export interface NewModelEventRecord {
+  detected_at: string;
+  model_id: string;
+  name: string;
+  canonical_slug: string;
+  created: number;
+}
+
 export interface PriceHistoryPoint {
   recorded_at: string;
   prompt_per_million?: string | null;
@@ -137,5 +159,7 @@ export interface SiteData {
   models: ModelsOutput;
   priceDrops: PriceDropsOutput;
   priceEvents: PriceEventRecord[];
+  newModels: NewModelsOutput;
+  newModelEvents: NewModelEventRecord[];
   priceHistory: PriceHistoryOutput;
 }

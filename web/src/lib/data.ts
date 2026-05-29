@@ -1,6 +1,8 @@
 import type {
   BuildMeta,
   ModelsOutput,
+  NewModelEventRecord,
+  NewModelsOutput,
   PriceDropsOutput,
   PriceEventRecord,
   PriceHistoryOutput,
@@ -17,25 +19,36 @@ async function fetchJson<T>(path: string): Promise<T> {
   return (await response.json()) as T;
 }
 
-async function fetchPriceEvents(): Promise<PriceEventRecord[]> {
-  const response = await fetch(`${base}data/price-events.jsonl`);
+async function fetchJsonlEvents<T>(path: string): Promise<T[]> {
+  const response = await fetch(`${base}${path}`);
   if (!response.ok) {
     return [];
   }
   const text = await response.text();
   const lines = text.split("\n").filter((line) => line.trim());
-  return lines.map((line) => JSON.parse(line) as PriceEventRecord);
+  return lines.map((line) => JSON.parse(line) as T);
 }
 
 export async function loadSiteData(): Promise<SiteData> {
-  const [meta, models, priceDrops, priceEvents, priceHistory] = await Promise.all([
-    fetchJson<BuildMeta>("data/meta.json"),
-    fetchJson<ModelsOutput>("data/models.json"),
-    fetchJson<PriceDropsOutput>("data/price-drops.json"),
-    fetchPriceEvents(),
-    fetchJson<PriceHistoryOutput>("data/price-history.json"),
-  ]);
-  return { meta, models, priceDrops, priceEvents, priceHistory };
+  const [meta, models, priceDrops, priceEvents, newModels, newModelEvents, priceHistory] =
+    await Promise.all([
+      fetchJson<BuildMeta>("data/meta.json"),
+      fetchJson<ModelsOutput>("data/models.json"),
+      fetchJson<PriceDropsOutput>("data/price-drops.json"),
+      fetchJsonlEvents<PriceEventRecord>("data/price-events.jsonl"),
+      fetchJson<NewModelsOutput>("data/new-models.json"),
+      fetchJsonlEvents<NewModelEventRecord>("data/new-model-events.jsonl"),
+      fetchJson<PriceHistoryOutput>("data/price-history.json"),
+    ]);
+  return {
+    meta,
+    models,
+    priceDrops,
+    priceEvents,
+    newModels,
+    newModelEvents,
+    priceHistory,
+  };
 }
 
 export function hasBenchmarkData(

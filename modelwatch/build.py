@@ -10,6 +10,13 @@ from modelwatch.aa_scores import summarize_artificial_analysis
 from modelwatch.fetch import fetch_all_benchmarks, fetch_models_async
 from modelwatch.json_output import dump_model_line, write_model_json
 from modelwatch.history import merge_build_into_history, save_history
+from modelwatch.new_models import (
+    NEW_MODEL_LOOKBACK_HOURS,
+    NewModelAddition,
+    detect_new_models,
+    load_new_model_events,
+    models_in_last_hours,
+)
 from modelwatch.price_events import (
     DROP_LOOKBACK_HOURS,
     drops_in_last_hours,
@@ -29,6 +36,8 @@ from modelwatch.schemas import (
     ModelSnapshot,
     ModelsOutput,
     PreviousSnapshot,
+    NewModelEventRecord,
+    NewModelsOutput,
     PriceDropRecord,
     PriceDropsOutput,
     PriceDropThresholdsOutput,
@@ -39,6 +48,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "web" / "public" / "data"
 SNAPSHOT_PATH = ROOT / "data" / "snapshots" / "previous.json"
 EVENTS_PATH = DATA_DIR / "price-events.jsonl"
+NEW_MODEL_EVENTS_PATH = DATA_DIR / "new-model-events.jsonl"
 MAX_EVENTS = 500
 DESCRIPTION_MAX_LEN = 500
 
@@ -90,6 +100,19 @@ def _drop_to_record(drop: PriceDrop, detected_at: datetime) -> PriceDropRecord:
     )
 
 
+def _addition_to_event(
+    addition: NewModelAddition,
+    detected_at: datetime,
+) -> NewModelEventRecord:
+    return NewModelEventRecord(
+        detected_at=detected_at,
+        model_id=addition.model_id,
+        name=addition.name,
+        canonical_slug=addition.canonical_slug,
+        created=addition.created,
+    )
+
+
 def _drop_to_event(drop: PriceDrop, detected_at: datetime) -> PriceEventRecord:
     return PriceEventRecord(
         detected_at=detected_at,
@@ -102,20 +125,31 @@ def _drop_to_event(drop: PriceDrop, detected_at: datetime) -> PriceEventRecord:
     )
 
 
-def _append_events(events: list[PriceEventRecord]) -> None:
+def _append_jsonl_events(
+    path: Path,
+    events: list[PriceEventRecord] | list[NewModelEventRecord],
+) -> None:
     if not events:
         return
     existing: list[str] = []
-    if EVENTS_PATH.exists():
+    if path.exists():
         existing = [
             line
-            for line in EVENTS_PATH.read_text(encoding="utf-8").splitlines()
+            for line in path.read_text(encoding="utf-8").splitlines()
             if line.strip()
         ]
     new_lines = [dump_model_line(event) for event in events]
     combined = existing + new_lines
     trimmed = combined[-MAX_EVENTS:]
-    EVENTS_PATH.write_text("\n".join(trimmed) + "\n", encoding="utf-8")
+    path.write_text("\n".join(trimmed) + "\n", encoding="utf-8")
+
+
+def _append_price_events(events: list[PriceEventRecord]) -> None:
+    _append_jsonl_events(EVENTS_PATH, events)
+
+
+def _append_new_model_events(events: list[NewModelEventRecord]) -> None:
+    _append_jsonl_events(NEW_MODEL_EVENTS_PATH, events)
 
 
 def _build_benchmarks(raw: dict[str, object]) -> ModelBenchmarks:
@@ -232,6 +266,7 @@ async def run_build() -> None:
         enriched.append(EnrichedModel(model=model, benchmarks=benchmarks))
 
     previous = _load_previous()
+    new_additions = detect_new_models(snapshots, previous=previous)
     all_drops: list[PriceDrop] = []
     if previous is not None:
         for model in snapshots:
@@ -246,8 +281,13 @@ async def run_build() -> None:
             )
             all_drops.extend(drops)
 
+    new_model_event_records = [
+        _addition_to_event(addition, started) for addition in new_additions
+    ]
+    _append_new_model_events(new_model_event_records)
+
     event_records = [_drop_to_event(drop, started) for drop in all_drops]
-    _append_events(event_records)
+    _append_price_events(event_records)
 
     finished = datetime.now(UTC)
     all_events = load_price_events(EVENTS_PATH)
@@ -257,7 +297,19 @@ async def run_build() -> None:
         now=finished,
     )
 
+    all_new_model_events = load_new_model_events(NEW_MODEL_EVENTS_PATH)
+    new_model_records = models_in_last_hours(
+        all_new_model_events,
+        NEW_MODEL_LOOKBACK_HOURS,
+        now=finished,
+    )
+
     models_output = ModelsOutput(generated_at=started, models=enriched)
+    new_models_output = NewModelsOutput(
+        generated_at=finished,
+        window_hours=NEW_MODEL_LOOKBACK_HOURS,
+        models=new_model_records,
+    )
     drops_output = PriceDropsOutput(
         generated_at=finished,
         window_hours=DROP_LOOKBACK_HOURS,
@@ -279,6 +331,7 @@ async def run_build() -> None:
 
     write_model_json(DATA_DIR / "models.json", models_output)
     write_model_json(DATA_DIR / "price-drops.json", drops_output)
+    write_model_json(DATA_DIR / "new-models.json", new_models_output)
     write_model_json(DATA_DIR / "meta.json", meta)
 
     previous_output = PreviousSnapshot(
