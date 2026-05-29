@@ -1,3 +1,5 @@
+import type { ArtificialAnalysisSummary } from "../types";
+
 export interface ArtificialAnalysisEvaluations {
   artificial_analysis_intelligence_index?: number;
   artificial_analysis_coding_index?: number;
@@ -80,6 +82,130 @@ export function formatAaMetricLabel(key: string): string {
     tau2: "Tau2",
   };
   return labels[key] ?? key.replaceAll("_", " ");
+}
+
+export interface AaSummaryScores {
+  intelligence: number;
+  coding: number;
+  agentic: number;
+  intelligencePercentile?: number;
+  codingPercentile?: number;
+  agenticPercentile?: number;
+  variantName?: string;
+}
+
+function baseModelSlug(modelId: string): string {
+  return modelId.split(":", 1)[0] ?? modelId;
+}
+
+function slugMatchesModel(
+  record: ArtificialAnalysisRecord,
+  modelId: string,
+): boolean {
+  const base = baseModelSlug(modelId);
+  return (
+    record.openrouter_slug === base ||
+    record.heuristic_openrouter_slug === base
+  );
+}
+
+function intelligenceIndex(record: ArtificialAnalysisRecord): number {
+  return (
+    record.benchmark_data?.evaluations
+      ?.artificial_analysis_intelligence_index ?? -1
+  );
+}
+
+export function pickPrimaryAaRecord(
+  records: ArtificialAnalysisRecord[],
+  modelId: string,
+): ArtificialAnalysisRecord | undefined {
+  if (records.length === 0) {
+    return undefined;
+  }
+  const linked = records.filter((record) => slugMatchesModel(record, modelId));
+  if (linked.length > 0) {
+    return linked.reduce((best, record) =>
+      intelligenceIndex(record) > intelligenceIndex(best) ? record : best,
+    );
+  }
+  const maxEffort = records.filter(
+    (record) =>
+      record.aa_name?.toLowerCase().includes("max effort") ?? false,
+  );
+  if (maxEffort.length > 0) {
+    return maxEffort.reduce((best, record) =>
+      intelligenceIndex(record) > intelligenceIndex(best) ? record : best,
+    );
+  }
+  return records.reduce((best, record) =>
+    intelligenceIndex(record) > intelligenceIndex(best) ? record : best,
+  );
+}
+
+function isAaIndex(value: unknown): value is number {
+  return typeof value === "number" && Number.isFinite(value);
+}
+
+function buildAaSummaryScores(
+  intelligence: unknown,
+  coding: unknown,
+  agentic: unknown,
+  extras: Omit<AaSummaryScores, "intelligence" | "coding" | "agentic">,
+): AaSummaryScores | undefined {
+  if (!isAaIndex(intelligence) || !isAaIndex(coding) || !isAaIndex(agentic)) {
+    return undefined;
+  }
+  return {
+    intelligence,
+    coding,
+    agentic,
+    ...extras,
+  };
+}
+
+export function formatAaIndex(value: number | null | undefined): string | null {
+  return isAaIndex(value) ? value.toFixed(1) : null;
+}
+
+export function getAaSummaryScores(
+  benchmarks: {
+    artificial_analysis: Record<string, unknown>[];
+    artificial_analysis_summary?: ArtificialAnalysisSummary | null;
+  },
+  modelId: string,
+): AaSummaryScores | undefined {
+  const summary = benchmarks.artificial_analysis_summary;
+  if (summary) {
+    return buildAaSummaryScores(
+      summary.intelligence_index,
+      summary.coding_index,
+      summary.agentic_index,
+      {
+        intelligencePercentile: summary.intelligence_percentile ?? undefined,
+        codingPercentile: summary.coding_percentile ?? undefined,
+        agenticPercentile: summary.agentic_percentile ?? undefined,
+        variantName: summary.variant_name ?? undefined,
+      },
+    );
+  }
+  const records = parseArtificialAnalysisRecords(
+    benchmarks.artificial_analysis,
+  );
+  const primary = pickPrimaryAaRecord(records, modelId);
+  const evaluations = primary?.benchmark_data?.evaluations;
+  const percentiles = primary?.percentiles;
+  return buildAaSummaryScores(
+    evaluations?.artificial_analysis_intelligence_index,
+    evaluations?.artificial_analysis_coding_index,
+    evaluations?.artificial_analysis_agentic_index,
+    {
+      intelligencePercentile: percentiles?.intelligence_percentile,
+      codingPercentile: percentiles?.coding_percentile,
+      agenticPercentile: percentiles?.agentic_percentile,
+      variantName: primary?.aa_name,
+    },
+  );
 }
 
 export function formatMetricValue(key: string, value: number): string {

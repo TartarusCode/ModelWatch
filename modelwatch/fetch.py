@@ -98,19 +98,19 @@ async def fetch_artificial_analysis(
 
 async def _fetch_model_benchmarks(
     client: httpx.AsyncClient,
-    model_id: str,
+    canonical_slug: str,
     retries: int,
     semaphore: asyncio.Semaphore,
 ) -> dict[str, object]:
     async with semaphore:
         design_data, design_error = await fetch_design_arena(
-            client, model_id, retries
+            client, canonical_slug, retries
         )
         aa_data, aa_error = await fetch_artificial_analysis(
-            client, model_id, retries
+            client, canonical_slug, retries
         )
     return {
-        "model_id": model_id,
+        "canonical_slug": canonical_slug,
         "design_arena": design_data,
         "design_arena_error": design_error,
         "artificial_analysis": aa_data,
@@ -119,7 +119,7 @@ async def _fetch_model_benchmarks(
 
 
 async def fetch_all_benchmarks(
-    model_ids: list[str],
+    canonical_slugs: list[str],
     options: FetchOptions | None = None,
 ) -> list[dict[str, object]]:
     opts = options or {}
@@ -132,8 +132,8 @@ async def fetch_all_benchmarks(
     timeout = httpx.Timeout(timeout_seconds)
     async with httpx.AsyncClient(headers=headers, timeout=timeout) as client:
         tasks = [
-            _fetch_model_benchmarks(client, model_id, retries, semaphore)
-            for model_id in model_ids
+            _fetch_model_benchmarks(client, canonical_slug, retries, semaphore)
+            for canonical_slug in canonical_slugs
         ]
         return await asyncio.gather(*tasks)
 

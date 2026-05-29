@@ -6,6 +6,7 @@ from pathlib import Path
 
 from pydantic import ValidationError
 
+from modelwatch.aa_scores import summarize_artificial_analysis
 from modelwatch.fetch import fetch_all_benchmarks, fetch_models_async
 from modelwatch.history import merge_build_into_history, save_history
 from modelwatch.pricing import (
@@ -162,6 +163,25 @@ def _build_benchmarks(raw: dict[str, object]) -> ModelBenchmarks:
         design_arena_status=design_status,
         artificial_analysis=aa_records,
         artificial_analysis_status=aa_status,
+        artificial_analysis_summary=None,
+    )
+
+
+def _attach_aa_summary(
+    benchmarks: ModelBenchmarks,
+    *,
+    model_id: str,
+) -> ModelBenchmarks:
+    if benchmarks.artificial_analysis_status.status != "ok":
+        return benchmarks
+    summary = summarize_artificial_analysis(
+        benchmarks.artificial_analysis,
+        model_id=model_id,
+    )
+    if summary is None:
+        return benchmarks
+    return benchmarks.model_copy(
+        update={"artificial_analysis_summary": summary},
     )
 
 
@@ -177,20 +197,23 @@ async def run_build() -> None:
         if parsed is not None:
             snapshots.append(parsed)
 
-    model_ids = [model.id for model in snapshots]
-    benchmark_raw = await fetch_all_benchmarks(model_ids)
-    benchmark_by_id = {
-        str(item["model_id"]): item
+    canonical_slugs = sorted({model.canonical_slug for model in snapshots})
+    benchmark_raw = await fetch_all_benchmarks(canonical_slugs)
+    benchmark_by_canonical = {
+        str(item["canonical_slug"]): item
         for item in benchmark_raw
-        if isinstance(item.get("model_id"), str)
+        if isinstance(item.get("canonical_slug"), str)
     }
 
     enriched: list[EnrichedModel] = []
     benchmark_errors = 0
     benchmark_empty = 0
     for model in snapshots:
-        raw_bench = benchmark_by_id.get(model.id, {})
-        benchmarks = _build_benchmarks(raw_bench)
+        raw_bench = benchmark_by_canonical.get(model.canonical_slug, {})
+        benchmarks = _attach_aa_summary(
+            _build_benchmarks(raw_bench),
+            model_id=model.id,
+        )
         if benchmarks.design_arena_status.status == "error":
             benchmark_errors += 1
         elif benchmarks.design_arena_status.status == "empty":

@@ -5,12 +5,19 @@ import {
   getSortedRowModel,
   useReactTable,
   type SortingState,
+  type VisibilityState,
 } from "@tanstack/react-table";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
+import { formatAaIndex, getAaSummaryScores } from "../lib/benchmarks";
 import { hasBenchmarkData } from "../lib/data";
 import { compareTokenPrices, providerFromModelId } from "../lib/pricing";
+import {
+  loadColumnVisibility,
+  saveColumnVisibility,
+} from "../lib/tableColumns";
 import type { EnrichedModel } from "../types";
+import { ColumnPicker } from "./ColumnPicker";
 import { FilterChip } from "./FilterChip";
 import { PriceCell } from "./PriceCell";
 import { ProviderBadge } from "./ProviderBadge";
@@ -31,6 +38,13 @@ export function ModelTable({ models }: ModelTableProps) {
   const [benchmarkOnly, setBenchmarkOnly] = useState(false);
   const [toolsOnly, setToolsOnly] = useState(false);
   const [reasoningOnly, setReasoningOnly] = useState(false);
+  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>(
+    loadColumnVisibility,
+  );
+
+  useEffect(() => {
+    saveColumnVisibility(columnVisibility);
+  }, [columnVisibility]);
 
   const providers = useMemo(() => {
     const set = new Set(models.map((m) => providerFromModelId(m.model.id)));
@@ -86,6 +100,7 @@ export function ModelTable({ models }: ModelTableProps) {
       columnHelper.accessor((row) => row.model.name, {
         id: "name",
         header: "Model",
+        enableHiding: false,
         cell: (info) => {
           const { model } = info.row.original;
           return (
@@ -138,16 +153,106 @@ export function ModelTable({ models }: ModelTableProps) {
           );
         },
       }),
-      columnHelper.accessor((row) => hasBenchmarkData(row.benchmarks), {
-        id: "benchmarks",
-        header: "Bench",
-        cell: (info) =>
-          info.getValue() ? (
-            <span className="status-pill status-pill--ok">Yes</span>
-          ) : (
-            <span className="status-pill">—</span>
-          ),
-      }),
+      columnHelper.accessor(
+        (row) =>
+          getAaSummaryScores(row.benchmarks, row.model.id)?.intelligence ??
+          null,
+        {
+          id: "intelligence",
+          header: "Intel",
+          sortingFn: (a, b) => {
+            const left =
+              getAaSummaryScores(a.original.benchmarks, a.original.model.id)
+                ?.intelligence ?? -1;
+            const right =
+              getAaSummaryScores(b.original.benchmarks, b.original.model.id)
+                ?.intelligence ?? -1;
+            return left - right;
+          },
+          cell: (info) => {
+            const scores = getAaSummaryScores(
+              info.row.original.benchmarks,
+              info.row.original.model.id,
+            );
+            const formatted = formatAaIndex(scores?.intelligence);
+            if (!formatted) {
+              return <span className="muted">—</span>;
+            }
+            return (
+              <span
+                className="tabular-nums"
+                title={scores?.variantName}
+              >
+                {formatted}
+              </span>
+            );
+          },
+        },
+      ),
+      columnHelper.accessor(
+        (row) =>
+          getAaSummaryScores(row.benchmarks, row.model.id)?.coding ?? null,
+        {
+          id: "coding",
+          header: "Coding",
+          sortingFn: (a, b) => {
+            const left =
+              getAaSummaryScores(a.original.benchmarks, a.original.model.id)
+                ?.coding ?? -1;
+            const right =
+              getAaSummaryScores(b.original.benchmarks, b.original.model.id)
+                ?.coding ?? -1;
+            return left - right;
+          },
+          cell: (info) => {
+            const scores = getAaSummaryScores(
+              info.row.original.benchmarks,
+              info.row.original.model.id,
+            );
+            const formatted = formatAaIndex(scores?.coding);
+            if (!formatted) {
+              return <span className="muted">—</span>;
+            }
+            return (
+              <span className="tabular-nums" title={scores?.variantName}>
+                {formatted}
+              </span>
+            );
+          },
+        },
+      ),
+      columnHelper.accessor(
+        (row) =>
+          getAaSummaryScores(row.benchmarks, row.model.id)?.agentic ?? null,
+        {
+          id: "agentic",
+          header: "Agentic",
+          sortingFn: (a, b) => {
+            const left =
+              getAaSummaryScores(a.original.benchmarks, a.original.model.id)
+                ?.agentic ?? -1;
+            const right =
+              getAaSummaryScores(b.original.benchmarks, b.original.model.id)
+                ?.agentic ?? -1;
+            return left - right;
+          },
+          cell: (info) => {
+            const scores = getAaSummaryScores(
+              info.row.original.benchmarks,
+              info.row.original.model.id,
+            );
+            const formatted = formatAaIndex(scores?.agentic);
+            if (!formatted) {
+              return <span className="muted">—</span>;
+            }
+            return (
+              <span className="tabular-nums" title={scores?.variantName}>
+                {formatted}
+              </span>
+            );
+          },
+        },
+      ),
     ],
     [],
   );
@@ -155,11 +260,14 @@ export function ModelTable({ models }: ModelTableProps) {
   const table = useReactTable({
     data: filteredData,
     columns,
-    state: { sorting },
+    state: { sorting, columnVisibility },
     onSortingChange: setSorting,
+    onColumnVisibilityChange: setColumnVisibility,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
   });
+
+  const visibleColumnCount = table.getVisibleLeafColumns().length;
 
   const activeFilterCount =
     (providerFilter ? 1 : 0) +
@@ -204,6 +312,10 @@ export function ModelTable({ models }: ModelTableProps) {
           value={minContext}
           onChange={(e) => setMinContext(e.target.value)}
           aria-label="Minimum context in tokens"
+        />
+        <ColumnPicker
+          visibility={columnVisibility}
+          onChange={setColumnVisibility}
         />
       </div>
       <div className="filter-chips">
@@ -276,7 +388,7 @@ export function ModelTable({ models }: ModelTableProps) {
           <tbody>
             {table.getRowModel().rows.length === 0 ? (
               <tr>
-                <td colSpan={columns.length} className="data-table__empty">
+                <td colSpan={visibleColumnCount} className="data-table__empty">
                   No models match your filters.
                 </td>
               </tr>

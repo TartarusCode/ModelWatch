@@ -48,11 +48,23 @@ export interface DesignArenaBenchmarks {
   elo_bounds?: Record<string, number> | null;
 }
 
+export interface ArtificialAnalysisSummary {
+  intelligence_index: number;
+  coding_index: number;
+  agentic_index: number;
+  intelligence_percentile?: number | null;
+  coding_percentile?: number | null;
+  agentic_percentile?: number | null;
+  variant_name?: string | null;
+  aa_slug?: string | null;
+}
+
 export interface ModelBenchmarks {
   design_arena: DesignArenaBenchmarks | null;
   design_arena_status: BenchmarkFetchStatus;
   artificial_analysis: Record<string, unknown>[];
   artificial_analysis_status: BenchmarkFetchStatus;
+  artificial_analysis_summary?: ArtificialAnalysisSummary | null;
 }
 
 export interface EnrichedModel {

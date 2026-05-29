@@ -66,6 +66,19 @@ class DesignArenaBenchmarks(BaseModel):
     elo_bounds: dict[str, int] | None = None
 
 
+class ArtificialAnalysisSummary(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    intelligence_index: float
+    coding_index: float
+    agentic_index: float
+    intelligence_percentile: int | None = None
+    coding_percentile: int | None = None
+    agentic_percentile: int | None = None
+    variant_name: str | None = None
+    aa_slug: str | None = None
+
+
 class ModelBenchmarks(BaseModel):
     model_config = ConfigDict(frozen=True)
 
@@ -73,6 +86,7 @@ class ModelBenchmarks(BaseModel):
     design_arena_status: BenchmarkFetchStatus
     artificial_analysis: list[dict[str, object]]
     artificial_analysis_status: BenchmarkFetchStatus
+    artificial_analysis_summary: ArtificialAnalysisSummary | None = None
 
 
 class EnrichedModel(BaseModel):
