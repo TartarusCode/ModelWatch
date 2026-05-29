@@ -35,6 +35,7 @@ Implemented in `modelwatch/pricing.py`:
 - Repo: https://github.com/TartarusCode/ModelWatch
 - Site: https://tartaruscode.github.io/ModelWatch/
 - Vite `base` is `/ModelWatch/` — change in `web/vite.config.ts` if the repo is renamed.
+- SPA deep links: `web/public/404.html` + redirect snippet in `index.html` (rafgraph/spa-github-pages) so `/drops` reload works on GitHub Pages.
 - Enable Pages: **Settings → Pages → Source: GitHub Actions**.
 - Optional secret: `OPENROUTER_API_KEY` for authenticated models API calls.
 

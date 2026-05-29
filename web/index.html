@@ -16,6 +16,24 @@
     />
   </head>
   <body>
+    <script type="text/javascript">
+      (function (locationRef) {
+        if (locationRef.search.length > 1 && locationRef.search[1] === "/") {
+          var decoded = locationRef.search
+            .slice(1)
+            .split("&")
+            .map(function (segment) {
+              return segment.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            locationRef.pathname.slice(0, -1) + decoded + locationRef.hash,
+          );
+        }
+      })(window.location);
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
