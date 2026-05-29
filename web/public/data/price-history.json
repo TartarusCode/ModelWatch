@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T13:48:47.875534Z",
+  "generated_at": "2026-05-29T16:41:37.657061Z",
   "models": {
     "stepfun/step-3.7-flash": [
       {
@@ -197,6 +197,13 @@
         "completion_per_million": "3.49000000",
         "image_per_million": null,
         "request_per_million": null
+      },
+      {
+        "recorded_at": "2026-05-29T16:41:37.657061Z",
+        "prompt_per_million": "0.684000000",
+        "completion_per_million": "3.42000000",
+        "image_per_million": null,
+        "request_per_million": null
       }
     ],
     "~google/gemini-flash-latest": [
@@ -314,6 +321,13 @@
         "completion_per_million": "0.2000000",
         "image_per_million": null,
         "request_per_million": null
+      },
+      {
+        "recorded_at": "2026-05-29T16:41:37.657061Z",
+        "prompt_per_million": "0.0983000000",
+        "completion_per_million": "0.1966000000",
+        "image_per_million": null,
+        "request_per_million": null
       }
     ],
     "inclusionai/ling-2.6-1t": [
@@ -402,6 +416,13 @@
         "recorded_at": "2026-05-29T13:08:46.623582Z",
         "prompt_per_million": "0.73000000",
         "completion_per_million": "3.49000000",
+        "image_per_million": null,
+        "request_per_million": null
+      },
+      {
+        "recorded_at": "2026-05-29T16:41:37.657061Z",
+        "prompt_per_million": "0.684000000",
+        "completion_per_million": "3.42000000",
         "image_per_million": null,
         "request_per_million": null
       }

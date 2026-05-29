@@ -1,8 +1,25 @@
 {
-  "generated_at": "2026-05-29T13:48:44.499105Z",
+  "generated_at": "2026-05-29T16:41:33.070733Z",
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05
   },
-  "drops": []
+  "drops": [
+    {
+      "model_id": "~moonshotai/kimi-latest",
+      "field": "input_cache_read",
+      "old_per_million_usd": "0.250000",
+      "new_per_million_usd": "0.144000",
+      "pct_drop": 0.424,
+      "saved_per_million_usd": "0.106000"
+    },
+    {
+      "model_id": "moonshotai/kimi-k2.6",
+      "field": "input_cache_read",
+      "old_per_million_usd": "0.250000",
+      "new_per_million_usd": "0.144000",
+      "pct_drop": 0.424,
+      "saved_per_million_usd": "0.106000"
+    }
+  ]
 }
