@@ -453,6 +453,10 @@ a:hover {
   overflow: hidden;
 }
 
+.table-panel + .table-panel {
+  margin-top: 1.25rem;
+}
+
 .table-toolbar {
   display: flex;
   flex-wrap: wrap;
