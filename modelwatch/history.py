@@ -17,10 +17,14 @@ class PriceHistoryPoint(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     recorded_at: datetime
-    prompt_per_million: Decimal | None
-    completion_per_million: Decimal | None
+    prompt_per_million: Decimal | None = None
+    completion_per_million: Decimal | None = None
     image_per_million: Decimal | None = None
     request_per_million: Decimal | None = None
+    internal_reasoning_per_million: Decimal | None = None
+    input_cache_read_per_million: Decimal | None = None
+    input_cache_write_per_million: Decimal | None = None
+    web_search_per_million: Decimal | None = None
 
 
 class PriceHistoryStore(BaseModel):
@@ -37,6 +41,17 @@ def _token_to_per_million(per_token: str) -> Decimal | None:
     return token * Decimal(1_000_000)
 
 
+def _per_million_field_name(field: str) -> str:
+    return f"{field}_per_million"
+
+
+def _point_field_values(point: PriceHistoryPoint) -> dict[str, Decimal | None]:
+    return {
+        field: getattr(point, _per_million_field_name(field))
+        for field in PRICING_FIELDS
+    }
+
+
 def pricing_to_history_fields(pricing: ModelPricing) -> dict[str, Decimal | None]:
     raw = pricing.model_dump()
     fields: dict[str, Decimal | None] = {}
@@ -51,12 +66,7 @@ def _points_equal(
     left: PriceHistoryPoint,
     right: PriceHistoryPoint,
 ) -> bool:
-    return (
-        left.prompt_per_million == right.prompt_per_million
-        and left.completion_per_million == right.completion_per_million
-        and left.image_per_million == right.image_per_million
-        and left.request_per_million == right.request_per_million
-    )
+    return _point_field_values(left) == _point_field_values(right)
 
 
 def append_build_to_history(
@@ -68,10 +78,10 @@ def append_build_to_history(
     fields = pricing_to_history_fields(pricing)
     point = PriceHistoryPoint(
         recorded_at=recorded_at,
-        prompt_per_million=fields.get("prompt"),
-        completion_per_million=fields.get("completion"),
-        image_per_million=fields.get("image"),
-        request_per_million=fields.get("request"),
+        **{
+            _per_million_field_name(field): fields.get(field)
+            for field in PRICING_FIELDS
+        },
     )
     existing = list(store.models.get(model_id, []))
     if existing and _points_equal(existing[-1], point):

@@ -60,6 +60,24 @@ def test_append_build_skips_duplicate_snapshot() -> None:
     assert len(updated.models["acme/model"]) == 1
 
 
+def test_append_build_records_cache_read_in_history() -> None:
+    at = datetime(2026, 5, 29, 12, 0, tzinfo=UTC)
+    store = PriceHistoryStore(generated_at=at, models={})
+    pricing = ModelPricing(
+        prompt="0.000002",
+        completion="0.000010",
+        input_cache_read="0.0000005",
+    )
+    updated = append_build_to_history(
+        store,
+        model_id="acme/model",
+        pricing=pricing,
+        recorded_at=at,
+    )
+    point = updated.models["acme/model"][0]
+    assert point.input_cache_read_per_million == Decimal("0.5")
+
+
 def test_append_build_records_price_change() -> None:
     at = datetime(2026, 5, 29, 12, 0, tzinfo=UTC)
     pricing = ModelPricing(prompt="0.000002", completion="0.000010")

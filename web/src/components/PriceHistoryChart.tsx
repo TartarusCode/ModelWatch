@@ -1,31 +1,37 @@
-import type { ChartPoint } from "../lib/priceHistory";
+import {
+  CHART_SERIES_COLORS,
+  historyColumnLabel,
+  type ChartPoint,
+  type PriceHistoryField,
+} from "../lib/priceHistory";
 
 interface PriceHistoryChartProps {
   points: ChartPoint[];
+  fields: PriceHistoryField[];
 }
 
 interface SeriesLine {
-  key: "prompt" | "completion";
+  key: PriceHistoryField;
   label: string;
   color: string;
 }
 
-function buildSeries(points: ChartPoint[]): SeriesLine[] {
-  const hasPrompt = points.some((p) => p.prompt !== null);
-  const hasCompletion = points.some((p) => p.completion !== null);
-  const series: SeriesLine[] = [];
-  if (hasPrompt) {
-    series.push({ key: "prompt", label: "Prompt", color: "#a78bfa" });
-  }
-  if (hasCompletion) {
-    series.push({ key: "completion", label: "Completion", color: "#4ade80" });
-  }
-  return series;
+function buildSeries(
+  points: ChartPoint[],
+  fields: PriceHistoryField[],
+): SeriesLine[] {
+  return fields
+    .filter((field) => points.some((point) => point.values[field] !== null))
+    .map((field) => ({
+      key: field,
+      label: historyColumnLabel(field),
+      color: CHART_SERIES_COLORS[field],
+    }));
 }
 
 function linePath(
   points: ChartPoint[],
-  key: "prompt" | "completion",
+  field: PriceHistoryField,
   width: number,
   height: number,
   min: number,
@@ -36,7 +42,7 @@ function linePath(
   const segments: string[] = [];
   let started = false;
   points.forEach((point, index) => {
-    const value = point[key];
+    const value = point.values[field];
     if (value === null) {
       started = false;
       return;
@@ -49,14 +55,19 @@ function linePath(
   return segments.join(" ");
 }
 
-function allNumericValues(points: ChartPoint[]): number[] {
-  return points.flatMap((p) =>
-    [p.prompt, p.completion].filter((v): v is number => v !== null),
+function allNumericValues(
+  points: ChartPoint[],
+  fields: PriceHistoryField[],
+): number[] {
+  return points.flatMap((point) =>
+    fields
+      .map((field) => point.values[field])
+      .filter((value): value is number => value !== null),
   );
 }
 
-export function PriceHistoryChart({ points }: PriceHistoryChartProps) {
-  const series = buildSeries(points);
+export function PriceHistoryChart({ points, fields }: PriceHistoryChartProps) {
+  const series = buildSeries(points, fields);
   if (series.length === 0) {
     return (
       <p className="muted" style={{ marginBottom: "1rem" }}>
@@ -65,7 +76,7 @@ export function PriceHistoryChart({ points }: PriceHistoryChartProps) {
     );
   }
 
-  const allValues = allNumericValues(points);
+  const allValues = allNumericValues(points, fields);
   const min = Math.min(...allValues) * 0.95;
   const max = Math.max(...allValues) * 1.05;
   const width = 640;

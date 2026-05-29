@@ -1,7 +1,10 @@
 import {
+  activeHistoryFields,
   eventsForModel,
   formatHistoryUsd,
   getModelHistory,
+  historyColumnLabel,
+  historyPerMillionKey,
   historyToChartPoints,
 } from "../lib/priceHistory";
 import { formatPerMillionUsd, formatPct, pricingFieldLabel } from "../lib/pricing";
@@ -20,6 +23,7 @@ export function PriceHistoryPanel({
   events,
 }: PriceHistoryPanelProps) {
   const points = getModelHistory(history, modelId);
+  const historyFields = activeHistoryFields(points);
   const chartPoints = historyToChartPoints(points);
   const modelEvents = eventsForModel(events, modelId);
 
@@ -40,8 +44,8 @@ export function PriceHistoryPanel({
       <h2 className="card__title">Price history</h2>
       <p className="card__subtitle">USD per 1M tokens · recorded on each build</p>
 
-      {chartPoints.length > 0 ? (
-        <PriceHistoryChart points={chartPoints} />
+      {chartPoints.length > 0 && historyFields.length > 0 ? (
+        <PriceHistoryChart points={chartPoints} fields={historyFields} />
       ) : null}
 
       {points.length > 0 ? (
@@ -50,8 +54,9 @@ export function PriceHistoryPanel({
             <thead>
               <tr>
                 <th>Recorded</th>
-                <th>Prompt</th>
-                <th>Completion</th>
+                {historyFields.map((field) => (
+                  <th key={field}>{historyColumnLabel(field)}</th>
+                ))}
               </tr>
             </thead>
             <tbody>
@@ -65,16 +70,13 @@ export function PriceHistoryPanel({
                       minute: "2-digit",
                     })}
                   </td>
-                  <td>
-                    <span className="price-cell">
-                      {formatHistoryUsd(point.prompt_per_million)}
-                    </span>
-                  </td>
-                  <td>
-                    <span className="price-cell">
-                      {formatHistoryUsd(point.completion_per_million)}
-                    </span>
-                  </td>
+                  {historyFields.map((field) => (
+                    <td key={field}>
+                      <span className="price-cell">
+                        {formatHistoryUsd(point[historyPerMillionKey(field)])}
+                      </span>
+                    </td>
+                  ))}
                 </tr>
               ))}
             </tbody>

@@ -115,10 +115,14 @@ export interface PriceEventRecord {
 
 export interface PriceHistoryPoint {
   recorded_at: string;
-  prompt_per_million: string | null;
-  completion_per_million: string | null;
+  prompt_per_million?: string | null;
+  completion_per_million?: string | null;
   image_per_million?: string | null;
   request_per_million?: string | null;
+  internal_reasoning_per_million?: string | null;
+  input_cache_read_per_million?: string | null;
+  input_cache_write_per_million?: string | null;
+  web_search_per_million?: string | null;
 }
 
 export interface PriceHistoryOutput {
