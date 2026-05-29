@@ -8,6 +8,7 @@ from pydantic import ValidationError
 
 from modelwatch.aa_scores import summarize_artificial_analysis
 from modelwatch.fetch import fetch_all_benchmarks, fetch_models_async
+from modelwatch.json_output import dump_model_line, write_model_json
 from modelwatch.history import merge_build_into_history, save_history
 from modelwatch.price_events import (
     DROP_LOOKBACK_HOURS,
@@ -111,7 +112,7 @@ def _append_events(events: list[PriceEventRecord]) -> None:
             for line in EVENTS_PATH.read_text(encoding="utf-8").splitlines()
             if line.strip()
         ]
-    new_lines = [event.model_dump_json() for event in events]
+    new_lines = [dump_model_line(event) for event in events]
     combined = existing + new_lines
     trimmed = combined[-MAX_EVENTS:]
     EVENTS_PATH.write_text("\n".join(trimmed) + "\n", encoding="utf-8")
@@ -276,27 +277,15 @@ async def run_build() -> None:
         benchmark_empty=benchmark_empty,
     )
 
-    (DATA_DIR / "models.json").write_text(
-        models_output.model_dump_json(indent=2),
-        encoding="utf-8",
-    )
-    (DATA_DIR / "price-drops.json").write_text(
-        drops_output.model_dump_json(indent=2),
-        encoding="utf-8",
-    )
-    (DATA_DIR / "meta.json").write_text(
-        meta.model_dump_json(indent=2),
-        encoding="utf-8",
-    )
+    write_model_json(DATA_DIR / "models.json", models_output)
+    write_model_json(DATA_DIR / "price-drops.json", drops_output)
+    write_model_json(DATA_DIR / "meta.json", meta)
 
     previous_output = PreviousSnapshot(
         generated_at=finished,
         models={model.id: model for model in snapshots},
     )
-    SNAPSHOT_PATH.write_text(
-        previous_output.model_dump_json(indent=2),
-        encoding="utf-8",
-    )
+    write_model_json(SNAPSHOT_PATH, previous_output)
 
     history = merge_build_into_history(
         [(model.id, model.pricing) for model in snapshots],

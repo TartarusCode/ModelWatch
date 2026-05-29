@@ -4,6 +4,7 @@ from pathlib import Path
 
 from pydantic import BaseModel, ConfigDict
 
+from modelwatch.json_output import write_model_json
 from modelwatch.pricing import PRICING_FIELDS, _is_known_price, _parse_per_token
 from modelwatch.schemas import ModelPricing
 
@@ -106,7 +107,7 @@ def load_history() -> PriceHistoryStore:
 
 def save_history(store: PriceHistoryStore) -> None:
     HISTORY_PATH.parent.mkdir(parents=True, exist_ok=True)
-    HISTORY_PATH.write_text(store.model_dump_json(indent=2), encoding="utf-8")
+    write_model_json(HISTORY_PATH, store)
 
 
 def merge_build_into_history(
