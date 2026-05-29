@@ -63,7 +63,7 @@ export function DropsPage({ drops, events, thresholds }: DropsPageProps) {
               {formatPerMillionUsd(topDrop.new_per_million_usd)}
             </span>
             <span className="highlight-card__saved">
-              Save {formatPerMillionUsd(topDrop.saved_per_million_usd)}/M
+              Save {formatPerMillionUsd(topDrop.saved_per_million_usd)}
             </span>
           </div>
         </div>
