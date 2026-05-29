@@ -12,7 +12,7 @@ uv sync --extra dev
 uv run pytest
 uv run python -m modelwatch.build
 
-CI: `setup-uv` caches packages + Python (`enable-cache`, `cache-python`); invalidates on `uv.lock` / `pyproject.toml`. Build uses `uv sync --frozen --no-dev`.
+CI: `setup-uv` caches the uv package cache (`enable-cache`, `prune-cache: false`); invalidates on `uv.lock` / `pyproject.toml`. Uses system Python on `ubuntu-latest` (not `cache-python`). Build uses `uv sync --frozen --no-dev`.
 
 cd web
 npm install
