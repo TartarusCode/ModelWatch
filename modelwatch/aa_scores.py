@@ -1,4 +1,14 @@
+from typing import Literal
+
 from modelwatch.schemas import ArtificialAnalysisSummary
+
+AaVariantMode = Literal[
+    "auto",
+    "max-effort",
+    "high-effort",
+    "non-reasoning",
+    "medium",
+]
 
 
 def _base_model_slug(model_id: str) -> str:
@@ -25,34 +35,71 @@ def _intelligence_index(record: dict[str, object]) -> float | None:
     return float(value) if isinstance(value, (int, float)) else None
 
 
+def classify_aa_variant(record: dict[str, object]) -> str:
+    name = str(record.get("aa_name") or "").lower()
+    slug = str(record.get("aa_slug") or "").lower()
+    if "non-reasoning" in name or "non-reasoning" in slug:
+        return "non-reasoning"
+    if "high effort" in name or slug.endswith("-high"):
+        return "high-effort"
+    if "max effort" in name or "xhigh" in name:
+        return "max-effort"
+    if "medium" in name or slug.endswith("-medium"):
+        return "medium"
+    aa_slug = record.get("aa_slug")
+    if isinstance(aa_slug, str) and aa_slug:
+        return aa_slug
+    return "other"
+
+
 def pick_primary_aa_record(
     records: list[dict[str, object]],
     *,
     model_id: str,
 ) -> dict[str, object] | None:
+    return pick_aa_record(records, model_id=model_id, variant="auto")
+
+
+def pick_aa_record(
+    records: list[dict[str, object]],
+    *,
+    model_id: str,
+    variant: AaVariantMode | str = "auto",
+) -> dict[str, object] | None:
     if not records:
         return None
 
-    linked = [record for record in records if _slug_matches_model(record, model_id)]
-    if linked:
-        return max(
-            linked,
-            key=lambda record: _intelligence_index(record) or -1.0,
-        )
+    if variant == "auto":
+        linked = [record for record in records if _slug_matches_model(record, model_id)]
+        if linked:
+            return max(
+                linked,
+                key=lambda record: _intelligence_index(record) or -1.0,
+            )
 
-    max_effort = [
+        max_effort = [
+            record
+            for record in records
+            if classify_aa_variant(record) == "max-effort"
+        ]
+        if max_effort:
+            return max(
+                max_effort,
+                key=lambda record: _intelligence_index(record) or -1.0,
+            )
+
+        return max(records, key=lambda record: _intelligence_index(record) or -1.0)
+
+    matched = [
         record
         for record in records
-        if isinstance(record.get("aa_name"), str)
-        and "max effort" in str(record["aa_name"]).lower()
+        if classify_aa_variant(record) == variant
+        or record.get("aa_slug") == variant
     ]
-    if max_effort:
-        return max(
-            max_effort,
-            key=lambda record: _intelligence_index(record) or -1.0,
-        )
+    if matched:
+        return max(matched, key=lambda record: _intelligence_index(record) or -1.0)
 
-    return max(records, key=lambda record: _intelligence_index(record) or -1.0)
+    return pick_aa_record(records, model_id=model_id, variant="auto")
 
 
 def _optional_float(value: object) -> float | None:
@@ -103,8 +150,9 @@ def summarize_artificial_analysis(
     records: list[dict[str, object]],
     *,
     model_id: str,
+    variant: AaVariantMode | str = "auto",
 ) -> ArtificialAnalysisSummary | None:
-    primary = pick_primary_aa_record(records, model_id=model_id)
+    primary = pick_aa_record(records, model_id=model_id, variant=variant)
     if primary is None:
         return None
     return extract_aa_summary(primary)

@@ -1,11 +1,20 @@
+import { useEffect, useMemo, useState } from "react";
+import {
+  loadModelAaVariant,
+  resolveAaRecord,
+  saveModelAaVariant,
+  type ModelAaVariantSelection,
+} from "../lib/aaVariants";
 import {
   formatAaMetricLabel,
   formatMetricValue,
   parseArtificialAnalysisRecords,
   type ArtificialAnalysisRecord,
 } from "../lib/benchmarks";
+import { ModelAaVariantPicker } from "./ModelAaVariantPicker";
 
 interface ArtificialAnalysisPanelProps {
+  modelId: string;
   records: Record<string, unknown>[];
 }
 
@@ -40,7 +49,13 @@ function IndexCard({
   );
 }
 
-function VariantCard({ record }: { record: ArtificialAnalysisRecord }) {
+function VariantCard({
+  record,
+  highlighted,
+}: {
+  record: ArtificialAnalysisRecord;
+  highlighted?: boolean;
+}) {
   const evaluations = record.benchmark_data?.evaluations ?? {};
   const percentiles = record.percentiles ?? {};
   const coreMetrics = [
@@ -68,7 +83,11 @@ function VariantCard({ record }: { record: ArtificialAnalysisRecord }) {
   );
 
   return (
-    <article className="aa-variant">
+    <article
+      className={
+        highlighted ? "aa-variant aa-variant--selected" : "aa-variant"
+      }
+    >
       <header className="aa-variant__header">
         <h3 className="aa-variant__title">{record.aa_name ?? record.aa_slug}</h3>
         {record.benchmark_data?.model_type ? (
@@ -105,23 +124,82 @@ function VariantCard({ record }: { record: ArtificialAnalysisRecord }) {
   );
 }
 
-export function ArtificialAnalysisPanel({ records }: ArtificialAnalysisPanelProps) {
-  const parsed = parseArtificialAnalysisRecords(records);
+export function ArtificialAnalysisPanel({
+  modelId,
+  records,
+}: ArtificialAnalysisPanelProps) {
+  const parsed = useMemo(
+    () => parseArtificialAnalysisRecords(records),
+    [records],
+  );
+  const [selection, setSelection] = useState<ModelAaVariantSelection>(() =>
+    loadModelAaVariant(modelId),
+  );
+  const [showAllVariants, setShowAllVariants] = useState(false);
+
+  useEffect(() => {
+    setSelection(loadModelAaVariant(modelId));
+    setShowAllVariants(false);
+  }, [modelId]);
+
+  useEffect(() => {
+    saveModelAaVariant(modelId, selection);
+  }, [modelId, selection]);
+
+  const selectedRecord = useMemo(
+    () => resolveAaRecord(parsed, modelId, selection),
+    [parsed, modelId, selection],
+  );
+
   if (parsed.length === 0) {
     return null;
   }
 
+  const otherVariants = parsed.filter((record) => record !== selectedRecord);
+
   return (
     <section className="card card--wide">
-      <h2 className="card__title">Artificial Analysis</h2>
-      <p className="card__subtitle">
-        Intelligence, coding, and agentic indices with benchmark breakdowns
-      </p>
-      <div className="aa-variants">
-        {parsed.map((record) => (
-          <VariantCard key={record.aa_id ?? record.aa_slug} record={record} />
-        ))}
+      <div className="aa-panel__header">
+        <div>
+          <h2 className="card__title">Artificial Analysis</h2>
+          <p className="card__subtitle">
+            Intelligence, coding, and agentic indices with benchmark breakdowns
+          </p>
+        </div>
+        <ModelAaVariantPicker
+          modelId={modelId}
+          records={parsed}
+          value={selection}
+          onChange={setSelection}
+        />
       </div>
+      {selectedRecord ? (
+        <VariantCard record={selectedRecord} highlighted />
+      ) : null}
+      {otherVariants.length > 0 ? (
+        <div className="aa-panel__footer">
+          <button
+            type="button"
+            className="filter-clear"
+            onClick={() => setShowAllVariants((open) => !open)}
+          >
+            {showAllVariants
+              ? "Hide other profiles"
+              : `Compare all profiles (${parsed.length})`}
+          </button>
+        </div>
+      ) : null}
+      {showAllVariants ? (
+        <div className="aa-variants">
+          {parsed.map((record) => (
+            <VariantCard
+              key={record.aa_id ?? record.aa_slug}
+              record={record}
+              highlighted={record === selectedRecord}
+            />
+          ))}
+        </div>
+      ) : null}
     </section>
   );
 }

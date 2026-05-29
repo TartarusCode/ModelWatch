@@ -15,6 +15,7 @@ export const MODEL_TABLE_COLUMNS: TableColumnOption[] = [
   { id: "intelligence", label: "Intel" },
   { id: "coding", label: "Coding" },
   { id: "agentic", label: "Agentic" },
+  { id: "aaVariant", label: "Bench profile" },
 ];
 
 const STORAGE_KEY = "modelwatch.table.columnVisibility";

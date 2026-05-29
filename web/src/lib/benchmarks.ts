@@ -1,3 +1,8 @@
+import {
+  pickAaRecord,
+  shortVariantLabel,
+  type AaVariantMode,
+} from "./aaVariants";
 import type { ArtificialAnalysisSummary } from "../types";
 
 export interface ArtificialAnalysisEvaluations {
@@ -92,55 +97,15 @@ export interface AaSummaryScores {
   codingPercentile?: number;
   agenticPercentile?: number;
   variantName?: string;
+  variantShort?: string;
 }
 
-function baseModelSlug(modelId: string): string {
-  return modelId.split(":", 1)[0] ?? modelId;
-}
-
-function slugMatchesModel(
-  record: ArtificialAnalysisRecord,
-  modelId: string,
-): boolean {
-  const base = baseModelSlug(modelId);
-  return (
-    record.openrouter_slug === base ||
-    record.heuristic_openrouter_slug === base
-  );
-}
-
-function intelligenceIndex(record: ArtificialAnalysisRecord): number {
-  return (
-    record.benchmark_data?.evaluations
-      ?.artificial_analysis_intelligence_index ?? -1
-  );
-}
-
-export function pickPrimaryAaRecord(
-  records: ArtificialAnalysisRecord[],
-  modelId: string,
-): ArtificialAnalysisRecord | undefined {
-  if (records.length === 0) {
-    return undefined;
-  }
-  const linked = records.filter((record) => slugMatchesModel(record, modelId));
-  if (linked.length > 0) {
-    return linked.reduce((best, record) =>
-      intelligenceIndex(record) > intelligenceIndex(best) ? record : best,
-    );
-  }
-  const maxEffort = records.filter(
-    (record) =>
-      record.aa_name?.toLowerCase().includes("max effort") ?? false,
-  );
-  if (maxEffort.length > 0) {
-    return maxEffort.reduce((best, record) =>
-      intelligenceIndex(record) > intelligenceIndex(best) ? record : best,
-    );
-  }
-  return records.reduce((best, record) =>
-    intelligenceIndex(record) > intelligenceIndex(best) ? record : best,
-  );
+export interface AaVariantInfo {
+  defaultLabel: string | null;
+  defaultName: string | null;
+  totalVariants: number;
+  additionalCount: number;
+  otherVariantNames: string[];
 }
 
 function isAaIndex(value: unknown): value is number {
@@ -174,27 +139,34 @@ export function getAaSummaryScores(
     artificial_analysis_summary?: ArtificialAnalysisSummary | null;
   },
   modelId: string,
+  variant: AaVariantMode | string = "auto",
 ): AaSummaryScores | undefined {
-  const summary = benchmarks.artificial_analysis_summary;
-  if (summary) {
-    return buildAaSummaryScores(
-      summary.intelligence_index,
-      summary.coding_index,
-      summary.agentic_index,
-      {
-        intelligencePercentile: summary.intelligence_percentile ?? undefined,
-        codingPercentile: summary.coding_percentile ?? undefined,
-        agenticPercentile: summary.agentic_percentile ?? undefined,
-        variantName: summary.variant_name ?? undefined,
-      },
-    );
+  if (variant === "auto") {
+    const summary = benchmarks.artificial_analysis_summary;
+    if (summary) {
+      return buildAaSummaryScores(
+        summary.intelligence_index,
+        summary.coding_index,
+        summary.agentic_index,
+        {
+          intelligencePercentile: summary.intelligence_percentile ?? undefined,
+          codingPercentile: summary.coding_percentile ?? undefined,
+          agenticPercentile: summary.agentic_percentile ?? undefined,
+          variantName: summary.variant_name ?? undefined,
+          variantShort:
+            shortVariantLabel(summary.variant_name ?? undefined) ?? undefined,
+        },
+      );
+    }
   }
+
   const records = parseArtificialAnalysisRecords(
     benchmarks.artificial_analysis,
   );
-  const primary = pickPrimaryAaRecord(records, modelId);
+  const primary = pickAaRecord(records, modelId, variant);
   const evaluations = primary?.benchmark_data?.evaluations;
   const percentiles = primary?.percentiles;
+  const variantName = primary?.aa_name ?? undefined;
   return buildAaSummaryScores(
     evaluations?.artificial_analysis_intelligence_index,
     evaluations?.artificial_analysis_coding_index,
@@ -203,9 +175,43 @@ export function getAaSummaryScores(
       intelligencePercentile: percentiles?.intelligence_percentile,
       codingPercentile: percentiles?.coding_percentile,
       agenticPercentile: percentiles?.agentic_percentile,
-      variantName: primary?.aa_name,
+      variantName,
+      variantShort: shortVariantLabel(variantName) ?? undefined,
     },
   );
+}
+
+export function getAaVariantInfo(
+  benchmarks: {
+    artificial_analysis: Record<string, unknown>[];
+    artificial_analysis_summary?: ArtificialAnalysisSummary | null;
+  },
+  modelId: string,
+): AaVariantInfo | undefined {
+  const records = parseArtificialAnalysisRecords(
+    benchmarks.artificial_analysis,
+  );
+  if (records.length === 0) {
+    return undefined;
+  }
+
+  const defaultScores = getAaSummaryScores(benchmarks, modelId);
+  const defaultName = defaultScores?.variantName ?? null;
+  const defaultLabel = defaultScores?.variantShort ?? null;
+
+  const allNames = records
+    .map((record) => record.aa_name ?? record.aa_slug)
+    .filter((name): name is string => typeof name === "string" && name.length > 0);
+
+  const otherVariantNames = allNames.filter((name) => name !== defaultName);
+
+  return {
+    defaultLabel,
+    defaultName,
+    totalVariants: records.length,
+    additionalCount: Math.max(0, records.length - 1),
+    otherVariantNames,
+  };
 }
 
 export function formatMetricValue(key: string, value: number): string {

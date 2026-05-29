@@ -9,7 +9,13 @@ import {
 } from "@tanstack/react-table";
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { formatAaIndex, getAaSummaryScores } from "../lib/benchmarks";
+import {
+  formatAaIndex,
+  getAaSummaryScores,
+  getAaVariantInfo,
+  type AaSummaryScores,
+} from "../lib/benchmarks";
+import { AaVariantCell } from "./AaVariantCell";
 import { hasBenchmarkData } from "../lib/data";
 import { compareTokenPrices, providerFromModelId } from "../lib/pricing";
 import {
@@ -23,6 +29,24 @@ import { PriceCell } from "./PriceCell";
 import { ProviderBadge } from "./ProviderBadge";
 
 const columnHelper = createColumnHelper<EnrichedModel>();
+
+function AaIndexCell({
+  scores,
+  field,
+}: {
+  scores: AaSummaryScores | undefined;
+  field: "intelligence" | "coding" | "agentic";
+}) {
+  const formatted = formatAaIndex(scores?.[field]);
+  if (!formatted) {
+    return <span className="muted">—</span>;
+  }
+  return (
+    <span className="tabular-nums" title={scores?.variantName}>
+      {formatted}
+    </span>
+  );
+}
 
 interface ModelTableProps {
   models: EnrichedModel[];
@@ -41,7 +65,6 @@ export function ModelTable({ models }: ModelTableProps) {
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>(
     loadColumnVisibility,
   );
-
   useEffect(() => {
     saveColumnVisibility(columnVisibility);
   }, [columnVisibility]);
@@ -155,8 +178,7 @@ export function ModelTable({ models }: ModelTableProps) {
       }),
       columnHelper.accessor(
         (row) =>
-          getAaSummaryScores(row.benchmarks, row.model.id)?.intelligence ??
-          null,
+          getAaSummaryScores(row.benchmarks, row.model.id)?.intelligence ?? null,
         {
           id: "intelligence",
           header: "Intel",
@@ -169,24 +191,15 @@ export function ModelTable({ models }: ModelTableProps) {
                 ?.intelligence ?? -1;
             return left - right;
           },
-          cell: (info) => {
-            const scores = getAaSummaryScores(
-              info.row.original.benchmarks,
-              info.row.original.model.id,
-            );
-            const formatted = formatAaIndex(scores?.intelligence);
-            if (!formatted) {
-              return <span className="muted">—</span>;
-            }
-            return (
-              <span
-                className="tabular-nums"
-                title={scores?.variantName}
-              >
-                {formatted}
-              </span>
-            );
-          },
+          cell: (info) => (
+            <AaIndexCell
+              scores={getAaSummaryScores(
+                info.row.original.benchmarks,
+                info.row.original.model.id,
+              )}
+              field="intelligence"
+            />
+          ),
         },
       ),
       columnHelper.accessor(
@@ -204,21 +217,15 @@ export function ModelTable({ models }: ModelTableProps) {
                 ?.coding ?? -1;
             return left - right;
           },
-          cell: (info) => {
-            const scores = getAaSummaryScores(
-              info.row.original.benchmarks,
-              info.row.original.model.id,
-            );
-            const formatted = formatAaIndex(scores?.coding);
-            if (!formatted) {
-              return <span className="muted">—</span>;
-            }
-            return (
-              <span className="tabular-nums" title={scores?.variantName}>
-                {formatted}
-              </span>
-            );
-          },
+          cell: (info) => (
+            <AaIndexCell
+              scores={getAaSummaryScores(
+                info.row.original.benchmarks,
+                info.row.original.model.id,
+              )}
+              field="coding"
+            />
+          ),
         },
       ),
       columnHelper.accessor(
@@ -236,21 +243,32 @@ export function ModelTable({ models }: ModelTableProps) {
                 ?.agentic ?? -1;
             return left - right;
           },
-          cell: (info) => {
-            const scores = getAaSummaryScores(
-              info.row.original.benchmarks,
-              info.row.original.model.id,
-            );
-            const formatted = formatAaIndex(scores?.agentic);
-            if (!formatted) {
-              return <span className="muted">—</span>;
-            }
-            return (
-              <span className="tabular-nums" title={scores?.variantName}>
-                {formatted}
-              </span>
-            );
-          },
+          cell: (info) => (
+            <AaIndexCell
+              scores={getAaSummaryScores(
+                info.row.original.benchmarks,
+                info.row.original.model.id,
+              )}
+              field="agentic"
+            />
+          ),
+        },
+      ),
+      columnHelper.accessor(
+        (row) => getAaVariantInfo(row.benchmarks, row.model.id)?.defaultLabel ?? null,
+        {
+          id: "aaVariant",
+          header: "Bench profile",
+          enableSorting: false,
+          cell: (info) => (
+            <AaVariantCell
+              modelId={info.row.original.model.id}
+              info={getAaVariantInfo(
+                info.row.original.benchmarks,
+                info.row.original.model.id,
+              )}
+            />
+          ),
         },
       ),
     ],

@@ -189,7 +189,10 @@ export function ModelDetailPage({
       ) : null}
 
       {benchmarks.artificial_analysis_status.status === "ok" ? (
-        <ArtificialAnalysisPanel records={benchmarks.artificial_analysis} />
+        <ArtificialAnalysisPanel
+          modelId={model.id}
+          records={benchmarks.artificial_analysis}
+        />
       ) : benchmarks.artificial_analysis_status.status === "error" ? (
         <section className="card card--wide">
           <h2 className="card__title">Artificial Analysis</h2>

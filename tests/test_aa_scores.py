@@ -1,4 +1,9 @@
-from modelwatch.aa_scores import extract_aa_summary, pick_primary_aa_record
+from modelwatch.aa_scores import (
+    classify_aa_variant,
+    extract_aa_summary,
+    pick_aa_record,
+    pick_primary_aa_record,
+)
 
 
 def _aa_record(
@@ -100,6 +105,61 @@ def test_extract_aa_summary_returns_indices_and_percentiles() -> None:
     assert summary.intelligence_percentile == 80
     assert summary.variant_name == "Model (Max Effort)"
     assert summary.aa_slug == "model"
+
+
+def test_pick_aa_record_by_non_reasoning_variant() -> None:
+    records = [
+        _aa_record(
+            aa_slug="deepseek-v4-flash",
+            aa_name="DeepSeek V4 Flash (Reasoning, Max Effort)",
+            intelligence=46.5,
+            coding=38.7,
+            agentic=61.3,
+        ),
+        _aa_record(
+            aa_slug="deepseek-v4-flash-non-reasoning",
+            aa_name="DeepSeek V4 Flash (Non-reasoning)",
+            intelligence=36.5,
+            coding=35.2,
+            agentic=61.3,
+        ),
+    ]
+
+    picked = pick_aa_record(
+        records,
+        model_id="deepseek/deepseek-v4-flash",
+        variant="non-reasoning",
+    )
+
+    assert picked is not None
+    assert picked["aa_slug"] == "deepseek-v4-flash-non-reasoning"
+
+
+def test_classify_aa_variant_buckets() -> None:
+    assert (
+        classify_aa_variant(
+            _aa_record(
+                aa_slug="m",
+                aa_name="M (Reasoning, Max Effort)",
+                intelligence=1,
+                coding=1,
+                agentic=1,
+            )
+        )
+        == "max-effort"
+    )
+    assert (
+        classify_aa_variant(
+            _aa_record(
+                aa_slug="m-high",
+                aa_name="M (Reasoning, High Effort)",
+                intelligence=1,
+                coding=1,
+                agentic=1,
+            )
+        )
+        == "high-effort"
+    )
 
 
 def test_extract_aa_summary_returns_none_when_indices_missing() -> None:

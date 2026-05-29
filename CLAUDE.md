@@ -44,6 +44,7 @@ Implemented in `modelwatch/pricing.py`:
 - Most models return empty benchmark payloads; UI must handle `empty` status.
 - Benchmark APIs use **`canonical_slug`** (permaslug), not `model.id` (`:free` variants share one slug).
 - **Intelligence / Coding / Agentic** on OpenRouter compare come from `artificial-analysis-benchmarks` (`artificial_analysis_*_index` + `percentiles` for bar width). `frontend/stats/endpoint` is provider routing/latency stats, not AA indices.
-- Build picks one AA variant per model (`heuristic_openrouter_slug` match → Max Effort name → highest intelligence); stored as `benchmarks.artificial_analysis_summary`.
+- Build stores all AA variants in `benchmarks.artificial_analysis`; `artificial_analysis_summary` is the default profile for the overview table.
+- Overview **Bench profile** column shows the default AA profile label and `+N` when more exist; links to detail. Detail page picker switches profiles.
 - OpenAPI lists models API auth as required; unauthenticated fetch often works but key improves reliability.
 - Scheduled workflow commits data back to the default branch; ensure Actions has `contents: write`.
