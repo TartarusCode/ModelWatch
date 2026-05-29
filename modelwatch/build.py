@@ -9,6 +9,11 @@ from pydantic import ValidationError
 from modelwatch.aa_scores import summarize_artificial_analysis
 from modelwatch.fetch import fetch_all_benchmarks, fetch_models_async
 from modelwatch.history import merge_build_into_history, save_history
+from modelwatch.price_events import (
+    DROP_LOOKBACK_HOURS,
+    drops_in_last_hours,
+    load_price_events,
+)
 from modelwatch.pricing import (
     PriceDrop,
     PriceDropThresholds,
@@ -72,8 +77,9 @@ def _load_previous() -> PreviousSnapshot | None:
     return PreviousSnapshot.model_validate(payload)
 
 
-def _drop_to_record(drop: PriceDrop) -> PriceDropRecord:
+def _drop_to_record(drop: PriceDrop, detected_at: datetime) -> PriceDropRecord:
     return PriceDropRecord(
+        detected_at=detected_at,
         model_id=drop.model_id,
         field=drop.field,
         old_per_million_usd=f"{drop.old_per_million_usd:.6f}",
@@ -239,13 +245,21 @@ async def run_build() -> None:
             )
             all_drops.extend(drops)
 
-    drop_records = [_drop_to_record(drop) for drop in all_drops]
     event_records = [_drop_to_event(drop, started) for drop in all_drops]
     _append_events(event_records)
 
+    finished = datetime.now(UTC)
+    all_events = load_price_events(EVENTS_PATH)
+    drop_records = drops_in_last_hours(
+        all_events,
+        DROP_LOOKBACK_HOURS,
+        now=finished,
+    )
+
     models_output = ModelsOutput(generated_at=started, models=enriched)
     drops_output = PriceDropsOutput(
-        generated_at=started,
+        generated_at=finished,
+        window_hours=DROP_LOOKBACK_HOURS,
         thresholds=PriceDropThresholdsOutput(
             min_pct=float(DEFAULT_THRESHOLDS.min_pct),
             min_saved_per_million_usd=float(
@@ -254,7 +268,6 @@ async def run_build() -> None:
         ),
         drops=drop_records,
     )
-    finished = datetime.now(UTC)
     meta = BuildMeta(
         generated_at=finished,
         model_count=len(enriched),

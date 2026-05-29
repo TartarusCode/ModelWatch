@@ -78,6 +78,7 @@ export interface ModelsOutput {
 }
 
 export interface PriceDropRecord {
+  detected_at?: string | null;
   model_id: string;
   field: string;
   old_per_million_usd: string;
@@ -88,6 +89,7 @@ export interface PriceDropRecord {
 
 export interface PriceDropsOutput {
   generated_at: string;
+  window_hours?: number;
   thresholds: {
     min_pct: number;
     min_saved_per_million_usd: number;

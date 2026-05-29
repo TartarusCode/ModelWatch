@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import { PageHeader } from "../components/PageHeader";
 import {
+  DROP_LOOKBACK_HOURS,
+  sortDropsBySeverity,
+} from "../lib/priceDrops";
+import {
   formatPerMillionUsd,
   formatPct,
   pricingFieldLabel,
@@ -11,18 +15,6 @@ interface DropsPageProps {
   drops: PriceDropRecord[];
   events: PriceEventRecord[];
   thresholds: { min_pct: number; min_saved_per_million_usd: number };
-}
-
-function sortDrops(drops: PriceDropRecord[]): PriceDropRecord[] {
-  return [...drops].sort((a, b) => {
-    if (b.pct_drop !== a.pct_drop) {
-      return b.pct_drop - a.pct_drop;
-    }
-    return (
-      Number.parseFloat(b.saved_per_million_usd) -
-      Number.parseFloat(a.saved_per_million_usd)
-    );
-  });
 }
 
 function recentEvents(events: PriceEventRecord[]): PriceEventRecord[] {
@@ -36,7 +28,7 @@ function recentEvents(events: PriceEventRecord[]): PriceEventRecord[] {
 }
 
 export function DropsPage({ drops, events, thresholds }: DropsPageProps) {
-  const sorted = sortDrops(drops);
+  const sorted = sortDropsBySeverity(drops);
   const recent = recentEvents(events);
   const topDrop = sorted[0];
 
@@ -44,12 +36,12 @@ export function DropsPage({ drops, events, thresholds }: DropsPageProps) {
     <div className="page">
       <PageHeader
         title="Price drops"
-        description={`Significant decreases vs the previous snapshot — ≥${(thresholds.min_pct * 100).toFixed(0)}% drop and ≥$${thresholds.min_saved_per_million_usd.toFixed(2)}/M saved.`}
+        description={`Significant decreases detected in the last ${DROP_LOOKBACK_HOURS} hours — ≥${(thresholds.min_pct * 100).toFixed(0)}% drop and ≥$${thresholds.min_saved_per_million_usd.toFixed(2)}/M saved. Data refreshes every 30 minutes.`}
       />
 
       {topDrop ? (
         <div className="highlight-card">
-          <span className="highlight-card__label">Largest recent drop</span>
+          <span className="highlight-card__label">Largest drop (24h)</span>
           <div className="highlight-card__main">
             <Link
               to={`/models/${encodeURIComponent(topDrop.model_id)}`}
@@ -82,19 +74,20 @@ export function DropsPage({ drops, events, thresholds }: DropsPageProps) {
           <span className="empty-state__icon" aria-hidden>
             ✓
           </span>
-          <h2>No drops this cycle</h2>
+          <h2>No drops in the last 24 hours</h2>
           <p className="muted">
-            No models crossed the significance threshold since the last
-            snapshot. Check back after the next scheduled build.
+            No models crossed the significance threshold in the past day. The
+            next scheduled build runs every 30 minutes.
           </p>
         </div>
       ) : (
         <section className="table-panel">
-          <h2 className="section-title">Current snapshot</h2>
+          <h2 className="section-title">Last 24 hours</h2>
           <div className="data-table-wrap">
             <table className="data-table">
               <thead>
                 <tr>
+                  <th>When</th>
                   <th>Model</th>
                   <th>Field</th>
                   <th>Was</th>
@@ -105,7 +98,22 @@ export function DropsPage({ drops, events, thresholds }: DropsPageProps) {
               </thead>
               <tbody>
                 {sorted.map((drop) => (
-                  <tr key={`${drop.model_id}-${drop.field}`}>
+                  <tr
+                    key={`${drop.detected_at ?? ""}-${drop.model_id}-${drop.field}`}
+                  >
+                    <td className="tabular-nums muted">
+                      {drop.detected_at
+                        ? new Date(drop.detected_at).toLocaleString(
+                            undefined,
+                            {
+                              month: "short",
+                              day: "numeric",
+                              hour: "2-digit",
+                              minute: "2-digit",
+                            },
+                          )
+                        : "—"}
+                    </td>
                     <td>
                       <Link
                         to={`/models/${encodeURIComponent(drop.model_id)}`}

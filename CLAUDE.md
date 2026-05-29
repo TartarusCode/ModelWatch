@@ -27,6 +27,7 @@ Implemented in `modelwatch/pricing.py`:
 - Compare shared pricing fields between snapshots.
 - Significant when **≥10%** drop **and** **≥$0.05/M** saved (USD per 1M tokens).
 - Events append to `web/public/data/price-events.jsonl` (max 500 lines).
+- `price-drops.json` lists drops from the last **24 hours** of events (30m builds); UI counts/banner match that window.
 
 ## GitHub Pages
 

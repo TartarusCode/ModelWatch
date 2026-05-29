@@ -3,6 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { loadSiteData } from "./lib/data";
+import { dropRecordsLast24Hours } from "./lib/priceDrops";
 import { DropsPage } from "./pages/DropsPage";
 import { HomePage } from "./pages/HomePage";
 import { ModelDetailPage } from "./pages/ModelDetailPage";
@@ -44,7 +45,8 @@ export function App() {
     );
   }
 
-  const dropCount = data.priceDrops.drops.length;
+  const dropsLast24h = dropRecordsLast24Hours(data.priceEvents);
+  const dropCount = dropsLast24h.length;
 
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, "")}>
@@ -66,7 +68,7 @@ export function App() {
             path="drops"
             element={
               <DropsPage
-                drops={data.priceDrops.drops}
+                drops={dropsLast24h}
                 events={data.priceEvents}
                 thresholds={data.priceDrops.thresholds}
               />

@@ -15,7 +15,7 @@ export function PriceDropBanner({ count }: PriceDropBannerProps) {
       </span>
       <span className="drop-alert__content">
         <strong>{count}</strong> significant price{" "}
-        {count === 1 ? "decrease" : "decreases"} since last snapshot
+        {count === 1 ? "decrease" : "decreases"} in the last 24 hours
       </span>
       <span className="drop-alert__cta">View all →</span>
     </Link>

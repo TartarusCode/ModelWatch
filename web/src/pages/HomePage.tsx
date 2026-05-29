@@ -37,7 +37,7 @@ export function HomePage({ models, dropCount, lastUpdated }: HomePageProps) {
         <StatCard
           label="Price drops"
           value={dropCount.toLocaleString()}
-          hint="Since last build"
+          hint="Last 24 hours"
           variant={dropCount > 0 ? "success" : "default"}
         />
         <StatCard

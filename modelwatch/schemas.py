@@ -99,6 +99,7 @@ class EnrichedModel(BaseModel):
 class PriceDropRecord(BaseModel):
     model_config = ConfigDict(frozen=True)
 
+    detected_at: datetime | None = None
     model_id: str
     field: str
     old_per_million_usd: str
@@ -118,6 +119,7 @@ class PriceDropsOutput(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     generated_at: datetime
+    window_hours: int = 24
     thresholds: PriceDropThresholdsOutput
     drops: list[PriceDropRecord]
 
