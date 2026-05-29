@@ -18,7 +18,7 @@ export function HomePage({ models, dropCount, lastUpdated }: HomePageProps) {
   ).length;
 
   return (
-    <div className="page">
+    <div className="page page--wide">
       <PageHeader
         title="Models"
         description="OpenRouter catalog — pricing per million tokens, context windows, and benchmark coverage."

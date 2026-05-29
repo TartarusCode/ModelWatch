@@ -84,14 +84,6 @@ export function Layout({ meta, dropCount }: LayoutProps) {
             >
               OpenRouter
             </a>
-            <a
-              href="https://github.com/TartarusCode/ModelWatch"
-              target="_blank"
-              rel="noreferrer"
-              className="sidebar__external"
-            >
-              GitHub
-            </a>
           </div>
         </div>
       </aside>

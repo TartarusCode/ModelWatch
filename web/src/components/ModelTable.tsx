@@ -295,7 +295,7 @@ export function ModelTable({ models }: ModelTableProps) {
     (reasoningOnly ? 1 : 0);
 
   return (
-    <section className="table-panel">
+    <section className="table-panel models-table-panel">
       <div className="table-toolbar">
         <div className="search-field">
           <span className="search-field__icon" aria-hidden>
