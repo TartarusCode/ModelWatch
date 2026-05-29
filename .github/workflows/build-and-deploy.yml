@@ -21,16 +21,24 @@ jobs:
       - uses: actions/checkout@v5
 
       - name: Install uv
+        id: uv
         uses: astral-sh/setup-uv@v8.1.0
         with:
           enable-cache: true
+          cache-python: true
+          activate-environment: true
+          cache-dependency-glob: |
+            uv.lock
+            pyproject.toml
+          prune-cache: false
+
+      - name: Sync Python dependencies
+        run: uv sync --frozen --no-dev
 
       - name: Build data
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-        run: |
-          uv sync
-          uv run python -m modelwatch.build
+        run: uv run python -m modelwatch.build
 
       - name: Commit and push data updates
         run: |
