@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T23:01:57.437982Z",
+  "generated_at": "2026-05-29T23:08:57.961300Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -10432,64 +10432,6 @@
         "max_completion_tokens": 16384
       }
     },
-    "openai/gpt-4o-audio-preview": {
-      "architecture": {
-        "input_modalities": [
-          "audio",
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text+audio->text+audio",
-        "output_modalities": [
-          "text",
-          "audio"
-        ],
-        "tokenizer": "GPT"
-      },
-      "canonical_slug": "openai/gpt-4o-audio-preview",
-      "context_length": 128000,
-      "created": 1755233061,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": null
-      },
-      "description": "The gpt-4o-audio-preview model adds support for audio inputs as prompts. This enhancement allows the model to detect nuances within audio recordings and add depth to generated user experiences. Audio outputs...",
-      "expiration_date": null,
-      "id": "openai/gpt-4o-audio-preview",
-      "name": "OpenAI: GPT-4o Audio",
-      "pricing": {
-        "completion": "0.00001",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000025",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 128000,
-        "is_moderated": true,
-        "max_completion_tokens": 16384
-      }
-    },
     "openai/gpt-4o-mini": {
       "architecture": {
         "input_modalities": [
@@ -12125,7 +12067,10 @@
       "created": 1768862569,
       "default_parameters": {
         "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
         "temperature": null,
+        "top_k": null,
         "top_p": null
       },
       "description": "The gpt-audio model is OpenAI's first generally available audio model. The new snapshot features an upgraded decoder for more natural sounding voices and maintains better voice consistency. Audio is priced...",
