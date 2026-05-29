@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T12:53:10.680897Z",
+  "generated_at": "2026-05-29T12:58:26.744406Z",
   "models": {
     "stepfun/step-3.7-flash": {
       "id": "stepfun/step-3.7-flash",
@@ -15293,7 +15293,7 @@
       "name": "Google: Gemini 2.0 Flash",
       "created": 1738769413,
       "description": "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5). It...",
-      "context_length": 1000000,
+      "context_length": 1048576,
       "architecture": {
         "input_modalities": [
           "text",
@@ -15320,7 +15320,7 @@
         "web_search": "0.014"
       },
       "top_provider": {
-        "context_length": 1000000,
+        "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 8192
       },
