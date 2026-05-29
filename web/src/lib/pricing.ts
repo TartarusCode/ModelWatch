@@ -1,16 +1,28 @@
-export function perMillionFromTokenString(perToken: string): number {
+export type ParsedTokenPrice =
+  | { kind: "free" }
+  | { kind: "variable" }
+  | { kind: "priced"; perMillion: number };
+
+export function parseTokenPrice(perToken: string): ParsedTokenPrice {
   const value = Number.parseFloat(perToken);
-  if (Number.isNaN(value)) {
-    return 0;
+  if (Number.isNaN(value) || value < 0) {
+    return { kind: "variable" };
   }
-  return value * 1_000_000;
+  if (value === 0) {
+    return { kind: "free" };
+  }
+  return { kind: "priced", perMillion: value * 1_000_000 };
 }
 
-export function formatPerMillion(perToken: string): string {
-  const perMillion = perMillionFromTokenString(perToken);
-  if (perMillion === 0) {
-    return "Free";
+export function perMillionFromTokenString(perToken: string): number | null {
+  const parsed = parseTokenPrice(perToken);
+  if (parsed.kind === "priced") {
+    return parsed.perMillion;
   }
+  return null;
+}
+
+function formatPerMillionValue(perMillion: number): string {
   if (perMillion < 0.01) {
     return `$${perMillion.toFixed(4)}/M`;
   }
@@ -20,18 +32,41 @@ export function formatPerMillion(perToken: string): string {
   return `$${perMillion.toFixed(2)}/M`;
 }
 
-export function formatPerMillionUsd(value: string): string {
-  const num = Number.parseFloat(value);
-  if (Number.isNaN(num) || num === 0) {
+export function formatPerMillion(perToken: string): string {
+  const parsed = parseTokenPrice(perToken);
+  if (parsed.kind === "free") {
     return "Free";
   }
-  if (num < 0.01) {
-    return `$${num.toFixed(4)}/M`;
+  if (parsed.kind === "variable") {
+    return "Varies";
   }
-  if (num < 1) {
-    return `$${num.toFixed(3)}/M`;
+  return formatPerMillionValue(parsed.perMillion);
+}
+
+export function formatPerMillionUsd(value: string): string {
+  const num = Number.parseFloat(value);
+  if (Number.isNaN(num) || num < 0) {
+    return "Varies";
   }
-  return `$${num.toFixed(2)}/M`;
+  if (num === 0) {
+    return "Free";
+  }
+  return formatPerMillionValue(num);
+}
+
+export function compareTokenPrices(a: string, b: string): number {
+  const aValue = perMillionFromTokenString(a);
+  const bValue = perMillionFromTokenString(b);
+  if (aValue === null && bValue === null) {
+    return 0;
+  }
+  if (aValue === null) {
+    return 1;
+  }
+  if (bValue === null) {
+    return -1;
+  }
+  return aValue - bValue;
 }
 
 export function formatPct(pct: number): string {

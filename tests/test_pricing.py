@@ -117,6 +117,29 @@ def test_compares_optional_pricing_fields_when_present() -> None:
     assert fields == ("prompt", "completion")
 
 
+def test_ignores_variable_price_sentinel() -> None:
+    old_pricing = {"prompt": "0.000003", "completion": "0.000015"}
+    new_pricing = {"prompt": "-1", "completion": "-1"}
+    thresholds = PriceDropThresholds(
+        min_pct=Decimal("0.10"),
+        min_saved_per_million_usd=Decimal("0.05"),
+    )
+
+    drops = detect_price_drops(
+        model_id="openrouter/auto",
+        old_pricing=old_pricing,
+        new_pricing=new_pricing,
+        thresholds=thresholds,
+    )
+
+    assert drops == []
+
+
+def test_per_million_usd_rejects_variable_sentinel() -> None:
+    with pytest.raises(ValueError, match="not a displayable price"):
+        per_million_usd("-1")
+
+
 def test_detects_completion_drop() -> None:
     old_pricing = {"prompt": "0.000003", "completion": "0.000020"}
     new_pricing = {"prompt": "0.000003", "completion": "0.000010"}

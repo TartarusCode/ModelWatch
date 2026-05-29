@@ -10,7 +10,11 @@ import {
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { hasBenchmarkData } from "../lib/data";
-import { formatPerMillion, providerFromModelId } from "../lib/pricing";
+import {
+  compareTokenPrices,
+  formatPerMillion,
+  providerFromModelId,
+} from "../lib/pricing";
 import type { EnrichedModel } from "../types";
 
 const columnHelper = createColumnHelper<EnrichedModel>();
@@ -95,6 +99,11 @@ export function ModelTable({ models }: ModelTableProps) {
       columnHelper.accessor((row) => row.model.pricing.prompt, {
         id: "prompt",
         header: "Prompt $/M",
+        sortingFn: (a, b) =>
+          compareTokenPrices(
+            a.original.model.pricing.prompt,
+            b.original.model.pricing.prompt,
+          ),
         cell: (info) => (
           <span className="mono">{formatPerMillion(info.getValue())}</span>
         ),
@@ -102,6 +111,11 @@ export function ModelTable({ models }: ModelTableProps) {
       columnHelper.accessor((row) => row.model.pricing.completion, {
         id: "completion",
         header: "Completion $/M",
+        sortingFn: (a, b) =>
+          compareTokenPrices(
+            a.original.model.pricing.completion,
+            b.original.model.pricing.completion,
+          ),
         cell: (info) => (
           <span className="mono">{formatPerMillion(info.getValue())}</span>
         ),

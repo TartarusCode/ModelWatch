@@ -30,7 +30,18 @@ class PriceDrop:
 
 
 def per_million_usd(per_token: str) -> Decimal:
-    return Decimal(per_token) * Decimal(1_000_000)
+    token = _parse_per_token(per_token)
+    if token is None or not _is_known_price(token):
+        raise ValueError(f"not a displayable price: {per_token!r}")
+    return token * Decimal(1_000_000)
+
+
+def _is_known_price(token: Decimal) -> bool:
+    return token >= 0
+
+
+def _is_positive_price(token: Decimal) -> bool:
+    return token > 0
 
 
 def pricing_fields_to_compare(
@@ -63,7 +74,7 @@ def detect_price_drops(
         new_token = _parse_per_token(new_pricing[field])
         if old_token is None or new_token is None:
             continue
-        if old_token <= 0:
+        if not _is_positive_price(old_token) or not _is_known_price(new_token):
             continue
         if new_token >= old_token:
             continue
