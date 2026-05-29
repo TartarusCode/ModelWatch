@@ -1037,6 +1037,11 @@ a:hover {
   padding-top: 1rem;
 }
 
+.table-panel > .muted {
+  margin: 0;
+  padding: 0 1rem 1.25rem;
+}
+
 /* Detail page */
 .breadcrumb {
   display: flex;
