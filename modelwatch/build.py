@@ -1,0 +1,270 @@
+import asyncio
+import json
+from datetime import UTC, datetime
+from decimal import Decimal
+from pathlib import Path
+
+from pydantic import ValidationError
+
+from modelwatch.fetch import fetch_all_benchmarks, fetch_models_async
+from modelwatch.pricing import (
+    PriceDrop,
+    PriceDropThresholds,
+    detect_price_drops,
+)
+from modelwatch.schemas import (
+    BenchmarkFetchStatus,
+    BuildMeta,
+    DesignArenaBenchmarks,
+    EnrichedModel,
+    ModelBenchmarks,
+    ModelSnapshot,
+    ModelsOutput,
+    PreviousSnapshot,
+    PriceDropRecord,
+    PriceDropsOutput,
+    PriceDropThresholdsOutput,
+    PriceEventRecord,
+)
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = ROOT / "web" / "public" / "data"
+SNAPSHOT_PATH = ROOT / "data" / "snapshots" / "previous.json"
+EVENTS_PATH = DATA_DIR / "price-events.jsonl"
+MAX_EVENTS = 500
+DESCRIPTION_MAX_LEN = 500
+
+DEFAULT_THRESHOLDS = PriceDropThresholds(
+    min_pct=Decimal("0.10"),
+    min_saved_per_million_usd=Decimal("0.05"),
+)
+
+
+def _trim_description(description: str | None) -> str | None:
+    if description is None:
+        return None
+    if len(description) <= DESCRIPTION_MAX_LEN:
+        return description
+    return description[: DESCRIPTION_MAX_LEN - 3] + "..."
+
+
+def _parse_model(raw: dict[str, object]) -> ModelSnapshot | None:
+    trimmed = {**raw}
+    if isinstance(trimmed.get("description"), str):
+        trimmed["description"] = _trim_description(trimmed["description"])
+    try:
+        return ModelSnapshot.model_validate(trimmed)
+    except ValidationError:
+        return None
+
+
+def _pricing_dict(pricing: ModelSnapshot) -> dict[str, str]:
+    raw = pricing.pricing.model_dump(exclude_none=True)
+    return {key: str(value) for key, value in raw.items()}
+
+
+def _load_previous() -> PreviousSnapshot | None:
+    if not SNAPSHOT_PATH.exists():
+        return None
+    payload = json.loads(SNAPSHOT_PATH.read_text(encoding="utf-8"))
+    return PreviousSnapshot.model_validate(payload)
+
+
+def _drop_to_record(drop: PriceDrop) -> PriceDropRecord:
+    return PriceDropRecord(
+        model_id=drop.model_id,
+        field=drop.field,
+        old_per_million_usd=f"{drop.old_per_million_usd:.6f}",
+        new_per_million_usd=f"{drop.new_per_million_usd:.6f}",
+        pct_drop=float(drop.pct_drop),
+        saved_per_million_usd=f"{drop.saved_per_million_usd:.6f}",
+    )
+
+
+def _drop_to_event(drop: PriceDrop, detected_at: datetime) -> PriceEventRecord:
+    return PriceEventRecord(
+        detected_at=detected_at,
+        model_id=drop.model_id,
+        field=drop.field,
+        old_per_million_usd=f"{drop.old_per_million_usd:.6f}",
+        new_per_million_usd=f"{drop.new_per_million_usd:.6f}",
+        pct_drop=float(drop.pct_drop),
+        saved_per_million_usd=f"{drop.saved_per_million_usd:.6f}",
+    )
+
+
+def _append_events(events: list[PriceEventRecord]) -> None:
+    if not events:
+        return
+    existing: list[str] = []
+    if EVENTS_PATH.exists():
+        existing = [
+            line
+            for line in EVENTS_PATH.read_text(encoding="utf-8").splitlines()
+            if line.strip()
+        ]
+    new_lines = [event.model_dump_json() for event in events]
+    combined = existing + new_lines
+    trimmed = combined[-MAX_EVENTS:]
+    EVENTS_PATH.write_text("\n".join(trimmed) + "\n", encoding="utf-8")
+
+
+def _build_benchmarks(raw: dict[str, object]) -> ModelBenchmarks:
+    design_raw = raw.get("design_arena")
+    design_error = raw.get("design_arena_error")
+    aa_raw = raw.get("artificial_analysis")
+    aa_error = raw.get("artificial_analysis_error")
+
+    design_status: BenchmarkFetchStatus
+    design_parsed: DesignArenaBenchmarks | None = None
+    if design_error is not None:
+        design_status = BenchmarkFetchStatus(
+            status="error", error=str(design_error)
+        )
+    elif isinstance(design_raw, dict):
+        records = design_raw.get("records")
+        if isinstance(records, list) and len(records) > 0:
+            elo_bounds = design_raw.get("eloBounds")
+            bounds = elo_bounds if isinstance(elo_bounds, dict) else None
+            design_parsed = DesignArenaBenchmarks(
+                records=[r for r in records if isinstance(r, dict)],
+                elo_bounds={
+                    str(k): int(v)
+                    for k, v in bounds.items()
+                    if isinstance(v, (int, float))
+                }
+                if bounds
+                else None,
+            )
+            design_status = BenchmarkFetchStatus(status="ok")
+        else:
+            design_status = BenchmarkFetchStatus(status="empty")
+    else:
+        design_status = BenchmarkFetchStatus(status="error", error="missing data")
+
+    aa_status: BenchmarkFetchStatus
+    aa_records: list[dict[str, object]] = []
+    if aa_error is not None:
+        aa_status = BenchmarkFetchStatus(status="error", error=str(aa_error))
+    elif isinstance(aa_raw, list):
+        aa_records = [item for item in aa_raw if isinstance(item, dict)]
+        aa_status = (
+            BenchmarkFetchStatus(status="ok")
+            if aa_records
+            else BenchmarkFetchStatus(status="empty")
+        )
+    else:
+        aa_status = BenchmarkFetchStatus(status="error", error="missing data")
+
+    return ModelBenchmarks(
+        design_arena=design_parsed,
+        design_arena_status=design_status,
+        artificial_analysis=aa_records,
+        artificial_analysis_status=aa_status,
+    )
+
+
+async def run_build() -> None:
+    started = datetime.now(UTC)
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    SNAPSHOT_PATH.parent.mkdir(parents=True, exist_ok=True)
+
+    raw_models = await fetch_models_async()
+    snapshots: list[ModelSnapshot] = []
+    for raw in raw_models:
+        parsed = _parse_model(raw)
+        if parsed is not None:
+            snapshots.append(parsed)
+
+    model_ids = [model.id for model in snapshots]
+    benchmark_raw = await fetch_all_benchmarks(model_ids)
+    benchmark_by_id = {
+        str(item["model_id"]): item
+        for item in benchmark_raw
+        if isinstance(item.get("model_id"), str)
+    }
+
+    enriched: list[EnrichedModel] = []
+    benchmark_errors = 0
+    benchmark_empty = 0
+    for model in snapshots:
+        raw_bench = benchmark_by_id.get(model.id, {})
+        benchmarks = _build_benchmarks(raw_bench)
+        if benchmarks.design_arena_status.status == "error":
+            benchmark_errors += 1
+        elif benchmarks.design_arena_status.status == "empty":
+            benchmark_empty += 1
+        if benchmarks.artificial_analysis_status.status == "error":
+            benchmark_errors += 1
+        elif benchmarks.artificial_analysis_status.status == "empty":
+            benchmark_empty += 1
+        enriched.append(EnrichedModel(model=model, benchmarks=benchmarks))
+
+    previous = _load_previous()
+    all_drops: list[PriceDrop] = []
+    if previous is not None:
+        for model in snapshots:
+            old_model = previous.models.get(model.id)
+            if old_model is None:
+                continue
+            drops = detect_price_drops(
+                model_id=model.id,
+                old_pricing=_pricing_dict(old_model),
+                new_pricing=_pricing_dict(model),
+                thresholds=DEFAULT_THRESHOLDS,
+            )
+            all_drops.extend(drops)
+
+    drop_records = [_drop_to_record(drop) for drop in all_drops]
+    event_records = [_drop_to_event(drop, started) for drop in all_drops]
+    _append_events(event_records)
+
+    models_output = ModelsOutput(generated_at=started, models=enriched)
+    drops_output = PriceDropsOutput(
+        generated_at=started,
+        thresholds=PriceDropThresholdsOutput(
+            min_pct=float(DEFAULT_THRESHOLDS.min_pct),
+            min_saved_per_million_usd=float(
+                DEFAULT_THRESHOLDS.min_saved_per_million_usd
+            ),
+        ),
+        drops=drop_records,
+    )
+    finished = datetime.now(UTC)
+    meta = BuildMeta(
+        generated_at=finished,
+        model_count=len(enriched),
+        build_duration_seconds=(finished - started).total_seconds(),
+        benchmark_errors=benchmark_errors,
+        benchmark_empty=benchmark_empty,
+    )
+
+    (DATA_DIR / "models.json").write_text(
+        models_output.model_dump_json(indent=2),
+        encoding="utf-8",
+    )
+    (DATA_DIR / "price-drops.json").write_text(
+        drops_output.model_dump_json(indent=2),
+        encoding="utf-8",
+    )
+    (DATA_DIR / "meta.json").write_text(
+        meta.model_dump_json(indent=2),
+        encoding="utf-8",
+    )
+
+    previous_output = PreviousSnapshot(
+        generated_at=finished,
+        models={model.id: model for model in snapshots},
+    )
+    SNAPSHOT_PATH.write_text(
+        previous_output.model_dump_json(indent=2),
+        encoding="utf-8",
+    )
+
+
+def main() -> None:
+    asyncio.run(run_build())
+
+
+if __name__ == "__main__":
+    main()
