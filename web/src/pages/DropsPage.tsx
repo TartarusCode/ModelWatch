@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { PageHeader } from "../components/PageHeader";
 import {
   formatPerMillionUsd,
   formatPct,
@@ -37,101 +38,164 @@ function recentEvents(events: PriceEventRecord[]): PriceEventRecord[] {
 export function DropsPage({ drops, events, thresholds }: DropsPageProps) {
   const sorted = sortDrops(drops);
   const recent = recentEvents(events);
+  const topDrop = sorted[0];
 
   return (
-    <>
-      <p className="muted" style={{ marginBottom: "1rem" }}>
-        Significant decreases vs the previous snapshot: ≥
-        {(thresholds.min_pct * 100).toFixed(0)}% drop and ≥$
-        {thresholds.min_saved_per_million_usd.toFixed(2)}/M saved.
-      </p>
+    <div className="page">
+      <PageHeader
+        title="Price drops"
+        description={`Significant decreases vs the previous snapshot — ≥${(thresholds.min_pct * 100).toFixed(0)}% drop and ≥$${thresholds.min_saved_per_million_usd.toFixed(2)}/M saved.`}
+      />
+
+      {topDrop ? (
+        <div className="highlight-card">
+          <span className="highlight-card__label">Largest recent drop</span>
+          <div className="highlight-card__main">
+            <Link
+              to={`/models/${encodeURIComponent(topDrop.model_id)}`}
+              className="highlight-card__model"
+            >
+              {topDrop.model_id}
+            </Link>
+            <span className="highlight-card__pct">
+              −{formatPct(topDrop.pct_drop)}
+            </span>
+          </div>
+          <div className="highlight-card__prices">
+            <span>
+              {pricingFieldLabel(topDrop.field)}:{" "}
+              <s>{formatPerMillionUsd(topDrop.old_per_million_usd)}</s>
+            </span>
+            <span className="highlight-card__arrow">→</span>
+            <span className="highlight-card__new">
+              {formatPerMillionUsd(topDrop.new_per_million_usd)}
+            </span>
+            <span className="highlight-card__saved">
+              Save {formatPerMillionUsd(topDrop.saved_per_million_usd)}/M
+            </span>
+          </div>
+        </div>
+      ) : null}
 
       {sorted.length === 0 ? (
-        <div className="card">
-          <p>No significant price drops detected in the latest build.</p>
+        <div className="empty-state">
+          <span className="empty-state__icon" aria-hidden>
+            ✓
+          </span>
+          <h2>No drops this cycle</h2>
+          <p className="muted">
+            No models crossed the significance threshold since the last
+            snapshot. Check back after the next scheduled build.
+          </p>
         </div>
       ) : (
-        <div className="table-wrap" style={{ marginBottom: "1.5rem" }}>
-          <table>
-            <thead>
-              <tr>
-                <th>Model</th>
-                <th>Field</th>
-                <th>Was</th>
-                <th>Now</th>
-                <th>Drop</th>
-                <th>Saved</th>
-              </tr>
-            </thead>
-            <tbody>
-              {sorted.map((drop) => (
-                <tr key={`${drop.model_id}-${drop.field}`}>
-                  <td>
-                    <Link
-                      to={`/models/${encodeURIComponent(drop.model_id)}`}
-                    >
-                      {drop.model_id}
-                    </Link>
-                  </td>
-                  <td>{pricingFieldLabel(drop.field)}</td>
-                  <td className="mono">
-                    {formatPerMillionUsd(drop.old_per_million_usd)}
-                  </td>
-                  <td className="mono">
-                    {formatPerMillionUsd(drop.new_per_million_usd)}
-                  </td>
-                  <td className="drop-pct">{formatPct(drop.pct_drop)}</td>
-                  <td className="mono">
-                    {formatPerMillionUsd(drop.saved_per_million_usd)}
-                  </td>
+        <section className="table-panel">
+          <h2 className="section-title">Current snapshot</h2>
+          <div className="data-table-wrap">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Field</th>
+                  <th>Was</th>
+                  <th>Now</th>
+                  <th>Drop</th>
+                  <th>Saved</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {sorted.map((drop) => (
+                  <tr key={`${drop.model_id}-${drop.field}`}>
+                    <td>
+                      <Link
+                        to={`/models/${encodeURIComponent(drop.model_id)}`}
+                        className="model-cell__name"
+                      >
+                        {drop.model_id}
+                      </Link>
+                    </td>
+                    <td>{pricingFieldLabel(drop.field)}</td>
+                    <td>
+                      <span className="price-cell price-cell--muted">
+                        {formatPerMillionUsd(drop.old_per_million_usd)}
+                      </span>
+                    </td>
+                    <td>
+                      <span className="price-cell">
+                        {formatPerMillionUsd(drop.new_per_million_usd)}
+                      </span>
+                    </td>
+                    <td>
+                      <span className="drop-badge">
+                        −{formatPct(drop.pct_drop)}
+                      </span>
+                    </td>
+                    <td>
+                      <span className="price-cell price-cell--free">
+                        {formatPerMillionUsd(drop.saved_per_million_usd)}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
       )}
 
-      <h2 style={{ fontSize: "1.125rem", marginBottom: "0.75rem" }}>
-        Drops in the last 7 days
-      </h2>
-      {recent.length === 0 ? (
-        <p className="muted">No recorded events in the last 7 days.</p>
-      ) : (
-        <div className="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>When</th>
-                <th>Model</th>
-                <th>Field</th>
-                <th>Drop</th>
-                <th>Saved</th>
-              </tr>
-            </thead>
-            <tbody>
-              {recent.map((event, index) => (
-                <tr key={`${event.detected_at}-${event.model_id}-${index}`}>
-                  <td className="mono">
-                    {new Date(event.detected_at).toLocaleString()}
-                  </td>
-                  <td>
-                    <Link
-                      to={`/models/${encodeURIComponent(event.model_id)}`}
-                    >
-                      {event.model_id}
-                    </Link>
-                  </td>
-                  <td>{pricingFieldLabel(event.field)}</td>
-                  <td className="drop-pct">{formatPct(event.pct_drop)}</td>
-                  <td className="mono">
-                    {formatPerMillionUsd(event.saved_per_million_usd)}
-                  </td>
+      <section className="table-panel">
+        <h2 className="section-title">Last 7 days</h2>
+        {recent.length === 0 ? (
+          <p className="muted">No recorded events in the last 7 days.</p>
+        ) : (
+          <div className="data-table-wrap">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>When</th>
+                  <th>Model</th>
+                  <th>Field</th>
+                  <th>Drop</th>
+                  <th>Saved</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
-    </>
+              </thead>
+              <tbody>
+                {recent.map((event, index) => (
+                  <tr key={`${event.detected_at}-${event.model_id}-${index}`}>
+                    <td className="tabular-nums muted">
+                      {new Date(event.detected_at).toLocaleString(undefined, {
+                        month: "short",
+                        day: "numeric",
+                        hour: "2-digit",
+                        minute: "2-digit",
+                      })}
+                    </td>
+                    <td>
+                      <Link
+                        to={`/models/${encodeURIComponent(event.model_id)}`}
+                        className="model-cell__name"
+                      >
+                        {event.model_id}
+                      </Link>
+                    </td>
+                    <td>{pricingFieldLabel(event.field)}</td>
+                    <td>
+                      <span className="drop-badge">
+                        −{formatPct(event.pct_drop)}
+                      </span>
+                    </td>
+                    <td>
+                      <span className="price-cell">
+                        {formatPerMillionUsd(event.saved_per_million_usd)}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+      </section>
+    </div>
   );
 }

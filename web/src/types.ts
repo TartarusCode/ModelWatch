@@ -101,9 +101,23 @@ export interface PriceEventRecord {
   saved_per_million_usd: string;
 }
 
+export interface PriceHistoryPoint {
+  recorded_at: string;
+  prompt_per_million: string | null;
+  completion_per_million: string | null;
+  image_per_million?: string | null;
+  request_per_million?: string | null;
+}
+
+export interface PriceHistoryOutput {
+  generated_at: string;
+  models: Record<string, PriceHistoryPoint[]>;
+}
+
 export interface SiteData {
   meta: BuildMeta;
   models: ModelsOutput;
   priceDrops: PriceDropsOutput;
   priceEvents: PriceEventRecord[];
+  priceHistory: PriceHistoryOutput;
 }

@@ -9,12 +9,15 @@ export function PriceDropBanner({ count }: PriceDropBannerProps) {
     return null;
   }
   return (
-    <div className="banner" role="status">
-      <span>
-        <strong>{count}</strong> significant price{" "}
-        {count === 1 ? "decrease" : "decreases"} since the last snapshot
+    <Link to="/drops" className="drop-alert">
+      <span className="drop-alert__icon" aria-hidden>
+        ↓
       </span>
-      <Link to="/drops">View drops →</Link>
-    </div>
+      <span className="drop-alert__content">
+        <strong>{count}</strong> significant price{" "}
+        {count === 1 ? "decrease" : "decreases"} since last snapshot
+      </span>
+      <span className="drop-alert__cta">View all →</span>
+    </Link>
   );
 }

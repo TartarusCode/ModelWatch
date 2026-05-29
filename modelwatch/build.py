@@ -7,6 +7,7 @@ from pathlib import Path
 from pydantic import ValidationError
 
 from modelwatch.fetch import fetch_all_benchmarks, fetch_models_async
+from modelwatch.history import merge_build_into_history, save_history
 from modelwatch.pricing import (
     PriceDrop,
     PriceDropThresholds,
@@ -260,6 +261,12 @@ async def run_build() -> None:
         previous_output.model_dump_json(indent=2),
         encoding="utf-8",
     )
+
+    history = merge_build_into_history(
+        [(model.id, model.pricing) for model in snapshots],
+        recorded_at=finished,
+    )
+    save_history(history)
 
 
 def main() -> None:

@@ -6,54 +6,104 @@ interface LayoutProps {
   dropCount: number;
 }
 
+function formatRelativeTime(iso: string): string {
+  const then = new Date(iso).getTime();
+  const diffMs = Date.now() - then;
+  const minutes = Math.floor(diffMs / 60_000);
+  if (minutes < 1) {
+    return "just now";
+  }
+  if (minutes < 60) {
+    return `${minutes}m ago`;
+  }
+  const hours = Math.floor(minutes / 60);
+  if (hours < 24) {
+    return `${hours}h ago`;
+  }
+  return new Date(iso).toLocaleDateString();
+}
+
 export function Layout({ meta, dropCount }: LayoutProps) {
   return (
-    <div className="app-shell">
-      <header className="site-header">
-        <h1 className="site-title">
-          <Link to="/">ModelWatch</Link>
-        </h1>
-        <nav className="site-nav">
+    <div className="app">
+      <aside className="sidebar">
+        <div className="sidebar__brand">
+          <Link to="/" className="sidebar__logo">
+            <span className="sidebar__logo-mark" aria-hidden>
+              MW
+            </span>
+            <span className="sidebar__logo-text">ModelWatch</span>
+          </Link>
+        </div>
+        <nav className="sidebar__nav" aria-label="Main">
           <NavLink
             to="/"
             end
-            className={({ isActive }) => (isActive ? "active" : undefined)}
+            className={({ isActive }) =>
+              `sidebar__link${isActive ? " sidebar__link--active" : ""}`
+            }
           >
+            <span className="sidebar__link-icon" aria-hidden>
+              ⊞
+            </span>
             Models
           </NavLink>
           <NavLink
             to="/drops"
-            className={({ isActive }) => (isActive ? "active" : undefined)}
+            className={({ isActive }) =>
+              `sidebar__link${isActive ? " sidebar__link--active" : ""}`
+            }
           >
+            <span className="sidebar__link-icon" aria-hidden>
+              ↓
+            </span>
             Price drops
-            {dropCount > 0 ? ` (${dropCount})` : ""}
+            {dropCount > 0 ? (
+              <span className="sidebar__badge">{dropCount}</span>
+            ) : null}
           </NavLink>
         </nav>
-      </header>
-      <Outlet />
-      <footer className="site-footer">
-        {meta ? (
+        <div className="sidebar__footer">
+          {meta ? (
+            <div className="sidebar__meta">
+              <span className="sidebar__meta-label">Last sync</span>
+              <span className="sidebar__meta-value">
+                {formatRelativeTime(meta.generated_at)}
+              </span>
+              <span className="sidebar__meta-sub">
+                {meta.model_count.toLocaleString()} models
+              </span>
+            </div>
+          ) : null}
+          <div className="sidebar__links">
+            <a
+              href="https://openrouter.ai"
+              target="_blank"
+              rel="noreferrer"
+              className="sidebar__external"
+            >
+              OpenRouter
+            </a>
+            <a
+              href="https://github.com/TartarusCode/ModelWatch"
+              target="_blank"
+              rel="noreferrer"
+              className="sidebar__external"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </aside>
+      <div className="main">
+        <Outlet />
+        <footer className="main-footer">
           <p>
-            Last updated {new Date(meta.generated_at).toLocaleString()} ·{" "}
-            {meta.model_count} models · build took{" "}
-            {meta.build_duration_seconds.toFixed(0)}s
+            Unofficial dashboard — not affiliated with OpenRouter. Data refreshed
+            every 30 minutes via GitHub Actions.
           </p>
-        ) : null}
-        <p className="muted">
-          Unofficial dashboard. Data from{" "}
-          <a href="https://openrouter.ai" target="_blank" rel="noreferrer">
-            OpenRouter
-          </a>
-          .{" "}
-          <a
-            href="https://github.com/TartarusCode/ModelWatch"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Source
-          </a>
-        </p>
-      </footer>
+        </footer>
+      </div>
     </div>
   );
 }

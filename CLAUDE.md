@@ -37,6 +37,7 @@ Implemented in `modelwatch/pricing.py`:
 ## Gotchas
 
 - OpenRouter uses per-token price `-1` for routers/variable pricing (e.g. `openrouter/auto`). Treat as "Varies", never multiply by 1M.
+- Price history in `web/public/data/price-history.json` — appends on each build when pricing changes (max 500 points/model).
 - First build has no `previous.json` → no price drops until the second run.
 - Most models return empty benchmark payloads; UI must handle `empty` status.
 - OpenAPI lists models API auth as required; unauthenticated fetch often works but key improves reliability.

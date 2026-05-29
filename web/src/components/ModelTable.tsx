@@ -2,7 +2,6 @@ import {
   createColumnHelper,
   flexRender,
   getCoreRowModel,
-  getFilteredRowModel,
   getSortedRowModel,
   useReactTable,
   type SortingState,
@@ -10,12 +9,11 @@ import {
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { hasBenchmarkData } from "../lib/data";
-import {
-  compareTokenPrices,
-  formatPerMillion,
-  providerFromModelId,
-} from "../lib/pricing";
+import { compareTokenPrices, providerFromModelId } from "../lib/pricing";
 import type { EnrichedModel } from "../types";
+import { FilterChip } from "./FilterChip";
+import { PriceCell } from "./PriceCell";
+import { ProviderBadge } from "./ProviderBadge";
 
 const columnHelper = createColumnHelper<EnrichedModel>();
 
@@ -25,7 +23,7 @@ interface ModelTableProps {
 
 export function ModelTable({ models }: ModelTableProps) {
   const [sorting, setSorting] = useState<SortingState>([
-    { id: "name", desc: false },
+    { id: "prompt", desc: false },
   ]);
   const [globalFilter, setGlobalFilter] = useState("");
   const [providerFilter, setProviderFilter] = useState("");
@@ -40,7 +38,9 @@ export function ModelTable({ models }: ModelTableProps) {
   }, [models]);
 
   const filteredData = useMemo(() => {
-    const minCtx = minContext ? Number.parseInt(minContext, 10) : 0;
+    const minCtx = minContext
+      ? Number.parseInt(minContext, 10) * 1000
+      : 0;
     return models.filter((row) => {
       const { model, benchmarks } = row;
       if (providerFilter && providerFromModelId(model.id) !== providerFilter) {
@@ -86,66 +86,66 @@ export function ModelTable({ models }: ModelTableProps) {
       columnHelper.accessor((row) => row.model.name, {
         id: "name",
         header: "Model",
-        cell: (info) => (
-          <Link to={`/models/${encodeURIComponent(info.row.original.model.id)}`}>
-            {info.getValue()}
-          </Link>
-        ),
+        cell: (info) => {
+          const { model } = info.row.original;
+          return (
+            <div className="model-cell">
+              <Link
+                to={`/models/${encodeURIComponent(model.id)}`}
+                className="model-cell__name"
+              >
+                {info.getValue()}
+              </Link>
+              <span className="model-cell__id">{model.id}</span>
+            </div>
+          );
+        },
       }),
       columnHelper.accessor((row) => providerFromModelId(row.model.id), {
         id: "provider",
         header: "Provider",
+        cell: (info) => <ProviderBadge provider={info.getValue()} />,
       }),
       columnHelper.accessor((row) => row.model.pricing.prompt, {
         id: "prompt",
-        header: "Prompt $/M",
+        header: "Prompt",
         sortingFn: (a, b) =>
           compareTokenPrices(
             a.original.model.pricing.prompt,
             b.original.model.pricing.prompt,
           ),
-        cell: (info) => (
-          <span className="mono">{formatPerMillion(info.getValue())}</span>
-        ),
+        cell: (info) => <PriceCell perToken={info.getValue()} />,
       }),
       columnHelper.accessor((row) => row.model.pricing.completion, {
         id: "completion",
-        header: "Completion $/M",
+        header: "Completion",
         sortingFn: (a, b) =>
           compareTokenPrices(
             a.original.model.pricing.completion,
             b.original.model.pricing.completion,
           ),
-        cell: (info) => (
-          <span className="mono">{formatPerMillion(info.getValue())}</span>
-        ),
+        cell: (info) => <PriceCell perToken={info.getValue()} />,
       }),
       columnHelper.accessor((row) => row.model.context_length ?? 0, {
         id: "context",
         header: "Context",
         cell: (info) => {
           const v = info.row.original.model.context_length;
-          return v ? v.toLocaleString() : "—";
+          return (
+            <span className="tabular-nums">
+              {v ? `${(v / 1000).toFixed(0)}k` : "—"}
+            </span>
+          );
         },
       }),
-      columnHelper.accessor(
-        (row) => row.model.architecture.output_modalities.join(", "),
-        {
-          id: "modalities",
-          header: "Output",
-          cell: (info) => (
-            <span className="muted">{info.getValue() || "—"}</span>
-          ),
-        },
-      ),
       columnHelper.accessor((row) => hasBenchmarkData(row.benchmarks), {
         id: "benchmarks",
-        header: "Benchmarks",
+        header: "Bench",
         cell: (info) =>
           info.getValue() ? (
-            <span className="badge ok">Data</span>
+            <span className="status-pill status-pill--ok">Yes</span>
           ) : (
-            <span className="badge empty">None</span>
+            <span className="status-pill">—</span>
           ),
       }),
     ],
@@ -155,24 +155,37 @@ export function ModelTable({ models }: ModelTableProps) {
   const table = useReactTable({
     data: filteredData,
     columns,
-    state: { sorting, globalFilter },
+    state: { sorting },
     onSortingChange: setSorting,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
-    getFilteredRowModel: getFilteredRowModel(),
   });
 
+  const activeFilterCount =
+    (providerFilter ? 1 : 0) +
+    (minContext ? 1 : 0) +
+    (benchmarkOnly ? 1 : 0) +
+    (toolsOnly ? 1 : 0) +
+    (reasoningOnly ? 1 : 0);
+
   return (
-    <>
-      <div className="filters">
-        <input
-          type="search"
-          placeholder="Search models…"
-          value={globalFilter}
-          onChange={(e) => setGlobalFilter(e.target.value)}
-          aria-label="Search models"
-        />
+    <section className="table-panel">
+      <div className="table-toolbar">
+        <div className="search-field">
+          <span className="search-field__icon" aria-hidden>
+            ⌕
+          </span>
+          <input
+            type="search"
+            className="search-field__input"
+            placeholder="Search by name or ID…"
+            value={globalFilter}
+            onChange={(e) => setGlobalFilter(e.target.value)}
+            aria-label="Search models"
+          />
+        </div>
         <select
+          className="select-field"
           value={providerFilter}
           onChange={(e) => setProviderFilter(e.target.value)}
           aria-label="Filter by provider"
@@ -186,41 +199,54 @@ export function ModelTable({ models }: ModelTableProps) {
         </select>
         <input
           type="number"
-          placeholder="Min context"
+          className="input-field input-field--narrow"
+          placeholder="Min ctx (k)"
           value={minContext}
           onChange={(e) => setMinContext(e.target.value)}
-          aria-label="Minimum context length"
+          aria-label="Minimum context in tokens"
         />
-        <label>
-          <input
-            type="checkbox"
-            checked={benchmarkOnly}
-            onChange={(e) => setBenchmarkOnly(e.target.checked)}
-          />{" "}
-          Has benchmarks
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            checked={toolsOnly}
-            onChange={(e) => setToolsOnly(e.target.checked)}
-          />{" "}
-          Tools
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            checked={reasoningOnly}
-            onChange={(e) => setReasoningOnly(e.target.checked)}
-          />{" "}
-          Reasoning
-        </label>
       </div>
-      <p className="muted" style={{ marginBottom: "0.75rem" }}>
-        Showing {filteredData.length} of {models.length} models
-      </p>
-      <div className="table-wrap">
-        <table>
+      <div className="filter-chips">
+        <FilterChip
+          label="Has benchmarks"
+          active={benchmarkOnly}
+          onToggle={() => setBenchmarkOnly((v) => !v)}
+        />
+        <FilterChip
+          label="Tools"
+          active={toolsOnly}
+          onToggle={() => setToolsOnly((v) => !v)}
+        />
+        <FilterChip
+          label="Reasoning"
+          active={reasoningOnly}
+          onToggle={() => setReasoningOnly((v) => !v)}
+        />
+        {activeFilterCount > 0 ? (
+          <button
+            type="button"
+            className="filter-clear"
+            onClick={() => {
+              setProviderFilter("");
+              setMinContext("");
+              setBenchmarkOnly(false);
+              setToolsOnly(false);
+              setReasoningOnly(false);
+            }}
+          >
+            Clear filters
+          </button>
+        ) : null}
+      </div>
+      <div className="table-panel__meta">
+        <span>
+          Showing <strong>{filteredData.length}</strong> of{" "}
+          {models.length.toLocaleString()}
+        </span>
+        <span className="muted">Prices per 1M tokens</span>
+      </div>
+      <div className="data-table-wrap">
+        <table className="data-table">
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (
               <tr key={headerGroup.id}>
@@ -228,33 +254,49 @@ export function ModelTable({ models }: ModelTableProps) {
                   <th
                     key={header.id}
                     onClick={header.column.getToggleSortingHandler()}
+                    className={
+                      header.column.getCanSort() ? "data-table__sortable" : ""
+                    }
                   >
-                    {flexRender(
-                      header.column.columnDef.header,
-                      header.getContext(),
-                    )}
-                    {{
-                      asc: " ↑",
-                      desc: " ↓",
-                    }[header.column.getIsSorted() as string] ?? ""}
+                    <span className="th-inner">
+                      {flexRender(
+                        header.column.columnDef.header,
+                        header.getContext(),
+                      )}
+                      {{
+                        asc: " ↑",
+                        desc: " ↓",
+                      }[header.column.getIsSorted() as string] ?? null}
+                    </span>
                   </th>
                 ))}
               </tr>
             ))}
           </thead>
           <tbody>
-            {table.getRowModel().rows.map((row) => (
-              <tr key={row.id}>
-                {row.getVisibleCells().map((cell) => (
-                  <td key={cell.id}>
-                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                  </td>
-                ))}
+            {table.getRowModel().rows.length === 0 ? (
+              <tr>
+                <td colSpan={columns.length} className="data-table__empty">
+                  No models match your filters.
+                </td>
               </tr>
-            ))}
+            ) : (
+              table.getRowModel().rows.map((row) => (
+                <tr key={row.id}>
+                  {row.getVisibleCells().map((cell) => (
+                    <td key={cell.id}>
+                      {flexRender(
+                        cell.column.columnDef.cell,
+                        cell.getContext(),
+                      )}
+                    </td>
+                  ))}
+                </tr>
+              ))
+            )}
           </tbody>
         </table>
       </div>
-    </>
+    </section>
   );
 }
