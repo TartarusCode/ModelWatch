@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30T04:31:10.725315Z",
+  "generated_at": "2026-05-30T07:34:24.005624Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -15749,10 +15749,10 @@
       "pricing": {
         "completion": "0.000001",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000139",
+        "prompt": "0.00000014",
         "request": null,
         "web_search": null
       },
@@ -15780,7 +15780,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 262144
       }
     },
     "qwen/qwen3.5-397b-a17b": {
