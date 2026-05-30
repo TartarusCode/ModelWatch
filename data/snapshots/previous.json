@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30T09:48:35.331983Z",
+  "generated_at": "2026-05-30T11:10:21.516557Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -6982,7 +6982,7 @@
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000279",
+        "prompt": "0.00000026",
         "request": null,
         "web_search": null
       },
@@ -7010,7 +7010,7 @@
       "top_provider": {
         "context_length": 196608,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": null
       }
     },
     "mistralai/codestral-2508": {
@@ -12367,7 +12367,7 @@
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000003",
+        "prompt": "0.000000029",
         "request": null,
         "web_search": null
       },
@@ -12395,7 +12395,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": null
       }
     },
     "openai/gpt-oss-20b:free": {
