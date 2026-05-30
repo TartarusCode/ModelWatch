@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30T20:03:10.815815Z",
+  "generated_at": "2026-05-30T21:29:54.181141Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -6253,6 +6253,8 @@
         "stop",
         "structured_outputs",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_k",
         "top_p"
       ],
@@ -14236,12 +14238,12 @@
       "id": "qwen/qwen3-235b-a22b-thinking-2507",
       "name": "Qwen: Qwen3 235B A22B Thinking 2507",
       "pricing": {
-        "completion": "0.000001495",
+        "completion": "0.0000001",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.0000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001495",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -14265,9 +14267,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 262144
       }
     },
     "qwen/qwen3-30b-a3b": {
@@ -17360,59 +17362,6 @@
         "context_length": 6144,
         "is_moderated": false,
         "max_completion_tokens": 4096
-      }
-    },
-    "upstage/solar-pro-3": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "upstage/solar-pro-3",
-      "context_length": 128000,
-      "created": 1769481200,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "Solar Pro 3 is Upstage's powerful Mixture-of-Experts (MoE) language model. With 102B total parameters and 12B active parameters per forward pass, it delivers exceptional performance while maintaining computational efficiency. Optimized...",
-      "expiration_date": null,
-      "id": "upstage/solar-pro-3",
-      "name": "Upstage: Solar Pro 3",
-      "pricing": {
-        "completion": "0.0000006",
-        "image": null,
-        "input_cache_read": "0.000000015",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000015",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools"
-      ],
-      "top_provider": {
-        "context_length": 128000,
-        "is_moderated": false,
-        "max_completion_tokens": null
       }
     },
     "writer/palmyra-x5": {
