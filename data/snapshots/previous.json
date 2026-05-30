@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30T12:44:06.474419Z",
+  "generated_at": "2026-05-30T14:22:13.886093Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -7392,57 +7392,6 @@
         "context_length": 262144,
         "is_moderated": false,
         "max_completion_tokens": null
-      }
-    },
-    "mistralai/mistral-7b-instruct-v0.1": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": "mistral",
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Mistral"
-      },
-      "canonical_slug": "mistralai/mistral-7b-instruct-v0.1",
-      "context_length": 4096,
-      "created": 1695859200,
-      "default_parameters": {
-        "temperature": 0.3
-      },
-      "description": "A 7.3B parameter model that outperforms Llama 2 13B on all benchmarks, with optimizations for speed and context length.",
-      "expiration_date": "2026-05-30",
-      "id": "mistralai/mistral-7b-instruct-v0.1",
-      "name": "Mistral: Mistral 7B Instruct v0.1",
-      "pricing": {
-        "completion": "0.00000019",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000011",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 2824,
-        "is_moderated": false,
-        "max_completion_tokens": 2824
       }
     },
     "mistralai/mistral-large": {
