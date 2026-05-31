@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-30T23:50:04.480909Z",
+  "generated_at": "2026-05-31T02:05:54.699606Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -218,54 +218,6 @@
         "context_length": 32768,
         "is_moderated": false,
         "max_completion_tokens": 32768
-      }
-    },
-    "alfredpros/codellama-7b-instruct-solidity": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": "alpaca",
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "alfredpros/codellama-7b-instruct-solidity",
-      "context_length": 4096,
-      "created": 1744641874,
-      "default_parameters": {},
-      "description": "A finetuned 7 billion parameters Code LLaMA - Instruct model to generate Solidity smart contract using 4-bit QLoRA finetuning provided by PEFT library.",
-      "expiration_date": null,
-      "id": "alfredpros/codellama-7b-instruct-solidity",
-      "name": "AlfredPros: CodeLLaMa 7B Instruct Solidity",
-      "pricing": {
-        "completion": "0.0000012",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000008",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 4096,
-        "is_moderated": false,
-        "max_completion_tokens": 4096
       }
     },
     "allenai/olmo-3-32b-think": {
@@ -1763,112 +1715,6 @@
         "context_length": 131072,
         "is_moderated": false,
         "max_completion_tokens": 64000
-      }
-    },
-    "baidu/ernie-4.5-21b-a3b": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "baidu/ernie-4.5-21b-a3b",
-      "context_length": 131072,
-      "created": 1755034167,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": 0.8,
-        "top_p": 0.8
-      },
-      "description": "A sophisticated text-based Mixture-of-Experts (MoE) model featuring 21B total parameters with 3B activated per token, delivering exceptional multimodal understanding and generation through heterogeneous MoE structures and modality-isolated routing. Supporting an...",
-      "expiration_date": null,
-      "id": "baidu/ernie-4.5-21b-a3b",
-      "name": "Baidu: ERNIE 4.5 21B A3B",
-      "pricing": {
-        "completion": "0.00000028",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000007",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 120000,
-        "is_moderated": false,
-        "max_completion_tokens": 8000
-      }
-    },
-    "baidu/ernie-4.5-21b-a3b-thinking": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "baidu/ernie-4.5-21b-a3b-thinking",
-      "context_length": 131072,
-      "created": 1760048887,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": 0.6,
-        "top_p": 0.95
-      },
-      "description": "ERNIE-4.5-21B-A3B-Thinking is Baidu's upgraded lightweight MoE model, refined to boost reasoning depth and quality for top-tier performance in logical puzzles, math, science, coding, text generation, and expert-level academic benchmarks.",
-      "expiration_date": null,
-      "id": "baidu/ernie-4.5-21b-a3b-thinking",
-      "name": "Baidu: ERNIE 4.5 21B A3B Thinking",
-      "pricing": {
-        "completion": "0.00000028",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000007",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 65536
       }
     },
     "baidu/ernie-4.5-300b-a47b": {
@@ -6896,59 +6742,6 @@
         "context_length": 196608,
         "is_moderated": false,
         "max_completion_tokens": 196608
-      }
-    },
-    "minimax/minimax-m2.5:free": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "minimax/minimax-m2.5-20260211",
-      "context_length": 204800,
-      "created": 1770908502,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": 1,
-        "top_k": null,
-        "top_p": 0.95
-      },
-      "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1...",
-      "expiration_date": null,
-      "id": "minimax/minimax-m2.5:free",
-      "name": "MiniMax: MiniMax M2.5 (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "seed",
-        "stop",
-        "temperature",
-        "tools"
-      ],
-      "top_provider": {
-        "context_length": 196608,
-        "is_moderated": true,
-        "max_completion_tokens": 8192
       }
     },
     "minimax/minimax-m2.7": {
@@ -13790,12 +13583,9 @@
         "min_p",
         "presence_penalty",
         "repetition_penalty",
-        "response_format",
         "seed",
         "stop",
         "temperature",
-        "tool_choice",
-        "tools",
         "top_k",
         "top_p"
       ],
