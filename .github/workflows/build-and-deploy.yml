@@ -2,7 +2,8 @@ name: Build and deploy
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    # Target ~30m cadence. Avoid :00/:30 — GitHub delays scheduled runs at peak minutes.
+    - cron: "17,47 * * * *"
   workflow_dispatch:
 
 permissions:
