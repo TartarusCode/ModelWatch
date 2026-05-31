@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T19:41:28.559623Z",
+  "generated_at": "2026-05-31T20:42:08.452544Z",
   "models": [
     {
       "benchmarks": {
@@ -49739,6 +49739,117 @@
           "context_length": 6144,
           "is_moderated": false,
           "max_completion_tokens": 4096
+        }
+      }
+    },
+    {
+      "benchmarks": {
+        "artificial_analysis": [
+          {
+            "aa_id": "b89c4faf-219e-4171-a1aa-e3bd2fd0a924",
+            "aa_name": "Solar Pro 3",
+            "aa_slug": "solar-pro-3",
+            "benchmark_data": {
+              "evaluations": {
+                "aa_omniscience_accuracy": 0.181,
+                "aa_omniscience_non_hallucination_rate": 0.122,
+                "artificial_analysis_agentic_index": 34.9,
+                "artificial_analysis_coding_index": 13.3,
+                "artificial_analysis_intelligence_index": 25.9,
+                "critpt": 0,
+                "gdpval_aa": 0.087,
+                "gpqa": 0.724,
+                "hle": 0.101,
+                "ifbench": 0.712,
+                "lcr": 0.27,
+                "scicode": 0.247,
+                "tau2": 0.863,
+                "terminalbench_hard": 0.076
+              },
+              "model_type": "llm"
+            },
+            "heuristic_openrouter_slug": "upstage/solar-pro-3",
+            "last_updated_at": 1780228845177,
+            "openrouter_slug": null,
+            "percentiles": {
+              "agentic_percentile": 53,
+              "coding_percentile": 23,
+              "intelligence_percentile": 44
+            },
+            "permaslug": "upstage/solar-pro-3"
+          }
+        ],
+        "artificial_analysis_status": {
+          "error": null,
+          "status": "ok"
+        },
+        "artificial_analysis_summary": {
+          "aa_slug": "solar-pro-3",
+          "agentic_index": 34.9,
+          "agentic_percentile": 53,
+          "coding_index": 13.3,
+          "coding_percentile": 23,
+          "intelligence_index": 25.9,
+          "intelligence_percentile": 44,
+          "variant_name": "Solar Pro 3"
+        },
+        "design_arena": null,
+        "design_arena_status": {
+          "error": null,
+          "status": "empty"
+        }
+      },
+      "model": {
+        "architecture": {
+          "input_modalities": [
+            "text"
+          ],
+          "instruct_type": null,
+          "modality": "text->text",
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other"
+        },
+        "canonical_slug": "upstage/solar-pro-3",
+        "context_length": 128000,
+        "created": 1769481200,
+        "default_parameters": {
+          "frequency_penalty": null,
+          "presence_penalty": null,
+          "repetition_penalty": null,
+          "temperature": null,
+          "top_k": null,
+          "top_p": null
+        },
+        "description": "Solar Pro 3 is Upstage's powerful Mixture-of-Experts (MoE) language model. With 102B total parameters and 12B active parameters per forward pass, it delivers exceptional performance while maintaining computational efficiency. Optimized...",
+        "expiration_date": null,
+        "id": "upstage/solar-pro-3",
+        "name": "Upstage: Solar Pro 3",
+        "pricing": {
+          "completion": "0.0000006",
+          "image": null,
+          "input_cache_read": "0.000000015",
+          "input_cache_write": null,
+          "internal_reasoning": null,
+          "prompt": "0.00000015",
+          "request": null,
+          "web_search": null
+        },
+        "supported_parameters": [
+          "include_reasoning",
+          "max_tokens",
+          "reasoning",
+          "response_format",
+          "structured_outputs",
+          "temperature",
+          "tool_choice",
+          "tools"
+        ],
+        "top_provider": {
+          "context_length": 128000,
+          "is_moderated": false,
+          "max_completion_tokens": null
         }
       }
     },
