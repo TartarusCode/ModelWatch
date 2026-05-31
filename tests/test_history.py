@@ -38,7 +38,7 @@ def test_append_build_adds_point_per_model() -> None:
     assert len(updated.models["acme/model"]) == 1
 
 
-def test_append_build_skips_duplicate_snapshot() -> None:
+def test_append_build_records_snapshot_on_every_build() -> None:
     at = datetime(2026, 5, 29, 12, 0, tzinfo=UTC)
     pricing = ModelPricing(prompt="0.000002", completion="0.000010")
     point = PriceHistoryPoint(
@@ -57,7 +57,8 @@ def test_append_build_skips_duplicate_snapshot() -> None:
         pricing=pricing,
         recorded_at=later,
     )
-    assert len(updated.models["acme/model"]) == 1
+    assert len(updated.models["acme/model"]) == 2
+    assert updated.models["acme/model"][-1].recorded_at == later
 
 
 def test_append_build_records_cache_read_in_history() -> None:

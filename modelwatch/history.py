@@ -46,13 +46,6 @@ def _per_million_field_name(field: str) -> str:
     return f"{field}_per_million"
 
 
-def _point_field_values(point: PriceHistoryPoint) -> dict[str, Decimal | None]:
-    return {
-        field: getattr(point, _per_million_field_name(field))
-        for field in PRICING_FIELDS
-    }
-
-
 def pricing_to_history_fields(pricing: ModelPricing) -> dict[str, Decimal | None]:
     raw = pricing.model_dump()
     fields: dict[str, Decimal | None] = {}
@@ -61,13 +54,6 @@ def pricing_to_history_fields(pricing: ModelPricing) -> dict[str, Decimal | None
         if isinstance(value, str):
             fields[field] = _token_to_per_million(value)
     return fields
-
-
-def _points_equal(
-    left: PriceHistoryPoint,
-    right: PriceHistoryPoint,
-) -> bool:
-    return _point_field_values(left) == _point_field_values(right)
 
 
 def append_build_to_history(
@@ -85,8 +71,6 @@ def append_build_to_history(
         },
     )
     existing = list(store.models.get(model_id, []))
-    if existing and _points_equal(existing[-1], point):
-        return store
     updated_points = [*existing, point][-MAX_POINTS_PER_MODEL:]
     updated_models = {**store.models, model_id: updated_points}
     return PriceHistoryStore(

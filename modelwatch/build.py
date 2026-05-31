@@ -27,6 +27,7 @@ from modelwatch.pricing import (
     PriceDropThresholds,
     detect_price_drops,
 )
+from modelwatch.stable_output import stabilize_enriched_models
 from modelwatch.schemas import (
     BenchmarkFetchStatus,
     BuildMeta,
@@ -264,6 +265,8 @@ async def run_build() -> None:
         elif benchmarks.artificial_analysis_status.status == "empty":
             benchmark_empty += 1
         enriched.append(EnrichedModel(model=model, benchmarks=benchmarks))
+
+    enriched = stabilize_enriched_models(enriched)
 
     previous = _load_previous()
     new_additions = detect_new_models(snapshots, previous=previous)
