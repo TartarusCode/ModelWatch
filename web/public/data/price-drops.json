@@ -1,6 +1,25 @@
 {
-  "drops": [],
-  "generated_at": "2026-06-01T13:18:08.048139Z",
+  "drops": [
+    {
+      "detected_at": "2026-06-01T19:13:47.701502Z",
+      "field": "completion",
+      "model_id": "qwen/qwen3-30b-a3b-instruct-2507",
+      "new_per_million_usd": "0.171600",
+      "old_per_million_usd": "0.300000",
+      "pct_drop": 0.428,
+      "saved_per_million_usd": "0.128400"
+    },
+    {
+      "detected_at": "2026-06-01T19:13:47.701502Z",
+      "field": "completion",
+      "model_id": "deepseek/deepseek-chat",
+      "new_per_million_usd": "0.800100",
+      "old_per_million_usd": "0.914400",
+      "pct_drop": 0.125,
+      "saved_per_million_usd": "0.114300"
+    }
+  ],
+  "generated_at": "2026-06-01T19:13:51.076186Z",
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05

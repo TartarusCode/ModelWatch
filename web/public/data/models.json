@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T13:18:04.317089Z",
+  "generated_at": "2026-06-01T19:13:47.701502Z",
   "models": [
     {
       "benchmarks": {
@@ -7640,12 +7640,12 @@
         "id": "deepseek/deepseek-chat",
         "name": "DeepSeek: DeepSeek V3",
         "pricing": {
-          "completion": "0.0000009144",
+          "completion": "0.0000008001",
           "image": null,
           "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.0000002288",
+          "prompt": "0.0000002002",
           "request": null,
           "web_search": null
         },
@@ -9177,12 +9177,12 @@
         "id": "deepseek/deepseek-v3.2",
         "name": "DeepSeek: DeepSeek V3.2",
         "pricing": {
-          "completion": "0.000000378",
+          "completion": "0.0000003432",
           "image": null,
-          "input_cache_read": "0.0000000252",
+          "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.000000252",
+          "prompt": "0.0000002288",
           "request": null,
           "web_search": null
         },
@@ -9206,9 +9206,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 131072,
+          "context_length": 128000,
           "is_moderated": false,
-          "max_completion_tokens": 65536
+          "max_completion_tokens": 64000
         }
       }
     },
@@ -20716,7 +20716,7 @@
           "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.00000026",
+          "prompt": "0.000000279",
           "request": null,
           "web_search": null
         },
@@ -20744,7 +20744,7 @@
         "top_provider": {
           "context_length": 196608,
           "is_moderated": false,
-          "max_completion_tokens": null
+          "max_completion_tokens": 131072
         }
       }
     },
@@ -42855,7 +42855,7 @@
           "tokenizer": "Qwen3"
         },
         "canonical_slug": "qwen/qwen3-30b-a3b-instruct-2507",
-        "context_length": 262144,
+        "context_length": 131072,
         "created": 1753806965,
         "default_parameters": {},
         "description": "Qwen3-30B-A3B-Instruct-2507 is a 30.5B-parameter mixture-of-experts language model from Qwen, with 3.3B active parameters per inference. It operates in non-thinking mode and is designed for high-quality instruction following, multilingual understanding, and...",
@@ -42863,12 +42863,12 @@
         "id": "qwen/qwen3-30b-a3b-instruct-2507",
         "name": "Qwen: Qwen3 30B A3B Instruct 2507",
         "pricing": {
-          "completion": "0.0000003",
+          "completion": "0.0000001716",
           "image": null,
           "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.00000009",
+          "prompt": "0.0000000428",
           "request": null,
           "web_search": null
         },
@@ -42890,9 +42890,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 262144,
+          "context_length": 128000,
           "is_moderated": false,
-          "max_completion_tokens": 262144
+          "max_completion_tokens": 32000
         }
       }
     },
