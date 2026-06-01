@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T02:03:48.037019Z",
+  "generated_at": "2026-06-01T07:23:50.802769Z",
   "models": [
     {
       "benchmarks": {
@@ -21152,7 +21152,7 @@
           "repetition_penalty": null,
           "temperature": 1,
           "top_k": null,
-          "top_p": 0.9
+          "top_p": 0.95
         },
         "description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,...",
         "expiration_date": null,
@@ -21181,7 +21181,7 @@
         "top_provider": {
           "context_length": 524288,
           "is_moderated": false,
-          "max_completion_tokens": 131072
+          "max_completion_tokens": 512000
         }
       }
     },
@@ -49484,12 +49484,12 @@
         "id": "tencent/hy3-preview",
         "name": "Tencent: Hy3 preview",
         "pricing": {
-          "completion": "0.00000021",
+          "completion": "0.00000026",
           "image": null,
-          "input_cache_read": "0.000000021",
+          "input_cache_read": "0.000000029",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.000000063",
+          "prompt": "0.000000066",
           "request": null,
           "web_search": null
         },
@@ -49510,7 +49510,7 @@
         "top_provider": {
           "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": null
+          "max_completion_tokens": 262144
         }
       }
     },
@@ -54211,7 +54211,7 @@
         "id": "z-ai/glm-5",
         "name": "Z.ai: GLM 5",
         "pricing": {
-          "completion": "0.00000192",
+          "completion": "0.00000208",
           "image": null,
           "input_cache_read": "0.00000012",
           "input_cache_write": null,
@@ -54242,7 +54242,7 @@
         "top_provider": {
           "context_length": 202752,
           "is_moderated": false,
-          "max_completion_tokens": null
+          "max_completion_tokens": 16384
         }
       }
     },
@@ -55007,7 +55007,7 @@
         "top_provider": {
           "context_length": 202752,
           "is_moderated": false,
-          "max_completion_tokens": null
+          "max_completion_tokens": 131072
         }
       }
     },
