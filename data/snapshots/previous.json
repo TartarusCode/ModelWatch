@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-01T19:13:51.076186Z",
+  "generated_at": "2026-06-01T22:17:48.628595Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -16551,12 +16551,12 @@
       "id": "tencent/hy3-preview",
       "name": "Tencent: Hy3 preview",
       "pricing": {
-        "completion": "0.00000026",
+        "completion": "0.00000021",
         "image": null,
-        "input_cache_read": "0.000000029",
+        "input_cache_read": "0.000000021",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000066",
+        "prompt": "0.000000063",
         "request": null,
         "web_search": null
       },
@@ -16577,7 +16577,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": null
       }
     },
     "thedrummer/cydonia-24b-v4.1": {
