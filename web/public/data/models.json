@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T17:50:34.543434Z",
+  "generated_at": "2026-06-02T21:24:44.287973Z",
   "models": [
     {
       "benchmarks": {
@@ -1948,7 +1948,6 @@
           "temperature",
           "tool_choice",
           "tools",
-          "top_k",
           "top_p"
         ],
         "top_provider": {
@@ -40261,6 +40260,65 @@
           "top_k",
           "top_p"
         ],
+        "top_provider": {
+          "context_length": null,
+          "is_moderated": false,
+          "max_completion_tokens": null
+        }
+      }
+    },
+    {
+      "benchmarks": {
+        "artificial_analysis": [],
+        "artificial_analysis_status": {
+          "error": null,
+          "status": "empty"
+        },
+        "artificial_analysis_summary": null,
+        "design_arena": null,
+        "design_arena_status": {
+          "error": null,
+          "status": "empty"
+        }
+      },
+      "model": {
+        "architecture": {
+          "input_modalities": [
+            "text"
+          ],
+          "instruct_type": null,
+          "modality": "text->text",
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Router"
+        },
+        "canonical_slug": "openrouter/fusion",
+        "context_length": 128000,
+        "created": 1778603606,
+        "default_parameters": {
+          "frequency_penalty": null,
+          "presence_penalty": null,
+          "repetition_penalty": null,
+          "temperature": null,
+          "top_k": null,
+          "top_p": null
+        },
+        "description": "Fusion turns your prompt into a small multi-model deliberation. A panel of expert models (see below) analyzes your prompt in parallel with web search and web fetch enabled, then a...",
+        "expiration_date": null,
+        "id": "openrouter/fusion",
+        "name": "OpenRouter: Fusion",
+        "pricing": {
+          "completion": "-1",
+          "image": null,
+          "input_cache_read": null,
+          "input_cache_write": null,
+          "internal_reasoning": null,
+          "prompt": "-1",
+          "request": null,
+          "web_search": null
+        },
+        "supported_parameters": [],
         "top_provider": {
           "context_length": null,
           "is_moderated": false,
