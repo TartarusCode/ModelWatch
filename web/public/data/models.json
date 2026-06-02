@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T05:01:13.444148Z",
+  "generated_at": "2026-06-02T09:18:42.663784Z",
   "models": [
     {
       "benchmarks": {
@@ -6492,112 +6492,6 @@
           "context_length": 131072,
           "is_moderated": false,
           "max_completion_tokens": 64000
-        }
-      }
-    },
-    {
-      "benchmarks": {
-        "artificial_analysis": [
-          {
-            "aa_id": "ae4fe623-80ab-4ea3-8921-70a18ea0fc7e",
-            "aa_name": "ERNIE 4.5 300B A47B",
-            "aa_slug": "ernie-4-5-300b-a47b",
-            "benchmark_data": {
-              "evaluations": {
-                "aa_omniscience_accuracy": 0.187,
-                "aa_omniscience_non_hallucination_rate": 0.329,
-                "artificial_analysis_agentic_index": 0,
-                "artificial_analysis_coding_index": 14.5,
-                "artificial_analysis_intelligence_index": 15,
-                "critpt": 0,
-                "gdpval_aa": null,
-                "gpqa": 0.811,
-                "hle": 0.035,
-                "ifbench": 0.391,
-                "lcr": 0.023,
-                "scicode": 0.315,
-                "tau2": 0,
-                "terminalbench_hard": 0.061
-              },
-              "model_type": "llm"
-            },
-            "heuristic_openrouter_slug": null,
-            "last_updated_at": 1773187231692,
-            "openrouter_slug": "baidu/ernie-4.5-300b-a47b",
-            "percentiles": {
-              "agentic_percentile": 0,
-              "coding_percentile": 29,
-              "intelligence_percentile": 19
-            },
-            "permaslug": "baidu/ernie-4.5-300b-a47b"
-          }
-        ],
-        "artificial_analysis_status": {
-          "error": null,
-          "status": "ok"
-        },
-        "artificial_analysis_summary": {
-          "aa_slug": "ernie-4-5-300b-a47b",
-          "agentic_index": 0.0,
-          "agentic_percentile": 0,
-          "coding_index": 14.5,
-          "coding_percentile": 29,
-          "intelligence_index": 15.0,
-          "intelligence_percentile": 19,
-          "variant_name": "ERNIE 4.5 300B A47B"
-        },
-        "design_arena": null,
-        "design_arena_status": {
-          "error": null,
-          "status": "empty"
-        }
-      },
-      "model": {
-        "architecture": {
-          "input_modalities": [
-            "text"
-          ],
-          "instruct_type": null,
-          "modality": "text->text",
-          "output_modalities": [
-            "text"
-          ],
-          "tokenizer": "Other"
-        },
-        "canonical_slug": "baidu/ernie-4.5-300b-a47b",
-        "context_length": 131072,
-        "created": 1751300139,
-        "default_parameters": {},
-        "description": "ERNIE-4.5-300B-A47B is a 300B parameter Mixture-of-Experts (MoE) language model developed by Baidu as part of the ERNIE 4.5 series. It activates 47B parameters per token and supports text generation in...",
-        "expiration_date": null,
-        "id": "baidu/ernie-4.5-300b-a47b",
-        "name": "Baidu: ERNIE 4.5 300B A47B ",
-        "pricing": {
-          "completion": "0.0000011",
-          "image": null,
-          "input_cache_read": null,
-          "input_cache_write": null,
-          "internal_reasoning": null,
-          "prompt": "0.00000028",
-          "request": null,
-          "web_search": null
-        },
-        "supported_parameters": [
-          "frequency_penalty",
-          "max_tokens",
-          "presence_penalty",
-          "repetition_penalty",
-          "response_format",
-          "seed",
-          "stop",
-          "temperature",
-          "top_k",
-          "top_p"
-        ],
-        "top_provider": {
-          "context_length": 123000,
-          "is_moderated": false,
-          "max_completion_tokens": 12000
         }
       }
     },
