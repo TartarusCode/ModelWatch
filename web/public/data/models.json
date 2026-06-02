@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T13:02:22.347506Z",
+  "generated_at": "2026-06-02T17:50:34.543434Z",
   "models": [
     {
       "benchmarks": {
@@ -16994,12 +16994,12 @@
         "id": "inclusionai/ring-2.6-1t",
         "name": "inclusionAI: Ring-2.6-1T",
         "pricing": {
-          "completion": "0.0000025",
+          "completion": "0.000000625",
           "image": null,
-          "input_cache_read": "0.00000006",
+          "input_cache_read": "0.000000015",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.0000003",
+          "prompt": "0.000000075",
           "request": null,
           "web_search": null
         },
