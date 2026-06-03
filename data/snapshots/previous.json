@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T02:13:08.342880Z",
+  "generated_at": "2026-06-03T07:14:52.574607Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -6640,6 +6640,7 @@
         "web_search": null
       },
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
         "reasoning",
@@ -6647,6 +6648,7 @@
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_p"
       ],
       "top_provider": {
@@ -8148,7 +8150,7 @@
         "top_p": null
       },
       "description": "DeepSeek V3.1 Nex-N1 is the flagship release of the Nex-N1 series — a post-trained model designed to highlight agent autonomy, tool use, and real-world productivity. Nex-N1 demonstrates competitive performance across...",
-      "expiration_date": null,
+      "expiration_date": "2026-06-08",
       "id": "nex-agi/deepseek-v3.1-nex-n1",
       "name": "Nex AGI: DeepSeek V3.1 Nex N1",
       "pricing": {
@@ -17881,7 +17883,7 @@
       "id": "z-ai/glm-5",
       "name": "Z.ai: GLM 5",
       "pricing": {
-        "completion": "0.00000208",
+        "completion": "0.00000192",
         "image": null,
         "input_cache_read": "0.00000012",
         "input_cache_write": null,
@@ -17912,7 +17914,7 @@
       "top_provider": {
         "context_length": 202752,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": null
       }
     },
     "z-ai/glm-5-turbo": {
@@ -18039,7 +18041,7 @@
       "top_provider": {
         "context_length": 202752,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": null
       }
     },
     "z-ai/glm-5v-turbo": {
