@@ -1,25 +1,6 @@
 {
-  "drops": [
-    {
-      "detected_at": "2026-06-02T17:50:34.543434Z",
-      "field": "prompt",
-      "model_id": "inclusionai/ring-2.6-1t",
-      "new_per_million_usd": "0.075000",
-      "old_per_million_usd": "0.300000",
-      "pct_drop": 0.75,
-      "saved_per_million_usd": "0.225000"
-    },
-    {
-      "detected_at": "2026-06-02T17:50:34.543434Z",
-      "field": "completion",
-      "model_id": "inclusionai/ring-2.6-1t",
-      "new_per_million_usd": "0.625000",
-      "old_per_million_usd": "2.500000",
-      "pct_drop": 0.75,
-      "saved_per_million_usd": "1.875000"
-    }
-  ],
-  "generated_at": "2026-06-03T17:20:24.563953Z",
+  "drops": [],
+  "generated_at": "2026-06-03T20:42:18.530238Z",
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05
