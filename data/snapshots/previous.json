@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T07:14:52.574607Z",
+  "generated_at": "2026-06-03T12:13:53.909093Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -6640,7 +6640,6 @@
         "web_search": null
       },
       "supported_parameters": [
-        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
         "reasoning",
@@ -6648,7 +6647,6 @@
         "temperature",
         "tool_choice",
         "tools",
-        "top_k",
         "top_p"
       ],
       "top_provider": {
