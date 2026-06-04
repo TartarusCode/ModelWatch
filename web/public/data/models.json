@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T13:50:23.368327Z",
+  "generated_at": "2026-06-04T17:23:44.304026Z",
   "models": [
     {
       "benchmarks": {
@@ -27322,9 +27322,86 @@
           "frequency_penalty": null,
           "presence_penalty": null,
           "repetition_penalty": null,
-          "temperature": null,
+          "temperature": 1,
           "top_k": null,
-          "top_p": null
+          "top_p": 0.95
+        },
+        "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it...",
+        "expiration_date": null,
+        "id": "nvidia/nemotron-3-ultra-550b-a55b",
+        "name": "NVIDIA: Nemotron 3 Ultra",
+        "pricing": {
+          "completion": "0.0000025",
+          "image": null,
+          "input_cache_read": "0.00000015",
+          "input_cache_write": null,
+          "internal_reasoning": null,
+          "prompt": "0.0000005",
+          "request": null,
+          "web_search": null
+        },
+        "supported_parameters": [
+          "frequency_penalty",
+          "include_reasoning",
+          "logit_bias",
+          "max_tokens",
+          "min_p",
+          "presence_penalty",
+          "reasoning",
+          "repetition_penalty",
+          "response_format",
+          "seed",
+          "stop",
+          "structured_outputs",
+          "temperature",
+          "tool_choice",
+          "tools",
+          "top_k",
+          "top_p"
+        ],
+        "top_provider": {
+          "context_length": 262144,
+          "is_moderated": false,
+          "max_completion_tokens": 16384
+        }
+      }
+    },
+    {
+      "benchmarks": {
+        "artificial_analysis": [],
+        "artificial_analysis_status": {
+          "error": null,
+          "status": "empty"
+        },
+        "artificial_analysis_summary": null,
+        "design_arena": null,
+        "design_arena_status": {
+          "error": null,
+          "status": "empty"
+        }
+      },
+      "model": {
+        "architecture": {
+          "input_modalities": [
+            "text"
+          ],
+          "instruct_type": null,
+          "modality": "text->text",
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other"
+        },
+        "canonical_slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+        "context_length": 1000000,
+        "created": 1780551208,
+        "default_parameters": {
+          "frequency_penalty": null,
+          "presence_penalty": null,
+          "repetition_penalty": null,
+          "temperature": 1,
+          "top_k": null,
+          "top_p": 0.95
         },
         "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it...",
         "expiration_date": null,
@@ -27354,6 +27431,73 @@
           "context_length": 1000000,
           "is_moderated": false,
           "max_completion_tokens": 65536
+        }
+      }
+    },
+    {
+      "benchmarks": {
+        "artificial_analysis": [],
+        "artificial_analysis_status": {
+          "error": null,
+          "status": "empty"
+        },
+        "artificial_analysis_summary": null,
+        "design_arena": null,
+        "design_arena_status": {
+          "error": null,
+          "status": "empty"
+        }
+      },
+      "model": {
+        "architecture": {
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "instruct_type": null,
+          "modality": "text+image->text",
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other"
+        },
+        "canonical_slug": "nvidia/nemotron-3.5-content-safety-20260604",
+        "context_length": 128000,
+        "created": 1780581864,
+        "default_parameters": {
+          "frequency_penalty": null,
+          "presence_penalty": null,
+          "repetition_penalty": null,
+          "temperature": null,
+          "top_k": null,
+          "top_p": null
+        },
+        "description": "NVIDIA Nemotron 3.5 Content Safety is a compact 4B-parameter multimodal guardrail model from NVIDIA, fine-tuned from Google Gemma-3-4B. It moderates both inputs to and responses from LLMs and VLMs, accepting...",
+        "expiration_date": null,
+        "id": "nvidia/nemotron-3.5-content-safety:free",
+        "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
+        "pricing": {
+          "completion": "0",
+          "image": null,
+          "input_cache_read": null,
+          "input_cache_write": null,
+          "internal_reasoning": null,
+          "prompt": "0",
+          "request": null,
+          "web_search": null
+        },
+        "supported_parameters": [
+          "include_reasoning",
+          "max_tokens",
+          "reasoning",
+          "seed",
+          "temperature",
+          "top_p"
+        ],
+        "top_provider": {
+          "context_length": 128000,
+          "is_moderated": false,
+          "max_completion_tokens": 8192
         }
       }
     },
