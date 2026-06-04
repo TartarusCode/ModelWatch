@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T06:57:04.705280Z",
+  "generated_at": "2026-06-04T10:45:28.341347Z",
   "models": [
     {
       "benchmarks": {
@@ -42843,12 +42843,12 @@
         "id": "qwen/qwen3-30b-a3b-instruct-2507",
         "name": "Qwen: Qwen3 30B A3B Instruct 2507",
         "pricing": {
-          "completion": "0.0000001716",
+          "completion": "0.00000019305",
           "image": null,
           "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.0000000428",
+          "prompt": "0.00000004815",
           "request": null,
           "web_search": null
         },
@@ -54875,8 +54875,10 @@
           "logprobs",
           "max_tokens",
           "min_p",
+          "parallel_tool_calls",
           "presence_penalty",
           "reasoning",
+          "reasoning_effort",
           "repetition_penalty",
           "response_format",
           "seed",
