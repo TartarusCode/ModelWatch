@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-04T21:53:58.649432Z",
+  "generated_at": "2026-06-04T23:37:57.076241Z",
   "models": [
     {
       "benchmarks": {
@@ -8461,7 +8461,7 @@
         "created": 1737663169,
         "default_parameters": {},
         "description": "DeepSeek R1 Distill Llama 70B is a distilled large language model based on [Llama-3.3-70B-Instruct](/meta-llama/llama-3.3-70b-instruct), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). The model combines advanced distillation techniques to achieve high performance across...",
-        "expiration_date": null,
+        "expiration_date": "2026-06-11",
         "id": "deepseek/deepseek-r1-distill-llama-70b",
         "name": "DeepSeek: R1 Distill Llama 70B",
         "pricing": {
@@ -17953,7 +17953,7 @@
         "id": "meta-llama/llama-3.1-8b-instruct",
         "name": "Meta: Llama 3.1 8B Instruct",
         "pricing": {
-          "completion": "0.00000005",
+          "completion": "0.00000003",
           "image": null,
           "input_cache_read": null,
           "input_cache_write": null,
@@ -17980,7 +17980,7 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 16384,
+          "context_length": 131072,
           "is_moderated": false,
           "max_completion_tokens": 16384
         }
@@ -27755,7 +27755,7 @@
           "top_p": null
         },
         "description": "NVIDIA-Nemotron-Nano-9B-v2 is a large language model (LLM) trained from scratch by NVIDIA, and designed as a unified model for both reasoning and non-reasoning tasks. It responds to user queries and...",
-        "expiration_date": null,
+        "expiration_date": "2026-06-11",
         "id": "nvidia/nemotron-nano-9b-v2",
         "name": "NVIDIA: Nemotron Nano 9B V2",
         "pricing": {
