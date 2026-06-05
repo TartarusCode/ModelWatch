@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T13:44:07.194853Z",
+  "generated_at": "2026-06-05T16:19:38.077685Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -5367,7 +5367,7 @@
       "created": 1713398400,
       "default_parameters": {},
       "description": "Meta's latest class of model (Llama 3) launched with a variety of sizes & flavors. This 70B instruct-tuned version was optimized for high quality dialogue usecases. It has demonstrated strong...",
-      "expiration_date": null,
+      "expiration_date": "2026-06-19",
       "id": "meta-llama/llama-3-70b-instruct",
       "name": "Meta: Llama 3 70B Instruct",
       "pricing": {
@@ -5415,7 +5415,7 @@
       "created": 1713398400,
       "default_parameters": {},
       "description": "Meta's latest class of model (Llama 3) launched with a variety of sizes & flavors. This 8B instruct-tuned version was optimized for high quality dialogue usecases. It has demonstrated strong...",
-      "expiration_date": null,
+      "expiration_date": "2026-06-19",
       "id": "meta-llama/llama-3-8b-instruct",
       "name": "Meta: Llama 3 8B Instruct",
       "pricing": {
@@ -17485,7 +17485,7 @@
         "top_p": null
       },
       "description": "GLM-4.5 is our latest flagship foundation model, purpose-built for agent-based applications. It leverages a Mixture-of-Experts (MoE) architecture and supports a context length of up to 128k tokens. GLM-4.5 delivers significantly...",
-      "expiration_date": null,
+      "expiration_date": "2026-06-19",
       "id": "z-ai/glm-4.5",
       "name": "Z.ai: GLM 4.5",
       "pricing": {
