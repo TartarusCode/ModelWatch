@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T10:37:58.362893Z",
+  "generated_at": "2026-06-05T13:44:07.194853Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -8178,55 +8178,6 @@
         "max_completion_tokens": 163840
       }
     },
-    "nousresearch/hermes-2-pro-llama-3-8b": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": "chatml",
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Llama3"
-      },
-      "canonical_slug": "nousresearch/hermes-2-pro-llama-3-8b",
-      "context_length": 8192,
-      "created": 1716768000,
-      "default_parameters": {},
-      "description": "Hermes 2 Pro is an upgraded, retrained version of Nous Hermes 2, consisting of an updated and cleaned version of the OpenHermes 2.5 Dataset, as well as a newly introduced...",
-      "expiration_date": "2026-06-05",
-      "id": "nousresearch/hermes-2-pro-llama-3-8b",
-      "name": "NousResearch: Hermes 2 Pro - Llama-3 8B",
-      "pricing": {
-        "completion": "0.00000014",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000014",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 8192,
-        "is_moderated": false,
-        "max_completion_tokens": 8192
-      }
-    },
     "nousresearch/hermes-3-llama-3.1-405b": {
       "architecture": {
         "input_modalities": [
@@ -16218,55 +16169,6 @@
         "context_length": 256000,
         "is_moderated": false,
         "max_completion_tokens": 128000
-      }
-    },
-    "sao10k/l3-euryale-70b": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": "llama3",
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Llama3"
-      },
-      "canonical_slug": "sao10k/l3-euryale-70b",
-      "context_length": 8192,
-      "created": 1718668800,
-      "default_parameters": {},
-      "description": "Euryale 70B v2.1 is a model focused on creative roleplay from [Sao10k](https://ko-fi.com/sao10k). - Better prompt adherence. - Better anatomy / spatial awareness. - Adapts much better to unique and custom...",
-      "expiration_date": "2026-06-05",
-      "id": "sao10k/l3-euryale-70b",
-      "name": "Sao10k: Llama 3 Euryale 70B v2.1",
-      "pricing": {
-        "completion": "0.00000148",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000148",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 8192,
-        "is_moderated": false,
-        "max_completion_tokens": 8192
       }
     },
     "sao10k/l3-lunaris-8b": {
