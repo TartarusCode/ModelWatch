@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T06:43:54.748217Z",
+  "generated_at": "2026-06-05T10:37:52.942659Z",
   "models": [
     {
       "benchmarks": {
@@ -43059,7 +43059,7 @@
           "top_p": null
         },
         "description": "Qwen3, the latest generation in the Qwen large language model series, features both dense and mixture-of-experts (MoE) architectures to excel in reasoning, multilingual support, and advanced agent tasks. Its unique...",
-        "expiration_date": "2026-06-05",
+        "expiration_date": null,
         "id": "qwen/qwen3-30b-a3b",
         "name": "Qwen: Qwen3 30B A3B",
         "pricing": {
@@ -43096,7 +43096,7 @@
         "top_provider": {
           "context_length": 40960,
           "is_moderated": false,
-          "max_completion_tokens": 20000
+          "max_completion_tokens": 16384
         }
       }
     },
@@ -51370,14 +51370,11 @@
           "max_tokens",
           "presence_penalty",
           "reasoning",
-          "repetition_penalty",
           "response_format",
-          "seed",
           "stop",
           "temperature",
           "tool_choice",
           "tools",
-          "top_k",
           "top_p"
         ],
         "top_provider": {
