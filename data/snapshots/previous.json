@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T18:29:40.420331Z",
+  "generated_at": "2026-06-05T20:32:52.323805Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -6597,7 +6597,7 @@
       "top_provider": {
         "context_length": 196608,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 196608
       }
     },
     "minimax/minimax-m3": {
