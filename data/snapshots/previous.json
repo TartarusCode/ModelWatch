@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T14:09:05.771058Z",
+  "generated_at": "2026-06-06T15:41:21.680834Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -1503,55 +1503,6 @@
         "max_completion_tokens": 32000
       }
     },
-    "arcee-ai/spotlight": {
-      "architecture": {
-        "input_modalities": [
-          "image",
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text+image->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "arcee-ai/spotlight",
-      "context_length": 131072,
-      "created": 1746481552,
-      "default_parameters": {},
-      "description": "Spotlight is a 7‑billion‑parameter vision‑language model derived from Qwen 2.5‑VL and fine‑tuned by Arcee AI for tight image‑text grounding tasks. It offers a 32 k‑token context window, enabling rich multimodal...",
-      "expiration_date": null,
-      "id": "arcee-ai/spotlight",
-      "name": "Arcee AI: Spotlight",
-      "pricing": {
-        "completion": "0.00000018",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000018",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 65537
-      }
-    },
     "arcee-ai/trinity-large-thinking": {
       "architecture": {
         "input_modalities": [
@@ -1714,58 +1665,6 @@
         "context_length": 131072,
         "is_moderated": false,
         "max_completion_tokens": 64000
-      }
-    },
-    "baidu/ernie-4.5-vl-28b-a3b": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "instruct_type": null,
-        "modality": "text+image->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "baidu/ernie-4.5-vl-28b-a3b",
-      "context_length": 131072,
-      "created": 1755032836,
-      "default_parameters": {},
-      "description": "A powerful multimodal Mixture-of-Experts chat model featuring 28B total parameters with 3B activated per token, delivering exceptional text and vision understanding through its innovative heterogeneous MoE structure with modality-isolated routing....",
-      "expiration_date": null,
-      "id": "baidu/ernie-4.5-vl-28b-a3b",
-      "name": "Baidu: ERNIE 4.5 VL 28B A3B",
-      "pricing": {
-        "completion": "0.00000056",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000014",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 30000,
-        "is_moderated": false,
-        "max_completion_tokens": 8000
       }
     },
     "baidu/ernie-4.5-vl-424b-a47b": {
@@ -5415,16 +5314,16 @@
       "created": 1713398400,
       "default_parameters": {},
       "description": "Meta's latest class of model (Llama 3) launched with a variety of sizes & flavors. This 8B instruct-tuned version was optimized for high quality dialogue usecases. It has demonstrated strong...",
-      "expiration_date": "2026-06-19",
+      "expiration_date": null,
       "id": "meta-llama/llama-3-8b-instruct",
       "name": "Meta: Llama 3 8B Instruct",
       "pricing": {
-        "completion": "0.00000004",
+        "completion": "0.00000014",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004",
+        "prompt": "0.00000014",
         "request": null,
         "web_search": null
       },
@@ -5435,8 +5334,6 @@
         "min_p",
         "presence_penalty",
         "repetition_penalty",
-        "response_format",
-        "seed",
         "stop",
         "temperature",
         "top_k",
@@ -5445,7 +5342,7 @@
       "top_provider": {
         "context_length": 8192,
         "is_moderated": false,
-        "max_completion_tokens": 8192
+        "max_completion_tokens": null
       }
     },
     "meta-llama/llama-3.1-70b-instruct": {
@@ -9349,58 +9246,6 @@
       ],
       "top_provider": {
         "context_length": 8191,
-        "is_moderated": true,
-        "max_completion_tokens": 4096
-      }
-    },
-    "openai/gpt-4-1106-preview": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT"
-      },
-      "canonical_slug": "openai/gpt-4-1106-preview",
-      "context_length": 128000,
-      "created": 1699228800,
-      "default_parameters": {},
-      "description": "The latest GPT-4 Turbo model with vision capabilities. Vision requests can now use JSON mode and function calling.\n\nTraining data: up to April 2023.",
-      "expiration_date": null,
-      "id": "openai/gpt-4-1106-preview",
-      "name": "OpenAI: GPT-4 Turbo (older v1106)",
-      "pricing": {
-        "completion": "0.00003",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00001",
-        "request": null,
-        "web_search": "0.01"
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 128000,
         "is_moderated": true,
         "max_completion_tokens": 4096
       }
