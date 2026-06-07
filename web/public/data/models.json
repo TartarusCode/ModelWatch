@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T02:04:32.936634Z",
+  "generated_at": "2026-06-07T06:43:01.196192Z",
   "models": [
     {
       "benchmarks": {
@@ -47115,12 +47115,12 @@
         "id": "qwen/qwen3.6-27b",
         "name": "Qwen: Qwen3.6 27B",
         "pricing": {
-          "completion": "0.0000032",
+          "completion": "0.0000024",
           "image": null,
           "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.00000029",
+          "prompt": "0.000000289",
           "request": null,
           "web_search": null
         },
@@ -47146,9 +47146,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 262140,
+          "context_length": 131072,
           "is_moderated": false,
-          "max_completion_tokens": 262140
+          "max_completion_tokens": 131072
         }
       }
     },
