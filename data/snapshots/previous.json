@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T12:02:24.191498Z",
+  "generated_at": "2026-06-07T14:21:07.536223Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3964,12 +3964,12 @@
       "id": "google/gemma-3-12b-it",
       "name": "Google: Gemma 3 12B",
       "pricing": {
-        "completion": "0.00000013",
+        "completion": "0.00000015",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004",
+        "prompt": "0.00000005",
         "request": null,
         "web_search": null
       },
@@ -4076,12 +4076,12 @@
       "id": "google/gemma-3-4b-it",
       "name": "Google: Gemma 3 4B",
       "pricing": {
-        "completion": "0.00000008",
+        "completion": "0.0000001",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004",
+        "prompt": "0.00000005",
         "request": null,
         "web_search": null
       },
@@ -5473,12 +5473,12 @@
       "id": "meta-llama/llama-3.2-11b-vision-instruct",
       "name": "Meta: Llama 3.2 11B Vision Instruct",
       "pricing": {
-        "completion": "0.000000245",
+        "completion": "0.000000345",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000245",
+        "prompt": "0.000000345",
         "request": null,
         "web_search": null
       },
@@ -5826,7 +5826,7 @@
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -8192,12 +8192,12 @@
       "id": "nousresearch/hermes-3-llama-3.1-70b",
       "name": "Nous: Hermes 3 70B Instruct",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.0000007",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.0000007",
         "request": null,
         "web_search": null
       },
@@ -8351,7 +8351,7 @@
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.0000004",
         "request": null,
         "web_search": null
       },
@@ -13569,7 +13569,7 @@
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000071",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
@@ -13680,12 +13680,12 @@
       "id": "qwen/qwen3-30b-a3b",
       "name": "Qwen: Qwen3 30B A3B",
       "pricing": {
-        "completion": "0.00000045",
+        "completion": "0.0000005",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.00000012",
         "request": null,
         "web_search": null
       },
@@ -15218,7 +15218,7 @@
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -15246,7 +15246,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 81920
+        "max_completion_tokens": 262144
       }
     },
     "qwen/qwen3.5-flash-02-23": {
