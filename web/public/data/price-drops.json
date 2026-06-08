@@ -1,16 +1,6 @@
 {
-  "drops": [
-    {
-      "detected_at": "2026-06-07T06:43:01.196192Z",
-      "field": "completion",
-      "model_id": "qwen/qwen3.6-27b",
-      "new_per_million_usd": "2.400000",
-      "old_per_million_usd": "3.200000",
-      "pct_drop": 0.25,
-      "saved_per_million_usd": "0.800000"
-    }
-  ],
-  "generated_at": "2026-06-08T02:02:14.734011Z",
+  "drops": [],
+  "generated_at": "2026-06-08T07:05:06.726261Z",
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05

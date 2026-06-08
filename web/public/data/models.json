@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T02:02:12.339597Z",
+  "generated_at": "2026-06-08T07:04:58.048281Z",
   "models": [
     {
       "benchmarks": {
@@ -25145,12 +25145,12 @@
         "id": "moonshotai/kimi-k2.6",
         "name": "MoonshotAI: Kimi K2.6",
         "pricing": {
-          "completion": "0.00000342",
+          "completion": "0.00000341",
           "image": null,
-          "input_cache_read": "0.000000144",
+          "input_cache_read": "0.00000034",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.000000684",
+          "prompt": "0.00000068",
           "request": null,
           "web_search": null
         },
@@ -25178,9 +25178,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 262144,
+          "context_length": 262142,
           "is_moderated": false,
-          "max_completion_tokens": 262144
+          "max_completion_tokens": 262142
         }
       }
     },
@@ -57879,12 +57879,12 @@
         "id": "~moonshotai/kimi-latest",
         "name": "MoonshotAI Kimi Latest",
         "pricing": {
-          "completion": "0.00000342",
+          "completion": "0.00000341",
           "image": null,
-          "input_cache_read": "0.000000144",
+          "input_cache_read": "0.00000034",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.000000684",
+          "prompt": "0.00000068",
           "request": null,
           "web_search": null
         },
@@ -57912,9 +57912,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 262144,
+          "context_length": 262142,
           "is_moderated": false,
-          "max_completion_tokens": 262144
+          "max_completion_tokens": 262142
         }
       }
     },
