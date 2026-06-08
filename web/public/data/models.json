@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T16:20:56.747177Z",
+  "generated_at": "2026-06-08T19:09:35.426313Z",
   "models": [
     {
       "benchmarks": {
@@ -25728,6 +25728,83 @@
     },
     {
       "benchmarks": {
+        "artificial_analysis": [],
+        "artificial_analysis_status": {
+          "error": null,
+          "status": "empty"
+        },
+        "artificial_analysis_summary": null,
+        "design_arena": null,
+        "design_arena_status": {
+          "error": null,
+          "status": "empty"
+        }
+      },
+      "model": {
+        "architecture": {
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "instruct_type": null,
+          "modality": "text+image->text",
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Qwen3"
+        },
+        "canonical_slug": "nex-agi/nex-n2-pro",
+        "context_length": 262144,
+        "created": 1780937140,
+        "default_parameters": {
+          "frequency_penalty": null,
+          "presence_penalty": null,
+          "repetition_penalty": null,
+          "temperature": 0.7,
+          "top_k": 40,
+          "top_p": 0.95
+        },
+        "description": "Nex-N2-Pro is an agentic mixture-of-experts model from Nex AGI, with 17B active parameters out of 397B total. Built on the Qwen3.5 architecture, it accepts text and image input and produces...",
+        "expiration_date": null,
+        "id": "nex-agi/nex-n2-pro:free",
+        "name": "Nex AGI: Nex-N2-Pro (free)",
+        "pricing": {
+          "completion": "0",
+          "image": null,
+          "input_cache_read": null,
+          "input_cache_write": null,
+          "internal_reasoning": null,
+          "prompt": "0",
+          "request": null,
+          "web_search": null
+        },
+        "supported_parameters": [
+          "frequency_penalty",
+          "include_reasoning",
+          "logprobs",
+          "max_tokens",
+          "presence_penalty",
+          "reasoning",
+          "repetition_penalty",
+          "response_format",
+          "seed",
+          "stop",
+          "structured_outputs",
+          "temperature",
+          "tool_choice",
+          "tools",
+          "top_k",
+          "top_p"
+        ],
+        "top_provider": {
+          "context_length": 262144,
+          "is_moderated": false,
+          "max_completion_tokens": 262144
+        }
+      }
+    },
+    {
+      "benchmarks": {
         "artificial_analysis": [
           {
             "aa_id": "d3968fd3-97d8-4693-8d26-19cefc6f5d5f",
@@ -40224,6 +40301,7 @@
         "supported_parameters": [
           "frequency_penalty",
           "include_reasoning",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
