@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T21:25:15.315964Z",
+  "generated_at": "2026-06-09T23:04:44.247344Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -17278,53 +17278,6 @@
         "max_completion_tokens": 131072
       }
     },
-    "z-ai/glm-4-32b": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "z-ai/glm-4-32b-0414",
-      "context_length": 128000,
-      "created": 1753376617,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": 0.75,
-        "top_p": null
-      },
-      "description": "GLM 4 32B is a cost-effective foundation language model. It can efficiently perform complex tasks and has significantly enhanced capabilities in tool use, online search, and code-related intelligent tasks. It...",
-      "expiration_date": null,
-      "id": "z-ai/glm-4-32b",
-      "name": "Z.ai: GLM 4 32B ",
-      "pricing": {
-        "completion": "0.0000001",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000001",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "max_tokens",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 128000,
-        "is_moderated": false,
-        "max_completion_tokens": null
-      }
-    },
     "z-ai/glm-4.5": {
       "architecture": {
         "input_modalities": [
@@ -17435,55 +17388,6 @@
         "context_length": 131070,
         "is_moderated": false,
         "max_completion_tokens": 131070
-      }
-    },
-    "z-ai/glm-4.5-air:free": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "z-ai/glm-4.5-air",
-      "context_length": 131072,
-      "created": 1753471258,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": 0.75,
-        "top_p": null
-      },
-      "description": "GLM-4.5-Air is the lightweight variant of our latest flagship model family, also purpose-built for agent-centric applications. Like GLM-4.5, it adopts the Mixture-of-Experts (MoE) architecture but with a more compact parameter...",
-      "expiration_date": null,
-      "id": "z-ai/glm-4.5-air:free",
-      "name": "Z.ai: GLM 4.5 Air (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 96000
       }
     },
     "z-ai/glm-4.5v": {
@@ -17634,7 +17538,7 @@
       "pricing": {
         "completion": "0.0000009",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.000000055",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000003",
@@ -17660,7 +17564,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 24000
+        "max_completion_tokens": 32768
       }
     },
     "z-ai/glm-4.7": {
@@ -17855,7 +17759,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-5-turbo-20260315",
-      "context_length": 202752,
+      "context_length": 262144,
       "created": 1773583573,
       "default_parameters": {
         "frequency_penalty": null,
@@ -17898,7 +17802,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 202752,
+        "context_length": 262144,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
@@ -17967,61 +17871,6 @@
         "context_length": 202752,
         "is_moderated": false,
         "max_completion_tokens": null
-      }
-    },
-    "z-ai/glm-5v-turbo": {
-      "architecture": {
-        "input_modalities": [
-          "image",
-          "text",
-          "video"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+video->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "z-ai/glm-5v-turbo-20260401",
-      "context_length": 202752,
-      "created": 1775061458,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": 1,
-        "top_k": null,
-        "top_p": 0.95
-      },
-      "description": "GLM-5V-Turbo is Z.ai’s first native multimodal agent foundation model, built for vision-based coding and agent-driven tasks. It natively handles image, video, and text inputs, excels at long-horizon planning, complex coding,...",
-      "expiration_date": null,
-      "id": "z-ai/glm-5v-turbo",
-      "name": "Z.ai: GLM 5V Turbo",
-      "pricing": {
-        "completion": "0.000004",
-        "image": null,
-        "input_cache_read": "0.00000024",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000012",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 202752,
-        "is_moderated": false,
-        "max_completion_tokens": 131072
       }
     },
     "~anthropic/claude-fable-latest": {
