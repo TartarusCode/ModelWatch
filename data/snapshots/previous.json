@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T16:49:12.823809Z",
+  "generated_at": "2026-06-09T19:30:05.025779Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -660,6 +660,62 @@
         "context_length": 200000,
         "is_moderated": true,
         "max_completion_tokens": 8192
+      }
+    },
+    "anthropic/claude-fable-5": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude"
+      },
+      "canonical_slug": "anthropic/claude-5-fable-20260609",
+      "context_length": 1000000,
+      "created": 1781007515,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Claude Fable 5 is a Mythos-class model from Anthropic, built for autonomous knowledge work and coding. It supports text, image, and file inputs with text output, with reasoning support and...",
+      "expiration_date": null,
+      "id": "anthropic/claude-fable-5",
+      "name": "Anthropic: Claude Fable 5",
+      "pricing": {
+        "completion": "0.00005",
+        "image": null,
+        "input_cache_read": "0.000001",
+        "input_cache_write": "0.0000125",
+        "internal_reasoning": null,
+        "prompt": "0.00001",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": true,
+        "max_completion_tokens": 128000
       }
     },
     "anthropic/claude-haiku-4.5": {
@@ -17966,6 +18022,62 @@
         "context_length": 202752,
         "is_moderated": false,
         "max_completion_tokens": 131072
+      }
+    },
+    "~anthropic/claude-fable-latest": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Router"
+      },
+      "canonical_slug": "~anthropic/claude-fable-latest",
+      "context_length": 1000000,
+      "created": 1781029944,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "This model always redirects to the latest model in the Claude Fable family.",
+      "expiration_date": null,
+      "id": "~anthropic/claude-fable-latest",
+      "name": "Anthropic: Claude Fable Latest",
+      "pricing": {
+        "completion": "0.00005",
+        "image": null,
+        "input_cache_read": "0.000001",
+        "input_cache_write": "0.0000125",
+        "internal_reasoning": null,
+        "prompt": "0.00001",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": true,
+        "max_completion_tokens": 128000
       }
     },
     "~anthropic/claude-haiku-latest": {
