@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T23:03:59.400458Z",
+  "generated_at": "2026-06-09T00:16:02.197852Z",
   "models": [
     {
       "benchmarks": {
@@ -533,7 +533,7 @@
                 "artificial_analysis_coding_index": 23.9,
                 "artificial_analysis_intelligence_index": 29.7,
                 "critpt": 0,
-                "gdpval_aa": 0.072,
+                "gdpval_aa": 0.071,
                 "gpqa": 0.768,
                 "hle": 0.086,
                 "ifbench": 0.685,
@@ -545,7 +545,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651878,
+            "last_updated_at": 1780963226539,
             "openrouter_slug": "amazon/nova-2-lite-v1",
             "percentiles": {
               "agentic_percentile": 52,
@@ -1284,7 +1284,7 @@
                 "artificial_analysis_coding_index": 10.7,
                 "artificial_analysis_intelligence_index": 18.7,
                 "critpt": 0,
-                "gdpval_aa": 0.105,
+                "gdpval_aa": 0.104,
                 "gpqa": 0.408,
                 "hle": 0.035,
                 "ifbench": 0.428,
@@ -1296,7 +1296,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "anthropic/claude-3.5-haiku",
-            "last_updated_at": 1780833651220,
+            "last_updated_at": 1780963225777,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 32,
@@ -1392,7 +1392,7 @@
                 "artificial_analysis_coding_index": 29.6,
                 "artificial_analysis_intelligence_index": 31,
                 "critpt": 0,
-                "gdpval_aa": 0.319,
+                "gdpval_aa": 0.318,
                 "gpqa": 0.646,
                 "hle": 0.043,
                 "ifbench": 0.42,
@@ -1404,7 +1404,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "anthropic/claude-haiku-4.5",
-            "last_updated_at": 1780833651239,
+            "last_updated_at": 1780963225799,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 51,
@@ -2432,7 +2432,7 @@
                 "artificial_analysis_coding_index": 47.8,
                 "artificial_analysis_intelligence_index": 49.7,
                 "critpt": 0.046,
-                "gdpval_aa": 0.476,
+                "gdpval_aa": 0.475,
                 "gpqa": 0.866,
                 "hle": 0.284,
                 "ifbench": 0.58,
@@ -2444,7 +2444,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780142465075,
+            "last_updated_at": 1780963225810,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 86,
@@ -3427,7 +3427,7 @@
                 "artificial_analysis_coding_index": 53.1,
                 "artificial_analysis_intelligence_index": 51.8,
                 "critpt": 0.051,
-                "gdpval_aa": 0.589,
+                "gdpval_aa": 0.588,
                 "gpqa": 0.885,
                 "hle": 0.312,
                 "ifbench": 0.436,
@@ -3439,7 +3439,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780358419839,
+            "last_updated_at": 1780963225822,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 92,
@@ -4533,7 +4533,7 @@
                 "artificial_analysis_coding_index": 30.6,
                 "artificial_analysis_intelligence_index": 33,
                 "critpt": 0.011,
-                "gdpval_aa": 0.312,
+                "gdpval_aa": 0.311,
                 "gpqa": 0.683,
                 "hle": 0.04,
                 "ifbench": 0.454,
@@ -4545,7 +4545,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "anthropic/claude-sonnet-4",
-            "last_updated_at": 1780531257114,
+            "last_updated_at": 1780963225791,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 57,
@@ -4566,7 +4566,7 @@
                 "artificial_analysis_coding_index": 34.1,
                 "artificial_analysis_intelligence_index": 38.7,
                 "critpt": 0.003,
-                "gdpval_aa": 0.316,
+                "gdpval_aa": 0.315,
                 "gpqa": 0.777,
                 "hle": 0.096,
                 "ifbench": 0.547,
@@ -4578,7 +4578,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "anthropic/claude-sonnet-4",
-            "last_updated_at": 1780833651234,
+            "last_updated_at": 1780963225793,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 64,
@@ -6053,7 +6053,7 @@
                 "artificial_analysis_coding_index": 27.2,
                 "artificial_analysis_intelligence_index": 31.9,
                 "critpt": 0.009,
-                "gdpval_aa": 0.183,
+                "gdpval_aa": 0.182,
                 "gpqa": 0.752,
                 "hle": 0.147,
                 "ifbench": 0.563,
@@ -6065,7 +6065,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401646611,
+            "last_updated_at": 1780963226883,
             "openrouter_slug": "arcee-ai/trinity-large-thinking",
             "percentiles": {
               "agentic_percentile": 64,
@@ -7618,7 +7618,7 @@
                 "artificial_analysis_coding_index": 28.4,
                 "artificial_analysis_intelligence_index": 28.1,
                 "critpt": 0,
-                "gdpval_aa": 0.289,
+                "gdpval_aa": 0.288,
                 "gpqa": 0.735,
                 "hle": 0.063,
                 "ifbench": 0.378,
@@ -7630,7 +7630,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651301,
+            "last_updated_at": 1780963225872,
             "openrouter_slug": "deepseek/deepseek-chat-v3.1",
             "percentiles": {
               "agentic_percentile": 50,
@@ -7651,7 +7651,7 @@
                 "artificial_analysis_coding_index": 29.7,
                 "artificial_analysis_intelligence_index": 27.7,
                 "critpt": 0.02,
-                "gdpval_aa": 0.058,
+                "gdpval_aa": 0.056,
                 "gpqa": 0.779,
                 "hle": 0.13,
                 "ifbench": 0.415,
@@ -7663,7 +7663,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780920099340,
+            "last_updated_at": 1780963225874,
             "openrouter_slug": "deepseek/deepseek-chat-v3.1",
             "percentiles": {
               "agentic_percentile": 35,
@@ -8023,7 +8023,7 @@
                 "artificial_analysis_coding_index": 24,
                 "artificial_analysis_intelligence_index": 27.1,
                 "critpt": 0.014,
-                "gdpval_aa": 0.09,
+                "gdpval_aa": 0.089,
                 "gpqa": 0.813,
                 "hle": 0.149,
                 "ifbench": 0.396,
@@ -8035,7 +8035,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780228844337,
+            "last_updated_at": 1780963225855,
             "openrouter_slug": "deepseek/deepseek-r1-0528",
             "percentiles": {
               "agentic_percentile": 36,
@@ -8477,7 +8477,7 @@
                 "artificial_analysis_coding_index": 31.9,
                 "artificial_analysis_intelligence_index": 28.5,
                 "critpt": 0,
-                "gdpval_aa": 0.239,
+                "gdpval_aa": 0.237,
                 "gpqa": 0.751,
                 "hle": 0.084,
                 "ifbench": 0.412,
@@ -8489,7 +8489,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651304,
+            "last_updated_at": 1780963225876,
             "openrouter_slug": "deepseek/deepseek-v3.1-terminus",
             "percentiles": {
               "agentic_percentile": 47,
@@ -9046,7 +9046,7 @@
                 "artificial_analysis_coding_index": 34.6,
                 "artificial_analysis_intelligence_index": 32.1,
                 "critpt": 0.009,
-                "gdpval_aa": 0.188,
+                "gdpval_aa": 0.187,
                 "gpqa": 0.751,
                 "hle": 0.105,
                 "ifbench": 0.49,
@@ -9058,7 +9058,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "deepseek/deepseek-v3.2-exp",
-            "last_updated_at": 1780920099344,
+            "last_updated_at": 1780963225879,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 59,
@@ -9079,7 +9079,7 @@
                 "artificial_analysis_coding_index": 30,
                 "artificial_analysis_intelligence_index": 28.4,
                 "critpt": 0.014,
-                "gdpval_aa": 0.283,
+                "gdpval_aa": 0.282,
                 "gpqa": 0.738,
                 "hle": 0.086,
                 "ifbench": 0.431,
@@ -9091,7 +9091,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401645711,
+            "last_updated_at": 1780963225883,
             "openrouter_slug": "deepseek/deepseek-v3.2-exp",
             "percentiles": {
               "agentic_percentile": 49,
@@ -9112,7 +9112,7 @@
                 "artificial_analysis_coding_index": 33.3,
                 "artificial_analysis_intelligence_index": 32.9,
                 "critpt": 0.014,
-                "gdpval_aa": 0.25,
+                "gdpval_aa": 0.249,
                 "gpqa": 0.797,
                 "hle": 0.138,
                 "ifbench": 0.541,
@@ -9124,7 +9124,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780228844368,
+            "last_updated_at": 1780963225885,
             "openrouter_slug": "deepseek/deepseek-v3.2-exp",
             "percentiles": {
               "agentic_percentile": 47,
@@ -9782,7 +9782,7 @@
                 "artificial_analysis_coding_index": 38.4,
                 "artificial_analysis_intelligence_index": 39.3,
                 "critpt": 0.009,
-                "gdpval_aa": 0.489,
+                "gdpval_aa": 0.488,
                 "gpqa": 0.717,
                 "hle": 0.077,
                 "ifbench": 0.458,
@@ -9794,7 +9794,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780531257188,
+            "last_updated_at": 1780963225898,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 92,
@@ -10252,7 +10252,7 @@
                 "artificial_analysis_coding_index": 22.2,
                 "artificial_analysis_intelligence_index": 27,
                 "critpt": 0.011,
-                "gdpval_aa": 0.1,
+                "gdpval_aa": 0.098,
                 "gpqa": 0.79,
                 "hle": 0.111,
                 "ifbench": 0.503,
@@ -10264,7 +10264,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "google/gemini-2.5-flash",
-            "last_updated_at": 1780833651532,
+            "last_updated_at": 1780963226126,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 34,
@@ -10645,7 +10645,7 @@
             "aa_name": "Nano Banana (Gemini 2.5 Flash Image)",
             "aa_slug": "google_gemini-2-5-flash",
             "benchmark_data": {
-              "appearances": 10369,
+              "appearances": 10373,
               "categories": [
                 {
                   "appearances": 4043,
@@ -10656,7 +10656,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 857,
+                  "appearances": 858,
                   "ci95": "-31/31",
                   "elo": 1135,
                   "format_category": null,
@@ -10664,23 +10664,23 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1229,
+                  "appearances": 1230,
                   "ci95": "-28/28",
-                  "elo": 1182,
+                  "elo": 1181,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Portraits"
                 },
                 {
-                  "appearances": 864,
+                  "appearances": 865,
                   "ci95": "-33/33",
-                  "elo": 1167,
+                  "elo": 1165,
                   "format_category": null,
                   "style_category": "Anime",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 496,
+                  "appearances": 497,
                   "ci95": "-37/37",
                   "elo": 1166,
                   "format_category": null,
@@ -10688,7 +10688,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1816,
+                  "appearances": 1817,
                   "ci95": "-20/20",
                   "elo": 1165,
                   "format_category": null,
@@ -10696,7 +10696,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 4598,
+                  "appearances": 4599,
                   "ci95": "-14/14",
                   "elo": 1200,
                   "format_category": null,
@@ -10706,7 +10706,7 @@
                 {
                   "appearances": 94,
                   "ci95": "-64/64",
-                  "elo": 1092,
+                  "elo": 1093,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -10736,7 +10736,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1951,
+                  "appearances": 1952,
                   "ci95": "-19/19",
                   "elo": 1159,
                   "format_category": null,
@@ -10744,9 +10744,9 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1397,
+                  "appearances": 1398,
                   "ci95": "-24/24",
-                  "elo": 1148,
+                  "elo": 1149,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Futuristic & Sci-Fi"
@@ -10754,7 +10754,7 @@
                 {
                   "appearances": 1362,
                   "ci95": "-23/23",
-                  "elo": 1148,
+                  "elo": 1149,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Physical Spaces"
@@ -10768,7 +10768,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2855,
+                  "appearances": 2856,
                   "ci95": "-16/16",
                   "elo": 1159,
                   "format_category": null,
@@ -10792,7 +10792,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1106,
+                  "appearances": 1107,
                   "ci95": "-27/27",
                   "elo": 1135,
                   "format_category": null,
@@ -10808,16 +10808,16 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2465,
+                  "appearances": 2466,
                   "ci95": "-18/18",
-                  "elo": 1160,
+                  "elo": 1161,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 562,
-                  "ci95": "-37/37",
+                  "appearances": 564,
+                  "ci95": "-36/36",
                   "elo": 1136,
                   "format_category": null,
                   "style_category": null,
@@ -10834,13 +10834,13 @@
                 {
                   "appearances": 628,
                   "ci95": "-37/37",
-                  "elo": 1163,
+                  "elo": 1165,
                   "format_category": null,
                   "style_category": "Vintage & Retro",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1528,
+                  "appearances": 1529,
                   "ci95": "-23/23",
                   "elo": 1190,
                   "format_category": null,
@@ -10856,7 +10856,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 6440,
+                  "appearances": 6442,
                   "ci95": "-11/11",
                   "elo": 1168,
                   "format_category": null,
@@ -10864,7 +10864,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 471,
+                  "appearances": 472,
                   "ci95": "-37/37",
                   "elo": 1158,
                   "format_category": null,
@@ -10896,7 +10896,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2869,
+                  "appearances": 2870,
                   "ci95": "-17/17",
                   "elo": 1204,
                   "format_category": null,
@@ -10904,7 +10904,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 5584,
+                  "appearances": 5587,
                   "ci95": "-12/12",
                   "elo": 1158,
                   "format_category": null,
@@ -10928,15 +10928,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2909,
+                  "appearances": 2911,
                   "ci95": "-16/16",
-                  "elo": 1124,
+                  "elo": 1125,
                   "format_category": null,
                   "style_category": "Graphic Design & Digital Rendering",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2062,
+                  "appearances": 2063,
                   "ci95": "-19/19",
                   "elo": 1165,
                   "format_category": null,
@@ -10944,7 +10944,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 4136,
+                  "appearances": 4138,
                   "ci95": "-14/14",
                   "elo": 1170,
                   "format_category": null,
@@ -10970,13 +10970,13 @@
               ],
               "ci95": "-8/8",
               "elo": 1161,
-              "elo_max": 1339,
+              "elo_max": 1340,
               "elo_min": 962,
               "model_type": "text-to-image",
               "rank": 30
             },
             "heuristic_openrouter_slug": "google/gemini-2.5-flash-image",
-            "last_updated_at": 1780920100231,
+            "last_updated_at": 1780963226950,
             "openrouter_slug": null,
             "permaslug": "google/gemini-2.5-flash-image"
           }
@@ -11597,7 +11597,7 @@
                 "artificial_analysis_coding_index": 32,
                 "artificial_analysis_intelligence_index": 34.6,
                 "critpt": 0.026,
-                "gdpval_aa": 0.21,
+                "gdpval_aa": 0.208,
                 "gpqa": 0.844,
                 "hle": 0.211,
                 "ifbench": 0.487,
@@ -11609,7 +11609,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "google/gemini-2.5-pro",
-            "last_updated_at": 1780833651545,
+            "last_updated_at": 1780963226141,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 52,
@@ -12001,7 +12001,7 @@
                 "artificial_analysis_coding_index": 37.8,
                 "artificial_analysis_intelligence_index": 35,
                 "critpt": 0.014,
-                "gdpval_aa": 0.308,
+                "gdpval_aa": 0.307,
                 "gpqa": 0.812,
                 "hle": 0.141,
                 "ifbench": 0.551,
@@ -12013,7 +12013,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780358420102,
+            "last_updated_at": 1780963226149,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 53,
@@ -12342,7 +12342,7 @@
             "aa_name": "Nano Banana Pro (Gemini 3 Pro Image)",
             "aa_slug": "gemini_nano-banana-pro",
             "benchmark_data": {
-              "appearances": 5255,
+              "appearances": 5258,
               "categories": [
                 {
                   "appearances": 1735,
@@ -12355,7 +12355,7 @@
                 {
                   "appearances": 408,
                   "ci95": "-33/33",
-                  "elo": 1188,
+                  "elo": 1189,
                   "format_category": null,
                   "style_category": "Cartoon & Illustration",
                   "subject_matter_category": null
@@ -12385,15 +12385,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1207,
+                  "appearances": 1208,
                   "ci95": "-22/22",
-                  "elo": 1240,
+                  "elo": 1239,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2028,
+                  "appearances": 2029,
                   "ci95": "-15/15",
                   "elo": 1251,
                   "format_category": null,
@@ -12403,23 +12403,23 @@
                 {
                   "appearances": 132,
                   "ci95": "-60/60",
-                  "elo": 1209,
+                  "elo": 1210,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 724,
+                  "appearances": 726,
                   "ci95": "-27/27",
-                  "elo": 1207,
+                  "elo": 1205,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 749,
+                  "appearances": 750,
                   "ci95": "-25/25",
-                  "elo": 1183,
+                  "elo": 1184,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -12433,15 +12433,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1367,
+                  "appearances": 1369,
                   "ci95": "-20/20",
-                  "elo": 1234,
+                  "elo": 1233,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 682,
+                  "appearances": 683,
                   "ci95": "-25/25",
                   "elo": 1184,
                   "format_category": null,
@@ -12457,15 +12457,15 @@
                   "subject_matter_category": "Physical Spaces"
                 },
                 {
-                  "appearances": 447,
+                  "appearances": 448,
                   "ci95": "-34/34",
-                  "elo": 1269,
+                  "elo": 1270,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1466,
+                  "appearances": 1468,
                   "ci95": "-17/17",
                   "elo": 1192,
                   "format_category": null,
@@ -12473,15 +12473,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 714,
+                  "appearances": 715,
                   "ci95": "-25/25",
-                  "elo": 1214,
+                  "elo": 1215,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1217,
+                  "appearances": 1218,
                   "ci95": "-20/20",
                   "elo": 1189,
                   "format_category": null,
@@ -12491,7 +12491,7 @@
                 {
                   "appearances": 524,
                   "ci95": "-30/30",
-                  "elo": 1216,
+                  "elo": 1217,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -12505,15 +12505,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1186,
+                  "appearances": 1187,
                   "ci95": "-19/19",
-                  "elo": 1190,
+                  "elo": 1189,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 326,
+                  "appearances": 329,
                   "ci95": "-38/38",
                   "elo": 1201,
                   "format_category": null,
@@ -12529,7 +12529,7 @@
                   "subject_matter_category": "Nature & Landscapes"
                 },
                 {
-                  "appearances": 373,
+                  "appearances": 374,
                   "ci95": "-38/38",
                   "elo": 1251,
                   "format_category": null,
@@ -12539,13 +12539,13 @@
                 {
                   "appearances": 650,
                   "ci95": "-25/25",
-                  "elo": 1216,
+                  "elo": 1217,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Fantasy & Mythical"
                 },
                 {
-                  "appearances": 1987,
+                  "appearances": 1988,
                   "ci95": "-15/15",
                   "elo": 1257,
                   "format_category": null,
@@ -12553,7 +12553,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3097,
+                  "appearances": 3098,
                   "ci95": "-12/12",
                   "elo": 1233,
                   "format_category": null,
@@ -12563,7 +12563,7 @@
                 {
                   "appearances": 324,
                   "ci95": "-40/40",
-                  "elo": 1216,
+                  "elo": 1217,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "UI/UX Design"
@@ -12579,7 +12579,7 @@
                 {
                   "appearances": 448,
                   "ci95": "-33/33",
-                  "elo": 1220,
+                  "elo": 1221,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Commercial"
@@ -12601,7 +12601,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2708,
+                  "appearances": 2710,
                   "ci95": "-13/13",
                   "elo": 1203,
                   "format_category": null,
@@ -12625,7 +12625,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1644,
+                  "appearances": 1646,
                   "ci95": "-17/17",
                   "elo": 1177,
                   "format_category": null,
@@ -12633,15 +12633,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1346,
+                  "appearances": 1348,
                   "ci95": "-20/20",
-                  "elo": 1231,
+                  "elo": 1230,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1966,
+                  "appearances": 1967,
                   "ci95": "-15/15",
                   "elo": 1216,
                   "format_category": null,
@@ -12657,9 +12657,9 @@
                   "subject_matter_category": "People: Groups & Activities"
                 },
                 {
-                  "appearances": 681,
+                  "appearances": 683,
                   "ci95": "-28/28",
-                  "elo": 1187,
+                  "elo": 1184,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -12667,13 +12667,13 @@
               ],
               "ci95": "-9/9",
               "elo": 1218,
-              "elo_max": 1339,
+              "elo_max": 1340,
               "elo_min": 962,
               "model_type": "text-to-image",
               "rank": 6
             },
             "heuristic_openrouter_slug": "google/gemini-3-pro-image-preview",
-            "last_updated_at": 1780920100226,
+            "last_updated_at": 1780963226947,
             "openrouter_slug": null,
             "permaslug": "google/gemini-3-pro-image-preview-20251120"
           }
@@ -12910,10 +12910,10 @@
             "aa_name": "Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
             "aa_slug": "nano-banana-2",
             "benchmark_data": {
-              "appearances": 7865,
+              "appearances": 7882,
               "categories": [
                 {
-                  "appearances": 2360,
+                  "appearances": 2363,
                   "ci95": "-16/16",
                   "elo": 1292,
                   "format_category": null,
@@ -12921,7 +12921,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 648,
+                  "appearances": 649,
                   "ci95": "-35/35",
                   "elo": 1251,
                   "format_category": null,
@@ -12929,9 +12929,9 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 727,
+                  "appearances": 729,
                   "ci95": "-32/32",
-                  "elo": 1276,
+                  "elo": 1277,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Portraits"
@@ -12945,15 +12945,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 541,
+                  "appearances": 543,
                   "ci95": "-35/35",
-                  "elo": 1212,
+                  "elo": 1211,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1826,
+                  "appearances": 1835,
                   "ci95": "-22/22",
                   "elo": 1275,
                   "format_category": null,
@@ -12961,7 +12961,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3084,
+                  "appearances": 3089,
                   "ci95": "-16/16",
                   "elo": 1307,
                   "format_category": null,
@@ -12977,7 +12977,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1047,
+                  "appearances": 1052,
                   "ci95": "-28/28",
                   "elo": 1246,
                   "format_category": null,
@@ -12985,9 +12985,9 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1051,
+                  "appearances": 1053,
                   "ci95": "-25/25",
-                  "elo": 1221,
+                  "elo": 1220,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -13001,23 +13001,23 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2112,
+                  "appearances": 2121,
                   "ci95": "-21/21",
-                  "elo": 1266,
+                  "elo": 1267,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 912,
+                  "appearances": 913,
                   "ci95": "-26/26",
-                  "elo": 1216,
+                  "elo": 1218,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Futuristic & Sci-Fi"
                 },
                 {
-                  "appearances": 841,
+                  "appearances": 842,
                   "ci95": "-26/26",
                   "elo": 1230,
                   "format_category": null,
@@ -13025,31 +13025,31 @@
                   "subject_matter_category": "Physical Spaces"
                 },
                 {
-                  "appearances": 763,
+                  "appearances": 764,
                   "ci95": "-34/34",
-                  "elo": 1317,
+                  "elo": 1318,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2035,
+                  "appearances": 2041,
                   "ci95": "-18/18",
-                  "elo": 1221,
+                  "elo": 1223,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1034,
+                  "appearances": 1037,
                   "ci95": "-26/26",
-                  "elo": 1272,
+                  "elo": 1273,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1701,
+                  "appearances": 1703,
                   "ci95": "-20/20",
                   "elo": 1226,
                   "format_category": null,
@@ -13057,39 +13057,39 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 842,
+                  "appearances": 843,
                   "ci95": "-31/31",
-                  "elo": 1281,
+                  "elo": 1280,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 752,
+                  "appearances": 755,
                   "ci95": "-31/31",
-                  "elo": 1236,
+                  "elo": 1237,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1601,
+                  "appearances": 1605,
                   "ci95": "-20/20",
-                  "elo": 1234,
+                  "elo": 1235,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 523,
+                  "appearances": 525,
                   "ci95": "-38/38",
-                  "elo": 1219,
+                  "elo": 1217,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Text & Typography"
                 },
                 {
-                  "appearances": 583,
+                  "appearances": 584,
                   "ci95": "-31/31",
                   "elo": 1243,
                   "format_category": null,
@@ -13097,9 +13097,9 @@
                   "subject_matter_category": "Nature & Landscapes"
                 },
                 {
-                  "appearances": 547,
+                  "appearances": 549,
                   "ci95": "-37/37",
-                  "elo": 1249,
+                  "elo": 1253,
                   "format_category": null,
                   "style_category": "Vintage & Retro",
                   "subject_matter_category": null
@@ -13107,13 +13107,13 @@
                 {
                   "appearances": 973,
                   "ci95": "-25/25",
-                  "elo": 1254,
+                  "elo": 1255,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Fantasy & Mythical"
                 },
                 {
-                  "appearances": 3043,
+                  "appearances": 3047,
                   "ci95": "-15/15",
                   "elo": 1286,
                   "format_category": null,
@@ -13121,7 +13121,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 4652,
+                  "appearances": 4657,
                   "ci95": "-12/12",
                   "elo": 1267,
                   "format_category": null,
@@ -13129,17 +13129,17 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 477,
+                  "appearances": 478,
                   "ci95": "-36/36",
-                  "elo": 1208,
+                  "elo": 1207,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "UI/UX Design"
                 },
                 {
-                  "appearances": 661,
+                  "appearances": 662,
                   "ci95": "-39/39",
-                  "elo": 1311,
+                  "elo": 1312,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -13161,7 +13161,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1853,
+                  "appearances": 1855,
                   "ci95": "-21/21",
                   "elo": 1328,
                   "format_category": null,
@@ -13169,31 +13169,31 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3815,
+                  "appearances": 3823,
                   "ci95": "-13/13",
-                  "elo": 1244,
+                  "elo": 1245,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 773,
+                  "appearances": 774,
                   "ci95": "-35/35",
-                  "elo": 1248,
+                  "elo": 1247,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 440,
+                  "appearances": 441,
                   "ci95": "-38/38",
-                  "elo": 1293,
+                  "elo": 1294,
                   "format_category": null,
                   "style_category": "Traditional Art",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2266,
+                  "appearances": 2271,
                   "ci95": "-17/17",
                   "elo": 1216,
                   "format_category": null,
@@ -13201,7 +13201,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2056,
+                  "appearances": 2065,
                   "ci95": "-21/21",
                   "elo": 1267,
                   "format_category": null,
@@ -13209,7 +13209,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2943,
+                  "appearances": 2946,
                   "ci95": "-15/15",
                   "elo": 1240,
                   "format_category": null,
@@ -13217,31 +13217,31 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 699,
+                  "appearances": 700,
                   "ci95": "-34/34",
-                  "elo": 1356,
+                  "elo": 1355,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Groups & Activities"
                 },
                 {
-                  "appearances": 1009,
+                  "appearances": 1014,
                   "ci95": "-28/28",
-                  "elo": 1217,
+                  "elo": 1216,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 }
               ],
               "ci95": "-9/9",
-              "elo": 1260,
-              "elo_max": 1339,
+              "elo": 1261,
+              "elo_max": 1340,
               "elo_min": 962,
               "model_type": "text-to-image",
               "rank": 3
             },
             "heuristic_openrouter_slug": "google/gemini-3.1-flash-image-preview",
-            "last_updated_at": 1780920100226,
+            "last_updated_at": 1780963226947,
             "openrouter_slug": null,
             "permaslug": "google/gemini-3.1-flash-image-preview-20260226"
           }
@@ -13525,7 +13525,7 @@
                 "artificial_analysis_coding_index": 30.1,
                 "artificial_analysis_intelligence_index": 33.5,
                 "critpt": 0.011,
-                "gdpval_aa": 0.214,
+                "gdpval_aa": 0.213,
                 "gpqa": 0.822,
                 "hle": 0.162,
                 "ifbench": 0.772,
@@ -13537,7 +13537,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "google/gemini-3.1-flash-lite-preview",
-            "last_updated_at": 1780401646029,
+            "last_updated_at": 1780963226157,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 44,
@@ -13835,7 +13835,7 @@
                 "artificial_analysis_coding_index": 46.5,
                 "artificial_analysis_intelligence_index": 48.4,
                 "critpt": 0.091,
-                "gdpval_aa": 0.343,
+                "gdpval_aa": 0.342,
                 "gpqa": 0.908,
                 "hle": 0.372,
                 "ifbench": 0.704,
@@ -13847,7 +13847,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651554,
+            "last_updated_at": 1780963226154,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 75,
@@ -13868,7 +13868,7 @@
                 "artificial_analysis_coding_index": 39.4,
                 "artificial_analysis_intelligence_index": 41.3,
                 "critpt": 0,
-                "gdpval_aa": 0.334,
+                "gdpval_aa": 0.333,
                 "gpqa": 0.887,
                 "hle": 0.276,
                 "ifbench": 0.497,
@@ -13880,7 +13880,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401646027,
+            "last_updated_at": 1780963226155,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 66,
@@ -14516,7 +14516,7 @@
                 "artificial_analysis_coding_index": 47.1,
                 "artificial_analysis_intelligence_index": 43.3,
                 "critpt": 0.014,
-                "gdpval_aa": 0.471,
+                "gdpval_aa": 0.47,
                 "gpqa": 0.828,
                 "hle": 0.231,
                 "ifbench": 0.473,
@@ -14528,7 +14528,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780531257484,
+            "last_updated_at": 1780963226165,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 74,
@@ -15442,7 +15442,7 @@
                 "artificial_analysis_coding_index": 22.4,
                 "artificial_analysis_intelligence_index": 31.2,
                 "critpt": 0,
-                "gdpval_aa": 0.258,
+                "gdpval_aa": 0.257,
                 "gpqa": 0.792,
                 "hle": 0.183,
                 "ifbench": 0.724,
@@ -15454,7 +15454,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651584,
+            "last_updated_at": 1780963226186,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 51,
@@ -15475,7 +15475,7 @@
                 "artificial_analysis_coding_index": 29.1,
                 "artificial_analysis_intelligence_index": 27.1,
                 "critpt": 0,
-                "gdpval_aa": 0.225,
+                "gdpval_aa": 0.224,
                 "gpqa": 0.714,
                 "hle": 0.107,
                 "ifbench": 0.454,
@@ -15487,7 +15487,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651583,
+            "last_updated_at": 1780963226183,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 47,
@@ -15596,7 +15596,7 @@
                 "artificial_analysis_coding_index": 22.4,
                 "artificial_analysis_intelligence_index": 31.2,
                 "critpt": 0,
-                "gdpval_aa": 0.258,
+                "gdpval_aa": 0.257,
                 "gpqa": 0.792,
                 "hle": 0.183,
                 "ifbench": 0.724,
@@ -15608,7 +15608,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651584,
+            "last_updated_at": 1780963226186,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 51,
@@ -15629,7 +15629,7 @@
                 "artificial_analysis_coding_index": 29.1,
                 "artificial_analysis_intelligence_index": 27.1,
                 "critpt": 0,
-                "gdpval_aa": 0.225,
+                "gdpval_aa": 0.224,
                 "gpqa": 0.714,
                 "hle": 0.107,
                 "ifbench": 0.454,
@@ -15641,7 +15641,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651583,
+            "last_updated_at": 1780963226183,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 47,
@@ -16587,7 +16587,7 @@
                 "artificial_analysis_coding_index": 33.1,
                 "artificial_analysis_intelligence_index": 33.6,
                 "critpt": 0.003,
-                "gdpval_aa": 0.273,
+                "gdpval_aa": 0.272,
                 "gpqa": 0.752,
                 "hle": 0.082,
                 "ifbench": 0.569,
@@ -16599,7 +16599,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "inclusionai/ling-2.6-1t",
-            "last_updated_at": 1780401646254,
+            "last_updated_at": 1780963226348,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 69,
@@ -16703,7 +16703,7 @@
                 "artificial_analysis_coding_index": 23.2,
                 "artificial_analysis_intelligence_index": 26.2,
                 "critpt": 0,
-                "gdpval_aa": 0.143,
+                "gdpval_aa": 0.142,
                 "gpqa": 0.593,
                 "hle": 0.062,
                 "ifbench": 0.574,
@@ -16715,7 +16715,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "inclusionai/ling-2.6-flash",
-            "last_updated_at": 1780833651733,
+            "last_updated_at": 1780963226345,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 56,
@@ -16819,7 +16819,7 @@
                 "artificial_analysis_coding_index": 33.3,
                 "artificial_analysis_intelligence_index": 38.5,
                 "critpt": 0.037,
-                "gdpval_aa": 0.312,
+                "gdpval_aa": 0.31,
                 "gpqa": 0.857,
                 "hle": 0.183,
                 "ifbench": 0.446,
@@ -16831,7 +16831,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "inclusionai/ring-2.6-1t",
-            "last_updated_at": 1780833652067,
+            "last_updated_at": 1780963226767,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 75,
@@ -17050,7 +17050,7 @@
                 "artificial_analysis_coding_index": 45.6,
                 "artificial_analysis_intelligence_index": 43.8,
                 "critpt": 0,
-                "gdpval_aa": 0.309,
+                "gdpval_aa": 0.308,
                 "gpqa": 0.855,
                 "hle": 0.16,
                 "ifbench": 0.667,
@@ -17062,7 +17062,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "kwaipilot/kat-coder-pro-v2",
-            "last_updated_at": 1780833651691,
+            "last_updated_at": 1780963226310,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 73,
@@ -19356,7 +19356,7 @@
                 "artificial_analysis_coding_index": 14.5,
                 "artificial_analysis_intelligence_index": 24.4,
                 "critpt": 0,
-                "gdpval_aa": 0.249,
+                "gdpval_aa": 0.248,
                 "gpqa": 0.697,
                 "hle": 0.082,
                 "ifbench": 0.418,
@@ -19368,7 +19368,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "minimax/minimax-m1",
-            "last_updated_at": 1780833651803,
+            "last_updated_at": 1780963226441,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 48,
@@ -19469,7 +19469,7 @@
                 "artificial_analysis_coding_index": 29.2,
                 "artificial_analysis_intelligence_index": 36.1,
                 "critpt": 0.009,
-                "gdpval_aa": 0.266,
+                "gdpval_aa": 0.265,
                 "gpqa": 0.777,
                 "hle": 0.125,
                 "ifbench": 0.723,
@@ -19481,7 +19481,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401646329,
+            "last_updated_at": 1780963226443,
             "openrouter_slug": "minimax/minimax-m2",
             "percentiles": {
               "agentic_percentile": 68,
@@ -20043,7 +20043,7 @@
                 "artificial_analysis_coding_index": 37.4,
                 "artificial_analysis_intelligence_index": 41.9,
                 "critpt": 0.011,
-                "gdpval_aa": 0.339,
+                "gdpval_aa": 0.338,
                 "gpqa": 0.848,
                 "hle": 0.191,
                 "ifbench": 0.716,
@@ -20055,7 +20055,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "minimax/minimax-m2.5",
-            "last_updated_at": 1780833651807,
+            "last_updated_at": 1780963226447,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 80,
@@ -21198,7 +21198,7 @@
                 "artificial_analysis_coding_index": 10.9,
                 "artificial_analysis_intelligence_index": 16,
                 "critpt": 0,
-                "gdpval_aa": 0.077,
+                "gdpval_aa": 0.078,
                 "gpqa": 0.572,
                 "hle": 0.046,
                 "ifbench": 0.32,
@@ -21210,7 +21210,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780920099823,
+            "last_updated_at": 1780963226452,
             "openrouter_slug": "mistralai/ministral-14b-2512",
             "percentiles": {
               "agentic_percentile": 31,
@@ -21594,7 +21594,7 @@
                 "artificial_analysis_coding_index": 10,
                 "artificial_analysis_intelligence_index": 14.8,
                 "critpt": 0,
-                "gdpval_aa": 0.069,
+                "gdpval_aa": 0.068,
                 "gpqa": 0.471,
                 "hle": 0.043,
                 "ifbench": 0.291,
@@ -21606,7 +21606,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780920099826,
+            "last_updated_at": 1780963226456,
             "openrouter_slug": "mistralai/ministral-8b-2512",
             "percentiles": {
               "agentic_percentile": 31,
@@ -22026,7 +22026,7 @@
                 "artificial_analysis_coding_index": 22.7,
                 "artificial_analysis_intelligence_index": 22.8,
                 "critpt": 0,
-                "gdpval_aa": 0.183,
+                "gdpval_aa": 0.182,
                 "gpqa": 0.68,
                 "hle": 0.041,
                 "ifbench": 0.362,
@@ -22038,7 +22038,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780574414552,
+            "last_updated_at": 1780963226465,
             "openrouter_slug": "mistralai/mistral-large-2512",
             "percentiles": {
               "agentic_percentile": 38,
@@ -23183,7 +23183,7 @@
                 "artificial_analysis_coding_index": 24.3,
                 "artificial_analysis_intelligence_index": 27.8,
                 "critpt": 0.003,
-                "gdpval_aa": 0.181,
+                "gdpval_aa": 0.18,
                 "gpqa": 0.769,
                 "hle": 0.095,
                 "ifbench": 0.482,
@@ -23195,7 +23195,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651838,
+            "last_updated_at": 1780963226489,
             "openrouter_slug": "mistralai/mistral-small-2603",
             "percentiles": {
               "agentic_percentile": 44,
@@ -23740,7 +23740,7 @@
                 "artificial_analysis_coding_index": 16.1,
                 "artificial_analysis_intelligence_index": 20.6,
                 "critpt": 0,
-                "gdpval_aa": 0.031,
+                "gdpval_aa": 0.029,
                 "gpqa": 0.681,
                 "hle": 0.098,
                 "ifbench": 0.601,
@@ -23752,7 +23752,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "moonshotai/kimi-k2",
-            "last_updated_at": 1780401646158,
+            "last_updated_at": 1780963226305,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 27,
@@ -23806,7 +23806,7 @@
                 "artificial_analysis_coding_index": 14,
                 "artificial_analysis_intelligence_index": 18.7,
                 "critpt": 0,
-                "gdpval_aa": 0.041,
+                "gdpval_aa": 0.04,
                 "gpqa": 0.598,
                 "hle": 0.044,
                 "ifbench": 0.551,
@@ -23818,7 +23818,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "moonshotai/kimi-k2",
-            "last_updated_at": 1780099222747,
+            "last_updated_at": 1780963226308,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 26,
@@ -24048,7 +24048,7 @@
                 "artificial_analysis_coding_index": 25.9,
                 "artificial_analysis_intelligence_index": 30.9,
                 "critpt": 0,
-                "gdpval_aa": 0.182,
+                "gdpval_aa": 0.181,
                 "gpqa": 0.767,
                 "hle": 0.063,
                 "ifbench": 0.417,
@@ -24060,7 +24060,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780099222752,
+            "last_updated_at": 1780963226316,
             "openrouter_slug": "moonshotai/kimi-k2-0905",
             "percentiles": {
               "agentic_percentile": 55,
@@ -24223,7 +24223,7 @@
                 "artificial_analysis_coding_index": 15.5,
                 "artificial_analysis_intelligence_index": 24.1,
                 "critpt": 0,
-                "gdpval_aa": 0.054,
+                "gdpval_aa": 0.053,
                 "gpqa": 0.713,
                 "hle": 0.095,
                 "ifbench": 0.628,
@@ -24235,7 +24235,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1779969627398,
+            "last_updated_at": 1780963226303,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 28,
@@ -24256,7 +24256,7 @@
                 "artificial_analysis_coding_index": 34.8,
                 "artificial_analysis_intelligence_index": 40.9,
                 "critpt": 0.026,
-                "gdpval_aa": 0.246,
+                "gdpval_aa": 0.245,
                 "gpqa": 0.838,
                 "hle": 0.223,
                 "ifbench": 0.681,
@@ -24268,7 +24268,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "moonshotai/kimi-k2-thinking",
-            "last_updated_at": 1780920099689,
+            "last_updated_at": 1780963226318,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 69,
@@ -26273,7 +26273,7 @@
                 "artificial_analysis_coding_index": 14.4,
                 "artificial_analysis_intelligence_index": 16,
                 "critpt": 0,
-                "gdpval_aa": 0.019,
+                "gdpval_aa": 0.018,
                 "gpqa": 0.699,
                 "hle": 0.079,
                 "ifbench": 0.313,
@@ -26285,7 +26285,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "nousresearch/hermes-4-70b",
-            "last_updated_at": 1780401646130,
+            "last_updated_at": 1780963226269,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 24,
@@ -26564,7 +26564,7 @@
                 "artificial_analysis_coding_index": 19,
                 "artificial_analysis_intelligence_index": 24.3,
                 "critpt": 0.009,
-                "gdpval_aa": 0.033,
+                "gdpval_aa": 0.032,
                 "gpqa": 0.757,
                 "hle": 0.102,
                 "ifbench": 0.711,
@@ -26576,7 +26576,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780920099893,
+            "last_updated_at": 1780963226507,
             "openrouter_slug": "nvidia/nemotron-3-nano-30b-a3b",
             "percentiles": {
               "agentic_percentile": 35,
@@ -26713,7 +26713,7 @@
                 "artificial_analysis_coding_index": 19,
                 "artificial_analysis_intelligence_index": 24.3,
                 "critpt": 0.009,
-                "gdpval_aa": 0.033,
+                "gdpval_aa": 0.032,
                 "gpqa": 0.757,
                 "hle": 0.102,
                 "ifbench": 0.711,
@@ -26725,7 +26725,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780920099893,
+            "last_updated_at": 1780963226507,
             "openrouter_slug": "nvidia/nemotron-3-nano-30b-a3b",
             "percentiles": {
               "agentic_percentile": 35,
@@ -27126,7 +27126,7 @@
                 "artificial_analysis_coding_index": 37.6,
                 "artificial_analysis_intelligence_index": 47.7,
                 "critpt": 0.031,
-                "gdpval_aa": 0.438,
+                "gdpval_aa": 0.439,
                 "gpqa": 0.867,
                 "hle": 0.266,
                 "ifbench": 0.814,
@@ -27138,7 +27138,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "nvidia/nemotron-3-ultra-550b-a55b",
-            "last_updated_at": 1780920099908,
+            "last_updated_at": 1780963226526,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 82,
@@ -27246,7 +27246,7 @@
                 "artificial_analysis_coding_index": 37.6,
                 "artificial_analysis_intelligence_index": 47.7,
                 "critpt": 0.031,
-                "gdpval_aa": 0.438,
+                "gdpval_aa": 0.439,
                 "gpqa": 0.867,
                 "hle": 0.266,
                 "ifbench": 0.814,
@@ -27258,7 +27258,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "nvidia/nemotron-3-ultra-550b-a55b",
-            "last_updated_at": 1780920099908,
+            "last_updated_at": 1780963226526,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 82,
@@ -28460,7 +28460,7 @@
                 "artificial_analysis_coding_index": 21.8,
                 "artificial_analysis_intelligence_index": 26.3,
                 "critpt": 0,
-                "gdpval_aa": 0.139,
+                "gdpval_aa": 0.138,
                 "gpqa": 0.666,
                 "hle": 0.046,
                 "ifbench": 0.43,
@@ -28472,7 +28472,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651432,
+            "last_updated_at": 1780963225996,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 45,
@@ -28688,7 +28688,7 @@
                 "artificial_analysis_coding_index": 18.5,
                 "artificial_analysis_intelligence_index": 22.9,
                 "critpt": 0,
-                "gdpval_aa": 0.06,
+                "gdpval_aa": 0.059,
                 "gpqa": 0.664,
                 "hle": 0.046,
                 "ifbench": 0.383,
@@ -28700,7 +28700,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780142465226,
+            "last_updated_at": 1780963226000,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 43,
@@ -29952,7 +29952,7 @@
                 "artificial_analysis_coding_index": 36,
                 "artificial_analysis_intelligence_index": 44.6,
                 "critpt": 0.057,
-                "gdpval_aa": 0.397,
+                "gdpval_aa": 0.396,
                 "gpqa": 0.854,
                 "hle": 0.265,
                 "ifbench": 0.731,
@@ -29964,7 +29964,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "openai/gpt-5",
-            "last_updated_at": 1780099222536,
+            "last_updated_at": 1780963226022,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 79,
@@ -30018,7 +30018,7 @@
                 "artificial_analysis_coding_index": 38.9,
                 "artificial_analysis_intelligence_index": 42,
                 "critpt": 0,
-                "gdpval_aa": 0.25,
+                "gdpval_aa": 0.251,
                 "gpqa": 0.842,
                 "hle": 0.235,
                 "ifbench": 0.706,
@@ -30030,7 +30030,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780228844477,
+            "last_updated_at": 1780963226026,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 66,
@@ -30550,7 +30550,7 @@
                 "artificial_analysis_coding_index": 38.9,
                 "artificial_analysis_intelligence_index": 44.6,
                 "critpt": 0.051,
-                "gdpval_aa": 0.358,
+                "gdpval_aa": 0.357,
                 "gpqa": 0.837,
                 "hle": 0.256,
                 "ifbench": 0.741,
@@ -30562,7 +30562,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651458,
+            "last_updated_at": 1780963226030,
             "openrouter_slug": "openai/gpt-5-codex",
             "percentiles": {
               "agentic_percentile": 77,
@@ -30678,10 +30678,10 @@
             "aa_name": "GPT Image 1 (high)",
             "aa_slug": "openai-gpt_gpt-image-1--high",
             "benchmark_data": {
-              "appearances": 4936,
+              "appearances": 4941,
               "categories": [
                 {
-                  "appearances": 1900,
+                  "appearances": 1901,
                   "ci95": "-14/14",
                   "elo": 1138,
                   "format_category": null,
@@ -30689,7 +30689,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 421,
+                  "appearances": 422,
                   "ci95": "-31/31",
                   "elo": 1069,
                   "format_category": null,
@@ -30721,7 +30721,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 922,
+                  "appearances": 925,
                   "ci95": "-21/21",
                   "elo": 1135,
                   "format_category": null,
@@ -30729,7 +30729,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2136,
+                  "appearances": 2138,
                   "ci95": "-14/14",
                   "elo": 1171,
                   "format_category": null,
@@ -30737,7 +30737,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 556,
+                  "appearances": 557,
                   "ci95": "-27/27",
                   "elo": 1156,
                   "format_category": null,
@@ -30753,15 +30753,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 150,
+                  "appearances": 151,
                   "ci95": "-50/50",
-                  "elo": 1142,
+                  "elo": 1141,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 996,
+                  "appearances": 997,
                   "ci95": "-20/20",
                   "elo": 1177,
                   "format_category": null,
@@ -30769,7 +30769,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 651,
+                  "appearances": 652,
                   "ci95": "-25/25",
                   "elo": 1124,
                   "format_category": null,
@@ -30817,7 +30817,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 535,
+                  "appearances": 536,
                   "ci95": "-28/28",
                   "elo": 1114,
                   "format_category": null,
@@ -30825,7 +30825,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 445,
+                  "appearances": 446,
                   "ci95": "-30/30",
                   "elo": 1082,
                   "format_category": null,
@@ -30835,15 +30835,15 @@
                 {
                   "appearances": 1195,
                   "ci95": "-19/19",
-                  "elo": 1156,
+                  "elo": 1157,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 279,
+                  "appearances": 283,
                   "ci95": "-37/37",
-                  "elo": 1070,
+                  "elo": 1071,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Text & Typography"
@@ -30859,7 +30859,7 @@
                 {
                   "appearances": 305,
                   "ci95": "-38/38",
-                  "elo": 1157,
+                  "elo": 1159,
                   "format_category": null,
                   "style_category": "Vintage & Retro",
                   "subject_matter_category": null
@@ -30867,13 +30867,13 @@
                 {
                   "appearances": 765,
                   "ci95": "-23/23",
-                  "elo": 1158,
+                  "elo": 1159,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Fantasy & Mythical"
                 },
                 {
-                  "appearances": 1985,
+                  "appearances": 1987,
                   "ci95": "-14/14",
                   "elo": 1122,
                   "format_category": null,
@@ -30881,7 +30881,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3038,
+                  "appearances": 3042,
                   "ci95": "-11/11",
                   "elo": 1130,
                   "format_category": null,
@@ -30899,7 +30899,7 @@
                 {
                   "appearances": 249,
                   "ci95": "-40/40",
-                  "elo": 1171,
+                  "elo": 1172,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -30921,7 +30921,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1324,
+                  "appearances": 1326,
                   "ci95": "-18/18",
                   "elo": 1169,
                   "format_category": null,
@@ -30929,7 +30929,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2690,
+                  "appearances": 2691,
                   "ci95": "-12/12",
                   "elo": 1145,
                   "format_category": null,
@@ -30937,7 +30937,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 279,
+                  "appearances": 280,
                   "ci95": "-36/36",
                   "elo": 1132,
                   "format_category": null,
@@ -30945,7 +30945,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 339,
+                  "appearances": 340,
                   "ci95": "-36/36",
                   "elo": 1195,
                   "format_category": null,
@@ -30953,7 +30953,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1449,
+                  "appearances": 1451,
                   "ci95": "-16/16",
                   "elo": 1117,
                   "format_category": null,
@@ -30961,23 +30961,23 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1048,
+                  "appearances": 1051,
                   "ci95": "-20/20",
-                  "elo": 1135,
+                  "elo": 1134,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1921,
+                  "appearances": 1925,
                   "ci95": "-14/14",
-                  "elo": 1131,
+                  "elo": 1130,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 506,
+                  "appearances": 508,
                   "ci95": "-29/29",
                   "elo": 1156,
                   "format_category": null,
@@ -30985,7 +30985,7 @@
                   "subject_matter_category": "People: Groups & Activities"
                 },
                 {
-                  "appearances": 510,
+                  "appearances": 512,
                   "ci95": "-28/28",
                   "elo": 1103,
                   "format_category": null,
@@ -30995,13 +30995,13 @@
               ],
               "ci95": "-9/9",
               "elo": 1135,
-              "elo_max": 1339,
+              "elo_max": 1340,
               "elo_min": 962,
               "model_type": "text-to-image",
               "rank": 44
             },
             "heuristic_openrouter_slug": "openai/gpt-5-image",
-            "last_updated_at": 1780920100238,
+            "last_updated_at": 1780963226950,
             "openrouter_slug": null,
             "permaslug": "openai/gpt-5-image"
           }
@@ -31149,10 +31149,10 @@
             "aa_name": "GPT Image 1 Mini (medium)",
             "aa_slug": "openai-gpt_gpt-image-1-mini--medium",
             "benchmark_data": {
-              "appearances": 5156,
+              "appearances": 5163,
               "categories": [
                 {
-                  "appearances": 1972,
+                  "appearances": 1975,
                   "ci95": "-14/14",
                   "elo": 1094,
                   "format_category": null,
@@ -31162,13 +31162,13 @@
                 {
                   "appearances": 448,
                   "ci95": "-31/31",
-                  "elo": 1033,
+                  "elo": 1034,
                   "format_category": null,
                   "style_category": "Cartoon & Illustration",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 593,
+                  "appearances": 594,
                   "ci95": "-28/28",
                   "elo": 1113,
                   "format_category": null,
@@ -31176,9 +31176,9 @@
                   "subject_matter_category": "People: Portraits"
                 },
                 {
-                  "appearances": 367,
+                  "appearances": 368,
                   "ci95": "-34/34",
-                  "elo": 1080,
+                  "elo": 1082,
                   "format_category": null,
                   "style_category": "Anime",
                   "subject_matter_category": null
@@ -31200,7 +31200,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2237,
+                  "appearances": 2241,
                   "ci95": "-14/14",
                   "elo": 1107,
                   "format_category": null,
@@ -31240,9 +31240,9 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 678,
+                  "appearances": 679,
                   "ci95": "-25/25",
-                  "elo": 1075,
+                  "elo": 1076,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Futuristic & Sci-Fi"
@@ -31256,15 +31256,15 @@
                   "subject_matter_category": "Physical Spaces"
                 },
                 {
-                  "appearances": 459,
+                  "appearances": 460,
                   "ci95": "-31/31",
-                  "elo": 1118,
+                  "elo": 1117,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1425,
+                  "appearances": 1426,
                   "ci95": "-17/17",
                   "elo": 1081,
                   "format_category": null,
@@ -31272,7 +31272,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 790,
+                  "appearances": 791,
                   "ci95": "-24/24",
                   "elo": 1113,
                   "format_category": null,
@@ -31280,7 +31280,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 966,
+                  "appearances": 967,
                   "ci95": "-20/20",
                   "elo": 1054,
                   "format_category": null,
@@ -31296,7 +31296,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 467,
+                  "appearances": 469,
                   "ci95": "-29/29",
                   "elo": 1096,
                   "format_category": null,
@@ -31304,23 +31304,23 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1257,
+                  "appearances": 1259,
                   "ci95": "-18/18",
-                  "elo": 1089,
+                  "elo": 1088,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 296,
+                  "appearances": 298,
                   "ci95": "-37/37",
-                  "elo": 1095,
+                  "elo": 1098,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Text & Typography"
                 },
                 {
-                  "appearances": 513,
+                  "appearances": 514,
                   "ci95": "-28/28",
                   "elo": 1106,
                   "format_category": null,
@@ -31330,31 +31330,31 @@
                 {
                   "appearances": 338,
                   "ci95": "-36/36",
-                  "elo": 1145,
+                  "elo": 1147,
                   "format_category": null,
                   "style_category": "Vintage & Retro",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 745,
+                  "appearances": 746,
                   "ci95": "-24/24",
-                  "elo": 1087,
+                  "elo": 1090,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Fantasy & Mythical"
                 },
                 {
-                  "appearances": 2028,
+                  "appearances": 2031,
                   "ci95": "-14/14",
-                  "elo": 1088,
+                  "elo": 1089,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3100,
+                  "appearances": 3106,
                   "ci95": "-11/11",
-                  "elo": 1090,
+                  "elo": 1091,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31384,15 +31384,15 @@
                   "subject_matter_category": "Commercial"
                 },
                 {
-                  "appearances": 543,
+                  "appearances": 544,
                   "ci95": "-27/27",
-                  "elo": 1073,
+                  "elo": 1074,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1386,
+                  "appearances": 1389,
                   "ci95": "-18/18",
                   "elo": 1092,
                   "format_category": null,
@@ -31400,7 +31400,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2772,
+                  "appearances": 2776,
                   "ci95": "-12/12",
                   "elo": 1098,
                   "format_category": null,
@@ -31408,23 +31408,23 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 283,
-                  "ci95": "-37/37",
-                  "elo": 1125,
+                  "appearances": 284,
+                  "ci95": "-36/36",
+                  "elo": 1128,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 361,
+                  "appearances": 362,
                   "ci95": "-35/35",
-                  "elo": 1191,
+                  "elo": 1189,
                   "format_category": null,
                   "style_category": "Traditional Art",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1529,
+                  "appearances": 1530,
                   "ci95": "-16/16",
                   "elo": 1046,
                   "format_category": null,
@@ -31440,17 +31440,17 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1976,
+                  "appearances": 1980,
                   "ci95": "-14/14",
-                  "elo": 1099,
+                  "elo": 1100,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 555,
+                  "appearances": 557,
                   "ci95": "-29/29",
-                  "elo": 1091,
+                  "elo": 1089,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Groups & Activities"
@@ -31466,13 +31466,13 @@
               ],
               "ci95": "-9/9",
               "elo": 1087,
-              "elo_max": 1339,
+              "elo_max": 1340,
               "elo_min": 962,
               "model_type": "text-to-image",
               "rank": 72
             },
             "heuristic_openrouter_slug": "openai/gpt-5-image-mini",
-            "last_updated_at": 1780920100245,
+            "last_updated_at": 1780963226969,
             "openrouter_slug": null,
             "permaslug": "openai/gpt-5-image-mini"
           }
@@ -31660,7 +31660,7 @@
                 "artificial_analysis_coding_index": 32.8,
                 "artificial_analysis_intelligence_index": 38.9,
                 "critpt": 0.014,
-                "gdpval_aa": 0.251,
+                "gdpval_aa": 0.25,
                 "gpqa": 0.803,
                 "hle": 0.146,
                 "ifbench": 0.712,
@@ -31672,7 +31672,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780920099467,
+            "last_updated_at": 1780963226036,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 61,
@@ -31966,7 +31966,7 @@
                 "artificial_analysis_coding_index": 20.3,
                 "artificial_analysis_intelligence_index": 26.8,
                 "critpt": 0,
-                "gdpval_aa": 0.128,
+                "gdpval_aa": 0.127,
                 "gpqa": 0.676,
                 "hle": 0.082,
                 "ifbench": 0.676,
@@ -31978,7 +31978,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "openai/gpt-5-nano",
-            "last_updated_at": 1780833651464,
+            "last_updated_at": 1780963226040,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 40,
@@ -31999,7 +31999,7 @@
                 "artificial_analysis_coding_index": 22.9,
                 "artificial_analysis_intelligence_index": 25.9,
                 "critpt": 0,
-                "gdpval_aa": 0.046,
+                "gdpval_aa": 0.045,
                 "gpqa": 0.67,
                 "hle": 0.076,
                 "ifbench": 0.659,
@@ -32011,7 +32011,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651465,
+            "last_updated_at": 1780963226042,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 31,
@@ -32334,7 +32334,7 @@
                 "artificial_analysis_coding_index": 44.7,
                 "artificial_analysis_intelligence_index": 47.7,
                 "critpt": 0.049,
-                "gdpval_aa": 0.364,
+                "gdpval_aa": 0.363,
                 "gpqa": 0.873,
                 "hle": 0.265,
                 "ifbench": 0.729,
@@ -32346,7 +32346,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "openai/gpt-5.1",
-            "last_updated_at": 1780574414039,
+            "last_updated_at": 1780963226047,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 74,
@@ -33181,7 +33181,7 @@
                 "artificial_analysis_coding_index": 36.6,
                 "artificial_analysis_intelligence_index": 43.1,
                 "critpt": 0.057,
-                "gdpval_aa": 0.346,
+                "gdpval_aa": 0.345,
                 "gpqa": 0.86,
                 "hle": 0.234,
                 "ifbench": 0.7,
@@ -33193,7 +33193,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "openai/gpt-5.1-codex",
-            "last_updated_at": 1780099222553,
+            "last_updated_at": 1780963226049,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 73,
@@ -33504,7 +33504,7 @@
                 "artificial_analysis_coding_index": 36.4,
                 "artificial_analysis_intelligence_index": 38.6,
                 "critpt": 0,
-                "gdpval_aa": 0.277,
+                "gdpval_aa": 0.276,
                 "gpqa": 0.813,
                 "hle": 0.169,
                 "ifbench": 0.679,
@@ -33516,7 +33516,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "openai/gpt-5.1-codex-mini",
-            "last_updated_at": 1780833651472,
+            "last_updated_at": 1780963226051,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 57,
@@ -33776,7 +33776,7 @@
                 "artificial_analysis_coding_index": 48.7,
                 "artificial_analysis_intelligence_index": 51.3,
                 "critpt": 0.116,
-                "gdpval_aa": 0.484,
+                "gdpval_aa": 0.483,
                 "gpqa": 0.903,
                 "hle": 0.354,
                 "ifbench": 0.754,
@@ -33788,7 +33788,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "openai/gpt-5.2",
-            "last_updated_at": 1780531257403,
+            "last_updated_at": 1780963226056,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 87,
@@ -35061,7 +35061,7 @@
                 "artificial_analysis_coding_index": 53.1,
                 "artificial_analysis_intelligence_index": 53.6,
                 "critpt": 0.169,
-                "gdpval_aa": 0.491,
+                "gdpval_aa": 0.49,
                 "gpqa": 0.915,
                 "hle": 0.399,
                 "ifbench": 0.754,
@@ -35073,7 +35073,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "openai/gpt-5.3-codex",
-            "last_updated_at": 1780401645919,
+            "last_updated_at": 1780963226060,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 87,
@@ -36198,10 +36198,10 @@
             "aa_name": "GPT Image 2 (high)",
             "aa_slug": "gpt-image-2",
             "benchmark_data": {
-              "appearances": 10714,
+              "appearances": 10733,
               "categories": [
                 {
-                  "appearances": 2755,
+                  "appearances": 2757,
                   "ci95": "-16/16",
                   "elo": 1372,
                   "format_category": null,
@@ -36209,7 +36209,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 807,
+                  "appearances": 811,
                   "ci95": "-34/34",
                   "elo": 1307,
                   "format_category": null,
@@ -36217,17 +36217,17 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 953,
+                  "appearances": 956,
                   "ci95": "-32/32",
-                  "elo": 1353,
+                  "elo": 1352,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Portraits"
                 },
                 {
-                  "appearances": 681,
+                  "appearances": 682,
                   "ci95": "-35/35",
-                  "elo": 1351,
+                  "elo": 1352,
                   "format_category": null,
                   "style_category": "Anime",
                   "subject_matter_category": null
@@ -36241,7 +36241,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2774,
+                  "appearances": 2781,
                   "ci95": "-22/22",
                   "elo": 1362,
                   "format_category": null,
@@ -36249,25 +36249,25 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 4154,
+                  "appearances": 4165,
                   "ci95": "-15/15",
-                  "elo": 1371,
+                  "elo": 1372,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 374,
+                  "appearances": 376,
                   "ci95": "-56/56",
-                  "elo": 1291,
+                  "elo": 1294,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1657,
+                  "appearances": 1661,
                   "ci95": "-30/30",
-                  "elo": 1370,
+                  "elo": 1371,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -36281,7 +36281,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 490,
+                  "appearances": 491,
                   "ci95": "-46/46",
                   "elo": 1314,
                   "format_category": null,
@@ -36289,7 +36289,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3344,
+                  "appearances": 3351,
                   "ci95": "-21/21",
                   "elo": 1373,
                   "format_category": null,
@@ -36297,15 +36297,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1222,
+                  "appearances": 1224,
                   "ci95": "-27/27",
-                  "elo": 1332,
+                  "elo": 1333,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Futuristic & Sci-Fi"
                 },
                 {
-                  "appearances": 983,
+                  "appearances": 984,
                   "ci95": "-25/25",
                   "elo": 1271,
                   "format_category": null,
@@ -36313,31 +36313,31 @@
                   "subject_matter_category": "Physical Spaces"
                 },
                 {
-                  "appearances": 980,
+                  "appearances": 983,
                   "ci95": "-34/34",
-                  "elo": 1386,
+                  "elo": 1387,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2955,
+                  "appearances": 2962,
                   "ci95": "-18/18",
-                  "elo": 1349,
+                  "elo": 1350,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1403,
+                  "appearances": 1405,
                   "ci95": "-26/26",
-                  "elo": 1347,
+                  "elo": 1348,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2413,
+                  "appearances": 2414,
                   "ci95": "-20/20",
                   "elo": 1308,
                   "format_category": null,
@@ -36345,15 +36345,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1089,
+                  "appearances": 1094,
                   "ci95": "-30/30",
-                  "elo": 1340,
+                  "elo": 1341,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1038,
+                  "appearances": 1041,
                   "ci95": "-30/30",
                   "elo": 1318,
                   "format_category": null,
@@ -36361,17 +36361,17 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2256,
+                  "appearances": 2261,
                   "ci95": "-21/21",
-                  "elo": 1347,
+                  "elo": 1348,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 669,
+                  "appearances": 672,
                   "ci95": "-36/36",
-                  "elo": 1293,
+                  "elo": 1291,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Text & Typography"
@@ -36385,23 +36385,23 @@
                   "subject_matter_category": "Nature & Landscapes"
                 },
                 {
-                  "appearances": 838,
+                  "appearances": 841,
                   "ci95": "-43/43",
-                  "elo": 1420,
+                  "elo": 1422,
                   "format_category": null,
                   "style_category": "Vintage & Retro",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1077,
+                  "appearances": 1079,
                   "ci95": "-26/26",
-                  "elo": 1358,
+                  "elo": 1360,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Fantasy & Mythical"
                 },
                 {
-                  "appearances": 3515,
+                  "appearances": 3519,
                   "ci95": "-15/15",
                   "elo": 1346,
                   "format_category": null,
@@ -36409,7 +36409,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 5882,
+                  "appearances": 5891,
                   "ci95": "-12/12",
                   "elo": 1349,
                   "format_category": null,
@@ -36425,15 +36425,15 @@
                   "subject_matter_category": "UI/UX Design"
                 },
                 {
-                  "appearances": 853,
+                  "appearances": 854,
                   "ci95": "-40/40",
-                  "elo": 1389,
+                  "elo": 1388,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 937,
+                  "appearances": 938,
                   "ci95": "-34/34",
                   "elo": 1353,
                   "format_category": null,
@@ -36441,7 +36441,7 @@
                   "subject_matter_category": "Commercial"
                 },
                 {
-                  "appearances": 1231,
+                  "appearances": 1232,
                   "ci95": "-26/26",
                   "elo": 1307,
                   "format_category": null,
@@ -36449,7 +36449,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2370,
+                  "appearances": 2377,
                   "ci95": "-20/20",
                   "elo": 1389,
                   "format_category": null,
@@ -36457,7 +36457,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 5508,
+                  "appearances": 5521,
                   "ci95": "-13/13",
                   "elo": 1346,
                   "format_category": null,
@@ -36465,7 +36465,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 788,
+                  "appearances": 790,
                   "ci95": "-35/35",
                   "elo": 1333,
                   "format_category": null,
@@ -36473,7 +36473,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 666,
+                  "appearances": 667,
                   "ci95": "-35/35",
                   "elo": 1369,
                   "format_category": null,
@@ -36481,7 +36481,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3359,
+                  "appearances": 3361,
                   "ci95": "-17/17",
                   "elo": 1307,
                   "format_category": null,
@@ -36489,7 +36489,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3142,
+                  "appearances": 3149,
                   "ci95": "-20/20",
                   "elo": 1354,
                   "format_category": null,
@@ -36497,23 +36497,23 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3668,
+                  "appearances": 3673,
                   "ci95": "-15/15",
-                  "elo": 1330,
+                  "elo": 1331,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 777,
+                  "appearances": 779,
                   "ci95": "-34/34",
-                  "elo": 1420,
+                  "elo": 1421,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Groups & Activities"
                 },
                 {
-                  "appearances": 1482,
+                  "appearances": 1485,
                   "ci95": "-30/30",
                   "elo": 1341,
                   "format_category": null,
@@ -36522,14 +36522,14 @@
                 }
               ],
               "ci95": "-9/9",
-              "elo": 1339,
-              "elo_max": 1339,
+              "elo": 1340,
+              "elo_max": 1340,
               "elo_min": 962,
               "model_type": "text-to-image",
               "rank": 1
             },
             "heuristic_openrouter_slug": "openai/gpt-5.4-image-2",
-            "last_updated_at": 1780920100225,
+            "last_updated_at": 1780963226947,
             "openrouter_slug": null,
             "permaslug": "openai/gpt-5.4-image-2-20260421"
           }
@@ -36687,7 +36687,7 @@
                 "artificial_analysis_coding_index": 25.3,
                 "artificial_analysis_intelligence_index": 23.3,
                 "critpt": 0,
-                "gdpval_aa": 0.251,
+                "gdpval_aa": 0.25,
                 "gpqa": 0.606,
                 "hle": 0.057,
                 "ifbench": 0.388,
@@ -36699,7 +36699,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780228844518,
+            "last_updated_at": 1780963226069,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 42,
@@ -36834,7 +36834,7 @@
                 "artificial_analysis_coding_index": 35,
                 "artificial_analysis_intelligence_index": 38.1,
                 "critpt": 0.051,
-                "gdpval_aa": 0.35,
+                "gdpval_aa": 0.349,
                 "gpqa": 0.761,
                 "hle": 0.147,
                 "ifbench": 0.644,
@@ -36846,7 +36846,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651497,
+            "last_updated_at": 1780963226077,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 62,
@@ -36867,7 +36867,7 @@
                 "artificial_analysis_coding_index": 27.9,
                 "artificial_analysis_intelligence_index": 24.4,
                 "critpt": 0,
-                "gdpval_aa": 0.221,
+                "gdpval_aa": 0.22,
                 "gpqa": 0.558,
                 "hle": 0.042,
                 "ifbench": 0.327,
@@ -36879,7 +36879,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651495,
+            "last_updated_at": 1780963226075,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 44,
@@ -37147,7 +37147,7 @@
                 "artificial_analysis_coding_index": 52.1,
                 "artificial_analysis_intelligence_index": 50.8,
                 "critpt": 0.08,
-                "gdpval_aa": 0.471,
+                "gdpval_aa": 0.47,
                 "gpqa": 0.91,
                 "hle": 0.31,
                 "ifbench": 0.644,
@@ -37159,7 +37159,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780228844538,
+            "last_updated_at": 1780963226085,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 86,
@@ -37180,7 +37180,7 @@
                 "artificial_analysis_coding_index": 56.2,
                 "artificial_analysis_intelligence_index": 56.7,
                 "critpt": 0.186,
-                "gdpval_aa": 0.575,
+                "gdpval_aa": 0.574,
                 "gpqa": 0.926,
                 "hle": 0.406,
                 "ifbench": 0.71,
@@ -37192,7 +37192,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401645949,
+            "last_updated_at": 1780963226087,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 98,
@@ -37213,7 +37213,7 @@
                 "artificial_analysis_coding_index": 48.6,
                 "artificial_analysis_intelligence_index": 40.9,
                 "critpt": 0.014,
-                "gdpval_aa": 0.408,
+                "gdpval_aa": 0.407,
                 "gpqa": 0.768,
                 "hle": 0.126,
                 "ifbench": 0.461,
@@ -37225,7 +37225,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401645944,
+            "last_updated_at": 1780963226081,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 72,
@@ -38476,7 +38476,7 @@
                 "artificial_analysis_coding_index": 18.5,
                 "artificial_analysis_intelligence_index": 24.5,
                 "critpt": 0.014,
-                "gdpval_aa": 0.075,
+                "gdpval_aa": 0.073,
                 "gpqa": 0.688,
                 "hle": 0.098,
                 "ifbench": 0.651,
@@ -38488,7 +38488,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401646618,
+            "last_updated_at": 1780963226888,
             "openrouter_slug": "openai/gpt-oss-20b",
             "percentiles": {
               "agentic_percentile": 45,
@@ -38509,7 +38509,7 @@
                 "artificial_analysis_coding_index": 14.4,
                 "artificial_analysis_intelligence_index": 20.8,
                 "critpt": 0,
-                "gdpval_aa": 0.025,
+                "gdpval_aa": 0.024,
                 "gpqa": 0.611,
                 "hle": 0.051,
                 "ifbench": 0.578,
@@ -38521,7 +38521,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401646619,
+            "last_updated_at": 1780963226890,
             "openrouter_slug": "openai/gpt-oss-20b",
             "percentiles": {
               "agentic_percentile": 39,
@@ -38673,7 +38673,7 @@
                 "artificial_analysis_coding_index": 18.5,
                 "artificial_analysis_intelligence_index": 24.5,
                 "critpt": 0.014,
-                "gdpval_aa": 0.075,
+                "gdpval_aa": 0.073,
                 "gpqa": 0.688,
                 "hle": 0.098,
                 "ifbench": 0.651,
@@ -38685,7 +38685,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401646618,
+            "last_updated_at": 1780963226888,
             "openrouter_slug": "openai/gpt-oss-20b",
             "percentiles": {
               "agentic_percentile": 45,
@@ -38706,7 +38706,7 @@
                 "artificial_analysis_coding_index": 14.4,
                 "artificial_analysis_intelligence_index": 20.8,
                 "critpt": 0,
-                "gdpval_aa": 0.025,
+                "gdpval_aa": 0.024,
                 "gpqa": 0.611,
                 "hle": 0.051,
                 "ifbench": 0.578,
@@ -38718,7 +38718,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401646619,
+            "last_updated_at": 1780963226890,
             "openrouter_slug": "openai/gpt-oss-20b",
             "percentiles": {
               "agentic_percentile": 39,
@@ -38926,7 +38926,7 @@
                 "artificial_analysis_coding_index": 20.5,
                 "artificial_analysis_intelligence_index": 30.7,
                 "critpt": 0.003,
-                "gdpval_aa": 0.118,
+                "gdpval_aa": 0.116,
                 "gpqa": 0.747,
                 "hle": 0.077,
                 "ifbench": 0.703,
@@ -38938,7 +38938,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "openai/o1",
-            "last_updated_at": 1780099223138,
+            "last_updated_at": 1780963226893,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 49,
@@ -39548,7 +39548,7 @@
                 "artificial_analysis_coding_index": 17.3,
                 "artificial_analysis_intelligence_index": 25.2,
                 "critpt": 0.003,
-                "gdpval_aa": 0.124,
+                "gdpval_aa": 0.123,
                 "gpqa": 0.773,
                 "hle": 0.123,
                 "ifbench": 0.671,
@@ -39560,7 +39560,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "openai/o3-mini-high",
-            "last_updated_at": 1780531258053,
+            "last_updated_at": 1780963226909,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 37,
@@ -39753,7 +39753,7 @@
                 "artificial_analysis_coding_index": 25.6,
                 "artificial_analysis_intelligence_index": 33.1,
                 "critpt": 0.006,
-                "gdpval_aa": 0.254,
+                "gdpval_aa": 0.253,
                 "gpqa": 0.784,
                 "hle": 0.175,
                 "ifbench": 0.687,
@@ -39765,7 +39765,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "openai/o4-mini",
-            "last_updated_at": 1780920100197,
+            "last_updated_at": 1780963226914,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 54,
@@ -41128,7 +41128,7 @@
                 "artificial_analysis_coding_index": 19.1,
                 "artificial_analysis_intelligence_index": 22.2,
                 "critpt": 0.003,
-                "gdpval_aa": 0.125,
+                "gdpval_aa": 0.124,
                 "gpqa": 0.761,
                 "hle": 0.121,
                 "ifbench": 0.34,
@@ -41140,7 +41140,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "prime-intellect/intellect-3",
-            "last_updated_at": 1780401646135,
+            "last_updated_at": 1780963226277,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 36,
@@ -42455,7 +42455,7 @@
                 "artificial_analysis_coding_index": 23.2,
                 "artificial_analysis_intelligence_index": 29.5,
                 "critpt": 0,
-                "gdpval_aa": 0.161,
+                "gdpval_aa": 0.16,
                 "gpqa": 0.79,
                 "hle": 0.15,
                 "ifbench": 0.512,
@@ -42467,7 +42467,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651945,
+            "last_updated_at": 1780963226629,
             "openrouter_slug": "qwen/qwen3-235b-a22b-thinking-2507",
             "percentiles": {
               "agentic_percentile": 48,
@@ -43015,7 +43015,7 @@
                 "artificial_analysis_coding_index": 14.6,
                 "artificial_analysis_intelligence_index": 22.4,
                 "critpt": 0.003,
-                "gdpval_aa": 0.08,
+                "gdpval_aa": 0.078,
                 "gpqa": 0.707,
                 "hle": 0.098,
                 "ifbench": 0.507,
@@ -43027,7 +43027,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780920099993,
+            "last_updated_at": 1780963226636,
             "openrouter_slug": "qwen/qwen3-30b-a3b-thinking-2507",
             "percentiles": {
               "agentic_percentile": 32,
@@ -43392,7 +43392,7 @@
                 "artificial_analysis_coding_index": 24.6,
                 "artificial_analysis_intelligence_index": 24.8,
                 "critpt": 0,
-                "gdpval_aa": 0.004,
+                "gdpval_aa": 0.002,
                 "gpqa": 0.618,
                 "hle": 0.044,
                 "ifbench": 0.405,
@@ -43404,7 +43404,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3-coder",
-            "last_updated_at": 1779808859684,
+            "last_updated_at": 1780963226657,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 33,
@@ -43605,7 +43605,7 @@
                 "artificial_analysis_coding_index": 19.4,
                 "artificial_analysis_intelligence_index": 20,
                 "critpt": 0,
-                "gdpval_aa": 0.106,
+                "gdpval_aa": 0.105,
                 "gpqa": 0.516,
                 "hle": 0.04,
                 "ifbench": 0.327,
@@ -43617,7 +43617,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401646498,
+            "last_updated_at": 1780963226655,
             "openrouter_slug": "qwen/qwen3-coder-30b-a3b-instruct",
             "percentiles": {
               "agentic_percentile": 38,
@@ -43843,7 +43843,7 @@
                 "artificial_analysis_coding_index": 22.9,
                 "artificial_analysis_intelligence_index": 28.3,
                 "critpt": 0,
-                "gdpval_aa": 0.206,
+                "gdpval_aa": 0.205,
                 "gpqa": 0.737,
                 "hle": 0.093,
                 "ifbench": 0.352,
@@ -43855,7 +43855,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3-coder-next",
-            "last_updated_at": 1780228845063,
+            "last_updated_at": 1780963226659,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 63,
@@ -44024,7 +44024,7 @@
                 "artificial_analysis_coding_index": 24.6,
                 "artificial_analysis_intelligence_index": 24.8,
                 "critpt": 0,
-                "gdpval_aa": 0.004,
+                "gdpval_aa": 0.002,
                 "gpqa": 0.618,
                 "hle": 0.044,
                 "ifbench": 0.405,
@@ -44036,7 +44036,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3-coder",
-            "last_updated_at": 1779808859684,
+            "last_updated_at": 1780963226657,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 33,
@@ -44259,7 +44259,7 @@
                 "artificial_analysis_coding_index": 26.4,
                 "artificial_analysis_intelligence_index": 31.4,
                 "critpt": 0,
-                "gdpval_aa": 0.269,
+                "gdpval_aa": 0.268,
                 "gpqa": 0.764,
                 "hle": 0.111,
                 "ifbench": 0.441,
@@ -44271,7 +44271,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780142465810,
+            "last_updated_at": 1780963226661,
             "openrouter_slug": "qwen/qwen3-max",
             "percentiles": {
               "agentic_percentile": 64,
@@ -44292,7 +44292,7 @@
                 "artificial_analysis_coding_index": 25.5,
                 "artificial_analysis_intelligence_index": 26.1,
                 "critpt": 0.009,
-                "gdpval_aa": 0.159,
+                "gdpval_aa": 0.158,
                 "gpqa": 0.764,
                 "hle": 0.093,
                 "ifbench": 0.48,
@@ -44304,7 +44304,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651974,
+            "last_updated_at": 1780963226663,
             "openrouter_slug": "qwen/qwen3-max",
             "percentiles": {
               "agentic_percentile": 41,
@@ -44559,7 +44559,7 @@
                 "artificial_analysis_coding_index": 30.5,
                 "artificial_analysis_intelligence_index": 39.8,
                 "critpt": 0.017,
-                "gdpval_aa": 0.318,
+                "gdpval_aa": 0.317,
                 "gpqa": 0.861,
                 "hle": 0.262,
                 "ifbench": 0.707,
@@ -44571,7 +44571,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3-max-thinking",
-            "last_updated_at": 1780401646505,
+            "last_updated_at": 1780963226664,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 71,
@@ -44592,7 +44592,7 @@
                 "artificial_analysis_coding_index": 24.5,
                 "artificial_analysis_intelligence_index": 32.5,
                 "critpt": 0,
-                "gdpval_aa": 0.224,
+                "gdpval_aa": 0.223,
                 "gpqa": 0.776,
                 "hle": 0.12,
                 "ifbench": 0.538,
@@ -44604,7 +44604,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1779969627680,
+            "last_updated_at": 1780963226666,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 64,
@@ -44703,7 +44703,7 @@
                 "artificial_analysis_coding_index": 15.3,
                 "artificial_analysis_intelligence_index": 20.1,
                 "critpt": 0,
-                "gdpval_aa": 0.065,
+                "gdpval_aa": 0.063,
                 "gpqa": 0.738,
                 "hle": 0.073,
                 "ifbench": 0.397,
@@ -44715,7 +44715,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3-next-80b-a3b-instruct",
-            "last_updated_at": 1780833651983,
+            "last_updated_at": 1780963226669,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 26,
@@ -44814,7 +44814,7 @@
                 "artificial_analysis_coding_index": 15.3,
                 "artificial_analysis_intelligence_index": 20.1,
                 "critpt": 0,
-                "gdpval_aa": 0.065,
+                "gdpval_aa": 0.063,
                 "gpqa": 0.738,
                 "hle": 0.073,
                 "ifbench": 0.397,
@@ -44826,7 +44826,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3-next-80b-a3b-instruct",
-            "last_updated_at": 1780833651983,
+            "last_updated_at": 1780963226669,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 26,
@@ -44995,7 +44995,7 @@
                 "artificial_analysis_coding_index": 14,
                 "artificial_analysis_intelligence_index": 17,
                 "critpt": 0,
-                "gdpval_aa": 0.119,
+                "gdpval_aa": 0.118,
                 "gpqa": 0.613,
                 "hle": 0.047,
                 "ifbench": 0.366,
@@ -45007,7 +45007,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3-vl-235b-a22b-instruct",
-            "last_updated_at": 1780142465776,
+            "last_updated_at": 1780963226625,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 36,
@@ -45028,7 +45028,7 @@
                 "artificial_analysis_coding_index": 16.5,
                 "artificial_analysis_intelligence_index": 20.8,
                 "critpt": 0,
-                "gdpval_aa": 0.068,
+                "gdpval_aa": 0.067,
                 "gpqa": 0.712,
                 "hle": 0.063,
                 "ifbench": 0.427,
@@ -45040,7 +45040,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401646518,
+            "last_updated_at": 1780963226682,
             "openrouter_slug": "qwen/qwen3-vl-235b-a22b-instruct",
             "percentiles": {
               "agentic_percentile": 35,
@@ -45144,7 +45144,7 @@
                 "artificial_analysis_coding_index": 20.9,
                 "artificial_analysis_intelligence_index": 27.6,
                 "critpt": 0,
-                "gdpval_aa": 0.107,
+                "gdpval_aa": 0.106,
                 "gpqa": 0.772,
                 "hle": 0.101,
                 "ifbench": 0.565,
@@ -45156,7 +45156,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401646517,
+            "last_updated_at": 1780963226679,
             "openrouter_slug": "qwen/qwen3-vl-235b-a22b-thinking",
             "percentiles": {
               "agentic_percentile": 45,
@@ -45381,7 +45381,7 @@
                 "artificial_analysis_coding_index": 13.1,
                 "artificial_analysis_intelligence_index": 19.7,
                 "critpt": 0,
-                "gdpval_aa": 0.084,
+                "gdpval_aa": 0.083,
                 "gpqa": 0.72,
                 "hle": 0.087,
                 "ifbench": 0.451,
@@ -45393,7 +45393,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780531257951,
+            "last_updated_at": 1780963226684,
             "openrouter_slug": "qwen/qwen3-vl-30b-a3b-thinking",
             "percentiles": {
               "agentic_percentile": 27,
@@ -45533,7 +45533,7 @@
                 "artificial_analysis_coding_index": 14.5,
                 "artificial_analysis_intelligence_index": 24.7,
                 "critpt": 0,
-                "gdpval_aa": 0.074,
+                "gdpval_aa": 0.073,
                 "gpqa": 0.733,
                 "hle": 0.096,
                 "ifbench": 0.594,
@@ -45545,7 +45545,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651995,
+            "last_updated_at": 1780963226688,
             "openrouter_slug": "qwen/qwen3-vl-32b-instruct",
             "percentiles": {
               "agentic_percentile": 41,
@@ -45645,7 +45645,7 @@
                 "artificial_analysis_coding_index": 7.3,
                 "artificial_analysis_intelligence_index": 14.3,
                 "critpt": 0,
-                "gdpval_aa": 0.091,
+                "gdpval_aa": 0.09,
                 "gpqa": 0.427,
                 "hle": 0.029,
                 "ifbench": 0.323,
@@ -45657,7 +45657,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780920100040,
+            "last_updated_at": 1780963226700,
             "openrouter_slug": "qwen/qwen3-vl-8b-instruct",
             "percentiles": {
               "agentic_percentile": 33,
@@ -45761,7 +45761,7 @@
                 "artificial_analysis_coding_index": 9.8,
                 "artificial_analysis_intelligence_index": 16.7,
                 "critpt": 0.003,
-                "gdpval_aa": 0.085,
+                "gdpval_aa": 0.084,
                 "gpqa": 0.579,
                 "hle": 0.033,
                 "ifbench": 0.399,
@@ -45773,7 +45773,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833652015,
+            "last_updated_at": 1780963226698,
             "openrouter_slug": "qwen/qwen3-vl-8b-thinking",
             "percentiles": {
               "agentic_percentile": 28,
@@ -45872,7 +45872,7 @@
                 "artificial_analysis_coding_index": 34.7,
                 "artificial_analysis_intelligence_index": 41.6,
                 "critpt": 0.006,
-                "gdpval_aa": 0.308,
+                "gdpval_aa": 0.307,
                 "gpqa": 0.857,
                 "hle": 0.234,
                 "ifbench": 0.757,
@@ -45884,7 +45884,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3.5-122b-a10b",
-            "last_updated_at": 1780099223016,
+            "last_updated_at": 1780963226707,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 78,
@@ -46120,7 +46120,7 @@
                 "artificial_analysis_coding_index": 30.3,
                 "artificial_analysis_intelligence_index": 37.1,
                 "critpt": 0.009,
-                "gdpval_aa": 0.204,
+                "gdpval_aa": 0.202,
                 "gpqa": 0.845,
                 "hle": 0.197,
                 "ifbench": 0.725,
@@ -46132,7 +46132,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3.5-35b-a3b",
-            "last_updated_at": 1779808859734,
+            "last_updated_at": 1780963226721,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 65,
@@ -46508,7 +46508,7 @@
                 "artificial_analysis_coding_index": 25.3,
                 "artificial_analysis_intelligence_index": 32.4,
                 "critpt": 0.003,
-                "gdpval_aa": 0.107,
+                "gdpval_aa": 0.106,
                 "gpqa": 0.806,
                 "hle": 0.133,
                 "ifbench": 0.667,
@@ -46520,7 +46520,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3.5-9b",
-            "last_updated_at": 1780920100065,
+            "last_updated_at": 1780963226738,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 55,
@@ -47187,7 +47187,7 @@
                 "artificial_analysis_coding_index": 35.2,
                 "artificial_analysis_intelligence_index": 43.5,
                 "critpt": 0.003,
-                "gdpval_aa": 0.4,
+                "gdpval_aa": 0.399,
                 "gpqa": 0.841,
                 "hle": 0.202,
                 "ifbench": 0.644,
@@ -47199,7 +47199,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3.6-35b-a3b",
-            "last_updated_at": 1780833652054,
+            "last_updated_at": 1780963226751,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 83,
@@ -47220,7 +47220,7 @@
                 "artificial_analysis_coding_index": 17.6,
                 "artificial_analysis_intelligence_index": 31.5,
                 "critpt": 0,
-                "gdpval_aa": 0.363,
+                "gdpval_aa": 0.362,
                 "gpqa": 0.817,
                 "hle": 0.125,
                 "ifbench": 0.362,
@@ -47232,7 +47232,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401646559,
+            "last_updated_at": 1780963226747,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 76,
@@ -47516,7 +47516,7 @@
                 "artificial_analysis_coding_index": 42.9,
                 "artificial_analysis_intelligence_index": 50,
                 "critpt": 0.029,
-                "gdpval_aa": 0.427,
+                "gdpval_aa": 0.426,
                 "gpqa": 0.882,
                 "hle": 0.257,
                 "ifbench": 0.752,
@@ -47528,7 +47528,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3.6-plus",
-            "last_updated_at": 1780401646568,
+            "last_updated_at": 1780963226755,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 90,
@@ -48104,7 +48104,7 @@
                 "artificial_analysis_coding_index": 46.5,
                 "artificial_analysis_intelligence_index": 53.3,
                 "critpt": 0.091,
-                "gdpval_aa": 0.511,
+                "gdpval_aa": 0.51,
                 "gpqa": 0.9,
                 "hle": 0.334,
                 "ifbench": 0.78,
@@ -48116,7 +48116,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3.7-plus",
-            "last_updated_at": 1780531257994,
+            "last_updated_at": 1780963226758,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 93,
@@ -48815,7 +48815,7 @@
                 "artificial_analysis_coding_index": 34.6,
                 "artificial_analysis_intelligence_index": 38.5,
                 "critpt": 0.023,
-                "gdpval_aa": 0.285,
+                "gdpval_aa": 0.284,
                 "gpqa": 0.826,
                 "hle": 0.226,
                 "ifbench": 0.665,
@@ -48827,7 +48827,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "stepfun/step-3.5-flash",
-            "last_updated_at": 1780358420634,
+            "last_updated_at": 1780963226872,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 69,
@@ -48848,7 +48848,7 @@
                 "artificial_analysis_coding_index": 31.6,
                 "artificial_analysis_intelligence_index": 37.8,
                 "critpt": 0.025,
-                "gdpval_aa": 0.277,
+                "gdpval_aa": 0.276,
                 "gpqa": 0.831,
                 "hle": 0.191,
                 "ifbench": 0.646,
@@ -48860,7 +48860,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780358420632,
+            "last_updated_at": 1780963226870,
             "openrouter_slug": "stepfun/step-3.5-flash",
             "percentiles": {
               "agentic_percentile": 75,
@@ -48967,7 +48967,7 @@
                 "artificial_analysis_coding_index": 37.1,
                 "artificial_analysis_intelligence_index": 42.6,
                 "critpt": 0.023,
-                "gdpval_aa": 0.4,
+                "gdpval_aa": 0.399,
                 "gpqa": 0.809,
                 "hle": 0.199,
                 "ifbench": 0.673,
@@ -48979,7 +48979,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "stepfun/step-3.7-flash",
-            "last_updated_at": 1780833652107,
+            "last_updated_at": 1780963226874,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 85,
@@ -49328,7 +49328,7 @@
                 "artificial_analysis_coding_index": 36.5,
                 "artificial_analysis_intelligence_index": 41.9,
                 "critpt": 0.046,
-                "gdpval_aa": 0.369,
+                "gdpval_aa": 0.368,
                 "gpqa": 0.867,
                 "hle": 0.255,
                 "ifbench": 0.631,
@@ -49340,7 +49340,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780099222722,
+            "last_updated_at": 1780963226273,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 81,
@@ -49812,7 +49812,7 @@
                 "artificial_analysis_coding_index": 13.3,
                 "artificial_analysis_intelligence_index": 25.9,
                 "critpt": 0,
-                "gdpval_aa": 0.088,
+                "gdpval_aa": 0.087,
                 "gpqa": 0.724,
                 "hle": 0.101,
                 "ifbench": 0.712,
@@ -49824,7 +49824,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "upstage/solar-pro-3",
-            "last_updated_at": 1780401646591,
+            "last_updated_at": 1780963226790,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 53,
@@ -49985,7 +49985,7 @@
                 "artificial_analysis_coding_index": 40.5,
                 "artificial_analysis_intelligence_index": 49.3,
                 "critpt": 0.066,
-                "gdpval_aa": 0.335,
+                "gdpval_aa": 0.334,
                 "gpqa": 0.911,
                 "hle": 0.322,
                 "ifbench": 0.812,
@@ -49997,7 +49997,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780228844706,
+            "last_updated_at": 1780963226242,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 78,
@@ -50018,7 +50018,7 @@
                 "artificial_analysis_coding_index": 42.2,
                 "artificial_analysis_intelligence_index": 48.5,
                 "critpt": 0.06,
-                "gdpval_aa": 0.271,
+                "gdpval_aa": 0.27,
                 "gpqa": 0.885,
                 "hle": 0.3,
                 "ifbench": 0.829,
@@ -50030,7 +50030,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651623,
+            "last_updated_at": 1780963226238,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 74,
@@ -50051,7 +50051,7 @@
                 "artificial_analysis_coding_index": 25.4,
                 "artificial_analysis_intelligence_index": 29.7,
                 "critpt": 0,
-                "gdpval_aa": 0.205,
+                "gdpval_aa": 0.203,
                 "gpqa": 0.785,
                 "hle": 0.225,
                 "ifbench": 0.478,
@@ -50063,7 +50063,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401646106,
+            "last_updated_at": 1780963226237,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 55,
@@ -50306,7 +50306,7 @@
                 "artificial_analysis_coding_index": 31.6,
                 "artificial_analysis_intelligence_index": 43.9,
                 "critpt": 0.006,
-                "gdpval_aa": 0.313,
+                "gdpval_aa": 0.312,
                 "gpqa": 0.843,
                 "hle": 0.173,
                 "ifbench": 0.81,
@@ -50318,7 +50318,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651629,
+            "last_updated_at": 1780963226248,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 72,
@@ -50826,7 +50826,7 @@
                 "artificial_analysis_coding_index": 25.8,
                 "artificial_analysis_intelligence_index": 30.3,
                 "critpt": 0,
-                "gdpval_aa": 0.28,
+                "gdpval_aa": 0.279,
                 "gpqa": 0.656,
                 "hle": 0.08,
                 "ifbench": 0.399,
@@ -50838,7 +50838,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "xiaomi/mimo-v2-flash",
-            "last_updated_at": 1780142465602,
+            "last_updated_at": 1780963226419,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 67,
@@ -50859,7 +50859,7 @@
                 "artificial_analysis_coding_index": 31.8,
                 "artificial_analysis_intelligence_index": 39.2,
                 "critpt": 0.043,
-                "gdpval_aa": 0.29,
+                "gdpval_aa": 0.289,
                 "gpqa": 0.846,
                 "hle": 0.211,
                 "ifbench": 0.642,
@@ -50871,7 +50871,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "xiaomi/mimo-v2-flash",
-            "last_updated_at": 1780401646312,
+            "last_updated_at": 1780963226421,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 76,
@@ -51438,7 +51438,7 @@
                 "artificial_analysis_coding_index": 36.8,
                 "artificial_analysis_intelligence_index": 35.6,
                 "critpt": 0.011,
-                "gdpval_aa": 0.399,
+                "gdpval_aa": 0.398,
                 "gpqa": 0.762,
                 "hle": 0.133,
                 "ifbench": 0.427,
@@ -51450,7 +51450,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401646320,
+            "last_updated_at": 1780963226433,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 73,
@@ -52677,7 +52677,7 @@
                 "artificial_analysis_coding_index": 29.5,
                 "artificial_analysis_intelligence_index": 32.5,
                 "critpt": 0.011,
-                "gdpval_aa": 0.265,
+                "gdpval_aa": 0.264,
                 "gpqa": 0.78,
                 "hle": 0.133,
                 "ifbench": 0.434,
@@ -52689,7 +52689,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1779451222316,
+            "last_updated_at": 1780963225960,
             "openrouter_slug": "z-ai/glm-4.6",
             "percentiles": {
               "agentic_percentile": 62,
@@ -53013,7 +53013,7 @@
                 "artificial_analysis_coding_index": 11.1,
                 "artificial_analysis_intelligence_index": 17.1,
                 "critpt": 0,
-                "gdpval_aa": 0.097,
+                "gdpval_aa": 0.096,
                 "gpqa": 0.566,
                 "hle": 0.037,
                 "ifbench": 0.279,
@@ -53025,7 +53025,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651401,
+            "last_updated_at": 1780963225963,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 34,
@@ -53046,7 +53046,7 @@
                 "artificial_analysis_coding_index": 19.7,
                 "artificial_analysis_intelligence_index": 23.4,
                 "critpt": 0,
-                "gdpval_aa": 0.055,
+                "gdpval_aa": 0.054,
                 "gpqa": 0.719,
                 "hle": 0.089,
                 "ifbench": 0.301,
@@ -53058,7 +53058,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651403,
+            "last_updated_at": 1780963225965,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 32,
@@ -53582,7 +53582,7 @@
                 "artificial_analysis_coding_index": 11,
                 "artificial_analysis_intelligence_index": 22.1,
                 "critpt": 0,
-                "gdpval_aa": 0.151,
+                "gdpval_aa": 0.15,
                 "gpqa": 0.452,
                 "hle": 0.049,
                 "ifbench": 0.463,
@@ -53594,7 +53594,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401645792,
+            "last_updated_at": 1780963225971,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 62,
@@ -53839,7 +53839,7 @@
                 "artificial_analysis_coding_index": 44.2,
                 "artificial_analysis_intelligence_index": 49.8,
                 "critpt": 0.02,
-                "gdpval_aa": 0.447,
+                "gdpval_aa": 0.446,
                 "gpqa": 0.82,
                 "hle": 0.272,
                 "ifbench": 0.723,
@@ -53851,7 +53851,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780142465210,
+            "last_updated_at": 1780963225977,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 91,
@@ -54535,7 +54535,7 @@
                 "artificial_analysis_coding_index": 35.8,
                 "artificial_analysis_intelligence_index": 43.8,
                 "critpt": 0,
-                "gdpval_aa": 0.496,
+                "gdpval_aa": 0.497,
                 "gpqa": 0.839,
                 "hle": 0.256,
                 "ifbench": 0.52,
@@ -54547,7 +54547,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780531257249,
+            "last_updated_at": 1780963225981,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 94,
@@ -55006,7 +55006,7 @@
                 "artificial_analysis_coding_index": 36.2,
                 "artificial_analysis_intelligence_index": 42.9,
                 "critpt": 0.006,
-                "gdpval_aa": 0.415,
+                "gdpval_aa": 0.414,
                 "gpqa": 0.809,
                 "hle": 0.158,
                 "ifbench": 0.611,
@@ -55018,7 +55018,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780099222485,
+            "last_updated_at": 1780963225948,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 88,
@@ -55411,7 +55411,7 @@
                 "artificial_analysis_coding_index": 29.6,
                 "artificial_analysis_intelligence_index": 31,
                 "critpt": 0,
-                "gdpval_aa": 0.319,
+                "gdpval_aa": 0.318,
                 "gpqa": 0.646,
                 "hle": 0.043,
                 "ifbench": 0.42,
@@ -55423,7 +55423,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "anthropic/claude-haiku-4.5",
-            "last_updated_at": 1780833651239,
+            "last_updated_at": 1780963225799,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 51,
@@ -56520,7 +56520,7 @@
                 "artificial_analysis_coding_index": 47.1,
                 "artificial_analysis_intelligence_index": 43.3,
                 "critpt": 0.014,
-                "gdpval_aa": 0.471,
+                "gdpval_aa": 0.47,
                 "gpqa": 0.828,
                 "hle": 0.231,
                 "ifbench": 0.473,
@@ -56532,7 +56532,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780531257484,
+            "last_updated_at": 1780963226165,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 74,
@@ -56944,7 +56944,7 @@
                 "artificial_analysis_coding_index": 46.5,
                 "artificial_analysis_intelligence_index": 48.4,
                 "critpt": 0.091,
-                "gdpval_aa": 0.343,
+                "gdpval_aa": 0.342,
                 "gpqa": 0.908,
                 "hle": 0.372,
                 "ifbench": 0.704,
@@ -56956,7 +56956,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780833651554,
+            "last_updated_at": 1780963226154,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 75,
@@ -56977,7 +56977,7 @@
                 "artificial_analysis_coding_index": 39.4,
                 "artificial_analysis_intelligence_index": 41.3,
                 "critpt": 0,
-                "gdpval_aa": 0.334,
+                "gdpval_aa": 0.333,
                 "gpqa": 0.887,
                 "hle": 0.276,
                 "ifbench": 0.497,
@@ -56989,7 +56989,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401646027,
+            "last_updated_at": 1780963226155,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 66,
@@ -58017,7 +58017,7 @@
                 "artificial_analysis_coding_index": 52.1,
                 "artificial_analysis_intelligence_index": 50.8,
                 "critpt": 0.08,
-                "gdpval_aa": 0.471,
+                "gdpval_aa": 0.47,
                 "gpqa": 0.91,
                 "hle": 0.31,
                 "ifbench": 0.644,
@@ -58029,7 +58029,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780228844538,
+            "last_updated_at": 1780963226085,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 86,
@@ -58050,7 +58050,7 @@
                 "artificial_analysis_coding_index": 56.2,
                 "artificial_analysis_intelligence_index": 56.7,
                 "critpt": 0.186,
-                "gdpval_aa": 0.575,
+                "gdpval_aa": 0.574,
                 "gpqa": 0.926,
                 "hle": 0.406,
                 "ifbench": 0.71,
@@ -58062,7 +58062,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401645949,
+            "last_updated_at": 1780963226087,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 98,
@@ -58083,7 +58083,7 @@
                 "artificial_analysis_coding_index": 48.6,
                 "artificial_analysis_intelligence_index": 40.9,
                 "critpt": 0.014,
-                "gdpval_aa": 0.408,
+                "gdpval_aa": 0.407,
                 "gpqa": 0.768,
                 "hle": 0.126,
                 "ifbench": 0.461,
@@ -58095,7 +58095,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780401645944,
+            "last_updated_at": 1780963226081,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 72,
@@ -58555,7 +58555,7 @@
                 "artificial_analysis_coding_index": 25.3,
                 "artificial_analysis_intelligence_index": 23.3,
                 "critpt": 0,
-                "gdpval_aa": 0.251,
+                "gdpval_aa": 0.25,
                 "gpqa": 0.606,
                 "hle": 0.057,
                 "ifbench": 0.388,
@@ -58567,7 +58567,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1780228844518,
+            "last_updated_at": 1780963226069,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 42,
