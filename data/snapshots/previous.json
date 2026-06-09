@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T14:08:41.413774Z",
+  "generated_at": "2026-06-09T16:49:12.823809Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -1453,54 +1453,6 @@
         "context_length": 32768,
         "is_moderated": false,
         "max_completion_tokens": null
-      }
-    },
-    "arcee-ai/maestro-reasoning": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "arcee-ai/maestro-reasoning",
-      "context_length": 131072,
-      "created": 1746481269,
-      "default_parameters": {},
-      "description": "Maestro Reasoning is Arcee's flagship analysis model: a 32 B‑parameter derivative of Qwen 2.5‑32 B tuned with DPO and chain‑of‑thought RL for step‑by‑step logic. Compared to the earlier 7 B...",
-      "expiration_date": null,
-      "id": "arcee-ai/maestro-reasoning",
-      "name": "Arcee AI: Maestro Reasoning",
-      "pricing": {
-        "completion": "0.0000033",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000009",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 32000
       }
     },
     "arcee-ai/trinity-large-thinking": {
