@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T17:35:21.108318Z",
+  "generated_at": "2026-06-10T19:58:41.542805Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -7893,56 +7893,6 @@
         "max_completion_tokens": 262142
       }
     },
-    "moonshotai/kimi-k2.6:free": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "instruct_type": null,
-        "modality": "text+image->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "moonshotai/kimi-k2.6-20260420",
-      "context_length": 262144,
-      "created": 1776699402,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
-      "expiration_date": null,
-      "id": "moonshotai/kimi-k2.6:free",
-      "name": "MoonshotAI: Kimi K2.6 (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "include_reasoning",
-        "reasoning",
-        "tool_choice",
-        "tools"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": null
-      }
-    },
     "morph/morph-v3-fast": {
       "architecture": {
         "input_modalities": [
@@ -8609,6 +8559,7 @@
         "response_format",
         "seed",
         "stop",
+        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
