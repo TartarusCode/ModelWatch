@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T10:33:41.046098Z",
+  "generated_at": "2026-06-10T14:02:50.112664Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -7790,12 +7790,12 @@
       "id": "moonshotai/kimi-k2.5",
       "name": "MoonshotAI: Kimi K2.5",
       "pricing": {
-        "completion": "0.00000189",
+        "completion": "0.0000019",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000035",
+        "prompt": "0.0000004",
         "request": null,
         "web_search": null
       },
@@ -7821,9 +7821,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 256000,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 262144
       }
     },
     "moonshotai/kimi-k2.6": {
