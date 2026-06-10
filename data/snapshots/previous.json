@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T14:02:50.112664Z",
+  "generated_at": "2026-06-10T17:35:21.108318Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -2363,7 +2363,7 @@
         "tokenizer": "DeepSeek"
       },
       "canonical_slug": "deepseek/deepseek-chat-v3-0324",
-      "context_length": 163840,
+      "context_length": 131072,
       "created": 1742824755,
       "default_parameters": {},
       "description": "DeepSeek V3, a 685B-parameter, mixture-of-experts model, is the latest iteration of the flagship chat model family from the DeepSeek team. It succeeds the [DeepSeek V3](/deepseek/deepseek-chat-v3) model and performs really well...",
@@ -2398,7 +2398,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 163840,
+        "context_length": 32768,
         "is_moderated": false,
         "max_completion_tokens": 16384
       }
