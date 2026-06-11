@@ -1,6 +1,24 @@
 {
   "drops": [
     {
+      "detected_at": "2026-06-11T20:01:06.719020Z",
+      "field": "input_cache_read",
+      "model_id": "~moonshotai/kimi-latest",
+      "new_per_million_usd": "0.140000",
+      "old_per_million_usd": "0.340000",
+      "pct_drop": 0.5882352941176471,
+      "saved_per_million_usd": "0.200000"
+    },
+    {
+      "detected_at": "2026-06-11T20:01:06.719020Z",
+      "field": "input_cache_read",
+      "model_id": "moonshotai/kimi-k2.6",
+      "new_per_million_usd": "0.140000",
+      "old_per_million_usd": "0.340000",
+      "pct_drop": 0.5882352941176471,
+      "saved_per_million_usd": "0.200000"
+    },
+    {
       "detected_at": "2026-06-11T17:27:23.131512Z",
       "field": "prompt",
       "model_id": "qwen/qwen3.7-plus",
@@ -37,7 +55,7 @@
       "saved_per_million_usd": "0.050000"
     }
   ],
-  "generated_at": "2026-06-11T17:27:26.258268Z",
+  "generated_at": "2026-06-11T20:01:10.412372Z",
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05

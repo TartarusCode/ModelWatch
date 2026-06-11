@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T17:27:23.131512Z",
+  "generated_at": "2026-06-11T20:01:06.719020Z",
   "models": [
     {
       "benchmarks": {
@@ -25566,12 +25566,12 @@
         "id": "moonshotai/kimi-k2.6",
         "name": "MoonshotAI: Kimi K2.6",
         "pricing": {
-          "completion": "0.00000341",
+          "completion": "0.00000339",
           "image": null,
-          "input_cache_read": "0.00000034",
+          "input_cache_read": "0.00000014",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.00000068",
+          "prompt": "0.00000067",
           "request": null,
           "web_search": null
         },
@@ -25599,9 +25599,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 262142,
+          "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": 262142
+          "max_completion_tokens": 262144
         }
       }
     },
@@ -52495,6 +52495,7 @@
           "response_format",
           "seed",
           "stop",
+          "structured_outputs",
           "temperature",
           "tool_choice",
           "tools",
@@ -57753,12 +57754,12 @@
         "id": "~moonshotai/kimi-latest",
         "name": "MoonshotAI Kimi Latest",
         "pricing": {
-          "completion": "0.00000341",
+          "completion": "0.00000339",
           "image": null,
-          "input_cache_read": "0.00000034",
+          "input_cache_read": "0.00000014",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.00000068",
+          "prompt": "0.00000067",
           "request": null,
           "web_search": null
         },
@@ -57786,9 +57787,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 262142,
+          "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": 262142
+          "max_completion_tokens": 262144
         }
       }
     },
