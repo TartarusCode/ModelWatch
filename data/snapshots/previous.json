@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T04:59:31.469200Z",
+  "generated_at": "2026-06-11T09:45:36.503748Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -7790,12 +7790,12 @@
       "id": "moonshotai/kimi-k2.5",
       "name": "MoonshotAI: Kimi K2.5",
       "pricing": {
-        "completion": "0.0000019",
+        "completion": "0.00000189",
         "image": null,
-        "input_cache_read": "0.00000009",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000004",
+        "prompt": "0.00000035",
         "request": null,
         "web_search": null
       },
@@ -7821,9 +7821,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 256000,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": null
       }
     },
     "moonshotai/kimi-k2.6": {
@@ -15473,10 +15473,10 @@
       "pricing": {
         "completion": "0.000001",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000014",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -15502,9 +15502,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262140,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262140
+        "max_completion_tokens": 262144
       }
     },
     "qwen/qwen3.6-flash": {
@@ -17323,6 +17323,7 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logprobs",
         "max_tokens",
         "presence_penalty",
         "reasoning",
@@ -17334,6 +17335,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
