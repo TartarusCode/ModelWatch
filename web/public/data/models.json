@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T20:01:06.719020Z",
+  "generated_at": "2026-06-11T22:16:56.003509Z",
   "models": [
     {
       "benchmarks": {
@@ -20916,12 +20916,12 @@
         "id": "minimax/minimax-m2.7",
         "name": "MiniMax: MiniMax M2.7",
         "pricing": {
-          "completion": "0.00000108",
+          "completion": "0.000001",
           "image": null,
-          "input_cache_read": "0.000000054",
+          "input_cache_read": "0.00000005",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.00000027",
+          "prompt": "0.00000025",
           "request": null,
           "web_search": null
         },
@@ -20947,7 +20947,7 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 204800,
+          "context_length": 196608,
           "is_moderated": false,
           "max_completion_tokens": 131072
         }
