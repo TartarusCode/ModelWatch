@@ -1,6 +1,33 @@
 {
   "drops": [
     {
+      "detected_at": "2026-06-11T17:27:23.131512Z",
+      "field": "prompt",
+      "model_id": "qwen/qwen3.7-plus",
+      "new_per_million_usd": "0.320000",
+      "old_per_million_usd": "0.400000",
+      "pct_drop": 0.2,
+      "saved_per_million_usd": "0.080000"
+    },
+    {
+      "detected_at": "2026-06-11T17:27:23.131512Z",
+      "field": "completion",
+      "model_id": "qwen/qwen3.7-plus",
+      "new_per_million_usd": "1.280000",
+      "old_per_million_usd": "1.600000",
+      "pct_drop": 0.2,
+      "saved_per_million_usd": "0.320000"
+    },
+    {
+      "detected_at": "2026-06-11T17:27:23.131512Z",
+      "field": "input_cache_write",
+      "model_id": "qwen/qwen3.7-plus",
+      "new_per_million_usd": "0.400000",
+      "old_per_million_usd": "0.500000",
+      "pct_drop": 0.2,
+      "saved_per_million_usd": "0.100000"
+    },
+    {
       "detected_at": "2026-06-11T09:45:34.015038Z",
       "field": "prompt",
       "model_id": "moonshotai/kimi-k2.5",
@@ -10,7 +37,7 @@
       "saved_per_million_usd": "0.050000"
     }
   ],
-  "generated_at": "2026-06-11T13:45:01.316139Z",
+  "generated_at": "2026-06-11T17:27:26.258268Z",
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05

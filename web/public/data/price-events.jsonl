@@ -11,3 +11,6 @@
 {"detected_at":"2026-06-09T14:08:37.063679Z","field":"completion","model_id":"minimax/minimax-m2.5","new_per_million_usd":"0.900000","old_per_million_usd":"1.150000","pct_drop":0.21739130434782608,"saved_per_million_usd":"0.250000"}
 {"detected_at":"2026-06-10T06:07:05.197392Z","field":"prompt","model_id":"moonshotai/kimi-k2.5","new_per_million_usd":"0.350000","old_per_million_usd":"0.400000","pct_drop":0.125,"saved_per_million_usd":"0.050000"}
 {"detected_at":"2026-06-11T09:45:34.015038Z","field":"prompt","model_id":"moonshotai/kimi-k2.5","new_per_million_usd":"0.350000","old_per_million_usd":"0.400000","pct_drop":0.125,"saved_per_million_usd":"0.050000"}
+{"detected_at":"2026-06-11T17:27:23.131512Z","field":"prompt","model_id":"qwen/qwen3.7-plus","new_per_million_usd":"0.320000","old_per_million_usd":"0.400000","pct_drop":0.2,"saved_per_million_usd":"0.080000"}
+{"detected_at":"2026-06-11T17:27:23.131512Z","field":"completion","model_id":"qwen/qwen3.7-plus","new_per_million_usd":"1.280000","old_per_million_usd":"1.600000","pct_drop":0.2,"saved_per_million_usd":"0.320000"}
+{"detected_at":"2026-06-11T17:27:23.131512Z","field":"input_cache_write","model_id":"qwen/qwen3.7-plus","new_per_million_usd":"0.400000","old_per_million_usd":"0.500000","pct_drop":0.2,"saved_per_million_usd":"0.100000"}

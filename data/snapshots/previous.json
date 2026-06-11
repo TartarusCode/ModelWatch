@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T13:45:01.316139Z",
+  "generated_at": "2026-06-11T17:27:26.258268Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -4306,7 +4306,7 @@
       "id": "google/gemma-4-31b-it",
       "name": "Google: Gemma 4 31B",
       "pricing": {
-        "completion": "0.00000036",
+        "completion": "0.00000035",
         "image": null,
         "input_cache_read": "0.00000009",
         "input_cache_write": null,
@@ -4337,9 +4337,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 256000,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 8192
+        "max_completion_tokens": 262144
       }
     },
     "google/gemma-4-31b-it:free": {
@@ -15686,12 +15686,12 @@
       "id": "qwen/qwen3.7-plus",
       "name": "Qwen: Qwen3.7 Plus",
       "pricing": {
-        "completion": "0.0000016",
+        "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.00000008",
-        "input_cache_write": "0.0000005",
+        "input_cache_read": "0.000000064",
+        "input_cache_write": "0.0000004",
         "internal_reasoning": null,
-        "prompt": "0.0000004",
+        "prompt": "0.00000032",
         "request": null,
         "web_search": null
       },
