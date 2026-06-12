@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T20:55:43.341584Z",
+  "generated_at": "2026-06-12T22:48:45.777866Z",
   "models": [
     {
       "benchmarks": {
@@ -26780,6 +26780,7 @@
           "response_format",
           "seed",
           "stop",
+          "structured_outputs",
           "temperature",
           "tool_choice",
           "tools",
@@ -44986,6 +44987,7 @@
         "supported_parameters": [
           "frequency_penalty",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -44998,6 +45000,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
