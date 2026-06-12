@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T05:04:57.821089Z",
+  "generated_at": "2026-06-12T09:13:46.414428Z",
   "models": [
     {
       "benchmarks": {
@@ -7735,7 +7735,7 @@
           "tokenizer": "DeepSeek"
         },
         "canonical_slug": "deepseek/deepseek-chat-v3-0324",
-        "context_length": 163840,
+        "context_length": 131072,
         "created": 1742824755,
         "default_parameters": {},
         "description": "DeepSeek V3, a 685B-parameter, mixture-of-experts model, is the latest iteration of the flagship chat model family from the DeepSeek team. It succeeds the [DeepSeek V3](/deepseek/deepseek-chat-v3) model and performs really well...",
@@ -7770,7 +7770,7 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 163840,
+          "context_length": 32768,
           "is_moderated": false,
           "max_completion_tokens": 16384
         }
@@ -25175,12 +25175,12 @@
         "id": "moonshotai/kimi-k2.5",
         "name": "MoonshotAI: Kimi K2.5",
         "pricing": {
-          "completion": "0.0000019",
+          "completion": "0.00000189",
           "image": null,
-          "input_cache_read": "0.00000009",
+          "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.0000004",
+          "prompt": "0.00000035",
           "request": null,
           "web_search": null
         },
@@ -25206,9 +25206,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 262144,
+          "context_length": 256000,
           "is_moderated": false,
-          "max_completion_tokens": 262144
+          "max_completion_tokens": null
         }
       }
     },
