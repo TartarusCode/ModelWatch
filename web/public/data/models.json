@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T01:34:42.594046Z",
+  "generated_at": "2026-06-13T06:02:41.677755Z",
   "models": [
     {
       "benchmarks": {
@@ -21223,6 +21223,7 @@
         "supported_parameters": [
           "frequency_penalty",
           "include_reasoning",
+          "logit_bias",
           "max_tokens",
           "presence_penalty",
           "reasoning",
@@ -21230,6 +21231,7 @@
           "response_format",
           "seed",
           "stop",
+          "structured_outputs",
           "temperature",
           "tool_choice",
           "tools",
