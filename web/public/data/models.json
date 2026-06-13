@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T21:38:45.747316Z",
+  "generated_at": "2026-06-13T22:46:57.199429Z",
   "models": [
     {
       "benchmarks": {
@@ -9910,12 +9910,12 @@
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash",
         "pricing": {
-          "completion": "0.000000196",
+          "completion": "0.00000018",
           "image": null,
           "input_cache_read": "0.00000002",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.000000098",
+          "prompt": "0.00000009",
           "request": null,
           "web_search": null
         },
@@ -9941,9 +9941,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 1048575,
+          "context_length": 1000000,
           "is_moderated": false,
-          "max_completion_tokens": null
+          "max_completion_tokens": 65536
         }
       }
     },
