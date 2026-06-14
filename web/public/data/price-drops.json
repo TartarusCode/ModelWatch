@@ -1,25 +1,6 @@
 {
-  "drops": [
-    {
-      "detected_at": "2026-06-13T15:11:49.086862Z",
-      "field": "prompt",
-      "model_id": "moonshotai/kimi-k2.7-code",
-      "new_per_million_usd": "0.750000",
-      "old_per_million_usd": "0.950000",
-      "pct_drop": 0.21052631578947367,
-      "saved_per_million_usd": "0.200000"
-    },
-    {
-      "detected_at": "2026-06-13T15:11:49.086862Z",
-      "field": "completion",
-      "model_id": "moonshotai/kimi-k2.7-code",
-      "new_per_million_usd": "3.500000",
-      "old_per_million_usd": "4.000000",
-      "pct_drop": 0.125,
-      "saved_per_million_usd": "0.500000"
-    }
-  ],
-  "generated_at": "2026-06-14T13:19:25.042445Z",
+  "drops": [],
+  "generated_at": "2026-06-14T15:28:44.319543Z",
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05
