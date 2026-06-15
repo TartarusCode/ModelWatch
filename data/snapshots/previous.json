@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14T22:52:05.444723Z",
+  "generated_at": "2026-06-15T01:41:05.424408Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -6497,7 +6497,9 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
@@ -6509,6 +6511,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -17043,7 +17046,7 @@
         "top_p": 0.95
       },
       "description": "MiMo-V2-Flash is an open-source foundation language model developed by Xiaomi. It is a Mixture-of-Experts model with 309B total parameters and 15B active parameters, adopting hybrid attention architecture. MiMo-V2-Flash supports a...",
-      "expiration_date": null,
+      "expiration_date": "2026-06-17",
       "id": "xiaomi/mimo-v2-flash",
       "name": "Xiaomi: MiMo-V2-Flash",
       "pricing": {
@@ -17772,10 +17775,8 @@
         "logprobs",
         "max_tokens",
         "min_p",
-        "parallel_tool_calls",
         "presence_penalty",
         "reasoning",
-        "reasoning_effort",
         "repetition_penalty",
         "response_format",
         "seed",
