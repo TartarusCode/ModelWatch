@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T18:18:15.829422Z",
+  "generated_at": "2026-06-15T21:36:32.306155Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -14333,6 +14333,7 @@
       "supported_parameters": [
         "frequency_penalty",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -14345,6 +14346,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -15061,7 +15063,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 81920
       }
     },
     "qwen/qwen3.5-397b-a17b": {
@@ -15463,7 +15465,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -15477,7 +15478,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -16886,12 +16886,12 @@
       "id": "x-ai/grok-4.20-multi-agent",
       "name": "xAI: Grok 4.20 Multi-Agent",
       "pricing": {
-        "completion": "0.000006",
+        "completion": "0.0000025",
         "image": null,
         "input_cache_read": "0.0000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000002",
+        "prompt": "0.00000125",
         "request": null,
         "web_search": "0.005"
       },
@@ -17302,7 +17302,6 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logprobs",
         "max_tokens",
         "presence_penalty",
         "reasoning",
@@ -17310,12 +17309,10 @@
         "response_format",
         "seed",
         "stop",
-        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
