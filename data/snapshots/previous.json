@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T13:27:30.794933Z",
+  "generated_at": "2026-06-15T18:18:15.829422Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -2887,12 +2887,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash",
       "pricing": {
-        "completion": "0.00000018",
+        "completion": "0.000000196",
         "image": null,
         "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.000000098",
         "request": null,
         "web_search": null
       },
@@ -2918,9 +2918,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1000000,
+        "context_length": 1048575,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": null
       }
     },
     "deepseek/deepseek-v4-pro": {
@@ -4260,14 +4260,19 @@
         "web_search": null
       },
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
+        "presence_penalty",
         "reasoning",
+        "repetition_penalty",
         "response_format",
         "seed",
+        "stop",
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_p"
       ],
       "top_provider": {
@@ -11660,14 +11665,21 @@
         "web_search": null
       },
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
+        "presence_penalty",
         "reasoning",
+        "repetition_penalty",
+        "response_format",
         "seed",
         "stop",
+        "structured_outputs",
         "temperature",
         "tool_choice",
-        "tools"
+        "tools",
+        "top_k",
+        "top_p"
       ],
       "top_provider": {
         "context_length": 131072,
@@ -12438,7 +12450,7 @@
         "tokenizer": "Router"
       },
       "canonical_slug": "openrouter/fusion",
-      "context_length": 128000,
+      "context_length": 1000000,
       "created": 1781371647,
       "default_parameters": {
         "frequency_penalty": null,
@@ -14321,7 +14333,6 @@
       "supported_parameters": [
         "frequency_penalty",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -14334,7 +14345,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
