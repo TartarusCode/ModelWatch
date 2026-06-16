@@ -1,25 +1,6 @@
 {
-  "drops": [
-    {
-      "detected_at": "2026-06-15T21:36:30.197637Z",
-      "field": "prompt",
-      "model_id": "x-ai/grok-4.20-multi-agent",
-      "new_per_million_usd": "1.250000",
-      "old_per_million_usd": "2.000000",
-      "pct_drop": 0.375,
-      "saved_per_million_usd": "0.750000"
-    },
-    {
-      "detected_at": "2026-06-15T21:36:30.197637Z",
-      "field": "completion",
-      "model_id": "x-ai/grok-4.20-multi-agent",
-      "new_per_million_usd": "2.500000",
-      "old_per_million_usd": "6.000000",
-      "pct_drop": 0.5833333333333334,
-      "saved_per_million_usd": "3.500000"
-    }
-  ],
-  "generated_at": "2026-06-16T21:20:33.602684Z",
+  "drops": [],
+  "generated_at": "2026-06-16T23:11:07.195327Z",
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05

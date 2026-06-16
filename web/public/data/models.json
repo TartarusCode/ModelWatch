@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T21:20:31.137230Z",
+  "generated_at": "2026-06-16T23:11:05.383123Z",
   "models": [
     {
       "benchmarks": {
@@ -4482,7 +4482,7 @@
         ],
         "top_provider": {
           "context_length": 1000000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 128000
         }
       }
@@ -5016,7 +5016,7 @@
         ],
         "top_provider": {
           "context_length": 1000000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 128000
         }
       }
@@ -6006,7 +6006,7 @@
         ],
         "top_provider": {
           "context_length": 1000000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 64000
         }
       }
@@ -13756,9 +13756,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 131072,
+          "context_length": 65536,
           "is_moderated": false,
-          "max_completion_tokens": 32768
+          "max_completion_tokens": 65536
         }
       }
     },
@@ -17570,7 +17570,7 @@
           "tokenizer": "Other"
         },
         "canonical_slug": "kwaipilot/kat-coder-pro-v2-20260327",
-        "context_length": 262144,
+        "context_length": 256000,
         "created": 1774649310,
         "default_parameters": {
           "frequency_penalty": null,
@@ -17612,9 +17612,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 262144,
+          "context_length": 256000,
           "is_moderated": false,
-          "max_completion_tokens": 144000
+          "max_completion_tokens": 80000
         }
       }
     },
@@ -21294,9 +21294,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 1000000,
+          "context_length": 524288,
           "is_moderated": false,
-          "max_completion_tokens": 131072
+          "max_completion_tokens": 512000
         }
       }
     },
@@ -24755,7 +24755,7 @@
         "pricing": {
           "completion": "0.0000025",
           "image": null,
-          "input_cache_read": "0.0000006",
+          "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.0000006",
@@ -29128,8 +29128,8 @@
         ],
         "top_provider": {
           "context_length": 1047576,
-          "is_moderated": false,
-          "max_completion_tokens": null
+          "is_moderated": true,
+          "max_completion_tokens": 32768
         }
       }
     },
@@ -29512,7 +29512,7 @@
         "pricing": {
           "completion": "0.00001",
           "image": null,
-          "input_cache_read": "0.00000125",
+          "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.0000025",
@@ -29539,7 +29539,7 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 16384
         }
       }
@@ -29644,7 +29644,7 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 4096
         }
       }
@@ -29749,7 +29749,7 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 16384
         }
       }
@@ -30633,7 +30633,7 @@
         ],
         "top_provider": {
           "context_length": 400000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 128000
         }
       }
@@ -32104,7 +32104,7 @@
         "pricing": {
           "completion": "0.000002",
           "image": null,
-          "input_cache_read": "0.00000003",
+          "input_cache_read": "0.000000025",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.00000025",
@@ -32124,8 +32124,8 @@
         ],
         "top_provider": {
           "context_length": 400000,
-          "is_moderated": false,
-          "max_completion_tokens": null
+          "is_moderated": true,
+          "max_completion_tokens": 128000
         }
       }
     },
@@ -33303,7 +33303,7 @@
         "pricing": {
           "completion": "0.00001",
           "image": null,
-          "input_cache_read": "0.000000125",
+          "input_cache_read": "0.00000013",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.00000125",
@@ -33321,8 +33321,8 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": true,
-          "max_completion_tokens": 16384
+          "is_moderated": false,
+          "max_completion_tokens": 32000
         }
       }
     },
@@ -33635,7 +33635,7 @@
         ],
         "top_provider": {
           "context_length": 400000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 128000
         }
       }
@@ -34802,7 +34802,7 @@
           "top_p": null
         },
         "description": "GPT-5.2 Chat (AKA Instant) is the fast, lightweight member of the 5.2 family, optimized for low-latency chat while retaining strong general intelligence. It uses adaptive reasoning to selectively “think” on...",
-        "expiration_date": null,
+        "expiration_date": "2026-08-10",
         "id": "openai/gpt-5.2-chat",
         "name": "OpenAI: GPT-5.2 Chat",
         "pricing": {
@@ -34826,8 +34826,8 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": false,
-          "max_completion_tokens": 32000
+          "is_moderated": true,
+          "max_completion_tokens": 16384
         }
       }
     },
@@ -35141,7 +35141,7 @@
           "top_p": null
         },
         "description": "GPT-5.3 Chat is an update to ChatGPT's most-used model that makes everyday conversations smoother, more useful, and more directly helpful. It delivers more accurate answers with better contextualization and significantly...",
-        "expiration_date": "2026-08-10",
+        "expiration_date": null,
         "id": "openai/gpt-5.3-chat",
         "name": "OpenAI: GPT-5.3 Chat",
         "pricing": {
@@ -35165,7 +35165,7 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 16384
         }
       }
@@ -37076,7 +37076,7 @@
         ],
         "top_provider": {
           "context_length": 400000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 128000
         }
       }
@@ -46196,7 +46196,7 @@
         "top_provider": {
           "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": 65536
+          "max_completion_tokens": 262144
         }
       }
     },
@@ -46889,7 +46889,7 @@
           "tokenizer": "Qwen3"
         },
         "canonical_slug": "qwen/qwen3.5-9b-20260310",
-        "context_length": 256000,
+        "context_length": 262144,
         "created": 1773152396,
         "default_parameters": {
           "frequency_penalty": null,
@@ -46935,9 +46935,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 256000,
+          "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": 32768
+          "max_completion_tokens": 262144
         }
       }
     },
@@ -55305,7 +55305,7 @@
         "pricing": {
           "completion": "0.0000044",
           "image": null,
-          "input_cache_read": "0.00000025",
+          "input_cache_read": "0.00000026",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.0000014",
@@ -55332,9 +55332,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 1048576,
+          "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": 16384
+          "max_completion_tokens": 262144
         }
       }
     },
@@ -56435,7 +56435,7 @@
         ],
         "top_provider": {
           "context_length": 1000000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 128000
         }
       }
