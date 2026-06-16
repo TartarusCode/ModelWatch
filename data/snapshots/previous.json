@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T07:44:20.915269Z",
+  "generated_at": "2026-06-16T12:32:56.894142Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -2625,58 +2625,6 @@
         "context_length": 8192,
         "is_moderated": false,
         "max_completion_tokens": 8192
-      }
-    },
-    "deepseek/deepseek-r1-distill-qwen-32b": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": "deepseek-r1",
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Qwen"
-      },
-      "canonical_slug": "deepseek/deepseek-r1-distill-qwen-32b",
-      "context_length": 128000,
-      "created": 1738194830,
-      "default_parameters": {},
-      "description": "DeepSeek R1 Distill Qwen 32B is a distilled large language model based on [Qwen 2.5 32B](https://huggingface.co/Qwen/Qwen2.5-32B), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). It outperforms OpenAI's o1-mini across various benchmarks, achieving new...",
-      "expiration_date": null,
-      "id": "deepseek/deepseek-r1-distill-qwen-32b",
-      "name": "DeepSeek: R1 Distill Qwen 32B",
-      "pricing": {
-        "completion": "0.00000029",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000029",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 32768,
-        "is_moderated": false,
-        "max_completion_tokens": 32768
       }
     },
     "deepseek/deepseek-v3.1-terminus": {
@@ -17293,10 +17241,10 @@
       "pricing": {
         "completion": "0.00000085",
         "image": null,
-        "input_cache_read": "0.00000006",
+        "input_cache_read": "0.000000025",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000125",
+        "prompt": "0.00000013",
         "request": null,
         "web_search": null
       },
@@ -17307,7 +17255,6 @@
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
-        "response_format",
         "seed",
         "stop",
         "temperature",
@@ -17317,9 +17264,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131070,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 131070
+        "max_completion_tokens": 98304
       }
     },
     "z-ai/glm-4.5v": {
