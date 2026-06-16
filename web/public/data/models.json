@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T02:12:25.960283Z",
+  "generated_at": "2026-06-16T07:44:18.539499Z",
   "models": [
     {
       "benchmarks": {
@@ -50657,12 +50657,12 @@
         "id": "tencent/hy3-preview",
         "name": "Tencent: Hy3 preview",
         "pricing": {
-          "completion": "0.00000021",
+          "completion": "0.00000026",
           "image": null,
-          "input_cache_read": "0.000000021",
+          "input_cache_read": "0.000000029",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.000000063",
+          "prompt": "0.000000066",
           "request": null,
           "web_search": null
         },
@@ -50683,7 +50683,7 @@
         "top_provider": {
           "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": null
+          "max_completion_tokens": 262144
         }
       }
     },
@@ -56068,8 +56068,10 @@
           "logprobs",
           "max_tokens",
           "min_p",
+          "parallel_tool_calls",
           "presence_penalty",
           "reasoning",
+          "reasoning_effort",
           "repetition_penalty",
           "response_format",
           "seed",
