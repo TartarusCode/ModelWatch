@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T23:25:19.288571Z",
+  "generated_at": "2026-06-16T02:12:29.796023Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -15081,7 +15081,7 @@
         "tokenizer": "Qwen3"
       },
       "canonical_slug": "qwen/qwen3.5-397b-a17b-20260216",
-      "context_length": 262144,
+      "context_length": 256000,
       "created": 1771223018,
       "default_parameters": {
         "frequency_penalty": null,
@@ -15096,12 +15096,12 @@
       "id": "qwen/qwen3.5-397b-a17b",
       "name": "Qwen: Qwen3.5 397B A17B",
       "pricing": {
-        "completion": "0.00000234",
+        "completion": "0.00000245",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000039",
+        "prompt": "0.000000385",
         "request": null,
         "web_search": null
       },
@@ -15127,9 +15127,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": null
       }
     },
     "qwen/qwen3.5-9b": {
