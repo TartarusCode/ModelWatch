@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T20:57:31.986304Z",
+  "generated_at": "2026-06-17T22:56:11.303874Z",
   "models": [
     {
       "benchmarks": {
@@ -82,8 +82,11 @@
         "supported_parameters": [
           "max_tokens",
           "response_format",
+          "stop",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 256000,
@@ -461,8 +464,41 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "amazon/nova-2-lite-v1",
             "percentiles": {
-              "agentic_percentile": 39,
+              "agentic_percentile": 38,
               "coding_percentile": 23,
+              "intelligence_percentile": null
+            },
+            "permaslug": "amazon/nova-2-lite-v1"
+          },
+          {
+            "aa_id": "61bd9367-e520-4ec8-989e-5fbf50e61610",
+            "aa_name": "Nova 2.0 Lite (high)",
+            "aa_slug": "nova-2-0-lite-reasoning",
+            "benchmark_data": {
+              "evaluations": {
+                "aa_omniscience_accuracy": 0.188,
+                "aa_omniscience_non_hallucination_rate": 0.102,
+                "artificial_analysis_agentic_index": 37.3,
+                "artificial_analysis_coding_index": 23.4,
+                "artificial_analysis_intelligence_index": null,
+                "critpt": null,
+                "gdpval_aa": null,
+                "gpqa": 0.811,
+                "hle": 0.109,
+                "ifbench": 0.707,
+                "lcr": 0.553,
+                "scicode": 0.369,
+                "tau2": 0.728,
+                "terminalbench_hard": 0.167
+              },
+              "model_type": "llm"
+            },
+            "heuristic_openrouter_slug": "amazon/nova-2-lite-v1",
+            "last_updated_at": 1781730035301,
+            "openrouter_slug": null,
+            "percentiles": {
+              "agentic_percentile": 55,
+              "coding_percentile": 50,
               "intelligence_percentile": null
             },
             "permaslug": "amazon/nova-2-lite-v1"
@@ -527,7 +563,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "amazon/nova-2-lite-v1",
             "percentiles": {
-              "agentic_percentile": 53,
+              "agentic_percentile": 52,
               "coding_percentile": 51,
               "intelligence_percentile": null
             },
@@ -1225,7 +1261,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 33,
-              "coding_percentile": 16,
+              "coding_percentile": 17,
               "intelligence_percentile": null
             },
             "permaslug": "anthropic/claude-3-5-haiku"
@@ -1308,7 +1344,7 @@
                 "artificial_analysis_coding_index": 62,
                 "artificial_analysis_intelligence_index": 59.9,
                 "critpt": 0.286,
-                "gdpval_aa": 0.647,
+                "gdpval_aa": 0.642,
                 "gpqa": 0.926,
                 "hle": 0.533,
                 "ifbench": 0.635,
@@ -1320,7 +1356,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 100,
@@ -1654,7 +1690,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 52,
+              "agentic_percentile": 51,
               "coding_percentile": 61,
               "intelligence_percentile": null
             },
@@ -1687,9 +1723,9 @@
             "last_updated_at": 1781697615577,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 60,
+              "agentic_percentile": 59,
               "coding_percentile": 67,
-              "intelligence_percentile": 24
+              "intelligence_percentile": 23
             },
             "permaslug": "anthropic/claude-4.5-haiku-20251001"
           }
@@ -1701,11 +1737,11 @@
         "artificial_analysis_summary": {
           "aa_slug": "claude-4-5-haiku-reasoning",
           "agentic_index": 40.2,
-          "agentic_percentile": 60,
+          "agentic_percentile": 59,
           "coding_index": 32.6,
           "coding_percentile": 67,
           "intelligence_index": 29.6,
-          "intelligence_percentile": 24,
+          "intelligence_percentile": 23,
           "variant_name": "Claude 4.5 Haiku (Reasoning)"
         },
         "design_arena": {
@@ -2695,7 +2731,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 86,
-              "coding_percentile": 95,
+              "coding_percentile": 94,
               "intelligence_percentile": null
             },
             "permaslug": "anthropic/claude-4.5-opus-20251124"
@@ -3623,7 +3659,7 @@
                 "artificial_analysis_coding_index": 52.5,
                 "artificial_analysis_intelligence_index": 53.5,
                 "critpt": 0.12,
-                "gdpval_aa": 0.512,
+                "gdpval_aa": 0.51,
                 "gpqa": 0.914,
                 "hle": 0.396,
                 "ifbench": 0.586,
@@ -3635,12 +3671,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "anthropic/claude-opus-4.7",
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 98,
               "coding_percentile": 97,
-              "intelligence_percentile": 90
+              "intelligence_percentile": 91
             },
             "permaslug": "anthropic/claude-4.7-opus-20260416"
           },
@@ -3689,7 +3725,7 @@
           "coding_index": 52.5,
           "coding_percentile": 97,
           "intelligence_index": 53.5,
-          "intelligence_percentile": 90,
+          "intelligence_percentile": 91,
           "variant_name": "Claude Opus 4.7 (Adaptive Reasoning, Max Effort)"
         },
         "design_arena": {
@@ -4517,7 +4553,7 @@
         ],
         "top_provider": {
           "context_length": 1000000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 128000
         }
       }
@@ -4608,7 +4644,7 @@
                 "artificial_analysis_coding_index": 56.7,
                 "artificial_analysis_intelligence_index": 55.7,
                 "critpt": 0.209,
-                "gdpval_aa": 0.56,
+                "gdpval_aa": 0.557,
                 "gpqa": 0.92,
                 "hle": 0.457,
                 "ifbench": 0.622,
@@ -4620,7 +4656,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "anthropic/claude-opus-4.8",
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 99,
@@ -5070,7 +5106,7 @@
         ],
         "top_provider": {
           "context_length": 1000000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 128000
         }
       }
@@ -5176,7 +5212,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 58,
+              "agentic_percentile": 57,
               "coding_percentile": 63,
               "intelligence_percentile": null
             },
@@ -5621,7 +5657,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 75,
-              "coding_percentile": 82,
+              "coding_percentile": 81,
               "intelligence_percentile": null
             },
             "permaslug": "anthropic/claude-4.5-sonnet-20250929"
@@ -6060,7 +6096,7 @@
         ],
         "top_provider": {
           "context_length": 1000000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 64000
         }
       }
@@ -6113,7 +6149,7 @@
                 "artificial_analysis_coding_index": 50.9,
                 "artificial_analysis_intelligence_index": 47.2,
                 "critpt": 0.031,
-                "gdpval_aa": 0.453,
+                "gdpval_aa": 0.45,
                 "gpqa": 0.875,
                 "hle": 0.3,
                 "ifbench": 0.566,
@@ -6125,12 +6161,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 91,
               "coding_percentile": 96,
-              "intelligence_percentile": 80
+              "intelligence_percentile": 79
             },
             "permaslug": "anthropic/claude-4.6-sonnet-20260217"
           },
@@ -6179,7 +6215,7 @@
           "coding_index": 50.9,
           "coding_percentile": 96,
           "intelligence_index": 47.2,
-          "intelligence_percentile": 80,
+          "intelligence_percentile": 79,
           "variant_name": "Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)"
         },
         "design_arena": {
@@ -7463,10 +7499,44 @@
     },
     {
       "benchmarks": {
-        "artificial_analysis": [],
+        "artificial_analysis": [
+          {
+            "aa_id": "2e9ff877-fd2c-4ce7-b631-7ca1bdb6d13e",
+            "aa_name": "Command A+",
+            "aa_slug": "command-a-plus",
+            "benchmark_data": {
+              "evaluations": {
+                "aa_omniscience_accuracy": 0.088,
+                "aa_omniscience_non_hallucination_rate": 0.859,
+                "artificial_analysis_agentic_index": 40.9,
+                "artificial_analysis_coding_index": 29.3,
+                "artificial_analysis_intelligence_index": null,
+                "critpt": 0.003,
+                "gdpval_aa": null,
+                "gpqa": 0.761,
+                "hle": 0.114,
+                "ifbench": 0.739,
+                "lcr": 0.46,
+                "scicode": 0.378,
+                "tau2": 0.807,
+                "terminalbench_hard": 0.25
+              },
+              "model_type": "llm"
+            },
+            "heuristic_openrouter_slug": null,
+            "last_updated_at": 1781730035301,
+            "openrouter_slug": null,
+            "percentiles": {
+              "agentic_percentile": 60,
+              "coding_percentile": 60,
+              "intelligence_percentile": null
+            },
+            "permaslug": "cohere/command-a-03-2025"
+          }
+        ],
         "artificial_analysis_status": {
           "error": null,
-          "status": "empty"
+          "status": "ok"
         },
         "artificial_analysis_summary": null,
         "design_arena": null,
@@ -7714,6 +7784,107 @@
           "context_length": 128000,
           "is_moderated": true,
           "max_completion_tokens": 4000
+        }
+      }
+    },
+    {
+      "benchmarks": {
+        "artificial_analysis": [
+          {
+            "aa_id": "1e9907e0-ffac-4595-b006-962e4f1da7cf",
+            "aa_name": "North Mini Code",
+            "aa_slug": "north-mini-code",
+            "benchmark_data": {
+              "evaluations": {
+                "aa_omniscience_accuracy": 0.186,
+                "aa_omniscience_non_hallucination_rate": 0.169,
+                "artificial_analysis_agentic_index": 21.7,
+                "artificial_analysis_coding_index": 33.4,
+                "artificial_analysis_intelligence_index": null,
+                "critpt": 0.003,
+                "gdpval_aa": null,
+                "gpqa": 0.757,
+                "hle": 0.099,
+                "ifbench": 0.576,
+                "lcr": 0.323,
+                "scicode": 0.382,
+                "tau2": 0.374,
+                "terminalbench_hard": 0.311
+              },
+              "model_type": "llm"
+            },
+            "heuristic_openrouter_slug": "cohere/north-mini-code",
+            "last_updated_at": 1781730035301,
+            "openrouter_slug": null,
+            "permaslug": "cohere/north-mini-code-20260617"
+          }
+        ],
+        "artificial_analysis_status": {
+          "error": null,
+          "status": "ok"
+        },
+        "artificial_analysis_summary": null,
+        "design_arena": null,
+        "design_arena_status": {
+          "error": null,
+          "status": "empty"
+        }
+      },
+      "model": {
+        "architecture": {
+          "input_modalities": [
+            "text"
+          ],
+          "instruct_type": null,
+          "modality": "text->text",
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Cohere"
+        },
+        "canonical_slug": "cohere/north-mini-code-20260617",
+        "context_length": 256000,
+        "created": 1781723748,
+        "default_parameters": {
+          "frequency_penalty": null,
+          "presence_penalty": null,
+          "repetition_penalty": null,
+          "temperature": null,
+          "top_k": null,
+          "top_p": null
+        },
+        "description": "North Mini Code is Cohere's first agentic coding model and the debut of its North family. A sparse mixture-of-experts model with 30B total parameters and 3B active, it is optimized...",
+        "expiration_date": null,
+        "id": "cohere/north-mini-code:free",
+        "name": "Cohere: North Mini Code (free)",
+        "pricing": {
+          "completion": "0",
+          "image": null,
+          "input_cache_read": null,
+          "input_cache_write": null,
+          "internal_reasoning": null,
+          "prompt": "0",
+          "request": null,
+          "web_search": null
+        },
+        "supported_parameters": [
+          "frequency_penalty",
+          "include_reasoning",
+          "max_tokens",
+          "presence_penalty",
+          "reasoning",
+          "seed",
+          "stop",
+          "temperature",
+          "tool_choice",
+          "tools",
+          "top_k",
+          "top_p"
+        ],
+        "top_provider": {
+          "context_length": 256000,
+          "is_moderated": true,
+          "max_completion_tokens": 64000
         }
       }
     },
@@ -8060,7 +8231,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "deepseek/deepseek-chat-v3-0324",
             "percentiles": {
-              "agentic_percentile": 32,
+              "agentic_percentile": 31,
               "coding_percentile": 46,
               "intelligence_percentile": null
             },
@@ -8162,7 +8333,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "deepseek/deepseek-chat-v3.1",
             "percentiles": {
-              "agentic_percentile": 51,
+              "agentic_percentile": 50,
               "coding_percentile": 59,
               "intelligence_percentile": null
             },
@@ -8549,7 +8720,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "deepseek/deepseek-r1-0528",
             "percentiles": {
-              "agentic_percentile": 38,
+              "agentic_percentile": 37,
               "coding_percentile": 51,
               "intelligence_percentile": null
             },
@@ -8895,7 +9066,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "deepseek/deepseek-v3.1-terminus",
             "percentiles": {
-              "agentic_percentile": 48,
+              "agentic_percentile": 47,
               "coding_percentile": 66,
               "intelligence_percentile": null
             },
@@ -9481,7 +9652,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "deepseek/deepseek-v3.2-exp",
             "percentiles": {
-              "agentic_percentile": 50,
+              "agentic_percentile": 49,
               "coding_percentile": 61,
               "intelligence_percentile": null
             },
@@ -9764,7 +9935,7 @@
             "percentiles": {
               "agentic_percentile": 88,
               "coding_percentile": 82,
-              "intelligence_percentile": 61
+              "intelligence_percentile": 60
             },
             "permaslug": "deepseek/deepseek-v4-flash-20260423"
           },
@@ -9846,7 +10017,7 @@
           "coding_index": 38.7,
           "coding_percentile": 82,
           "intelligence_index": 40.3,
-          "intelligence_percentile": 61,
+          "intelligence_percentile": 60,
           "variant_name": "DeepSeek V4 Flash (Reasoning, Max Effort)"
         },
         "design_arena": {
@@ -10094,7 +10265,7 @@
                 "artificial_analysis_coding_index": 47.5,
                 "artificial_analysis_intelligence_index": 44.3,
                 "critpt": 0.129,
-                "gdpval_aa": 0.414,
+                "gdpval_aa": 0.413,
                 "gpqa": 0.888,
                 "hle": 0.359,
                 "ifbench": 0.765,
@@ -10106,12 +10277,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "deepseek/deepseek-v4-pro",
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 96,
               "coding_percentile": 94,
-              "intelligence_percentile": 71
+              "intelligence_percentile": 70
             },
             "permaslug": "deepseek/deepseek-v4-pro-20260423"
           },
@@ -10175,7 +10346,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 92,
+              "agentic_percentile": 91,
               "coding_percentile": 81,
               "intelligence_percentile": null
             },
@@ -10193,7 +10364,7 @@
           "coding_index": 47.5,
           "coding_percentile": 94,
           "intelligence_index": 44.3,
-          "intelligence_percentile": 71,
+          "intelligence_percentile": 70,
           "variant_name": "DeepSeek V4 Pro (Reasoning, Max Effort)"
         },
         "design_arena": {
@@ -10532,11 +10703,20 @@
           "web_search": null
         },
         "supported_parameters": [
+          "frequency_penalty",
+          "logit_bias",
           "max_tokens",
+          "min_p",
+          "presence_penalty",
+          "repetition_penalty",
           "response_format",
+          "stop",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_k",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 32768,
@@ -10669,7 +10849,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 36,
+              "agentic_percentile": 35,
               "coding_percentile": 48,
               "intelligence_percentile": null
             },
@@ -11038,7 +11218,7 @@
             "aa_name": "Nano Banana (Gemini 2.5 Flash Image)",
             "aa_slug": "google_gemini-2-5-flash",
             "benchmark_data": {
-              "appearances": 10500,
+              "appearances": 10509,
               "categories": [
                 {
                   "appearances": 4074,
@@ -11049,47 +11229,47 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 866,
+                  "appearances": 867,
                   "ci95": "-30/30",
-                  "elo": 1127,
+                  "elo": 1129,
                   "format_category": null,
                   "style_category": "Cartoon & Illustration",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1240,
+                  "appearances": 1242,
                   "ci95": "-28/28",
-                  "elo": 1189,
+                  "elo": 1191,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Portraits"
                 },
                 {
-                  "appearances": 868,
+                  "appearances": 869,
                   "ci95": "-33/33",
-                  "elo": 1159,
+                  "elo": 1155,
                   "format_category": null,
                   "style_category": "Anime",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 506,
+                  "appearances": 508,
                   "ci95": "-36/36",
-                  "elo": 1151,
+                  "elo": 1149,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1850,
+                  "appearances": 1852,
                   "ci95": "-20/20",
-                  "elo": 1165,
+                  "elo": 1164,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 4649,
+                  "appearances": 4653,
                   "ci95": "-14/14",
                   "elo": 1202,
                   "format_category": null,
@@ -11097,15 +11277,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 104,
+                  "appearances": 105,
                   "ci95": "-59/59",
-                  "elo": 1169,
+                  "elo": 1166,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1147,
+                  "appearances": 1149,
                   "ci95": "-26/26",
                   "elo": 1145,
                   "format_category": null,
@@ -11113,41 +11293,41 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1218,
+                  "appearances": 1221,
                   "ci95": "-23/23",
-                  "elo": 1153,
+                  "elo": 1152,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 327,
+                  "appearances": 329,
                   "ci95": "-48/48",
-                  "elo": 1202,
+                  "elo": 1206,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1991,
+                  "appearances": 1995,
                   "ci95": "-19/19",
-                  "elo": 1157,
+                  "elo": 1156,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1413,
+                  "appearances": 1416,
                   "ci95": "-24/24",
-                  "elo": 1138,
+                  "elo": 1137,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Futuristic & Sci-Fi"
                 },
                 {
-                  "appearances": 1377,
+                  "appearances": 1378,
                   "ci95": "-23/23",
-                  "elo": 1153,
+                  "elo": 1151,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Physical Spaces"
@@ -11155,29 +11335,29 @@
                 {
                   "appearances": 939,
                   "ci95": "-30/30",
-                  "elo": 1179,
+                  "elo": 1178,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2896,
+                  "appearances": 2899,
                   "ci95": "-16/16",
-                  "elo": 1154,
+                  "elo": 1152,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1584,
+                  "appearances": 1586,
                   "ci95": "-24/24",
-                  "elo": 1198,
+                  "elo": 1199,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1976,
+                  "appearances": 1979,
                   "ci95": "-19/19",
                   "elo": 1149,
                   "format_category": null,
@@ -11185,9 +11365,9 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1113,
+                  "appearances": 1114,
                   "ci95": "-27/27",
-                  "elo": 1130,
+                  "elo": 1131,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -11201,9 +11381,9 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2494,
+                  "appearances": 2496,
                   "ci95": "-18/18",
-                  "elo": 1161,
+                  "elo": 1160,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -11211,15 +11391,15 @@
                 {
                   "appearances": 571,
                   "ci95": "-36/36",
-                  "elo": 1133,
+                  "elo": 1132,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Text & Typography"
                 },
                 {
-                  "appearances": 980,
+                  "appearances": 981,
                   "ci95": "-27/27",
-                  "elo": 1143,
+                  "elo": 1142,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Nature & Landscapes"
@@ -11241,15 +11421,15 @@
                   "subject_matter_category": "Fantasy & Mythical"
                 },
                 {
-                  "appearances": 4291,
+                  "appearances": 4292,
                   "ci95": "-13/13",
-                  "elo": 1181,
+                  "elo": 1180,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 6508,
+                  "appearances": 6510,
                   "ci95": "-11/11",
                   "elo": 1171,
                   "format_category": null,
@@ -11257,31 +11437,31 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 478,
+                  "appearances": 481,
                   "ci95": "-37/37",
-                  "elo": 1146,
+                  "elo": 1143,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "UI/UX Design"
                 },
                 {
-                  "appearances": 547,
+                  "appearances": 548,
                   "ci95": "-35/35",
-                  "elo": 1151,
+                  "elo": 1152,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 741,
+                  "appearances": 742,
                   "ci95": "-32/32",
-                  "elo": 1137,
+                  "elo": 1136,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Commercial"
                 },
                 {
-                  "appearances": 1153,
+                  "appearances": 1154,
                   "ci95": "-25/25",
                   "elo": 1156,
                   "format_category": null,
@@ -11289,17 +11469,17 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2897,
+                  "appearances": 2899,
                   "ci95": "-17/17",
-                  "elo": 1200,
+                  "elo": 1199,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 5657,
+                  "appearances": 5663,
                   "ci95": "-12/12",
-                  "elo": 1156,
+                  "elo": 1155,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -11313,31 +11493,31 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 739,
+                  "appearances": 741,
                   "ci95": "-35/35",
-                  "elo": 1245,
+                  "elo": 1246,
                   "format_category": null,
                   "style_category": "Traditional Art",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2949,
+                  "appearances": 2954,
                   "ci95": "-15/15",
-                  "elo": 1126,
+                  "elo": 1125,
                   "format_category": null,
                   "style_category": "Graphic Design & Digital Rendering",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2104,
+                  "appearances": 2106,
                   "ci95": "-19/19",
-                  "elo": 1164,
+                  "elo": 1163,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 4174,
+                  "appearances": 4176,
                   "ci95": "-14/14",
                   "elo": 1173,
                   "format_category": null,
@@ -11355,7 +11535,7 @@
                 {
                   "appearances": 1011,
                   "ci95": "-28/28",
-                  "elo": 1162,
+                  "elo": 1161,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -11363,13 +11543,13 @@
               ],
               "ci95": "-8/8",
               "elo": 1162,
-              "elo_max": 1340,
+              "elo_max": 1339,
               "elo_min": 961,
               "model_type": "text-to-image",
-              "rank": 30
+              "rank": 31
             },
             "heuristic_openrouter_slug": "google/gemini-2.5-flash-image",
-            "last_updated_at": 1781697615743,
+            "last_updated_at": 1781730035643,
             "openrouter_slug": null,
             "permaslug": "google/gemini-2.5-flash-image"
           }
@@ -11589,7 +11769,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 12,
-              "coding_percentile": 11,
+              "coding_percentile": 10,
               "intelligence_percentile": null
             },
             "permaslug": "google/gemini-2.5-flash-lite"
@@ -12380,7 +12560,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 54,
+              "agentic_percentile": 53,
               "coding_percentile": 80,
               "intelligence_percentile": null
             },
@@ -12716,12 +12896,12 @@
             "aa_name": "Nano Banana Pro (Gemini 3 Pro Image)",
             "aa_slug": "gemini_nano-banana-pro",
             "benchmark_data": {
-              "appearances": 5388,
+              "appearances": 5394,
               "categories": [
                 {
-                  "appearances": 1762,
+                  "appearances": 1763,
                   "ci95": "-16/16",
-                  "elo": 1250,
+                  "elo": 1251,
                   "format_category": null,
                   "style_category": "General & Photorealistic",
                   "subject_matter_category": null
@@ -12729,15 +12909,15 @@
                 {
                   "appearances": 414,
                   "ci95": "-33/33",
-                  "elo": 1185,
+                  "elo": 1187,
                   "format_category": null,
                   "style_category": "Cartoon & Illustration",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 563,
+                  "appearances": 564,
                   "ci95": "-30/30",
-                  "elo": 1200,
+                  "elo": 1202,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Portraits"
@@ -12745,29 +12925,29 @@
                 {
                   "appearances": 371,
                   "ci95": "-33/33",
-                  "elo": 1184,
+                  "elo": 1183,
                   "format_category": null,
                   "style_category": "Anime",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 364,
+                  "appearances": 365,
                   "ci95": "-37/37",
-                  "elo": 1188,
+                  "elo": 1184,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1243,
+                  "appearances": 1245,
                   "ci95": "-21/21",
-                  "elo": 1242,
+                  "elo": 1241,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2078,
+                  "appearances": 2079,
                   "ci95": "-15/15",
                   "elo": 1252,
                   "format_category": null,
@@ -12777,13 +12957,13 @@
                 {
                   "appearances": 146,
                   "ci95": "-58/58",
-                  "elo": 1329,
+                  "elo": 1328,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 752,
+                  "appearances": 755,
                   "ci95": "-27/27",
                   "elo": 1210,
                   "format_category": null,
@@ -12791,7 +12971,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 765,
+                  "appearances": 769,
                   "ci95": "-24/24",
                   "elo": 1197,
                   "format_category": null,
@@ -12801,15 +12981,15 @@
                 {
                   "appearances": 214,
                   "ci95": "-47/47",
-                  "elo": 1197,
+                  "elo": 1196,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1424,
+                  "appearances": 1429,
                   "ci95": "-20/20",
-                  "elo": 1233,
+                  "elo": 1232,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -12823,8 +13003,8 @@
                   "subject_matter_category": "Futuristic & Sci-Fi"
                 },
                 {
-                  "appearances": 653,
-                  "ci95": "-25/25",
+                  "appearances": 654,
+                  "ci95": "-24/24",
                   "elo": 1192,
                   "format_category": null,
                   "style_category": null,
@@ -12833,13 +13013,13 @@
                 {
                   "appearances": 462,
                   "ci95": "-33/33",
-                  "elo": 1268,
+                  "elo": 1267,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1510,
+                  "appearances": 1511,
                   "ci95": "-17/17",
                   "elo": 1192,
                   "format_category": null,
@@ -12847,17 +13027,17 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 731,
+                  "appearances": 732,
                   "ci95": "-25/25",
-                  "elo": 1212,
+                  "elo": 1213,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1244,
+                  "appearances": 1248,
                   "ci95": "-20/20",
-                  "elo": 1197,
+                  "elo": 1198,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -12865,23 +13045,23 @@
                 {
                   "appearances": 533,
                   "ci95": "-29/29",
-                  "elo": 1205,
+                  "elo": 1207,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 516,
+                  "appearances": 515,
                   "ci95": "-30/30",
-                  "elo": 1189,
+                  "elo": 1188,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1218,
+                  "appearances": 1219,
                   "ci95": "-19/19",
-                  "elo": 1195,
+                  "elo": 1194,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -12889,13 +13069,13 @@
                 {
                   "appearances": 333,
                   "ci95": "-37/37",
-                  "elo": 1197,
+                  "elo": 1196,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Text & Typography"
                 },
                 {
-                  "appearances": 431,
+                  "appearances": 433,
                   "ci95": "-30/30",
                   "elo": 1214,
                   "format_category": null,
@@ -12913,13 +13093,13 @@
                 {
                   "appearances": 661,
                   "ci95": "-25/25",
-                  "elo": 1212,
+                  "elo": 1211,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Fantasy & Mythical"
                 },
                 {
-                  "appearances": 2026,
+                  "appearances": 2028,
                   "ci95": "-15/15",
                   "elo": 1258,
                   "format_category": null,
@@ -12927,7 +13107,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3166,
+                  "appearances": 3169,
                   "ci95": "-12/12",
                   "elo": 1234,
                   "format_category": null,
@@ -12935,23 +13115,23 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 340,
+                  "appearances": 342,
                   "ci95": "-39/39",
-                  "elo": 1201,
+                  "elo": 1198,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "UI/UX Design"
                 },
                 {
-                  "appearances": 445,
+                  "appearances": 446,
                   "ci95": "-38/38",
-                  "elo": 1288,
+                  "elo": 1286,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 466,
+                  "appearances": 467,
                   "ci95": "-33/33",
                   "elo": 1228,
                   "format_category": null,
@@ -12959,9 +13139,9 @@
                   "subject_matter_category": "Commercial"
                 },
                 {
-                  "appearances": 750,
+                  "appearances": 752,
                   "ci95": "-25/25",
-                  "elo": 1194,
+                  "elo": 1195,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -12969,13 +13149,13 @@
                 {
                   "appearances": 1244,
                   "ci95": "-19/19",
-                  "elo": 1271,
+                  "elo": 1270,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2781,
+                  "appearances": 2783,
                   "ci95": "-13/13",
                   "elo": 1203,
                   "format_category": null,
@@ -12991,23 +13171,23 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 356,
+                  "appearances": 357,
                   "ci95": "-35/35",
-                  "elo": 1234,
+                  "elo": 1235,
                   "format_category": null,
                   "style_category": "Traditional Art",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1691,
+                  "appearances": 1694,
                   "ci95": "-17/17",
-                  "elo": 1179,
+                  "elo": 1178,
                   "format_category": null,
                   "style_category": "Graphic Design & Digital Rendering",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1389,
+                  "appearances": 1391,
                   "ci95": "-20/20",
                   "elo": 1232,
                   "format_category": null,
@@ -13015,7 +13195,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2006,
+                  "appearances": 2008,
                   "ci95": "-15/15",
                   "elo": 1215,
                   "format_category": null,
@@ -13031,9 +13211,9 @@
                   "subject_matter_category": "People: Groups & Activities"
                 },
                 {
-                  "appearances": 705,
+                  "appearances": 706,
                   "ci95": "-27/27",
-                  "elo": 1191,
+                  "elo": 1190,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -13041,13 +13221,13 @@
               ],
               "ci95": "-9/9",
               "elo": 1219,
-              "elo_max": 1340,
+              "elo_max": 1339,
               "elo_min": 961,
               "model_type": "text-to-image",
               "rank": 7
             },
             "heuristic_openrouter_slug": "google/gemini-3-pro-image-preview",
-            "last_updated_at": 1781697615743,
+            "last_updated_at": 1781730035643,
             "openrouter_slug": null,
             "permaslug": "google/gemini-3-pro-image-preview-20251120"
           }
@@ -13284,58 +13464,58 @@
             "aa_name": "Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
             "aa_slug": "nano-banana-2",
             "benchmark_data": {
-              "appearances": 8260,
+              "appearances": 8285,
               "categories": [
                 {
-                  "appearances": 2462,
+                  "appearances": 2467,
                   "ci95": "-16/16",
-                  "elo": 1290,
+                  "elo": 1289,
                   "format_category": null,
                   "style_category": "General & Photorealistic",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 680,
+                  "appearances": 682,
                   "ci95": "-34/34",
-                  "elo": 1240,
+                  "elo": 1239,
                   "format_category": null,
                   "style_category": "Cartoon & Illustration",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 766,
+                  "appearances": 768,
                   "ci95": "-31/31",
-                  "elo": 1262,
+                  "elo": 1263,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Portraits"
                 },
                 {
-                  "appearances": 561,
+                  "appearances": 564,
                   "ci95": "-34/34",
-                  "elo": 1242,
+                  "elo": 1236,
                   "format_category": null,
                   "style_category": "Anime",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 574,
+                  "appearances": 576,
                   "ci95": "-34/34",
-                  "elo": 1199,
+                  "elo": 1193,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1946,
+                  "appearances": 1951,
                   "ci95": "-21/21",
-                  "elo": 1271,
+                  "elo": 1270,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3222,
+                  "appearances": 3229,
                   "ci95": "-16/16",
                   "elo": 1307,
                   "format_category": null,
@@ -13343,9 +13523,9 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 315,
+                  "appearances": 316,
                   "ci95": "-47/47",
-                  "elo": 1271,
+                  "elo": 1265,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -13359,63 +13539,63 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1109,
+                  "appearances": 1118,
                   "ci95": "-24/24",
-                  "elo": 1228,
+                  "elo": 1227,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 422,
+                  "appearances": 425,
                   "ci95": "-45/45",
-                  "elo": 1268,
+                  "elo": 1262,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2243,
+                  "appearances": 2248,
                   "ci95": "-20/20",
-                  "elo": 1261,
+                  "elo": 1260,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 960,
+                  "appearances": 962,
                   "ci95": "-25/25",
-                  "elo": 1206,
+                  "elo": 1205,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Futuristic & Sci-Fi"
                 },
                 {
-                  "appearances": 869,
-                  "ci95": "-26/26",
-                  "elo": 1224,
+                  "appearances": 871,
+                  "ci95": "-25/25",
+                  "elo": 1219,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Physical Spaces"
                 },
                 {
-                  "appearances": 805,
+                  "appearances": 807,
                   "ci95": "-33/33",
-                  "elo": 1317,
+                  "elo": 1316,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2141,
+                  "appearances": 2146,
                   "ci95": "-17/17",
-                  "elo": 1215,
+                  "elo": 1214,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1090,
+                  "appearances": 1092,
                   "ci95": "-25/25",
                   "elo": 1261,
                   "format_category": null,
@@ -13423,23 +13603,23 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1792,
+                  "appearances": 1802,
                   "ci95": "-20/20",
-                  "elo": 1235,
+                  "elo": 1234,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 889,
+                  "appearances": 893,
                   "ci95": "-30/30",
-                  "elo": 1264,
+                  "elo": 1262,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 796,
+                  "appearances": 797,
                   "ci95": "-30/30",
                   "elo": 1229,
                   "format_category": null,
@@ -13447,25 +13627,25 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1687,
+                  "appearances": 1694,
                   "ci95": "-20/20",
-                  "elo": 1231,
+                  "elo": 1228,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 557,
+                  "appearances": 558,
                   "ci95": "-37/37",
-                  "elo": 1216,
+                  "elo": 1215,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Text & Typography"
                 },
                 {
-                  "appearances": 607,
+                  "appearances": 609,
                   "ci95": "-30/30",
-                  "elo": 1252,
+                  "elo": 1247,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Nature & Landscapes"
@@ -13479,15 +13659,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1019,
-                  "ci95": "-25/25",
-                  "elo": 1250,
+                  "appearances": 1025,
+                  "ci95": "-24/24",
+                  "elo": 1245,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Fantasy & Mythical"
                 },
                 {
-                  "appearances": 3181,
+                  "appearances": 3185,
                   "ci95": "-15/15",
                   "elo": 1283,
                   "format_category": null,
@@ -13495,7 +13675,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 4872,
+                  "appearances": 4884,
                   "ci95": "-12/12",
                   "elo": 1265,
                   "format_category": null,
@@ -13503,23 +13683,23 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 501,
+                  "appearances": 506,
                   "ci95": "-35/35",
-                  "elo": 1200,
+                  "elo": 1193,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "UI/UX Design"
                 },
                 {
-                  "appearances": 707,
-                  "ci95": "-37/37",
-                  "elo": 1294,
+                  "appearances": 710,
+                  "ci95": "-36/36",
+                  "elo": 1291,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 663,
+                  "appearances": 665,
                   "ci95": "-33/33",
                   "elo": 1269,
                   "format_category": null,
@@ -13527,31 +13707,31 @@
                   "subject_matter_category": "Commercial"
                 },
                 {
-                  "appearances": 1016,
+                  "appearances": 1020,
                   "ci95": "-26/26",
-                  "elo": 1241,
+                  "elo": 1240,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1923,
+                  "appearances": 1928,
                   "ci95": "-20/20",
-                  "elo": 1332,
+                  "elo": 1331,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 4006,
+                  "appearances": 4019,
                   "ci95": "-13/13",
-                  "elo": 1237,
+                  "elo": 1235,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 811,
+                  "appearances": 812,
                   "ci95": "-34/34",
                   "elo": 1245,
                   "format_category": null,
@@ -13559,63 +13739,63 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 464,
+                  "appearances": 466,
                   "ci95": "-37/37",
-                  "elo": 1282,
+                  "elo": 1278,
                   "format_category": null,
                   "style_category": "Traditional Art",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2396,
+                  "appearances": 2406,
                   "ci95": "-17/17",
-                  "elo": 1217,
+                  "elo": 1216,
                   "format_category": null,
                   "style_category": "Graphic Design & Digital Rendering",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2186,
+                  "appearances": 2192,
                   "ci95": "-20/20",
-                  "elo": 1263,
+                  "elo": 1262,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3084,
+                  "appearances": 3092,
                   "ci95": "-15/15",
-                  "elo": 1241,
+                  "elo": 1239,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 730,
+                  "appearances": 733,
                   "ci95": "-33/33",
-                  "elo": 1353,
+                  "elo": 1352,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Groups & Activities"
                 },
                 {
-                  "appearances": 1073,
+                  "appearances": 1074,
                   "ci95": "-27/27",
-                  "elo": 1219,
+                  "elo": 1218,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 }
               ],
               "ci95": "-9/9",
-              "elo": 1256,
-              "elo_max": 1340,
+              "elo": 1255,
+              "elo_max": 1339,
               "elo_min": 961,
               "model_type": "text-to-image",
               "rank": 4
             },
             "heuristic_openrouter_slug": "google/gemini-3.1-flash-image-preview",
-            "last_updated_at": 1781697615743,
+            "last_updated_at": 1781730035643,
             "openrouter_slug": null,
             "permaslug": "google/gemini-3.1-flash-image-preview-20260226"
           }
@@ -13802,9 +13982,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 65536,
+          "context_length": 131072,
           "is_moderated": false,
-          "max_completion_tokens": 65536
+          "max_completion_tokens": 32768
         }
       }
     },
@@ -13898,7 +14078,7 @@
                 "artificial_analysis_coding_index": 30.1,
                 "artificial_analysis_intelligence_index": 25,
                 "critpt": 0.011,
-                "gdpval_aa": 0.049,
+                "gdpval_aa": 0.052,
                 "gpqa": 0.822,
                 "hle": 0.162,
                 "ifbench": 0.772,
@@ -13910,12 +14090,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "google/gemini-3.1-flash-lite-preview",
-            "last_updated_at": 1781611256444,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 45,
+              "agentic_percentile": 44,
               "coding_percentile": 62,
-              "intelligence_percentile": 15
+              "intelligence_percentile": 14
             },
             "permaslug": "google/gemini-3.1-flash-lite-preview-20260303"
           }
@@ -13927,11 +14107,11 @@
         "artificial_analysis_summary": {
           "aa_slug": "gemini-3-1-flash-lite-preview",
           "agentic_index": 25.7,
-          "agentic_percentile": 45,
+          "agentic_percentile": 44,
           "coding_index": 30.1,
           "coding_percentile": 62,
           "intelligence_index": 25.0,
-          "intelligence_percentile": 15,
+          "intelligence_percentile": 14,
           "variant_name": "Gemini 3.1 Flash-Lite"
         },
         "design_arena": {
@@ -14192,7 +14372,7 @@
             "percentiles": {
               "agentic_percentile": 85,
               "coding_percentile": 98,
-              "intelligence_percentile": 78
+              "intelligence_percentile": 77
             },
             "permaslug": "google/gemini-3.1-pro-preview-20260219"
           },
@@ -14224,7 +14404,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 75,
-              "coding_percentile": 93,
+              "coding_percentile": 92,
               "intelligence_percentile": null
             },
             "permaslug": "google/gemini-3.1-pro-preview-20260219"
@@ -14274,7 +14454,7 @@
           "coding_index": 55.5,
           "coding_percentile": 98,
           "intelligence_index": 46.5,
-          "intelligence_percentile": 78,
+          "intelligence_percentile": 77,
           "variant_name": "Gemini 3.1 Pro Preview"
         },
         "design_arena": {
@@ -14940,9 +15120,12 @@
           "max_tokens",
           "reasoning",
           "response_format",
+          "seed",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 1048576,
@@ -14966,7 +15149,7 @@
                 "artificial_analysis_coding_index": 45,
                 "artificial_analysis_intelligence_index": 50.2,
                 "critpt": 0.131,
-                "gdpval_aa": 0.432,
+                "gdpval_aa": 0.431,
                 "gpqa": 0.922,
                 "hle": 0.41,
                 "ifbench": 0.763,
@@ -14978,12 +15161,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 98,
+              "agentic_percentile": 97,
               "coding_percentile": 91,
-              "intelligence_percentile": 83
+              "intelligence_percentile": 81
             },
             "permaslug": "google/gemini-3.5-flash-20260519"
           },
@@ -15048,7 +15231,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 74,
-              "coding_percentile": 94,
+              "coding_percentile": 93,
               "intelligence_percentile": null
             },
             "permaslug": "google/gemini-3.5-flash-20260519"
@@ -15061,11 +15244,11 @@
         "artificial_analysis_summary": {
           "aa_slug": "gemini-3-5-flash",
           "agentic_index": 70.3,
-          "agentic_percentile": 98,
+          "agentic_percentile": 97,
           "coding_index": 45.0,
           "coding_percentile": 91,
           "intelligence_index": 50.2,
-          "intelligence_percentile": 83,
+          "intelligence_percentile": 81,
           "variant_name": "Gemini 3.5 Flash (high)"
         },
         "design_arena": {
@@ -15616,7 +15799,7 @@
             "openrouter_slug": "google/gemma-3-12b-it",
             "percentiles": {
               "agentic_percentile": 6,
-              "coding_percentile": 9,
+              "coding_percentile": 8,
               "intelligence_percentile": null
             },
             "permaslug": "google/gemma-3-12b-it"
@@ -15826,7 +16009,7 @@
             "openrouter_slug": "google/gemma-3-4b-it",
             "percentiles": {
               "agentic_percentile": 4,
-              "coding_percentile": 4,
+              "coding_percentile": 3,
               "intelligence_percentile": null
             },
             "permaslug": "google/gemma-3-4b-it"
@@ -16003,7 +16186,16 @@
           "web_search": null
         },
         "supported_parameters": [
-          "max_tokens"
+          "frequency_penalty",
+          "logit_bias",
+          "max_tokens",
+          "min_p",
+          "presence_penalty",
+          "repetition_penalty",
+          "stop",
+          "temperature",
+          "top_k",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 32768,
@@ -16027,7 +16219,7 @@
                 "artificial_analysis_coding_index": 22.4,
                 "artificial_analysis_intelligence_index": 25.7,
                 "critpt": 0,
-                "gdpval_aa": 0.106,
+                "gdpval_aa": 0.109,
                 "gpqa": 0.792,
                 "hle": 0.183,
                 "ifbench": 0.724,
@@ -16039,12 +16231,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781611256444,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 51,
               "coding_percentile": 48,
-              "intelligence_percentile": 20
+              "intelligence_percentile": 19
             },
             "permaslug": "google/gemma-4-26b-a4b-it-20260403"
           },
@@ -16093,7 +16285,7 @@
           "coding_index": 22.4,
           "coding_percentile": 48,
           "intelligence_index": 25.7,
-          "intelligence_percentile": 20,
+          "intelligence_percentile": 19,
           "variant_name": "Gemma 4 26B A4B (Reasoning)"
         },
         "design_arena": null,
@@ -16181,7 +16373,7 @@
                 "artificial_analysis_coding_index": 22.4,
                 "artificial_analysis_intelligence_index": 25.7,
                 "critpt": 0,
-                "gdpval_aa": 0.106,
+                "gdpval_aa": 0.109,
                 "gpqa": 0.792,
                 "hle": 0.183,
                 "ifbench": 0.724,
@@ -16193,12 +16385,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781611256444,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 51,
               "coding_percentile": 48,
-              "intelligence_percentile": 20
+              "intelligence_percentile": 19
             },
             "permaslug": "google/gemma-4-26b-a4b-it-20260403"
           },
@@ -16247,7 +16439,7 @@
           "coding_index": 22.4,
           "coding_percentile": 48,
           "intelligence_index": 25.7,
-          "intelligence_percentile": 20,
+          "intelligence_percentile": 19,
           "variant_name": "Gemma 4 26B A4B (Reasoning)"
         },
         "design_arena": null,
@@ -16309,7 +16501,7 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 262144,
+          "context_length": 131072,
           "is_moderated": false,
           "max_completion_tokens": 32768
         }
@@ -16330,7 +16522,7 @@
                 "artificial_analysis_coding_index": 38.7,
                 "artificial_analysis_intelligence_index": 29.4,
                 "critpt": 0.014,
-                "gdpval_aa": 0.141,
+                "gdpval_aa": 0.143,
                 "gpqa": 0.857,
                 "hle": 0.227,
                 "ifbench": 0.756,
@@ -16342,12 +16534,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781611256444,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 61,
+              "agentic_percentile": 60,
               "coding_percentile": 82,
-              "intelligence_percentile": 22
+              "intelligence_percentile": 21
             },
             "permaslug": "google/gemma-4-31b-it-20260402"
           },
@@ -16392,11 +16584,11 @@
         "artificial_analysis_summary": {
           "aa_slug": "gemma-4-31b",
           "agentic_index": 40.9,
-          "agentic_percentile": 61,
+          "agentic_percentile": 60,
           "coding_index": 38.7,
           "coding_percentile": 82,
           "intelligence_index": 29.4,
-          "intelligence_percentile": 22,
+          "intelligence_percentile": 21,
           "variant_name": "Gemma 4 31B (Reasoning)"
         },
         "design_arena": null,
@@ -16487,7 +16679,7 @@
                 "artificial_analysis_coding_index": 38.7,
                 "artificial_analysis_intelligence_index": 29.4,
                 "critpt": 0.014,
-                "gdpval_aa": 0.141,
+                "gdpval_aa": 0.143,
                 "gpqa": 0.857,
                 "hle": 0.227,
                 "ifbench": 0.756,
@@ -16499,12 +16691,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781611256444,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 61,
+              "agentic_percentile": 60,
               "coding_percentile": 82,
-              "intelligence_percentile": 22
+              "intelligence_percentile": 21
             },
             "permaslug": "google/gemma-4-31b-it-20260402"
           },
@@ -16549,11 +16741,11 @@
         "artificial_analysis_summary": {
           "aa_slug": "gemma-4-31b",
           "agentic_index": 40.9,
-          "agentic_percentile": 61,
+          "agentic_percentile": 60,
           "coding_index": 38.7,
           "coding_percentile": 82,
           "intelligence_index": 29.4,
-          "intelligence_percentile": 22,
+          "intelligence_percentile": 21,
           "variant_name": "Gemma 4 31B (Reasoning)"
         },
         "design_arena": null,
@@ -16606,13 +16798,17 @@
           "max_tokens",
           "reasoning",
           "response_format",
+          "seed",
+          "stop",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 262144,
-          "is_moderated": true,
-          "max_completion_tokens": 8192
+          "is_moderated": false,
+          "max_completion_tokens": 32768
         }
       }
     },
@@ -17162,7 +17358,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 69,
-              "coding_percentile": 67,
+              "coding_percentile": 68,
               "intelligence_percentile": null
             },
             "permaslug": "inclusionai/ling-2.6-1t-20260423"
@@ -17375,9 +17571,9 @@
             "last_updated_at": 1781697615577,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 75,
+              "agentic_percentile": 74,
               "coding_percentile": 68,
-              "intelligence_percentile": 32
+              "intelligence_percentile": 30
             },
             "permaslug": "inclusionai/ring-2.6-1t-20260508"
           }
@@ -17389,11 +17585,11 @@
         "artificial_analysis_summary": {
           "aa_slug": "ring-2-6-1t",
           "agentic_index": 51.5,
-          "agentic_percentile": 75,
+          "agentic_percentile": 74,
           "coding_index": 33.3,
           "coding_percentile": 68,
           "intelligence_index": 30.6,
-          "intelligence_percentile": 32,
+          "intelligence_percentile": 30,
           "variant_name": "Ring-2.6-1T"
         },
         "design_arena": null,
@@ -17637,7 +17833,7 @@
           "tokenizer": "Other"
         },
         "canonical_slug": "kwaipilot/kat-coder-pro-v2-20260327",
-        "context_length": 256000,
+        "context_length": 262144,
         "created": 1774649310,
         "default_parameters": {
           "frequency_penalty": null,
@@ -17679,9 +17875,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 256000,
+          "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": 80000
+          "max_completion_tokens": 144000
         }
       }
     },
@@ -17771,7 +17967,16 @@
           "web_search": null
         },
         "supported_parameters": [
-          "max_tokens"
+          "frequency_penalty",
+          "logit_bias",
+          "max_tokens",
+          "min_p",
+          "presence_penalty",
+          "repetition_penalty",
+          "stop",
+          "temperature",
+          "top_k",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 32768,
@@ -17863,7 +18068,16 @@
           "web_search": null
         },
         "supported_parameters": [
-          "max_tokens"
+          "frequency_penalty",
+          "max_tokens",
+          "min_p",
+          "presence_penalty",
+          "repetition_penalty",
+          "seed",
+          "stop",
+          "temperature",
+          "top_k",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 32768,
@@ -17955,9 +18169,18 @@
           "web_search": null
         },
         "supported_parameters": [
+          "frequency_penalty",
           "include_reasoning",
           "max_tokens",
-          "reasoning"
+          "min_p",
+          "presence_penalty",
+          "reasoning",
+          "repetition_penalty",
+          "seed",
+          "stop",
+          "temperature",
+          "top_k",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 32768,
@@ -18210,7 +18433,16 @@
           "web_search": null
         },
         "supported_parameters": [
-          "max_tokens"
+          "frequency_penalty",
+          "logit_bias",
+          "max_tokens",
+          "min_p",
+          "presence_penalty",
+          "repetition_penalty",
+          "stop",
+          "temperature",
+          "top_k",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 8192,
@@ -18402,6 +18634,7 @@
         "supported_parameters": [
           "frequency_penalty",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -18414,6 +18647,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -18453,7 +18687,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "meta-llama/llama-3.2-11b-vision-instruct",
             "percentiles": {
-              "agentic_percentile": 10,
+              "agentic_percentile": 9,
               "coding_percentile": 6,
               "intelligence_percentile": null
             },
@@ -18834,7 +19068,7 @@
             "openrouter_slug": "meta-llama/llama-3.3-70b-instruct",
             "percentiles": {
               "agentic_percentile": 19,
-              "coding_percentile": 16,
+              "coding_percentile": 17,
               "intelligence_percentile": null
             },
             "permaslug": "meta-llama/llama-3.3-70b-instruct"
@@ -18884,6 +19118,7 @@
         "supported_parameters": [
           "frequency_penalty",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -18896,6 +19131,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -18936,7 +19172,7 @@
             "openrouter_slug": "meta-llama/llama-3.3-70b-instruct",
             "percentiles": {
               "agentic_percentile": 19,
-              "coding_percentile": 16,
+              "coding_percentile": 17,
               "intelligence_percentile": null
             },
             "permaslug": "meta-llama/llama-3.3-70b-instruct"
@@ -19031,7 +19267,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 16,
+              "agentic_percentile": 15,
               "coding_percentile": 33,
               "intelligence_percentile": 5
             },
@@ -19045,7 +19281,7 @@
         "artificial_analysis_summary": {
           "aa_slug": "llama-4-maverick",
           "agentic_index": 7.2,
-          "agentic_percentile": 16,
+          "agentic_percentile": 15,
           "coding_index": 15.6,
           "coding_percentile": 33,
           "intelligence_index": 14.3,
@@ -19213,6 +19449,7 @@
         "supported_parameters": [
           "frequency_penalty",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -19225,6 +19462,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -19901,7 +20139,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 49,
+              "agentic_percentile": 48,
               "coding_percentile": 30,
               "intelligence_percentile": null
             },
@@ -20561,7 +20799,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 81,
+              "agentic_percentile": 80,
               "coding_percentile": 79,
               "intelligence_percentile": null
             },
@@ -20801,7 +21039,7 @@
                 "artificial_analysis_coding_index": 41.9,
                 "artificial_analysis_intelligence_index": 38.1,
                 "critpt": 0.006,
-                "gdpval_aa": 0.338,
+                "gdpval_aa": 0.339,
                 "gpqa": 0.874,
                 "hle": 0.281,
                 "ifbench": 0.757,
@@ -20813,12 +21051,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "minimax/minimax-m2.7",
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 89,
               "coding_percentile": 86,
-              "intelligence_percentile": 46
+              "intelligence_percentile": 47
             },
             "permaslug": "minimax/minimax-m2.7-20260318"
           }
@@ -20834,7 +21072,7 @@
           "coding_index": 41.9,
           "coding_percentile": 86,
           "intelligence_index": 38.1,
-          "intelligence_percentile": 46,
+          "intelligence_percentile": 47,
           "variant_name": "MiniMax-M2.7"
         },
         "design_arena": {
@@ -21082,7 +21320,7 @@
                 "artificial_analysis_coding_index": 43.4,
                 "artificial_analysis_intelligence_index": 44.4,
                 "critpt": 0.037,
-                "gdpval_aa": 0.459,
+                "gdpval_aa": 0.457,
                 "gpqa": 0.929,
                 "hle": 0.371,
                 "ifbench": 0.829,
@@ -21094,12 +21332,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "minimax/minimax-m3",
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 97,
-              "coding_percentile": 89,
-              "intelligence_percentile": 73
+              "coding_percentile": 88,
+              "intelligence_percentile": 72
             },
             "permaslug": "minimax/minimax-m3-20260531"
           }
@@ -21113,9 +21351,9 @@
           "agentic_index": 68.6,
           "agentic_percentile": 97,
           "coding_index": 43.4,
-          "coding_percentile": 89,
+          "coding_percentile": 88,
           "intelligence_index": 44.4,
-          "intelligence_percentile": 73,
+          "intelligence_percentile": 72,
           "variant_name": "MiniMax-M3"
         },
         "design_arena": {
@@ -21325,9 +21563,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 524288,
+          "context_length": 1000000,
           "is_moderated": false,
-          "max_completion_tokens": 512000
+          "max_completion_tokens": 131072
         }
       }
     },
@@ -21595,11 +21833,17 @@
           "web_search": null
         },
         "supported_parameters": [
+          "frequency_penalty",
           "max_tokens",
+          "presence_penalty",
           "response_format",
+          "seed",
+          "stop",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 256000,
@@ -21638,7 +21882,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "mistralai/devstral-2512",
             "percentiles": {
-              "agentic_percentile": 40,
+              "agentic_percentile": 39,
               "coding_percentile": 50,
               "intelligence_percentile": null
             },
@@ -21692,11 +21936,17 @@
           "web_search": null
         },
         "supported_parameters": [
+          "frequency_penalty",
           "max_tokens",
+          "presence_penalty",
           "response_format",
+          "seed",
+          "stop",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 262144,
@@ -21735,7 +21985,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "mistralai/ministral-14b-2512",
             "percentiles": {
-              "agentic_percentile": 33,
+              "agentic_percentile": 32,
               "coding_percentile": 18,
               "intelligence_percentile": null
             },
@@ -21924,7 +22174,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "mistralai/ministral-3b-2512",
             "percentiles": {
-              "agentic_percentile": 24,
+              "agentic_percentile": 23,
               "coding_percentile": 7,
               "intelligence_percentile": null
             },
@@ -22398,7 +22648,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "mistralai/mistral-large-2407",
             "percentiles": {
-              "agentic_percentile": 23,
+              "agentic_percentile": 22,
               "coding_percentile": 26,
               "intelligence_percentile": null
             },
@@ -22741,11 +22991,17 @@
           "web_search": null
         },
         "supported_parameters": [
+          "frequency_penalty",
           "max_tokens",
+          "presence_penalty",
           "response_format",
+          "seed",
+          "stop",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 262144,
@@ -22958,11 +23214,17 @@
           "web_search": null
         },
         "supported_parameters": [
+          "frequency_penalty",
           "max_tokens",
+          "presence_penalty",
           "response_format",
+          "seed",
+          "stop",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 131072,
@@ -22986,7 +23248,7 @@
                 "artificial_analysis_coding_index": 35.4,
                 "artificial_analysis_intelligence_index": 29.9,
                 "critpt": 0,
-                "gdpval_aa": 0.212,
+                "gdpval_aa": 0.214,
                 "gpqa": 0.748,
                 "hle": 0.128,
                 "ifbench": 0.688,
@@ -22998,12 +23260,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 78,
               "coding_percentile": 74,
-              "intelligence_percentile": 29
+              "intelligence_percentile": 28
             },
             "permaslug": "mistralai/mistral-medium-3.5-20260430"
           }
@@ -23019,7 +23281,7 @@
           "coding_index": 35.4,
           "coding_percentile": 74,
           "intelligence_index": 29.9,
-          "intelligence_percentile": 29,
+          "intelligence_percentile": 28,
           "variant_name": "Mistral Medium 3.5"
         },
         "design_arena": null,
@@ -23068,13 +23330,19 @@
           "web_search": null
         },
         "supported_parameters": [
+          "frequency_penalty",
           "include_reasoning",
           "max_tokens",
+          "presence_penalty",
           "reasoning",
           "response_format",
+          "seed",
+          "stop",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 262144,
@@ -23113,8 +23381,8 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "mistralai/mistral-medium-3.1",
             "percentiles": {
-              "agentic_percentile": 45,
-              "coding_percentile": 40,
+              "agentic_percentile": 44,
+              "coding_percentile": 39,
               "intelligence_percentile": null
             },
             "permaslug": "mistralai/mistral-medium-3.1"
@@ -23325,11 +23593,17 @@
           "web_search": null
         },
         "supported_parameters": [
+          "frequency_penalty",
           "max_tokens",
+          "presence_penalty",
           "response_format",
+          "seed",
+          "stop",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 131072,
@@ -23387,6 +23661,7 @@
         "supported_parameters": [
           "frequency_penalty",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -23399,6 +23674,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -23729,6 +24005,7 @@
           "presence_penalty",
           "reasoning",
           "response_format",
+          "seed",
           "stop",
           "structured_outputs",
           "temperature",
@@ -24645,8 +24922,8 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 30,
-              "coding_percentile": 33,
+              "agentic_percentile": 29,
+              "coding_percentile": 32,
               "intelligence_percentile": null
             },
             "permaslug": "moonshotai/kimi-k2-thinking-20251106"
@@ -24749,7 +25026,7 @@
         "pricing": {
           "completion": "0.0000025",
           "image": null,
-          "input_cache_read": null,
+          "input_cache_read": "0.0000006",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.0000006",
@@ -24813,7 +25090,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 84,
-              "coding_percentile": 84,
+              "coding_percentile": 83,
               "intelligence_percentile": null
             },
             "permaslug": "moonshotai/kimi-k2.5-0127"
@@ -25198,7 +25475,7 @@
                 "artificial_analysis_coding_index": 47.1,
                 "artificial_analysis_intelligence_index": 42.8,
                 "critpt": 0.08,
-                "gdpval_aa": 0.35,
+                "gdpval_aa": 0.352,
                 "gpqa": 0.911,
                 "hle": 0.359,
                 "ifbench": 0.76,
@@ -25210,12 +25487,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "moonshotai/kimi-k2.6",
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 94,
-              "coding_percentile": 94,
-              "intelligence_percentile": 68
+              "coding_percentile": 93,
+              "intelligence_percentile": 67
             },
             "permaslug": "moonshotai/kimi-k2.6-20260420"
           },
@@ -25262,9 +25539,9 @@
           "agentic_index": 66.0,
           "agentic_percentile": 94,
           "coding_index": 47.1,
-          "coding_percentile": 94,
+          "coding_percentile": 93,
           "intelligence_index": 42.8,
-          "intelligence_percentile": 68,
+          "intelligence_percentile": 67,
           "variant_name": "Kimi K2.6"
         },
         "design_arena": {
@@ -26536,7 +26813,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 25,
-              "coding_percentile": 35,
+              "coding_percentile": 34,
               "intelligence_percentile": null
             },
             "permaslug": "nousresearch/hermes-4-405b"
@@ -26702,6 +26979,39 @@
     {
       "benchmarks": {
         "artificial_analysis": [
+          {
+            "aa_id": "1a8ba535-df18-459b-ad40-3199191296d7",
+            "aa_name": "Llama 3.3 Nemotron Super 49B v1 (Reasoning)",
+            "aa_slug": "llama-3-3-nemotron-super-49b-reasoning",
+            "benchmark_data": {
+              "evaluations": {
+                "aa_omniscience_accuracy": 0.169,
+                "aa_omniscience_non_hallucination_rate": 0.095,
+                "artificial_analysis_agentic_index": null,
+                "artificial_analysis_coding_index": 9.4,
+                "artificial_analysis_intelligence_index": null,
+                "critpt": 0,
+                "gdpval_aa": null,
+                "gpqa": 0.643,
+                "hle": 0.065,
+                "ifbench": 0.381,
+                "lcr": 0.17,
+                "scicode": 0.282,
+                "tau2": 0.269,
+                "terminalbench_hard": 0
+              },
+              "model_type": "llm"
+            },
+            "heuristic_openrouter_slug": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+            "last_updated_at": 1781730035301,
+            "openrouter_slug": null,
+            "percentiles": {
+              "agentic_percentile": null,
+              "coding_percentile": 14,
+              "intelligence_percentile": null
+            },
+            "permaslug": "nvidia/llama-3.3-nemotron-super-49b-v1.5"
+          },
           {
             "aa_id": "26c0b5df-efa7-470f-a65e-2d883329e493",
             "aa_name": "Llama Nemotron Super 49B v1.5 (Non-reasoning)",
@@ -27145,7 +27455,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 43,
+              "agentic_percentile": 42,
               "coding_percentile": 32,
               "intelligence_percentile": null
             },
@@ -27235,7 +27545,7 @@
                 "artificial_analysis_coding_index": 31.2,
                 "artificial_analysis_intelligence_index": 25.4,
                 "critpt": 0.031,
-                "gdpval_aa": 0.08,
+                "gdpval_aa": 0.083,
                 "gpqa": 0.8,
                 "hle": 0.192,
                 "ifbench": 0.715,
@@ -27247,12 +27557,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "nvidia/nemotron-3-super-120b-a12b",
-            "last_updated_at": 1781611256444,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 60,
+              "agentic_percentile": 59,
               "coding_percentile": 64,
-              "intelligence_percentile": 17
+              "intelligence_percentile": 16
             },
             "permaslug": "nvidia/nemotron-3-super-120b-a12b-20230311"
           }
@@ -27264,11 +27574,11 @@
         "artificial_analysis_summary": {
           "aa_slug": "nvidia-nemotron-3-super-120b-a12b",
           "agentic_index": 40.2,
-          "agentic_percentile": 60,
+          "agentic_percentile": 59,
           "coding_index": 31.2,
           "coding_percentile": 64,
           "intelligence_index": 25.4,
-          "intelligence_percentile": 17,
+          "intelligence_percentile": 16,
           "variant_name": "NVIDIA Nemotron 3 Super 120B A12B (Reasoning)"
         },
         "design_arena": null,
@@ -27357,7 +27667,7 @@
                 "artificial_analysis_coding_index": 31.2,
                 "artificial_analysis_intelligence_index": 25.4,
                 "critpt": 0.031,
-                "gdpval_aa": 0.08,
+                "gdpval_aa": 0.083,
                 "gpqa": 0.8,
                 "hle": 0.192,
                 "ifbench": 0.715,
@@ -27369,12 +27679,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "nvidia/nemotron-3-super-120b-a12b",
-            "last_updated_at": 1781611256444,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 60,
+              "agentic_percentile": 59,
               "coding_percentile": 64,
-              "intelligence_percentile": 17
+              "intelligence_percentile": 16
             },
             "permaslug": "nvidia/nemotron-3-super-120b-a12b-20230311"
           }
@@ -27386,11 +27696,11 @@
         "artificial_analysis_summary": {
           "aa_slug": "nvidia-nemotron-3-super-120b-a12b",
           "agentic_index": 40.2,
-          "agentic_percentile": 60,
+          "agentic_percentile": 59,
           "coding_index": 31.2,
           "coding_percentile": 64,
           "intelligence_index": 25.4,
-          "intelligence_percentile": 17,
+          "intelligence_percentile": 16,
           "variant_name": "NVIDIA Nemotron 3 Super 120B A12B (Reasoning)"
         },
         "design_arena": null,
@@ -28193,7 +28503,7 @@
             "openrouter_slug": "nvidia/nemotron-nano-9b-v2",
             "percentiles": {
               "agentic_percentile": 20,
-              "coding_percentile": 13,
+              "coding_percentile": 12,
               "intelligence_percentile": null
             },
             "permaslug": "nvidia/nemotron-nano-9b-v2"
@@ -28294,7 +28604,7 @@
             "openrouter_slug": "openai/gpt-3.5-turbo",
             "percentiles": {
               "agentic_percentile": null,
-              "coding_percentile": 16,
+              "coding_percentile": 17,
               "intelligence_percentile": null
             },
             "permaslug": "openai/gpt-3.5-turbo"
@@ -29297,8 +29607,8 @@
         ],
         "top_provider": {
           "context_length": 1047576,
-          "is_moderated": true,
-          "max_completion_tokens": 32768
+          "is_moderated": false,
+          "max_completion_tokens": null
         }
       }
     },
@@ -29681,7 +29991,7 @@
         "pricing": {
           "completion": "0.00001",
           "image": null,
-          "input_cache_read": null,
+          "input_cache_read": "0.00000125",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.0000025",
@@ -29708,7 +30018,7 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 16384
         }
       }
@@ -29813,7 +30123,7 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 4096
         }
       }
@@ -29918,7 +30228,7 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 16384
         }
       }
@@ -30341,7 +30651,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 80,
+              "agentic_percentile": 79,
               "coding_percentile": 75,
               "intelligence_percentile": null
             },
@@ -30440,7 +30750,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 41,
+              "agentic_percentile": 40,
               "coding_percentile": 53,
               "intelligence_percentile": null
             },
@@ -30802,7 +31112,7 @@
         ],
         "top_provider": {
           "context_length": 400000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 128000
         }
       }
@@ -31034,7 +31344,7 @@
             "aa_name": "GPT Image 1 (high)",
             "aa_slug": "openai-gpt_gpt-image-1--high",
             "benchmark_data": {
-              "appearances": 5103,
+              "appearances": 5107,
               "categories": [
                 {
                   "appearances": 1965,
@@ -31047,7 +31357,7 @@
                 {
                   "appearances": 440,
                   "ci95": "-31/31",
-                  "elo": 1068,
+                  "elo": 1070,
                   "format_category": null,
                   "style_category": "Cartoon & Illustration",
                   "subject_matter_category": null
@@ -31055,7 +31365,7 @@
                 {
                   "appearances": 583,
                   "ci95": "-28/28",
-                  "elo": 1160,
+                  "elo": 1162,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Portraits"
@@ -31063,29 +31373,29 @@
                 {
                   "appearances": 398,
                   "ci95": "-33/33",
-                  "elo": 1135,
+                  "elo": 1134,
                   "format_category": null,
                   "style_category": "Anime",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 281,
+                  "appearances": 282,
                   "ci95": "-37/37",
-                  "elo": 1167,
+                  "elo": 1164,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 978,
+                  "appearances": 980,
                   "ci95": "-21/21",
-                  "elo": 1140,
+                  "elo": 1141,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2202,
+                  "appearances": 2203,
                   "ci95": "-14/14",
                   "elo": 1168,
                   "format_category": null,
@@ -31093,7 +31403,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 590,
+                  "appearances": 594,
                   "ci95": "-27/27",
                   "elo": 1160,
                   "format_category": null,
@@ -31101,9 +31411,9 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 606,
+                  "appearances": 608,
                   "ci95": "-24/24",
-                  "elo": 1144,
+                  "elo": 1143,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31111,13 +31421,13 @@
                 {
                   "appearances": 176,
                   "ci95": "-47/47",
-                  "elo": 1135,
+                  "elo": 1134,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1049,
+                  "appearances": 1053,
                   "ci95": "-19/19",
                   "elo": 1177,
                   "format_category": null,
@@ -31125,7 +31435,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 679,
+                  "appearances": 680,
                   "ci95": "-24/24",
                   "elo": 1113,
                   "format_category": null,
@@ -31135,7 +31445,7 @@
                 {
                   "appearances": 640,
                   "ci95": "-23/23",
-                  "elo": 1081,
+                  "elo": 1079,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Physical Spaces"
@@ -31143,15 +31453,15 @@
                 {
                   "appearances": 488,
                   "ci95": "-31/31",
-                  "elo": 1142,
+                  "elo": 1141,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1461,
+                  "appearances": 1463,
                   "ci95": "-16/16",
-                  "elo": 1137,
+                  "elo": 1135,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31159,13 +31469,13 @@
                 {
                   "appearances": 766,
                   "ci95": "-24/24",
-                  "elo": 1161,
+                  "elo": 1162,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 981,
+                  "appearances": 985,
                   "ci95": "-19/19",
                   "elo": 1137,
                   "format_category": null,
@@ -31175,15 +31485,15 @@
                 {
                   "appearances": 554,
                   "ci95": "-27/27",
-                  "elo": 1106,
+                  "elo": 1108,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 462,
+                  "appearances": 463,
                   "ci95": "-29/29",
-                  "elo": 1074,
+                  "elo": 1075,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31191,13 +31501,13 @@
                 {
                   "appearances": 1230,
                   "ci95": "-19/19",
-                  "elo": 1159,
+                  "elo": 1158,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 293,
+                  "appearances": 294,
                   "ci95": "-36/36",
                   "elo": 1075,
                   "format_category": null,
@@ -31207,15 +31517,15 @@
                 {
                   "appearances": 481,
                   "ci95": "-28/28",
-                  "elo": 1091,
+                  "elo": 1089,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Nature & Landscapes"
                 },
                 {
-                  "appearances": 323,
+                  "appearances": 324,
                   "ci95": "-37/37",
-                  "elo": 1166,
+                  "elo": 1168,
                   "format_category": null,
                   "style_category": "Vintage & Retro",
                   "subject_matter_category": null
@@ -31223,79 +31533,79 @@
                 {
                   "appearances": 777,
                   "ci95": "-23/23",
-                  "elo": 1153,
+                  "elo": 1152,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Fantasy & Mythical"
                 },
                 {
-                  "appearances": 2055,
+                  "appearances": 2054,
                   "ci95": "-14/14",
-                  "elo": 1119,
+                  "elo": 1118,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3132,
+                  "appearances": 3134,
                   "ci95": "-11/11",
-                  "elo": 1127,
+                  "elo": 1126,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 245,
+                  "appearances": 247,
                   "ci95": "-39/39",
-                  "elo": 1190,
+                  "elo": 1187,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "UI/UX Design"
                 },
                 {
-                  "appearances": 264,
+                  "appearances": 265,
                   "ci95": "-39/39",
-                  "elo": 1171,
+                  "elo": 1173,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 363,
+                  "appearances": 365,
                   "ci95": "-33/33",
-                  "elo": 1132,
+                  "elo": 1130,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Commercial"
                 },
                 {
-                  "appearances": 573,
+                  "appearances": 575,
                   "ci95": "-26/26",
-                  "elo": 1141,
+                  "elo": 1142,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1365,
+                  "appearances": 1366,
                   "ci95": "-18/18",
-                  "elo": 1167,
+                  "elo": 1166,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2775,
+                  "appearances": 2777,
                   "ci95": "-12/12",
-                  "elo": 1144,
+                  "elo": 1142,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 294,
+                  "appearances": 295,
                   "ci95": "-36/36",
-                  "elo": 1132,
+                  "elo": 1133,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31309,23 +31619,23 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1500,
+                  "appearances": 1503,
                   "ci95": "-16/16",
-                  "elo": 1115,
+                  "elo": 1113,
                   "format_category": null,
                   "style_category": "Graphic Design & Digital Rendering",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1107,
+                  "appearances": 1109,
                   "ci95": "-19/19",
-                  "elo": 1138,
+                  "elo": 1139,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1973,
+                  "appearances": 1974,
                   "ci95": "-14/14",
                   "elo": 1126,
                   "format_category": null,
@@ -31341,23 +31651,23 @@
                   "subject_matter_category": "People: Groups & Activities"
                 },
                 {
-                  "appearances": 542,
+                  "appearances": 543,
                   "ci95": "-27/27",
-                  "elo": 1108,
+                  "elo": 1109,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 }
               ],
               "ci95": "-9/9",
-              "elo": 1133,
-              "elo_max": 1340,
+              "elo": 1132,
+              "elo_max": 1339,
               "elo_min": 961,
               "model_type": "text-to-image",
-              "rank": 49
+              "rank": 50
             },
             "heuristic_openrouter_slug": "openai/gpt-5-image",
-            "last_updated_at": 1781697615743,
+            "last_updated_at": 1781730035643,
             "openrouter_slug": null,
             "permaslug": "openai/gpt-5-image"
           }
@@ -31505,12 +31815,12 @@
             "aa_name": "GPT Image 1 Mini (medium)",
             "aa_slug": "openai-gpt_gpt-image-1-mini--medium",
             "benchmark_data": {
-              "appearances": 5316,
+              "appearances": 5321,
               "categories": [
                 {
-                  "appearances": 2012,
+                  "appearances": 2014,
                   "ci95": "-14/14",
-                  "elo": 1094,
+                  "elo": 1093,
                   "format_category": null,
                   "style_category": "General & Photorealistic",
                   "subject_matter_category": null
@@ -31518,23 +31828,23 @@
                 {
                   "appearances": 462,
                   "ci95": "-30/30",
-                  "elo": 1032,
+                  "elo": 1034,
                   "format_category": null,
                   "style_category": "Cartoon & Illustration",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 607,
+                  "appearances": 608,
                   "ci95": "-28/28",
-                  "elo": 1113,
+                  "elo": 1115,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Portraits"
                 },
                 {
-                  "appearances": 382,
+                  "appearances": 383,
                   "ci95": "-33/33",
-                  "elo": 1071,
+                  "elo": 1069,
                   "format_category": null,
                   "style_category": "Anime",
                   "subject_matter_category": null
@@ -31542,7 +31852,7 @@
                 {
                   "appearances": 296,
                   "ci95": "-35/35",
-                  "elo": 1030,
+                  "elo": 1026,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31556,7 +31866,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2301,
+                  "appearances": 2304,
                   "ci95": "-14/14",
                   "elo": 1108,
                   "format_category": null,
@@ -31572,9 +31882,9 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 624,
+                  "appearances": 625,
                   "ci95": "-24/24",
-                  "elo": 1063,
+                  "elo": 1062,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31582,7 +31892,7 @@
                 {
                   "appearances": 181,
                   "ci95": "-49/49",
-                  "elo": 1059,
+                  "elo": 1058,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31596,17 +31906,17 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 704,
-                  "ci95": "-25/25",
-                  "elo": 1072,
+                  "appearances": 705,
+                  "ci95": "-24/24",
+                  "elo": 1071,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Futuristic & Sci-Fi"
                 },
                 {
-                  "appearances": 648,
-                  "ci95": "-24/24",
-                  "elo": 1048,
+                  "appearances": 651,
+                  "ci95": "-23/23",
+                  "elo": 1046,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Physical Spaces"
@@ -31614,21 +31924,21 @@
                 {
                   "appearances": 474,
                   "ci95": "-30/30",
-                  "elo": 1117,
+                  "elo": 1116,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1477,
+                  "appearances": 1478,
                   "ci95": "-16/16",
-                  "elo": 1078,
+                  "elo": 1077,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 808,
+                  "appearances": 809,
                   "ci95": "-24/24",
                   "elo": 1115,
                   "format_category": null,
@@ -31636,9 +31946,9 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1000,
+                  "appearances": 1002,
                   "ci95": "-20/20",
-                  "elo": 1064,
+                  "elo": 1063,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31646,7 +31956,7 @@
                 {
                   "appearances": 599,
                   "ci95": "-27/27",
-                  "elo": 1069,
+                  "elo": 1071,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31660,7 +31970,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1295,
+                  "appearances": 1296,
                   "ci95": "-18/18",
                   "elo": 1087,
                   "format_category": null,
@@ -31670,15 +31980,15 @@
                 {
                   "appearances": 308,
                   "ci95": "-36/36",
-                  "elo": 1091,
+                  "elo": 1090,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Text & Typography"
                 },
                 {
-                  "appearances": 522,
+                  "appearances": 523,
                   "ci95": "-27/27",
-                  "elo": 1104,
+                  "elo": 1100,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Nature & Landscapes"
@@ -31700,7 +32010,7 @@
                   "subject_matter_category": "Fantasy & Mythical"
                 },
                 {
-                  "appearances": 2076,
+                  "appearances": 2077,
                   "ci95": "-14/14",
                   "elo": 1088,
                   "format_category": null,
@@ -31708,7 +32018,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3188,
+                  "appearances": 3191,
                   "ci95": "-11/11",
                   "elo": 1089,
                   "format_category": null,
@@ -31716,9 +32026,9 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 296,
+                  "appearances": 299,
                   "ci95": "-36/36",
-                  "elo": 1023,
+                  "elo": 1026,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "UI/UX Design"
@@ -31740,7 +32050,7 @@
                   "subject_matter_category": "Commercial"
                 },
                 {
-                  "appearances": 563,
+                  "appearances": 565,
                   "ci95": "-26/26",
                   "elo": 1084,
                   "format_category": null,
@@ -31748,17 +32058,17 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1429,
+                  "appearances": 1432,
                   "ci95": "-18/18",
-                  "elo": 1092,
+                  "elo": 1091,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2860,
+                  "appearances": 2862,
                   "ci95": "-12/12",
-                  "elo": 1095,
+                  "elo": 1094,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31772,17 +32082,17 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 370,
+                  "appearances": 371,
                   "ci95": "-35/35",
-                  "elo": 1189,
+                  "elo": 1190,
                   "format_category": null,
                   "style_category": "Traditional Art",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1590,
+                  "appearances": 1591,
                   "ci95": "-16/16",
-                  "elo": 1046,
+                  "elo": 1045,
                   "format_category": null,
                   "style_category": "Graphic Design & Digital Rendering",
                   "subject_matter_category": null
@@ -31796,9 +32106,9 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2032,
+                  "appearances": 2035,
                   "ci95": "-14/14",
-                  "elo": 1098,
+                  "elo": 1097,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31814,7 +32124,7 @@
                 {
                   "appearances": 582,
                   "ci95": "-27/27",
-                  "elo": 1087,
+                  "elo": 1086,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31822,13 +32132,13 @@
               ],
               "ci95": "-9/9",
               "elo": 1086,
-              "elo_max": 1340,
+              "elo_max": 1339,
               "elo_min": 961,
               "model_type": "text-to-image",
               "rank": 76
             },
             "heuristic_openrouter_slug": "openai/gpt-5-image-mini",
-            "last_updated_at": 1781697615743,
+            "last_updated_at": 1781730035643,
             "openrouter_slug": null,
             "permaslug": "openai/gpt-5-image-mini"
           }
@@ -32031,7 +32341,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 61,
+              "agentic_percentile": 60,
               "coding_percentile": 67,
               "intelligence_percentile": null
             },
@@ -32273,7 +32583,7 @@
         "pricing": {
           "completion": "0.000002",
           "image": null,
-          "input_cache_read": "0.000000025",
+          "input_cache_read": "0.00000003",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.00000025",
@@ -32293,8 +32603,8 @@
         ],
         "top_provider": {
           "context_length": 400000,
-          "is_moderated": true,
-          "max_completion_tokens": 128000
+          "is_moderated": false,
+          "max_completion_tokens": null
         }
       }
     },
@@ -32329,7 +32639,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 41,
-              "coding_percentile": 44,
+              "coding_percentile": 43,
               "intelligence_percentile": null
             },
             "permaslug": "openai/gpt-5-nano-2025-08-07"
@@ -32362,7 +32672,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 32,
-              "coding_percentile": 49,
+              "coding_percentile": 48,
               "intelligence_percentile": null
             },
             "permaslug": "openai/gpt-5-nano-2025-08-07"
@@ -32720,7 +33030,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 52,
+              "agentic_percentile": 51,
               "coding_percentile": 58,
               "intelligence_percentile": null
             },
@@ -33472,7 +33782,7 @@
         "pricing": {
           "completion": "0.00001",
           "image": null,
-          "input_cache_read": "0.00000013",
+          "input_cache_read": "0.000000125",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.00000125",
@@ -33490,8 +33800,8 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": false,
-          "max_completion_tokens": 32000
+          "is_moderated": true,
+          "max_completion_tokens": 16384
         }
       }
     },
@@ -33804,7 +34114,7 @@
         ],
         "top_provider": {
           "context_length": 400000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 128000
         }
       }
@@ -34102,8 +34412,8 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 87,
-              "coding_percentile": 96,
+              "agentic_percentile": 86,
+              "coding_percentile": 95,
               "intelligence_percentile": null
             },
             "permaslug": "openai/gpt-5.2-20251211"
@@ -34971,7 +35281,7 @@
           "top_p": null
         },
         "description": "GPT-5.2 Chat (AKA Instant) is the fast, lightweight member of the 5.2 family, optimized for low-latency chat while retaining strong general intelligence. It uses adaptive reasoning to selectively “think” on...",
-        "expiration_date": "2026-08-10",
+        "expiration_date": null,
         "id": "openai/gpt-5.2-chat",
         "name": "OpenAI: GPT-5.2 Chat",
         "pricing": {
@@ -34995,8 +35305,8 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": true,
-          "max_completion_tokens": 16384
+          "is_moderated": false,
+          "max_completion_tokens": 32000
         }
       }
     },
@@ -35030,7 +35340,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 82,
+              "agentic_percentile": 81,
               "coding_percentile": 88,
               "intelligence_percentile": null
             },
@@ -35310,7 +35620,7 @@
           "top_p": null
         },
         "description": "GPT-5.3 Chat is an update to ChatGPT's most-used model that makes everyday conversations smoother, more useful, and more directly helpful. It delivers more accurate answers with better contextualization and significantly...",
-        "expiration_date": null,
+        "expiration_date": "2026-08-10",
         "id": "openai/gpt-5.3-chat",
         "name": "OpenAI: GPT-5.3 Chat",
         "pricing": {
@@ -35334,7 +35644,7 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 16384
         }
       }
@@ -35713,7 +36023,7 @@
                 "artificial_analysis_coding_index": 57.2,
                 "artificial_analysis_intelligence_index": 51.4,
                 "critpt": 0.234,
-                "gdpval_aa": 0.458,
+                "gdpval_aa": 0.454,
                 "gpqa": 0.92,
                 "hle": 0.416,
                 "ifbench": 0.739,
@@ -35725,12 +36035,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "openai/gpt-5.4",
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 97,
               "coding_percentile": 99,
-              "intelligence_percentile": 85
+              "intelligence_percentile": 86
             },
             "permaslug": "openai/gpt-5.4-20260305"
           },
@@ -35812,7 +36122,7 @@
           "coding_index": 57.2,
           "coding_percentile": 99,
           "intelligence_index": 51.4,
-          "intelligence_percentile": 85,
+          "intelligence_percentile": 86,
           "variant_name": "GPT-5.4 (xhigh)"
         },
         "design_arena": {
@@ -36482,28 +36792,28 @@
             "aa_name": "GPT Image 2 (high)",
             "aa_slug": "gpt-image-2",
             "benchmark_data": {
-              "appearances": 11072,
+              "appearances": 11100,
               "categories": [
                 {
-                  "appearances": 2837,
+                  "appearances": 2846,
                   "ci95": "-16/16",
-                  "elo": 1374,
+                  "elo": 1372,
                   "format_category": null,
                   "style_category": "General & Photorealistic",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 834,
+                  "appearances": 837,
                   "ci95": "-33/33",
-                  "elo": 1298,
+                  "elo": 1299,
                   "format_category": null,
                   "style_category": "Cartoon & Illustration",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 997,
+                  "appearances": 999,
                   "ci95": "-31/31",
-                  "elo": 1357,
+                  "elo": 1358,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Portraits"
@@ -36511,21 +36821,21 @@
                 {
                   "appearances": 711,
                   "ci95": "-35/35",
-                  "elo": 1352,
+                  "elo": 1351,
                   "format_category": null,
                   "style_category": "Anime",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 841,
+                  "appearances": 842,
                   "ci95": "-37/37",
-                  "elo": 1338,
+                  "elo": 1336,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2860,
+                  "appearances": 2865,
                   "ci95": "-22/22",
                   "elo": 1363,
                   "format_category": null,
@@ -36533,7 +36843,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 4305,
+                  "appearances": 4313,
                   "ci95": "-15/15",
                   "elo": 1371,
                   "format_category": null,
@@ -36541,15 +36851,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 421,
+                  "appearances": 422,
                   "ci95": "-55/55",
-                  "elo": 1408,
+                  "elo": 1407,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1720,
+                  "appearances": 1721,
                   "ci95": "-29/29",
                   "elo": 1370,
                   "format_category": null,
@@ -36557,7 +36867,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1557,
+                  "appearances": 1563,
                   "ci95": "-25/25",
                   "elo": 1312,
                   "format_category": null,
@@ -36565,23 +36875,23 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 549,
+                  "appearances": 562,
                   "ci95": "-44/44",
-                  "elo": 1320,
+                  "elo": 1319,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3461,
+                  "appearances": 3466,
                   "ci95": "-21/21",
-                  "elo": 1372,
+                  "elo": 1371,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1259,
+                  "appearances": 1261,
                   "ci95": "-27/27",
                   "elo": 1333,
                   "format_category": null,
@@ -36589,9 +36899,9 @@
                   "subject_matter_category": "Futuristic & Sci-Fi"
                 },
                 {
-                  "appearances": 1012,
+                  "appearances": 1023,
                   "ci95": "-24/24",
-                  "elo": 1270,
+                  "elo": 1268,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Physical Spaces"
@@ -36599,21 +36909,21 @@
                 {
                   "appearances": 1015,
                   "ci95": "-33/33",
-                  "elo": 1389,
+                  "elo": 1388,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3062,
+                  "appearances": 3069,
                   "ci95": "-18/18",
-                  "elo": 1352,
+                  "elo": 1350,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1468,
+                  "appearances": 1469,
                   "ci95": "-26/26",
                   "elo": 1351,
                   "format_category": null,
@@ -36621,7 +36931,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2481,
+                  "appearances": 2488,
                   "ci95": "-20/20",
                   "elo": 1318,
                   "format_category": null,
@@ -36629,7 +36939,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1129,
+                  "appearances": 1133,
                   "ci95": "-30/30",
                   "elo": 1325,
                   "format_category": null,
@@ -36637,39 +36947,39 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1079,
+                  "appearances": 1082,
                   "ci95": "-30/30",
-                  "elo": 1316,
+                  "elo": 1315,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2330,
+                  "appearances": 2338,
                   "ci95": "-20/20",
-                  "elo": 1347,
+                  "elo": 1346,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 692,
+                  "appearances": 693,
                   "ci95": "-36/36",
-                  "elo": 1288,
+                  "elo": 1287,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Text & Typography"
                 },
                 {
-                  "appearances": 673,
+                  "appearances": 675,
                   "ci95": "-30/30",
-                  "elo": 1307,
+                  "elo": 1304,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Nature & Landscapes"
                 },
                 {
-                  "appearances": 874,
+                  "appearances": 875,
                   "ci95": "-42/42",
                   "elo": 1421,
                   "format_category": null,
@@ -36677,41 +36987,41 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1116,
+                  "appearances": 1119,
                   "ci95": "-26/26",
-                  "elo": 1351,
+                  "elo": 1350,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Fantasy & Mythical"
                 },
                 {
-                  "appearances": 3625,
+                  "appearances": 3636,
                   "ci95": "-15/15",
-                  "elo": 1350,
+                  "elo": 1349,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 6081,
+                  "appearances": 6101,
                   "ci95": "-12/12",
-                  "elo": 1352,
+                  "elo": 1351,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 763,
+                  "appearances": 764,
                   "ci95": "-41/41",
-                  "elo": 1372,
+                  "elo": 1370,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "UI/UX Design"
                 },
                 {
-                  "appearances": 883,
+                  "appearances": 886,
                   "ci95": "-40/40",
-                  "elo": 1385,
+                  "elo": 1384,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -36719,13 +37029,13 @@
                 {
                   "appearances": 963,
                   "ci95": "-34/34",
-                  "elo": 1355,
+                  "elo": 1356,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Commercial"
                 },
                 {
-                  "appearances": 1273,
+                  "appearances": 1276,
                   "ci95": "-26/26",
                   "elo": 1315,
                   "format_category": null,
@@ -36733,23 +37043,23 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2446,
+                  "appearances": 2453,
                   "ci95": "-20/20",
-                  "elo": 1387,
+                  "elo": 1386,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 5703,
+                  "appearances": 5717,
                   "ci95": "-13/13",
-                  "elo": 1343,
+                  "elo": 1342,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 822,
+                  "appearances": 824,
                   "ci95": "-35/35",
                   "elo": 1339,
                   "format_category": null,
@@ -36757,15 +37067,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 688,
+                  "appearances": 692,
                   "ci95": "-35/35",
-                  "elo": 1366,
+                  "elo": 1364,
                   "format_category": null,
                   "style_category": "Traditional Art",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3462,
+                  "appearances": 3468,
                   "ci95": "-17/17",
                   "elo": 1306,
                   "format_category": null,
@@ -36773,7 +37083,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3243,
+                  "appearances": 3249,
                   "ci95": "-20/20",
                   "elo": 1356,
                   "format_category": null,
@@ -36781,39 +37091,39 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3794,
+                  "appearances": 3810,
                   "ci95": "-15/15",
-                  "elo": 1335,
+                  "elo": 1334,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 814,
+                  "appearances": 816,
                   "ci95": "-34/34",
-                  "elo": 1424,
+                  "elo": 1421,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Groups & Activities"
                 },
                 {
-                  "appearances": 1539,
+                  "appearances": 1542,
                   "ci95": "-29/29",
-                  "elo": 1351,
+                  "elo": 1349,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 }
               ],
               "ci95": "-9/9",
-              "elo": 1340,
-              "elo_max": 1340,
+              "elo": 1339,
+              "elo_max": 1339,
               "elo_min": 961,
               "model_type": "text-to-image",
               "rank": 1
             },
             "heuristic_openrouter_slug": "openai/gpt-5.4-image-2",
-            "last_updated_at": 1781697615743,
+            "last_updated_at": 1781730035643,
             "openrouter_slug": null,
             "permaslug": "openai/gpt-5.4-image-2-20260421"
           }
@@ -36921,7 +37231,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 84,
-              "coding_percentile": 96,
+              "coding_percentile": 97,
               "intelligence_percentile": 56
             },
             "permaslug": "openai/gpt-5.4-mini-20260317"
@@ -36971,7 +37281,7 @@
                 "artificial_analysis_coding_index": 25.3,
                 "artificial_analysis_intelligence_index": null,
                 "critpt": 0,
-                "gdpval_aa": 0.126,
+                "gdpval_aa": 0.129,
                 "gpqa": 0.606,
                 "hle": 0.057,
                 "ifbench": 0.388,
@@ -36983,10 +37293,10 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781611256444,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 44,
+              "agentic_percentile": 43,
               "coding_percentile": 54,
               "intelligence_percentile": null
             },
@@ -37002,7 +37312,7 @@
           "agentic_index": 58.9,
           "agentic_percentile": 84,
           "coding_index": 51.5,
-          "coding_percentile": 96,
+          "coding_percentile": 97,
           "intelligence_index": 40.0,
           "intelligence_percentile": 56,
           "variant_name": "GPT-5.4 mini (xhigh)"
@@ -37151,7 +37461,7 @@
                 "artificial_analysis_coding_index": 27.9,
                 "artificial_analysis_intelligence_index": null,
                 "critpt": 0,
-                "gdpval_aa": 0.105,
+                "gdpval_aa": 0.108,
                 "gpqa": 0.558,
                 "hle": 0.042,
                 "ifbench": 0.327,
@@ -37163,7 +37473,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781611256444,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 45,
@@ -37245,7 +37555,7 @@
         ],
         "top_provider": {
           "context_length": 400000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 128000
         }
       }
@@ -37365,7 +37675,7 @@
                 "artificial_analysis_coding_index": 59.1,
                 "artificial_analysis_intelligence_index": 54.8,
                 "critpt": 0.271,
-                "gdpval_aa": 0.507,
+                "gdpval_aa": 0.505,
                 "gpqa": 0.935,
                 "hle": 0.443,
                 "ifbench": 0.759,
@@ -37377,7 +37687,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "openai/gpt-5.5",
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 99,
@@ -37398,7 +37708,7 @@
                 "artificial_analysis_coding_index": 58.5,
                 "artificial_analysis_intelligence_index": 53.1,
                 "critpt": 0.254,
-                "gdpval_aa": 0.496,
+                "gdpval_aa": 0.493,
                 "gpqa": 0.932,
                 "hle": 0.43,
                 "ifbench": 0.716,
@@ -37410,10 +37720,10 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 99,
+              "agentic_percentile": 98,
               "coding_percentile": 99,
               "intelligence_percentile": 88
             },
@@ -38339,7 +38649,7 @@
                 "artificial_analysis_coding_index": 28.6,
                 "artificial_analysis_intelligence_index": 23.8,
                 "critpt": 0.011,
-                "gdpval_aa": 0.137,
+                "gdpval_aa": 0.139,
                 "gpqa": 0.782,
                 "hle": 0.185,
                 "ifbench": 0.69,
@@ -38351,12 +38661,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781611256444,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": "openai/gpt-oss-120b",
             "percentiles": {
               "agentic_percentile": 56,
-              "coding_percentile": 60,
-              "intelligence_percentile": 10
+              "coding_percentile": 59,
+              "intelligence_percentile": 9
             },
             "permaslug": "openai/gpt-oss-120b"
           },
@@ -38388,7 +38698,7 @@
             "openrouter_slug": "openai/gpt-oss-120b",
             "percentiles": {
               "agentic_percentile": 47,
-              "coding_percentile": 33,
+              "coding_percentile": 32,
               "intelligence_percentile": null
             },
             "permaslug": "openai/gpt-oss-120b"
@@ -38403,9 +38713,9 @@
           "agentic_index": 37.9,
           "agentic_percentile": 56,
           "coding_index": 28.6,
-          "coding_percentile": 60,
+          "coding_percentile": 59,
           "intelligence_index": 23.8,
-          "intelligence_percentile": 10,
+          "intelligence_percentile": 9,
           "variant_name": "gpt-oss-120b (high)"
         },
         "design_arena": {
@@ -38612,7 +38922,7 @@
                 "artificial_analysis_coding_index": 28.6,
                 "artificial_analysis_intelligence_index": 23.8,
                 "critpt": 0.011,
-                "gdpval_aa": 0.137,
+                "gdpval_aa": 0.139,
                 "gpqa": 0.782,
                 "hle": 0.185,
                 "ifbench": 0.69,
@@ -38624,12 +38934,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781611256444,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": "openai/gpt-oss-120b",
             "percentiles": {
               "agentic_percentile": 56,
-              "coding_percentile": 60,
-              "intelligence_percentile": 10
+              "coding_percentile": 59,
+              "intelligence_percentile": 9
             },
             "permaslug": "openai/gpt-oss-120b"
           },
@@ -38661,7 +38971,7 @@
             "openrouter_slug": "openai/gpt-oss-120b",
             "percentiles": {
               "agentic_percentile": 47,
-              "coding_percentile": 33,
+              "coding_percentile": 32,
               "intelligence_percentile": null
             },
             "permaslug": "openai/gpt-oss-120b"
@@ -38676,9 +38986,9 @@
           "agentic_index": 37.9,
           "agentic_percentile": 56,
           "coding_index": 28.6,
-          "coding_percentile": 60,
+          "coding_percentile": 59,
           "intelligence_index": 23.8,
-          "intelligence_percentile": 10,
+          "intelligence_percentile": 9,
           "variant_name": "gpt-oss-120b (high)"
         },
         "design_arena": {
@@ -38846,6 +39156,9 @@
           "include_reasoning",
           "max_tokens",
           "reasoning",
+          "seed",
+          "stop",
+          "temperature",
           "tool_choice",
           "tools"
         ],
@@ -38871,7 +39184,7 @@
                 "artificial_analysis_coding_index": 18.5,
                 "artificial_analysis_intelligence_index": 14.9,
                 "critpt": 0.014,
-                "gdpval_aa": 0.011,
+                "gdpval_aa": 0.014,
                 "gpqa": 0.688,
                 "hle": 0.098,
                 "ifbench": 0.651,
@@ -38883,7 +39196,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781611256444,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": "openai/gpt-oss-20b",
             "percentiles": {
               "agentic_percentile": 46,
@@ -38919,7 +39232,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "openai/gpt-oss-20b",
             "percentiles": {
-              "agentic_percentile": 40,
+              "agentic_percentile": 39,
               "coding_percentile": 29,
               "intelligence_percentile": null
             },
@@ -39068,7 +39381,7 @@
                 "artificial_analysis_coding_index": 18.5,
                 "artificial_analysis_intelligence_index": 14.9,
                 "critpt": 0.014,
-                "gdpval_aa": 0.011,
+                "gdpval_aa": 0.014,
                 "gpqa": 0.688,
                 "hle": 0.098,
                 "ifbench": 0.651,
@@ -39080,7 +39393,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781611256444,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": "openai/gpt-oss-20b",
             "percentiles": {
               "agentic_percentile": 46,
@@ -39116,7 +39429,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "openai/gpt-oss-20b",
             "percentiles": {
-              "agentic_percentile": 40,
+              "agentic_percentile": 39,
               "coding_percentile": 29,
               "intelligence_percentile": null
             },
@@ -39241,8 +39554,8 @@
         ],
         "top_provider": {
           "context_length": 131072,
-          "is_moderated": true,
-          "max_completion_tokens": 8192
+          "is_moderated": false,
+          "max_completion_tokens": 32768
         }
       }
     },
@@ -39299,8 +39612,12 @@
           "max_tokens",
           "reasoning",
           "response_format",
+          "seed",
+          "stop",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 131072,
@@ -39944,7 +40261,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 38,
-              "coding_percentile": 38,
+              "coding_percentile": 37,
               "intelligence_percentile": null
             },
             "permaslug": "openai/o3-mini-high-2025-01-31"
@@ -40665,6 +40982,7 @@
           "include_reasoning",
           "logprobs",
           "max_tokens",
+          "min_p",
           "presence_penalty",
           "reasoning",
           "repetition_penalty",
@@ -41888,7 +42206,17 @@
           "web_search": null
         },
         "supported_parameters": [
-          "max_tokens"
+          "frequency_penalty",
+          "logit_bias",
+          "max_tokens",
+          "min_p",
+          "presence_penalty",
+          "repetition_penalty",
+          "seed",
+          "stop",
+          "temperature",
+          "top_k",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 32768,
@@ -42036,9 +42364,13 @@
         },
         "supported_parameters": [
           "max_tokens",
+          "presence_penalty",
           "response_format",
+          "seed",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -42097,10 +42429,14 @@
         },
         "supported_parameters": [
           "max_tokens",
+          "presence_penalty",
           "response_format",
+          "seed",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -42273,7 +42609,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 27,
+              "agentic_percentile": 26,
               "coding_percentile": 22,
               "intelligence_percentile": null
             },
@@ -42584,10 +42920,14 @@
         "supported_parameters": [
           "include_reasoning",
           "max_tokens",
+          "presence_penalty",
           "reasoning",
           "response_format",
+          "seed",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 131072,
@@ -44054,8 +44394,8 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "qwen/qwen3-coder-30b-a3b-instruct",
             "percentiles": {
-              "agentic_percentile": 39,
-              "coding_percentile": 42,
+              "agentic_percentile": 38,
+              "coding_percentile": 41,
               "intelligence_percentile": null
             },
             "permaslug": "qwen/qwen3-coder-30b-a3b-instruct"
@@ -44238,9 +44578,13 @@
         },
         "supported_parameters": [
           "max_tokens",
+          "presence_penalty",
           "response_format",
+          "seed",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -44280,7 +44624,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 63,
-              "coding_percentile": 49,
+              "coding_percentile": 48,
               "intelligence_percentile": null
             },
             "permaslug": "qwen/qwen3-coder-next-2025-02-03"
@@ -44405,10 +44749,14 @@
         },
         "supported_parameters": [
           "max_tokens",
+          "presence_penalty",
           "response_format",
+          "seed",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -44706,7 +45054,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "qwen/qwen3-max",
             "percentiles": {
-              "agentic_percentile": 42,
+              "agentic_percentile": 41,
               "coding_percentile": 55,
               "intelligence_percentile": null
             },
@@ -44919,9 +45267,13 @@
         },
         "supported_parameters": [
           "max_tokens",
+          "presence_penalty",
           "response_format",
+          "seed",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 262144,
@@ -45048,11 +45400,15 @@
         "supported_parameters": [
           "include_reasoning",
           "max_tokens",
+          "presence_penalty",
           "reasoning",
           "response_format",
+          "seed",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 262144,
@@ -45091,7 +45447,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 28,
+              "agentic_percentile": 27,
               "coding_percentile": 32,
               "intelligence_percentile": null
             },
@@ -45193,7 +45549,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 28,
+              "agentic_percentile": 27,
               "coding_percentile": 32,
               "intelligence_percentile": null
             },
@@ -45539,8 +45895,8 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "qwen/qwen3-vl-235b-a22b-thinking",
             "percentiles": {
-              "agentic_percentile": 46,
-              "coding_percentile": 45,
+              "agentic_percentile": 45,
+              "coding_percentile": 44,
               "intelligence_percentile": null
             },
             "permaslug": "qwen/qwen3-vl-235b-a22b-thinking"
@@ -45959,9 +46315,13 @@
         },
         "supported_parameters": [
           "max_tokens",
+          "presence_penalty",
           "response_format",
+          "seed",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 131072,
@@ -46162,11 +46522,15 @@
         "supported_parameters": [
           "include_reasoning",
           "max_tokens",
+          "presence_penalty",
           "reasoning",
           "response_format",
+          "seed",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 131072,
@@ -46190,7 +46554,7 @@
                 "artificial_analysis_coding_index": 34.7,
                 "artificial_analysis_intelligence_index": 32.3,
                 "critpt": 0.006,
-                "gdpval_aa": 0.24,
+                "gdpval_aa": 0.241,
                 "gpqa": 0.857,
                 "hle": 0.234,
                 "ifbench": 0.757,
@@ -46202,12 +46566,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3.5-122b-a10b",
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 78,
               "coding_percentile": 72,
-              "intelligence_percentile": 34
+              "intelligence_percentile": 35
             },
             "permaslug": "qwen/qwen3.5-122b-a10b-20260224"
           },
@@ -46256,7 +46620,7 @@
           "coding_index": 34.7,
           "coding_percentile": 72,
           "intelligence_index": 32.3,
-          "intelligence_percentile": 34,
+          "intelligence_percentile": 35,
           "variant_name": "Qwen3.5 122B A10B (Reasoning)"
         },
         "design_arena": null,
@@ -46395,7 +46759,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 75,
+              "agentic_percentile": 74,
               "coding_percentile": 68,
               "intelligence_percentile": null
             },
@@ -46511,7 +46875,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 65,
-              "coding_percentile": 62,
+              "coding_percentile": 63,
               "intelligence_percentile": null
             },
             "permaslug": "qwen/qwen3.5-35b-a3b-20260224"
@@ -47021,7 +47385,7 @@
           "tokenizer": "Qwen3"
         },
         "canonical_slug": "qwen/qwen3.5-9b-20260310",
-        "context_length": 262144,
+        "context_length": 256000,
         "created": 1773152396,
         "default_parameters": {
           "frequency_penalty": null,
@@ -47067,9 +47431,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 262144,
+          "context_length": 256000,
           "is_moderated": false,
-          "max_completion_tokens": 262144
+          "max_completion_tokens": 32768
         }
       }
     },
@@ -47126,11 +47490,15 @@
         "supported_parameters": [
           "include_reasoning",
           "max_tokens",
+          "presence_penalty",
           "reasoning",
           "response_format",
+          "seed",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -47351,11 +47719,15 @@
         "supported_parameters": [
           "include_reasoning",
           "max_tokens",
+          "presence_penalty",
           "reasoning",
           "response_format",
+          "seed",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -47413,11 +47785,15 @@
         "supported_parameters": [
           "include_reasoning",
           "max_tokens",
+          "presence_penalty",
           "reasoning",
           "response_format",
+          "seed",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -47441,7 +47817,7 @@
                 "artificial_analysis_coding_index": 36.5,
                 "artificial_analysis_intelligence_index": 37.1,
                 "critpt": 0.011,
-                "gdpval_aa": 0.33,
+                "gdpval_aa": 0.331,
                 "gpqa": 0.842,
                 "hle": 0.216,
                 "ifbench": 0.676,
@@ -47453,12 +47829,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3.6-27b",
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 91,
               "coding_percentile": 76,
-              "intelligence_percentile": 39
+              "intelligence_percentile": 40
             },
             "permaslug": "qwen/qwen3.6-27b-20260422"
           },
@@ -47489,7 +47865,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 88,
+              "agentic_percentile": 87,
               "coding_percentile": 57,
               "intelligence_percentile": null
             },
@@ -47507,7 +47883,7 @@
           "coding_index": 36.5,
           "coding_percentile": 76,
           "intelligence_index": 37.1,
-          "intelligence_percentile": 39,
+          "intelligence_percentile": 40,
           "variant_name": "Qwen3.6 27B (Reasoning)"
         },
         "design_arena": null,
@@ -47596,7 +47972,7 @@
                 "aa_omniscience_non_hallucination_rate": 0.503,
                 "artificial_analysis_agentic_index": 58.3,
                 "artificial_analysis_coding_index": 35.2,
-                "artificial_analysis_intelligence_index": null,
+                "artificial_analysis_intelligence_index": 31.6,
                 "critpt": 0.003,
                 "gdpval_aa": 0.277,
                 "gpqa": 0.841,
@@ -47610,12 +47986,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3.6-35b-a3b",
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 83,
               "coding_percentile": 73,
-              "intelligence_percentile": null
+              "intelligence_percentile": 33
             },
             "permaslug": "qwen/qwen3.6-35b-a3b-20260415"
           },
@@ -47657,7 +48033,16 @@
           "error": null,
           "status": "ok"
         },
-        "artificial_analysis_summary": null,
+        "artificial_analysis_summary": {
+          "aa_slug": "qwen3-6-35b-a3b",
+          "agentic_index": 58.3,
+          "agentic_percentile": 83,
+          "coding_index": 35.2,
+          "coding_percentile": 73,
+          "intelligence_index": 31.6,
+          "intelligence_percentile": 33,
+          "variant_name": "Qwen3.6 35B A3B (Reasoning)"
+        },
         "design_arena": null,
         "design_arena_status": {
           "error": null,
@@ -47775,11 +48160,15 @@
         "supported_parameters": [
           "include_reasoning",
           "max_tokens",
+          "presence_penalty",
           "reasoning",
           "response_format",
+          "seed",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -47818,8 +48207,8 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 93,
-              "coding_percentile": 91,
+              "agentic_percentile": 92,
+              "coding_percentile": 90,
               "intelligence_percentile": null
             },
             "permaslug": "qwen/qwen3.6-max-preview-20260420"
@@ -47870,12 +48259,16 @@
           "include_reasoning",
           "logprobs",
           "max_tokens",
+          "presence_penalty",
           "reasoning",
           "response_format",
+          "seed",
           "structured_outputs",
+          "temperature",
           "tool_choice",
           "tools",
-          "top_logprobs"
+          "top_logprobs",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 262144,
@@ -47899,7 +48292,7 @@
                 "artificial_analysis_coding_index": 42.9,
                 "artificial_analysis_intelligence_index": 39.6,
                 "critpt": 0.029,
-                "gdpval_aa": 0.33,
+                "gdpval_aa": 0.331,
                 "gpqa": 0.882,
                 "hle": 0.257,
                 "ifbench": 0.752,
@@ -47911,12 +48304,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3.6-plus",
-            "last_updated_at": 1781611256444,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 89,
               "coding_percentile": 87,
-              "intelligence_percentile": 54
+              "intelligence_percentile": 53
             },
             "permaslug": "qwen/qwen3.6-plus-04-02"
           }
@@ -47932,7 +48325,7 @@
           "coding_index": 42.9,
           "coding_percentile": 87,
           "intelligence_index": 39.6,
-          "intelligence_percentile": 54,
+          "intelligence_percentile": 53,
           "variant_name": "Qwen3.6 Plus"
         },
         "design_arena": {
@@ -48142,11 +48535,15 @@
         "supported_parameters": [
           "include_reasoning",
           "max_tokens",
+          "presence_penalty",
           "reasoning",
           "response_format",
+          "seed",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -48170,7 +48567,7 @@
                 "artificial_analysis_coding_index": 50.1,
                 "artificial_analysis_intelligence_index": 46,
                 "critpt": 0.134,
-                "gdpval_aa": 0.4,
+                "gdpval_aa": 0.399,
                 "gpqa": 0.923,
                 "hle": 0.381,
                 "ifbench": 0.805,
@@ -48182,12 +48579,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3.7-max",
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 95,
               "coding_percentile": 96,
-              "intelligence_percentile": 76
+              "intelligence_percentile": 74
             },
             "permaslug": "qwen/qwen3.7-max-20260520"
           }
@@ -48203,7 +48600,7 @@
           "coding_index": 50.1,
           "coding_percentile": 96,
           "intelligence_index": 46.0,
-          "intelligence_percentile": 76,
+          "intelligence_percentile": 74,
           "variant_name": "Qwen3.7 Max"
         },
         "design_arena": {
@@ -48469,12 +48866,16 @@
           "include_reasoning",
           "logprobs",
           "max_tokens",
+          "presence_penalty",
           "reasoning",
           "response_format",
+          "seed",
           "structured_outputs",
+          "temperature",
           "tool_choice",
           "tools",
-          "top_logprobs"
+          "top_logprobs",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -48498,7 +48899,7 @@
                 "artificial_analysis_coding_index": 46.5,
                 "artificial_analysis_intelligence_index": 39,
                 "critpt": 0.091,
-                "gdpval_aa": 0.222,
+                "gdpval_aa": 0.223,
                 "gpqa": 0.9,
                 "hle": 0.334,
                 "ifbench": 0.78,
@@ -48510,11 +48911,11 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "qwen/qwen3.7-plus",
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 93,
-              "coding_percentile": 93,
+              "coding_percentile": 92,
               "intelligence_percentile": 51
             },
             "permaslug": "qwen/qwen3.7-plus-20260602"
@@ -48529,7 +48930,7 @@
           "agentic_index": 65.1,
           "agentic_percentile": 93,
           "coding_index": 46.5,
-          "coding_percentile": 93,
+          "coding_percentile": 92,
           "intelligence_index": 39.0,
           "intelligence_percentile": 51,
           "variant_name": "Qwen3.7 Plus"
@@ -48575,12 +48976,16 @@
           "include_reasoning",
           "logprobs",
           "max_tokens",
+          "presence_penalty",
           "reasoning",
           "response_format",
+          "seed",
           "structured_outputs",
+          "temperature",
           "tool_choice",
           "tools",
-          "top_logprobs"
+          "top_logprobs",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -49029,7 +49434,17 @@
           "web_search": null
         },
         "supported_parameters": [
-          "max_tokens"
+          "frequency_penalty",
+          "logit_bias",
+          "max_tokens",
+          "min_p",
+          "presence_penalty",
+          "repetition_penalty",
+          "seed",
+          "stop",
+          "temperature",
+          "top_k",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 16000,
@@ -49344,9 +49759,9 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 86,
+              "agentic_percentile": 85,
               "coding_percentile": 79,
-              "intelligence_percentile": 27
+              "intelligence_percentile": 26
             },
             "permaslug": "stepfun/step-3.7-flash-20260528"
           }
@@ -49358,11 +49773,11 @@
         "artificial_analysis_summary": {
           "aa_slug": "step-3-7-flash",
           "agentic_index": 59.5,
-          "agentic_percentile": 86,
+          "agentic_percentile": 85,
           "coding_index": 37.1,
           "coding_percentile": 79,
           "intelligence_index": 29.7,
-          "intelligence_percentile": 27,
+          "intelligence_percentile": 26,
           "variant_name": "Step 3.7 Flash"
         },
         "design_arena": {
@@ -49844,6 +50259,7 @@
           "max_tokens",
           "presence_penalty",
           "reasoning",
+          "seed",
           "stop",
           "temperature",
           "tool_choice",
@@ -49971,8 +50387,10 @@
         },
         "supported_parameters": [
           "frequency_penalty",
+          "logit_bias",
           "logprobs",
           "max_tokens",
+          "min_p",
           "presence_penalty",
           "repetition_penalty",
           "response_format",
@@ -49982,6 +50400,7 @@
           "temperature",
           "tool_choice",
           "tools",
+          "top_k",
           "top_logprobs",
           "top_p"
         ],
@@ -50428,7 +50847,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 74,
-              "coding_percentile": 87,
+              "coding_percentile": 86,
               "intelligence_percentile": null
             },
             "permaslug": "x-ai/grok-4.20-20260309"
@@ -50461,7 +50880,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 56,
-              "coding_percentile": 55,
+              "coding_percentile": 54,
               "intelligence_percentile": null
             },
             "permaslug": "x-ai/grok-4.20-20260309"
@@ -50493,7 +50912,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 57,
+              "agentic_percentile": 56,
               "coding_percentile": 46,
               "intelligence_percentile": null
             },
@@ -50658,7 +51077,7 @@
                 "artificial_analysis_coding_index": 41,
                 "artificial_analysis_intelligence_index": 37.6,
                 "critpt": 0.08,
-                "gdpval_aa": 0.299,
+                "gdpval_aa": 0.3,
                 "gpqa": 0.901,
                 "hle": 0.35,
                 "ifbench": 0.813,
@@ -50670,12 +51089,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "x-ai/grok-4.3",
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 94,
+              "agentic_percentile": 93,
               "coding_percentile": 85,
-              "intelligence_percentile": 41
+              "intelligence_percentile": 42
             },
             "permaslug": "x-ai/grok-4.3-20260430"
           },
@@ -50757,7 +51176,7 @@
                 "artificial_analysis_coding_index": 25.1,
                 "artificial_analysis_intelligence_index": 24.8,
                 "critpt": 0,
-                "gdpval_aa": 0.303,
+                "gdpval_aa": 0.304,
                 "gpqa": 0.658,
                 "hle": 0.065,
                 "ifbench": 0.476,
@@ -50769,7 +51188,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 69,
@@ -50786,11 +51205,11 @@
         "artificial_analysis_summary": {
           "aa_slug": "grok-4-3",
           "agentic_index": 65.9,
-          "agentic_percentile": 94,
+          "agentic_percentile": 93,
           "coding_index": 41.0,
           "coding_percentile": 85,
           "intelligence_index": 37.6,
-          "intelligence_percentile": 41,
+          "intelligence_percentile": 42,
           "variant_name": "Grok 4.3 (high)"
         },
         "design_arena": {
@@ -51643,7 +52062,7 @@
             "percentiles": {
               "agentic_percentile": 96,
               "coding_percentile": 91,
-              "intelligence_percentile": 66
+              "intelligence_percentile": 65
             },
             "permaslug": "xiaomi/mimo-v2.5-pro-20260422"
           },
@@ -51692,7 +52111,7 @@
           "coding_index": 45.5,
           "coding_percentile": 91,
           "intelligence_index": 42.2,
-          "intelligence_percentile": 66,
+          "intelligence_percentile": 65,
           "variant_name": "MiMo-V2.5-Pro"
         },
         "design_arena": {
@@ -52160,7 +52579,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": "z-ai/glm-4.5-air",
             "percentiles": {
-              "agentic_percentile": 39,
+              "agentic_percentile": 38,
               "coding_percentile": 51,
               "intelligence_percentile": null
             },
@@ -52577,7 +52996,7 @@
             "openrouter_slug": "z-ai/glm-4.6",
             "percentiles": {
               "agentic_percentile": 62,
-              "coding_percentile": 60,
+              "coding_percentile": 61,
               "intelligence_percentile": null
             },
             "permaslug": "z-ai/glm-4.6"
@@ -53454,7 +53873,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 61,
+              "agentic_percentile": 62,
               "coding_percentile": 19,
               "intelligence_percentile": null
             },
@@ -54078,7 +54497,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 95,
+              "agentic_percentile": 94,
               "coding_percentile": 78,
               "intelligence_percentile": null
             },
@@ -54332,7 +54751,7 @@
                 "artificial_analysis_coding_index": 43.4,
                 "artificial_analysis_intelligence_index": 40.2,
                 "critpt": 0.046,
-                "gdpval_aa": 0.39,
+                "gdpval_aa": 0.389,
                 "gpqa": 0.868,
                 "hle": 0.28,
                 "ifbench": 0.763,
@@ -54344,12 +54763,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781611256444,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 96,
-              "coding_percentile": 89,
-              "intelligence_percentile": 59
+              "agentic_percentile": 95,
+              "coding_percentile": 88,
+              "intelligence_percentile": 58
             },
             "permaslug": "z-ai/glm-5.1-20260406"
           },
@@ -54394,11 +54813,11 @@
         "artificial_analysis_summary": {
           "aa_slug": "glm-5-1",
           "agentic_index": 67.1,
-          "agentic_percentile": 96,
+          "agentic_percentile": 95,
           "coding_index": 43.4,
-          "coding_percentile": 89,
+          "coding_percentile": 88,
           "intelligence_index": 40.2,
-          "intelligence_percentile": 59,
+          "intelligence_percentile": 58,
           "variant_name": "GLM-5.1 (Reasoning)"
         },
         "design_arena": {
@@ -54939,12 +55358,55 @@
     },
     {
       "benchmarks": {
-        "artificial_analysis": [],
+        "artificial_analysis": [
+          {
+            "aa_id": "f7a4ea75-e548-4069-80d4-9be8bc7c009b",
+            "aa_name": "GLM-5.2 (max)",
+            "aa_slug": "glm-5-2",
+            "benchmark_data": {
+              "evaluations": {
+                "aa_omniscience_accuracy": 0.251,
+                "aa_omniscience_non_hallucination_rate": 0.719,
+                "artificial_analysis_agentic_index": 75.9,
+                "artificial_analysis_coding_index": 50.7,
+                "artificial_analysis_intelligence_index": 50.7,
+                "critpt": 0.209,
+                "gdpval_aa": 0.512,
+                "gpqa": 0.895,
+                "hle": 0.401,
+                "ifbench": 0.733,
+                "lcr": 0.713,
+                "scicode": 0.505,
+                "tau2": 0.991,
+                "terminalbench_hard": 0.508
+              },
+              "model_type": "llm"
+            },
+            "heuristic_openrouter_slug": "z-ai/glm-5.2",
+            "last_updated_at": 1781730035301,
+            "openrouter_slug": null,
+            "percentiles": {
+              "agentic_percentile": 99,
+              "coding_percentile": 96,
+              "intelligence_percentile": 84
+            },
+            "permaslug": "z-ai/glm-5.2-20260616"
+          }
+        ],
         "artificial_analysis_status": {
           "error": null,
-          "status": "empty"
+          "status": "ok"
         },
-        "artificial_analysis_summary": null,
+        "artificial_analysis_summary": {
+          "aa_slug": "glm-5-2",
+          "agentic_index": 75.9,
+          "agentic_percentile": 99,
+          "coding_index": 50.7,
+          "coding_percentile": 96,
+          "intelligence_index": 50.7,
+          "intelligence_percentile": 84,
+          "variant_name": "GLM-5.2 (max)"
+        },
         "design_arena": {
           "elo_bounds": {
             "max": 1503,
@@ -55096,7 +55558,7 @@
           "top_p": 0.95
         },
         "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
-        "expiration_date": null,
+        "expiration_date": "2098-12-31",
         "id": "z-ai/glm-5.2",
         "name": "Z.ai: GLM 5.2",
         "pricing": {
@@ -55113,6 +55575,7 @@
           "frequency_penalty",
           "include_reasoning",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -55126,12 +55589,13 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
-          "context_length": 262144,
+          "context_length": 1048576,
           "is_moderated": false,
-          "max_completion_tokens": 262144
+          "max_completion_tokens": 131072
         }
       }
     },
@@ -55150,7 +55614,7 @@
                 "artificial_analysis_coding_index": 62,
                 "artificial_analysis_intelligence_index": 59.9,
                 "critpt": 0.286,
-                "gdpval_aa": 0.647,
+                "gdpval_aa": 0.642,
                 "gpqa": 0.926,
                 "hle": 0.533,
                 "ifbench": 0.635,
@@ -55162,7 +55626,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 100,
@@ -55496,7 +55960,7 @@
             "last_updated_at": 1781611256444,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 52,
+              "agentic_percentile": 51,
               "coding_percentile": 61,
               "intelligence_percentile": null
             },
@@ -55529,9 +55993,9 @@
             "last_updated_at": 1781697615577,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 60,
+              "agentic_percentile": 59,
               "coding_percentile": 67,
-              "intelligence_percentile": 24
+              "intelligence_percentile": 23
             },
             "permaslug": "anthropic/claude-4.5-haiku-20251001"
           }
@@ -55543,11 +56007,11 @@
         "artificial_analysis_summary": {
           "aa_slug": "claude-4-5-haiku-reasoning",
           "agentic_index": 40.2,
-          "agentic_percentile": 60,
+          "agentic_percentile": 59,
           "coding_index": 32.6,
           "coding_percentile": 67,
           "intelligence_index": 29.6,
-          "intelligence_percentile": 24,
+          "intelligence_percentile": 23,
           "variant_name": "Claude 4.5 Haiku (Reasoning)"
         },
         "design_arena": {
@@ -55789,7 +56253,7 @@
                 "artificial_analysis_coding_index": 56.7,
                 "artificial_analysis_intelligence_index": 55.7,
                 "critpt": 0.209,
-                "gdpval_aa": 0.56,
+                "gdpval_aa": 0.557,
                 "gpqa": 0.92,
                 "hle": 0.457,
                 "ifbench": 0.622,
@@ -55801,7 +56265,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "anthropic/claude-opus-4.8",
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 99,
@@ -56251,7 +56715,7 @@
         ],
         "top_provider": {
           "context_length": 1000000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 128000
         }
       }
@@ -56304,7 +56768,7 @@
                 "artificial_analysis_coding_index": 50.9,
                 "artificial_analysis_intelligence_index": 47.2,
                 "critpt": 0.031,
-                "gdpval_aa": 0.453,
+                "gdpval_aa": 0.45,
                 "gpqa": 0.875,
                 "hle": 0.3,
                 "ifbench": 0.566,
@@ -56316,12 +56780,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 91,
               "coding_percentile": 96,
-              "intelligence_percentile": 80
+              "intelligence_percentile": 79
             },
             "permaslug": "anthropic/claude-4.6-sonnet-20260217"
           },
@@ -56370,7 +56834,7 @@
           "coding_index": 50.9,
           "coding_percentile": 96,
           "intelligence_index": 47.2,
-          "intelligence_percentile": 80,
+          "intelligence_percentile": 79,
           "variant_name": "Claude Sonnet 4.6 (Adaptive Reasoning, Max Effort)"
         },
         "design_arena": {
@@ -56728,7 +57192,7 @@
                 "artificial_analysis_coding_index": 45,
                 "artificial_analysis_intelligence_index": 50.2,
                 "critpt": 0.131,
-                "gdpval_aa": 0.432,
+                "gdpval_aa": 0.431,
                 "gpqa": 0.922,
                 "hle": 0.41,
                 "ifbench": 0.763,
@@ -56740,12 +57204,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 98,
+              "agentic_percentile": 97,
               "coding_percentile": 91,
-              "intelligence_percentile": 83
+              "intelligence_percentile": 81
             },
             "permaslug": "google/gemini-3.5-flash-20260519"
           },
@@ -56810,7 +57274,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 74,
-              "coding_percentile": 94,
+              "coding_percentile": 93,
               "intelligence_percentile": null
             },
             "permaslug": "google/gemini-3.5-flash-20260519"
@@ -56823,11 +57287,11 @@
         "artificial_analysis_summary": {
           "aa_slug": "gemini-3-5-flash",
           "agentic_index": 70.3,
-          "agentic_percentile": 98,
+          "agentic_percentile": 97,
           "coding_index": 45.0,
           "coding_percentile": 91,
           "intelligence_index": 50.2,
-          "intelligence_percentile": 83,
+          "intelligence_percentile": 81,
           "variant_name": "Gemini 3.5 Flash (high)"
         },
         "design_arena": {
@@ -57316,7 +57780,7 @@
             "percentiles": {
               "agentic_percentile": 85,
               "coding_percentile": 98,
-              "intelligence_percentile": 78
+              "intelligence_percentile": 77
             },
             "permaslug": "google/gemini-3.1-pro-preview-20260219"
           },
@@ -57348,7 +57812,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 75,
-              "coding_percentile": 93,
+              "coding_percentile": 92,
               "intelligence_percentile": null
             },
             "permaslug": "google/gemini-3.1-pro-preview-20260219"
@@ -57398,7 +57862,7 @@
           "coding_index": 55.5,
           "coding_percentile": 98,
           "intelligence_index": 46.5,
-          "intelligence_percentile": 78,
+          "intelligence_percentile": 77,
           "variant_name": "Gemini 3.1 Pro Preview"
         },
         "design_arena": {
@@ -58022,7 +58486,7 @@
                 "artificial_analysis_coding_index": 47.1,
                 "artificial_analysis_intelligence_index": 42.8,
                 "critpt": 0.08,
-                "gdpval_aa": 0.35,
+                "gdpval_aa": 0.352,
                 "gpqa": 0.911,
                 "hle": 0.359,
                 "ifbench": 0.76,
@@ -58034,12 +58498,12 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "moonshotai/kimi-k2.6",
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 94,
-              "coding_percentile": 94,
-              "intelligence_percentile": 68
+              "coding_percentile": 93,
+              "intelligence_percentile": 67
             },
             "permaslug": "moonshotai/kimi-k2.6-20260420"
           },
@@ -58086,9 +58550,9 @@
           "agentic_index": 66.0,
           "agentic_percentile": 94,
           "coding_index": 47.1,
-          "coding_percentile": 94,
+          "coding_percentile": 93,
           "intelligence_index": 42.8,
-          "intelligence_percentile": 68,
+          "intelligence_percentile": 67,
           "variant_name": "Kimi K2.6"
         },
         "design_arena": {
@@ -58566,7 +59030,7 @@
                 "artificial_analysis_coding_index": 59.1,
                 "artificial_analysis_intelligence_index": 54.8,
                 "critpt": 0.271,
-                "gdpval_aa": 0.507,
+                "gdpval_aa": 0.505,
                 "gpqa": 0.935,
                 "hle": 0.443,
                 "ifbench": 0.759,
@@ -58578,7 +59042,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "openai/gpt-5.5",
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 99,
@@ -58599,7 +59063,7 @@
                 "artificial_analysis_coding_index": 58.5,
                 "artificial_analysis_intelligence_index": 53.1,
                 "critpt": 0.254,
-                "gdpval_aa": 0.496,
+                "gdpval_aa": 0.493,
                 "gpqa": 0.932,
                 "hle": 0.43,
                 "ifbench": 0.716,
@@ -58611,10 +59075,10 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781697615577,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 99,
+              "agentic_percentile": 98,
               "coding_percentile": 99,
               "intelligence_percentile": 88
             },
@@ -59234,7 +59698,7 @@
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 84,
-              "coding_percentile": 96,
+              "coding_percentile": 97,
               "intelligence_percentile": 56
             },
             "permaslug": "openai/gpt-5.4-mini-20260317"
@@ -59284,7 +59748,7 @@
                 "artificial_analysis_coding_index": 25.3,
                 "artificial_analysis_intelligence_index": null,
                 "critpt": 0,
-                "gdpval_aa": 0.126,
+                "gdpval_aa": 0.129,
                 "gpqa": 0.606,
                 "hle": 0.057,
                 "ifbench": 0.388,
@@ -59296,10 +59760,10 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781611256444,
+            "last_updated_at": 1781730035301,
             "openrouter_slug": null,
             "percentiles": {
-              "agentic_percentile": 44,
+              "agentic_percentile": 43,
               "coding_percentile": 54,
               "intelligence_percentile": null
             },
@@ -59315,7 +59779,7 @@
           "agentic_index": 58.9,
           "agentic_percentile": 84,
           "coding_index": 51.5,
-          "coding_percentile": 96,
+          "coding_percentile": 97,
           "intelligence_index": 40.0,
           "intelligence_percentile": 56,
           "variant_name": "GPT-5.4 mini (xhigh)"
