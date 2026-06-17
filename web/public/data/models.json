@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T18:35:48.283085Z",
+  "generated_at": "2026-06-17T20:57:31.986304Z",
   "models": [
     {
       "benchmarks": {
@@ -82,11 +82,8 @@
         "supported_parameters": [
           "max_tokens",
           "response_format",
-          "stop",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 256000,
@@ -9397,6 +9394,7 @@
           "frequency_penalty",
           "include_reasoning",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -9410,6 +9408,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -10533,20 +10532,11 @@
           "web_search": null
         },
         "supported_parameters": [
-          "frequency_penalty",
-          "logit_bias",
           "max_tokens",
-          "min_p",
-          "presence_penalty",
-          "repetition_penalty",
           "response_format",
-          "stop",
           "structured_outputs",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_k",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 32768,
@@ -11564,7 +11554,7 @@
         "top_provider": {
           "context_length": 32768,
           "is_moderated": false,
-          "max_completion_tokens": 32768
+          "max_completion_tokens": 8192
         }
       }
     },
@@ -12714,7 +12704,7 @@
         "top_provider": {
           "context_length": 1048576,
           "is_moderated": false,
-          "max_completion_tokens": 65536
+          "max_completion_tokens": 65535
         }
       }
     },
@@ -13807,7 +13797,6 @@
           "reasoning",
           "response_format",
           "seed",
-          "stop",
           "structured_outputs",
           "temperature",
           "top_p"
@@ -14951,13 +14940,9 @@
           "max_tokens",
           "reasoning",
           "response_format",
-          "seed",
-          "stop",
           "structured_outputs",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 1048576,
@@ -16018,16 +16003,7 @@
           "web_search": null
         },
         "supported_parameters": [
-          "frequency_penalty",
-          "logit_bias",
-          "max_tokens",
-          "min_p",
-          "presence_penalty",
-          "repetition_penalty",
-          "stop",
-          "temperature",
-          "top_k",
-          "top_p"
+          "max_tokens"
         ],
         "top_provider": {
           "context_length": 32768,
@@ -16630,17 +16606,13 @@
           "max_tokens",
           "reasoning",
           "response_format",
-          "seed",
-          "stop",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 262144,
-          "is_moderated": false,
-          "max_completion_tokens": 32768
+          "is_moderated": true,
+          "max_completion_tokens": 8192
         }
       }
     },
@@ -17799,16 +17771,7 @@
           "web_search": null
         },
         "supported_parameters": [
-          "frequency_penalty",
-          "logit_bias",
-          "max_tokens",
-          "min_p",
-          "presence_penalty",
-          "repetition_penalty",
-          "stop",
-          "temperature",
-          "top_k",
-          "top_p"
+          "max_tokens"
         ],
         "top_provider": {
           "context_length": 32768,
@@ -17900,16 +17863,7 @@
           "web_search": null
         },
         "supported_parameters": [
-          "frequency_penalty",
-          "max_tokens",
-          "min_p",
-          "presence_penalty",
-          "repetition_penalty",
-          "seed",
-          "stop",
-          "temperature",
-          "top_k",
-          "top_p"
+          "max_tokens"
         ],
         "top_provider": {
           "context_length": 32768,
@@ -18001,18 +17955,9 @@
           "web_search": null
         },
         "supported_parameters": [
-          "frequency_penalty",
           "include_reasoning",
           "max_tokens",
-          "min_p",
-          "presence_penalty",
-          "reasoning",
-          "repetition_penalty",
-          "seed",
-          "stop",
-          "temperature",
-          "top_k",
-          "top_p"
+          "reasoning"
         ],
         "top_provider": {
           "context_length": 32768,
@@ -18265,16 +18210,7 @@
           "web_search": null
         },
         "supported_parameters": [
-          "frequency_penalty",
-          "logit_bias",
-          "max_tokens",
-          "min_p",
-          "presence_penalty",
-          "repetition_penalty",
-          "stop",
-          "temperature",
-          "top_k",
-          "top_p"
+          "max_tokens"
         ],
         "top_provider": {
           "context_length": 8192,
@@ -21659,17 +21595,11 @@
           "web_search": null
         },
         "supported_parameters": [
-          "frequency_penalty",
           "max_tokens",
-          "presence_penalty",
           "response_format",
-          "seed",
-          "stop",
           "structured_outputs",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 256000,
@@ -21762,17 +21692,11 @@
           "web_search": null
         },
         "supported_parameters": [
-          "frequency_penalty",
           "max_tokens",
-          "presence_penalty",
           "response_format",
-          "seed",
-          "stop",
           "structured_outputs",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 262144,
@@ -22817,17 +22741,11 @@
           "web_search": null
         },
         "supported_parameters": [
-          "frequency_penalty",
           "max_tokens",
-          "presence_penalty",
           "response_format",
-          "seed",
-          "stop",
           "structured_outputs",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 262144,
@@ -23040,17 +22958,11 @@
           "web_search": null
         },
         "supported_parameters": [
-          "frequency_penalty",
           "max_tokens",
-          "presence_penalty",
           "response_format",
-          "seed",
-          "stop",
           "structured_outputs",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 131072,
@@ -23156,19 +23068,13 @@
           "web_search": null
         },
         "supported_parameters": [
-          "frequency_penalty",
           "include_reasoning",
           "max_tokens",
-          "presence_penalty",
           "reasoning",
           "response_format",
-          "seed",
-          "stop",
           "structured_outputs",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 262144,
@@ -23419,17 +23325,11 @@
           "web_search": null
         },
         "supported_parameters": [
-          "frequency_penalty",
           "max_tokens",
-          "presence_penalty",
           "response_format",
-          "seed",
-          "stop",
           "structured_outputs",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 131072,
@@ -23829,7 +23729,6 @@
           "presence_penalty",
           "reasoning",
           "response_format",
-          "seed",
           "stop",
           "structured_outputs",
           "temperature",
@@ -25809,7 +25708,6 @@
           "parallel_tool_calls",
           "presence_penalty",
           "reasoning",
-          "reasoning_effort",
           "repetition_penalty",
           "response_format",
           "seed",
@@ -38948,9 +38846,6 @@
           "include_reasoning",
           "max_tokens",
           "reasoning",
-          "seed",
-          "stop",
-          "temperature",
           "tool_choice",
           "tools"
         ],
@@ -39404,12 +39299,8 @@
           "max_tokens",
           "reasoning",
           "response_format",
-          "seed",
-          "stop",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 131072,
@@ -40774,7 +40665,6 @@
           "include_reasoning",
           "logprobs",
           "max_tokens",
-          "min_p",
           "presence_penalty",
           "reasoning",
           "repetition_penalty",
@@ -41998,17 +41888,7 @@
           "web_search": null
         },
         "supported_parameters": [
-          "frequency_penalty",
-          "logit_bias",
-          "max_tokens",
-          "min_p",
-          "presence_penalty",
-          "repetition_penalty",
-          "seed",
-          "stop",
-          "temperature",
-          "top_k",
-          "top_p"
+          "max_tokens"
         ],
         "top_provider": {
           "context_length": 32768,
@@ -42156,13 +42036,9 @@
         },
         "supported_parameters": [
           "max_tokens",
-          "presence_penalty",
           "response_format",
-          "seed",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -42221,14 +42097,10 @@
         },
         "supported_parameters": [
           "max_tokens",
-          "presence_penalty",
           "response_format",
-          "seed",
           "structured_outputs",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -42712,14 +42584,10 @@
         "supported_parameters": [
           "include_reasoning",
           "max_tokens",
-          "presence_penalty",
           "reasoning",
           "response_format",
-          "seed",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 131072,
@@ -44370,13 +44238,9 @@
         },
         "supported_parameters": [
           "max_tokens",
-          "presence_penalty",
           "response_format",
-          "seed",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -44541,14 +44405,10 @@
         },
         "supported_parameters": [
           "max_tokens",
-          "presence_penalty",
           "response_format",
-          "seed",
           "structured_outputs",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -45059,13 +44919,9 @@
         },
         "supported_parameters": [
           "max_tokens",
-          "presence_penalty",
           "response_format",
-          "seed",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 262144,
@@ -45192,15 +45048,11 @@
         "supported_parameters": [
           "include_reasoning",
           "max_tokens",
-          "presence_penalty",
           "reasoning",
           "response_format",
-          "seed",
           "structured_outputs",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 262144,
@@ -46107,13 +45959,9 @@
         },
         "supported_parameters": [
           "max_tokens",
-          "presence_penalty",
           "response_format",
-          "seed",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 131072,
@@ -46314,15 +46162,11 @@
         "supported_parameters": [
           "include_reasoning",
           "max_tokens",
-          "presence_penalty",
           "reasoning",
           "response_format",
-          "seed",
           "structured_outputs",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 131072,
@@ -47282,15 +47126,11 @@
         "supported_parameters": [
           "include_reasoning",
           "max_tokens",
-          "presence_penalty",
           "reasoning",
           "response_format",
-          "seed",
           "structured_outputs",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -47511,15 +47351,11 @@
         "supported_parameters": [
           "include_reasoning",
           "max_tokens",
-          "presence_penalty",
           "reasoning",
           "response_format",
-          "seed",
           "structured_outputs",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -47577,15 +47413,11 @@
         "supported_parameters": [
           "include_reasoning",
           "max_tokens",
-          "presence_penalty",
           "reasoning",
           "response_format",
-          "seed",
           "structured_outputs",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -47943,15 +47775,11 @@
         "supported_parameters": [
           "include_reasoning",
           "max_tokens",
-          "presence_penalty",
           "reasoning",
           "response_format",
-          "seed",
           "structured_outputs",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -48042,16 +47870,12 @@
           "include_reasoning",
           "logprobs",
           "max_tokens",
-          "presence_penalty",
           "reasoning",
           "response_format",
-          "seed",
           "structured_outputs",
-          "temperature",
           "tool_choice",
           "tools",
-          "top_logprobs",
-          "top_p"
+          "top_logprobs"
         ],
         "top_provider": {
           "context_length": 262144,
@@ -48318,15 +48142,11 @@
         "supported_parameters": [
           "include_reasoning",
           "max_tokens",
-          "presence_penalty",
           "reasoning",
           "response_format",
-          "seed",
           "structured_outputs",
-          "temperature",
           "tool_choice",
-          "tools",
-          "top_p"
+          "tools"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -48649,16 +48469,12 @@
           "include_reasoning",
           "logprobs",
           "max_tokens",
-          "presence_penalty",
           "reasoning",
           "response_format",
-          "seed",
           "structured_outputs",
-          "temperature",
           "tool_choice",
           "tools",
-          "top_logprobs",
-          "top_p"
+          "top_logprobs"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -48759,16 +48575,12 @@
           "include_reasoning",
           "logprobs",
           "max_tokens",
-          "presence_penalty",
           "reasoning",
           "response_format",
-          "seed",
           "structured_outputs",
-          "temperature",
           "tool_choice",
           "tools",
-          "top_logprobs",
-          "top_p"
+          "top_logprobs"
         ],
         "top_provider": {
           "context_length": 1000000,
@@ -49217,17 +49029,7 @@
           "web_search": null
         },
         "supported_parameters": [
-          "frequency_penalty",
-          "logit_bias",
-          "max_tokens",
-          "min_p",
-          "presence_penalty",
-          "repetition_penalty",
-          "seed",
-          "stop",
-          "temperature",
-          "top_k",
-          "top_p"
+          "max_tokens"
         ],
         "top_provider": {
           "context_length": 16000,
@@ -50042,7 +49844,6 @@
           "max_tokens",
           "presence_penalty",
           "reasoning",
-          "seed",
           "stop",
           "temperature",
           "tool_choice",
@@ -50170,10 +49971,8 @@
         },
         "supported_parameters": [
           "frequency_penalty",
-          "logit_bias",
           "logprobs",
           "max_tokens",
-          "min_p",
           "presence_penalty",
           "repetition_penalty",
           "response_format",
@@ -50183,7 +49982,6 @@
           "temperature",
           "tool_choice",
           "tools",
-          "top_k",
           "top_logprobs",
           "top_p"
         ],
@@ -58734,7 +58532,6 @@
           "parallel_tool_calls",
           "presence_penalty",
           "reasoning",
-          "reasoning_effort",
           "repetition_penalty",
           "response_format",
           "seed",
