@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-17T16:05:49.056654Z",
+  "generated_at": "2026-06-17T18:35:51.329176Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -16986,59 +16986,6 @@
         "context_length": 256000,
         "is_moderated": false,
         "max_completion_tokens": null
-      }
-    },
-    "xiaomi/mimo-v2-flash": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "xiaomi/mimo-v2-flash-20251210",
-      "context_length": 262144,
-      "created": 1765731308,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": 0.95
-      },
-      "description": "MiMo-V2-Flash is an open-source foundation language model developed by Xiaomi. It is a Mixture-of-Experts model with 309B total parameters and 15B active parameters, adopting hybrid attention architecture. MiMo-V2-Flash supports a...",
-      "expiration_date": "2026-06-17",
-      "id": "xiaomi/mimo-v2-flash",
-      "name": "Xiaomi: MiMo-V2-Flash",
-      "pricing": {
-        "completion": "0.0000003",
-        "image": null,
-        "input_cache_read": "0.00000001",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000001",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "response_format",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 65536
       }
     },
     "xiaomi/mimo-v2.5": {
