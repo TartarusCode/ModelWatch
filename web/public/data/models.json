@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T14:24:02.091078Z",
+  "generated_at": "2026-06-18T17:48:51.020091Z",
   "models": [
     {
       "benchmarks": {
@@ -82,8 +82,11 @@
         "supported_parameters": [
           "max_tokens",
           "response_format",
+          "stop",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 256000,
@@ -8566,6 +8569,7 @@
           "frequency_penalty",
           "include_reasoning",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -8579,6 +8583,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -15259,9 +15264,12 @@
           "max_tokens",
           "reasoning",
           "response_format",
+          "seed",
           "structured_outputs",
+          "temperature",
           "tool_choice",
-          "tools"
+          "tools",
+          "top_p"
         ],
         "top_provider": {
           "context_length": 1048576,
@@ -41888,7 +41896,7 @@
           "top_k": null,
           "top_p": null
         },
-        "description": "Laguna M.1 is the flagship coding agent model from [Poolside](https://poolside.ai), optimized for complex software engineering tasks. Designed for agentic coding workflows, it supports tool calling and reasoning, with a 128K...",
+        "description": "Laguna M.1 is the flagship coding agent model from [Poolside](https://poolside.ai/), optimized for complex software engineering tasks. Designed for agentic coding workflows, it supports tool calling and reasoning, with a 256K...",
         "expiration_date": null,
         "id": "poolside/laguna-m.1",
         "name": "Poolside: Laguna M.1",
@@ -41906,6 +41914,7 @@
           "include_reasoning",
           "max_tokens",
           "reasoning",
+          "structured_outputs",
           "temperature",
           "tool_choice",
           "tools"
@@ -41954,7 +41963,7 @@
           "top_k": null,
           "top_p": null
         },
-        "description": "Laguna M.1 is the flagship coding agent model from [Poolside](https://poolside.ai), optimized for complex software engineering tasks. Designed for agentic coding workflows, it supports tool calling and reasoning, with a 128K...",
+        "description": "Laguna M.1 is the flagship coding agent model from [Poolside](https://poolside.ai/), optimized for complex software engineering tasks. Designed for agentic coding workflows, it supports tool calling and reasoning, with a 256K...",
         "expiration_date": null,
         "id": "poolside/laguna-m.1:free",
         "name": "Poolside: Laguna M.1 (free)",
@@ -42038,6 +42047,8 @@
           "include_reasoning",
           "max_tokens",
           "reasoning",
+          "response_format",
+          "structured_outputs",
           "temperature",
           "tool_choice",
           "tools"
@@ -46779,6 +46790,7 @@
         "supported_parameters": [
           "frequency_penalty",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -46791,6 +46803,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -48899,6 +48912,7 @@
         },
         "supported_parameters": [
           "include_reasoning",
+          "logprobs",
           "max_tokens",
           "presence_penalty",
           "reasoning",
@@ -48908,6 +48922,7 @@
           "temperature",
           "tool_choice",
           "tools",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -55948,7 +55963,7 @@
         "pricing": {
           "completion": "0.0000044",
           "image": null,
-          "input_cache_read": "0.00000026",
+          "input_cache_read": "0.0000007",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.0000014",
@@ -55977,9 +55992,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 262144,
+          "context_length": 524288,
           "is_moderated": false,
-          "max_completion_tokens": 262144
+          "max_completion_tokens": 524288
         }
       }
     },
