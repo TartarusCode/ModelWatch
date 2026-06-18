@@ -1,25 +1,6 @@
 {
-  "drops": [
-    {
-      "detected_at": "2026-06-17T01:42:05.980611Z",
-      "field": "completion",
-      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
-      "new_per_million_usd": "2.200000",
-      "old_per_million_usd": "2.500000",
-      "pct_drop": 0.12,
-      "saved_per_million_usd": "0.300000"
-    },
-    {
-      "detected_at": "2026-06-17T01:42:05.980611Z",
-      "field": "input_cache_read",
-      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
-      "new_per_million_usd": "0.100000",
-      "old_per_million_usd": "0.150000",
-      "pct_drop": 0.3333333333333333,
-      "saved_per_million_usd": "0.050000"
-    }
-  ],
-  "generated_at": "2026-06-17T22:56:15.527306Z",
+  "drops": [],
+  "generated_at": "2026-06-18T01:43:55.124574Z",
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05
