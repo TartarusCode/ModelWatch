@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T20:39:23.193256Z",
+  "generated_at": "2026-06-18T22:34:05.127283Z",
   "models": [
     {
       "benchmarks": {
@@ -4554,7 +4554,7 @@
         ],
         "top_provider": {
           "context_length": 1000000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 128000
         }
       }
@@ -5107,7 +5107,7 @@
         ],
         "top_provider": {
           "context_length": 1000000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 128000
         }
       }
@@ -6097,7 +6097,7 @@
         ],
         "top_provider": {
           "context_length": 1000000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 64000
         }
       }
@@ -13594,9 +13594,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 65536,
+          "context_length": 131072,
           "is_moderated": false,
-          "max_completion_tokens": 65536
+          "max_completion_tokens": 32768
         }
       }
     },
@@ -14126,9 +14126,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 65536,
+          "context_length": 131072,
           "is_moderated": false,
-          "max_completion_tokens": 65536
+          "max_completion_tokens": 32768
         }
       }
     },
@@ -16958,8 +16958,8 @@
         ],
         "top_provider": {
           "context_length": 262144,
-          "is_moderated": true,
-          "max_completion_tokens": 8192
+          "is_moderated": false,
+          "max_completion_tokens": 32768
         }
       }
     },
@@ -17989,7 +17989,7 @@
           "tokenizer": "Other"
         },
         "canonical_slug": "kwaipilot/kat-coder-pro-v2-20260327",
-        "context_length": 256000,
+        "context_length": 262144,
         "created": 1774649310,
         "default_parameters": {
           "frequency_penalty": null,
@@ -18033,9 +18033,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 256000,
+          "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": 80000
+          "max_completion_tokens": 144000
         }
       }
     },
@@ -21739,7 +21739,7 @@
         "top_provider": {
           "context_length": 524288,
           "is_moderated": false,
-          "max_completion_tokens": 512000
+          "max_completion_tokens": null
         }
       }
     },
@@ -25204,7 +25204,7 @@
         "pricing": {
           "completion": "0.0000025",
           "image": null,
-          "input_cache_read": null,
+          "input_cache_read": "0.0000006",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.0000006",
@@ -26144,12 +26144,12 @@
         "id": "moonshotai/kimi-k2.6",
         "name": "MoonshotAI: Kimi K2.6",
         "pricing": {
-          "completion": "0.00000341",
+          "completion": "0.0000035",
           "image": null,
-          "input_cache_read": "0.00000034",
+          "input_cache_read": "0.0000002",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.00000068",
+          "prompt": "0.00000067",
           "request": null,
           "web_search": null
         },
@@ -26176,9 +26176,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 262142,
+          "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": 262142
+          "max_completion_tokens": 262144
         }
       }
     },
@@ -29808,8 +29808,8 @@
         ],
         "top_provider": {
           "context_length": 1047576,
-          "is_moderated": true,
-          "max_completion_tokens": 32768
+          "is_moderated": false,
+          "max_completion_tokens": null
         }
       }
     },
@@ -30192,7 +30192,7 @@
         "pricing": {
           "completion": "0.00001",
           "image": null,
-          "input_cache_read": null,
+          "input_cache_read": "0.00000125",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.0000025",
@@ -30219,7 +30219,7 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 16384
         }
       }
@@ -30324,7 +30324,7 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 4096
         }
       }
@@ -30429,7 +30429,7 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 16384
         }
       }
@@ -31313,7 +31313,7 @@
         ],
         "top_provider": {
           "context_length": 400000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 128000
         }
       }
@@ -32784,7 +32784,7 @@
         "pricing": {
           "completion": "0.000002",
           "image": null,
-          "input_cache_read": "0.000000025",
+          "input_cache_read": "0.00000003",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.00000025",
@@ -32804,8 +32804,8 @@
         ],
         "top_provider": {
           "context_length": 400000,
-          "is_moderated": true,
-          "max_completion_tokens": 128000
+          "is_moderated": false,
+          "max_completion_tokens": null
         }
       }
     },
@@ -33983,7 +33983,7 @@
         "pricing": {
           "completion": "0.00001",
           "image": null,
-          "input_cache_read": "0.00000013",
+          "input_cache_read": "0.000000125",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.00000125",
@@ -34001,8 +34001,8 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": false,
-          "max_completion_tokens": 32000
+          "is_moderated": true,
+          "max_completion_tokens": 16384
         }
       }
     },
@@ -34315,7 +34315,7 @@
         ],
         "top_provider": {
           "context_length": 400000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 128000
         }
       }
@@ -35482,7 +35482,7 @@
           "top_p": null
         },
         "description": "GPT-5.2 Chat (AKA Instant) is the fast, lightweight member of the 5.2 family, optimized for low-latency chat while retaining strong general intelligence. It uses adaptive reasoning to selectively “think” on...",
-        "expiration_date": "2026-08-10",
+        "expiration_date": null,
         "id": "openai/gpt-5.2-chat",
         "name": "OpenAI: GPT-5.2 Chat",
         "pricing": {
@@ -35506,8 +35506,8 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": true,
-          "max_completion_tokens": 16384
+          "is_moderated": false,
+          "max_completion_tokens": 32000
         }
       }
     },
@@ -35821,7 +35821,7 @@
           "top_p": null
         },
         "description": "GPT-5.3 Chat is an update to ChatGPT's most-used model that makes everyday conversations smoother, more useful, and more directly helpful. It delivers more accurate answers with better contextualization and significantly...",
-        "expiration_date": null,
+        "expiration_date": "2026-08-10",
         "id": "openai/gpt-5.3-chat",
         "name": "OpenAI: GPT-5.3 Chat",
         "pricing": {
@@ -35845,7 +35845,7 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 16384
         }
       }
@@ -37756,7 +37756,7 @@
         ],
         "top_provider": {
           "context_length": 400000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 128000
         }
       }
@@ -46210,6 +46210,7 @@
         "supported_parameters": [
           "frequency_penalty",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -46222,6 +46223,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -47335,7 +47337,7 @@
         "pricing": {
           "completion": "0.000001",
           "image": null,
-          "input_cache_read": null,
+          "input_cache_read": "0.00000005",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.00000014",
@@ -47366,7 +47368,7 @@
         "top_provider": {
           "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": 262144
+          "max_completion_tokens": 81920
         }
       }
     },
@@ -47763,7 +47765,7 @@
           "tokenizer": "Qwen3"
         },
         "canonical_slug": "qwen/qwen3.5-9b-20260310",
-        "context_length": 262144,
+        "context_length": 256000,
         "created": 1773152396,
         "default_parameters": {
           "frequency_penalty": null,
@@ -47809,9 +47811,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 262144,
+          "context_length": 256000,
           "is_moderated": false,
-          "max_completion_tokens": 262144
+          "max_completion_tokens": 32768
         }
       }
     },
@@ -48539,6 +48541,7 @@
         },
         "supported_parameters": [
           "include_reasoning",
+          "logprobs",
           "max_tokens",
           "presence_penalty",
           "reasoning",
@@ -48548,6 +48551,7 @@
           "temperature",
           "tool_choice",
           "tools",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -55965,7 +55969,7 @@
         "id": "z-ai/glm-5.2",
         "name": "Z.ai: GLM 5.2",
         "pricing": {
-          "completion": "0.0000042",
+          "completion": "0.0000032",
           "image": null,
           "input_cache_read": "0.0000002",
           "input_cache_write": null,
@@ -55996,9 +56000,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 1048576,
+          "context_length": 202752,
           "is_moderated": false,
-          "max_completion_tokens": 16384
+          "max_completion_tokens": 65536
         }
       }
     },
@@ -57118,7 +57122,7 @@
         ],
         "top_provider": {
           "context_length": 1000000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 128000
         }
       }
@@ -59380,12 +59384,12 @@
         "id": "~moonshotai/kimi-latest",
         "name": "MoonshotAI Kimi Latest",
         "pricing": {
-          "completion": "0.00000341",
+          "completion": "0.0000035",
           "image": null,
-          "input_cache_read": "0.00000034",
+          "input_cache_read": "0.0000002",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.00000068",
+          "prompt": "0.00000067",
           "request": null,
           "web_search": null
         },
@@ -59412,9 +59416,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 262142,
+          "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": 262142
+          "max_completion_tokens": 262144
         }
       }
     },

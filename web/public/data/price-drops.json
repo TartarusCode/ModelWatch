@@ -1,6 +1,33 @@
 {
   "drops": [
     {
+      "detected_at": "2026-06-18T22:34:05.127283Z",
+      "field": "completion",
+      "model_id": "z-ai/glm-5.2",
+      "new_per_million_usd": "3.200000",
+      "old_per_million_usd": "4.200000",
+      "pct_drop": 0.23809523809523808,
+      "saved_per_million_usd": "1.000000"
+    },
+    {
+      "detected_at": "2026-06-18T22:34:05.127283Z",
+      "field": "input_cache_read",
+      "model_id": "~moonshotai/kimi-latest",
+      "new_per_million_usd": "0.200000",
+      "old_per_million_usd": "0.340000",
+      "pct_drop": 0.4117647058823529,
+      "saved_per_million_usd": "0.140000"
+    },
+    {
+      "detected_at": "2026-06-18T22:34:05.127283Z",
+      "field": "input_cache_read",
+      "model_id": "moonshotai/kimi-k2.6",
+      "new_per_million_usd": "0.200000",
+      "old_per_million_usd": "0.340000",
+      "pct_drop": 0.4117647058823529,
+      "saved_per_million_usd": "0.140000"
+    },
+    {
       "detected_at": "2026-06-18T20:39:23.193256Z",
       "field": "prompt",
       "model_id": "z-ai/glm-5.2",
@@ -19,7 +46,7 @@
       "saved_per_million_usd": "0.500000"
     }
   ],
-  "generated_at": "2026-06-18T20:39:27.889067Z",
+  "generated_at": "2026-06-18T22:34:15.049401Z",
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05
