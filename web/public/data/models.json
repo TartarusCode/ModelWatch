@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T17:48:51.020091Z",
+  "generated_at": "2026-06-18T20:39:23.193256Z",
   "models": [
     {
       "benchmarks": {
@@ -17675,6 +17675,7 @@
         },
         "supported_parameters": [
           "frequency_penalty",
+          "logprobs",
           "max_tokens",
           "presence_penalty",
           "repetition_penalty",
@@ -17686,6 +17687,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -54466,6 +54468,7 @@
           "frequency_penalty",
           "include_reasoning",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -54479,6 +54482,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -55961,12 +55965,12 @@
         "id": "z-ai/glm-5.2",
         "name": "Z.ai: GLM 5.2",
         "pricing": {
-          "completion": "0.0000044",
+          "completion": "0.0000042",
           "image": null,
-          "input_cache_read": "0.0000007",
+          "input_cache_read": "0.0000002",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.0000014",
+          "prompt": "0.0000012",
           "request": null,
           "web_search": null
         },
@@ -55992,9 +55996,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 524288,
+          "context_length": 1048576,
           "is_moderated": false,
-          "max_completion_tokens": 524288
+          "max_completion_tokens": 16384
         }
       }
     },

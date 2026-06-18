@@ -23,3 +23,5 @@
 {"detected_at":"2026-06-15T21:36:30.197637Z","field":"completion","model_id":"x-ai/grok-4.20-multi-agent","new_per_million_usd":"2.500000","old_per_million_usd":"6.000000","pct_drop":0.5833333333333334,"saved_per_million_usd":"3.500000"}
 {"detected_at":"2026-06-17T01:42:05.980611Z","field":"completion","model_id":"nvidia/nemotron-3-ultra-550b-a55b","new_per_million_usd":"2.200000","old_per_million_usd":"2.500000","pct_drop":0.12,"saved_per_million_usd":"0.300000"}
 {"detected_at":"2026-06-17T01:42:05.980611Z","field":"input_cache_read","model_id":"nvidia/nemotron-3-ultra-550b-a55b","new_per_million_usd":"0.100000","old_per_million_usd":"0.150000","pct_drop":0.3333333333333333,"saved_per_million_usd":"0.050000"}
+{"detected_at":"2026-06-18T20:39:23.193256Z","field":"prompt","model_id":"z-ai/glm-5.2","new_per_million_usd":"1.200000","old_per_million_usd":"1.400000","pct_drop":0.14285714285714285,"saved_per_million_usd":"0.200000"}
+{"detected_at":"2026-06-18T20:39:23.193256Z","field":"input_cache_read","model_id":"z-ai/glm-5.2","new_per_million_usd":"0.200000","old_per_million_usd":"0.700000","pct_drop":0.7142857142857143,"saved_per_million_usd":"0.500000"}
