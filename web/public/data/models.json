@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T01:43:51.654376Z",
+  "generated_at": "2026-06-18T06:30:43.118561Z",
   "models": [
     {
       "benchmarks": {
@@ -8923,6 +8923,7 @@
           "frequency_penalty",
           "include_reasoning",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -8936,6 +8937,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -12897,6 +12899,72 @@
     },
     {
       "benchmarks": {
+        "artificial_analysis": [],
+        "artificial_analysis_status": {
+          "error": null,
+          "status": "empty"
+        },
+        "artificial_analysis_summary": null,
+        "design_arena": null,
+        "design_arena_status": {
+          "error": null,
+          "status": "empty"
+        }
+      },
+      "model": {
+        "architecture": {
+          "input_modalities": [
+            "image",
+            "text"
+          ],
+          "instruct_type": null,
+          "modality": "text+image->text+image",
+          "output_modalities": [
+            "image",
+            "text"
+          ],
+          "tokenizer": "Gemini"
+        },
+        "canonical_slug": "google/gemini-3-pro-image-20260528",
+        "context_length": 65536,
+        "created": 1781754054,
+        "default_parameters": {},
+        "description": "Nano Banana Pro is Google’s most advanced image-generation and editing model, built on Gemini 3 Pro. It extends the original Nano Banana with significantly improved multimodal reasoning, real-world grounding, and...",
+        "expiration_date": null,
+        "id": "google/gemini-3-pro-image",
+        "name": "Google: Nano Banana Pro (Gemini 3 Pro Image)",
+        "pricing": {
+          "completion": "0.000012",
+          "image": "0.000002",
+          "input_cache_read": "0.0000002",
+          "input_cache_write": "0.000000375",
+          "internal_reasoning": "0.000012",
+          "prompt": "0.000002",
+          "request": null,
+          "web_search": "0.014"
+        },
+        "supported_parameters": [
+          "include_reasoning",
+          "max_tokens",
+          "reasoning",
+          "response_format",
+          "seed",
+          "stop",
+          "structured_outputs",
+          "temperature",
+          "tool_choice",
+          "tools",
+          "top_p"
+        ],
+        "top_provider": {
+          "context_length": 65536,
+          "is_moderated": false,
+          "max_completion_tokens": 32768
+        }
+      }
+    },
+    {
+      "benchmarks": {
         "artificial_analysis": [
           {
             "aa_id": "6a5056eb-6854-43c4-bf18-01d185ce9e2f",
@@ -13460,6 +13528,69 @@
           "context_length": 65536,
           "is_moderated": false,
           "max_completion_tokens": 32768
+        }
+      }
+    },
+    {
+      "benchmarks": {
+        "artificial_analysis": [],
+        "artificial_analysis_status": {
+          "error": null,
+          "status": "empty"
+        },
+        "artificial_analysis_summary": null,
+        "design_arena": null,
+        "design_arena_status": {
+          "error": null,
+          "status": "empty"
+        }
+      },
+      "model": {
+        "architecture": {
+          "input_modalities": [
+            "image",
+            "text"
+          ],
+          "instruct_type": null,
+          "modality": "text+image->text+image",
+          "output_modalities": [
+            "image",
+            "text"
+          ],
+          "tokenizer": "Gemini"
+        },
+        "canonical_slug": "google/gemini-3.1-flash-image-20260528",
+        "context_length": 131072,
+        "created": 1781754065,
+        "default_parameters": {},
+        "description": "Gemini 3.1 Flash Image, a.k.a. \"Nano Banana 2,\" is Google’s latest state of the art image generation and editing model, delivering Pro-level visual quality at Flash speed. It combines advanced...",
+        "expiration_date": null,
+        "id": "google/gemini-3.1-flash-image",
+        "name": "Google: Nano Banana 2 (Gemini 3.1 Flash Image)",
+        "pricing": {
+          "completion": "0.000003",
+          "image": null,
+          "input_cache_read": null,
+          "input_cache_write": null,
+          "internal_reasoning": null,
+          "prompt": "0.0000005",
+          "request": null,
+          "web_search": "0.014"
+        },
+        "supported_parameters": [
+          "include_reasoning",
+          "max_tokens",
+          "reasoning",
+          "response_format",
+          "seed",
+          "structured_outputs",
+          "temperature",
+          "top_p"
+        ],
+        "top_provider": {
+          "context_length": 65536,
+          "is_moderated": false,
+          "max_completion_tokens": 65536
         }
       }
     },
@@ -16201,7 +16332,9 @@
           "min_p",
           "presence_penalty",
           "repetition_penalty",
+          "response_format",
           "stop",
+          "structured_outputs",
           "temperature",
           "top_k",
           "top_p"
@@ -17985,6 +18118,7 @@
           "min_p",
           "presence_penalty",
           "repetition_penalty",
+          "response_format",
           "stop",
           "temperature",
           "top_k",
@@ -18087,6 +18221,7 @@
           "repetition_penalty",
           "seed",
           "stop",
+          "structured_outputs",
           "temperature",
           "top_k",
           "top_p"
@@ -18190,7 +18325,10 @@
           "repetition_penalty",
           "seed",
           "stop",
+          "structured_outputs",
           "temperature",
+          "tool_choice",
+          "tools",
           "top_k",
           "top_p"
         ],
@@ -24087,6 +24225,7 @@
         "supported_parameters": [
           "frequency_penalty",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -24095,6 +24234,7 @@
           "stop",
           "temperature",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -39657,6 +39797,7 @@
           "response_format",
           "seed",
           "stop",
+          "structured_outputs",
           "temperature",
           "tool_choice",
           "tools",
@@ -41827,6 +41968,8 @@
           "include_reasoning",
           "max_tokens",
           "reasoning",
+          "response_format",
+          "structured_outputs",
           "temperature",
           "tool_choice",
           "tools"
@@ -42254,14 +42397,20 @@
         "supported_parameters": [
           "frequency_penalty",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
           "repetition_penalty",
+          "response_format",
           "seed",
           "stop",
+          "structured_outputs",
           "temperature",
+          "tool_choice",
+          "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -42409,13 +42558,16 @@
           "web_search": null
         },
         "supported_parameters": [
+          "logprobs",
           "max_tokens",
           "presence_penalty",
           "response_format",
           "seed",
+          "structured_outputs",
           "temperature",
           "tool_choice",
           "tools",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -42607,6 +42759,7 @@
         "supported_parameters": [
           "frequency_penalty",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "presence_penalty",
           "repetition_penalty",
@@ -42616,6 +42769,7 @@
           "structured_outputs",
           "temperature",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -43414,6 +43568,7 @@
           "frequency_penalty",
           "include_reasoning",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -43427,6 +43582,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -43762,6 +43918,7 @@
         "supported_parameters": [
           "frequency_penalty",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -43774,6 +43931,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -44042,6 +44200,7 @@
           "frequency_penalty",
           "include_reasoning",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -44055,6 +44214,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -44726,6 +44886,7 @@
         "supported_parameters": [
           "frequency_penalty",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -44738,6 +44899,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -46113,6 +46275,7 @@
         "supported_parameters": [
           "frequency_penalty",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -46125,6 +46288,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -50380,13 +50544,17 @@
         "supported_parameters": [
           "frequency_penalty",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "presence_penalty",
           "repetition_penalty",
+          "response_format",
           "seed",
           "stop",
+          "structured_outputs",
           "temperature",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -52337,6 +52505,7 @@
           "frequency_penalty",
           "include_reasoning",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -52350,6 +52519,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
