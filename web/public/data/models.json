@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19T00:14:49.761035Z",
+  "generated_at": "2026-06-19T05:28:10.522194Z",
   "models": [
     {
       "benchmarks": {
@@ -6870,6 +6870,7 @@
           "frequency_penalty",
           "include_reasoning",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "presence_penalty",
           "reasoning",
@@ -6882,6 +6883,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -6941,6 +6943,7 @@
         },
         "supported_parameters": [
           "include_reasoning",
+          "logprobs",
           "max_completion_tokens",
           "max_tokens",
           "reasoning",
@@ -6950,6 +6953,7 @@
           "temperature",
           "tool_choice",
           "tools",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -17572,6 +17576,7 @@
         },
         "supported_parameters": [
           "frequency_penalty",
+          "logprobs",
           "max_tokens",
           "presence_penalty",
           "repetition_penalty",
@@ -17583,6 +17588,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -20617,6 +20623,7 @@
           "frequency_penalty",
           "include_reasoning",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -20630,6 +20637,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -25238,6 +25246,7 @@
           "frequency_penalty",
           "include_reasoning",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -25251,6 +25260,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -42799,6 +42809,7 @@
           "web_search": null
         },
         "supported_parameters": [
+          "logprobs",
           "max_tokens",
           "presence_penalty",
           "response_format",
@@ -42807,6 +42818,7 @@
           "temperature",
           "tool_choice",
           "tools",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -45139,6 +45151,7 @@
           "web_search": null
         },
         "supported_parameters": [
+          "logprobs",
           "max_tokens",
           "presence_penalty",
           "response_format",
@@ -45147,6 +45160,7 @@
           "temperature",
           "tool_choice",
           "tools",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -45793,6 +45807,7 @@
         },
         "supported_parameters": [
           "include_reasoning",
+          "logprobs",
           "max_tokens",
           "presence_penalty",
           "reasoning",
@@ -45802,6 +45817,7 @@
           "temperature",
           "tool_choice",
           "tools",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -46099,6 +46115,7 @@
           "frequency_penalty",
           "include_reasoning",
           "logit_bias",
+          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -46112,6 +46129,7 @@
           "tool_choice",
           "tools",
           "top_k",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -46931,6 +46949,7 @@
         },
         "supported_parameters": [
           "include_reasoning",
+          "logprobs",
           "max_tokens",
           "presence_penalty",
           "reasoning",
@@ -46940,6 +46959,7 @@
           "temperature",
           "tool_choice",
           "tools",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -48128,6 +48148,7 @@
         },
         "supported_parameters": [
           "include_reasoning",
+          "logprobs",
           "max_tokens",
           "presence_penalty",
           "reasoning",
@@ -48137,6 +48158,7 @@
           "temperature",
           "tool_choice",
           "tools",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -48194,6 +48216,7 @@
         },
         "supported_parameters": [
           "include_reasoning",
+          "logprobs",
           "max_tokens",
           "presence_penalty",
           "reasoning",
@@ -48203,6 +48226,7 @@
           "temperature",
           "tool_choice",
           "tools",
+          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
