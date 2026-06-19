@@ -26,27 +26,9 @@
       "old_per_million_usd": "0.340000",
       "pct_drop": 0.4117647058823529,
       "saved_per_million_usd": "0.140000"
-    },
-    {
-      "detected_at": "2026-06-18T20:39:23.193256Z",
-      "field": "prompt",
-      "model_id": "z-ai/glm-5.2",
-      "new_per_million_usd": "1.200000",
-      "old_per_million_usd": "1.400000",
-      "pct_drop": 0.14285714285714285,
-      "saved_per_million_usd": "0.200000"
-    },
-    {
-      "detected_at": "2026-06-18T20:39:23.193256Z",
-      "field": "input_cache_read",
-      "model_id": "z-ai/glm-5.2",
-      "new_per_million_usd": "0.200000",
-      "old_per_million_usd": "0.700000",
-      "pct_drop": 0.7142857142857143,
-      "saved_per_million_usd": "0.500000"
     }
   ],
-  "generated_at": "2026-06-19T20:21:39.666942Z",
+  "generated_at": "2026-06-19T21:50:23.938911Z",
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05
