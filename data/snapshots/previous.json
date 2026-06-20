@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T09:43:01.266146Z",
+  "generated_at": "2026-06-20T11:44:33.256813Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -1541,39 +1541,34 @@
       "id": "arcee-ai/trinity-large-thinking",
       "name": "Arcee AI: Trinity Large Thinking",
       "pricing": {
-        "completion": "0.00000085",
+        "completion": "0.0000008",
         "image": null,
         "input_cache_read": "0.00000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000022",
+        "prompt": "0.00000025",
         "request": null,
         "web_search": null
       },
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
-        "logprobs",
         "max_tokens",
         "presence_penalty",
         "reasoning",
-        "repetition_penalty",
         "response_format",
-        "seed",
         "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 80000
       }
     },
     "arcee-ai/trinity-mini": {
