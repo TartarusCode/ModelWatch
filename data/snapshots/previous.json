@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T06:04:03.808910Z",
+  "generated_at": "2026-06-20T09:43:01.266146Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -7942,10 +7942,10 @@
       "pricing": {
         "completion": "0.0000035",
         "image": null,
-        "input_cache_read": "0.0000002",
+        "input_cache_read": "0.00000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000067",
+        "prompt": "0.00000066",
         "request": null,
         "web_search": null
       },
@@ -7972,9 +7972,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 262142,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 262142
       }
     },
     "moonshotai/kimi-k2.7-code": {
@@ -8536,6 +8536,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -8549,6 +8550,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -16724,12 +16726,12 @@
       "id": "tencent/hy3-preview",
       "name": "Tencent: Hy3 preview",
       "pricing": {
-        "completion": "0.00000026",
+        "completion": "0.00000021",
         "image": null,
-        "input_cache_read": "0.000000029",
+        "input_cache_read": "0.000000021",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000066",
+        "prompt": "0.000000063",
         "request": null,
         "web_search": null
       },
@@ -16750,7 +16752,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": null
       }
     },
     "thedrummer/cydonia-24b-v4.1": {
@@ -18525,10 +18527,10 @@
       "pricing": {
         "completion": "0.0000035",
         "image": null,
-        "input_cache_read": "0.0000002",
+        "input_cache_read": "0.00000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000067",
+        "prompt": "0.00000066",
         "request": null,
         "web_search": null
       },
@@ -18555,9 +18557,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 262142,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 262142
       }
     },
     "~openai/gpt-latest": {
