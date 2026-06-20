@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T13:14:24.423310Z",
+  "generated_at": "2026-06-20T15:16:18.491753Z",
   "models": [
     {
       "benchmarks": {
@@ -2588,7 +2588,7 @@
         ],
         "top_provider": {
           "context_length": 200000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 32000
         }
       }
