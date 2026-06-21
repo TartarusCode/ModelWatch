@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T10:22:37.280088Z",
+  "generated_at": "2026-06-21T12:30:46.584737Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -7967,9 +7967,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262142,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262142
+        "max_completion_tokens": 65535
       }
     },
     "moonshotai/kimi-k2.7-code": {
@@ -18552,9 +18552,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262142,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262142
+        "max_completion_tokens": 65535
       }
     },
     "~openai/gpt-latest": {
