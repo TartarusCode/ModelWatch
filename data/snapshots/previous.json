@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T16:55:18.905028Z",
+  "generated_at": "2026-06-21T18:52:54.961770Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -18104,12 +18104,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000041",
+        "completion": "0.000004",
         "image": null,
-        "input_cache_read": "0.0000002",
+        "input_cache_read": "0.00000018",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000012",
+        "prompt": "0.000001",
         "request": null,
         "web_search": null
       },
@@ -18137,7 +18137,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 32768
       }
     },
     "~anthropic/claude-fable-latest": {
