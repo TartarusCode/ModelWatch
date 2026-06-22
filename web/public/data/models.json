@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T05:31:54.597287Z",
+  "generated_at": "2026-06-22T11:22:27.346141Z",
   "models": [
     {
       "benchmarks": {
@@ -3927,25 +3927,6 @@
               "category": "python-pptxslides",
               "da_model_id": "claude-opus-4-7",
               "display_name": "Claude Opus 4.7",
-              "elo": 1351,
-              "elo_percentile": 90,
-              "first_place": 7794,
-              "fourth_place": 909,
-              "last_updated_at": 1782043280166,
-              "openrouter_id": "anthropic/claude-opus-4.7",
-              "permaslug": "anthropic/claude-4.7-opus-20260416",
-              "provider": "anthropic",
-              "second_place": 5579,
-              "third_place": 2205,
-              "total_tournaments": 16487,
-              "win_rate": 66.3
-            },
-            {
-              "arena": "agents",
-              "avg_generation_time_ms": 508419,
-              "category": "python-pptxslides",
-              "da_model_id": "claude-opus-4-7",
-              "display_name": "Claude Opus 4.7",
               "elo": 1349,
               "elo_percentile": 89,
               "first_place": 7838,
@@ -3961,22 +3942,22 @@
             },
             {
               "arena": "agents",
-              "avg_generation_time_ms": 396694,
+              "avg_generation_time_ms": 508419,
               "category": "python-pptxslides",
-              "da_model_id": "claude-opus-4-7-thinking",
-              "display_name": "Claude Opus 4.7 (Thinking)",
-              "elo": 1336,
-              "elo_percentile": 80,
-              "first_place": 7126,
-              "fourth_place": 713,
+              "da_model_id": "claude-opus-4-7",
+              "display_name": "Claude Opus 4.7",
+              "elo": 1351,
+              "elo_percentile": 90,
+              "first_place": 7794,
+              "fourth_place": 909,
               "last_updated_at": 1782043280166,
               "openrouter_id": "anthropic/claude-opus-4.7",
               "permaslug": "anthropic/claude-4.7-opus-20260416",
               "provider": "anthropic",
-              "second_place": 4910,
-              "third_place": 1735,
-              "total_tournaments": 14484,
-              "win_rate": 63.1
+              "second_place": 5579,
+              "third_place": 2205,
+              "total_tournaments": 16487,
+              "win_rate": 66.3
             },
             {
               "arena": "agents",
@@ -3996,6 +3977,25 @@
               "third_place": 1744,
               "total_tournaments": 14544,
               "win_rate": 63.2
+            },
+            {
+              "arena": "agents",
+              "avg_generation_time_ms": 396694,
+              "category": "python-pptxslides",
+              "da_model_id": "claude-opus-4-7-thinking",
+              "display_name": "Claude Opus 4.7 (Thinking)",
+              "elo": 1336,
+              "elo_percentile": 80,
+              "first_place": 7126,
+              "fourth_place": 713,
+              "last_updated_at": 1782043280166,
+              "openrouter_id": "anthropic/claude-opus-4.7",
+              "permaslug": "anthropic/claude-4.7-opus-20260416",
+              "provider": "anthropic",
+              "second_place": 4910,
+              "third_place": 1735,
+              "total_tournaments": 14484,
+              "win_rate": 63.1
             },
             {
               "arena": "agents",
@@ -25564,9 +25564,9 @@
         "id": "moonshotai/kimi-k2.6",
         "name": "MoonshotAI: Kimi K2.6",
         "pricing": {
-          "completion": "0.0000035",
+          "completion": "0.00000341",
           "image": null,
-          "input_cache_read": "0.00000033",
+          "input_cache_read": "0.000000144",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.00000066",
@@ -25598,7 +25598,7 @@
         "top_provider": {
           "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": 65535
+          "max_completion_tokens": 262144
         }
       }
     },
@@ -58538,9 +58538,9 @@
         "id": "~moonshotai/kimi-latest",
         "name": "MoonshotAI Kimi Latest",
         "pricing": {
-          "completion": "0.0000035",
+          "completion": "0.00000341",
           "image": null,
-          "input_cache_read": "0.00000033",
+          "input_cache_read": "0.000000144",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.00000066",
@@ -58572,7 +58572,7 @@
         "top_provider": {
           "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": 65535
+          "max_completion_tokens": 262144
         }
       }
     },
