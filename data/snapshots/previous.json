@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T23:58:10.529653Z",
+  "generated_at": "2026-06-22T05:32:03.581100Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -611,56 +611,6 @@
         "context_length": 200000,
         "is_moderated": true,
         "max_completion_tokens": 4096
-      }
-    },
-    "anthropic/claude-3.5-haiku": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "instruct_type": null,
-        "modality": "text+image->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Claude"
-      },
-      "canonical_slug": "anthropic/claude-3-5-haiku",
-      "context_length": 200000,
-      "created": 1730678400,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": null
-      },
-      "description": "Claude 3.5 Haiku features offers enhanced capabilities in speed, coding accuracy, and tool use. Engineered to excel in real-time applications, it delivers quick response times that are essential for dynamic...",
-      "expiration_date": null,
-      "id": "anthropic/claude-3.5-haiku",
-      "name": "Anthropic: Claude 3.5 Haiku",
-      "pricing": {
-        "completion": "0.000004",
-        "image": null,
-        "input_cache_read": "0.00000008",
-        "input_cache_write": "0.000001",
-        "internal_reasoning": null,
-        "prompt": "0.0000008",
-        "request": null,
-        "web_search": "0.01"
-      },
-      "supported_parameters": [
-        "max_tokens",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 200000,
-        "is_moderated": true,
-        "max_completion_tokens": 8192
       }
     },
     "anthropic/claude-fable-5": {
@@ -8131,6 +8081,60 @@
         "max_completion_tokens": 131072
       }
     },
+    "nex-agi/nex-n2-pro": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen3"
+      },
+      "canonical_slug": "nex-agi/nex-n2-pro",
+      "context_length": 262144,
+      "created": 1780937140,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.95
+      },
+      "description": "Nex-N2-Pro is an agentic mixture-of-experts model from Nex AGI, with 17B active parameters out of 397B total. Built on the Qwen3.5 architecture, it accepts text and image input and produces...",
+      "expiration_date": null,
+      "id": "nex-agi/nex-n2-pro",
+      "name": "Nex AGI: Nex-N2-Pro",
+      "pricing": {
+        "completion": "0.0000025",
+        "image": null,
+        "input_cache_read": "0.00000025",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000005",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "reasoning",
+        "temperature",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 262144
+      }
+    },
     "nex-agi/nex-n2-pro:free": {
       "architecture": {
         "input_modalities": [
@@ -8156,7 +8160,7 @@
         "top_p": 0.95
       },
       "description": "Nex-N2-Pro is an agentic mixture-of-experts model from Nex AGI, with 17B active parameters out of 397B total. Built on the Qwen3.5 architecture, it accepts text and image input and produces...",
-      "expiration_date": "2026-06-22",
+      "expiration_date": null,
       "id": "nex-agi/nex-n2-pro:free",
       "name": "Nex AGI: Nex-N2-Pro (free)",
       "pricing": {
@@ -8172,11 +8176,9 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logprobs",
         "max_tokens",
         "reasoning",
         "response_format",
-        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
@@ -8186,7 +8188,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 256000
       }
     },
     "nousresearch/hermes-3-llama-3.1-405b": {
@@ -12544,7 +12546,6 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
