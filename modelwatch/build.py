@@ -8,6 +8,7 @@ from pydantic import ValidationError
 
 from modelwatch.aa_scores import summarize_artificial_analysis
 from modelwatch.fetch import fetch_all_benchmarks, fetch_models_async
+from modelwatch.model_filters import is_latest_alias_model_id
 from modelwatch.json_output import dump_model_line, write_model_json
 from modelwatch.history import merge_build_into_history, save_history, load_history
 from modelwatch.new_models import (
@@ -243,7 +244,7 @@ async def run_build() -> None:
     snapshots: list[ModelSnapshot] = []
     for raw in raw_models:
         parsed = _parse_model(raw)
-        if parsed is not None:
+        if parsed is not None and not is_latest_alias_model_id(parsed.id):
             snapshots.append(parsed)
 
     canonical_slugs = sorted({model.canonical_slug for model in snapshots})

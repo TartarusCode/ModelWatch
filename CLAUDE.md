@@ -64,6 +64,7 @@ Implemented in `modelwatch/new_models.py`:
 - Price history in `web/public/data/price-history.json` — all `PRICING_FIELDS` (prompt, completion, cache read, etc.); one point per scheduled build per model (up to 500 points retained); UI shows columns/series only for fields with data.
 - First build has no price history → no price drops until enough history points accumulate (≥3 within 7 days).
 - Most models return empty benchmark payloads; UI must handle `empty` status.
+- **Latest aliases** (`~provider/model-latest` and `*/gpt-chat-latest`) are excluded at build time — they duplicate versioned models and skew price/benchmark stats.
 - Benchmark APIs use **`canonical_slug`** (permaslug), not `model.id` (`:free` variants share one slug). Endpoints live under `/api/frontend/v1/private/` (not the old `/api/internal/v1/` paths).
 - **Intelligence / Coding / Agentic** on OpenRouter compare come from `artificial-analysis-benchmarks` (`artificial_analysis_*_index` + `percentiles` for bar width). `frontend/stats/endpoint` is provider routing/latency stats, not AA indices.
 - Build stores all AA variants in `benchmarks.artificial_analysis`; `artificial_analysis_summary` is the default profile for the overview table.
