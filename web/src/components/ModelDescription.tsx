@@ -1,4 +1,4 @@
-import ReactMarkdown from "react-markdown";
+import { parseMarkdownLinks } from "../lib/markdownLinks";
 
 interface ModelDescriptionProps {
   text: string;
@@ -6,18 +6,6 @@ interface ModelDescriptionProps {
 
 export function ModelDescription({ text }: ModelDescriptionProps) {
   return (
-    <div className="model-hero__description">
-      <ReactMarkdown
-        components={{
-          a: ({ href, children }) => (
-            <a href={href} target="_blank" rel="noreferrer">
-              {children}
-            </a>
-          ),
-        }}
-      >
-        {text}
-      </ReactMarkdown>
-    </div>
+    <p className="model-hero__description">{parseMarkdownLinks(text)}</p>
   );
 }

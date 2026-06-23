@@ -1,7 +1,7 @@
+import { lazy, Suspense } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArtificialAnalysisPanel } from "../components/ArtificialAnalysisPanel";
 import { DesignArenaPanel } from "../components/DesignArenaPanel";
-import { ModelDescription } from "../components/ModelDescription";
 import { PriceCell } from "../components/PriceCell";
 import { PriceHistoryPanel } from "../components/PriceHistoryPanel";
 import { ProviderBadge } from "../components/ProviderBadge";
@@ -12,6 +12,12 @@ import type {
   PriceEventRecord,
   PriceHistoryOutput,
 } from "../types";
+
+const ModelDescription = lazy(() =>
+  import("../components/ModelDescription").then((module) => ({
+    default: module.ModelDescription,
+  })),
+);
 
 interface ModelDetailPageProps {
   models: EnrichedModel[];
@@ -70,7 +76,9 @@ export function ModelDetailPage({
         <h1 className="model-hero__title">{model.name}</h1>
         <p className="model-hero__id">{model.id}</p>
         {model.description ? (
-          <ModelDescription text={model.description} />
+          <Suspense fallback={null}>
+            <ModelDescription text={model.description} />
+          </Suspense>
         ) : null}
         <div className="model-hero__actions">
           <a
