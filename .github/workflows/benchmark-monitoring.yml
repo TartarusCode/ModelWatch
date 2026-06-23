@@ -1,0 +1,68 @@
+name: Benchmark monitoring
+
+on:
+  workflow_dispatch:
+    inputs:
+      job:
+        description: probe | discover
+        required: true
+        default: probe
+        type: choice
+        options:
+          - probe
+          - discover
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    if: inputs.job == 'probe'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.1.0
+        with:
+          version: "0.11.17"
+          enable-cache: true
+          activate-environment: true
+          cache-dependency-glob: |
+            uv.lock
+            pyproject.toml
+          prune-cache: false
+
+      - name: Sync Python dependencies
+        run: uv sync --frozen --no-dev
+
+      - name: Probe benchmark endpoints
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: uv run python -m modelwatch.api_health
+
+  discover:
+    if: inputs.job == 'discover'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.1.0
+        with:
+          version: "0.11.17"
+          enable-cache: true
+          activate-environment: true
+          cache-dependency-glob: |
+            uv.lock
+            pyproject.toml
+          prune-cache: false
+
+      - name: Sync Python dependencies
+        run: uv sync --frozen --extra discover
+
+      - name: Install Playwright Chromium
+        run: uv run playwright install chromium
+
+      - name: Discover benchmark URLs from OpenRouter pages
+        run: uv run python -m modelwatch.discover_benchmark_urls

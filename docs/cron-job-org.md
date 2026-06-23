@@ -87,6 +87,47 @@ Manual runs still work from GitHub → **Actions** → **Build and deploy** → 
 | Workflow not listed | PAT missing **Actions: Read and write** on this repo |
 | Duplicate runs | Remove any old GitHub `schedule` cron on the workflow (should already be removed) |
 
+Expected response: `204 No Content`.
+
+## 5. Benchmark monitoring jobs (optional)
+
+The **Benchmark monitoring** workflow (`.github/workflows/benchmark-monitoring.yml`) has two modes via the `job` input:
+
+| Cron job | Schedule | `job` input | Purpose |
+|----------|----------|-------------|---------|
+| `ModelWatch API probe` | Daily | `probe` | Hit configured benchmark URLs against probe slugs |
+| `ModelWatch URL discover` | Weekly | `discover` | Load OpenRouter model/compare pages; detect URL migrations |
+
+Use the same PAT and headers as the build job. Point the URL at:
+
+`https://api.github.com/repos/TartarusCode/ModelWatch/actions/workflows/benchmark-monitoring.yml/dispatches`
+
+**Probe body** (daily):
+
+```json
+{
+  "ref": "main",
+  "inputs": {
+    "job": "probe"
+  }
+}
+```
+
+**Discover body** (weekly):
+
+```json
+{
+  "ref": "main",
+  "inputs": {
+    "job": "discover"
+  }
+}
+```
+
+The build workflow also runs `modelwatch.check_build_health` after each data build — it fails if more than 50% of benchmark fetches error (blocks bad commits).
+
+**Probe slug maintenance:** update `PROBE_SLUGS` in `modelwatch/benchmark_health.py` when catalog models rotate off; pick slugs from live OpenRouter model or compare pages.
+
 ## curl reference
 
 ```bash

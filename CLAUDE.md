@@ -12,6 +12,12 @@ uv sync --extra dev
 uv run pytest
 uv run python -m modelwatch.build
 
+# Benchmark monitoring (optional)
+uv run python -m modelwatch.api_health
+uv run python -m modelwatch.check_build_health
+uv sync --extra discover && uv run playwright install chromium
+uv run python -m modelwatch.discover_benchmark_urls
+
 CI: `setup-uv` caches the uv package cache (`enable-cache`, `prune-cache: false`); invalidates on `uv.lock` / `pyproject.toml`. Uses system Python on `ubuntu-latest` (not `cache-python`). Build uses `uv sync --frozen --no-dev`.
 
 cd web
@@ -64,3 +70,4 @@ Implemented in `modelwatch/new_models.py`:
 - Overview **Bench profile** column shows the default AA profile label and `+N` when more exist; links to detail. Detail page picker switches profiles.
 - OpenAPI lists models API auth as required; unauthenticated fetch often works but key improves reliability.
 - Scheduled workflow commits data back to the default branch; ensure Actions has `contents: write`.
+- **Benchmark monitoring:** `benchmark-monitoring.yml` (daily `probe`, weekly `discover` via cron-job.org); `check_build_health` gates builds when `benchmark_errors / (model_count * 2) > 0.5`. Probe slugs in `modelwatch/benchmark_health.py` — refresh from OpenRouter model/compare pages when models leave the catalog. Discovery watches browser network requests, not page HTML.

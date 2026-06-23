@@ -39,6 +39,9 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: uv run python -m modelwatch.build
 
+      - name: Assert benchmark fetch health
+        run: uv run python -m modelwatch.check_build_health
+
       - name: Commit and push data updates
         run: |
           git config user.name "github-actions[bot]"

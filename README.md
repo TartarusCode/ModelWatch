@@ -24,6 +24,18 @@ Live site (after enabling Pages): [tartaruscode.github.io/ModelWatch](https://ta
 
 Data is fetched at **build time** (every ~30 minutes via [cron-job.org → GitHub Actions](docs/cron-job-org.md)), not in the browser.
 
+## Monitoring
+
+Three layers catch stale benchmark API URLs before bad data ships:
+
+| Layer | Command / workflow | When |
+|-------|-------------------|------|
+| Daily probe | `uv run python -m modelwatch.api_health` / **Benchmark monitoring** (`job: probe`) | cron-job.org daily |
+| Build gate | `uv run python -m modelwatch.check_build_health` | every build (in CI) |
+| URL discovery | `uv run python -m modelwatch.discover_benchmark_urls` / **Benchmark monitoring** (`job: discover`) | cron-job.org weekly |
+
+Discovery requires `uv sync --extra discover` and `playwright install chromium`. See [docs/cron-job-org.md](docs/cron-job-org.md).
+
 ## Local development
 
 ### Prerequisites
