@@ -1,6 +1,33 @@
 {
   "drops": [
     {
+      "detected_at": "2026-06-23T10:23:35.109809Z",
+      "field": "prompt",
+      "model_id": "nex-agi/nex-n2-pro",
+      "new_per_million_usd": "0.250000",
+      "old_per_million_usd": "0.500000",
+      "pct_drop": 0.5,
+      "saved_per_million_usd": "0.250000"
+    },
+    {
+      "detected_at": "2026-06-23T10:23:35.109809Z",
+      "field": "completion",
+      "model_id": "nex-agi/nex-n2-pro",
+      "new_per_million_usd": "1.000000",
+      "old_per_million_usd": "2.500000",
+      "pct_drop": 0.6,
+      "saved_per_million_usd": "1.500000"
+    },
+    {
+      "detected_at": "2026-06-23T10:23:35.109809Z",
+      "field": "input_cache_read",
+      "model_id": "nex-agi/nex-n2-pro",
+      "new_per_million_usd": "0.025000",
+      "old_per_million_usd": "0.250000",
+      "pct_drop": 0.9,
+      "saved_per_million_usd": "0.225000"
+    },
+    {
       "detected_at": "2026-06-22T16:18:00.390523Z",
       "field": "completion",
       "model_id": "z-ai/glm-5.2",
@@ -28,7 +55,7 @@
       "saved_per_million_usd": "0.186000"
     }
   ],
-  "generated_at": "2026-06-23T06:19:54.964265Z",
+  "generated_at": "2026-06-23T10:23:37.958120Z",
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05

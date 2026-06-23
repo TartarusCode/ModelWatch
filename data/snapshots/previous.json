@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T06:19:54.964265Z",
+  "generated_at": "2026-06-23T10:23:37.958120Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -8107,12 +8107,12 @@
       "id": "nex-agi/nex-n2-pro",
       "name": "Nex AGI: Nex-N2-Pro",
       "pricing": {
-        "completion": "0.0000025",
+        "completion": "0.000001",
         "image": null,
-        "input_cache_read": "0.00000025",
+        "input_cache_read": "0.000000025",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005",
+        "prompt": "0.00000025",
         "request": null,
         "web_search": null
       },
