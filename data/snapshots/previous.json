@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T16:15:08.792537Z",
+  "generated_at": "2026-06-23T18:16:22.004091Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -6418,12 +6418,12 @@
       "id": "minimax/minimax-m2.7",
       "name": "MiniMax: MiniMax M2.7",
       "pricing": {
-        "completion": "0.000001",
+        "completion": "0.00000096",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000025",
+        "prompt": "0.00000024",
         "request": null,
         "web_search": null
       },
@@ -6451,7 +6451,7 @@
       "top_provider": {
         "context_length": 196608,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 196608
       }
     },
     "minimax/minimax-m3": {

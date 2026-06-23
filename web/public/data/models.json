@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T16:15:04.531927Z",
+  "generated_at": "2026-06-23T18:16:19.111690Z",
   "models": [
     {
       "benchmarks": {
@@ -20850,12 +20850,12 @@
         "id": "minimax/minimax-m2.7",
         "name": "MiniMax: MiniMax M2.7",
         "pricing": {
-          "completion": "0.000001",
+          "completion": "0.00000096",
           "image": null,
-          "input_cache_read": "0.00000005",
+          "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.00000025",
+          "prompt": "0.00000024",
           "request": null,
           "web_search": null
         },
@@ -20883,7 +20883,7 @@
         "top_provider": {
           "context_length": 196608,
           "is_moderated": false,
-          "max_completion_tokens": 131072
+          "max_completion_tokens": 196608
         }
       }
     },
@@ -55135,25 +55135,6 @@
               "category": "python-pptxslides",
               "da_model_id": "glm-5v-turbo",
               "display_name": "GLM 5V Turbo",
-              "elo": 1169,
-              "elo_percentile": 33,
-              "first_place": 8831,
-              "fourth_place": 3128,
-              "last_updated_at": 1782216080542,
-              "openrouter_id": "z-ai/glm-5v-turbo",
-              "permaslug": "z-ai/glm-5v-turbo-20260401",
-              "provider": "zhipu",
-              "second_place": 9806,
-              "third_place": 4369,
-              "total_tournaments": 26134,
-              "win_rate": 52.6
-            },
-            {
-              "arena": "agents",
-              "avg_generation_time_ms": 858676,
-              "category": "python-pptxslides",
-              "da_model_id": "glm-5v-turbo",
-              "display_name": "GLM 5V Turbo",
               "elo": 1165,
               "elo_percentile": 30,
               "first_place": 8721,
@@ -55166,6 +55147,25 @@
               "third_place": 4294,
               "total_tournaments": 25809,
               "win_rate": 51.9
+            },
+            {
+              "arena": "agents",
+              "avg_generation_time_ms": 858676,
+              "category": "python-pptxslides",
+              "da_model_id": "glm-5v-turbo",
+              "display_name": "GLM 5V Turbo",
+              "elo": 1169,
+              "elo_percentile": 33,
+              "first_place": 8831,
+              "fourth_place": 3128,
+              "last_updated_at": 1782216080542,
+              "openrouter_id": "z-ai/glm-5v-turbo",
+              "permaslug": "z-ai/glm-5v-turbo-20260401",
+              "provider": "zhipu",
+              "second_place": 9806,
+              "third_place": 4369,
+              "total_tournaments": 26134,
+              "win_rate": 52.6
             },
             {
               "arena": "agents",
