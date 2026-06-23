@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T13:31:05.082443Z",
+  "generated_at": "2026-06-23T16:15:04.531927Z",
   "models": [
     {
       "benchmarks": {
@@ -10401,77 +10401,6 @@
     },
     {
       "benchmarks": {
-        "artificial_analysis": [],
-        "artificial_analysis_status": {
-          "error": null,
-          "status": "empty"
-        },
-        "artificial_analysis_summary": null,
-        "design_arena": null,
-        "design_arena_status": {
-          "error": null,
-          "status": "empty"
-        }
-      },
-      "model": {
-        "architecture": {
-          "input_modalities": [
-            "text"
-          ],
-          "instruct_type": null,
-          "modality": "text->text",
-          "output_modalities": [
-            "text"
-          ],
-          "tokenizer": "Other"
-        },
-        "canonical_slug": "essentialai/rnj-1-instruct",
-        "context_length": 32768,
-        "created": 1765094847,
-        "default_parameters": {
-          "frequency_penalty": null,
-          "temperature": null,
-          "top_p": null
-        },
-        "description": "Rnj-1 is an 8B-parameter, dense, open-weight model family developed by Essential AI and trained from scratch with a focus on programming, math, and scientific reasoning. The model demonstrates strong performance...",
-        "expiration_date": null,
-        "id": "essentialai/rnj-1-instruct",
-        "name": "EssentialAI: Rnj 1 Instruct",
-        "pricing": {
-          "completion": "0.00000015",
-          "image": null,
-          "input_cache_read": null,
-          "input_cache_write": null,
-          "internal_reasoning": null,
-          "prompt": "0.00000015",
-          "request": null,
-          "web_search": null
-        },
-        "supported_parameters": [
-          "frequency_penalty",
-          "logit_bias",
-          "max_tokens",
-          "min_p",
-          "presence_penalty",
-          "repetition_penalty",
-          "response_format",
-          "stop",
-          "structured_outputs",
-          "temperature",
-          "tool_choice",
-          "tools",
-          "top_k",
-          "top_p"
-        ],
-        "top_provider": {
-          "context_length": 32768,
-          "is_moderated": false,
-          "max_completion_tokens": null
-        }
-      }
-    },
-    {
-      "benchmarks": {
         "artificial_analysis": [
           {
             "aa_id": "6afbfb62-27e4-435e-9c85-d9fe1b92519e",
@@ -19507,14 +19436,13 @@
           "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.000000065",
+          "prompt": "0.00000007",
           "request": null,
           "web_search": null
         },
         "supported_parameters": [
           "frequency_penalty",
           "logit_bias",
-          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -19525,7 +19453,6 @@
           "structured_outputs",
           "temperature",
           "top_k",
-          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -49694,38 +49621,32 @@
         "id": "thedrummer/rocinante-12b",
         "name": "TheDrummer: Rocinante 12B",
         "pricing": {
-          "completion": "0.00000043",
+          "completion": "0.0000005",
           "image": null,
           "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.00000017",
+          "prompt": "0.00000025",
           "request": null,
           "web_search": null
         },
         "supported_parameters": [
           "frequency_penalty",
           "logit_bias",
-          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
           "repetition_penalty",
-          "response_format",
           "seed",
           "stop",
-          "structured_outputs",
           "temperature",
-          "tool_choice",
-          "tools",
           "top_k",
-          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
           "context_length": 32768,
           "is_moderated": false,
-          "max_completion_tokens": 32768
+          "max_completion_tokens": null
         }
       }
     },
@@ -55214,25 +55135,6 @@
               "category": "python-pptxslides",
               "da_model_id": "glm-5v-turbo",
               "display_name": "GLM 5V Turbo",
-              "elo": 1165,
-              "elo_percentile": 30,
-              "first_place": 8721,
-              "fourth_place": 3104,
-              "last_updated_at": 1782043280166,
-              "openrouter_id": "z-ai/glm-5v-turbo",
-              "permaslug": "z-ai/glm-5v-turbo-20260401",
-              "provider": "zhipu",
-              "second_place": 9690,
-              "third_place": 4294,
-              "total_tournaments": 25809,
-              "win_rate": 51.9
-            },
-            {
-              "arena": "agents",
-              "avg_generation_time_ms": 858676,
-              "category": "python-pptxslides",
-              "da_model_id": "glm-5v-turbo",
-              "display_name": "GLM 5V Turbo",
               "elo": 1169,
               "elo_percentile": 33,
               "first_place": 8831,
@@ -55245,6 +55147,25 @@
               "third_place": 4369,
               "total_tournaments": 26134,
               "win_rate": 52.6
+            },
+            {
+              "arena": "agents",
+              "avg_generation_time_ms": 858676,
+              "category": "python-pptxslides",
+              "da_model_id": "glm-5v-turbo",
+              "display_name": "GLM 5V Turbo",
+              "elo": 1165,
+              "elo_percentile": 30,
+              "first_place": 8721,
+              "fourth_place": 3104,
+              "last_updated_at": 1782043280166,
+              "openrouter_id": "z-ai/glm-5v-turbo",
+              "permaslug": "z-ai/glm-5v-turbo-20260401",
+              "provider": "zhipu",
+              "second_place": 9690,
+              "third_place": 4294,
+              "total_tournaments": 25809,
+              "win_rate": 51.9
             },
             {
               "arena": "agents",
