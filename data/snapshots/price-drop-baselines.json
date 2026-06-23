@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T20:47:43.069231Z",
+  "generated_at": "2026-06-23T22:00:24.773590Z",
   "models": {
     "moonshotai/kimi-k2.6": {
       "input_cache_read": "0.144000"
@@ -9,9 +9,12 @@
       "input_cache_read": "0.025000",
       "prompt": "0.250000"
     },
+    "z-ai/glm-5.1": {
+      "input_cache_read": "0.182000"
+    },
     "z-ai/glm-5.2": {
-      "completion": "3.080000",
-      "prompt": "0.980000"
+      "completion": "3.000000",
+      "prompt": "0.950000"
     }
   }
 }
