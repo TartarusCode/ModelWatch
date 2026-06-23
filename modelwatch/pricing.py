@@ -62,26 +62,32 @@ def _parse_per_token(value: str) -> Decimal | None:
         return None
 
 
-def detect_price_drops(
+def detect_price_drops_from_reference(
     model_id: str,
-    old_pricing: dict[str, str],
-    new_pricing: dict[str, str],
+    current_pricing: dict[str, str],
+    *,
+    reference_per_million: dict[str, Decimal],
+    baseline_per_million: dict[str, Decimal] | None = None,
     thresholds: PriceDropThresholds,
 ) -> list[PriceDrop]:
     drops: list[PriceDrop] = []
-    for field in pricing_fields_to_compare(old_pricing, new_pricing):
-        old_token = _parse_per_token(old_pricing[field])
-        new_token = _parse_per_token(new_pricing[field])
-        if old_token is None or new_token is None:
+    for field, reference in reference_per_million.items():
+        if field not in current_pricing:
             continue
-        if not _is_positive_price(old_token) or not _is_known_price(new_token):
+        if not _is_positive_price(reference):
             continue
-        if new_token >= old_token:
+        new_token = _parse_per_token(current_pricing[field])
+        if new_token is None or not _is_known_price(new_token):
             continue
-        old_per_million = old_token * Decimal(1_000_000)
         new_per_million = new_token * Decimal(1_000_000)
-        saved = old_per_million - new_per_million
-        pct_drop = saved / old_per_million
+        if new_per_million >= reference:
+            continue
+        if baseline_per_million is not None:
+            baseline = baseline_per_million.get(field)
+            if baseline is not None and new_per_million >= baseline:
+                continue
+        saved = reference - new_per_million
+        pct_drop = saved / reference
         if pct_drop < thresholds.min_pct:
             continue
         if saved < thresholds.min_saved_per_million_usd:
@@ -90,7 +96,7 @@ def detect_price_drops(
             PriceDrop(
                 model_id=model_id,
                 field=field,
-                old_per_million_usd=old_per_million,
+                old_per_million_usd=reference,
                 new_per_million_usd=new_per_million,
                 pct_drop=pct_drop,
                 saved_per_million_usd=saved,

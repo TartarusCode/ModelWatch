@@ -186,3 +186,10 @@ class PreviousSnapshot(BaseModel):
 
     generated_at: datetime
     models: dict[str, ModelSnapshot]
+
+
+class PriceDropBaselinesStore(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    generated_at: datetime
+    models: dict[str, dict[str, str]]

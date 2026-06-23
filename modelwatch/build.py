@@ -9,13 +9,20 @@ from pydantic import ValidationError
 from modelwatch.aa_scores import summarize_artificial_analysis
 from modelwatch.fetch import fetch_all_benchmarks, fetch_models_async
 from modelwatch.json_output import dump_model_line, write_model_json
-from modelwatch.history import merge_build_into_history, save_history
+from modelwatch.history import merge_build_into_history, save_history, load_history
 from modelwatch.new_models import (
     NEW_MODEL_LOOKBACK_HOURS,
     NewModelAddition,
     detect_new_models,
     load_new_model_events,
     models_in_last_hours,
+)
+from modelwatch.price_baselines import (
+    apply_drop_ratchet,
+    build_reference_per_million,
+    compute_moving_average_per_field,
+    load_baselines,
+    save_baselines,
 )
 from modelwatch.price_events import (
     DROP_LOOKBACK_HOURS,
@@ -25,7 +32,7 @@ from modelwatch.price_events import (
 from modelwatch.pricing import (
     PriceDrop,
     PriceDropThresholds,
-    detect_price_drops,
+    detect_price_drops_from_reference,
 )
 from modelwatch.stable_output import stabilize_enriched_models
 from modelwatch.schemas import (
@@ -270,19 +277,30 @@ async def run_build() -> None:
 
     previous = _load_previous()
     new_additions = detect_new_models(snapshots, previous=previous)
+    history = load_history()
+    baselines = load_baselines()
     all_drops: list[PriceDrop] = []
-    if previous is not None:
-        for model in snapshots:
-            old_model = previous.models.get(model.id)
-            if old_model is None:
-                continue
-            drops = detect_price_drops(
-                model_id=model.id,
-                old_pricing=_pricing_dict(old_model),
-                new_pricing=_pricing_dict(model),
-                thresholds=DEFAULT_THRESHOLDS,
-            )
-            all_drops.extend(drops)
+    for model in snapshots:
+        history_points = history.models.get(model.id, [])
+        moving_average = compute_moving_average_per_field(
+            history_points,
+            now=started,
+        )
+        if not moving_average:
+            continue
+        reference_per_million, baseline_per_million = build_reference_per_million(
+            moving_average=moving_average,
+            baselines=baselines,
+            model_id=model.id,
+        )
+        drops = detect_price_drops_from_reference(
+            model_id=model.id,
+            current_pricing=_pricing_dict(model),
+            reference_per_million=reference_per_million,
+            baseline_per_million=baseline_per_million or None,
+            thresholds=DEFAULT_THRESHOLDS,
+        )
+        all_drops.extend(drops)
 
     new_model_event_records = [
         _addition_to_event(addition, started) for addition in new_additions
@@ -291,6 +309,8 @@ async def run_build() -> None:
 
     event_records = [_drop_to_event(drop, started) for drop in all_drops]
     _append_price_events(event_records)
+    baselines = apply_drop_ratchet(baselines, all_drops, updated_at=started)
+    save_baselines(baselines)
 
     finished = datetime.now(UTC)
     all_events = load_price_events(EVENTS_PATH)

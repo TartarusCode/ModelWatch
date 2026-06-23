@@ -22,10 +22,12 @@ npm run build
 
 ## Price-drop rules
 
-Implemented in `modelwatch/pricing.py`:
+Implemented in `modelwatch/pricing.py` and `modelwatch/price_baselines.py`:
 
-- Compare shared pricing fields between snapshots.
-- Significant when **≥10%** drop **and** **≥$0.05/M** saved (USD per 1M tokens).
+- Compare current pricing to a **reference price** per model/field: `max(7-day moving average, ratchet baseline)`.
+- **7-day MA** is computed from `web/public/data/price-history.json` (time-based window, not snapshot count — handles irregular cron cadence). Requires **≥3 history points** in the window; otherwise skip detection for that model until enough data exists.
+- **Ratchet baseline** stored in `data/snapshots/price-drop-baselines.json`; updated only on confirmed drops (never raised on price increases). When a baseline exists, current price must be **strictly below** it to alert — prevents re-firing when price returns to a previously dropped level after a spike.
+- Significant when **≥10%** drop below reference **and** **≥$0.05/M** saved (USD per 1M tokens).
 - Events append to `web/public/data/price-events.jsonl` (max 500 lines).
 - `price-drops.json` lists drops from the last **24 hours** of events (30m builds); UI counts/banner match that window.
 - JSON artifacts use `modelwatch.json_output` (`sort_keys=True` at every object level) for stable git diffs.
@@ -54,7 +56,7 @@ Implemented in `modelwatch/new_models.py`:
 
 - OpenRouter uses per-token price `-1` for routers/variable pricing (e.g. `openrouter/auto`). Treat as "Varies", never multiply by 1M.
 - Price history in `web/public/data/price-history.json` — all `PRICING_FIELDS` (prompt, completion, cache read, etc.); one point per scheduled build per model (up to 500 points retained); UI shows columns/series only for fields with data.
-- First build has no `previous.json` → no price drops until the second run.
+- First build has no price history → no price drops until enough history points accumulate (≥3 within 7 days).
 - Most models return empty benchmark payloads; UI must handle `empty` status.
 - Benchmark APIs use **`canonical_slug`** (permaslug), not `model.id` (`:free` variants share one slug).
 - **Intelligence / Coding / Agentic** on OpenRouter compare come from `artificial-analysis-benchmarks` (`artificial_analysis_*_index` + `percentiles` for bar width). `frontend/stats/endpoint` is provider routing/latency stats, not AA indices.
