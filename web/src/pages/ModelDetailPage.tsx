@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { ArtificialAnalysisPanel } from "../components/ArtificialAnalysisPanel";
 import { DesignArenaPanel } from "../components/DesignArenaPanel";
+import { ModelDescription } from "../components/ModelDescription";
 import { PriceCell } from "../components/PriceCell";
 import { PriceHistoryPanel } from "../components/PriceHistoryPanel";
 import { ProviderBadge } from "../components/ProviderBadge";
@@ -69,7 +70,7 @@ export function ModelDetailPage({
         <h1 className="model-hero__title">{model.name}</h1>
         <p className="model-hero__id">{model.id}</p>
         {model.description ? (
-          <p className="model-hero__description">{model.description}</p>
+          <ModelDescription text={model.description} />
         ) : null}
         <div className="model-hero__actions">
           <a
