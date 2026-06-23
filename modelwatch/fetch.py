@@ -7,10 +7,10 @@ import httpx
 
 MODELS_URL = "https://openrouter.ai/api/v1/models"
 DESIGN_ARENA_URL = (
-    "https://openrouter.ai/api/internal/v1/design-arena-benchmarks"
+    "https://openrouter.ai/api/frontend/v1/private/design-arena-benchmarks"
 )
 ARTIFICIAL_ANALYSIS_URL = (
-    "https://openrouter.ai/api/internal/v1/artificial-analysis-benchmarks"
+    "https://openrouter.ai/api/frontend/v1/private/artificial-analysis-benchmarks"
 )
 
 DEFAULT_CONCURRENCY = 12

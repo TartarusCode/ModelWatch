@@ -19,8 +19,8 @@ Live site (after enabling Pages): [tartaruscode.github.io/ModelWatch](https://ta
 | Endpoint | Purpose |
 |----------|---------|
 | `GET https://openrouter.ai/api/v1/models` | Pricing, config, capabilities |
-| `GET https://openrouter.ai/api/internal/v1/design-arena-benchmarks?slug={id}` | Design Arena benchmarks |
-| `GET https://openrouter.ai/api/internal/v1/artificial-analysis-benchmarks?slug={id}` | Artificial Analysis benchmarks |
+| `GET https://openrouter.ai/api/frontend/v1/private/design-arena-benchmarks?slug={id}` | Design Arena benchmarks |
+| `GET https://openrouter.ai/api/frontend/v1/private/artificial-analysis-benchmarks?slug={id}` | Artificial Analysis benchmarks |
 
 Data is fetched at **build time** (every ~30 minutes via [cron-job.org → GitHub Actions](docs/cron-job-org.md)), not in the browser.
 
