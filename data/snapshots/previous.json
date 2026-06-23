@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T18:16:22.004091Z",
+  "generated_at": "2026-06-23T20:26:56.045215Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -7888,12 +7888,12 @@
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
       "pricing": {
-        "completion": "0.00000341",
+        "completion": "0.0000035",
         "image": null,
-        "input_cache_read": "0.000000144",
+        "input_cache_read": "0.00000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000068",
+        "prompt": "0.00000074",
         "request": null,
         "web_search": null
       },
@@ -7923,7 +7923,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 16384
       }
     },
     "morph/morph-v3-fast": {
