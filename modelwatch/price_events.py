@@ -1,6 +1,7 @@
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
+from modelwatch.model_filters import is_latest_alias_model_id
 from modelwatch.schemas import PriceDropRecord, PriceEventRecord
 
 DROP_LOOKBACK_HOURS = 24
@@ -42,6 +43,56 @@ def records_from_events(events: list[PriceEventRecord]) -> list[PriceDropRecord]
     ]
 
 
+def dedupe_drop_events_for_display(
+    events: list[PriceEventRecord],
+) -> list[PriceEventRecord]:
+    latest_by_key: dict[tuple[str, str], PriceEventRecord] = {}
+    for event in events:
+        key = (event.model_id, event.field)
+        current = latest_by_key.get(key)
+        if current is None or event.detected_at > current.detected_at:
+            latest_by_key[key] = event
+    return sorted(
+        latest_by_key.values(),
+        key=lambda event: event.detected_at,
+        reverse=True,
+    )
+
+
+def dedupe_settled_price_re_alerts(
+    events: list[PriceEventRecord],
+) -> list[PriceEventRecord]:
+    settled_by_key: dict[tuple[str, str], str] = {}
+    kept: list[PriceEventRecord] = []
+    for event in sorted(events, key=lambda item: item.detected_at):
+        key = (event.model_id, event.field)
+        if settled_by_key.get(key) == event.new_per_million_usd:
+            continue
+        settled_by_key[key] = event.new_per_million_usd
+        kept.append(event)
+    return kept
+
+
+def filter_redundant_drop_events(
+    incoming: list[PriceEventRecord],
+    *,
+    existing: list[PriceEventRecord],
+) -> list[PriceEventRecord]:
+    latest_by_key: dict[tuple[str, str], PriceEventRecord] = {}
+    for event in existing:
+        key = (event.model_id, event.field)
+        current = latest_by_key.get(key)
+        if current is None or event.detected_at > current.detected_at:
+            latest_by_key[key] = event
+    return [
+        event
+        for event in incoming
+        if latest_by_key.get((event.model_id, event.field)) is None
+        or latest_by_key[(event.model_id, event.field)].new_per_million_usd
+        != event.new_per_million_usd
+    ]
+
+
 def drops_in_last_hours(
     events: list[PriceEventRecord],
     hours: int,
@@ -49,5 +100,10 @@ def drops_in_last_hours(
     now: datetime,
 ) -> list[PriceDropRecord]:
     recent = events_in_last_hours(events, hours, now=now)
-    sorted_events = sorted(recent, key=lambda event: event.detected_at, reverse=True)
-    return records_from_events(sorted_events)
+    filtered = [
+        event
+        for event in recent
+        if not is_latest_alias_model_id(event.model_id)
+    ]
+    deduped = dedupe_drop_events_for_display(filtered)
+    return records_from_events(deduped)

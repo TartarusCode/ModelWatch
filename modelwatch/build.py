@@ -28,6 +28,7 @@ from modelwatch.price_baselines import (
 from modelwatch.price_events import (
     DROP_LOOKBACK_HOURS,
     drops_in_last_hours,
+    filter_redundant_drop_events,
     load_price_events,
 )
 from modelwatch.pricing import (
@@ -309,6 +310,11 @@ async def run_build() -> None:
     _append_new_model_events(new_model_event_records)
 
     event_records = [_drop_to_event(drop, started) for drop in all_drops]
+    existing_events = load_price_events(EVENTS_PATH)
+    event_records = filter_redundant_drop_events(
+        event_records,
+        existing=existing_events,
+    )
     _append_price_events(event_records)
     baselines = apply_drop_ratchet(baselines, all_drops, updated_at=started)
     save_baselines(baselines)

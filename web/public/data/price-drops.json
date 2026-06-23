@@ -10,60 +10,6 @@
       "saved_per_million_usd": "0.209655"
     },
     {
-      "detected_at": "2026-06-23T20:25:31.397447Z",
-      "field": "completion",
-      "model_id": "z-ai/glm-5.2",
-      "new_per_million_usd": "3.080000",
-      "old_per_million_usd": "3.972414",
-      "pct_drop": 0.22465277777777778,
-      "saved_per_million_usd": "0.892414"
-    },
-    {
-      "detected_at": "2026-06-23T20:25:31.397447Z",
-      "field": "prompt",
-      "model_id": "nex-agi/nex-n2-pro",
-      "new_per_million_usd": "0.250000",
-      "old_per_million_usd": "0.416667",
-      "pct_drop": 0.4,
-      "saved_per_million_usd": "0.166667"
-    },
-    {
-      "detected_at": "2026-06-23T20:25:31.397447Z",
-      "field": "completion",
-      "model_id": "nex-agi/nex-n2-pro",
-      "new_per_million_usd": "1.000000",
-      "old_per_million_usd": "2.000000",
-      "pct_drop": 0.5,
-      "saved_per_million_usd": "1.000000"
-    },
-    {
-      "detected_at": "2026-06-23T20:25:31.397447Z",
-      "field": "input_cache_read",
-      "model_id": "nex-agi/nex-n2-pro",
-      "new_per_million_usd": "0.025000",
-      "old_per_million_usd": "0.175000",
-      "pct_drop": 0.8571428571428571,
-      "saved_per_million_usd": "0.150000"
-    },
-    {
-      "detected_at": "2026-06-23T20:25:31.397447Z",
-      "field": "input_cache_read",
-      "model_id": "~moonshotai/kimi-latest",
-      "new_per_million_usd": "0.144000",
-      "old_per_million_usd": "0.270414",
-      "pct_drop": 0.46748278500382556,
-      "saved_per_million_usd": "0.126414"
-    },
-    {
-      "detected_at": "2026-06-23T20:25:31.397447Z",
-      "field": "input_cache_read",
-      "model_id": "moonshotai/kimi-k2.6",
-      "new_per_million_usd": "0.144000",
-      "old_per_million_usd": "0.270414",
-      "pct_drop": 0.46748278500382556,
-      "saved_per_million_usd": "0.126414"
-    },
-    {
       "detected_at": "2026-06-23T10:23:35.109809Z",
       "field": "prompt",
       "model_id": "nex-agi/nex-n2-pro",
@@ -91,7 +37,7 @@
       "saved_per_million_usd": "0.225000"
     }
   ],
-  "generated_at": "2026-06-23T20:36:44.873796Z",
+  "generated_at": "2026-06-23T20:49:43.036057Z",
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05

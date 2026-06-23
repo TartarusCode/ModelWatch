@@ -1,0 +1,159 @@
+from datetime import UTC, datetime
+from decimal import Decimal
+from pathlib import Path
+
+from modelwatch.json_output import dump_model_line, write_model_json
+from modelwatch.model_filters import is_latest_alias_model_id
+from modelwatch.new_models import (
+    load_new_model_events,
+)
+from modelwatch.price_baselines import load_baselines, save_baselines
+from modelwatch.price_events import (
+    DROP_LOOKBACK_HOURS,
+    dedupe_settled_price_re_alerts,
+    drops_in_last_hours,
+    load_price_events,
+)
+from modelwatch.history import load_history, save_history
+from modelwatch.pricing import PriceDropThresholds
+from modelwatch.schemas import (
+    NewModelEventRecord,
+    PriceDropsOutput,
+    PriceDropThresholdsOutput,
+    PriceEventRecord,
+)
+
+DEFAULT_THRESHOLDS = PriceDropThresholds(
+    min_pct=Decimal("0.10"),
+    min_saved_per_million_usd=Decimal("0.05"),
+)
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = ROOT / "web" / "public" / "data"
+EVENTS_PATH = DATA_DIR / "price-events.jsonl"
+NEW_MODEL_EVENTS_PATH = DATA_DIR / "new-model-events.jsonl"
+PRICE_DROPS_PATH = DATA_DIR / "price-drops.json"
+BASELINES_PATH = ROOT / "data" / "snapshots" / "price-drop-baselines.json"
+
+
+def filter_price_events(events: list[PriceEventRecord]) -> list[PriceEventRecord]:
+    return [
+        event for event in events if not is_latest_alias_model_id(event.model_id)
+    ]
+
+
+def filter_new_model_events(
+    events: list[NewModelEventRecord],
+) -> list[NewModelEventRecord]:
+    return [
+        event for event in events if not is_latest_alias_model_id(event.model_id)
+    ]
+
+
+def write_jsonl_events(path: Path, lines: list[str]) -> None:
+    path.write_text("\n".join(lines) + ("\n" if lines else ""), encoding="utf-8")
+
+
+def clean_price_events_file(path: Path = EVENTS_PATH) -> int:
+    events = load_price_events(path)
+    kept = dedupe_settled_price_re_alerts(filter_price_events(events))
+    removed = len(events) - len(kept)
+    if removed:
+        write_jsonl_events(path, [dump_model_line(event) for event in kept])
+    return removed
+
+
+def clean_new_model_events_file(path: Path = NEW_MODEL_EVENTS_PATH) -> int:
+    events = load_new_model_events(path)
+    kept = filter_new_model_events(events)
+    removed = len(events) - len(kept)
+    if removed:
+        write_jsonl_events(path, [dump_model_line(event) for event in kept])
+    return removed
+
+
+def clean_price_history() -> int:
+    store = load_history()
+    kept_models = {
+        model_id: points
+        for model_id, points in store.models.items()
+        if not is_latest_alias_model_id(model_id)
+    }
+    removed = len(store.models) - len(kept_models)
+    if removed:
+        save_history(
+            store.model_copy(
+                update={
+                    "generated_at": datetime.now(UTC),
+                    "models": kept_models,
+                },
+            ),
+        )
+    return removed
+
+
+def clean_price_drop_baselines() -> int:
+    store = load_baselines()
+    kept_models = {
+        model_id: fields
+        for model_id, fields in store.models.items()
+        if not is_latest_alias_model_id(model_id)
+    }
+    removed = len(store.models) - len(kept_models)
+    if removed:
+        save_baselines(
+            store.model_copy(
+                update={
+                    "generated_at": datetime.now(UTC),
+                    "models": kept_models,
+                },
+            ),
+        )
+    return removed
+
+
+def rebuild_price_drops_output(
+    *,
+    now: datetime | None = None,
+    path: Path = PRICE_DROPS_PATH,
+) -> PriceDropsOutput:
+    finished = now or datetime.now(UTC)
+    events = load_price_events(EVENTS_PATH)
+    drop_records = drops_in_last_hours(
+        events,
+        DROP_LOOKBACK_HOURS,
+        now=finished,
+    )
+    output = PriceDropsOutput(
+        generated_at=finished,
+        window_hours=DROP_LOOKBACK_HOURS,
+        thresholds=PriceDropThresholdsOutput(
+            min_pct=float(DEFAULT_THRESHOLDS.min_pct),
+            min_saved_per_million_usd=float(
+                DEFAULT_THRESHOLDS.min_saved_per_million_usd
+            ),
+        ),
+        drops=drop_records,
+    )
+    write_model_json(path, output)
+    return output
+
+
+def clean_alias_artifacts() -> dict[str, int]:
+    return {
+        "price_events_removed": clean_price_events_file(),
+        "new_model_events_removed": clean_new_model_events_file(),
+        "price_history_models_removed": clean_price_history(),
+        "baseline_models_removed": clean_price_drop_baselines(),
+    }
+
+
+def main() -> None:
+    counts = clean_alias_artifacts()
+    output = rebuild_price_drops_output()
+    print(counts)
+    print(f"price_drops_count={len(output.drops)}")
+
+
+if __name__ == "__main__":
+    main()
