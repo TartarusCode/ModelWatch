@@ -22,7 +22,7 @@ Live site (after enabling Pages): [tartaruscode.github.io/ModelWatch](https://ta
 | `GET https://openrouter.ai/api/internal/v1/design-arena-benchmarks?slug={id}` | Design Arena benchmarks |
 | `GET https://openrouter.ai/api/internal/v1/artificial-analysis-benchmarks?slug={id}` | Artificial Analysis benchmarks |
 
-Data is fetched at **build time** (GitHub Actions every 30 minutes), not in the browser.
+Data is fetched at **build time** (every ~30 minutes via [cron-job.org → GitHub Actions](docs/cron-job-org.md)), not in the browser.
 
 ## Local development
 
@@ -62,7 +62,7 @@ uv run pytest
 1. Clone or push to [TartarusCode/ModelWatch](https://github.com/TartarusCode/ModelWatch) (repo name must stay `ModelWatch` for the configured Pages base path, or update `base` in `web/vite.config.ts`).
 2. **Settings → Pages → Build and deployment → GitHub Actions**.
 3. Optionally add repository secret `OPENROUTER_API_KEY`.
-4. Run the **Build and deploy** workflow manually or wait for the 30-minute schedule.
+4. Configure [external cron (cron-job.org)](docs/cron-job-org.md) or run the **Build and deploy** workflow manually.
 
 The workflow:
 
@@ -75,7 +75,8 @@ The workflow:
 modelwatch/          Python fetch + price-diff pipeline
 web/                 Vite + React SPA
 data/snapshots/      Previous pricing snapshot for diffs
-.github/workflows/   Scheduled build + deploy
+.github/workflows/   workflow_dispatch build + deploy (cron via cron-job.org)
+docs/                Setup guides (external cron)
 ```
 
 ## Disclaimer

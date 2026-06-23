@@ -49,7 +49,7 @@ Implemented in `modelwatch/new_models.py`:
 - Vite `base` is `/ModelWatch/` — change in `web/vite.config.ts` if the repo is renamed.
 - SPA deep links: `web/public/404.html` + redirect snippet in `index.html` (rafgraph/spa-github-pages) so `/drops` and `/new` reload work on GitHub Pages.
 - Enable Pages: **Settings → Pages → Source: GitHub Actions**.
-- Scheduled builds target every ~30 minutes (`17,47 * * * *` UTC). GitHub Actions schedules are best-effort; `:00`/`:30` crons queue behind global load and often run ~hourly — use odd minute offsets.
+- Builds are dispatched every ~30 minutes by [cron-job.org](https://cron-job.org) calling `workflow_dispatch` on `.github/workflows/build-and-deploy.yml` — see [docs/cron-job-org.md](docs/cron-job-org.md). GitHub's native `schedule` cron was removed (best-effort, often only 6–7 runs/day).
 - Optional secret: `OPENROUTER_API_KEY` for authenticated models API calls.
 
 ## Gotchas
