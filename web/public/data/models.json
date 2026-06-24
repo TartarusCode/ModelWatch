@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T05:00:26.426919Z",
+  "generated_at": "2026-06-24T05:30:21.906287Z",
   "models": [
     {
       "benchmarks": {
@@ -3965,25 +3965,6 @@
               "category": "python-pptxslides",
               "da_model_id": "claude-opus-4-7-thinking",
               "display_name": "Claude Opus 4.7 (Thinking)",
-              "elo": 1336,
-              "elo_percentile": 80,
-              "first_place": 7126,
-              "fourth_place": 713,
-              "last_updated_at": 1782043280166,
-              "openrouter_id": "anthropic/claude-opus-4.7",
-              "permaslug": "anthropic/claude-4.7-opus-20260416",
-              "provider": "anthropic",
-              "second_place": 4910,
-              "third_place": 1735,
-              "total_tournaments": 14484,
-              "win_rate": 63.1
-            },
-            {
-              "arena": "agents",
-              "avg_generation_time_ms": 396694,
-              "category": "python-pptxslides",
-              "da_model_id": "claude-opus-4-7-thinking",
-              "display_name": "Claude Opus 4.7 (Thinking)",
               "elo": 1332,
               "elo_percentile": 78,
               "first_place": 7251,
@@ -3996,6 +3977,25 @@
               "third_place": 1788,
               "total_tournaments": 14757,
               "win_rate": 63
+            },
+            {
+              "arena": "agents",
+              "avg_generation_time_ms": 396694,
+              "category": "python-pptxslides",
+              "da_model_id": "claude-opus-4-7-thinking",
+              "display_name": "Claude Opus 4.7 (Thinking)",
+              "elo": 1336,
+              "elo_percentile": 80,
+              "first_place": 7126,
+              "fourth_place": 713,
+              "last_updated_at": 1782043280166,
+              "openrouter_id": "anthropic/claude-opus-4.7",
+              "permaslug": "anthropic/claude-4.7-opus-20260416",
+              "provider": "anthropic",
+              "second_place": 4910,
+              "third_place": 1735,
+              "total_tournaments": 14484,
+              "win_rate": 63.1
             },
             {
               "arena": "agents",
@@ -14419,25 +14419,6 @@
               "category": "python-pptxslides",
               "da_model_id": "gemini-3.1-pro-preview",
               "display_name": "Gemini 3.1 Pro Preview",
-              "elo": 1109,
-              "elo_percentile": 10,
-              "first_place": 13128,
-              "fourth_place": 2144,
-              "last_updated_at": 1782043280166,
-              "openrouter_id": "google/gemini-3.1-pro-preview",
-              "permaslug": "google/gemini-3.1-pro-preview-20260219",
-              "provider": "google",
-              "second_place": 12422,
-              "third_place": 3876,
-              "total_tournaments": 31570,
-              "win_rate": 31.9
-            },
-            {
-              "arena": "agents",
-              "avg_generation_time_ms": 289953,
-              "category": "python-pptxslides",
-              "da_model_id": "gemini-3.1-pro-preview",
-              "display_name": "Gemini 3.1 Pro Preview",
               "elo": 1105,
               "elo_percentile": 11,
               "first_place": 13300,
@@ -14450,6 +14431,25 @@
               "third_place": 3956,
               "total_tournaments": 32012,
               "win_rate": 31.7
+            },
+            {
+              "arena": "agents",
+              "avg_generation_time_ms": 289953,
+              "category": "python-pptxslides",
+              "da_model_id": "gemini-3.1-pro-preview",
+              "display_name": "Gemini 3.1 Pro Preview",
+              "elo": 1109,
+              "elo_percentile": 10,
+              "first_place": 13128,
+              "fourth_place": 2144,
+              "last_updated_at": 1782043280166,
+              "openrouter_id": "google/gemini-3.1-pro-preview",
+              "permaslug": "google/gemini-3.1-pro-preview-20260219",
+              "provider": "google",
+              "second_place": 12422,
+              "third_place": 3876,
+              "total_tournaments": 31570,
+              "win_rate": 31.9
             },
             {
               "arena": "agents",
@@ -15203,25 +15203,6 @@
               "category": "python-pptxslides",
               "da_model_id": "gemini-3.5-flash",
               "display_name": "Gemini 3.5 Flash",
-              "elo": 1247,
-              "elo_percentile": 50,
-              "first_place": 11043,
-              "fourth_place": 625,
-              "last_updated_at": 1782043280166,
-              "openrouter_id": "google/gemini-3.5-flash",
-              "permaslug": "google/gemini-3.5-flash-20260519",
-              "provider": "google",
-              "second_place": 9205,
-              "third_place": 1281,
-              "total_tournaments": 22154,
-              "win_rate": 57.4
-            },
-            {
-              "arena": "agents",
-              "avg_generation_time_ms": 304776,
-              "category": "python-pptxslides",
-              "da_model_id": "gemini-3.5-flash",
-              "display_name": "Gemini 3.5 Flash",
               "elo": 1245,
               "elo_percentile": 56,
               "first_place": 11204,
@@ -15234,6 +15215,25 @@
               "third_place": 1357,
               "total_tournaments": 22554,
               "win_rate": 57.3
+            },
+            {
+              "arena": "agents",
+              "avg_generation_time_ms": 304776,
+              "category": "python-pptxslides",
+              "da_model_id": "gemini-3.5-flash",
+              "display_name": "Gemini 3.5 Flash",
+              "elo": 1247,
+              "elo_percentile": 50,
+              "first_place": 11043,
+              "fourth_place": 625,
+              "last_updated_at": 1782043280166,
+              "openrouter_id": "google/gemini-3.5-flash",
+              "permaslug": "google/gemini-3.5-flash-20260519",
+              "provider": "google",
+              "second_place": 9205,
+              "third_place": 1281,
+              "total_tournaments": 22154,
+              "win_rate": 57.4
             },
             {
               "arena": "agents",
@@ -48621,7 +48621,7 @@
         "top_provider": {
           "context_length": 1000000,
           "is_moderated": false,
-          "max_completion_tokens": 256000
+          "max_completion_tokens": 128000
         }
       }
     },
