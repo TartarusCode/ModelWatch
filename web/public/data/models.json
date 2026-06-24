@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T17:30:23.409431Z",
+  "generated_at": "2026-06-24T18:00:30.441875Z",
   "models": [
     {
       "benchmarks": {
@@ -3965,25 +3965,6 @@
               "category": "python-pptxslides",
               "da_model_id": "claude-opus-4-7-thinking",
               "display_name": "Claude Opus 4.7 (Thinking)",
-              "elo": 1336,
-              "elo_percentile": 80,
-              "first_place": 7126,
-              "fourth_place": 713,
-              "last_updated_at": 1782043280166,
-              "openrouter_id": "anthropic/claude-opus-4.7",
-              "permaslug": "anthropic/claude-4.7-opus-20260416",
-              "provider": "anthropic",
-              "second_place": 4910,
-              "third_place": 1735,
-              "total_tournaments": 14484,
-              "win_rate": 63.1
-            },
-            {
-              "arena": "agents",
-              "avg_generation_time_ms": 396694,
-              "category": "python-pptxslides",
-              "da_model_id": "claude-opus-4-7-thinking",
-              "display_name": "Claude Opus 4.7 (Thinking)",
               "elo": 1330,
               "elo_percentile": 80,
               "first_place": 7255,
@@ -3996,6 +3977,25 @@
               "third_place": 1790,
               "total_tournaments": 14799,
               "win_rate": 62.9
+            },
+            {
+              "arena": "agents",
+              "avg_generation_time_ms": 396694,
+              "category": "python-pptxslides",
+              "da_model_id": "claude-opus-4-7-thinking",
+              "display_name": "Claude Opus 4.7 (Thinking)",
+              "elo": 1336,
+              "elo_percentile": 80,
+              "first_place": 7126,
+              "fourth_place": 713,
+              "last_updated_at": 1782043280166,
+              "openrouter_id": "anthropic/claude-opus-4.7",
+              "permaslug": "anthropic/claude-4.7-opus-20260416",
+              "provider": "anthropic",
+              "second_place": 4910,
+              "third_place": 1735,
+              "total_tournaments": 14484,
+              "win_rate": 63.1
             },
             {
               "arena": "agents",
