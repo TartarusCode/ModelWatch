@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T13:00:29.954122Z",
+  "generated_at": "2026-06-24T13:30:22.709922Z",
   "models": [
     {
       "benchmarks": {
@@ -11391,7 +11391,7 @@
         "top_provider": {
           "context_length": 32768,
           "is_moderated": false,
-          "max_completion_tokens": 32768
+          "max_completion_tokens": 8192
         }
       }
     },
@@ -13201,9 +13201,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 131072,
+          "context_length": 65536,
           "is_moderated": false,
-          "max_completion_tokens": 32768
+          "max_completion_tokens": 65536
         }
       }
     },
@@ -24654,7 +24654,7 @@
         "pricing": {
           "completion": "0.0000025",
           "image": null,
-          "input_cache_read": "0.0000006",
+          "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.0000006",
@@ -46241,7 +46241,7 @@
         "pricing": {
           "completion": "0.000001",
           "image": null,
-          "input_cache_read": "0.00000005",
+          "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.00000014",
@@ -46272,7 +46272,7 @@
         "top_provider": {
           "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": 81920
+          "max_completion_tokens": 262144
         }
       }
     },
@@ -54602,7 +54602,7 @@
         "pricing": {
           "completion": "0.00000308",
           "image": null,
-          "input_cache_read": "0.000000182",
+          "input_cache_read": "0.00000049",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.00000098",
@@ -54635,7 +54635,7 @@
         "top_provider": {
           "context_length": 202752,
           "is_moderated": false,
-          "max_completion_tokens": null
+          "max_completion_tokens": 65535
         }
       }
     },
