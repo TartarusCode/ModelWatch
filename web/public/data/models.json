@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T23:30:20.951188Z",
+  "generated_at": "2026-06-24T00:00:30.811988Z",
   "models": [
     {
       "benchmarks": {
@@ -2494,7 +2494,7 @@
         ],
         "top_provider": {
           "context_length": 200000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 32000
         }
       }
@@ -3927,25 +3927,6 @@
               "category": "python-pptxslides",
               "da_model_id": "claude-opus-4-7",
               "display_name": "Claude Opus 4.7",
-              "elo": 1351,
-              "elo_percentile": 90,
-              "first_place": 7794,
-              "fourth_place": 909,
-              "last_updated_at": 1782043280166,
-              "openrouter_id": "anthropic/claude-opus-4.7",
-              "permaslug": "anthropic/claude-4.7-opus-20260416",
-              "provider": "anthropic",
-              "second_place": 5579,
-              "third_place": 2205,
-              "total_tournaments": 16487,
-              "win_rate": 66.3
-            },
-            {
-              "arena": "agents",
-              "avg_generation_time_ms": 508419,
-              "category": "python-pptxslides",
-              "da_model_id": "claude-opus-4-7",
-              "display_name": "Claude Opus 4.7",
               "elo": 1347,
               "elo_percentile": 89,
               "first_place": 7905,
@@ -3961,22 +3942,22 @@
             },
             {
               "arena": "agents",
-              "avg_generation_time_ms": 396694,
+              "avg_generation_time_ms": 508419,
               "category": "python-pptxslides",
-              "da_model_id": "claude-opus-4-7-thinking",
-              "display_name": "Claude Opus 4.7 (Thinking)",
-              "elo": 1331,
-              "elo_percentile": 78,
-              "first_place": 7215,
-              "fourth_place": 725,
-              "last_updated_at": 1782216080542,
+              "da_model_id": "claude-opus-4-7",
+              "display_name": "Claude Opus 4.7",
+              "elo": 1351,
+              "elo_percentile": 90,
+              "first_place": 7794,
+              "fourth_place": 909,
+              "last_updated_at": 1782043280166,
               "openrouter_id": "anthropic/claude-opus-4.7",
               "permaslug": "anthropic/claude-4.7-opus-20260416",
               "provider": "anthropic",
-              "second_place": 4964,
-              "third_place": 1788,
-              "total_tournaments": 14692,
-              "win_rate": 63
+              "second_place": 5579,
+              "third_place": 2205,
+              "total_tournaments": 16487,
+              "win_rate": 66.3
             },
             {
               "arena": "agents",
@@ -3996,6 +3977,25 @@
               "third_place": 1735,
               "total_tournaments": 14484,
               "win_rate": 63.1
+            },
+            {
+              "arena": "agents",
+              "avg_generation_time_ms": 396694,
+              "category": "python-pptxslides",
+              "da_model_id": "claude-opus-4-7-thinking",
+              "display_name": "Claude Opus 4.7 (Thinking)",
+              "elo": 1331,
+              "elo_percentile": 78,
+              "first_place": 7215,
+              "fourth_place": 725,
+              "last_updated_at": 1782216080542,
+              "openrouter_id": "anthropic/claude-opus-4.7",
+              "permaslug": "anthropic/claude-4.7-opus-20260416",
+              "provider": "anthropic",
+              "second_place": 4964,
+              "third_place": 1788,
+              "total_tournaments": 14692,
+              "win_rate": 63
             },
             {
               "arena": "agents",
@@ -4398,7 +4398,7 @@
         ],
         "top_provider": {
           "context_length": 1000000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 128000
         }
       }
@@ -4970,7 +4970,7 @@
         ],
         "top_provider": {
           "context_length": 1000000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 128000
         }
       }
@@ -5940,7 +5940,7 @@
         ],
         "top_provider": {
           "context_length": 1000000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 64000
         }
       }
@@ -8094,7 +8094,6 @@
         "supported_parameters": [
           "frequency_penalty",
           "logit_bias",
-          "logprobs",
           "max_tokens",
           "min_p",
           "presence_penalty",
@@ -8107,7 +8106,6 @@
           "tool_choice",
           "tools",
           "top_k",
-          "top_logprobs",
           "top_p"
         ],
         "top_provider": {
@@ -10877,10 +10875,10 @@
             "aa_name": "Nano Banana (Gemini 2.5 Flash Image)",
             "aa_slug": "google_gemini-2-5-flash",
             "benchmark_data": {
-              "appearances": 10594,
+              "appearances": 10600,
               "categories": [
                 {
-                  "appearances": 4100,
+                  "appearances": 4101,
                   "ci95": "-14/14",
                   "elo": 1186,
                   "format_category": null,
@@ -10896,17 +10894,17 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1251,
+                  "appearances": 1252,
                   "ci95": "-28/28",
-                  "elo": 1193,
+                  "elo": 1192,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Portraits"
                 },
                 {
-                  "appearances": 877,
+                  "appearances": 878,
                   "ci95": "-32/32",
-                  "elo": 1146,
+                  "elo": 1144,
                   "format_category": null,
                   "style_category": "Anime",
                   "subject_matter_category": null
@@ -10920,17 +10918,17 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1877,
+                  "appearances": 1880,
                   "ci95": "-20/20",
-                  "elo": 1159,
+                  "elo": 1158,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 4685,
+                  "appearances": 4687,
                   "ci95": "-13/13",
-                  "elo": 1203,
+                  "elo": 1202,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -10938,23 +10936,23 @@
                 {
                   "appearances": 110,
                   "ci95": "-58/58",
-                  "elo": 1150,
+                  "elo": 1151,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1167,
+                  "appearances": 1169,
                   "ci95": "-26/26",
-                  "elo": 1144,
+                  "elo": 1139,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1233,
+                  "appearances": 1234,
                   "ci95": "-23/23",
-                  "elo": 1144,
+                  "elo": 1145,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -10968,9 +10966,9 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2026,
+                  "appearances": 2028,
                   "ci95": "-18/18",
-                  "elo": 1153,
+                  "elo": 1151,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -10986,7 +10984,7 @@
                 {
                   "appearances": 1384,
                   "ci95": "-23/23",
-                  "elo": 1150,
+                  "elo": 1151,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Physical Spaces"
@@ -10994,13 +10992,13 @@
                 {
                   "appearances": 949,
                   "ci95": "-29/29",
-                  "elo": 1176,
+                  "elo": 1175,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2928,
+                  "appearances": 2930,
                   "ci95": "-16/16",
                   "elo": 1149,
                   "format_category": null,
@@ -11008,17 +11006,17 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1600,
+                  "appearances": 1601,
                   "ci95": "-23/23",
-                  "elo": 1205,
+                  "elo": 1203,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2003,
+                  "appearances": 2004,
                   "ci95": "-18/18",
-                  "elo": 1146,
+                  "elo": 1147,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -11034,21 +11032,21 @@
                 {
                   "appearances": 993,
                   "ci95": "-27/27",
-                  "elo": 1136,
+                  "elo": 1134,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2515,
+                  "appearances": 2517,
                   "ci95": "-18/18",
-                  "elo": 1158,
+                  "elo": 1157,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 580,
+                  "appearances": 582,
                   "ci95": "-36/36",
                   "elo": 1136,
                   "format_category": null,
@@ -11064,15 +11062,15 @@
                   "subject_matter_category": "Nature & Landscapes"
                 },
                 {
-                  "appearances": 655,
+                  "appearances": 656,
                   "ci95": "-35/35",
-                  "elo": 1151,
+                  "elo": 1149,
                   "format_category": null,
                   "style_category": "Vintage & Retro",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1551,
+                  "appearances": 1552,
                   "ci95": "-23/23",
                   "elo": 1184,
                   "format_category": null,
@@ -11080,15 +11078,15 @@
                   "subject_matter_category": "Fantasy & Mythical"
                 },
                 {
-                  "appearances": 4325,
+                  "appearances": 4326,
                   "ci95": "-13/13",
-                  "elo": 1178,
+                  "elo": 1177,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 6572,
+                  "appearances": 6574,
                   "ci95": "-11/11",
                   "elo": 1167,
                   "format_category": null,
@@ -11098,7 +11096,7 @@
                 {
                   "appearances": 491,
                   "ci95": "-36/36",
-                  "elo": 1150,
+                  "elo": 1153,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "UI/UX Design"
@@ -11112,7 +11110,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 755,
+                  "appearances": 756,
                   "ci95": "-31/31",
                   "elo": 1128,
                   "format_category": null,
@@ -11128,7 +11126,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2914,
+                  "appearances": 2915,
                   "ci95": "-17/17",
                   "elo": 1199,
                   "format_category": null,
@@ -11136,9 +11134,9 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 5707,
+                  "appearances": 5710,
                   "ci95": "-12/12",
-                  "elo": 1153,
+                  "elo": 1152,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -11146,37 +11144,37 @@
                 {
                   "appearances": 681,
                   "ci95": "-33/33",
-                  "elo": 1162,
+                  "elo": 1161,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 746,
+                  "appearances": 747,
                   "ci95": "-35/35",
-                  "elo": 1244,
+                  "elo": 1243,
                   "format_category": null,
                   "style_category": "Traditional Art",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2984,
+                  "appearances": 2987,
                   "ci95": "-15/15",
-                  "elo": 1124,
+                  "elo": 1125,
                   "format_category": null,
                   "style_category": "Graphic Design & Digital Rendering",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2131,
+                  "appearances": 2134,
                   "ci95": "-18/18",
-                  "elo": 1158,
+                  "elo": 1157,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 4218,
+                  "appearances": 4219,
                   "ci95": "-13/13",
                   "elo": 1168,
                   "format_category": null,
@@ -11192,9 +11190,9 @@
                   "subject_matter_category": "People: Groups & Activities"
                 },
                 {
-                  "appearances": 1020,
+                  "appearances": 1023,
                   "ci95": "-27/27",
-                  "elo": 1156,
+                  "elo": 1157,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -11202,13 +11200,13 @@
               ],
               "ci95": "-8/8",
               "elo": 1159,
-              "elo_max": 1338,
+              "elo_max": 1339,
               "elo_min": 961,
               "model_type": "text-to-image",
-              "rank": 33
+              "rank": 34
             },
             "heuristic_openrouter_slug": "google/gemini-2.5-flash-image",
-            "last_updated_at": 1782216062466,
+            "last_updated_at": 1782259216097,
             "openrouter_slug": null,
             "permaslug": "google/gemini-2.5-flash-image"
           }
@@ -11393,7 +11391,7 @@
         "top_provider": {
           "context_length": 32768,
           "is_moderated": false,
-          "max_completion_tokens": 8192
+          "max_completion_tokens": 32768
         }
       }
     },
@@ -12541,7 +12539,7 @@
           "tokenizer": "Gemini"
         },
         "canonical_slug": "google/gemini-3-pro-image-20260528",
-        "context_length": 131072,
+        "context_length": 65536,
         "created": 1781754054,
         "default_parameters": {},
         "description": "Nano Banana Pro is Google’s most advanced image-generation and editing model, built on Gemini 3 Pro. It extends the original Nano Banana with significantly improved multimodal reasoning, real-world grounding, and...",
@@ -12572,7 +12570,7 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 131072,
+          "context_length": 65536,
           "is_moderated": false,
           "max_completion_tokens": 32768
         }
@@ -12586,26 +12584,26 @@
             "aa_name": "Nano Banana Pro (Gemini 3 Pro Image)",
             "aa_slug": "gemini_nano-banana-pro",
             "benchmark_data": {
-              "appearances": 5857,
+              "appearances": 5883,
               "categories": [
                 {
-                  "appearances": 1877,
+                  "appearances": 1885,
                   "ci95": "-15/15",
-                  "elo": 1253,
+                  "elo": 1252,
                   "format_category": null,
                   "style_category": "General & Photorealistic",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 459,
+                  "appearances": 462,
                   "ci95": "-32/32",
-                  "elo": 1189,
+                  "elo": 1187,
                   "format_category": null,
                   "style_category": "Cartoon & Illustration",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 609,
+                  "appearances": 613,
                   "ci95": "-29/29",
                   "elo": 1202,
                   "format_category": null,
@@ -12621,23 +12619,23 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 409,
+                  "appearances": 410,
                   "ci95": "-35/35",
-                  "elo": 1178,
+                  "elo": 1177,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1370,
+                  "appearances": 1375,
                   "ci95": "-20/20",
-                  "elo": 1237,
+                  "elo": 1235,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2280,
+                  "appearances": 2298,
                   "ci95": "-15/15",
                   "elo": 1255,
                   "format_category": null,
@@ -12645,63 +12643,63 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 181,
-                  "ci95": "-54/54",
-                  "elo": 1311,
+                  "appearances": 182,
+                  "ci95": "-53/53",
+                  "elo": 1304,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 819,
+                  "appearances": 822,
                   "ci95": "-26/26",
-                  "elo": 1211,
+                  "elo": 1205,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 833,
+                  "appearances": 838,
                   "ci95": "-24/24",
-                  "elo": 1201,
+                  "elo": 1200,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 245,
+                  "appearances": 247,
                   "ci95": "-45/45",
-                  "elo": 1181,
+                  "elo": 1179,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1579,
+                  "appearances": 1584,
                   "ci95": "-19/19",
-                  "elo": 1227,
+                  "elo": 1225,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 740,
+                  "appearances": 743,
                   "ci95": "-24/24",
-                  "elo": 1174,
+                  "elo": 1175,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Futuristic & Sci-Fi"
                 },
                 {
-                  "appearances": 693,
+                  "appearances": 694,
                   "ci95": "-24/24",
-                  "elo": 1197,
+                  "elo": 1196,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Physical Spaces"
                 },
                 {
-                  "appearances": 517,
+                  "appearances": 519,
                   "ci95": "-32/32",
                   "elo": 1274,
                   "format_category": null,
@@ -12709,15 +12707,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1618,
+                  "appearances": 1622,
                   "ci95": "-17/17",
-                  "elo": 1194,
+                  "elo": 1193,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 808,
+                  "appearances": 814,
                   "ci95": "-24/24",
                   "elo": 1220,
                   "format_category": null,
@@ -12725,31 +12723,31 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1340,
+                  "appearances": 1345,
                   "ci95": "-19/19",
-                  "elo": 1202,
+                  "elo": 1203,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 588,
+                  "appearances": 591,
                   "ci95": "-28/28",
-                  "elo": 1209,
+                  "elo": 1207,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 549,
+                  "appearances": 550,
                   "ci95": "-29/29",
-                  "elo": 1194,
+                  "elo": 1192,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1316,
+                  "appearances": 1323,
                   "ci95": "-19/19",
                   "elo": 1196,
                   "format_category": null,
@@ -12757,17 +12755,17 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 372,
+                  "appearances": 373,
                   "ci95": "-36/36",
-                  "elo": 1208,
+                  "elo": 1209,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Text & Typography"
                 },
                 {
-                  "appearances": 463,
+                  "appearances": 465,
                   "ci95": "-29/29",
-                  "elo": 1209,
+                  "elo": 1206,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Nature & Landscapes"
@@ -12775,29 +12773,29 @@
                 {
                   "appearances": 416,
                   "ci95": "-36/36",
-                  "elo": 1242,
+                  "elo": 1241,
                   "format_category": null,
                   "style_category": "Vintage & Retro",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 718,
+                  "appearances": 720,
                   "ci95": "-24/24",
-                  "elo": 1221,
+                  "elo": 1222,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Fantasy & Mythical"
                 },
                 {
-                  "appearances": 2185,
+                  "appearances": 2199,
                   "ci95": "-15/15",
-                  "elo": 1262,
+                  "elo": 1260,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3419,
+                  "appearances": 3436,
                   "ci95": "-12/12",
                   "elo": 1236,
                   "format_category": null,
@@ -12807,7 +12805,7 @@
                 {
                   "appearances": 377,
                   "ci95": "-37/37",
-                  "elo": 1194,
+                  "elo": 1196,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "UI/UX Design"
@@ -12821,15 +12819,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 505,
+                  "appearances": 508,
                   "ci95": "-32/32",
-                  "elo": 1226,
+                  "elo": 1225,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Commercial"
                 },
                 {
-                  "appearances": 800,
+                  "appearances": 801,
                   "ci95": "-25/25",
                   "elo": 1200,
                   "format_category": null,
@@ -12837,7 +12835,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1351,
+                  "appearances": 1362,
                   "ci95": "-19/19",
                   "elo": 1272,
                   "format_category": null,
@@ -12845,7 +12843,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3011,
+                  "appearances": 3025,
                   "ci95": "-12/12",
                   "elo": 1205,
                   "format_category": null,
@@ -12853,23 +12851,23 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 423,
+                  "appearances": 426,
                   "ci95": "-34/34",
-                  "elo": 1255,
+                  "elo": 1254,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 383,
+                  "appearances": 388,
                   "ci95": "-34/34",
-                  "elo": 1228,
+                  "elo": 1227,
                   "format_category": null,
                   "style_category": "Traditional Art",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1824,
+                  "appearances": 1829,
                   "ci95": "-16/16",
                   "elo": 1178,
                   "format_category": null,
@@ -12877,15 +12875,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1535,
+                  "appearances": 1540,
                   "ci95": "-19/19",
-                  "elo": 1228,
+                  "elo": 1227,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2161,
+                  "appearances": 2174,
                   "ci95": "-15/15",
                   "elo": 1218,
                   "format_category": null,
@@ -12893,17 +12891,17 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 528,
+                  "appearances": 533,
                   "ci95": "-30/30",
-                  "elo": 1279,
+                  "elo": 1278,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Groups & Activities"
                 },
                 {
-                  "appearances": 777,
+                  "appearances": 778,
                   "ci95": "-26/26",
-                  "elo": 1194,
+                  "elo": 1193,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -12911,13 +12909,13 @@
               ],
               "ci95": "-9/9",
               "elo": 1219,
-              "elo_max": 1338,
+              "elo_max": 1339,
               "elo_min": 961,
               "model_type": "text-to-image",
               "rank": 8
             },
             "heuristic_openrouter_slug": "google/gemini-3-pro-image-preview",
-            "last_updated_at": 1782216062466,
+            "last_updated_at": 1782259216097,
             "openrouter_slug": null,
             "permaslug": "google/gemini-3-pro-image-preview-20251120"
           }
@@ -13217,58 +13215,58 @@
             "aa_name": "Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
             "aa_slug": "nano-banana-2",
             "benchmark_data": {
-              "appearances": 8870,
+              "appearances": 8896,
               "categories": [
                 {
-                  "appearances": 2613,
+                  "appearances": 2617,
                   "ci95": "-16/16",
-                  "elo": 1291,
+                  "elo": 1290,
                   "format_category": null,
                   "style_category": "General & Photorealistic",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 721,
+                  "appearances": 724,
                   "ci95": "-33/33",
-                  "elo": 1252,
+                  "elo": 1257,
                   "format_category": null,
                   "style_category": "Cartoon & Illustration",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 817,
+                  "appearances": 821,
                   "ci95": "-30/30",
-                  "elo": 1277,
+                  "elo": 1274,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Portraits"
                 },
                 {
-                  "appearances": 602,
+                  "appearances": 606,
                   "ci95": "-33/33",
-                  "elo": 1238,
+                  "elo": 1240,
                   "format_category": null,
                   "style_category": "Anime",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 622,
+                  "appearances": 626,
                   "ci95": "-33/33",
-                  "elo": 1198,
+                  "elo": 1197,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2112,
+                  "appearances": 2119,
                   "ci95": "-21/21",
-                  "elo": 1268,
+                  "elo": 1267,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3449,
+                  "appearances": 3460,
                   "ci95": "-15/15",
                   "elo": 1307,
                   "format_category": null,
@@ -13276,113 +13274,113 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 371,
+                  "appearances": 372,
                   "ci95": "-44/44",
-                  "elo": 1271,
-                  "format_category": null,
-                  "style_category": null,
-                  "subject_matter_category": null
-                },
-                {
-                  "appearances": 1211,
-                  "ci95": "-26/26",
-                  "elo": 1238,
+                  "elo": 1273,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
                   "appearances": 1217,
-                  "ci95": "-24/24",
+                  "ci95": "-26/26",
+                  "elo": 1233,
+                  "format_category": null,
+                  "style_category": null,
+                  "subject_matter_category": null
+                },
+                {
+                  "appearances": 1219,
+                  "ci95": "-23/23",
                   "elo": 1223,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 465,
-                  "ci95": "-43/43",
-                  "elo": 1250,
+                  "appearances": 466,
+                  "ci95": "-42/42",
+                  "elo": 1247,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2435,
+                  "appearances": 2445,
                   "ci95": "-19/19",
-                  "elo": 1252,
+                  "elo": 1251,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1034,
+                  "appearances": 1036,
                   "ci95": "-25/25",
-                  "elo": 1207,
+                  "elo": 1205,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Futuristic & Sci-Fi"
                 },
                 {
-                  "appearances": 914,
+                  "appearances": 916,
                   "ci95": "-25/25",
-                  "elo": 1215,
+                  "elo": 1213,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Physical Spaces"
                 },
                 {
-                  "appearances": 872,
-                  "ci95": "-32/32",
-                  "elo": 1321,
+                  "appearances": 879,
+                  "ci95": "-31/31",
+                  "elo": 1319,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2308,
+                  "appearances": 2315,
                   "ci95": "-17/17",
-                  "elo": 1213,
+                  "elo": 1212,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1178,
-                  "ci95": "-25/25",
-                  "elo": 1266,
+                  "appearances": 1182,
+                  "ci95": "-24/24",
+                  "elo": 1263,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1940,
+                  "appearances": 1947,
                   "ci95": "-19/19",
-                  "elo": 1231,
+                  "elo": 1230,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 944,
+                  "appearances": 948,
                   "ci95": "-29/29",
-                  "elo": 1261,
+                  "elo": 1260,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 854,
+                  "appearances": 855,
                   "ci95": "-29/29",
-                  "elo": 1226,
+                  "elo": 1225,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1811,
+                  "appearances": 1817,
                   "ci95": "-19/19",
-                  "elo": 1224,
+                  "elo": 1222,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -13398,13 +13396,13 @@
                 {
                   "appearances": 662,
                   "ci95": "-29/29",
-                  "elo": 1253,
+                  "elo": 1252,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Nature & Landscapes"
                 },
                 {
-                  "appearances": 631,
+                  "appearances": 633,
                   "ci95": "-35/35",
                   "elo": 1245,
                   "format_category": null,
@@ -13412,7 +13410,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1078,
+                  "appearances": 1081,
                   "ci95": "-24/24",
                   "elo": 1253,
                   "format_category": null,
@@ -13420,7 +13418,7 @@
                   "subject_matter_category": "Fantasy & Mythical"
                 },
                 {
-                  "appearances": 3404,
+                  "appearances": 3411,
                   "ci95": "-15/15",
                   "elo": 1282,
                   "format_category": null,
@@ -13428,7 +13426,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 5221,
+                  "appearances": 5230,
                   "ci95": "-12/12",
                   "elo": 1265,
                   "format_category": null,
@@ -13436,39 +13434,39 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 544,
+                  "appearances": 546,
                   "ci95": "-34/34",
-                  "elo": 1187,
+                  "elo": 1188,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "UI/UX Design"
                 },
                 {
-                  "appearances": 763,
+                  "appearances": 766,
                   "ci95": "-35/35",
-                  "elo": 1280,
+                  "elo": 1282,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 735,
+                  "appearances": 740,
                   "ci95": "-32/32",
-                  "elo": 1263,
+                  "elo": 1261,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Commercial"
                 },
                 {
-                  "appearances": 1095,
+                  "appearances": 1100,
                   "ci95": "-25/25",
-                  "elo": 1238,
+                  "elo": 1236,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2044,
+                  "appearances": 2049,
                   "ci95": "-20/20",
                   "elo": 1332,
                   "format_category": null,
@@ -13476,39 +13474,39 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 4285,
+                  "appearances": 4299,
                   "ci95": "-13/13",
-                  "elo": 1235,
+                  "elo": 1234,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 871,
+                  "appearances": 874,
                   "ci95": "-33/33",
-                  "elo": 1256,
+                  "elo": 1258,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 506,
+                  "appearances": 509,
                   "ci95": "-35/35",
-                  "elo": 1272,
+                  "elo": 1269,
                   "format_category": null,
                   "style_category": "Traditional Art",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2580,
+                  "appearances": 2586,
                   "ci95": "-16/16",
-                  "elo": 1209,
+                  "elo": 1207,
                   "format_category": null,
                   "style_category": "Graphic Design & Digital Rendering",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2369,
+                  "appearances": 2377,
                   "ci95": "-19/19",
                   "elo": 1259,
                   "format_category": null,
@@ -13516,9 +13514,9 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3304,
-                  "ci95": "-15/15",
-                  "elo": 1240,
+                  "appearances": 3310,
+                  "ci95": "-14/14",
+                  "elo": 1239,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -13532,23 +13530,23 @@
                   "subject_matter_category": "People: Groups & Activities"
                 },
                 {
-                  "appearances": 1164,
+                  "appearances": 1166,
                   "ci95": "-26/26",
-                  "elo": 1218,
+                  "elo": 1217,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 }
               ],
               "ci95": "-9/9",
-              "elo": 1255,
-              "elo_max": 1338,
+              "elo": 1254,
+              "elo_max": 1339,
               "elo_min": 961,
               "model_type": "text-to-image",
               "rank": 5
             },
             "heuristic_openrouter_slug": "google/gemini-3.1-flash-image-preview",
-            "last_updated_at": 1782216062466,
+            "last_updated_at": 1782259216097,
             "openrouter_slug": null,
             "permaslug": "google/gemini-3.1-flash-image-preview-20260226"
           }
@@ -13735,9 +13733,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 65536,
+          "context_length": 131072,
           "is_moderated": false,
-          "max_completion_tokens": 65536
+          "max_completion_tokens": 32768
         }
       }
     },
@@ -16545,8 +16543,8 @@
         ],
         "top_provider": {
           "context_length": 262144,
-          "is_moderated": false,
-          "max_completion_tokens": 32768
+          "is_moderated": true,
+          "max_completion_tokens": 8192
         }
       }
     },
@@ -17581,7 +17579,7 @@
           "tokenizer": "Other"
         },
         "canonical_slug": "kwaipilot/kat-coder-pro-v2-20260327",
-        "context_length": 262144,
+        "context_length": 256000,
         "created": 1774649310,
         "default_parameters": {
           "frequency_penalty": null,
@@ -17625,9 +17623,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 262144,
+          "context_length": 256000,
           "is_moderated": false,
-          "max_completion_tokens": 144000
+          "max_completion_tokens": 80000
         }
       }
     },
@@ -21166,7 +21164,7 @@
         "top_provider": {
           "context_length": 524288,
           "is_moderated": false,
-          "max_completion_tokens": null
+          "max_completion_tokens": 512000
         }
       }
     },
@@ -22349,11 +22347,11 @@
               "evaluations": {
                 "aa_omniscience_accuracy": 0.241,
                 "aa_omniscience_non_hallucination_rate": 0.163,
-                "artificial_analysis_agentic_index": null,
-                "artificial_analysis_coding_index": null,
-                "artificial_analysis_intelligence_index": null,
+                "artificial_analysis_agentic_index": 5.5,
+                "artificial_analysis_coding_index": 20.1,
+                "artificial_analysis_intelligence_index": 15.9,
                 "critpt": 0,
-                "gdpval_aa": null,
+                "gdpval_aa": 0.054,
                 "gpqa": 0.68,
                 "hle": 0.041,
                 "ifbench": 0.362,
@@ -22365,7 +22363,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": null,
-            "last_updated_at": 1781870406678,
+            "last_updated_at": 1782259215581,
             "openrouter_slug": "mistralai/mistral-large-2512",
             "permaslug": "mistralai/mistral-large-2512"
           }
@@ -22374,7 +22372,16 @@
           "error": null,
           "status": "ok"
         },
-        "artificial_analysis_summary": null,
+        "artificial_analysis_summary": {
+          "aa_slug": "mistral-large-3",
+          "agentic_index": 5.5,
+          "agentic_percentile": null,
+          "coding_index": 20.1,
+          "coding_percentile": null,
+          "intelligence_index": 15.9,
+          "intelligence_percentile": null,
+          "variant_name": "Mistral Large 3"
+        },
         "design_arena": {
           "elo_bounds": {
             "max": 1503,
@@ -27209,7 +27216,7 @@
                 "artificial_analysis_coding_index": 37.7,
                 "artificial_analysis_intelligence_index": 25.4,
                 "critpt": 0.031,
-                "gdpval_aa": 0.082,
+                "gdpval_aa": 0.079,
                 "gpqa": 0.8,
                 "hle": 0.192,
                 "ifbench": 0.715,
@@ -27221,7 +27228,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "nvidia/nemotron-3-super-120b-a12b",
-            "last_updated_at": 1781870406678,
+            "last_updated_at": 1782259215581,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 11,
@@ -27331,7 +27338,7 @@
                 "artificial_analysis_coding_index": 37.7,
                 "artificial_analysis_intelligence_index": 25.4,
                 "critpt": 0.031,
-                "gdpval_aa": 0.082,
+                "gdpval_aa": 0.079,
                 "gpqa": 0.8,
                 "hle": 0.192,
                 "ifbench": 0.715,
@@ -27343,7 +27350,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "nvidia/nemotron-3-super-120b-a12b",
-            "last_updated_at": 1781870406678,
+            "last_updated_at": 1782259215581,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 11,
@@ -27444,7 +27451,7 @@
                 "artificial_analysis_coding_index": 49.3,
                 "artificial_analysis_intelligence_index": 37.8,
                 "critpt": 0.031,
-                "gdpval_aa": 0.337,
+                "gdpval_aa": 0.335,
                 "gpqa": 0.867,
                 "hle": 0.266,
                 "ifbench": 0.814,
@@ -27456,7 +27463,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "nvidia/nemotron-3-ultra-550b-a55b",
-            "last_updated_at": 1781870406678,
+            "last_updated_at": 1782259215581,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 50,
@@ -27704,7 +27711,7 @@
                 "artificial_analysis_coding_index": 49.3,
                 "artificial_analysis_intelligence_index": 37.8,
                 "critpt": 0.031,
-                "gdpval_aa": 0.337,
+                "gdpval_aa": 0.335,
                 "gpqa": 0.867,
                 "hle": 0.266,
                 "ifbench": 0.814,
@@ -27716,7 +27723,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "nvidia/nemotron-3-ultra-550b-a55b",
-            "last_updated_at": 1781870406678,
+            "last_updated_at": 1782259215581,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 50,
@@ -29279,8 +29286,8 @@
         ],
         "top_provider": {
           "context_length": 1047576,
-          "is_moderated": false,
-          "max_completion_tokens": null
+          "is_moderated": true,
+          "max_completion_tokens": 32768
         }
       }
     },
@@ -29658,7 +29665,7 @@
         "pricing": {
           "completion": "0.00001",
           "image": null,
-          "input_cache_read": "0.00000125",
+          "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.0000025",
@@ -29685,7 +29692,7 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 16384
         }
       }
@@ -29790,7 +29797,7 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 4096
         }
       }
@@ -29890,7 +29897,7 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 16384
         }
       }
@@ -30749,7 +30756,7 @@
         ],
         "top_provider": {
           "context_length": 400000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 128000
         }
       }
@@ -30971,10 +30978,10 @@
             "aa_name": "GPT Image 1 (high)",
             "aa_slug": "openai-gpt_gpt-image-1--high",
             "benchmark_data": {
-              "appearances": 5217,
+              "appearances": 5226,
               "categories": [
                 {
-                  "appearances": 1992,
+                  "appearances": 1995,
                   "ci95": "-14/14",
                   "elo": 1133,
                   "format_category": null,
@@ -30982,9 +30989,9 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 454,
+                  "appearances": 455,
                   "ci95": "-30/30",
-                  "elo": 1074,
+                  "elo": 1075,
                   "format_category": null,
                   "style_category": "Cartoon & Illustration",
                   "subject_matter_category": null
@@ -30992,15 +30999,15 @@
                 {
                   "appearances": 591,
                   "ci95": "-28/28",
-                  "elo": 1167,
+                  "elo": 1166,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Portraits"
                 },
                 {
-                  "appearances": 405,
+                  "appearances": 407,
                   "ci95": "-33/33",
-                  "elo": 1143,
+                  "elo": 1145,
                   "format_category": null,
                   "style_category": "Anime",
                   "subject_matter_category": null
@@ -31008,21 +31015,21 @@
                 {
                   "appearances": 293,
                   "ci95": "-37/37",
-                  "elo": 1180,
+                  "elo": 1179,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1013,
+                  "appearances": 1015,
                   "ci95": "-20/20",
-                  "elo": 1141,
+                  "elo": 1140,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2243,
+                  "appearances": 2246,
                   "ci95": "-14/14",
                   "elo": 1170,
                   "format_category": null,
@@ -31030,39 +31037,39 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 614,
+                  "appearances": 616,
                   "ci95": "-26/26",
-                  "elo": 1163,
+                  "elo": 1160,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 628,
+                  "appearances": 631,
                   "ci95": "-24/24",
-                  "elo": 1139,
+                  "elo": 1141,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 186,
+                  "appearances": 187,
                   "ci95": "-46/46",
-                  "elo": 1126,
+                  "elo": 1122,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1086,
+                  "appearances": 1088,
                   "ci95": "-19/19",
-                  "elo": 1178,
+                  "elo": 1177,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 701,
+                  "appearances": 702,
                   "ci95": "-24/24",
                   "elo": 1111,
                   "format_category": null,
@@ -31070,47 +31077,47 @@
                   "subject_matter_category": "Futuristic & Sci-Fi"
                 },
                 {
-                  "appearances": 659,
+                  "appearances": 660,
                   "ci95": "-23/23",
-                  "elo": 1082,
+                  "elo": 1084,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Physical Spaces"
                 },
                 {
-                  "appearances": 499,
+                  "appearances": 500,
                   "ci95": "-30/30",
-                  "elo": 1143,
+                  "elo": 1144,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1503,
+                  "appearances": 1507,
                   "ci95": "-16/16",
-                  "elo": 1133,
+                  "elo": 1134,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 778,
+                  "appearances": 779,
                   "ci95": "-24/24",
-                  "elo": 1164,
+                  "elo": 1163,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1016,
+                  "appearances": 1020,
                   "ci95": "-19/19",
-                  "elo": 1136,
+                  "elo": 1138,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 565,
+                  "appearances": 566,
                   "ci95": "-27/27",
                   "elo": 1109,
                   "format_category": null,
@@ -31118,15 +31125,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 473,
+                  "appearances": 474,
                   "ci95": "-29/29",
-                  "elo": 1071,
+                  "elo": 1068,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1258,
+                  "appearances": 1260,
                   "ci95": "-18/18",
                   "elo": 1155,
                   "format_category": null,
@@ -31142,7 +31149,7 @@
                   "subject_matter_category": "Text & Typography"
                 },
                 {
-                  "appearances": 491,
+                  "appearances": 494,
                   "ci95": "-28/28",
                   "elo": 1090,
                   "format_category": null,
@@ -31150,7 +31157,7 @@
                   "subject_matter_category": "Nature & Landscapes"
                 },
                 {
-                  "appearances": 343,
+                  "appearances": 344,
                   "ci95": "-36/36",
                   "elo": 1175,
                   "format_category": null,
@@ -31158,7 +31165,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 788,
+                  "appearances": 789,
                   "ci95": "-23/23",
                   "elo": 1156,
                   "format_category": null,
@@ -31166,7 +31173,7 @@
                   "subject_matter_category": "Fantasy & Mythical"
                 },
                 {
-                  "appearances": 2081,
+                  "appearances": 2085,
                   "ci95": "-14/14",
                   "elo": 1119,
                   "format_category": null,
@@ -31174,9 +31181,9 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3192,
+                  "appearances": 3198,
                   "ci95": "-11/11",
-                  "elo": 1126,
+                  "elo": 1127,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31184,7 +31191,7 @@
                 {
                   "appearances": 263,
                   "ci95": "-38/38",
-                  "elo": 1191,
+                  "elo": 1194,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "UI/UX Design"
@@ -31198,7 +31205,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 376,
+                  "appearances": 378,
                   "ci95": "-33/33",
                   "elo": 1130,
                   "format_category": null,
@@ -31206,15 +31213,15 @@
                   "subject_matter_category": "Commercial"
                 },
                 {
-                  "appearances": 596,
+                  "appearances": 597,
                   "ci95": "-25/25",
-                  "elo": 1140,
+                  "elo": 1141,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1392,
+                  "appearances": 1393,
                   "ci95": "-18/18",
                   "elo": 1169,
                   "format_category": null,
@@ -31222,7 +31229,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2842,
+                  "appearances": 2848,
                   "ci95": "-12/12",
                   "elo": 1142,
                   "format_category": null,
@@ -31246,23 +31253,23 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1554,
+                  "appearances": 1556,
                   "ci95": "-16/16",
-                  "elo": 1113,
+                  "elo": 1114,
                   "format_category": null,
                   "style_category": "Graphic Design & Digital Rendering",
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1146,
+                  "appearances": 1148,
                   "ci95": "-19/19",
-                  "elo": 1140,
+                  "elo": 1141,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2014,
+                  "appearances": 2019,
                   "ci95": "-14/14",
                   "elo": 1127,
                   "format_category": null,
@@ -31278,9 +31285,9 @@
                   "subject_matter_category": "People: Groups & Activities"
                 },
                 {
-                  "appearances": 569,
+                  "appearances": 570,
                   "ci95": "-27/27",
-                  "elo": 1110,
+                  "elo": 1111,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31288,13 +31295,13 @@
               ],
               "ci95": "-8/8",
               "elo": 1133,
-              "elo_max": 1338,
+              "elo_max": 1339,
               "elo_min": 961,
               "model_type": "text-to-image",
               "rank": 50
             },
             "heuristic_openrouter_slug": "openai/gpt-5-image",
-            "last_updated_at": 1782216062466,
+            "last_updated_at": 1782259216097,
             "openrouter_slug": null,
             "permaslug": "openai/gpt-5-image"
           }
@@ -31442,10 +31449,10 @@
             "aa_name": "GPT Image 1 Mini (medium)",
             "aa_slug": "openai-gpt_gpt-image-1-mini--medium",
             "benchmark_data": {
-              "appearances": 5416,
+              "appearances": 5420,
               "categories": [
                 {
-                  "appearances": 2045,
+                  "appearances": 2047,
                   "ci95": "-14/14",
                   "elo": 1098,
                   "format_category": null,
@@ -31469,9 +31476,9 @@
                   "subject_matter_category": "People: Portraits"
                 },
                 {
-                  "appearances": 396,
+                  "appearances": 397,
                   "ci95": "-33/33",
-                  "elo": 1068,
+                  "elo": 1067,
                   "format_category": null,
                   "style_category": "Anime",
                   "subject_matter_category": null
@@ -31479,31 +31486,31 @@
                 {
                   "appearances": 304,
                   "ci95": "-35/35",
-                  "elo": 1025,
+                  "elo": 1024,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1122,
+                  "appearances": 1125,
                   "ci95": "-20/20",
-                  "elo": 1104,
+                  "elo": 1103,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2345,
+                  "appearances": 2346,
                   "ci95": "-14/14",
-                  "elo": 1111,
+                  "elo": 1110,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 681,
+                  "appearances": 682,
                   "ci95": "-26/26",
-                  "elo": 1128,
+                  "elo": 1123,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31511,21 +31518,21 @@
                 {
                   "appearances": 636,
                   "ci95": "-24/24",
-                  "elo": 1066,
+                  "elo": 1067,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 192,
+                  "appearances": 194,
                   "ci95": "-48/48",
-                  "elo": 1052,
+                  "elo": 1060,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1176,
+                  "appearances": 1179,
                   "ci95": "-18/18",
                   "elo": 1096,
                   "format_category": null,
@@ -31541,17 +31548,17 @@
                   "subject_matter_category": "Futuristic & Sci-Fi"
                 },
                 {
-                  "appearances": 662,
+                  "appearances": 663,
                   "ci95": "-23/23",
-                  "elo": 1054,
+                  "elo": 1056,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Physical Spaces"
                 },
                 {
-                  "appearances": 483,
+                  "appearances": 484,
                   "ci95": "-30/30",
-                  "elo": 1117,
+                  "elo": 1119,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31565,17 +31572,17 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 826,
+                  "appearances": 827,
                   "ci95": "-23/23",
-                  "elo": 1120,
+                  "elo": 1119,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1017,
+                  "appearances": 1018,
                   "ci95": "-19/19",
-                  "elo": 1072,
+                  "elo": 1073,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31591,21 +31598,21 @@
                 {
                   "appearances": 497,
                   "ci95": "-28/28",
-                  "elo": 1094,
+                  "elo": 1092,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1327,
+                  "appearances": 1328,
                   "ci95": "-18/18",
-                  "elo": 1086,
+                  "elo": 1085,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 321,
+                  "appearances": 322,
                   "ci95": "-36/36",
                   "elo": 1087,
                   "format_category": null,
@@ -31613,7 +31620,7 @@
                   "subject_matter_category": "Text & Typography"
                 },
                 {
-                  "appearances": 532,
+                  "appearances": 533,
                   "ci95": "-27/27",
                   "elo": 1097,
                   "format_category": null,
@@ -31623,7 +31630,7 @@
                 {
                   "appearances": 373,
                   "ci95": "-34/34",
-                  "elo": 1133,
+                  "elo": 1132,
                   "format_category": null,
                   "style_category": "Vintage & Retro",
                   "subject_matter_category": null
@@ -31637,17 +31644,17 @@
                   "subject_matter_category": "Fantasy & Mythical"
                 },
                 {
-                  "appearances": 2107,
+                  "appearances": 2109,
                   "ci95": "-14/14",
-                  "elo": 1093,
+                  "elo": 1094,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3243,
+                  "appearances": 3245,
                   "ci95": "-11/11",
-                  "elo": 1093,
+                  "elo": 1094,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31655,21 +31662,21 @@
                 {
                   "appearances": 309,
                   "ci95": "-36/36",
-                  "elo": 1020,
+                  "elo": 1022,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "UI/UX Design"
                 },
                 {
-                  "appearances": 289,
+                  "appearances": 291,
                   "ci95": "-37/37",
-                  "elo": 1076,
+                  "elo": 1080,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 414,
+                  "appearances": 415,
                   "ci95": "-32/32",
                   "elo": 1102,
                   "format_category": null,
@@ -31677,9 +31684,9 @@
                   "subject_matter_category": "Commercial"
                 },
                 {
-                  "appearances": 572,
+                  "appearances": 573,
                   "ci95": "-26/26",
-                  "elo": 1094,
+                  "elo": 1095,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31693,7 +31700,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2919,
+                  "appearances": 2920,
                   "ci95": "-12/12",
                   "elo": 1095,
                   "format_category": null,
@@ -31703,7 +31710,7 @@
                 {
                   "appearances": 293,
                   "ci95": "-36/36",
-                  "elo": 1135,
+                  "elo": 1134,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31717,7 +31724,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1619,
+                  "appearances": 1621,
                   "ci95": "-16/16",
                   "elo": 1049,
                   "format_category": null,
@@ -31725,7 +31732,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1249,
+                  "appearances": 1252,
                   "ci95": "-19/19",
                   "elo": 1098,
                   "format_category": null,
@@ -31733,7 +31740,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2066,
+                  "appearances": 2067,
                   "ci95": "-14/14",
                   "elo": 1101,
                   "format_category": null,
@@ -31749,9 +31756,9 @@
                   "subject_matter_category": "People: Groups & Activities"
                 },
                 {
-                  "appearances": 598,
+                  "appearances": 599,
                   "ci95": "-27/27",
-                  "elo": 1088,
+                  "elo": 1089,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
@@ -31759,13 +31766,13 @@
               ],
               "ci95": "-8/8",
               "elo": 1089,
-              "elo_max": 1338,
+              "elo_max": 1339,
               "elo_min": 961,
               "model_type": "text-to-image",
               "rank": 74
             },
             "heuristic_openrouter_slug": "openai/gpt-5-image-mini",
-            "last_updated_at": 1782216062466,
+            "last_updated_at": 1782259216097,
             "openrouter_slug": null,
             "permaslug": "openai/gpt-5-image-mini"
           }
@@ -32195,7 +32202,7 @@
         "pricing": {
           "completion": "0.000002",
           "image": null,
-          "input_cache_read": "0.00000003",
+          "input_cache_read": "0.000000025",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.00000025",
@@ -32215,8 +32222,8 @@
         ],
         "top_provider": {
           "context_length": 400000,
-          "is_moderated": false,
-          "max_completion_tokens": null
+          "is_moderated": true,
+          "max_completion_tokens": 128000
         }
       }
     },
@@ -33369,7 +33376,7 @@
         "pricing": {
           "completion": "0.00001",
           "image": null,
-          "input_cache_read": "0.000000125",
+          "input_cache_read": "0.00000013",
           "input_cache_write": null,
           "internal_reasoning": null,
           "prompt": "0.00000125",
@@ -33387,8 +33394,8 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": true,
-          "max_completion_tokens": 16384
+          "is_moderated": false,
+          "max_completion_tokens": 32000
         }
       }
     },
@@ -33696,7 +33703,7 @@
         ],
         "top_provider": {
           "context_length": 400000,
-          "is_moderated": false,
+          "is_moderated": true,
           "max_completion_tokens": 128000
         }
       }
@@ -34843,7 +34850,7 @@
           "top_p": null
         },
         "description": "GPT-5.2 Chat (AKA Instant) is the fast, lightweight member of the 5.2 family, optimized for low-latency chat while retaining strong general intelligence. It uses adaptive reasoning to selectively “think” on...",
-        "expiration_date": null,
+        "expiration_date": "2026-08-10",
         "id": "openai/gpt-5.2-chat",
         "name": "OpenAI: GPT-5.2 Chat",
         "pricing": {
@@ -34867,8 +34874,8 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": false,
-          "max_completion_tokens": 32000
+          "is_moderated": true,
+          "max_completion_tokens": 16384
         }
       }
     },
@@ -35177,7 +35184,7 @@
           "top_p": null
         },
         "description": "GPT-5.3 Chat is an update to ChatGPT's most-used model that makes everyday conversations smoother, more useful, and more directly helpful. It delivers more accurate answers with better contextualization and significantly...",
-        "expiration_date": "2026-08-10",
+        "expiration_date": null,
         "id": "openai/gpt-5.3-chat",
         "name": "OpenAI: GPT-5.3 Chat",
         "pricing": {
@@ -35201,7 +35208,7 @@
         ],
         "top_provider": {
           "context_length": 128000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 16384
         }
       }
@@ -36334,10 +36341,10 @@
             "aa_name": "GPT Image 2 (high)",
             "aa_slug": "gpt-image-2",
             "benchmark_data": {
-              "appearances": 11570,
+              "appearances": 11590,
               "categories": [
                 {
-                  "appearances": 2948,
+                  "appearances": 2952,
                   "ci95": "-16/16",
                   "elo": 1369,
                   "format_category": null,
@@ -36353,17 +36360,17 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1047,
+                  "appearances": 1046,
                   "ci95": "-30/30",
-                  "elo": 1350,
+                  "elo": 1349,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Portraits"
                 },
                 {
-                  "appearances": 744,
+                  "appearances": 746,
                   "ci95": "-33/33",
-                  "elo": 1349,
+                  "elo": 1348,
                   "format_category": null,
                   "style_category": "Anime",
                   "subject_matter_category": null
@@ -36371,21 +36378,21 @@
                 {
                   "appearances": 890,
                   "ci95": "-35/35",
-                  "elo": 1328,
+                  "elo": 1327,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3011,
+                  "appearances": 3020,
                   "ci95": "-21/21",
-                  "elo": 1363,
+                  "elo": 1361,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 4499,
+                  "appearances": 4505,
                   "ci95": "-15/15",
                   "elo": 1371,
                   "format_category": null,
@@ -36393,63 +36400,63 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 477,
+                  "appearances": 479,
                   "ci95": "-51/51",
-                  "elo": 1405,
+                  "elo": 1409,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1798,
+                  "appearances": 1803,
                   "ci95": "-28/28",
-                  "elo": 1370,
+                  "elo": 1365,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1628,
+                  "appearances": 1631,
                   "ci95": "-24/24",
-                  "elo": 1309,
+                  "elo": 1310,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 592,
+                  "appearances": 599,
                   "ci95": "-42/42",
-                  "elo": 1302,
+                  "elo": 1300,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3634,
+                  "appearances": 3640,
                   "ci95": "-20/20",
-                  "elo": 1368,
+                  "elo": 1367,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1308,
+                  "appearances": 1311,
                   "ci95": "-26/26",
-                  "elo": 1332,
+                  "elo": 1331,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Futuristic & Sci-Fi"
                 },
                 {
-                  "appearances": 1051,
+                  "appearances": 1054,
                   "ci95": "-24/24",
-                  "elo": 1260,
+                  "elo": 1261,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Physical Spaces"
                 },
                 {
-                  "appearances": 1067,
+                  "appearances": 1069,
                   "ci95": "-32/32",
                   "elo": 1379,
                   "format_category": null,
@@ -36457,7 +36464,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3191,
+                  "appearances": 3197,
                   "ci95": "-18/18",
                   "elo": 1346,
                   "format_category": null,
@@ -36465,15 +36472,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1542,
+                  "appearances": 1543,
                   "ci95": "-25/25",
-                  "elo": 1355,
+                  "elo": 1354,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2603,
+                  "appearances": 2610,
                   "ci95": "-19/19",
                   "elo": 1319,
                   "format_category": null,
@@ -36481,7 +36488,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1180,
+                  "appearances": 1181,
                   "ci95": "-29/29",
                   "elo": 1325,
                   "format_category": null,
@@ -36489,15 +36496,15 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 1128,
+                  "appearances": 1131,
                   "ci95": "-29/29",
-                  "elo": 1316,
+                  "elo": 1315,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2445,
+                  "appearances": 2449,
                   "ci95": "-20/20",
                   "elo": 1342,
                   "format_category": null,
@@ -36507,13 +36514,13 @@
                 {
                   "appearances": 730,
                   "ci95": "-35/35",
-                  "elo": 1296,
+                  "elo": 1295,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Text & Typography"
                 },
                 {
-                  "appearances": 714,
+                  "appearances": 715,
                   "ci95": "-29/29",
                   "elo": 1297,
                   "format_category": null,
@@ -36521,7 +36528,7 @@
                   "subject_matter_category": "Nature & Landscapes"
                 },
                 {
-                  "appearances": 919,
+                  "appearances": 923,
                   "ci95": "-40/40",
                   "elo": 1408,
                   "format_category": null,
@@ -36537,7 +36544,7 @@
                   "subject_matter_category": "Fantasy & Mythical"
                 },
                 {
-                  "appearances": 3796,
+                  "appearances": 3805,
                   "ci95": "-14/14",
                   "elo": 1345,
                   "format_category": null,
@@ -36545,7 +36552,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 6365,
+                  "appearances": 6379,
                   "ci95": "-12/12",
                   "elo": 1350,
                   "format_category": null,
@@ -36553,39 +36560,39 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 800,
+                  "appearances": 799,
                   "ci95": "-38/38",
-                  "elo": 1348,
+                  "elo": 1351,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "UI/UX Design"
                 },
                 {
-                  "appearances": 932,
+                  "appearances": 934,
                   "ci95": "-38/38",
-                  "elo": 1372,
+                  "elo": 1375,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 999,
+                  "appearances": 1000,
                   "ci95": "-33/33",
-                  "elo": 1349,
+                  "elo": 1347,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "Commercial"
                 },
                 {
-                  "appearances": 1337,
+                  "appearances": 1342,
                   "ci95": "-25/25",
-                  "elo": 1318,
+                  "elo": 1320,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 2548,
+                  "appearances": 2553,
                   "ci95": "-19/19",
                   "elo": 1387,
                   "format_category": null,
@@ -36593,7 +36600,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 5942,
+                  "appearances": 5950,
                   "ci95": "-13/13",
                   "elo": 1341,
                   "format_category": null,
@@ -36601,7 +36608,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 867,
+                  "appearances": 869,
                   "ci95": "-34/34",
                   "elo": 1345,
                   "format_category": null,
@@ -36617,7 +36624,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3599,
+                  "appearances": 3603,
                   "ci95": "-16/16",
                   "elo": 1302,
                   "format_category": null,
@@ -36625,7 +36632,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3404,
+                  "appearances": 3414,
                   "ci95": "-19/19",
                   "elo": 1353,
                   "format_category": null,
@@ -36633,7 +36640,7 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 3976,
+                  "appearances": 3984,
                   "ci95": "-15/15",
                   "elo": 1332,
                   "format_category": null,
@@ -36641,31 +36648,31 @@
                   "subject_matter_category": null
                 },
                 {
-                  "appearances": 854,
+                  "appearances": 857,
                   "ci95": "-32/32",
-                  "elo": 1404,
+                  "elo": 1406,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": "People: Groups & Activities"
                 },
                 {
-                  "appearances": 1621,
-                  "ci95": "-29/29",
-                  "elo": 1353,
+                  "appearances": 1626,
+                  "ci95": "-28/28",
+                  "elo": 1351,
                   "format_category": null,
                   "style_category": null,
                   "subject_matter_category": null
                 }
               ],
               "ci95": "-9/9",
-              "elo": 1338,
-              "elo_max": 1338,
+              "elo": 1339,
+              "elo_max": 1339,
               "elo_min": 961,
               "model_type": "text-to-image",
               "rank": 1
             },
             "heuristic_openrouter_slug": "openai/gpt-5.4-image-2",
-            "last_updated_at": 1782216062466,
+            "last_updated_at": 1782259216097,
             "openrouter_slug": null,
             "permaslug": "openai/gpt-5.4-image-2-20260421"
           }
@@ -37077,7 +37084,7 @@
         ],
         "top_provider": {
           "context_length": 400000,
-          "is_moderated": true,
+          "is_moderated": false,
           "max_completion_tokens": 128000
         }
       }
@@ -46557,7 +46564,7 @@
           "tokenizer": "Qwen3"
         },
         "canonical_slug": "qwen/qwen3.5-9b-20260310",
-        "context_length": 256000,
+        "context_length": 262144,
         "created": 1773152396,
         "default_parameters": {
           "frequency_penalty": null,
@@ -46603,9 +46610,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 256000,
+          "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": 32768
+          "max_completion_tokens": 262144
         }
       }
     },
@@ -54476,8 +54483,8 @@
               "evaluations": {
                 "aa_omniscience_accuracy": 0.251,
                 "aa_omniscience_non_hallucination_rate": 0.719,
-                "artificial_analysis_agentic_index": 43.1,
-                "artificial_analysis_coding_index": 68.8,
+                "artificial_analysis_agentic_index": 75.9,
+                "artificial_analysis_coding_index": 50.7,
                 "artificial_analysis_intelligence_index": 51.1,
                 "critpt": 0.209,
                 "gdpval_aa": 0.51,
@@ -54492,7 +54499,7 @@
               "model_type": "llm"
             },
             "heuristic_openrouter_slug": "z-ai/glm-5.2",
-            "last_updated_at": 1782172858116,
+            "last_updated_at": 1782259215581,
             "openrouter_slug": null,
             "percentiles": {
               "agentic_percentile": 87,
@@ -54508,9 +54515,9 @@
         },
         "artificial_analysis_summary": {
           "aa_slug": "glm-5-2",
-          "agentic_index": 43.1,
+          "agentic_index": 75.9,
           "agentic_percentile": 87,
-          "coding_index": 68.8,
+          "coding_index": 50.7,
           "coding_percentile": 86,
           "intelligence_index": 51.1,
           "intelligence_percentile": 85,
@@ -55061,25 +55068,6 @@
               "category": "python-pptxslides",
               "da_model_id": "glm-5v-turbo",
               "display_name": "GLM 5V Turbo",
-              "elo": 1169,
-              "elo_percentile": 33,
-              "first_place": 8831,
-              "fourth_place": 3128,
-              "last_updated_at": 1782216080542,
-              "openrouter_id": "z-ai/glm-5v-turbo",
-              "permaslug": "z-ai/glm-5v-turbo-20260401",
-              "provider": "zhipu",
-              "second_place": 9806,
-              "third_place": 4369,
-              "total_tournaments": 26134,
-              "win_rate": 52.6
-            },
-            {
-              "arena": "agents",
-              "avg_generation_time_ms": 858676,
-              "category": "python-pptxslides",
-              "da_model_id": "glm-5v-turbo",
-              "display_name": "GLM 5V Turbo",
               "elo": 1165,
               "elo_percentile": 30,
               "first_place": 8721,
@@ -55092,6 +55080,25 @@
               "third_place": 4294,
               "total_tournaments": 25809,
               "win_rate": 51.9
+            },
+            {
+              "arena": "agents",
+              "avg_generation_time_ms": 858676,
+              "category": "python-pptxslides",
+              "da_model_id": "glm-5v-turbo",
+              "display_name": "GLM 5V Turbo",
+              "elo": 1169,
+              "elo_percentile": 33,
+              "first_place": 8831,
+              "fourth_place": 3128,
+              "last_updated_at": 1782216080542,
+              "openrouter_id": "z-ai/glm-5v-turbo",
+              "permaslug": "z-ai/glm-5v-turbo-20260401",
+              "provider": "zhipu",
+              "second_place": 9806,
+              "third_place": 4369,
+              "total_tournaments": 26134,
+              "win_rate": 52.6
             },
             {
               "arena": "agents",
