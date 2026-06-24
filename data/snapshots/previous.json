@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T04:30:31.199048Z",
+  "generated_at": "2026-06-24T05:00:30.157833Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -16032,6 +16032,58 @@
         "context_length": 256000,
         "is_moderated": false,
         "max_completion_tokens": 128000
+      }
+    },
+    "sakana/fugu-ultra": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "sakana/fugu-ultra-20260615",
+      "context_length": 1000000,
+      "created": 1782276303,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Fugu Ultra is the higher-performance model in Sakana AI's Fugu family. Rather than a single monolithic model, Fugu is a learned multi-agent orchestration system: a language model trained to route...",
+      "expiration_date": null,
+      "id": "sakana/fugu-ultra",
+      "name": "Sakana: Fugu Ultra",
+      "pricing": {
+        "completion": "0.00003",
+        "image": null,
+        "input_cache_read": "0.0000005",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000005",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "reasoning",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "web_search_options"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": false,
+        "max_completion_tokens": 256000
       }
     },
     "sao10k/l3-lunaris-8b": {

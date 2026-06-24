@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T04:30:25.009726Z",
+  "generated_at": "2026-06-24T05:00:26.426919Z",
   "models": [
     {
       "benchmarks": {
@@ -14419,25 +14419,6 @@
               "category": "python-pptxslides",
               "da_model_id": "gemini-3.1-pro-preview",
               "display_name": "Gemini 3.1 Pro Preview",
-              "elo": 1105,
-              "elo_percentile": 11,
-              "first_place": 13300,
-              "fourth_place": 2178,
-              "last_updated_at": 1782259294127,
-              "openrouter_id": "google/gemini-3.1-pro-preview",
-              "permaslug": "google/gemini-3.1-pro-preview-20260219",
-              "provider": "google",
-              "second_place": 12578,
-              "third_place": 3956,
-              "total_tournaments": 32012,
-              "win_rate": 31.7
-            },
-            {
-              "arena": "agents",
-              "avg_generation_time_ms": 289953,
-              "category": "python-pptxslides",
-              "da_model_id": "gemini-3.1-pro-preview",
-              "display_name": "Gemini 3.1 Pro Preview",
               "elo": 1109,
               "elo_percentile": 10,
               "first_place": 13128,
@@ -14450,6 +14431,25 @@
               "third_place": 3876,
               "total_tournaments": 31570,
               "win_rate": 31.9
+            },
+            {
+              "arena": "agents",
+              "avg_generation_time_ms": 289953,
+              "category": "python-pptxslides",
+              "da_model_id": "gemini-3.1-pro-preview",
+              "display_name": "Gemini 3.1 Pro Preview",
+              "elo": 1105,
+              "elo_percentile": 11,
+              "first_place": 13300,
+              "fourth_place": 2178,
+              "last_updated_at": 1782259294127,
+              "openrouter_id": "google/gemini-3.1-pro-preview",
+              "permaslug": "google/gemini-3.1-pro-preview-20260219",
+              "provider": "google",
+              "second_place": 12578,
+              "third_place": 3956,
+              "total_tournaments": 32012,
+              "win_rate": 31.7
             },
             {
               "arena": "agents",
@@ -48555,6 +48555,73 @@
           "context_length": 256000,
           "is_moderated": false,
           "max_completion_tokens": 128000
+        }
+      }
+    },
+    {
+      "benchmarks": {
+        "artificial_analysis": [],
+        "artificial_analysis_status": {
+          "error": null,
+          "status": "empty"
+        },
+        "artificial_analysis_summary": null,
+        "design_arena": null,
+        "design_arena_status": {
+          "error": null,
+          "status": "empty"
+        }
+      },
+      "model": {
+        "architecture": {
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "instruct_type": null,
+          "modality": "text+image->text",
+          "output_modalities": [
+            "text"
+          ],
+          "tokenizer": "Other"
+        },
+        "canonical_slug": "sakana/fugu-ultra-20260615",
+        "context_length": 1000000,
+        "created": 1782276303,
+        "default_parameters": {
+          "frequency_penalty": null,
+          "presence_penalty": null,
+          "repetition_penalty": null,
+          "temperature": null,
+          "top_k": null,
+          "top_p": null
+        },
+        "description": "Fugu Ultra is the higher-performance model in Sakana AI's Fugu family. Rather than a single monolithic model, Fugu is a learned multi-agent orchestration system: a language model trained to route...",
+        "expiration_date": null,
+        "id": "sakana/fugu-ultra",
+        "name": "Sakana: Fugu Ultra",
+        "pricing": {
+          "completion": "0.00003",
+          "image": null,
+          "input_cache_read": "0.0000005",
+          "input_cache_write": null,
+          "internal_reasoning": null,
+          "prompt": "0.000005",
+          "request": null,
+          "web_search": "0.01"
+        },
+        "supported_parameters": [
+          "include_reasoning",
+          "reasoning",
+          "structured_outputs",
+          "tool_choice",
+          "tools",
+          "web_search_options"
+        ],
+        "top_provider": {
+          "context_length": 1000000,
+          "is_moderated": false,
+          "max_completion_tokens": 256000
         }
       }
     },
