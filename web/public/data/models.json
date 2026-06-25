@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T01:00:23.339276Z",
+  "generated_at": "2026-06-25T01:30:25.422468Z",
   "models": [
     {
       "benchmarks": {
@@ -9985,12 +9985,12 @@
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash",
         "pricing": {
-          "completion": "0.00000018",
+          "completion": "0.000000224",
           "image": null,
-          "input_cache_read": "0.00000002",
+          "input_cache_read": "0.0000000266",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.00000009",
+          "prompt": "0.000000089",
           "request": null,
           "web_search": null
         },
@@ -10016,9 +10016,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 1000000,
+          "context_length": 1048576,
           "is_moderated": false,
-          "max_completion_tokens": 65536
+          "max_completion_tokens": null
         }
       }
     },
@@ -14438,25 +14438,6 @@
               "category": "python-pptxslides",
               "da_model_id": "gemini-3.1-pro-preview",
               "display_name": "Gemini 3.1 Pro Preview",
-              "elo": 1109,
-              "elo_percentile": 10,
-              "first_place": 13128,
-              "fourth_place": 2144,
-              "last_updated_at": 1782043280166,
-              "openrouter_id": "google/gemini-3.1-pro-preview",
-              "permaslug": "google/gemini-3.1-pro-preview-20260219",
-              "provider": "google",
-              "second_place": 12422,
-              "third_place": 3876,
-              "total_tournaments": 31570,
-              "win_rate": 31.9
-            },
-            {
-              "arena": "agents",
-              "avg_generation_time_ms": 289953,
-              "category": "python-pptxslides",
-              "da_model_id": "gemini-3.1-pro-preview",
-              "display_name": "Gemini 3.1 Pro Preview",
               "elo": 1104,
               "elo_percentile": 9,
               "first_place": 13337,
@@ -14469,6 +14450,25 @@
               "third_place": 3971,
               "total_tournaments": 32114,
               "win_rate": 31.7
+            },
+            {
+              "arena": "agents",
+              "avg_generation_time_ms": 289953,
+              "category": "python-pptxslides",
+              "da_model_id": "gemini-3.1-pro-preview",
+              "display_name": "Gemini 3.1 Pro Preview",
+              "elo": 1109,
+              "elo_percentile": 10,
+              "first_place": 13128,
+              "fourth_place": 2144,
+              "last_updated_at": 1782043280166,
+              "openrouter_id": "google/gemini-3.1-pro-preview",
+              "permaslug": "google/gemini-3.1-pro-preview-20260219",
+              "provider": "google",
+              "second_place": 12422,
+              "third_place": 3876,
+              "total_tournaments": 31570,
+              "win_rate": 31.9
             },
             {
               "arena": "agents",
