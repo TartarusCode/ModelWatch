@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T14:00:30.459259Z",
+  "generated_at": "2026-06-25T14:30:29.020442Z",
   "models": [
     {
       "benchmarks": {
@@ -8004,12 +8004,12 @@
         "id": "deepseek/deepseek-chat",
         "name": "DeepSeek: DeepSeek V3",
         "pricing": {
-          "completion": "0",
+          "completion": "0.0000008001",
           "image": null,
           "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0",
+          "prompt": "0.0000002002",
           "request": null,
           "web_search": null
         },
@@ -8716,12 +8716,12 @@
         "id": "deepseek/deepseek-r1-0528",
         "name": "DeepSeek: R1 0528",
         "pricing": {
-          "completion": "0",
+          "completion": "0.00000215",
           "image": null,
-          "input_cache_read": null,
+          "input_cache_read": "0.00000035",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0",
+          "prompt": "0.0000005",
           "request": null,
           "web_search": null
         },
@@ -8747,9 +8747,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 128000,
+          "context_length": 163840,
           "is_moderated": false,
-          "max_completion_tokens": 32000
+          "max_completion_tokens": 32768
         }
       }
     },
@@ -9070,7 +9070,7 @@
           "tokenizer": "DeepSeek"
         },
         "canonical_slug": "deepseek/deepseek-v3.1-terminus",
-        "context_length": 131072,
+        "context_length": 163840,
         "created": 1758548275,
         "default_parameters": {
           "frequency_penalty": null,
@@ -9082,12 +9082,12 @@
         "id": "deepseek/deepseek-v3.1-terminus",
         "name": "DeepSeek: DeepSeek V3.1 Terminus",
         "pricing": {
-          "completion": "0",
+          "completion": "0.00000095",
           "image": null,
-          "input_cache_read": null,
+          "input_cache_read": "0.00000013",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0",
+          "prompt": "0.00000027",
           "request": null,
           "web_search": null
         },
@@ -9111,9 +9111,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 128000,
+          "context_length": 163840,
           "is_moderated": false,
-          "max_completion_tokens": 32000
+          "max_completion_tokens": 32768
         }
       }
     },
@@ -9347,12 +9347,12 @@
         "id": "deepseek/deepseek-v3.2",
         "name": "DeepSeek: DeepSeek V3.2",
         "pricing": {
-          "completion": "0",
+          "completion": "0.0000003432",
           "image": null,
-          "input_cache_read": "0",
+          "input_cache_read": "0.00000002288",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0",
+          "prompt": "0.0000002288",
           "request": null,
           "web_search": null
         },
@@ -9985,12 +9985,12 @@
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash",
         "pricing": {
-          "completion": "0",
+          "completion": "0.00000018",
           "image": null,
-          "input_cache_read": "0",
+          "input_cache_read": "0.00000002",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0",
+          "prompt": "0.00000009",
           "request": null,
           "web_search": null
         },
@@ -10016,9 +10016,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 1024000,
+          "context_length": 1000000,
           "is_moderated": false,
-          "max_completion_tokens": 384000
+          "max_completion_tokens": 65536
         }
       }
     },
@@ -10379,12 +10379,12 @@
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro",
         "pricing": {
-          "completion": "0",
+          "completion": "0.00000087",
           "image": null,
-          "input_cache_read": "0",
+          "input_cache_read": "0.000000003625",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0",
+          "prompt": "0.000000435",
           "request": null,
           "web_search": null
         },
@@ -10410,7 +10410,7 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 1024000,
+          "context_length": 1048576,
           "is_moderated": false,
           "max_completion_tokens": 384000
         }
@@ -17708,12 +17708,12 @@
         "id": "kwaipilot/kat-coder-pro-v2",
         "name": "Kwaipilot: KAT-Coder-Pro V2",
         "pricing": {
-          "completion": "0",
+          "completion": "0.0000012",
           "image": null,
-          "input_cache_read": "0",
+          "input_cache_read": "0.00000006",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0",
+          "prompt": "0.0000003",
           "request": null,
           "web_search": null
         },
@@ -20679,12 +20679,12 @@
         "id": "minimax/minimax-m2.5",
         "name": "MiniMax: MiniMax M2.5",
         "pricing": {
-          "completion": "0",
+          "completion": "0.0000009",
           "image": null,
-          "input_cache_read": "0",
+          "input_cache_read": "0.00000005",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0",
+          "prompt": "0.00000015",
           "request": null,
           "web_search": null
         },
@@ -20712,9 +20712,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 200000,
+          "context_length": 196608,
           "is_moderated": false,
-          "max_completion_tokens": 128000
+          "max_completion_tokens": 196608
         }
       }
     },
@@ -25081,12 +25081,12 @@
         "id": "moonshotai/kimi-k2.5",
         "name": "MoonshotAI: Kimi K2.5",
         "pricing": {
-          "completion": "0",
+          "completion": "0.000002025",
           "image": null,
-          "input_cache_read": "0",
+          "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0",
+          "prompt": "0.000000375",
           "request": null,
           "web_search": null
         },
@@ -25114,7 +25114,7 @@
         "top_provider": {
           "context_length": 256000,
           "is_moderated": false,
-          "max_completion_tokens": 256000
+          "max_completion_tokens": null
         }
       }
     },
@@ -25638,12 +25638,12 @@
         "id": "moonshotai/kimi-k2.6",
         "name": "MoonshotAI: Kimi K2.6",
         "pricing": {
-          "completion": "0",
+          "completion": "0.00000341",
           "image": null,
-          "input_cache_read": "0",
+          "input_cache_read": "0.000000144",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0",
+          "prompt": "0.00000066",
           "request": null,
           "web_search": null
         },
@@ -25670,9 +25670,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 256000,
+          "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": 256000
+          "max_completion_tokens": 262144
         }
       }
     },
@@ -43128,12 +43128,12 @@
         "id": "qwen/qwen3-30b-a3b-instruct-2507",
         "name": "Qwen: Qwen3 30B A3B Instruct 2507",
         "pricing": {
-          "completion": "0",
+          "completion": "0.00000019305",
           "image": null,
           "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0",
+          "prompt": "0.00000004815",
           "request": null,
           "web_search": null
         },
@@ -44069,12 +44069,12 @@
         "id": "qwen/qwen3-coder-next",
         "name": "Qwen: Qwen3 Coder Next",
         "pricing": {
-          "completion": "0",
+          "completion": "0.0000008",
           "image": null,
-          "input_cache_read": "0",
+          "input_cache_read": "0.00000007",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0",
+          "prompt": "0.00000011",
           "request": null,
           "web_search": null
         },
@@ -44098,9 +44098,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 256000,
+          "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": 64000
+          "max_completion_tokens": 262144
         }
       }
     },
@@ -46569,12 +46569,12 @@
         "id": "qwen/qwen3.5-397b-a17b",
         "name": "Qwen: Qwen3.5 397B A17B",
         "pricing": {
-          "completion": "0",
+          "completion": "0.00000245",
           "image": null,
-          "input_cache_read": "0",
+          "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0",
+          "prompt": "0.000000385",
           "request": null,
           "web_search": null
         },
@@ -46600,9 +46600,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 256000,
+          "context_length": 131072,
           "is_moderated": false,
-          "max_completion_tokens": 64000
+          "max_completion_tokens": null
         }
       }
     },
@@ -53090,7 +53090,7 @@
           "tokenizer": "Other"
         },
         "canonical_slug": "z-ai/glm-4.7-20251222",
-        "context_length": 200000,
+        "context_length": 202752,
         "created": 1766378014,
         "default_parameters": {
           "frequency_penalty": null,
@@ -53102,12 +53102,12 @@
         "id": "z-ai/glm-4.7",
         "name": "Z.ai: GLM 4.7",
         "pricing": {
-          "completion": "0",
+          "completion": "0.00000175",
           "image": null,
-          "input_cache_read": null,
+          "input_cache_read": "0.00000008",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0",
+          "prompt": "0.0000004",
           "request": null,
           "web_search": null
         },
@@ -53133,9 +53133,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 200000,
+          "context_length": 202752,
           "is_moderated": false,
-          "max_completion_tokens": 128000
+          "max_completion_tokens": 131072
         }
       }
     },
@@ -53743,12 +53743,12 @@
         "id": "z-ai/glm-5",
         "name": "Z.ai: GLM 5",
         "pricing": {
-          "completion": "0",
+          "completion": "0.00000192",
           "image": null,
-          "input_cache_read": "0",
+          "input_cache_read": "0.00000012",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0",
+          "prompt": "0.0000006",
           "request": null,
           "web_search": null
         },
@@ -53774,9 +53774,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 198000,
+          "context_length": 202752,
           "is_moderated": false,
-          "max_completion_tokens": 128000
+          "max_completion_tokens": null
         }
       }
     },
@@ -54658,12 +54658,12 @@
         "id": "z-ai/glm-5.1",
         "name": "Z.ai: GLM 5.1",
         "pricing": {
-          "completion": "0",
+          "completion": "0.00000308",
           "image": null,
-          "input_cache_read": "0",
+          "input_cache_read": "0.000000182",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0",
+          "prompt": "0.00000098",
           "request": null,
           "web_search": null
         },
@@ -54691,9 +54691,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 200000,
+          "context_length": 202752,
           "is_moderated": false,
-          "max_completion_tokens": 128000
+          "max_completion_tokens": null
         }
       }
     },
@@ -55017,12 +55017,12 @@
         "id": "z-ai/glm-5.2",
         "name": "Z.ai: GLM 5.2",
         "pricing": {
-          "completion": "0",
+          "completion": "0.000003",
           "image": null,
-          "input_cache_read": "0",
+          "input_cache_read": "0.00000018",
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0",
+          "prompt": "0.00000095",
           "request": null,
           "web_search": null
         },
@@ -55048,9 +55048,9 @@
           "top_p"
         ],
         "top_provider": {
-          "context_length": 1024000,
+          "context_length": 1048576,
           "is_moderated": false,
-          "max_completion_tokens": 128000
+          "max_completion_tokens": 32768
         }
       }
     },
