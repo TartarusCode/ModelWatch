@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T21:30:20.749283Z",
+  "generated_at": "2026-06-25T22:00:23.827961Z",
   "models": [
     {
       "benchmarks": {
@@ -27425,12 +27425,12 @@
         "id": "nvidia/nemotron-3-super-120b-a12b",
         "name": "NVIDIA: Nemotron 3 Super",
         "pricing": {
-          "completion": "0.00000045",
+          "completion": "0.0000004",
           "image": null,
           "input_cache_read": null,
           "input_cache_write": null,
           "internal_reasoning": null,
-          "prompt": "0.00000009",
+          "prompt": "0.000000085",
           "request": null,
           "web_search": null
         },
@@ -27458,7 +27458,7 @@
         "top_provider": {
           "context_length": 262144,
           "is_moderated": false,
-          "max_completion_tokens": null
+          "max_completion_tokens": 16384
         }
       }
     },
