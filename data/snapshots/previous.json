@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T17:00:32.372798Z",
+  "generated_at": "2026-06-25T17:30:31.018753Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -11429,12 +11429,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.00000018",
+        "completion": "0.00000015",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000039",
+        "prompt": "0.00000003",
         "request": null,
         "web_search": null
       },
@@ -11462,7 +11462,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 131072
       }
     },
     "openai/gpt-oss-120b:free": {
