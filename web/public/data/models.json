@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T20:30:24.079807Z",
+  "generated_at": "2026-06-25T21:00:23.318454Z",
   "models": [
     {
       "benchmarks": {
@@ -50998,10 +50998,11 @@
         "architecture": {
           "input_modalities": [
             "text",
-            "image"
+            "image",
+            "file"
           ],
           "instruct_type": null,
-          "modality": "text+image->text",
+          "modality": "text+image+file->text",
           "output_modalities": [
             "text"
           ],
