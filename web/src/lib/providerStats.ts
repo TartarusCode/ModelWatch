@@ -16,8 +16,8 @@ export interface MergedProviderRow {
   uptimeLast30m: number | null;
 }
 
-function normalizeProviderKey(value: string): string {
-  return value.trim().toLowerCase();
+export function normalizeProviderKey(value: string): string {
+  return value.trim().toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
 export function mergeProviderRows(

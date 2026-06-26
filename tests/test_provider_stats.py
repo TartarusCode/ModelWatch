@@ -22,7 +22,9 @@ from modelwatch.schemas import (
 def test_normalize_provider_key_matches_slug_and_name() -> None:
     assert normalize_provider_key("DeepInfra") == "deepinfra"
     assert normalize_provider_key("deepinfra") == "deepinfra"
-    assert normalize_provider_key("MiniMax Highspeed") == "minimax highspeed"
+    assert normalize_provider_key("MiniMax Highspeed") == "minimaxhighspeed"
+    assert normalize_provider_key("nex-agi") == "nexagi"
+    assert normalize_provider_key("Nex AGI") == "nexagi"
 
 
 def test_parse_benchmark_scores_payload_trims_fields() -> None:
@@ -163,6 +165,41 @@ def test_merge_provider_rows_joins_by_provider_key() -> None:
     assert rows[0].effective_input_price == 0.09
     assert rows[0].cache_hit_rate == 0.81
     assert rows[0].uptime_last_30m == 0.99
+
+
+def test_merge_provider_rows_joins_slug_and_spaced_provider_name() -> None:
+    effective = EffectivePricing(
+        weighted_input_price=0.25,
+        weighted_output_price=1.0,
+        weighted_cache_hit_rate=0.0,
+        provider_summaries=[
+            EffectivePricingProviderSummary(
+                provider_name="Nex AGI",
+                provider_slug="nex-agi",
+                effective_input_price=0.25,
+                effective_output_price=1.0,
+                cache_hit_rate=0.0,
+                total_tokens=1000,
+            )
+        ],
+    )
+    endpoints = [
+        ProviderEndpoint(
+            provider_name="Nex AGI",
+            name="Nex AGI | nex-agi/nex-n2-pro",
+            pricing=ProviderEndpointPricing(
+                prompt="0.00000025",
+                completion="0.000001",
+            ),
+            uptime_last_30m=None,
+            context_length=None,
+        )
+    ]
+    rows = merge_provider_rows(effective, endpoints)
+    assert len(rows) == 1
+    assert rows[0].provider_name == "Nex AGI"
+    assert rows[0].list_prompt == "0.00000025"
+    assert rows[0].effective_input_price == 0.25
 
 
 def test_stabilize_provider_stats_sorts_summaries_and_endpoints() -> None:

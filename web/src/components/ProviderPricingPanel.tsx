@@ -88,15 +88,23 @@ export function ProviderPricingPanel({
                     <span className="muted">—</span>
                   )}
                 </td>
-                <td className="tabular-nums">
-                  {isFiniteNumber(row.effectiveInputPrice)
-                    ? formatPerMillionUsd(row.effectiveInputPrice)
-                    : "—"}
+                <td>
+                  {isFiniteNumber(row.effectiveInputPrice) ? (
+                    <span className="price-cell">
+                      {formatPerMillionUsd(row.effectiveInputPrice)}
+                    </span>
+                  ) : (
+                    <span className="muted">—</span>
+                  )}
                 </td>
-                <td className="tabular-nums">
-                  {isFiniteNumber(row.effectiveOutputPrice)
-                    ? formatPerMillionUsd(row.effectiveOutputPrice)
-                    : "—"}
+                <td>
+                  {isFiniteNumber(row.effectiveOutputPrice) ? (
+                    <span className="price-cell">
+                      {formatPerMillionUsd(row.effectiveOutputPrice)}
+                    </span>
+                  ) : (
+                    <span className="muted">—</span>
+                  )}
                 </td>
                 <td className="tabular-nums">
                   {formatCacheHitRate(row.cacheHitRate)}

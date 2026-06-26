@@ -1,3 +1,4 @@
+import re
 from dataclasses import dataclass
 
 from modelwatch.schemas import (
@@ -25,7 +26,7 @@ class MergedProviderRow:
 
 
 def normalize_provider_key(value: str) -> str:
-    return value.strip().lower()
+    return re.sub(r"[^a-z0-9]", "", value.strip().lower())
 
 
 def parse_benchmark_scores_payload(
