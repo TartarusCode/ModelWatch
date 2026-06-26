@@ -17,18 +17,9 @@
       "old_per_million_usd": "0.822911",
       "pct_drop": 0.4167051222888786,
       "saved_per_million_usd": "0.342911"
-    },
-    {
-      "detected_at": "2026-06-25T22:00:23.827961Z",
-      "field": "completion",
-      "model_id": "nvidia/nemotron-3-super-120b-a12b",
-      "new_per_million_usd": "0.400000",
-      "old_per_million_usd": "0.450000",
-      "pct_drop": 0.1111111111111111,
-      "saved_per_million_usd": "0.050000"
     }
   ],
-  "generated_at": "2026-06-26T21:31:00.347056Z",
+  "generated_at": "2026-06-26T22:01:08.288098Z",
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05
