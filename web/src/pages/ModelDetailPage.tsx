@@ -3,11 +3,13 @@ import { Link, useParams } from "react-router-dom";
 import { ArtificialAnalysisPanel } from "../components/ArtificialAnalysisPanel";
 import { BenchmarkScoresPanel } from "../components/BenchmarkScoresPanel";
 import { DesignArenaPanel } from "../components/DesignArenaPanel";
+import { ErrorBoundary } from "../components/ErrorBoundary";
 import { PriceCell } from "../components/PriceCell";
 import { PriceHistoryPanel } from "../components/PriceHistoryPanel";
 import { ProviderBadge } from "../components/ProviderBadge";
 import { ProviderPricingPanel } from "../components/ProviderPricingPanel";
 import { isFreeTierModel, pricingFieldLabel, providerFromModelId } from "../lib/pricing";
+import { useDocumentTitle } from "../lib/useDocumentTitle";
 import type {
   EnrichedModel,
   ModelPricing,
@@ -42,6 +44,9 @@ export function ModelDetailPage({
   const { id } = useParams<{ id: string }>();
   const decodedId = id ? decodeURIComponent(id) : "";
   const enriched = models.find((m) => m.model.id === decodedId);
+  useDocumentTitle(
+    enriched ? `ModelWatch — ${enriched.model.name}` : "ModelWatch — Model",
+  );
 
   if (!enriched) {
     return (
@@ -193,14 +198,18 @@ export function ModelDetailPage({
         </section>
       </div>
 
-      <ProviderPricingPanel providerStats={resolvedProviderStats} />
+      <ErrorBoundary label="Provider pricing">
+        <ProviderPricingPanel providerStats={resolvedProviderStats} />
+      </ErrorBoundary>
 
       {benchmarks.design_arena_status.status === "ok" &&
       benchmarks.design_arena ? (
-        <DesignArenaPanel
-          records={benchmarks.design_arena.records}
-          eloBounds={benchmarks.design_arena.elo_bounds}
-        />
+        <ErrorBoundary label="Design Arena">
+          <DesignArenaPanel
+            records={benchmarks.design_arena.records}
+            eloBounds={benchmarks.design_arena.elo_bounds}
+          />
+        </ErrorBoundary>
       ) : benchmarks.design_arena_status.status === "error" ? (
         <section className="card card--wide">
           <h2 className="card__title">Design Arena</h2>
@@ -210,16 +219,20 @@ export function ModelDetailPage({
         </section>
       ) : null}
 
-      <BenchmarkScoresPanel
-        records={benchmarks.benchmark_scores ?? []}
-        status={benchmarkScoresStatus}
-      />
+      <ErrorBoundary label="Benchmark scores">
+        <BenchmarkScoresPanel
+          records={benchmarks.benchmark_scores ?? []}
+          status={benchmarkScoresStatus}
+        />
+      </ErrorBoundary>
 
       {benchmarks.artificial_analysis_status.status === "ok" ? (
-        <ArtificialAnalysisPanel
-          modelId={model.id}
-          records={benchmarks.artificial_analysis}
-        />
+        <ErrorBoundary label="Artificial Analysis">
+          <ArtificialAnalysisPanel
+            modelId={model.id}
+            records={benchmarks.artificial_analysis}
+          />
+        </ErrorBoundary>
       ) : benchmarks.artificial_analysis_status.status === "error" ? (
         <section className="card card--wide">
           <h2 className="card__title">Artificial Analysis</h2>

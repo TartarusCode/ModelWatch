@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { ErrorBoundary } from "./components/ErrorBoundary";
 import { Layout } from "./components/Layout";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { loadSiteData } from "./lib/data";
@@ -53,7 +54,8 @@ export function App() {
   const newModelCount = newModelsLast24h.length;
 
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+    <ErrorBoundary label="Application">
+      <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, "")}>
       <Routes>
         <Route
           element={
@@ -92,6 +94,7 @@ export function App() {
                 drops={dropsLast24h}
                 events={data.priceEvents}
                 thresholds={data.priceDrops.thresholds}
+                enriched={data.models.models}
               />
             }
           />
@@ -109,5 +112,6 @@ export function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </ErrorBoundary>
   );
 }
