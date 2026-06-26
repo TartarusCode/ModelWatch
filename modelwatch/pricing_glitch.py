@@ -27,9 +27,7 @@ def _recovers_to_positive_main_pricing_after(
     points: list[PriceHistoryPoint],
     index: int,
 ) -> bool:
-    return any(
-        _had_positive_main_pricing(later) for later in points[index + 1 :]
-    )
+    return any(_had_positive_main_pricing(later) for later in points[index + 1 :])
 
 
 def _settled_paid_to_free(existing_points: list[PriceHistoryPoint]) -> bool:
