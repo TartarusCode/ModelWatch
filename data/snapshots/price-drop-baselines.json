@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T07:30:24.727481Z",
+  "generated_at": "2026-06-26T15:00:57.223427Z",
   "models": {
     "minimax/minimax-m2.5": {
       "completion": "0.480000"
@@ -15,6 +15,9 @@
     },
     "nvidia/nemotron-3-super-120b-a12b": {
       "completion": "0.400000"
+    },
+    "qwen/qwen3.6-27b": {
+      "completion": "2.650000"
     },
     "z-ai/glm-5.1": {
       "input_cache_read": "0.182000"
