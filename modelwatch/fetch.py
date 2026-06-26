@@ -5,6 +5,8 @@ from urllib.parse import quote
 
 import httpx
 
+from modelwatch.http import auth_headers
+
 MODELS_URL = "https://openrouter.ai/api/v1/models"
 DESIGN_ARENA_URL = (
     "https://openrouter.ai/api/frontend/v1/private/design-arena-benchmarks"
@@ -12,12 +14,8 @@ DESIGN_ARENA_URL = (
 ARTIFICIAL_ANALYSIS_URL = (
     "https://openrouter.ai/api/frontend/v1/private/artificial-analysis-benchmarks"
 )
-BENCHMARK_SCORES_URL = (
-    "https://openrouter.ai/api/frontend/v1/stats/benchmark-scores"
-)
-EFFECTIVE_PRICING_URL = (
-    "https://openrouter.ai/api/frontend/v1/stats/effective-pricing"
-)
+BENCHMARK_SCORES_URL = "https://openrouter.ai/api/frontend/v1/stats/benchmark-scores"
+EFFECTIVE_PRICING_URL = "https://openrouter.ai/api/frontend/v1/stats/effective-pricing"
 
 DEFAULT_CONCURRENCY = 12
 DEFAULT_TIMEOUT_SECONDS = 15.0
@@ -29,12 +27,6 @@ class FetchOptions(TypedDict, total=False):
     concurrency: int
     timeout_seconds: float
     retries: int
-
-
-def _auth_headers(api_key: str | None) -> dict[str, str]:
-    if api_key:
-        return {"Authorization": f"Bearer {api_key}"}
-    return {}
 
 
 async def fetch_models(client: httpx.AsyncClient) -> list[dict[str, object]]:
@@ -70,10 +62,10 @@ async def _fetch_json_with_retries(
 
 async def fetch_design_arena(
     client: httpx.AsyncClient,
-    model_id: str,
+    canonical_slug: str,
     retries: int,
 ) -> tuple[dict[str, object] | None, str | None]:
-    slug = quote(model_id, safe="")
+    slug = quote(canonical_slug, safe="")
     url = f"{DESIGN_ARENA_URL}?slug={slug}"
     try:
         payload = await _fetch_json_with_retries(client, url, retries)
@@ -87,10 +79,10 @@ async def fetch_design_arena(
 
 async def fetch_artificial_analysis(
     client: httpx.AsyncClient,
-    model_id: str,
+    canonical_slug: str,
     retries: int,
 ) -> tuple[list[dict[str, object]] | None, str | None]:
-    slug = quote(model_id, safe="")
+    slug = quote(canonical_slug, safe="")
     url = f"{ARTIFICIAL_ANALYSIS_URL}?slug={slug}"
     try:
         payload = await _fetch_json_with_retries(client, url, retries)
@@ -201,7 +193,7 @@ async def fetch_all_provider_endpoints(
     timeout_seconds = opts.get("timeout_seconds", DEFAULT_TIMEOUT_SECONDS)
     retries = opts.get("retries", DEFAULT_RETRIES)
     semaphore = asyncio.Semaphore(concurrency)
-    headers = _auth_headers(api_key)
+    headers = auth_headers(api_key)
     timeout = httpx.Timeout(timeout_seconds)
     async with httpx.AsyncClient(headers=headers, timeout=timeout) as client:
         tasks = [
@@ -257,7 +249,7 @@ async def fetch_all_benchmarks(
     timeout_seconds = opts.get("timeout_seconds", DEFAULT_TIMEOUT_SECONDS)
     retries = opts.get("retries", DEFAULT_RETRIES)
     semaphore = asyncio.Semaphore(concurrency)
-    headers = _auth_headers(api_key)
+    headers = auth_headers(api_key)
     timeout = httpx.Timeout(timeout_seconds)
     async with httpx.AsyncClient(headers=headers, timeout=timeout) as client:
         tasks = [
@@ -267,11 +259,13 @@ async def fetch_all_benchmarks(
         return await asyncio.gather(*tasks)
 
 
-async def fetch_models_async(options: FetchOptions | None = None) -> list[dict[str, object]]:
+async def fetch_models_async(
+    options: FetchOptions | None = None,
+) -> list[dict[str, object]]:
     opts = options or {}
     api_key = opts.get("api_key") or os.environ.get("OPENROUTER_API_KEY")
     timeout_seconds = opts.get("timeout_seconds", DEFAULT_TIMEOUT_SECONDS)
-    headers = _auth_headers(api_key)
+    headers = auth_headers(api_key)
     timeout = httpx.Timeout(timeout_seconds)
     async with httpx.AsyncClient(headers=headers, timeout=timeout) as client:
         return await fetch_models(client)

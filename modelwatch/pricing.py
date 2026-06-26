@@ -1,6 +1,8 @@
 from dataclasses import dataclass
 from decimal import Decimal
 
+from modelwatch.price_parsing import is_known_price, parse_per_token
+
 PRICING_FIELDS = (
     "prompt",
     "completion",
@@ -40,14 +42,10 @@ def per_million_field_name(field: str) -> str:
 
 
 def per_million_usd(per_token: str) -> Decimal:
-    token = _parse_per_token(per_token)
-    if token is None or not _is_known_price(token):
+    token = parse_per_token(per_token)
+    if token is None or not is_known_price(token):
         raise ValueError(f"not a displayable price: {per_token!r}")
     return token * Decimal(1_000_000)
-
-
-def _is_known_price(token: Decimal) -> bool:
-    return token >= 0
 
 
 def _is_positive_price(token: Decimal) -> bool:
@@ -66,10 +64,7 @@ def pricing_fields_to_compare(
 
 
 def _parse_per_token(value: str) -> Decimal | None:
-    try:
-        return Decimal(value)
-    except Exception:
-        return None
+    return parse_per_token(value)
 
 
 def detect_price_drops_from_reference(
@@ -87,7 +82,7 @@ def detect_price_drops_from_reference(
         if not _is_positive_price(reference):
             continue
         new_token = _parse_per_token(current_pricing[field])
-        if new_token is None or not _is_known_price(new_token):
+        if new_token is None or not is_known_price(new_token):
             continue
         new_per_million = new_token * Decimal(1_000_000)
         if not _is_positive_price(new_per_million):

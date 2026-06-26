@@ -5,7 +5,8 @@ from pathlib import Path
 from pydantic import BaseModel, ConfigDict
 
 from modelwatch.json_output import write_model_json
-from modelwatch.pricing import PRICING_FIELDS, _is_known_price, _parse_per_token, per_million_field_name
+from modelwatch.price_parsing import is_known_price, parse_per_token
+from modelwatch.pricing import PRICING_FIELDS, per_million_field_name
 from modelwatch.pricing_glitch import (
     has_recordable_history_fields,
     sanitize_history_fields,
@@ -13,7 +14,11 @@ from modelwatch.pricing_glitch import (
 from modelwatch.schemas import ModelPricing
 
 HISTORY_PATH = (
-    Path(__file__).resolve().parent.parent / "web" / "public" / "data" / "price-history.json"
+    Path(__file__).resolve().parent.parent
+    / "web"
+    / "public"
+    / "data"
+    / "price-history.json"
 )
 MAX_POINTS_PER_MODEL = 500
 
@@ -40,8 +45,8 @@ class PriceHistoryStore(BaseModel):
 
 
 def _token_to_per_million(per_token: str) -> Decimal | None:
-    token = _parse_per_token(per_token)
-    if token is None or not _is_known_price(token):
+    token = parse_per_token(per_token)
+    if token is None or not is_known_price(token):
         return None
     return token * Decimal(1_000_000)
 
@@ -73,8 +78,7 @@ def append_build_to_history(
     point = PriceHistoryPoint(
         recorded_at=recorded_at,
         **{
-            per_million_field_name(field): fields.get(field)
-            for field in PRICING_FIELDS
+            per_million_field_name(field): fields.get(field) for field in PRICING_FIELDS
         },
     )
     updated_points = [*existing, point][-MAX_POINTS_PER_MODEL:]

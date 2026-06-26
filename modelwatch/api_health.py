@@ -16,8 +16,8 @@ from modelwatch.fetch import (
     ARTIFICIAL_ANALYSIS_URL,
     DESIGN_ARENA_URL,
     MODELS_URL,
-    _auth_headers,
 )
+from modelwatch.http import auth_headers
 
 PROBE_TIMEOUT_SECONDS = 5.0
 
@@ -112,7 +112,7 @@ def format_report(report: ApiHealthReport) -> str:
 
 async def run_api_health() -> ApiHealthReport:
     api_key = os.environ.get("OPENROUTER_API_KEY")
-    headers = _auth_headers(api_key)
+    headers = auth_headers(api_key)
     timeout = httpx.Timeout(PROBE_TIMEOUT_SECONDS)
     async with httpx.AsyncClient(headers=headers, timeout=timeout) as client:
         return await probe_benchmark_endpoints(client=client)
