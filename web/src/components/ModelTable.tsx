@@ -7,17 +7,23 @@ import {
   type SortingState,
   type VisibilityState,
 } from "@tanstack/react-table";
-import { useEffect, useMemo, useState } from "react";
+import { useVirtualizer } from "@tanstack/react-virtual";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   formatAaIndex,
   getAaSummaryScores,
   getAaVariantInfo,
   type AaSummaryScores,
+  type AaVariantInfo,
 } from "../lib/benchmarks";
 import { AaVariantCell } from "./AaVariantCell";
 import { hasBenchmarkData } from "../lib/data";
-import { compareTokenPrices, providerFromModelId } from "../lib/pricing";
+import {
+  compareTokenPrices,
+  isFreeTierModel,
+  providerFromModelId,
+} from "../lib/pricing";
 import {
   loadColumnVisibility,
   saveColumnVisibility,
@@ -29,6 +35,7 @@ import { PriceCell } from "./PriceCell";
 import { ProviderBadge } from "./ProviderBadge";
 
 const columnHelper = createColumnHelper<EnrichedModel>();
+const ROW_HEIGHT_PX = 44;
 
 function AaIndexCell({
   scores,
@@ -60,14 +67,33 @@ export function ModelTable({ models }: ModelTableProps) {
   const [providerFilter, setProviderFilter] = useState("");
   const [minContext, setMinContext] = useState("");
   const [benchmarkOnly, setBenchmarkOnly] = useState(false);
+  const [freeTierOnly, setFreeTierOnly] = useState(false);
   const [toolsOnly, setToolsOnly] = useState(false);
   const [reasoningOnly, setReasoningOnly] = useState(false);
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>(
     loadColumnVisibility,
   );
+  const tableContainerRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     saveColumnVisibility(columnVisibility);
   }, [columnVisibility]);
+
+  const aaScoresByModelId = useMemo(() => {
+    const map = new Map<string, AaSummaryScores | undefined>();
+    for (const row of models) {
+      map.set(row.model.id, getAaSummaryScores(row.benchmarks, row.model.id));
+    }
+    return map;
+  }, [models]);
+
+  const aaVariantInfoByModelId = useMemo(() => {
+    const map = new Map<string, AaVariantInfo | undefined>();
+    for (const row of models) {
+      map.set(row.model.id, getAaVariantInfo(row.benchmarks, row.model.id));
+    }
+    return map;
+  }, [models]);
 
   const providers = useMemo(() => {
     const set = new Set(models.map((m) => providerFromModelId(m.model.id)));
@@ -87,6 +113,9 @@ export function ModelTable({ models }: ModelTableProps) {
         return false;
       }
       if (benchmarkOnly && !hasBenchmarkData(benchmarks)) {
+        return false;
+      }
+      if (freeTierOnly && !isFreeTierModel(model.id, model.pricing)) {
         return false;
       }
       if (toolsOnly && !model.supported_parameters.includes("tools")) {
@@ -113,6 +142,7 @@ export function ModelTable({ models }: ModelTableProps) {
     providerFilter,
     minContext,
     benchmarkOnly,
+    freeTierOnly,
     toolsOnly,
     reasoningOnly,
     globalFilter,
@@ -177,85 +207,67 @@ export function ModelTable({ models }: ModelTableProps) {
         },
       }),
       columnHelper.accessor(
-        (row) =>
-          getAaSummaryScores(row.benchmarks, row.model.id)?.intelligence ?? null,
+        (row) => aaScoresByModelId.get(row.model.id)?.intelligence ?? null,
         {
           id: "intelligence",
           header: "Intel",
           sortingFn: (a, b) => {
             const left =
-              getAaSummaryScores(a.original.benchmarks, a.original.model.id)
-                ?.intelligence ?? -1;
+              aaScoresByModelId.get(a.original.model.id)?.intelligence ?? -1;
             const right =
-              getAaSummaryScores(b.original.benchmarks, b.original.model.id)
-                ?.intelligence ?? -1;
+              aaScoresByModelId.get(b.original.model.id)?.intelligence ?? -1;
             return left - right;
           },
           cell: (info) => (
             <AaIndexCell
-              scores={getAaSummaryScores(
-                info.row.original.benchmarks,
-                info.row.original.model.id,
-              )}
+              scores={aaScoresByModelId.get(info.row.original.model.id)}
               field="intelligence"
             />
           ),
         },
       ),
       columnHelper.accessor(
-        (row) =>
-          getAaSummaryScores(row.benchmarks, row.model.id)?.coding ?? null,
+        (row) => aaScoresByModelId.get(row.model.id)?.coding ?? null,
         {
           id: "coding",
           header: "Coding",
           sortingFn: (a, b) => {
             const left =
-              getAaSummaryScores(a.original.benchmarks, a.original.model.id)
-                ?.coding ?? -1;
+              aaScoresByModelId.get(a.original.model.id)?.coding ?? -1;
             const right =
-              getAaSummaryScores(b.original.benchmarks, b.original.model.id)
-                ?.coding ?? -1;
+              aaScoresByModelId.get(b.original.model.id)?.coding ?? -1;
             return left - right;
           },
           cell: (info) => (
             <AaIndexCell
-              scores={getAaSummaryScores(
-                info.row.original.benchmarks,
-                info.row.original.model.id,
-              )}
+              scores={aaScoresByModelId.get(info.row.original.model.id)}
               field="coding"
             />
           ),
         },
       ),
       columnHelper.accessor(
-        (row) =>
-          getAaSummaryScores(row.benchmarks, row.model.id)?.agentic ?? null,
+        (row) => aaScoresByModelId.get(row.model.id)?.agentic ?? null,
         {
           id: "agentic",
           header: "Agentic",
           sortingFn: (a, b) => {
             const left =
-              getAaSummaryScores(a.original.benchmarks, a.original.model.id)
-                ?.agentic ?? -1;
+              aaScoresByModelId.get(a.original.model.id)?.agentic ?? -1;
             const right =
-              getAaSummaryScores(b.original.benchmarks, b.original.model.id)
-                ?.agentic ?? -1;
+              aaScoresByModelId.get(b.original.model.id)?.agentic ?? -1;
             return left - right;
           },
           cell: (info) => (
             <AaIndexCell
-              scores={getAaSummaryScores(
-                info.row.original.benchmarks,
-                info.row.original.model.id,
-              )}
+              scores={aaScoresByModelId.get(info.row.original.model.id)}
               field="agentic"
             />
           ),
         },
       ),
       columnHelper.accessor(
-        (row) => getAaVariantInfo(row.benchmarks, row.model.id)?.defaultLabel ?? null,
+        (row) => aaVariantInfoByModelId.get(row.model.id)?.defaultLabel ?? null,
         {
           id: "aaVariant",
           header: "Bench profile",
@@ -263,16 +275,13 @@ export function ModelTable({ models }: ModelTableProps) {
           cell: (info) => (
             <AaVariantCell
               modelId={info.row.original.model.id}
-              info={getAaVariantInfo(
-                info.row.original.benchmarks,
-                info.row.original.model.id,
-              )}
+              info={aaVariantInfoByModelId.get(info.row.original.model.id)}
             />
           ),
         },
       ),
     ],
-    [],
+    [aaScoresByModelId, aaVariantInfoByModelId],
   );
 
   const table = useReactTable({
@@ -285,12 +294,27 @@ export function ModelTable({ models }: ModelTableProps) {
     getSortedRowModel: getSortedRowModel(),
   });
 
+  const rows = table.getRowModel().rows;
+  const rowVirtualizer = useVirtualizer({
+    count: rows.length,
+    getScrollElement: () => tableContainerRef.current,
+    estimateSize: () => ROW_HEIGHT_PX,
+    overscan: 12,
+  });
+  const virtualRows = rowVirtualizer.getVirtualItems();
+  const paddingTop = virtualRows.length > 0 ? virtualRows[0]?.start ?? 0 : 0;
+  const paddingBottom =
+    virtualRows.length > 0
+      ? rowVirtualizer.getTotalSize() - (virtualRows.at(-1)?.end ?? 0)
+      : 0;
+
   const visibleColumnCount = table.getVisibleLeafColumns().length;
 
   const activeFilterCount =
     (providerFilter ? 1 : 0) +
     (minContext ? 1 : 0) +
     (benchmarkOnly ? 1 : 0) +
+    (freeTierOnly ? 1 : 0) +
     (toolsOnly ? 1 : 0) +
     (reasoningOnly ? 1 : 0);
 
@@ -343,6 +367,11 @@ export function ModelTable({ models }: ModelTableProps) {
           onToggle={() => setBenchmarkOnly((v) => !v)}
         />
         <FilterChip
+          label="Free tier"
+          active={freeTierOnly}
+          onToggle={() => setFreeTierOnly((v) => !v)}
+        />
+        <FilterChip
           label="Tools"
           active={toolsOnly}
           onToggle={() => setToolsOnly((v) => !v)}
@@ -360,6 +389,7 @@ export function ModelTable({ models }: ModelTableProps) {
               setProviderFilter("");
               setMinContext("");
               setBenchmarkOnly(false);
+              setFreeTierOnly(false);
               setToolsOnly(false);
               setReasoningOnly(false);
             }}
@@ -375,54 +405,106 @@ export function ModelTable({ models }: ModelTableProps) {
         </span>
         <span className="muted">Prices per 1M tokens</span>
       </div>
-      <div className="data-table-wrap">
+      <div
+        ref={tableContainerRef}
+        className="data-table-wrap data-table-wrap--virtual"
+      >
         <table className="data-table">
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (
               <tr key={headerGroup.id}>
-                {headerGroup.headers.map((header) => (
-                  <th
-                    key={header.id}
-                    onClick={header.column.getToggleSortingHandler()}
-                    className={
-                      header.column.getCanSort() ? "data-table__sortable" : ""
-                    }
-                  >
-                    <span className="th-inner">
-                      {flexRender(
-                        header.column.columnDef.header,
-                        header.getContext(),
+                {headerGroup.headers.map((header) => {
+                  const sorted = header.column.getIsSorted();
+                  const ariaSort =
+                    sorted === "asc"
+                      ? "ascending"
+                      : sorted === "desc"
+                        ? "descending"
+                        : header.column.getCanSort()
+                          ? "none"
+                          : undefined;
+                  return (
+                    <th
+                      key={header.id}
+                      scope="col"
+                      aria-sort={ariaSort}
+                      className={
+                        header.column.getCanSort() ? "data-table__sortable" : ""
+                      }
+                    >
+                      {header.column.getCanSort() ? (
+                        <button
+                          type="button"
+                          className="th-sort-button"
+                          onClick={header.column.getToggleSortingHandler()}
+                        >
+                          {flexRender(
+                            header.column.columnDef.header,
+                            header.getContext(),
+                          )}
+                          {sorted === "asc"
+                            ? " ↑"
+                            : sorted === "desc"
+                              ? " ↓"
+                              : null}
+                        </button>
+                      ) : (
+                        flexRender(
+                          header.column.columnDef.header,
+                          header.getContext(),
+                        )
                       )}
-                      {{
-                        asc: " ↑",
-                        desc: " ↓",
-                      }[header.column.getIsSorted() as string] ?? null}
-                    </span>
-                  </th>
-                ))}
+                    </th>
+                  );
+                })}
               </tr>
             ))}
           </thead>
           <tbody>
-            {table.getRowModel().rows.length === 0 ? (
+            {rows.length === 0 ? (
               <tr>
                 <td colSpan={visibleColumnCount} className="data-table__empty">
                   No models match your filters.
                 </td>
               </tr>
             ) : (
-              table.getRowModel().rows.map((row) => (
-                <tr key={row.id}>
-                  {row.getVisibleCells().map((cell) => (
-                    <td key={cell.id}>
-                      {flexRender(
-                        cell.column.columnDef.cell,
-                        cell.getContext(),
-                      )}
-                    </td>
-                  ))}
-                </tr>
-              ))
+              <>
+                {paddingTop > 0 ? (
+                  <tr aria-hidden>
+                    <td
+                      colSpan={visibleColumnCount}
+                      style={{ height: `${paddingTop}px`, padding: 0, border: 0 }}
+                    />
+                  </tr>
+                ) : null}
+                {virtualRows.map((virtualRow) => {
+                  const row = rows[virtualRow.index];
+                  return (
+                    <tr key={row.id} style={{ height: `${virtualRow.size}px` }}>
+                      {row.getVisibleCells().map((cell) => (
+                        <td key={cell.id}>
+                          {flexRender(
+                            cell.column.columnDef.cell,
+                            cell.getContext(),
+                          )}
+                        </td>
+                      ))}
+                    </tr>
+                  );
+                })}
+                {paddingBottom > 0 ? (
+                  <tr aria-hidden>
+                    <td
+                      colSpan={visibleColumnCount}
+                      style={{
+                        height: `${paddingBottom}px`,
+                        padding: 0,
+                        border: 0,
+                      }}
+                    />
+                  </tr>
+                ) : null}
+              </>
             )}
           </tbody>
         </table>
