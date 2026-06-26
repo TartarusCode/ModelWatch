@@ -1,6 +1,6 @@
 from datetime import UTC, datetime
 
-from modelwatch.alias_cleanup import filter_new_model_events, filter_price_events
+from modelwatch.data_repair import filter_new_model_events, filter_price_events
 from modelwatch.schemas import NewModelEventRecord, PriceEventRecord
 
 

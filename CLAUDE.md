@@ -33,8 +33,8 @@ Implemented in `modelwatch/pricing.py` and `modelwatch/price_baselines.py`:
 - Compare current pricing to a **reference price** per model/field: `max(7-day moving average, ratchet baseline)`.
 - **7-day MA** is computed from `web/public/data/price-history.json` (time-based window, not snapshot count — handles irregular cron cadence). Requires **≥3 history points** in the window; otherwise skip detection for that model until enough data exists.
 - **Ratchet baseline** stored in `data/snapshots/price-drop-baselines.json`; updated only on confirmed drops (never raised on price increases). When a baseline exists, current price must be **strictly below** it to alert — prevents re-firing when price returns to a previously dropped level after a spike.
-- Significant when **≥10%** drop below reference **and** **≥$0.05/M** saved (USD per 1M tokens).
-- **Zero-price glitch guard** (`modelwatch/pricing_glitch.py`): paid models (`:free` suffix and `openrouter/free` excluded) never record $0 history points after a positive price, never emit drop alerts to $0, and spurious zero events are stripped from `price-drops.json`. OpenRouter briefly returned $0 for many paid models on 2026-06-25 ~13:30–14:00 UTC; run `uv run python -m modelwatch.alias_cleanup` to purge history/events/baselines.
+- Significant when **≥10%** drop below reference **and** **≥$0.05/M** saved (USD per 1M tokens). Thresholds: `DEFAULT_THRESHOLDS` in `modelwatch/pricing.py`.
+- **Zero-price glitch guard** (`modelwatch/pricing_glitch.py`): models with a paid price history never alert down to $0. Temporary $0 spikes that recover to a positive price are recorded then stripped by `is_paid_zero_glitch_point` / `uv run python -m modelwatch.data_repair`. A **paid→free transition** (zeros after the last positive point with no later recovery) is kept in history and treated as free tier. Preview models legitimately free without `:free` (e.g. `google/lyria-3-clip-preview`) are free tier when token pricing is $0 and history has no positive main prices. OpenRouter briefly returned $0 for many paid models on 2026-06-25 ~13:30–14:00 UTC; run `uv run python -m modelwatch.data_repair` to purge sandwiched glitch history/events/baselines.
 - Events append to `web/public/data/price-events.jsonl` (max 500 lines).
 - `price-drops.json` lists drops from the last **24 hours** of events (30m builds); UI counts/banner match that window. One row per model+field (latest event); re-alerts at an unchanged settled price are suppressed.
 - JSON artifacts use `modelwatch.json_output` (`sort_keys=True` at every object level) for stable git diffs.
@@ -62,10 +62,11 @@ Implemented in `modelwatch/new_models.py`:
 ## Gotchas
 
 - OpenRouter uses per-token price `-1` for routers/variable pricing (e.g. `openrouter/auto`). Treat as "Varies", never multiply by 1M.
-- Price history in `web/public/data/price-history.json` — all `PRICING_FIELDS` (prompt, completion, cache read, etc.); one point per scheduled build per model (up to 500 points retained); UI shows columns/series only for fields with data.
+- Price history in `web/public/data/price-history.json` — all `PRICING_FIELDS` (prompt, completion, cache read, etc.); one point per scheduled build per model (up to 500 points retained); UI shows columns/series only for fields with data. Field names use `per_million_field_name()` from `modelwatch/pricing.py`.
+- Detail page **Free tier** badge (`web/src/lib/pricing.ts` `isFreeTierModel`) is display-only — uses current pricing, not history; Python `is_free_tier_model` is authoritative for the build pipeline.
 - First build has no price history → no price drops until enough history points accumulate (≥3 within 7 days).
 - Most models return empty benchmark payloads; UI must handle `empty` status.
-- **Latest aliases** (`~provider/model-latest` and `*/gpt-chat-latest`) are excluded at build time — they duplicate versioned models and skew price/benchmark stats. Historical alias rows are stripped by `uv run python -m modelwatch.alias_cleanup`; drop/new-model windows filter them at read time.
+- **Latest aliases** (`~provider/model-latest` and `*/gpt-chat-latest`) are excluded at build time — they duplicate versioned models and skew price/benchmark stats. Historical alias rows are stripped by `uv run python -m modelwatch.data_repair`; drop/new-model windows filter them at read time.
 - Benchmark APIs use **`canonical_slug`** (permaslug), not `model.id` (`:free` variants share one slug). Endpoints live under `/api/frontend/v1/private/` (not the old `/api/internal/v1/` paths).
 - **Intelligence / Coding / Agentic** on OpenRouter compare come from `artificial-analysis-benchmarks` (`artificial_analysis_*_index` + `percentiles` for bar width). `frontend/stats/endpoint` is provider routing/latency stats, not AA indices.
 - Build stores all AA variants in `benchmarks.artificial_analysis`; `artificial_analysis_summary` is the default profile for the overview table.

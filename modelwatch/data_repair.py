@@ -15,8 +15,8 @@ from modelwatch.price_events import (
     filter_spurious_zero_drop_events,
     load_price_events,
 )
-from modelwatch.history import load_history, save_history
-from modelwatch.pricing import PriceDropThresholds
+from modelwatch.history import PriceHistoryPoint, load_history, save_history
+from modelwatch.pricing import DEFAULT_THRESHOLDS
 from modelwatch.pricing_glitch import (
     is_free_model_id,
     is_paid_zero_glitch_point,
@@ -28,17 +28,11 @@ from modelwatch.schemas import (
     PriceEventRecord,
 )
 
-DEFAULT_THRESHOLDS = PriceDropThresholds(
-    min_pct=Decimal("0.10"),
-    min_saved_per_million_usd=Decimal("0.05"),
-)
-
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "web" / "public" / "data"
 EVENTS_PATH = DATA_DIR / "price-events.jsonl"
 NEW_MODEL_EVENTS_PATH = DATA_DIR / "new-model-events.jsonl"
 PRICE_DROPS_PATH = DATA_DIR / "price-drops.json"
-BASELINES_PATH = ROOT / "data" / "snapshots" / "price-drop-baselines.json"
 
 
 def filter_price_events(events: list[PriceEventRecord]) -> list[PriceEventRecord]:
@@ -81,7 +75,7 @@ def clean_new_model_events_file(path: Path = NEW_MODEL_EVENTS_PATH) -> int:
 def clean_price_history() -> int:
     store = load_history()
     removed = 0
-    kept_models: dict[str, list] = {}
+    kept_models: dict[str, list[PriceHistoryPoint]] = {}
     for model_id, points in store.models.items():
         if is_latest_alias_model_id(model_id):
             removed += 1

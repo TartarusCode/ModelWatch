@@ -73,6 +73,23 @@ export function formatPct(pct: number): string {
   return `${(pct * 100).toFixed(1)}%`;
 }
 
+/**
+ * Display-only free-tier badge; uses current pricing only (no price history).
+ * A transient API glitch could briefly show the badge on paid models until the next build.
+ */
+export function isFreeTierModel(
+  modelId: string,
+  pricing: { prompt: string; completion: string },
+): boolean {
+  if (modelId.endsWith(":free") || modelId === "openrouter/free") {
+    return true;
+  }
+  return (
+    parseTokenPrice(pricing.prompt).kind === "free" &&
+    parseTokenPrice(pricing.completion).kind === "free"
+  );
+}
+
 export function providerFromModelId(modelId: string): string {
   const slash = modelId.indexOf("/");
   if (slash === -1) {

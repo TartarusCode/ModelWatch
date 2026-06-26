@@ -32,8 +32,8 @@ from modelwatch.price_events import (
     load_price_events,
 )
 from modelwatch.pricing import (
+    DEFAULT_THRESHOLDS,
     PriceDrop,
-    PriceDropThresholds,
     detect_price_drops_from_reference,
 )
 from modelwatch.stable_output import stabilize_enriched_models
@@ -61,11 +61,6 @@ EVENTS_PATH = DATA_DIR / "price-events.jsonl"
 NEW_MODEL_EVENTS_PATH = DATA_DIR / "new-model-events.jsonl"
 MAX_EVENTS = 500
 DESCRIPTION_MAX_LEN = 500
-
-DEFAULT_THRESHOLDS = PriceDropThresholds(
-    min_pct=Decimal("0.10"),
-    min_saved_per_million_usd=Decimal("0.05"),
-)
 
 
 def _trim_description(description: str | None) -> str | None:

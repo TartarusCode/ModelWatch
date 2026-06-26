@@ -5,7 +5,7 @@ import { DesignArenaPanel } from "../components/DesignArenaPanel";
 import { PriceCell } from "../components/PriceCell";
 import { PriceHistoryPanel } from "../components/PriceHistoryPanel";
 import { ProviderBadge } from "../components/ProviderBadge";
-import { pricingFieldLabel, providerFromModelId } from "../lib/pricing";
+import { isFreeTierModel, pricingFieldLabel, providerFromModelId } from "../lib/pricing";
 import type {
   EnrichedModel,
   ModelPricing,
@@ -69,7 +69,7 @@ export function ModelDetailPage({
       <header className="model-hero">
         <div className="model-hero__top">
           <ProviderBadge provider={provider} />
-          {model.id.includes(":free") ? (
+          {isFreeTierModel(model.id, model.pricing) ? (
             <span className="status-pill status-pill--ok">Free tier</span>
           ) : null}
         </div>

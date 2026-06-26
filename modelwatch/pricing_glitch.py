@@ -3,26 +3,74 @@ from __future__ import annotations
 from decimal import Decimal
 from typing import TYPE_CHECKING
 
-from modelwatch.pricing import PRICING_FIELDS
+from modelwatch.pricing import PRICING_FIELDS, per_million_field_name
 
 if TYPE_CHECKING:
     from modelwatch.history import PriceHistoryPoint
-
-
-def _per_million_field_name(field: str) -> str:
-    return f"{field}_per_million"
 
 
 def is_free_model_id(model_id: str) -> bool:
     return model_id.endswith(":free") or model_id == "openrouter/free"
 
 
-def is_zero_price(value: Decimal | None) -> bool:
-    return value is not None and value == 0
+def _main_pricing_fields_zero(fields: dict[str, Decimal | None]) -> bool:
+    prompt = fields.get("prompt")
+    completion = fields.get("completion")
+    return (prompt is None or prompt == 0) and (completion is None or completion == 0)
+
+
+def _history_had_positive_main_pricing(points: list[PriceHistoryPoint]) -> bool:
+    return any(_had_positive_main_pricing(point) for point in points)
+
+
+def _recovers_to_positive_main_pricing_after(
+    points: list[PriceHistoryPoint],
+    index: int,
+) -> bool:
+    for later in points[index + 1 :]:
+        if _had_positive_main_pricing(later):
+            return True
+    return False
+
+
+def _settled_paid_to_free(existing_points: list[PriceHistoryPoint]) -> bool:
+    if not existing_points or not _history_had_positive_main_pricing(existing_points):
+        return False
+    last_positive_idx = -1
+    for index, point in enumerate(existing_points):
+        if _had_positive_main_pricing(point):
+            last_positive_idx = index
+    if last_positive_idx < 0:
+        return False
+    tail = existing_points[last_positive_idx + 1 :]
+    if not tail:
+        return False
+    return all(_has_zero_main_pricing(point) for point in tail)
+
+
+def is_free_tier_model(
+    model_id: str,
+    *,
+    pricing_fields: dict[str, Decimal | None] | None = None,
+    existing_points: list[PriceHistoryPoint] | None = None,
+) -> bool:
+    if is_free_model_id(model_id):
+        return True
+    if pricing_fields is None or existing_points is None:
+        return False
+    if not _main_pricing_fields_zero(pricing_fields):
+        return False
+    if not _history_had_positive_main_pricing(existing_points):
+        return True
+    if _settled_paid_to_free(existing_points):
+        return True
+    return False
 
 
 def is_spurious_zero_drop(model_id: str, new_per_million_usd: Decimal) -> bool:
-    return not is_free_model_id(model_id) and new_per_million_usd <= 0
+    if is_free_model_id(model_id):
+        return False
+    return new_per_million_usd <= 0
 
 
 def is_spurious_zero_drop_event(model_id: str, new_per_million_usd: str) -> bool:
@@ -56,14 +104,21 @@ def is_paid_zero_glitch_point(
     points: list[PriceHistoryPoint],
     index: int,
 ) -> bool:
-    if is_free_model_id(model_id):
-        return False
     point = points[index]
+    if is_free_tier_model(
+        model_id,
+        pricing_fields={
+            "prompt": point.prompt_per_million,
+            "completion": point.completion_per_million,
+        },
+        existing_points=points[:index],
+    ):
+        return False
     if not _has_zero_main_pricing(point):
         return False
-    before = points[index - 1] if index > 0 else None
-    after = points[index + 1] if index + 1 < len(points) else None
-    return _had_positive_main_pricing(before) or _had_positive_main_pricing(after)
+    if not _history_had_positive_main_pricing(points[:index]):
+        return False
+    return _recovers_to_positive_main_pricing_after(points, index)
 
 
 def sanitize_history_fields(
@@ -71,21 +126,24 @@ def sanitize_history_fields(
     fields: dict[str, Decimal | None],
     existing_points: list[PriceHistoryPoint],
 ) -> dict[str, Decimal | None]:
-    if is_free_model_id(model_id) or not existing_points:
+    if (
+        is_free_tier_model(
+            model_id,
+            pricing_fields=fields,
+            existing_points=existing_points,
+        )
+        or not existing_points
+    ):
         return fields
     last = existing_points[-1]
     sanitized = dict(fields)
-    if _had_positive_main_pricing(last):
-        for field in ("prompt", "completion"):
-            if sanitized.get(field) == 0:
-                sanitized[field] = None
     for field in PRICING_FIELDS:
         if field in ("prompt", "completion"):
             continue
         value = sanitized.get(field)
         if value is None or value != 0:
             continue
-        prior = getattr(last, _per_million_field_name(field))
+        prior = getattr(last, per_million_field_name(field))
         if prior is not None and prior > 0:
             sanitized[field] = None
     return sanitized

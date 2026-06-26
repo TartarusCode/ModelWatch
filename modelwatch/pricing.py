@@ -29,6 +29,16 @@ class PriceDrop:
     saved_per_million_usd: Decimal
 
 
+DEFAULT_THRESHOLDS = PriceDropThresholds(
+    min_pct=Decimal("0.10"),
+    min_saved_per_million_usd=Decimal("0.05"),
+)
+
+
+def per_million_field_name(field: str) -> str:
+    return f"{field}_per_million"
+
+
 def per_million_usd(per_token: str) -> Decimal:
     token = _parse_per_token(per_token)
     if token is None or not _is_known_price(token):

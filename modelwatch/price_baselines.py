@@ -2,9 +2,9 @@ from datetime import UTC, datetime, timedelta
 from decimal import Decimal
 from pathlib import Path
 
-from modelwatch.history import PriceHistoryPoint, _per_million_field_name
+from modelwatch.history import PriceHistoryPoint
 from modelwatch.json_output import write_model_json
-from modelwatch.pricing import PRICING_FIELDS, PriceDrop
+from modelwatch.pricing import PRICING_FIELDS, PriceDrop, per_million_field_name
 from modelwatch.schemas import PriceDropBaselinesStore
 
 MA_WINDOW_DAYS = 7
@@ -35,7 +35,7 @@ def compute_moving_average_per_field(
 
     averages: dict[str, Decimal] = {}
     for field in PRICING_FIELDS:
-        attr = _per_million_field_name(field)
+        attr = per_million_field_name(field)
         values = [
             value
             for point in in_window

@@ -5,7 +5,7 @@ from pathlib import Path
 from pydantic import BaseModel, ConfigDict
 
 from modelwatch.json_output import write_model_json
-from modelwatch.pricing import PRICING_FIELDS, _is_known_price, _parse_per_token
+from modelwatch.pricing import PRICING_FIELDS, _is_known_price, _parse_per_token, per_million_field_name
 from modelwatch.pricing_glitch import (
     has_recordable_history_fields,
     sanitize_history_fields,
@@ -46,10 +46,6 @@ def _token_to_per_million(per_token: str) -> Decimal | None:
     return token * Decimal(1_000_000)
 
 
-def _per_million_field_name(field: str) -> str:
-    return f"{field}_per_million"
-
-
 def pricing_to_history_fields(pricing: ModelPricing) -> dict[str, Decimal | None]:
     raw = pricing.model_dump()
     fields: dict[str, Decimal | None] = {}
@@ -77,7 +73,7 @@ def append_build_to_history(
     point = PriceHistoryPoint(
         recorded_at=recorded_at,
         **{
-            _per_million_field_name(field): fields.get(field)
+            per_million_field_name(field): fields.get(field)
             for field in PRICING_FIELDS
         },
     )
