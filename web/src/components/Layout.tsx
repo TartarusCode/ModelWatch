@@ -27,6 +27,9 @@ function formatRelativeTime(iso: string): string {
 export function Layout({ meta, dropCount, newModelCount }: LayoutProps) {
   return (
     <div className="app">
+      <a href="#main-content" className="skip-link">
+        Skip to content
+      </a>
       <aside className="sidebar">
         <div className="sidebar__brand">
           <Link to="/" className="sidebar__logo">
@@ -88,6 +91,11 @@ export function Layout({ meta, dropCount, newModelCount }: LayoutProps) {
               <span className="sidebar__meta-sub">
                 {meta.model_count.toLocaleString()} models
               </span>
+              {meta.benchmark_errors > 0 ? (
+                <span className="sidebar__meta-warning">
+                  {meta.benchmark_errors.toLocaleString()} benchmark fetch errors
+                </span>
+              ) : null}
             </div>
           ) : null}
           <div className="sidebar__links">
@@ -102,7 +110,7 @@ export function Layout({ meta, dropCount, newModelCount }: LayoutProps) {
           </div>
         </div>
       </aside>
-      <div className="main">
+      <div className="main" id="main-content">
         <Outlet />
         <footer className="main-footer">
           <p>

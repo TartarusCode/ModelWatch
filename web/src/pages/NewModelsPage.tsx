@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import { PageHeader } from "../components/PageHeader";
+import { modelDisplayName } from "../lib/modelNames";
 import {
   NEW_MODEL_LOOKBACK_HOURS,
   sortNewModelsByDetectedAt,
 } from "../lib/newModels";
 import { formatPerMillion } from "../lib/pricing";
+import { recentEventsInDays } from "../lib/recentEvents";
+import { useDocumentTitle } from "../lib/useDocumentTitle";
 import type {
   EnrichedModel,
   NewModelEventRecord,
@@ -15,16 +18,6 @@ interface NewModelsPageProps {
   models: NewModelRecord[];
   events: NewModelEventRecord[];
   enriched: EnrichedModel[];
-}
-
-function recentEvents(events: NewModelEventRecord[]): NewModelEventRecord[] {
-  const weekAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
-  return events
-    .filter((event) => new Date(event.detected_at).getTime() >= weekAgo)
-    .sort(
-      (a, b) =>
-        new Date(b.detected_at).getTime() - new Date(a.detected_at).getTime(),
-    );
 }
 
 function formatOpenRouterCreated(created: number): string {
@@ -40,8 +33,9 @@ export function NewModelsPage({
   events,
   enriched,
 }: NewModelsPageProps) {
+  useDocumentTitle("ModelWatch — New models");
   const sorted = sortNewModelsByDetectedAt(models);
-  const recent = recentEvents(events);
+  const recent = recentEventsInDays(events, 7);
   const latest = sorted[0];
   const enrichedById = new Map(
     enriched.map((entry) => [entry.model.id, entry]),
@@ -62,7 +56,7 @@ export function NewModelsPage({
               to={`/models/${encodeURIComponent(latest.model_id)}`}
               className="highlight-card__model"
             >
-              {latest.model_id}
+              {modelDisplayName(latest.model_id, enriched)}
             </Link>
           </div>
           <p className="muted highlight-card__sub">
@@ -122,7 +116,7 @@ export function NewModelsPage({
                           to={`/models/${encodeURIComponent(entry.model_id)}`}
                           className="model-cell__name"
                         >
-                          {entry.model_id}
+                          {modelDisplayName(entry.model_id, enriched)}
                         </Link>
                       </td>
                       <td>{entry.name}</td>
@@ -182,7 +176,7 @@ export function NewModelsPage({
                         to={`/models/${encodeURIComponent(event.model_id)}`}
                         className="model-cell__name"
                       >
-                        {event.model_id}
+                        {modelDisplayName(event.model_id, enriched)}
                       </Link>
                     </td>
                     <td>{event.name}</td>

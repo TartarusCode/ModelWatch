@@ -3,6 +3,8 @@ import { PriceDropBanner } from "../components/PriceDropBanner";
 import { ModelTable } from "../components/ModelTable";
 import { PageHeader } from "../components/PageHeader";
 import { StatCard } from "../components/StatCard";
+import { hasBenchmarkData } from "../lib/data";
+import { useDocumentTitle } from "../lib/useDocumentTitle";
 import type { EnrichedModel } from "../types";
 
 interface HomePageProps {
@@ -18,11 +20,8 @@ export function HomePage({
   newModelCount,
   lastUpdated,
 }: HomePageProps) {
-  const withBenchmarks = models.filter(
-    (m) =>
-      m.benchmarks.design_arena_status.status === "ok" ||
-      m.benchmarks.artificial_analysis_status.status === "ok",
-  ).length;
+  useDocumentTitle("ModelWatch — Models");
+  const withBenchmarks = models.filter((m) => hasBenchmarkData(m.benchmarks)).length;
 
   return (
     <div className="page page--wide">

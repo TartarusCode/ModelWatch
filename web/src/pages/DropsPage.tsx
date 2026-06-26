@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { PageHeader } from "../components/PageHeader";
+import { modelDisplayName } from "../lib/modelNames";
+import { recentEventsInDays } from "../lib/recentEvents";
 import {
   DROP_LOOKBACK_HOURS,
   sortDropsBySeverity,
@@ -9,27 +11,29 @@ import {
   formatPct,
   pricingFieldLabel,
 } from "../lib/pricing";
-import type { PriceDropRecord, PriceEventRecord } from "../types";
+import { useDocumentTitle } from "../lib/useDocumentTitle";
+import type {
+  EnrichedModel,
+  PriceDropRecord,
+  PriceEventRecord,
+} from "../types";
 
 interface DropsPageProps {
   drops: PriceDropRecord[];
   events: PriceEventRecord[];
   thresholds: { min_pct: number; min_saved_per_million_usd: number };
+  enriched: EnrichedModel[];
 }
 
-function recentEvents(events: PriceEventRecord[]): PriceEventRecord[] {
-  const weekAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
-  return events
-    .filter((e) => new Date(e.detected_at).getTime() >= weekAgo)
-    .sort(
-      (a, b) =>
-        new Date(b.detected_at).getTime() - new Date(a.detected_at).getTime(),
-    );
-}
-
-export function DropsPage({ drops, events, thresholds }: DropsPageProps) {
+export function DropsPage({
+  drops,
+  events,
+  thresholds,
+  enriched,
+}: DropsPageProps) {
+  useDocumentTitle("ModelWatch — Price drops");
   const sorted = sortDropsBySeverity(drops);
-  const recent = recentEvents(events);
+  const recent = recentEventsInDays(events, 7);
   const topDrop = sorted[0];
 
   return (
@@ -47,7 +51,7 @@ export function DropsPage({ drops, events, thresholds }: DropsPageProps) {
               to={`/models/${encodeURIComponent(topDrop.model_id)}`}
               className="highlight-card__model"
             >
-              {topDrop.model_id}
+              {modelDisplayName(topDrop.model_id, enriched)}
             </Link>
             <span className="highlight-card__pct">
               −{formatPct(topDrop.pct_drop)}
@@ -87,13 +91,13 @@ export function DropsPage({ drops, events, thresholds }: DropsPageProps) {
             <table className="data-table">
               <thead>
                 <tr>
-                  <th>When</th>
-                  <th>Model</th>
-                  <th>Field</th>
-                  <th>Was</th>
-                  <th>Now</th>
-                  <th>Drop</th>
-                  <th>Saved</th>
+                  <th scope="col">When</th>
+                  <th scope="col">Model</th>
+                  <th scope="col">Field</th>
+                  <th scope="col">Was</th>
+                  <th scope="col">Now</th>
+                  <th scope="col">Drop</th>
+                  <th scope="col">Saved</th>
                 </tr>
               </thead>
               <tbody>
@@ -119,7 +123,7 @@ export function DropsPage({ drops, events, thresholds }: DropsPageProps) {
                         to={`/models/${encodeURIComponent(drop.model_id)}`}
                         className="model-cell__name"
                       >
-                        {drop.model_id}
+                        {modelDisplayName(drop.model_id, enriched)}
                       </Link>
                     </td>
                     <td>{pricingFieldLabel(drop.field)}</td>
@@ -160,11 +164,11 @@ export function DropsPage({ drops, events, thresholds }: DropsPageProps) {
             <table className="data-table">
               <thead>
                 <tr>
-                  <th>When</th>
-                  <th>Model</th>
-                  <th>Field</th>
-                  <th>Drop</th>
-                  <th>Saved</th>
+                  <th scope="col">When</th>
+                  <th scope="col">Model</th>
+                  <th scope="col">Field</th>
+                  <th scope="col">Drop</th>
+                  <th scope="col">Saved</th>
                 </tr>
               </thead>
               <tbody>
@@ -183,7 +187,7 @@ export function DropsPage({ drops, events, thresholds }: DropsPageProps) {
                         to={`/models/${encodeURIComponent(event.model_id)}`}
                         className="model-cell__name"
                       >
-                        {event.model_id}
+                        {modelDisplayName(event.model_id, enriched)}
                       </Link>
                     </td>
                     <td>{pricingFieldLabel(event.field)}</td>
