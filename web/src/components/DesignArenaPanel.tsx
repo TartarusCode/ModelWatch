@@ -1,4 +1,4 @@
-import { parseDesignArenaRecords } from "../lib/benchmarks";
+import { parseDesignArenaRecords, isFiniteNumber } from "../lib/benchmarks";
 
 interface DesignArenaPanelProps {
   records: Record<string, unknown>[];
@@ -42,17 +42,17 @@ export function DesignArenaPanel({ records, eloBounds }: DesignArenaPanelProps) 
                 <td className="muted">{record.arena ?? "—"}</td>
                 <td className="tabular-nums">{record.elo ?? "—"}</td>
                 <td className="tabular-nums">
-                  {record.win_rate !== undefined
+                  {isFiniteNumber(record.win_rate)
                     ? `${record.win_rate.toFixed(1)}%`
                     : "—"}
                 </td>
                 <td className="tabular-nums">
-                  {record.elo_percentile !== undefined
+                  {isFiniteNumber(record.elo_percentile)
                     ? `${record.elo_percentile}%`
                     : "—"}
                 </td>
                 <td className="tabular-nums muted">
-                  {record.avg_generation_time_ms !== undefined
+                  {isFiniteNumber(record.avg_generation_time_ms)
                     ? `${(record.avg_generation_time_ms / 1000).toFixed(1)}s`
                     : "—"}
                 </td>

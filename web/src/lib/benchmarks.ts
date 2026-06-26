@@ -3,7 +3,10 @@ import {
   shortVariantLabel,
   type AaVariantMode,
 } from "./aaVariants";
-import type { ArtificialAnalysisSummary } from "../types";
+import type { ArtificialAnalysisSummary, BenchmarkScoreRecord } from "../types";
+import { isFiniteNumber } from "./pricing";
+
+export { isFiniteNumber } from "./pricing";
 
 export interface ArtificialAnalysisEvaluations {
   artificial_analysis_intelligence_index?: number;
@@ -109,7 +112,7 @@ export interface AaVariantInfo {
 }
 
 function isAaIndex(value: unknown): value is number {
-  return typeof value === "number" && Number.isFinite(value);
+  return isFiniteNumber(value);
 }
 
 function buildAaSummaryScores(
@@ -129,8 +132,9 @@ function buildAaSummaryScores(
   };
 }
 
+
 export function formatAaIndex(value: number | null | undefined): string | null {
-  return isAaIndex(value) ? value.toFixed(1) : null;
+  return isFiniteNumber(value) ? value.toFixed(1) : null;
 }
 
 export function getAaSummaryScores(
@@ -214,7 +218,55 @@ export function getAaVariantInfo(
   };
 }
 
-export function formatMetricValue(key: string, value: number): string {
+export interface BenchmarkScorePivotRow {
+  providerName: string;
+  scores: Record<string, { score: number; runCount: number }>;
+}
+
+const BENCHMARK_TYPE_LABELS: Record<string, string> = {
+  gpqa_diamond: "GPQA Diamond",
+  tau_bench_verified_airline: "Tau Bench Airline",
+};
+
+export function formatBenchmarkType(type: string): string {
+  return BENCHMARK_TYPE_LABELS[type] ?? type.replaceAll("_", " ");
+}
+
+export function pivotBenchmarkScores(
+  records: BenchmarkScoreRecord[],
+): { types: string[]; rows: BenchmarkScorePivotRow[] } {
+  const types = [...new Set(records.map((record) => record.benchmark_type))].sort();
+  const rowsByProvider = new Map<string, BenchmarkScorePivotRow>();
+
+  for (const record of records) {
+    const existing = rowsByProvider.get(record.provider_name) ?? {
+      providerName: record.provider_name,
+      scores: {},
+    };
+    existing.scores[record.benchmark_type] = {
+      score: record.score,
+      runCount: record.run_count,
+    };
+    rowsByProvider.set(record.provider_name, existing);
+  }
+
+  const rows = [...rowsByProvider.values()].sort((left, right) =>
+    left.providerName.localeCompare(right.providerName),
+  );
+  return { types, rows };
+}
+
+export function formatBenchmarkScore(score: number | null | undefined): string {
+  if (!isFiniteNumber(score)) {
+    return "—";
+  }
+  return `${(score * 100).toFixed(1)}%`;
+}
+
+export function formatMetricValue(key: string, value: number | null | undefined): string {
+  if (!isFiniteNumber(value)) {
+    return "—";
+  }
   if (key.includes("rate") || key === "gdpval_aa") {
     return `${(value * 100).toFixed(1)}%`;
   }

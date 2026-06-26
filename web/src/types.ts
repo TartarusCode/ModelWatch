@@ -59,17 +59,63 @@ export interface ArtificialAnalysisSummary {
   aa_slug?: string | null;
 }
 
+export interface BenchmarkScoreRecord {
+  provider_name: string;
+  benchmark_type: string;
+  score: number;
+  run_count: number;
+}
+
+export interface EffectivePricingProviderSummary {
+  provider_name: string;
+  provider_slug: string;
+  effective_input_price: number;
+  effective_output_price: number;
+  cache_hit_rate: number;
+  total_tokens: number;
+}
+
+export interface EffectivePricing {
+  weighted_input_price?: number | null;
+  weighted_output_price?: number | null;
+  weighted_cache_hit_rate?: number | null;
+  provider_summaries: EffectivePricingProviderSummary[];
+}
+
+export interface ProviderEndpointPricing {
+  prompt: string;
+  completion: string;
+}
+
+export interface ProviderEndpoint {
+  provider_name: string;
+  name: string;
+  pricing: ProviderEndpointPricing;
+  uptime_last_30m?: number | null;
+  context_length?: number | null;
+}
+
+export interface ModelProviderStats {
+  effective_pricing: EffectivePricing | null;
+  effective_pricing_status: BenchmarkFetchStatus;
+  provider_endpoints: ProviderEndpoint[];
+  provider_endpoints_status: BenchmarkFetchStatus;
+}
+
 export interface ModelBenchmarks {
   design_arena: DesignArenaBenchmarks | null;
   design_arena_status: BenchmarkFetchStatus;
   artificial_analysis: Record<string, unknown>[];
   artificial_analysis_status: BenchmarkFetchStatus;
   artificial_analysis_summary?: ArtificialAnalysisSummary | null;
+  benchmark_scores?: BenchmarkScoreRecord[] | null;
+  benchmark_scores_status: BenchmarkFetchStatus;
 }
 
 export interface EnrichedModel {
   model: ModelSnapshot;
   benchmarks: ModelBenchmarks;
+  provider_stats: ModelProviderStats;
 }
 
 export interface ModelsOutput {

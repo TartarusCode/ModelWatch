@@ -3,6 +3,10 @@ export type ParsedTokenPrice =
   | { kind: "variable" }
   | { kind: "priced"; perMillion: number };
 
+export function isFiniteNumber(value: unknown): value is number {
+  return typeof value === "number" && Number.isFinite(value);
+}
+
 export function parseTokenPrice(perToken: string): ParsedTokenPrice {
   const value = Number.parseFloat(perToken);
   if (Number.isNaN(value) || value < 0) {
@@ -43,9 +47,12 @@ export function formatPerMillion(perToken: string): string {
   return formatPerMillionValue(parsed.perMillion);
 }
 
-export function formatPerMillionUsd(value: string): string {
-  const num = Number.parseFloat(value);
-  if (Number.isNaN(num) || num < 0) {
+export function formatPerMillionUsd(
+  value: string | number | null | undefined,
+): string {
+  const num =
+    typeof value === "number" ? value : Number.parseFloat(String(value ?? ""));
+  if (!Number.isFinite(num) || num < 0) {
     return "Varies";
   }
   if (num === 0) {

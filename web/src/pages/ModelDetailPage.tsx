@@ -1,10 +1,12 @@
 import { lazy, Suspense } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArtificialAnalysisPanel } from "../components/ArtificialAnalysisPanel";
+import { BenchmarkScoresPanel } from "../components/BenchmarkScoresPanel";
 import { DesignArenaPanel } from "../components/DesignArenaPanel";
 import { PriceCell } from "../components/PriceCell";
 import { PriceHistoryPanel } from "../components/PriceHistoryPanel";
 import { ProviderBadge } from "../components/ProviderBadge";
+import { ProviderPricingPanel } from "../components/ProviderPricingPanel";
 import { isFreeTierModel, pricingFieldLabel, providerFromModelId } from "../lib/pricing";
 import type {
   EnrichedModel,
@@ -55,7 +57,16 @@ export function ModelDetailPage({
     );
   }
 
-  const { model, benchmarks } = enriched;
+  const { model, benchmarks, provider_stats: providerStats } = enriched;
+  const benchmarkScoresStatus = benchmarks.benchmark_scores_status ?? {
+    status: "empty" as const,
+  };
+  const resolvedProviderStats = providerStats ?? {
+    effective_pricing: null,
+    effective_pricing_status: { status: "empty" as const },
+    provider_endpoints: [],
+    provider_endpoints_status: { status: "empty" as const },
+  };
   const provider = providerFromModelId(model.id);
 
   return (
@@ -182,6 +193,8 @@ export function ModelDetailPage({
         </section>
       </div>
 
+      <ProviderPricingPanel providerStats={resolvedProviderStats} />
+
       {benchmarks.design_arena_status.status === "ok" &&
       benchmarks.design_arena ? (
         <DesignArenaPanel
@@ -196,6 +209,11 @@ export function ModelDetailPage({
           </p>
         </section>
       ) : null}
+
+      <BenchmarkScoresPanel
+        records={benchmarks.benchmark_scores ?? []}
+        status={benchmarkScoresStatus}
+      />
 
       {benchmarks.artificial_analysis_status.status === "ok" ? (
         <ArtificialAnalysisPanel

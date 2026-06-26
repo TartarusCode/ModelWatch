@@ -8,6 +8,7 @@ import {
 import {
   formatAaMetricLabel,
   formatMetricValue,
+  isFiniteNumber,
   parseArtificialAnalysisRecords,
   type ArtificialAnalysisRecord,
 } from "../lib/benchmarks";
@@ -24,17 +25,17 @@ function IndexCard({
   percentile,
 }: {
   label: string;
-  value: number | undefined;
-  percentile: number | undefined;
+  value: number | null | undefined;
+  percentile: number | null | undefined;
 }) {
-  if (value === undefined) {
+  if (!isFiniteNumber(value)) {
     return null;
   }
   return (
     <div className="index-card">
       <span className="index-card__label">{label}</span>
       <span className="index-card__value tabular-nums">{value.toFixed(1)}</span>
-      {percentile !== undefined ? (
+      {isFiniteNumber(percentile) ? (
         <div className="index-card__bar">
           <div
             className="index-card__fill"
@@ -42,7 +43,7 @@ function IndexCard({
           />
         </div>
       ) : null}
-      {percentile !== undefined ? (
+      {isFiniteNumber(percentile) ? (
         <span className="index-card__pct muted">{percentile}th percentile</span>
       ) : null}
     </div>
@@ -107,7 +108,7 @@ function VariantCard({
       {otherMetrics.length > 0 ? (
         <div className="metric-grid">
           {otherMetrics.map(([key, value]) =>
-            typeof value === "number" ? (
+            isFiniteNumber(value) ? (
               <div className="metric-cell" key={key}>
                 <span className="metric-cell__label">
                   {formatAaMetricLabel(key)}
