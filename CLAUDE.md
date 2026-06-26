@@ -71,6 +71,9 @@ Implemented in `modelwatch/new_models.py`:
 - **Intelligence / Coding / Agentic** on OpenRouter compare come from `artificial-analysis-benchmarks` (`artificial_analysis_*_index` + `percentiles` for bar width). `frontend/stats/endpoint` is provider routing/latency stats, not AA indices.
 - Build stores all AA variants in `benchmarks.artificial_analysis`; `artificial_analysis_summary` is the default profile for the overview table.
 - Overview **Bench profile** column shows the default AA profile label and `+N` when more exist; links to detail. Detail page picker switches profiles.
+- **CI gates:** `build-and-deploy.yml` runs `pytest`, `mypy`, and `ruff` (plus web `lint`/`test`) in a `test-and-lint` job before build/deploy.
+- **Shared modules:** `modelwatch/http.py` (`auth_headers`), `modelwatch/price_parsing.py` (`parse_per_token`, `is_known_price`). `data_repair` path defaults use `path or EVENTS_PATH` at runtime (not import-time binding).
+- **Frontend:** benchmark record types live in `web/src/types.ts`; Vitest smoke tests under `web/src/lib/*.test.ts`; model table uses `@tanstack/react-virtual`.
 - OpenAPI lists models API auth as required; unauthenticated fetch often works but key improves reliability.
 - Scheduled workflow commits data back to the default branch; ensure Actions has `contents: write`.
 - **Benchmark monitoring:** `benchmark-monitoring.yml` (daily `probe`, weekly `discover` via cron-job.org); `check_build_health` gates builds when `benchmark_errors / (model_count * 4) > 0.5` (four slug-keyed sources per model). Probe slugs in `modelwatch/benchmark_health.py` — refresh from OpenRouter model/compare pages when models leave the catalog. Discovery watches browser network requests, not page HTML.
