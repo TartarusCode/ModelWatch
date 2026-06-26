@@ -7,7 +7,12 @@ from pathlib import Path
 from pydantic import ValidationError
 
 from modelwatch.aa_scores import summarize_artificial_analysis
-from modelwatch.fetch import fetch_all_benchmarks, fetch_models_async
+from modelwatch.fetch import (
+    fetch_all_benchmarks,
+    fetch_all_provider_endpoints,
+    fetch_models_async,
+)
+from modelwatch.provider_stats import build_benchmark_scores, build_provider_stats
 from modelwatch.model_filters import is_latest_alias_model_id
 from modelwatch.json_output import dump_model_line, write_model_json
 from modelwatch.history import merge_build_into_history, save_history, load_history
@@ -43,6 +48,7 @@ from modelwatch.schemas import (
     DesignArenaBenchmarks,
     EnrichedModel,
     ModelBenchmarks,
+    ModelProviderStats,
     ModelSnapshot,
     ModelsOutput,
     PreviousSnapshot,
@@ -204,12 +210,23 @@ def _build_benchmarks(raw: dict[str, object]) -> ModelBenchmarks:
     else:
         aa_status = BenchmarkFetchStatus(status="error", error="missing data")
 
+    benchmark_scores_raw = raw.get("benchmark_scores")
+    benchmark_scores_error = raw.get("benchmark_scores_error")
+    benchmark_scores, benchmark_scores_status = build_benchmark_scores(
+        benchmark_scores_raw if isinstance(benchmark_scores_raw, dict) else None,
+        error=str(benchmark_scores_error)
+        if benchmark_scores_error is not None
+        else None,
+    )
+
     return ModelBenchmarks(
         design_arena=design_parsed,
         design_arena_status=design_status,
         artificial_analysis=aa_records,
         artificial_analysis_status=aa_status,
         artificial_analysis_summary=None,
+        benchmark_scores=benchmark_scores,
+        benchmark_scores_status=benchmark_scores_status,
     )
 
 
@@ -244,11 +261,20 @@ async def run_build() -> None:
             snapshots.append(parsed)
 
     canonical_slugs = sorted({model.canonical_slug for model in snapshots})
-    benchmark_raw = await fetch_all_benchmarks(canonical_slugs)
+    model_ids = [model.id for model in snapshots]
+    benchmark_raw, endpoints_raw = await asyncio.gather(
+        fetch_all_benchmarks(canonical_slugs),
+        fetch_all_provider_endpoints(model_ids),
+    )
     benchmark_by_canonical = {
         str(item["canonical_slug"]): item
         for item in benchmark_raw
         if isinstance(item.get("canonical_slug"), str)
+    }
+    endpoints_by_model = {
+        str(item["model_id"]): item
+        for item in endpoints_raw
+        if isinstance(item.get("model_id"), str)
     }
 
     enriched: list[EnrichedModel] = []
@@ -260,15 +286,38 @@ async def run_build() -> None:
             _build_benchmarks(raw_bench),
             model_id=model.id,
         )
-        if benchmarks.design_arena_status.status == "error":
-            benchmark_errors += 1
-        elif benchmarks.design_arena_status.status == "empty":
-            benchmark_empty += 1
-        if benchmarks.artificial_analysis_status.status == "error":
-            benchmark_errors += 1
-        elif benchmarks.artificial_analysis_status.status == "empty":
-            benchmark_empty += 1
-        enriched.append(EnrichedModel(model=model, benchmarks=benchmarks))
+        raw_endpoints = endpoints_by_model.get(model.id, {})
+        provider_stats = build_provider_stats(
+            effective_pricing_raw=raw_bench.get("effective_pricing")
+            if isinstance(raw_bench.get("effective_pricing"), dict)
+            else None,
+            effective_pricing_error=str(raw_bench["effective_pricing_error"])
+            if raw_bench.get("effective_pricing_error") is not None
+            else None,
+            endpoints_raw=raw_endpoints.get("endpoints")
+            if isinstance(raw_endpoints.get("endpoints"), dict)
+            else None,
+            endpoints_error=str(raw_endpoints["endpoints_error"])
+            if raw_endpoints.get("endpoints_error") is not None
+            else None,
+        )
+        for status in (
+            benchmarks.design_arena_status,
+            benchmarks.artificial_analysis_status,
+            benchmarks.benchmark_scores_status,
+            provider_stats.effective_pricing_status,
+        ):
+            if status.status == "error":
+                benchmark_errors += 1
+            elif status.status == "empty":
+                benchmark_empty += 1
+        enriched.append(
+            EnrichedModel(
+                model=model,
+                benchmarks=benchmarks,
+                provider_stats=provider_stats,
+            )
+        )
 
     enriched = stabilize_enriched_models(enriched)
 

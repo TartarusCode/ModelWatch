@@ -36,7 +36,7 @@ def probes_indicate_broken_endpoints(results: list[ProbeResult]) -> bool:
 def benchmark_error_ratio(benchmark_errors: int, model_count: int) -> float:
     if model_count <= 0:
         return 0.0
-    total_endpoints = model_count * 2
+    total_endpoints = model_count * 4
     if total_endpoints <= 0:
         return 0.0
     return benchmark_errors / total_endpoints

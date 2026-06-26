@@ -18,7 +18,7 @@ def test_assert_build_meta_from_file_passes(tmp_path: Path) -> None:
 def test_assert_build_meta_from_file_fails(tmp_path: Path) -> None:
     meta_path = tmp_path / "meta.json"
     meta_path.write_text(
-        json.dumps({"benchmark_errors": 676, "model_count": 338}),
+        json.dumps({"benchmark_errors": 1352, "model_count": 338}),
         encoding="utf-8",
     )
     with pytest.raises(SystemExit) as exc_info:

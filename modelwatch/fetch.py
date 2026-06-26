@@ -12,6 +12,12 @@ DESIGN_ARENA_URL = (
 ARTIFICIAL_ANALYSIS_URL = (
     "https://openrouter.ai/api/frontend/v1/private/artificial-analysis-benchmarks"
 )
+BENCHMARK_SCORES_URL = (
+    "https://openrouter.ai/api/frontend/v1/stats/benchmark-scores"
+)
+EFFECTIVE_PRICING_URL = (
+    "https://openrouter.ai/api/frontend/v1/stats/effective-pricing"
+)
 
 DEFAULT_CONCURRENCY = 12
 DEFAULT_TIMEOUT_SECONDS = 15.0
@@ -96,6 +102,115 @@ async def fetch_artificial_analysis(
         return None, str(exc)
 
 
+def benchmark_scores_url(canonical_slug: str) -> str:
+    slug = quote(canonical_slug, safe="")
+    return f"{BENCHMARK_SCORES_URL}?permaslug={slug}"
+
+
+def effective_pricing_url(
+    canonical_slug: str,
+    *,
+    variant: str = "standard",
+) -> str:
+    slug = quote(canonical_slug, safe="")
+    variant_value = quote(variant, safe="")
+    return f"{EFFECTIVE_PRICING_URL}?permaslug={slug}&variant={variant_value}"
+
+
+def endpoints_url_for_model_id(model_id: str) -> str:
+    slash = model_id.index("/")
+    author = quote(model_id[:slash], safe="")
+    slug = quote(model_id[slash + 1 :], safe="")
+    return f"{MODELS_URL}/{author}/{slug}/endpoints"
+
+
+async def fetch_benchmark_scores(
+    client: httpx.AsyncClient,
+    canonical_slug: str,
+    retries: int,
+) -> tuple[dict[str, object] | None, str | None]:
+    url = benchmark_scores_url(canonical_slug)
+    try:
+        payload = await _fetch_json_with_retries(client, url, retries)
+        data = payload.get("data")
+        if isinstance(data, dict):
+            return data, None
+        return None, "unexpected response shape"
+    except Exception as exc:
+        return None, str(exc)
+
+
+async def fetch_effective_pricing(
+    client: httpx.AsyncClient,
+    canonical_slug: str,
+    retries: int,
+) -> tuple[dict[str, object] | None, str | None]:
+    url = effective_pricing_url(canonical_slug)
+    try:
+        payload = await _fetch_json_with_retries(client, url, retries)
+        data = payload.get("data")
+        if isinstance(data, dict):
+            return data, None
+        return None, "unexpected response shape"
+    except Exception as exc:
+        return None, str(exc)
+
+
+async def fetch_provider_endpoints(
+    client: httpx.AsyncClient,
+    model_id: str,
+    retries: int,
+) -> tuple[dict[str, object] | None, str | None]:
+    url = endpoints_url_for_model_id(model_id)
+    try:
+        payload = await _fetch_json_with_retries(client, url, retries)
+        data = payload.get("data")
+        if isinstance(data, dict):
+            return data, None
+        return None, "unexpected response shape"
+    except Exception as exc:
+        return None, str(exc)
+
+
+async def _fetch_model_provider_endpoints(
+    client: httpx.AsyncClient,
+    model_id: str,
+    retries: int,
+    semaphore: asyncio.Semaphore,
+) -> dict[str, object]:
+    async with semaphore:
+        endpoints_data, endpoints_error = await fetch_provider_endpoints(
+            client,
+            model_id,
+            retries,
+        )
+    return {
+        "model_id": model_id,
+        "endpoints": endpoints_data,
+        "endpoints_error": endpoints_error,
+    }
+
+
+async def fetch_all_provider_endpoints(
+    model_ids: list[str],
+    options: FetchOptions | None = None,
+) -> list[dict[str, object]]:
+    opts = options or {}
+    api_key = opts.get("api_key") or os.environ.get("OPENROUTER_API_KEY")
+    concurrency = opts.get("concurrency", DEFAULT_CONCURRENCY)
+    timeout_seconds = opts.get("timeout_seconds", DEFAULT_TIMEOUT_SECONDS)
+    retries = opts.get("retries", DEFAULT_RETRIES)
+    semaphore = asyncio.Semaphore(concurrency)
+    headers = _auth_headers(api_key)
+    timeout = httpx.Timeout(timeout_seconds)
+    async with httpx.AsyncClient(headers=headers, timeout=timeout) as client:
+        tasks = [
+            _fetch_model_provider_endpoints(client, model_id, retries, semaphore)
+            for model_id in model_ids
+        ]
+        return await asyncio.gather(*tasks)
+
+
 async def _fetch_model_benchmarks(
     client: httpx.AsyncClient,
     canonical_slug: str,
@@ -109,12 +224,26 @@ async def _fetch_model_benchmarks(
         aa_data, aa_error = await fetch_artificial_analysis(
             client, canonical_slug, retries
         )
+        benchmark_scores_data, benchmark_scores_error = await fetch_benchmark_scores(
+            client,
+            canonical_slug,
+            retries,
+        )
+        effective_pricing_data, effective_pricing_error = await fetch_effective_pricing(
+            client,
+            canonical_slug,
+            retries,
+        )
     return {
         "canonical_slug": canonical_slug,
         "design_arena": design_data,
         "design_arena_error": design_error,
         "artificial_analysis": aa_data,
         "artificial_analysis_error": aa_error,
+        "benchmark_scores": benchmark_scores_data,
+        "benchmark_scores_error": benchmark_scores_error,
+        "effective_pricing": effective_pricing_data,
+        "effective_pricing_error": effective_pricing_error,
     }
 
 

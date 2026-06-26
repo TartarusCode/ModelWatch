@@ -79,6 +79,63 @@ class ArtificialAnalysisSummary(BaseModel):
     aa_slug: str | None = None
 
 
+class BenchmarkScoreRecord(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    provider_name: str
+    benchmark_type: str
+    score: float
+    run_count: int
+
+
+class EffectivePricingProviderSummary(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    provider_name: str
+    provider_slug: str
+    effective_input_price: float
+    effective_output_price: float
+    cache_hit_rate: float
+    total_tokens: int
+
+
+class EffectivePricing(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    weighted_input_price: float | None = None
+    weighted_output_price: float | None = None
+    weighted_cache_hit_rate: float | None = None
+    provider_summaries: list[EffectivePricingProviderSummary] = Field(
+        default_factory=list,
+    )
+
+
+class ProviderEndpointPricing(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    prompt: str
+    completion: str
+
+
+class ProviderEndpoint(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    provider_name: str
+    name: str
+    pricing: ProviderEndpointPricing
+    uptime_last_30m: float | None = None
+    context_length: int | None = None
+
+
+class ModelProviderStats(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    effective_pricing: EffectivePricing | None = None
+    effective_pricing_status: BenchmarkFetchStatus
+    provider_endpoints: list[ProviderEndpoint] = Field(default_factory=list)
+    provider_endpoints_status: BenchmarkFetchStatus
+
+
 class ModelBenchmarks(BaseModel):
     model_config = ConfigDict(frozen=True)
 
@@ -87,6 +144,8 @@ class ModelBenchmarks(BaseModel):
     artificial_analysis: list[dict[str, object]]
     artificial_analysis_status: BenchmarkFetchStatus
     artificial_analysis_summary: ArtificialAnalysisSummary | None = None
+    benchmark_scores: list[BenchmarkScoreRecord] | None = None
+    benchmark_scores_status: BenchmarkFetchStatus
 
 
 class EnrichedModel(BaseModel):
@@ -94,6 +153,7 @@ class EnrichedModel(BaseModel):
 
     model: ModelSnapshot
     benchmarks: ModelBenchmarks
+    provider_stats: ModelProviderStats
 
 
 class PriceDropRecord(BaseModel):

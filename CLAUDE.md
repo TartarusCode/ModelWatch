@@ -73,4 +73,21 @@ Implemented in `modelwatch/new_models.py`:
 - Overview **Bench profile** column shows the default AA profile label and `+N` when more exist; links to detail. Detail page picker switches profiles.
 - OpenAPI lists models API auth as required; unauthenticated fetch often works but key improves reliability.
 - Scheduled workflow commits data back to the default branch; ensure Actions has `contents: write`.
-- **Benchmark monitoring:** `benchmark-monitoring.yml` (daily `probe`, weekly `discover` via cron-job.org); `check_build_health` gates builds when `benchmark_errors / (model_count * 2) > 0.5`. Probe slugs in `modelwatch/benchmark_health.py` — refresh from OpenRouter model/compare pages when models leave the catalog. Discovery watches browser network requests, not page HTML.
+- **Benchmark monitoring:** `benchmark-monitoring.yml` (daily `probe`, weekly `discover` via cron-job.org); `check_build_health` gates builds when `benchmark_errors / (model_count * 4) > 0.5` (four slug-keyed sources per model). Probe slugs in `modelwatch/benchmark_health.py` — refresh from OpenRouter model/compare pages when models leave the catalog. Discovery watches browser network requests, not page HTML.
+
+## OpenRouter stats (build-time)
+
+Fetched in `modelwatch/fetch.py`; stored on `EnrichedModel` in `models.json`:
+
+| Source | URL pattern | Key | Stored on |
+|--------|-------------|-----|-----------|
+| Artificial Analysis | `frontend/v1/private/artificial-analysis-benchmarks?slug=` | `canonical_slug` | `benchmarks.artificial_analysis` |
+| Design Arena | `frontend/v1/private/design-arena-benchmarks?slug=` | `canonical_slug` | `benchmarks.design_arena` |
+| Provider benchmarks | `frontend/v1/stats/benchmark-scores?permaslug=` | `canonical_slug` | `benchmarks.benchmark_scores` |
+| Effective pricing | `frontend/v1/stats/effective-pricing?permaslug=&variant=standard` | `canonical_slug` | `provider_stats.effective_pricing` |
+| List endpoints | `/v1/models/{author}/{slug}/endpoints` | `model.id` | `provider_stats.provider_endpoints` |
+
+- **Effective pricing** is cache-aware observed $/M (not catalog list price). Chart time series (`inputChartData` / `outputChartData`) are not stored.
+- **Benchmark scores** are per-provider routing benchmarks (GPQA, tau-bench, etc.) — distinct from AA indices.
+- **List endpoints** supply catalog list prices and `uptime_last_30m`; detail page merges with effective pricing by provider name/slug.
+- Build cost per run: **4 HTTP requests per unique `canonical_slug`** + **1 per `model.id`** for list endpoints (~600). Same concurrency cap as benchmarks (`DEFAULT_CONCURRENCY` in `fetch.py`).

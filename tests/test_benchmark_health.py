@@ -39,9 +39,9 @@ def test_probes_ok_when_at_least_one_succeeds() -> None:
 
 
 def test_benchmark_error_ratio() -> None:
-    assert benchmark_error_ratio(676, 338) == 1.0
+    assert benchmark_error_ratio(1352, 338) == 1.0
     assert benchmark_error_ratio(0, 338) == 0.0
-    assert benchmark_error_ratio(100, 338) == 100 / 676
+    assert benchmark_error_ratio(100, 338) == 100 / 1352
 
 
 def test_assert_build_meta_healthy_passes_below_threshold() -> None:
@@ -50,9 +50,9 @@ def test_assert_build_meta_healthy_passes_below_threshold() -> None:
 
 def test_assert_build_meta_healthy_fails_above_threshold() -> None:
     try:
-        assert_build_meta_healthy(benchmark_errors=676, model_count=338)
+        assert_build_meta_healthy(benchmark_errors=1352, model_count=338)
     except BenchmarkHealthError as exc:
-        assert "676" in str(exc)
+        assert "1352" in str(exc)
         assert "338" in str(exc)
     else:
         raise AssertionError("expected BenchmarkHealthError")
