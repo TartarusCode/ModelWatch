@@ -79,11 +79,14 @@ def test_is_free_tier_model_glitch_zero_after_positive_history() -> None:
             prompt_per_million=Decimal("0.200200"),
         ),
     ]
-    assert is_free_tier_model(
-        "deepseek/deepseek-chat",
-        pricing_fields={"prompt": Decimal("0"), "completion": Decimal("0")},
-        existing_points=points,
-    ) is False
+    assert (
+        is_free_tier_model(
+            "deepseek/deepseek-chat",
+            pricing_fields={"prompt": Decimal("0"), "completion": Decimal("0")},
+            existing_points=points,
+        )
+        is False
+    )
 
 
 def test_is_free_tier_model_after_settled_paid_to_free_transition() -> None:
@@ -99,11 +102,14 @@ def test_is_free_tier_model_after_settled_paid_to_free_transition() -> None:
             completion_per_million=Decimal("0"),
         ),
     ]
-    assert is_free_tier_model(
-        "acme/former-paid",
-        pricing_fields={"prompt": Decimal("0"), "completion": Decimal("0")},
-        existing_points=points,
-    ) is True
+    assert (
+        is_free_tier_model(
+            "acme/former-paid",
+            pricing_fields={"prompt": Decimal("0"), "completion": Decimal("0")},
+            existing_points=points,
+        )
+        is True
+    )
 
 
 def test_append_history_records_paid_to_free_transition() -> None:

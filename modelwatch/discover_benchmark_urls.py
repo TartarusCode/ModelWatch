@@ -83,7 +83,9 @@ async def discover_benchmark_urls_from_pages(
 
             page.on("request", on_request)
             for page_url in pages:
-                await page.goto(page_url, wait_until="networkidle", timeout=DISCOVERY_TIMEOUT_MS)
+                await page.goto(
+                    page_url, wait_until="networkidle", timeout=DISCOVERY_TIMEOUT_MS
+                )
         finally:
             await browser.close()
 

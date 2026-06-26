@@ -78,9 +78,7 @@ def pick_aa_record(
             )
 
         max_effort = [
-            record
-            for record in records
-            if classify_aa_variant(record) == "max-effort"
+            record for record in records if classify_aa_variant(record) == "max-effort"
         ]
         if max_effort:
             return max(
@@ -93,8 +91,7 @@ def pick_aa_record(
     matched = [
         record
         for record in records
-        if classify_aa_variant(record) == variant
-        or record.get("aa_slug") == variant
+        if classify_aa_variant(record) == variant or record.get("aa_slug") == variant
     ]
     if matched:
         return max(matched, key=lambda record: _intelligence_index(record) or -1.0)

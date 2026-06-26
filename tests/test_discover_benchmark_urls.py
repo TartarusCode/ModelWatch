@@ -18,7 +18,9 @@ def test_normalize_benchmark_endpoint_url_strips_query() -> None:
 
 
 def test_normalize_returns_none_for_unrelated_url() -> None:
-    assert normalize_benchmark_endpoint_url("https://openrouter.ai/api/v1/models") is None
+    assert (
+        normalize_benchmark_endpoint_url("https://openrouter.ai/api/v1/models") is None
+    )
 
 
 def test_discovery_matches_config_when_urls_match() -> None:

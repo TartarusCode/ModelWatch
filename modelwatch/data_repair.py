@@ -2,6 +2,7 @@ from datetime import UTC, datetime
 from decimal import Decimal
 from pathlib import Path
 
+from modelwatch.history import PriceHistoryPoint, load_history, save_history
 from modelwatch.json_output import dump_model_line, write_model_json
 from modelwatch.model_filters import is_latest_alias_model_id
 from modelwatch.new_models import (
@@ -15,7 +16,6 @@ from modelwatch.price_events import (
     filter_spurious_zero_drop_events,
     load_price_events,
 )
-from modelwatch.history import PriceHistoryPoint, load_history, save_history
 from modelwatch.pricing import DEFAULT_THRESHOLDS
 from modelwatch.pricing_glitch import (
     is_free_model_id,
@@ -45,30 +45,30 @@ def filter_price_events(events: list[PriceEventRecord]) -> list[PriceEventRecord
 def filter_new_model_events(
     events: list[NewModelEventRecord],
 ) -> list[NewModelEventRecord]:
-    return [
-        event for event in events if not is_latest_alias_model_id(event.model_id)
-    ]
+    return [event for event in events if not is_latest_alias_model_id(event.model_id)]
 
 
 def write_jsonl_events(path: Path, lines: list[str]) -> None:
     path.write_text("\n".join(lines) + ("\n" if lines else ""), encoding="utf-8")
 
 
-def clean_price_events_file(path: Path = EVENTS_PATH) -> int:
-    events = load_price_events(path)
+def clean_price_events_file(path: Path | None = None) -> int:
+    target = path or EVENTS_PATH
+    events = load_price_events(target)
     kept = dedupe_settled_price_re_alerts(filter_price_events(events))
     removed = len(events) - len(kept)
     if removed:
-        write_jsonl_events(path, [dump_model_line(event) for event in kept])
+        write_jsonl_events(target, [dump_model_line(event) for event in kept])
     return removed
 
 
-def clean_new_model_events_file(path: Path = NEW_MODEL_EVENTS_PATH) -> int:
-    events = load_new_model_events(path)
+def clean_new_model_events_file(path: Path | None = None) -> int:
+    target = path or NEW_MODEL_EVENTS_PATH
+    events = load_new_model_events(target)
     kept = filter_new_model_events(events)
     removed = len(events) - len(kept)
     if removed:
-        write_jsonl_events(path, [dump_model_line(event) for event in kept])
+        write_jsonl_events(target, [dump_model_line(event) for event in kept])
     return removed
 
 
@@ -111,10 +111,7 @@ def clean_price_drop_baselines() -> int:
         kept_fields = {
             field: value
             for field, value in fields.items()
-            if not (
-                not is_free_model_id(model_id)
-                and Decimal(value) <= 0
-            )
+            if not (not is_free_model_id(model_id) and Decimal(value) <= 0)
         }
         removed += len(fields) - len(kept_fields)
         if kept_fields:

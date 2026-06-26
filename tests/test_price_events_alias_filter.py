@@ -1,7 +1,5 @@
 from datetime import UTC, datetime, timedelta
 
-import pytest
-
 from modelwatch.price_events import (
     DROP_LOOKBACK_HOURS,
     drops_in_last_hours,

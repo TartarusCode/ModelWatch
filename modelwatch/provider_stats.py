@@ -292,24 +292,10 @@ def stabilize_provider_stats(
         stats.provider_endpoints,
         key=lambda endpoint: (endpoint.provider_name.lower(), endpoint.name.lower()),
     )
-    stabilized_scores = (
-        sorted(
-            benchmarks.benchmark_scores,
-            key=lambda record: (
-                record.provider_name.lower(),
-                record.benchmark_type,
-            ),
-        )
-        if benchmarks.benchmark_scores is not None
-        else None
-    )
     stabilized_stats = stats.model_copy(
         update={
             "effective_pricing": stabilized_effective,
             "provider_endpoints": stabilized_endpoints,
         },
     )
-    stabilized_benchmarks = benchmarks.model_copy(
-        update={"benchmark_scores": stabilized_scores},
-    )
-    return stabilized_stats, stabilized_benchmarks
+    return stabilized_stats, benchmarks

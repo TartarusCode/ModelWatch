@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 from pydantic import BaseModel
 
@@ -25,9 +26,7 @@ def dump_model_line(model: BaseModel) -> str:
     )
 
 
-def write_model_json(path: object, model: BaseModel) -> None:
-    from pathlib import Path
-
-    file_path = Path(str(path))
+def write_model_json(path: Path | str, model: BaseModel) -> None:
+    file_path = Path(path)
     file_path.parent.mkdir(parents=True, exist_ok=True)
     file_path.write_text(dump_model(model, indent=2), encoding="utf-8")

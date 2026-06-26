@@ -27,10 +27,9 @@ def _recovers_to_positive_main_pricing_after(
     points: list[PriceHistoryPoint],
     index: int,
 ) -> bool:
-    for later in points[index + 1 :]:
-        if _had_positive_main_pricing(later):
-            return True
-    return False
+    return any(
+        _had_positive_main_pricing(later) for later in points[index + 1 :]
+    )
 
 
 def _settled_paid_to_free(existing_points: list[PriceHistoryPoint]) -> bool:
@@ -62,9 +61,7 @@ def is_free_tier_model(
         return False
     if not _history_had_positive_main_pricing(existing_points):
         return True
-    if _settled_paid_to_free(existing_points):
-        return True
-    return False
+    return bool(_settled_paid_to_free(existing_points))
 
 
 def is_spurious_zero_drop(model_id: str, new_per_million_usd: Decimal) -> bool:

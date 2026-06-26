@@ -1,7 +1,7 @@
 import asyncio
 import json
+import logging
 from datetime import UTC, datetime
-from decimal import Decimal
 from pathlib import Path
 
 from pydantic import ValidationError
@@ -12,10 +12,9 @@ from modelwatch.fetch import (
     fetch_all_provider_endpoints,
     fetch_models_async,
 )
-from modelwatch.provider_stats import build_benchmark_scores, build_provider_stats
-from modelwatch.model_filters import is_latest_alias_model_id
+from modelwatch.history import load_history, merge_build_into_history, save_history
 from modelwatch.json_output import dump_model_line, write_model_json
-from modelwatch.history import merge_build_into_history, save_history, load_history
+from modelwatch.model_filters import is_latest_alias_model_id
 from modelwatch.new_models import (
     NEW_MODEL_LOOKBACK_HOURS,
     NewModelAddition,
@@ -41,24 +40,24 @@ from modelwatch.pricing import (
     PriceDrop,
     detect_price_drops_from_reference,
 )
-from modelwatch.stable_output import stabilize_enriched_models
+from modelwatch.provider_stats import build_benchmark_scores, build_provider_stats
 from modelwatch.schemas import (
     BenchmarkFetchStatus,
     BuildMeta,
     DesignArenaBenchmarks,
     EnrichedModel,
     ModelBenchmarks,
-    ModelProviderStats,
     ModelSnapshot,
     ModelsOutput,
-    PreviousSnapshot,
     NewModelEventRecord,
     NewModelsOutput,
+    PreviousSnapshot,
     PriceDropRecord,
     PriceDropsOutput,
     PriceDropThresholdsOutput,
     PriceEventRecord,
 )
+from modelwatch.stable_output import stabilize_enriched_models
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "web" / "public" / "data"
@@ -67,6 +66,7 @@ EVENTS_PATH = DATA_DIR / "price-events.jsonl"
 NEW_MODEL_EVENTS_PATH = DATA_DIR / "new-model-events.jsonl"
 MAX_EVENTS = 500
 DESCRIPTION_MAX_LEN = 500
+logger = logging.getLogger(__name__)
 
 
 def _trim_description(description: str | None) -> str | None:
@@ -79,11 +79,14 @@ def _trim_description(description: str | None) -> str | None:
 
 def _parse_model(raw: dict[str, object]) -> ModelSnapshot | None:
     trimmed = {**raw}
-    if isinstance(trimmed.get("description"), str):
-        trimmed["description"] = _trim_description(trimmed["description"])
+    description = trimmed.get("description")
+    if isinstance(description, str):
+        trimmed["description"] = _trim_description(description)
     try:
         return ModelSnapshot.model_validate(trimmed)
-    except ValidationError:
+    except ValidationError as exc:
+        model_id = trimmed.get("id", "<unknown>")
+        logger.warning("Skipping invalid model %s: %s", model_id, exc)
         return None
 
 
@@ -172,9 +175,7 @@ def _build_benchmarks(raw: dict[str, object]) -> ModelBenchmarks:
     design_status: BenchmarkFetchStatus
     design_parsed: DesignArenaBenchmarks | None = None
     if design_error is not None:
-        design_status = BenchmarkFetchStatus(
-            status="error", error=str(design_error)
-        )
+        design_status = BenchmarkFetchStatus(status="error", error=str(design_error))
     elif isinstance(design_raw, dict):
         records = design_raw.get("records")
         if isinstance(records, list) and len(records) > 0:
@@ -282,23 +283,25 @@ async def run_build() -> None:
     benchmark_empty = 0
     for model in snapshots:
         raw_bench = benchmark_by_canonical.get(model.canonical_slug, {})
+        effective_pricing_raw = raw_bench.get("effective_pricing")
+        endpoints_payload = endpoints_by_model.get(model.id, {})
+        provider_endpoints_raw = endpoints_payload.get("endpoints")
         benchmarks = _attach_aa_summary(
             _build_benchmarks(raw_bench),
             model_id=model.id,
         )
-        raw_endpoints = endpoints_by_model.get(model.id, {})
         provider_stats = build_provider_stats(
-            effective_pricing_raw=raw_bench.get("effective_pricing")
-            if isinstance(raw_bench.get("effective_pricing"), dict)
+            effective_pricing_raw=effective_pricing_raw
+            if isinstance(effective_pricing_raw, dict)
             else None,
             effective_pricing_error=str(raw_bench["effective_pricing_error"])
             if raw_bench.get("effective_pricing_error") is not None
             else None,
-            endpoints_raw=raw_endpoints.get("endpoints")
-            if isinstance(raw_endpoints.get("endpoints"), dict)
+            endpoints_raw=provider_endpoints_raw
+            if isinstance(provider_endpoints_raw, dict)
             else None,
-            endpoints_error=str(raw_endpoints["endpoints_error"])
-            if raw_endpoints.get("endpoints_error") is not None
+            endpoints_error=str(endpoints_payload["endpoints_error"])
+            if endpoints_payload.get("endpoints_error") is not None
             else None,
         )
         for status in (

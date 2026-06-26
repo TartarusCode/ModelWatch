@@ -11,7 +11,10 @@ MA_WINDOW_DAYS = 7
 MIN_MA_POINTS = 3
 
 BASELINES_PATH = (
-    Path(__file__).resolve().parent.parent / "data" / "snapshots" / "price-drop-baselines.json"
+    Path(__file__).resolve().parent.parent
+    / "data"
+    / "snapshots"
+    / "price-drop-baselines.json"
 )
 
 
@@ -71,7 +74,9 @@ def apply_drop_ratchet(
     if not drops:
         return store
 
-    updated_models = {model_id: dict(fields) for model_id, fields in store.models.items()}
+    updated_models = {
+        model_id: dict(fields) for model_id, fields in store.models.items()
+    }
     for drop in drops:
         model_fields = dict(updated_models.get(drop.model_id, {}))
         new_value = f"{drop.new_per_million_usd:.6f}"

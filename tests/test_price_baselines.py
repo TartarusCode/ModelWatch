@@ -9,7 +9,7 @@ from modelwatch.price_baselines import (
     compute_moving_average_per_field,
     reference_price,
 )
-from modelwatch.pricing import PriceDrop, PriceDropThresholds
+from modelwatch.pricing import PriceDrop
 from modelwatch.schemas import PriceDropBaselinesStore
 
 

@@ -1,4 +1,4 @@
-from datetime import UTC, datetime, timedelta
+from datetime import datetime, timedelta
 from pathlib import Path
 
 from modelwatch.model_filters import is_latest_alias_model_id
@@ -112,9 +112,7 @@ def drops_in_last_hours(
 ) -> list[PriceDropRecord]:
     recent = events_in_last_hours(events, hours, now=now)
     filtered = [
-        event
-        for event in recent
-        if not is_latest_alias_model_id(event.model_id)
+        event for event in recent if not is_latest_alias_model_id(event.model_id)
     ]
     filtered = filter_spurious_zero_drop_events(filtered)
     deduped = dedupe_drop_events_for_display(filtered)

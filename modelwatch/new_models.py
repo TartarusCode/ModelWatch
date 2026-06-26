@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from datetime import UTC, datetime, timedelta
+from datetime import datetime, timedelta
 from pathlib import Path
 
 from modelwatch.model_filters import is_latest_alias_model_id
@@ -84,9 +84,7 @@ def models_in_last_hours(
 ) -> list[NewModelRecord]:
     recent = events_in_last_hours(events, hours, now=now)
     filtered = [
-        event
-        for event in recent
-        if not is_latest_alias_model_id(event.model_id)
+        event for event in recent if not is_latest_alias_model_id(event.model_id)
     ]
     sorted_events = sorted(filtered, key=lambda event: event.detected_at, reverse=True)
     return records_from_events(sorted_events)
