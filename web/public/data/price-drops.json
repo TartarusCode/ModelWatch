@@ -1,6 +1,15 @@
 {
   "drops": [
     {
+      "detected_at": "2026-06-26T07:30:24.727481Z",
+      "field": "completion",
+      "model_id": "minimax/minimax-m2.5",
+      "new_per_million_usd": "0.480000",
+      "old_per_million_usd": "0.822911",
+      "pct_drop": 0.4167051222888786,
+      "saved_per_million_usd": "0.342911"
+    },
+    {
       "detected_at": "2026-06-25T22:00:23.827961Z",
       "field": "completion",
       "model_id": "nvidia/nemotron-3-super-120b-a12b",
@@ -28,7 +37,7 @@
       "saved_per_million_usd": "0.252941"
     }
   ],
-  "generated_at": "2026-06-26T07:22:30.279176Z",
+  "generated_at": "2026-06-26T07:30:30.463804Z",
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05
