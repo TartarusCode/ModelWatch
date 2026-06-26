@@ -1,8 +1,10 @@
-import { parseDesignArenaRecords, isFiniteNumber } from "../lib/benchmarks";
+import { parseDesignArenaRecords } from "../lib/benchmarks";
+import type { DesignArenaRecord, EloBounds } from "../types";
+import { isFiniteNumber } from "../lib/pricing";
 
 interface DesignArenaPanelProps {
-  records: Record<string, unknown>[];
-  eloBounds?: Record<string, number> | null;
+  records: DesignArenaRecord[];
+  eloBounds?: EloBounds | null;
 }
 
 export function DesignArenaPanel({ records, eloBounds }: DesignArenaPanelProps) {

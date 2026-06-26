@@ -22,11 +22,20 @@ async function fetchJson<T>(path: string): Promise<T> {
 async function fetchJsonlEvents<T>(path: string): Promise<T[]> {
   const response = await fetch(`${base}${path}`);
   if (!response.ok) {
+    console.warn(`Failed to load ${path}: ${response.status}; using empty events`);
     return [];
   }
   const text = await response.text();
   const lines = text.split("\n").filter((line) => line.trim());
-  return lines.map((line) => JSON.parse(line) as T);
+  const events: T[] = [];
+  for (const [index, line] of lines.entries()) {
+    try {
+      events.push(JSON.parse(line) as T);
+    } catch (error) {
+      console.warn(`Skipping malformed JSONL line ${index + 1} in ${path}`, error);
+    }
+  }
+  return events;
 }
 
 export async function loadSiteData(): Promise<SiteData> {

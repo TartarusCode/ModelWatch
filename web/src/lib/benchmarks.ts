@@ -3,73 +3,30 @@ import {
   shortVariantLabel,
   type AaVariantMode,
 } from "./aaVariants";
-import type { ArtificialAnalysisSummary, BenchmarkScoreRecord } from "../types";
+import type {
+  ArtificialAnalysisRecord,
+  ArtificialAnalysisSummary,
+  BenchmarkScoreRecord,
+  DesignArenaRecord,
+} from "../types";
 import { isFiniteNumber } from "./pricing";
 
 export { isFiniteNumber } from "./pricing";
-
-export interface ArtificialAnalysisEvaluations {
-  artificial_analysis_intelligence_index?: number;
-  artificial_analysis_coding_index?: number;
-  artificial_analysis_agentic_index?: number;
-  gdpval_aa?: number;
-  aa_omniscience_accuracy?: number;
-  aa_omniscience_non_hallucination_rate?: number;
-  lcr?: number;
-  ifbench?: number;
-  gpqa?: number;
-  hle?: number;
-  scicode?: number;
-  terminalbench_hard?: number;
-  critpt?: number;
-  tau2?: number;
-}
-
-export interface ArtificialAnalysisRecord {
-  aa_id?: string;
-  aa_slug?: string;
-  aa_name?: string;
-  permaslug?: string;
-  openrouter_slug?: string | null;
-  heuristic_openrouter_slug?: string | null;
-  benchmark_data?: {
-    model_type?: string;
-    evaluations?: ArtificialAnalysisEvaluations;
-  };
-  last_updated_at?: number;
-  percentiles?: {
-    intelligence_percentile?: number;
-    coding_percentile?: number;
-    agentic_percentile?: number;
-  };
-}
-
-export interface DesignArenaRecord {
-  da_model_id?: string;
-  display_name?: string;
-  provider?: string;
-  openrouter_id?: string;
-  permaslug?: string;
-  arena?: string;
-  category?: string;
-  elo?: number;
-  win_rate?: number;
-  avg_generation_time_ms?: number;
-  last_updated_at?: number;
-  elo_percentile?: number;
-  total_tournaments?: number;
-}
+export type {
+  ArtificialAnalysisRecord,
+  DesignArenaRecord,
+} from "../types";
 
 export function parseArtificialAnalysisRecords(
-  records: Record<string, unknown>[],
+  records: ArtificialAnalysisRecord[],
 ): ArtificialAnalysisRecord[] {
-  return records.map((record) => record as ArtificialAnalysisRecord);
+  return records;
 }
 
 export function parseDesignArenaRecords(
-  records: Record<string, unknown>[],
+  records: DesignArenaRecord[],
 ): DesignArenaRecord[] {
-  return records.map((record) => record as DesignArenaRecord);
+  return records;
 }
 
 export function formatAaMetricLabel(key: string): string {
@@ -139,7 +96,7 @@ export function formatAaIndex(value: number | null | undefined): string | null {
 
 export function getAaSummaryScores(
   benchmarks: {
-    artificial_analysis: Record<string, unknown>[];
+    artificial_analysis: ArtificialAnalysisRecord[];
     artificial_analysis_summary?: ArtificialAnalysisSummary | null;
   },
   modelId: string,
@@ -187,7 +144,7 @@ export function getAaSummaryScores(
 
 export function getAaVariantInfo(
   benchmarks: {
-    artificial_analysis: Record<string, unknown>[];
+    artificial_analysis: ArtificialAnalysisRecord[];
     artificial_analysis_summary?: ArtificialAnalysisSummary | null;
   },
   modelId: string,

@@ -16,7 +16,7 @@ import { ModelAaVariantPicker } from "./ModelAaVariantPicker";
 
 interface ArtificialAnalysisPanelProps {
   modelId: string;
-  records: Record<string, unknown>[];
+  records: ArtificialAnalysisRecord[];
 }
 
 function IndexCard({
