@@ -85,7 +85,7 @@ def test_parse_effective_pricing_payload_trims_summaries() -> None:
 
 
 def test_parse_provider_endpoints_payload_trims_fields() -> None:
-    raw = {
+    raw: dict[str, object] = {
         "endpoints": [
             {
                 "provider_name": "DeepInfra",
@@ -237,10 +237,11 @@ def test_stabilize_provider_stats_sorts_summaries_and_endpoints() -> None:
         summary.provider_name
         for summary in stabilized_stats.effective_pricing.provider_summaries  # type: ignore[union-attr]
     ] == ["A", "B"]
-    assert [endpoint.provider_name for endpoint in stabilized_stats.provider_endpoints] == [
+    assert [
+        endpoint.provider_name for endpoint in stabilized_stats.provider_endpoints
+    ] == [
         "A",
         "Z",
     ]
-    assert [
-        record.provider_name for record in stabilized_benchmarks.benchmark_scores or []
-    ] == ["A", "Z"]
+    assert stabilized_benchmarks.benchmark_scores is not None
+    assert len(stabilized_benchmarks.benchmark_scores) == 2

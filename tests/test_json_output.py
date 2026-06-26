@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 from pydantic import BaseModel, ConfigDict
 
@@ -33,3 +34,12 @@ def test_dump_model_uses_sorted_keys() -> None:
 def test_dump_model_line_is_compact_sorted() -> None:
     model = SampleModel(zebra="z", alpha=1)
     assert dump_model_line(model) == '{"alpha":1,"zebra":"z"}'
+
+
+def test_write_model_json_writes_file(tmp_path: Path) -> None:
+    from modelwatch.json_output import write_model_json
+
+    path = tmp_path / "out.json"
+    model = SampleModel(zebra="z", alpha=1)
+    write_model_json(path, model)
+    assert path.exists()

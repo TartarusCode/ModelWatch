@@ -81,7 +81,6 @@ def test_append_build_records_cache_read_in_history() -> None:
 
 def test_append_build_records_price_change() -> None:
     at = datetime(2026, 5, 29, 12, 0, tzinfo=UTC)
-    pricing = ModelPricing(prompt="0.000002", completion="0.000010")
     point = PriceHistoryPoint(
         recorded_at=at,
         prompt_per_million=Decimal("2"),

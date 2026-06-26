@@ -38,6 +38,10 @@ def test_probes_ok_when_at_least_one_succeeds() -> None:
     assert probes_indicate_broken_endpoints(results) is False
 
 
+def test_probes_indicate_broken_when_results_empty() -> None:
+    assert probes_indicate_broken_endpoints([]) is True
+
+
 def test_benchmark_error_ratio() -> None:
     assert benchmark_error_ratio(1352, 338) == 1.0
     assert benchmark_error_ratio(0, 338) == 0.0

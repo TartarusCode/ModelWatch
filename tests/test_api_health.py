@@ -2,7 +2,7 @@ import asyncio
 
 import httpx
 
-from modelwatch.api_health import probe_benchmark_endpoints
+from modelwatch.api_health import ApiHealthReport, probe_benchmark_endpoints
 from modelwatch.benchmark_health import PROBE_SLUGS
 from modelwatch.fetch import MODELS_URL
 
@@ -31,8 +31,19 @@ def _mock_transport(
     return httpx.MockTransport(handler)
 
 
-async def _probe(**kwargs: object) -> object:
-    async with httpx.AsyncClient(transport=_mock_transport(**kwargs)) as client:
+async def _probe(
+    *,
+    design_status: int = 200,
+    aa_status: int = 200,
+    models_status: int = 200,
+) -> ApiHealthReport:
+    async with httpx.AsyncClient(
+        transport=_mock_transport(
+            design_status=design_status,
+            aa_status=aa_status,
+            models_status=models_status,
+        ),
+    ) as client:
         return await probe_benchmark_endpoints(client=client, slugs=["a/b"])
 
 
@@ -44,9 +55,7 @@ def test_probe_benchmark_endpoints_all_healthy() -> None:
 
 
 def test_probe_benchmark_endpoints_broken_when_all_404() -> None:
-    report = asyncio.run(
-        _probe(design_status=404, aa_status=404, models_status=200)
-    )
+    report = asyncio.run(_probe(design_status=404, aa_status=404, models_status=200))
     assert report.broken is True
     assert not any(result.ok for result in report.results)
 
