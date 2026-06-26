@@ -14,7 +14,58 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  test-and-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.1.0
+        with:
+          version: "0.11.17"
+          enable-cache: true
+          activate-environment: true
+          cache-dependency-glob: |
+            uv.lock
+            pyproject.toml
+          prune-cache: false
+
+      - name: Sync Python dev dependencies
+        run: uv sync --frozen --extra dev
+
+      - name: Run tests
+        run: uv run pytest
+
+      - name: Type check
+        run: uv run mypy modelwatch tests
+
+      - name: Lint
+        run: uv run ruff check modelwatch tests
+
+      - name: Format check
+        run: uv run ruff format --check modelwatch tests
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install web dependencies
+        run: npm ci
+        working-directory: web
+
+      - name: Lint web
+        run: npm run lint
+        working-directory: web
+
+      - name: Test web
+        run: npm run test
+        working-directory: web
+
   build:
+    needs: test-and-lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
