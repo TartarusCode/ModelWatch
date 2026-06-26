@@ -12,10 +12,15 @@ from modelwatch.price_events import (
     DROP_LOOKBACK_HOURS,
     dedupe_settled_price_re_alerts,
     drops_in_last_hours,
+    filter_spurious_zero_drop_events,
     load_price_events,
 )
 from modelwatch.history import load_history, save_history
 from modelwatch.pricing import PriceDropThresholds
+from modelwatch.pricing_glitch import (
+    is_free_model_id,
+    is_paid_zero_glitch_point,
+)
 from modelwatch.schemas import (
     NewModelEventRecord,
     PriceDropsOutput,
@@ -37,9 +42,10 @@ BASELINES_PATH = ROOT / "data" / "snapshots" / "price-drop-baselines.json"
 
 
 def filter_price_events(events: list[PriceEventRecord]) -> list[PriceEventRecord]:
-    return [
+    filtered = [
         event for event in events if not is_latest_alias_model_id(event.model_id)
     ]
+    return filter_spurious_zero_drop_events(filtered)
 
 
 def filter_new_model_events(
@@ -74,12 +80,20 @@ def clean_new_model_events_file(path: Path = NEW_MODEL_EVENTS_PATH) -> int:
 
 def clean_price_history() -> int:
     store = load_history()
-    kept_models = {
-        model_id: points
-        for model_id, points in store.models.items()
-        if not is_latest_alias_model_id(model_id)
-    }
-    removed = len(store.models) - len(kept_models)
+    removed = 0
+    kept_models: dict[str, list] = {}
+    for model_id, points in store.models.items():
+        if is_latest_alias_model_id(model_id):
+            removed += 1
+            continue
+        kept_points = [
+            point
+            for index, point in enumerate(points)
+            if not is_paid_zero_glitch_point(model_id, points, index)
+        ]
+        removed += len(points) - len(kept_points)
+        if kept_points:
+            kept_models[model_id] = kept_points
     if removed:
         save_history(
             store.model_copy(
@@ -94,12 +108,23 @@ def clean_price_history() -> int:
 
 def clean_price_drop_baselines() -> int:
     store = load_baselines()
-    kept_models = {
-        model_id: fields
-        for model_id, fields in store.models.items()
-        if not is_latest_alias_model_id(model_id)
-    }
-    removed = len(store.models) - len(kept_models)
+    removed = 0
+    kept_models: dict[str, dict[str, str]] = {}
+    for model_id, fields in store.models.items():
+        if is_latest_alias_model_id(model_id):
+            removed += 1
+            continue
+        kept_fields = {
+            field: value
+            for field, value in fields.items()
+            if not (
+                not is_free_model_id(model_id)
+                and Decimal(value) <= 0
+            )
+        }
+        removed += len(fields) - len(kept_fields)
+        if kept_fields:
+            kept_models[model_id] = kept_fields
     if removed:
         save_baselines(
             store.model_copy(

@@ -80,6 +80,8 @@ def detect_price_drops_from_reference(
         if new_token is None or not _is_known_price(new_token):
             continue
         new_per_million = new_token * Decimal(1_000_000)
+        if not _is_positive_price(new_per_million):
+            continue
         if new_per_million >= reference:
             continue
         if baseline_per_million is not None:

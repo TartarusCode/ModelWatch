@@ -34,6 +34,7 @@ Implemented in `modelwatch/pricing.py` and `modelwatch/price_baselines.py`:
 - **7-day MA** is computed from `web/public/data/price-history.json` (time-based window, not snapshot count — handles irregular cron cadence). Requires **≥3 history points** in the window; otherwise skip detection for that model until enough data exists.
 - **Ratchet baseline** stored in `data/snapshots/price-drop-baselines.json`; updated only on confirmed drops (never raised on price increases). When a baseline exists, current price must be **strictly below** it to alert — prevents re-firing when price returns to a previously dropped level after a spike.
 - Significant when **≥10%** drop below reference **and** **≥$0.05/M** saved (USD per 1M tokens).
+- **Zero-price glitch guard** (`modelwatch/pricing_glitch.py`): paid models (`:free` suffix and `openrouter/free` excluded) never record $0 history points after a positive price, never emit drop alerts to $0, and spurious zero events are stripped from `price-drops.json`. OpenRouter briefly returned $0 for many paid models on 2026-06-25 ~13:30–14:00 UTC; run `uv run python -m modelwatch.alias_cleanup` to purge history/events/baselines.
 - Events append to `web/public/data/price-events.jsonl` (max 500 lines).
 - `price-drops.json` lists drops from the last **24 hours** of events (30m builds); UI counts/banner match that window. One row per model+field (latest event); re-alerts at an unchanged settled price are suppressed.
 - JSON artifacts use `modelwatch.json_output` (`sort_keys=True` at every object level) for stable git diffs.

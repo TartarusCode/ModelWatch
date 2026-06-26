@@ -2,6 +2,7 @@ from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 from modelwatch.model_filters import is_latest_alias_model_id
+from modelwatch.pricing_glitch import is_spurious_zero_drop_event
 from modelwatch.schemas import PriceDropRecord, PriceEventRecord
 
 DROP_LOOKBACK_HOURS = 24
@@ -93,6 +94,16 @@ def filter_redundant_drop_events(
     ]
 
 
+def filter_spurious_zero_drop_events(
+    events: list[PriceEventRecord],
+) -> list[PriceEventRecord]:
+    return [
+        event
+        for event in events
+        if not is_spurious_zero_drop_event(event.model_id, event.new_per_million_usd)
+    ]
+
+
 def drops_in_last_hours(
     events: list[PriceEventRecord],
     hours: int,
@@ -105,5 +116,6 @@ def drops_in_last_hours(
         for event in recent
         if not is_latest_alias_model_id(event.model_id)
     ]
+    filtered = filter_spurious_zero_drop_events(filtered)
     deduped = dedupe_drop_events_for_display(filtered)
     return records_from_events(deduped)

@@ -6,6 +6,10 @@ from pydantic import BaseModel, ConfigDict
 
 from modelwatch.json_output import write_model_json
 from modelwatch.pricing import PRICING_FIELDS, _is_known_price, _parse_per_token
+from modelwatch.pricing_glitch import (
+    has_recordable_history_fields,
+    sanitize_history_fields,
+)
 from modelwatch.schemas import ModelPricing
 
 HISTORY_PATH = (
@@ -62,7 +66,14 @@ def append_build_to_history(
     pricing: ModelPricing,
     recorded_at: datetime,
 ) -> PriceHistoryStore:
-    fields = pricing_to_history_fields(pricing)
+    existing = list(store.models.get(model_id, []))
+    fields = sanitize_history_fields(
+        model_id,
+        pricing_to_history_fields(pricing),
+        existing,
+    )
+    if not has_recordable_history_fields(fields):
+        return store
     point = PriceHistoryPoint(
         recorded_at=recorded_at,
         **{
@@ -70,7 +81,6 @@ def append_build_to_history(
             for field in PRICING_FIELDS
         },
     )
-    existing = list(store.models.get(model_id, []))
     updated_points = [*existing, point][-MAX_POINTS_PER_MODEL:]
     updated_models = {**store.models, model_id: updated_points}
     return PriceHistoryStore(
