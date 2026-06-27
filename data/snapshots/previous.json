@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T00:01:13.238362Z",
+  "generated_at": "2026-06-27T00:30:58.630619Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -11456,6 +11456,7 @@
         "temperature",
         "tool_choice",
         "tools",
+        "top_a",
         "top_k",
         "top_logprobs",
         "top_p"
