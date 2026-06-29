@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T07:31:10.464053Z",
+  "generated_at": "2026-06-29T08:00:59.698982Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -7610,7 +7610,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 100352
       }
     },
     "moonshotai/kimi-k2-0905": {
@@ -7663,7 +7663,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 100352
       }
     },
     "moonshotai/kimi-k2-thinking": {
