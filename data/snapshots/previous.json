@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T11:31:06.632988Z",
+  "generated_at": "2026-06-30T12:01:06.398131Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -12377,57 +12377,6 @@
         "context_length": null,
         "is_moderated": false,
         "max_completion_tokens": null
-      }
-    },
-    "openrouter/owl-alpha": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "openrouter/owl-alpha",
-      "context_length": 1048756,
-      "created": 1777398589,
-      "default_parameters": null,
-      "description": "Owl Alpha is a high-performance foundation model designed for agentic workloads. Natively supports tool use, and long-context tasks, with strong performance in code generation, automated workflows, and complex instruction execution....",
-      "expiration_date": null,
-      "id": "openrouter/owl-alpha",
-      "name": "Owl Alpha",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 1048756,
-        "is_moderated": false,
-        "max_completion_tokens": 262144
       }
     },
     "openrouter/pareto-code": {
