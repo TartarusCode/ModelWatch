@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T16:31:04.808839Z",
+  "generated_at": "2026-06-30T17:01:12.053155Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3607,6 +3607,53 @@
         "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 65536
+      }
+    },
+    "google/gemini-3.1-flash-lite-image": {
+      "architecture": {
+        "input_modalities": [
+          "image",
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text+image",
+        "output_modalities": [
+          "image",
+          "text"
+        ],
+        "tokenizer": "Gemini"
+      },
+      "canonical_slug": "google/gemini-3.1-flash-lite-image-20260630",
+      "context_length": 65536,
+      "created": 1782837225,
+      "default_parameters": {},
+      "description": "Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image) is Google's fastest, most cost-efficient Gemini image model, built for high-velocity developer pipelines and rapid-fire visual exploration. It delivers text-to-image generation...",
+      "expiration_date": null,
+      "id": "google/gemini-3.1-flash-lite-image",
+      "name": "Google: Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
+      "pricing": {
+        "completion": "0.0000015",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000025",
+        "request": null,
+        "web_search": "0.014"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "seed",
+        "temperature",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 65536,
+        "is_moderated": false,
+        "max_completion_tokens": 66000
       }
     },
     "google/gemini-3.1-flash-lite-preview": {
