@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T19:01:10.004518Z",
+  "generated_at": "2026-06-30T19:31:04.142012Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -17918,7 +17918,7 @@
         "input_cache_read": "0.00000018",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000094",
+        "prompt": "0.00000093",
         "request": null,
         "web_search": null
       },
@@ -17948,7 +17948,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 32768
       }
     },
     "z-ai/glm-5v-turbo": {
