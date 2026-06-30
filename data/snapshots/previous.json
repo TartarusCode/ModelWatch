@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T18:01:16.492545Z",
+  "generated_at": "2026-06-30T18:31:02.866209Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -1349,6 +1349,63 @@
         "tools",
         "top_k",
         "top_p",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": true,
+        "max_completion_tokens": 128000
+      }
+    },
+    "anthropic/claude-sonnet-5": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude"
+      },
+      "canonical_slug": "anthropic/claude-sonnet-5-20260630",
+      "context_length": 1000000,
+      "created": 1782843083,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Sonnet 5 is Anthropic's most capable Sonnet-class model, with frontier performance across coding, agents, and professional work. It supports adaptive thinking with selectable reasoning effort levels (low, medium, high, max,...",
+      "expiration_date": null,
+      "id": "anthropic/claude-sonnet-5",
+      "name": "Anthropic: Claude Sonnet 5",
+      "pricing": {
+        "completion": "0.00001",
+        "image": null,
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.0000025",
+        "internal_reasoning": null,
+        "prompt": "0.000002",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
         "verbosity"
       ],
       "top_provider": {
@@ -2791,12 +2848,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash",
       "pricing": {
-        "completion": "0.00000018",
+        "completion": "0.000000196",
         "image": null,
         "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.000000098",
         "request": null,
         "web_search": null
       },
@@ -2822,9 +2879,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1000000,
+        "context_length": 1048575,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": null
       }
     },
     "deepseek/deepseek-v4-pro": {
