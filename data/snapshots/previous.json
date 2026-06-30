@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T19:31:04.142012Z",
+  "generated_at": "2026-06-30T20:01:08.308828Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -6002,57 +6002,6 @@
         "context_length": 16384,
         "is_moderated": false,
         "max_completion_tokens": 16384
-      }
-    },
-    "microsoft/phi-4-mini-instruct": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "microsoft/phi-4-mini-instruct",
-      "context_length": 131072,
-      "created": 1760726049,
-      "default_parameters": {},
-      "description": "Phi-4-mini-instruct is a lightweight open model built upon synthetic data and filtered publicly available websites - with a focus on high-quality, reasoning dense data. The model belongs to the Phi-4...",
-      "expiration_date": null,
-      "id": "microsoft/phi-4-mini-instruct",
-      "name": "Microsoft: Phi 4 Mini Instruct",
-      "pricing": {
-        "completion": "0.00000035",
-        "image": null,
-        "input_cache_read": "0.00000008",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000008",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 128000,
-        "is_moderated": false,
-        "max_completion_tokens": 128000
       }
     },
     "microsoft/wizardlm-2-8x22b": {
@@ -13581,12 +13530,12 @@
       "id": "qwen/qwen3-235b-a22b-thinking-2507",
       "name": "Qwen: Qwen3 235B A22B Thinking 2507",
       "pricing": {
-        "completion": "0.0000001",
+        "completion": "0.000001495",
         "image": null,
-        "input_cache_read": "0.0000001",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.0000001495",
         "request": null,
         "web_search": null
       },
@@ -13612,9 +13561,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": null
       }
     },
     "qwen/qwen3-30b-a3b": {
