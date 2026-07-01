@@ -1,6 +1,16 @@
 {
-  "drops": [],
-  "generated_at": "2026-07-01T12:01:09.398864Z",
+  "drops": [
+    {
+      "detected_at": "2026-07-01T12:31:01.649101Z",
+      "field": "input_cache_read",
+      "model_id": "moonshotai/kimi-k2-thinking",
+      "new_per_million_usd": "0.150000",
+      "old_per_million_usd": "0.600000",
+      "pct_drop": 0.75,
+      "saved_per_million_usd": "0.450000"
+    }
+  ],
+  "generated_at": "2026-07-01T12:31:10.384376Z",
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T12:01:09.398864Z",
+  "generated_at": "2026-07-01T12:31:10.384376Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -6178,9 +6178,9 @@
       "id": "minimax/minimax-m2",
       "name": "MiniMax: MiniMax M2",
       "pricing": {
-        "completion": "0.000001",
+        "completion": "0.00000102",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.000000255",
@@ -6190,10 +6190,8 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
         "logprobs",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
@@ -6209,9 +6207,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 196608,
+        "context_length": 204800,
         "is_moderated": false,
-        "max_completion_tokens": 196608
+        "max_completion_tokens": 131072
       }
     },
     "minimax/minimax-m2-her": {
@@ -7640,9 +7638,7 @@
       },
       "supported_parameters": [
         "frequency_penalty",
-        "logit_bias",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "repetition_penalty",
         "response_format",
@@ -7688,7 +7684,7 @@
       "pricing": {
         "completion": "0.0000025",
         "image": null,
-        "input_cache_read": "0.0000006",
+        "input_cache_read": "0.00000015",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000006",
@@ -7698,10 +7694,8 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
         "logprobs",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
@@ -7719,7 +7713,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 100352
       }
     },
     "moonshotai/kimi-k2.5": {
@@ -13662,7 +13656,6 @@
         "logit_bias",
         "logprobs",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "repetition_penalty",
         "response_format",
@@ -14426,10 +14419,8 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
         "logprobs",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",

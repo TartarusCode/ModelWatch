@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T03:30:54.253688Z",
+  "generated_at": "2026-07-01T12:31:01.649101Z",
   "models": {
     "minimax/minimax-m2.5": {
       "completion": "0.480000"
@@ -7,6 +7,9 @@
     "minimax/minimax-m2.7": {
       "completion": "0.720000",
       "prompt": "0.180000"
+    },
+    "moonshotai/kimi-k2-thinking": {
+      "input_cache_read": "0.150000"
     },
     "moonshotai/kimi-k2.6": {
       "prompt": "0.550000"
