@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T15:01:15.405676Z",
+  "generated_at": "2026-07-02T15:31:10.709178Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -12881,7 +12881,11 @@
       "context_length": 262144,
       "created": 1783002429,
       "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
         "temperature": 0.7,
+        "top_k": null,
         "top_p": 0.9
       },
       "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
@@ -12902,8 +12906,6 @@
         "include_reasoning",
         "max_tokens",
         "reasoning",
-        "response_format",
-        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools"
@@ -12930,7 +12932,11 @@
       "context_length": 262144,
       "created": 1783002429,
       "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
         "temperature": 0.7,
+        "top_k": null,
         "top_p": 0.9
       },
       "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
