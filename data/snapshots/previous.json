@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T11:01:07.052254Z",
+  "generated_at": "2026-07-02T11:31:16.309021Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -14651,10 +14651,8 @@
         "max_tokens",
         "presence_penalty",
         "reasoning",
-        "repetition_penalty",
         "response_format",
         "seed",
-        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
@@ -14752,12 +14750,12 @@
       "id": "qwen/qwen3-vl-8b-instruct",
       "name": "Qwen: Qwen3 VL 8B Instruct",
       "pricing": {
-        "completion": "0.0000005",
+        "completion": "0.000000455",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008",
+        "prompt": "0.000000117",
         "request": null,
         "web_search": null
       },
