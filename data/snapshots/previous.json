@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T08:01:14.910719Z",
+  "generated_at": "2026-07-02T08:30:58.108342Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -2853,7 +2853,7 @@
         "input_cache_read": "0.000000018",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.000000089",
         "request": null,
         "web_search": null
       },
@@ -2881,7 +2881,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": null
       }
     },
     "deepseek/deepseek-v4-pro": {
