@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T03:01:11.289218Z",
+  "generated_at": "2026-07-03T03:31:19.854010Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -17866,12 +17866,12 @@
       "id": "z-ai/glm-5.1",
       "name": "Z.ai: GLM 5.1",
       "pricing": {
-        "completion": "0.0000043",
+        "completion": "0.000003036",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.0000001794",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000975",
+        "prompt": "0.000000966",
         "request": null,
         "web_search": null
       },
@@ -17897,9 +17897,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 65536,
+        "context_length": 200000,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 128000
       }
     },
     "z-ai/glm-5.2": {
