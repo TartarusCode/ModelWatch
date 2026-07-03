@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T18:01:06.348427Z",
+  "generated_at": "2026-07-03T18:31:11.974751Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -4315,6 +4315,7 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logprobs",
         "max_tokens",
         "presence_penalty",
         "reasoning",
@@ -4327,6 +4328,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
