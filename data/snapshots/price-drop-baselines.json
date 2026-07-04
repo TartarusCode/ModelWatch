@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T03:31:08.178773Z",
+  "generated_at": "2026-07-04T11:30:56.824145Z",
   "models": {
     "minimax/minimax-m2.5": {
       "completion": "0.480000"
@@ -28,6 +28,10 @@
     "z-ai/glm-5.1": {
       "completion": "3.036000",
       "input_cache_read": "0.182000"
+    },
+    "z-ai/glm-5.2": {
+      "completion": "2.640000",
+      "prompt": "0.840000"
     }
   }
 }
