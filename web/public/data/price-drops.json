@@ -1,25 +1,25 @@
 {
   "drops": [
     {
-      "detected_at": "2026-07-04T17:01:03.553737Z",
+      "detected_at": "2026-07-04T23:01:04.646465Z",
       "field": "prompt",
       "model_id": "z-ai/glm-5.2",
-      "new_per_million_usd": "0.770000",
-      "old_per_million_usd": "0.933695",
-      "pct_drop": 0.17531977396519716,
-      "saved_per_million_usd": "0.163695"
+      "new_per_million_usd": "0.756000",
+      "old_per_million_usd": "0.927199",
+      "pct_drop": 0.18464088269723347,
+      "saved_per_million_usd": "0.171199"
     },
     {
-      "detected_at": "2026-07-04T17:01:03.553737Z",
+      "detected_at": "2026-07-04T23:01:04.646465Z",
       "field": "completion",
       "model_id": "z-ai/glm-5.2",
-      "new_per_million_usd": "2.420000",
-      "old_per_million_usd": "2.981350",
-      "pct_drop": 0.18828718533550237,
-      "saved_per_million_usd": "0.561350"
+      "new_per_million_usd": "2.376000",
+      "old_per_million_usd": "2.960518",
+      "pct_drop": 0.1974378023371463,
+      "saved_per_million_usd": "0.584518"
     }
   ],
-  "generated_at": "2026-07-04T22:31:13.579514Z",
+  "generated_at": "2026-07-04T23:01:14.859643Z",
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05
