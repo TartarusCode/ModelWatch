@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T19:31:36.824051Z",
+  "generated_at": "2026-07-06T20:01:21.816853Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -13629,12 +13629,12 @@
       "id": "qwen/qwen3-235b-a22b-2507",
       "name": "Qwen: Qwen3 235B A22B Instruct 2507",
       "pricing": {
-        "completion": "0.0000001",
+        "completion": "0",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0",
         "request": null,
         "web_search": null
       },
@@ -13660,7 +13660,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": null
       }
     },
     "qwen/qwen3-235b-a22b-thinking-2507": {
