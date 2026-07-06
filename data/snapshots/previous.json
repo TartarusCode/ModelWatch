@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T14:01:40.807620Z",
+  "generated_at": "2026-07-06T14:31:23.009959Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -16523,6 +16523,66 @@
       ],
       "top_provider": {
         "context_length": 131072,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
+      }
+    },
+    "tencent/hy3": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "tencent/hy3-20260706",
+      "context_length": 262144,
+      "created": 1783344048,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": 0.9,
+        "top_k": null,
+        "top_p": 1
+      },
+      "description": "Hy3 is a 295B-parameter Mixture-of-Experts model from Tencent (21B active, 192 experts with top-8 routing) built for reasoning, agentic workflows, and real-world production use. It supports a configurable reasoning effort:...",
+      "expiration_date": null,
+      "id": "tencent/hy3",
+      "name": "Tencent: Hy3",
+      "pricing": {
+        "completion": "0.00000058",
+        "image": null,
+        "input_cache_read": "0.000000035",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000014",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 202752,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
