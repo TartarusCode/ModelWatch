@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T16:01:29.359481Z",
+  "generated_at": "2026-07-06T16:31:22.481347Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -1536,7 +1536,7 @@
         "top_p": 0.75
       },
       "description": "Trinity Mini is a 26B-parameter (3B active) sparse mixture-of-experts language model featuring 128 experts with 8 active per token. Engineered for efficient reasoning over long contexts (131k) with robust function...",
-      "expiration_date": null,
+      "expiration_date": "2026-07-10",
       "id": "arcee-ai/trinity-mini",
       "name": "Arcee AI: Trinity Mini",
       "pricing": {
