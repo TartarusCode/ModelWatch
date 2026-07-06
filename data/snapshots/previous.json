@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T17:31:13.411596Z",
+  "generated_at": "2026-07-06T18:01:17.092072Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -2708,7 +2708,7 @@
         "tokenizer": "DeepSeek"
       },
       "canonical_slug": "deepseek/deepseek-v3.2-20251201",
-      "context_length": 163840,
+      "context_length": 131072,
       "created": 1764594642,
       "default_parameters": {
         "frequency_penalty": null,
@@ -2723,12 +2723,12 @@
       "id": "deepseek/deepseek-v3.2",
       "name": "DeepSeek: DeepSeek V3.2",
       "pricing": {
-        "completion": "0",
+        "completion": "0.0000003432",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000002288",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0",
+        "prompt": "0.0000002288",
         "request": null,
         "web_search": null
       },
@@ -2754,9 +2754,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 163840,
+        "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": 163840
+        "max_completion_tokens": 64000
       }
     },
     "deepseek/deepseek-v3.2-exp": {
@@ -6409,12 +6409,12 @@
       "id": "minimax/minimax-m2.7",
       "name": "MiniMax: MiniMax M2.7",
       "pricing": {
-        "completion": "0.00000072",
+        "completion": "0",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000018",
+        "prompt": "0",
         "request": null,
         "web_search": null
       },
@@ -6442,7 +6442,7 @@
       "top_provider": {
         "context_length": 196608,
         "is_moderated": false,
-        "max_completion_tokens": 196608
+        "max_completion_tokens": null
       }
     },
     "minimax/minimax-m3": {
