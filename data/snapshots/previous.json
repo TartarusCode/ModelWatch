@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T13:31:35.081099Z",
+  "generated_at": "2026-07-07T14:01:22.717317Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -44,92 +44,6 @@
         "context_length": 256000,
         "is_moderated": false,
         "max_completion_tokens": 4096
-      }
-    },
-    "aion-labs/aion-1.0": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "aion-labs/aion-1.0",
-      "context_length": 131072,
-      "created": 1738697557,
-      "default_parameters": {},
-      "description": "Aion-1.0 is a multi-model system designed for high performance across various tasks, including reasoning and coding. It is built on DeepSeek-R1, augmented with additional models and techniques such as Tree...",
-      "expiration_date": null,
-      "id": "aion-labs/aion-1.0",
-      "name": "AionLabs: Aion-1.0",
-      "pricing": {
-        "completion": "0.000008",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.000004",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "temperature",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 32768
-      }
-    },
-    "aion-labs/aion-1.0-mini": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "aion-labs/aion-1.0-mini",
-      "context_length": 131072,
-      "created": 1738697107,
-      "default_parameters": {},
-      "description": "Aion-1.0-Mini 32B parameter model is a distilled version of the DeepSeek-R1 model, designed for strong performance in reasoning domains such as mathematics, coding, and logic. It is a modified variant...",
-      "expiration_date": null,
-      "id": "aion-labs/aion-1.0-mini",
-      "name": "AionLabs: Aion-1.0-Mini",
-      "pricing": {
-        "completion": "0.0000014",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000007",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "temperature",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 32768
       }
     },
     "aion-labs/aion-2.0": {
