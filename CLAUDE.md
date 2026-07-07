@@ -63,7 +63,7 @@ Implemented in `modelwatch/new_models.py`:
 ## Gotchas
 
 - OpenRouter uses per-token price `-1` for routers/variable pricing (e.g. `openrouter/auto`). Treat as "Varies", never multiply by 1M.
-- Price history in `web/public/data/price-history.json` — all `PRICING_FIELDS` (prompt, completion, cache read, etc.); one point per scheduled build per model (up to 500 points retained); UI shows columns/series only for fields with data. Field names use `per_million_field_name()` from `modelwatch/pricing.py`.
+- Price history in `web/public/data/price-history.json` — **Git LFS** (~70MB; clone with LFS installed). All `PRICING_FIELDS` (prompt, completion, cache read, etc.); one point per scheduled build per model (up to 500 points retained); UI shows columns/series only for fields with data. Field names use `per_million_field_name()` from `modelwatch/pricing.py`. CI checkouts use `lfs: true`.
 - Detail page **Free tier** badge (`web/src/lib/pricing.ts` `isFreeTierModel`) is display-only — uses current pricing, not history; Python `is_free_tier_model` is authoritative for the build pipeline.
 - First build has no price history → no price drops until enough history points accumulate (≥3 within 7 days).
 - Most models return empty benchmark payloads; UI must handle `empty` status.
