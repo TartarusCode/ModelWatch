@@ -268,9 +268,8 @@ def _update_pending_state(
     assert state.pending_price is not None
     assert state.episode_start_price is not None
 
-    if (
-        current > state.pending_price
-        and not _prices_match(current, state.pending_price)
+    if current > state.pending_price and not _prices_match(
+        current, state.pending_price
     ):
         return FieldUpdateResult(
             state=FieldDropState.idle(state.anchor),
@@ -278,9 +277,8 @@ def _update_pending_state(
             recovered=None,
         )
 
-    if (
-        current < state.pending_price
-        and not _prices_match(current, state.pending_price)
+    if current < state.pending_price and not _prices_match(
+        current, state.pending_price
     ):
         if _pending_triggered(
             current=current,
@@ -431,9 +429,7 @@ def update_model_field_states(
         if current is None or current <= 0:
             continue
 
-        previous = (
-            previous_per_million.get(field) if previous_per_million else None
-        )
+        previous = previous_per_million.get(field) if previous_per_million else None
         field_state = model_states.get(field)
         if field_state is None:
             field_state = FieldDropState.idle(current)

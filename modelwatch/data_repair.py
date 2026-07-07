@@ -43,9 +43,7 @@ EVENTS_PATH = DATA_DIR / "price-events.jsonl"
 NEW_MODEL_EVENTS_PATH = DATA_DIR / "new-model-events.jsonl"
 PRICE_DROPS_PATH = DATA_DIR / "price-drops.json"
 MODELS_PATH = DATA_DIR / "models.json"
-BASELINES_PATH = (
-    ROOT / "data" / "snapshots" / "price-drop-baselines.json"
-)
+BASELINES_PATH = ROOT / "data" / "snapshots" / "price-drop-baselines.json"
 
 
 def filter_price_events(events: list[PriceEventRecord]) -> list[PriceEventRecord]:

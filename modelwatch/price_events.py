@@ -73,9 +73,7 @@ def active_drops(
     for episode in episodes:
         if is_latest_alias_model_id(episode.model_id):
             continue
-        if is_spurious_zero_drop_event(
-            episode.model_id, episode.new_per_million_usd
-        ):
+        if is_spurious_zero_drop_event(episode.model_id, episode.new_per_million_usd):
             continue
         if episode.status != "active":
             continue
