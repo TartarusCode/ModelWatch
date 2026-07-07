@@ -13,6 +13,7 @@ from modelwatch.history import (
     dedupe_consecutive_identical_points,
     encode_model_id,
     load_history,
+    load_model_history,
     merge_build_into_history,
     migrate_monolith_history_to_split,
     model_history_path,
@@ -259,6 +260,17 @@ def test_dedupe_consecutive_identical_points() -> None:
     assert len(deduped) == 2
     assert deduped[0].recorded_at == at
     assert deduped[1].prompt_per_million == Decimal("1")
+
+
+def test_load_model_history_returns_empty_for_missing_file(history_dir: Path) -> None:
+    assert load_model_history("missing/model") == []
+
+
+def test_load_model_history_returns_empty_for_empty_file(history_dir: Path) -> None:
+    path = model_history_path("acme/empty:free")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("", encoding="utf-8")
+    assert load_model_history("acme/empty:free") == []
 
 
 def test_repair_model_history_filenames_moves_colon_broken_paths(

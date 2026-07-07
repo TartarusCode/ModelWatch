@@ -186,7 +186,10 @@ def load_model_history(model_id: str) -> list[PriceHistoryPoint]:
     path = model_history_path(model_id)
     if not path.exists():
         return []
-    payload = json.loads(path.read_text(encoding="utf-8"))
+    raw = path.read_text(encoding="utf-8").strip()
+    if not raw:
+        return []
+    payload = json.loads(raw)
     series = ModelHistorySeries.model_validate(payload)
     return series.points
 
