@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { loadSiteData } from "./data";
+import { encodeModelIdForHistory, loadSiteData } from "./data";
 
 describe("loadSiteData", () => {
   afterEach(() => {
@@ -46,14 +46,6 @@ describe("loadSiteData", () => {
           }),
         );
       }
-      if (url.endsWith("price-history.json")) {
-        return new Response(
-          JSON.stringify({
-            generated_at: "2026-06-25T12:00:00Z",
-            models: {},
-          }),
-        );
-      }
       if (url.endsWith(".jsonl")) {
         return new Response("");
       }
@@ -66,5 +58,11 @@ describe("loadSiteData", () => {
     expect(data.meta.model_count).toBe(1);
     expect(data.models.models).toEqual([]);
     expect(data.priceDrops.active_drops).toEqual([]);
+  });
+
+  it("encodes colons in model history filenames", () => {
+    expect(encodeModelIdForHistory("cohere/north-mini-code:free")).toBe(
+      "cohere__north-mini-code_colon_free",
+    );
   });
 });

@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArtificialAnalysisPanel } from "../components/ArtificialAnalysisPanel";
 import { BenchmarkScoresPanel } from "../components/BenchmarkScoresPanel";
@@ -8,13 +8,10 @@ import { PriceCell } from "../components/PriceCell";
 import { PriceHistoryPanel } from "../components/PriceHistoryPanel";
 import { ProviderBadge } from "../components/ProviderBadge";
 import { ProviderPricingPanel } from "../components/ProviderPricingPanel";
+import { fetchModelPriceHistory } from "../lib/data";
 import { isFreeTierModel, pricingFieldLabel, providerFromModelId } from "../lib/pricing";
 import { useDocumentTitle } from "../lib/useDocumentTitle";
-import type {
-  EnrichedModel,
-  PriceDropRecord,
-  PriceHistoryOutput,
-} from "../types";
+import type { EnrichedModel, ModelPricing, PriceDropRecord, PriceHistoryPoint } from "../types";
 
 const ModelDescription = lazy(() =>
   import("../components/ModelDescription").then((module) => ({
@@ -24,7 +21,6 @@ const ModelDescription = lazy(() =>
 
 interface ModelDetailPageProps {
   models: EnrichedModel[];
-  priceHistory: PriceHistoryOutput;
   episodes: PriceDropRecord[];
 }
 
@@ -37,15 +33,28 @@ function pricingEntries(pricing: ModelPricing): [string, string][] {
 
 export function ModelDetailPage({
   models,
-  priceHistory,
   episodes,
 }: ModelDetailPageProps) {
   const { id } = useParams<{ id: string }>();
   const decodedId = id ? decodeURIComponent(id) : "";
   const enriched = models.find((m) => m.model.id === decodedId);
+  const [historyPoints, setHistoryPoints] = useState<PriceHistoryPoint[] | null>(null);
   useDocumentTitle(
     enriched ? `ModelWatch — ${enriched.model.name}` : "ModelWatch — Model",
   );
+
+  useEffect(() => {
+    if (!decodedId) {
+      setHistoryPoints([]);
+      return;
+    }
+    setHistoryPoints(null);
+    fetchModelPriceHistory(decodedId)
+      .then(setHistoryPoints)
+      .catch(() => {
+        setHistoryPoints([]);
+      });
+  }, [decodedId]);
 
   if (!enriched) {
     return (
@@ -137,7 +146,7 @@ export function ModelDetailPage({
 
       <PriceHistoryPanel
         modelId={model.id}
-        history={priceHistory}
+        points={historyPoints}
         episodes={episodes}
       />
 

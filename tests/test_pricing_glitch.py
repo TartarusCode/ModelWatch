@@ -19,7 +19,7 @@ def test_append_history_records_zero_for_preview_without_free_tag() -> None:
     at = datetime(2026, 6, 25, 13, 0, tzinfo=UTC)
     store = PriceHistoryStore(generated_at=at, models={})
     free_preview = ModelPricing(prompt="0", completion="0")
-    updated = append_build_to_history(
+    updated, _dirty = append_build_to_history(
         store,
         model_id="google/lyria-3-clip-preview",
         pricing=free_preview,
@@ -81,14 +81,14 @@ def test_append_history_records_paid_to_free_transition() -> None:
     later = datetime(2026, 6, 25, 13, 30, tzinfo=UTC)
     store = PriceHistoryStore(generated_at=at, models={})
     paid = ModelPricing(prompt="0.0000002", completion="0.0000008")
-    store = append_build_to_history(
+    store, _dirty = append_build_to_history(
         store,
         model_id="acme/former-paid",
         pricing=paid,
         recorded_at=at,
     )
     free = ModelPricing(prompt="0", completion="0")
-    updated = append_build_to_history(
+    updated, _dirty2 = append_build_to_history(
         store,
         model_id="acme/former-paid",
         pricing=free,
@@ -104,21 +104,21 @@ def test_append_history_skips_paid_zero_after_positive() -> None:
     recovered = datetime(2026, 6, 25, 14, 30, tzinfo=UTC)
     store = PriceHistoryStore(generated_at=at, models={})
     paid = ModelPricing(prompt="0.0000002", completion="0.0000008")
-    store = append_build_to_history(
+    store, _dirty = append_build_to_history(
         store,
         model_id="deepseek/deepseek-chat",
         pricing=paid,
         recorded_at=at,
     )
     glitch = ModelPricing(prompt="0", completion="0")
-    store = append_build_to_history(
+    store, _dirty2 = append_build_to_history(
         store,
         model_id="deepseek/deepseek-chat",
         pricing=glitch,
         recorded_at=later,
     )
     restored = ModelPricing(prompt="0.0000002", completion="0.0000008")
-    updated = append_build_to_history(
+    updated, _dirty3 = append_build_to_history(
         store,
         model_id="deepseek/deepseek-chat",
         pricing=restored,

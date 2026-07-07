@@ -1,33 +1,41 @@
 import {
   activeHistoryFields,
   formatHistoryUsd,
-  getModelHistory,
   historyColumnLabel,
   historyPerMillionKey,
   historyToChartPoints,
 } from "../lib/priceHistory";
 import { episodesForModel } from "../lib/priceDrops";
 import { formatPerMillionUsd, formatPct, pricingFieldLabel } from "../lib/pricing";
-import type { PriceDropRecord, PriceHistoryOutput } from "../types";
+import type { PriceDropRecord, PriceHistoryPoint } from "../types";
 import { PriceHistoryChart } from "./PriceHistoryChart";
 
 interface PriceHistoryPanelProps {
   modelId: string;
-  history: PriceHistoryOutput;
+  points: PriceHistoryPoint[] | null;
   episodes: PriceDropRecord[];
 }
 
 export function PriceHistoryPanel({
   modelId,
-  history,
+  points,
   episodes,
 }: PriceHistoryPanelProps) {
-  const points = getModelHistory(history, modelId);
-  const historyFields = activeHistoryFields(points);
-  const chartPoints = historyToChartPoints(points);
+  const resolvedPoints = points ?? [];
+  const historyFields = activeHistoryFields(resolvedPoints);
+  const chartPoints = historyToChartPoints(resolvedPoints);
   const modelEpisodes = episodesForModel(episodes, modelId);
 
-  if (points.length === 0 && modelEpisodes.length === 0) {
+  if (points === null) {
+    return (
+      <section className="card card--wide">
+        <h2 className="card__title">Price history</h2>
+        <p className="muted">Loading price history…</p>
+      </section>
+    );
+  }
+
+  if (resolvedPoints.length === 0 && modelEpisodes.length === 0) {
     return (
       <section className="card card--wide">
         <h2 className="card__title">Price history</h2>
@@ -48,7 +56,7 @@ export function PriceHistoryPanel({
         <PriceHistoryChart points={chartPoints} fields={historyFields} />
       ) : null}
 
-      {points.length > 0 ? (
+      {resolvedPoints.length > 0 ? (
         <div className="data-table-wrap history-table-wrap">
           <table className="data-table">
             <thead>
@@ -60,7 +68,7 @@ export function PriceHistoryPanel({
               </tr>
             </thead>
             <tbody>
-              {[...points].reverse().map((point) => (
+              {[...resolvedPoints].reverse().map((point) => (
                 <tr key={point.recorded_at}>
                   <td className="tabular-nums muted">
                     {new Date(point.recorded_at).toLocaleString(undefined, {

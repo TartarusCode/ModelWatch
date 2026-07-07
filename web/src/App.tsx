@@ -102,7 +102,6 @@ export function App() {
             element={
               <ModelDetailPage
                 models={data.models.models}
-                priceHistory={data.priceHistory}
                 episodes={data.priceDrops.episodes}
               />
             }

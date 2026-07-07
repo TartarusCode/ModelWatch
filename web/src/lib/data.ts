@@ -1,10 +1,11 @@
 import type {
   BuildMeta,
+  ModelHistorySeries,
   ModelsOutput,
   NewModelEventRecord,
   NewModelsOutput,
   PriceDropsOutput,
-  PriceHistoryOutput,
+  PriceHistoryPoint,
   SiteData,
 } from "../types";
 
@@ -36,23 +37,41 @@ async function fetchJsonlEvents<T>(path: string): Promise<T[]> {
   return events;
 }
 
+export function encodeModelIdForHistory(modelId: string): string {
+  return modelId.replace(/\//g, "__").replace(/:/g, "_colon_");
+}
+
+export async function fetchModelPriceHistory(
+  modelId: string,
+): Promise<PriceHistoryPoint[]> {
+  const encoded = encodeModelIdForHistory(modelId);
+  const response = await fetch(
+    `${base}data/price-history/models/${encoded}.json`,
+  );
+  if (response.status === 404) {
+    return [];
+  }
+  if (!response.ok) {
+    throw new Error(`Failed to load price history for ${modelId}: ${response.status}`);
+  }
+  const series = (await response.json()) as ModelHistorySeries;
+  return series.points;
+}
+
 export async function loadSiteData(): Promise<SiteData> {
-  const [meta, models, priceDrops, newModels, newModelEvents, priceHistory] =
-    await Promise.all([
-      fetchJson<BuildMeta>("data/meta.json"),
-      fetchJson<ModelsOutput>("data/models.json"),
-      fetchJson<PriceDropsOutput>("data/price-drops.json"),
-      fetchJson<NewModelsOutput>("data/new-models.json"),
-      fetchJsonlEvents<NewModelEventRecord>("data/new-model-events.jsonl"),
-      fetchJson<PriceHistoryOutput>("data/price-history.json"),
-    ]);
+  const [meta, models, priceDrops, newModels, newModelEvents] = await Promise.all([
+    fetchJson<BuildMeta>("data/meta.json"),
+    fetchJson<ModelsOutput>("data/models.json"),
+    fetchJson<PriceDropsOutput>("data/price-drops.json"),
+    fetchJson<NewModelsOutput>("data/new-models.json"),
+    fetchJsonlEvents<NewModelEventRecord>("data/new-model-events.jsonl"),
+  ]);
   return {
     meta,
     models,
     priceDrops,
     newModels,
     newModelEvents,
-    priceHistory,
   };
 }
 

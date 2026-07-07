@@ -2,7 +2,13 @@ from datetime import UTC, datetime
 from decimal import Decimal
 from pathlib import Path
 
-from modelwatch.history import PriceHistoryPoint, load_history, save_history
+from modelwatch.history import (
+    PriceHistoryPoint,
+    load_history,
+    migrate_monolith_history_to_split,
+    repair_model_history_filenames,
+    save_history,
+)
 from modelwatch.json_output import dump_model_line, write_model_json
 from modelwatch.model_filters import is_latest_alias_model_id
 from modelwatch.new_models import load_new_model_events
@@ -258,7 +264,10 @@ def rebuild_price_drops_output(
 
 
 def clean_alias_artifacts() -> dict[str, int | bool]:
+    migrated = migrate_monolith_history_to_split()
     return {
+        "price_history_migrated": migrated,
+        "price_history_filenames_repaired": repair_model_history_filenames(),
         "price_events_removed": clean_price_events_file(),
         "new_model_events_removed": clean_new_model_events_file(),
         "price_history_models_removed": clean_price_history(),

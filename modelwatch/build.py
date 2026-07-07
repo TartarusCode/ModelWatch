@@ -13,7 +13,7 @@ from modelwatch.fetch import (
     fetch_all_provider_endpoints,
     fetch_models_async,
 )
-from modelwatch.history import load_history, merge_build_into_history, save_history
+from modelwatch.history import load_history, merge_build_into_history
 from modelwatch.json_output import dump_model_line, write_model_json
 from modelwatch.model_filters import is_latest_alias_model_id
 from modelwatch.new_models import (
@@ -417,11 +417,10 @@ async def run_build() -> None:
     )
     write_model_json(SNAPSHOT_PATH, previous_output)
 
-    history = merge_build_into_history(
+    merge_build_into_history(
         [(model.id, model.pricing) for model in snapshots],
         recorded_at=finished,
     )
-    save_history(history)
 
 
 def main() -> None:

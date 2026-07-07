@@ -31,7 +31,7 @@ npm run build
 Implemented in `modelwatch/price_drop_state.py` and `modelwatch/price_baselines.py`:
 
 - **Episode state machine** per `(model_id, field)` in `data/snapshots/price-drop-state.json` with anchors that reset on recovery.
-- **7-day MA** from `web/public/data/price-history.json` is the spike-filter reference (`current < MA`). Requires **≥3 history points** in the window.
+- **7-day MA** from per-model files under `web/public/data/price-history/models/` (spike-filter reference; `current < MA`). Requires **≥3 history points** in the window.
 - **Settlement:** price must hold at the new level for **2 consecutive builds** before a drop episode is confirmed and appended to `price-events.jsonl`.
 - **Pending cancel:** if price rises above the pending level before settlement, the pending drop is discarded (filters flash dips).
 - **Thresholds:** prior-build step must meet **≥10%** and **≥$0.05/M** saved; outlier prior prices above `reference × 1.15` are ignored.
@@ -63,7 +63,7 @@ Implemented in `modelwatch/new_models.py`:
 ## Gotchas
 
 - OpenRouter uses per-token price `-1` for routers/variable pricing (e.g. `openrouter/auto`). Treat as "Varies", never multiply by 1M.
-- Price history in `web/public/data/price-history.json` — **Git LFS** (~70MB; clone with LFS installed). All `PRICING_FIELDS` (prompt, completion, cache read, etc.); one point per scheduled build per model (up to 500 points retained); UI shows columns/series only for fields with data. Field names use `per_million_field_name()` from `modelwatch/pricing.py`. CI checkouts use `lfs: true`.
+- Price history in `web/public/data/price-history/` — per-model JSON under `models/` (**Git LFS**); `index.json` is small and not LFS. Append on price change only; **24h heartbeat** when unchanged (keeps MA window). Up to 500 points per model. UI lazy-loads one model file on the detail page. Build job CI checkout uses `lfs: true`; test-and-lint does not.
 - Detail page **Free tier** badge (`web/src/lib/pricing.ts` `isFreeTierModel`) is display-only — uses current pricing, not history; Python `is_free_tier_model` is authoritative for the build pipeline.
 - First build has no price history → no price drops until enough history points accumulate (≥3 within 7 days).
 - Most models return empty benchmark payloads; UI must handle `empty` status.

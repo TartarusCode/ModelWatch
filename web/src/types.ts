@@ -262,6 +262,11 @@ export interface PriceHistoryPoint {
   web_search_per_million?: string | null;
 }
 
+export interface ModelHistorySeries {
+  model_id: string;
+  points: PriceHistoryPoint[];
+}
+
 export interface PriceHistoryOutput {
   generated_at: string;
   models: Record<string, PriceHistoryPoint[]>;
@@ -273,5 +278,4 @@ export interface SiteData {
   priceDrops: PriceDropsOutput;
   newModels: NewModelsOutput;
   newModelEvents: NewModelEventRecord[];
-  priceHistory: PriceHistoryOutput;
 }

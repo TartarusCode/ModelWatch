@@ -134,12 +134,32 @@ def test_clean_new_model_events_file_removes_aliases(
     assert [event.model_id for event in kept] == ["anthropic/claude-fable-5"]
 
 
+def _patch_history_dir(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+    *,
+    root: Path | None = None,
+) -> Path:
+    history_root = (root or tmp_path) / "price-history"
+    monkeypatch.setattr("modelwatch.history.HISTORY_DIR", history_root)
+    monkeypatch.setattr(
+        "modelwatch.history.HISTORY_INDEX_PATH", history_root / "index.json"
+    )
+    monkeypatch.setattr(
+        "modelwatch.history.HISTORY_MODELS_DIR", history_root / "models"
+    )
+    monkeypatch.setattr(
+        "modelwatch.history.LEGACY_HISTORY_PATH",
+        (root or tmp_path) / "price-history.json",
+    )
+    return history_root
+
+
 def test_clean_price_history_strips_glitch_points(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    history_path = tmp_path / "price-history.json"
-    monkeypatch.setattr("modelwatch.history.HISTORY_PATH", history_path)
+    _patch_history_dir(tmp_path, monkeypatch)
     at = datetime(2026, 6, 25, 13, 0, tzinfo=UTC)
     glitch = datetime(2026, 6, 25, 13, 30, tzinfo=UTC)
     recovered = datetime(2026, 6, 25, 14, 0, tzinfo=UTC)
@@ -213,13 +233,12 @@ def test_clean_alias_artifacts_runs_all_cleaners(
     snapshot_dir.mkdir()
     events_path = data_dir / "price-events.jsonl"
     new_events_path = data_dir / "new-model-events.jsonl"
-    history_path = data_dir / "price-history.json"
     baselines_path = snapshot_dir / "price-drop-baselines.json"
     baselines_path.write_text("{}", encoding="utf-8")
     state_path = snapshot_dir / "price-drop-state.json"
+    _patch_history_dir(tmp_path, monkeypatch, root=data_dir)
     monkeypatch.setattr("modelwatch.data_repair.EVENTS_PATH", events_path)
     monkeypatch.setattr("modelwatch.data_repair.NEW_MODEL_EVENTS_PATH", new_events_path)
-    monkeypatch.setattr("modelwatch.history.HISTORY_PATH", history_path)
     monkeypatch.setattr("modelwatch.data_repair.BASELINES_PATH", baselines_path)
     monkeypatch.setattr("modelwatch.data_repair.STATE_PATH", state_path)
     monkeypatch.setattr("modelwatch.price_drop_state.STATE_PATH", state_path)

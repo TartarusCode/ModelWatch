@@ -54,8 +54,18 @@ def build_paths(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
         "modelwatch.build.NEW_MODEL_EVENTS_PATH",
         data_dir / "new-model-events.jsonl",
     )
+    monkeypatch.setattr("modelwatch.history.HISTORY_DIR", data_dir / "price-history")
     monkeypatch.setattr(
-        "modelwatch.history.HISTORY_PATH", data_dir / "price-history.json"
+        "modelwatch.history.HISTORY_INDEX_PATH",
+        data_dir / "price-history" / "index.json",
+    )
+    monkeypatch.setattr(
+        "modelwatch.history.HISTORY_MODELS_DIR",
+        data_dir / "price-history" / "models",
+    )
+    monkeypatch.setattr(
+        "modelwatch.history.LEGACY_HISTORY_PATH",
+        data_dir / "price-history.json",
     )
     monkeypatch.setattr(
         "modelwatch.price_drop_state.STATE_PATH",

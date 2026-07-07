@@ -61,8 +61,17 @@ def _aa_record(
 def test_load_and_save_history_round_trip(
     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:
-    history_path = tmp_path / "price-history.json"
-    monkeypatch.setattr("modelwatch.history.HISTORY_PATH", history_path)
+    history_root = tmp_path / "price-history"
+    monkeypatch.setattr("modelwatch.history.HISTORY_DIR", history_root)
+    monkeypatch.setattr(
+        "modelwatch.history.HISTORY_INDEX_PATH", history_root / "index.json"
+    )
+    monkeypatch.setattr(
+        "modelwatch.history.HISTORY_MODELS_DIR", history_root / "models"
+    )
+    monkeypatch.setattr(
+        "modelwatch.history.LEGACY_HISTORY_PATH", tmp_path / "price-history.json"
+    )
     at = datetime(2026, 6, 25, 12, 0, tzinfo=UTC)
     store = PriceHistoryStore(
         generated_at=at,
@@ -86,8 +95,17 @@ def test_merge_build_into_history_appends_points(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    history_path = tmp_path / "price-history.json"
-    monkeypatch.setattr("modelwatch.history.HISTORY_PATH", history_path)
+    history_root = tmp_path / "price-history"
+    monkeypatch.setattr("modelwatch.history.HISTORY_DIR", history_root)
+    monkeypatch.setattr(
+        "modelwatch.history.HISTORY_INDEX_PATH", history_root / "index.json"
+    )
+    monkeypatch.setattr(
+        "modelwatch.history.HISTORY_MODELS_DIR", history_root / "models"
+    )
+    monkeypatch.setattr(
+        "modelwatch.history.LEGACY_HISTORY_PATH", tmp_path / "price-history.json"
+    )
     at = datetime(2026, 6, 25, 12, 0, tzinfo=UTC)
     pricing = ModelPricing(prompt="0.000002", completion="0.000010")
 
