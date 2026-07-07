@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T03:01:09.260665Z",
+  "generated_at": "2026-07-07T03:31:06.471200Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -16618,12 +16618,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000058",
+        "completion": "0.0000008",
         "image": null,
-        "input_cache_read": "0.000000035",
+        "input_cache_read": "0.0000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000014",
+        "prompt": "0.0000002",
         "request": null,
         "web_search": null
       },
