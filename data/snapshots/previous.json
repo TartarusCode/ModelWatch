@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T21:31:25.635975Z",
+  "generated_at": "2026-07-07T22:01:23.134328Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -2897,7 +2897,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 65536
       }
     },
     "deepseek/deepseek-v4-pro": {
