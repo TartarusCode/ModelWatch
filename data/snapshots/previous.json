@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T12:01:32.669558Z",
+  "generated_at": "2026-07-07T12:31:16.552334Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -711,6 +711,7 @@
       },
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -824,6 +825,7 @@
       },
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -882,6 +884,7 @@
       },
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -1283,6 +1286,7 @@
       },
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -8114,6 +8118,8 @@
         "max_tokens",
         "reasoning",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_k",
         "top_logprobs",
         "top_p"
