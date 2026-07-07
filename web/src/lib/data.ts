@@ -4,7 +4,6 @@ import type {
   NewModelEventRecord,
   NewModelsOutput,
   PriceDropsOutput,
-  PriceEventRecord,
   PriceHistoryOutput,
   SiteData,
 } from "../types";
@@ -22,7 +21,6 @@ async function fetchJson<T>(path: string): Promise<T> {
 async function fetchJsonlEvents<T>(path: string): Promise<T[]> {
   const response = await fetch(`${base}${path}`);
   if (!response.ok) {
-    console.warn(`Failed to load ${path}: ${response.status}; using empty events`);
     return [];
   }
   const text = await response.text();
@@ -39,12 +37,11 @@ async function fetchJsonlEvents<T>(path: string): Promise<T[]> {
 }
 
 export async function loadSiteData(): Promise<SiteData> {
-  const [meta, models, priceDrops, priceEvents, newModels, newModelEvents, priceHistory] =
+  const [meta, models, priceDrops, newModels, newModelEvents, priceHistory] =
     await Promise.all([
       fetchJson<BuildMeta>("data/meta.json"),
       fetchJson<ModelsOutput>("data/models.json"),
       fetchJson<PriceDropsOutput>("data/price-drops.json"),
-      fetchJsonlEvents<PriceEventRecord>("data/price-events.jsonl"),
       fetchJson<NewModelsOutput>("data/new-models.json"),
       fetchJsonlEvents<NewModelEventRecord>("data/new-model-events.jsonl"),
       fetchJson<PriceHistoryOutput>("data/price-history.json"),
@@ -53,7 +50,6 @@ export async function loadSiteData(): Promise<SiteData> {
     meta,
     models,
     priceDrops,
-    priceEvents,
     newModels,
     newModelEvents,
     priceHistory,

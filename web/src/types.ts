@@ -181,13 +181,17 @@ export interface ModelsOutput {
 }
 
 export interface PriceDropRecord {
-  detected_at?: string | null;
+  detected_at: string;
   model_id: string;
   field: string;
+  episode_start_per_million_usd: string;
   old_per_million_usd: string;
   new_per_million_usd: string;
   pct_drop: number;
   saved_per_million_usd: string;
+  status: "active" | "recovered";
+  recovered_at?: string | null;
+  recovered_per_million_usd?: string | null;
 }
 
 export interface PriceDropsOutput {
@@ -197,7 +201,9 @@ export interface PriceDropsOutput {
     min_pct: number;
     min_saved_per_million_usd: number;
   };
-  drops: PriceDropRecord[];
+  active_drops: PriceDropRecord[];
+  recovered_drops: PriceDropRecord[];
+  episodes: PriceDropRecord[];
 }
 
 export interface BuildMeta {
@@ -212,10 +218,14 @@ export interface PriceEventRecord {
   detected_at: string;
   model_id: string;
   field: string;
+  episode_start_per_million_usd: string;
   old_per_million_usd: string;
   new_per_million_usd: string;
   pct_drop: number;
   saved_per_million_usd: string;
+  status: "active" | "recovered";
+  recovered_at?: string | null;
+  recovered_per_million_usd?: string | null;
 }
 
 export interface NewModelRecord {
@@ -261,7 +271,6 @@ export interface SiteData {
   meta: BuildMeta;
   models: ModelsOutput;
   priceDrops: PriceDropsOutput;
-  priceEvents: PriceEventRecord[];
   newModels: NewModelsOutput;
   newModelEvents: NewModelEventRecord[];
   priceHistory: PriceHistoryOutput;

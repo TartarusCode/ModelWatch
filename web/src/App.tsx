@@ -5,7 +5,7 @@ import { Layout } from "./components/Layout";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { loadSiteData } from "./lib/data";
 import { newModelRecordsLast24Hours } from "./lib/newModels";
-import { dropRecordsLast24Hours } from "./lib/priceDrops";
+import { sortDropsBySeverity } from "./lib/priceDrops";
 import { DropsPage } from "./pages/DropsPage";
 import { HomePage } from "./pages/HomePage";
 import { ModelDetailPage } from "./pages/ModelDetailPage";
@@ -48,8 +48,8 @@ export function App() {
     );
   }
 
-  const dropsLast24h = dropRecordsLast24Hours(data.priceEvents);
-  const dropCount = dropsLast24h.length;
+  const activeDrops = sortDropsBySeverity(data.priceDrops.active_drops);
+  const dropCount = activeDrops.length;
   const newModelsLast24h = newModelRecordsLast24Hours(data.newModelEvents);
   const newModelCount = newModelsLast24h.length;
 
@@ -74,6 +74,7 @@ export function App() {
                 dropCount={dropCount}
                 newModelCount={newModelCount}
                 lastUpdated={data.meta.generated_at}
+                recoveredCount={data.priceDrops.recovered_drops.length}
               />
             }
           />
@@ -91,9 +92,7 @@ export function App() {
             path="drops"
             element={
               <DropsPage
-                drops={dropsLast24h}
-                events={data.priceEvents}
-                thresholds={data.priceDrops.thresholds}
+                priceDrops={data.priceDrops}
                 enriched={data.models.models}
               />
             }
@@ -104,7 +103,7 @@ export function App() {
               <ModelDetailPage
                 models={data.models.models}
                 priceHistory={data.priceHistory}
-                priceEvents={data.priceEvents}
+                episodes={data.priceDrops.episodes}
               />
             }
           />

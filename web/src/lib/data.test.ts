@@ -32,7 +32,9 @@ describe("loadSiteData", () => {
           JSON.stringify({
             generated_at: "2026-06-25T12:00:00Z",
             thresholds: { min_pct: 0.1, min_saved_per_million_usd: 0.05 },
-            drops: [],
+            active_drops: [],
+            recovered_drops: [],
+            episodes: [],
           }),
         );
       }
@@ -63,6 +65,6 @@ describe("loadSiteData", () => {
 
     expect(data.meta.model_count).toBe(1);
     expect(data.models.models).toEqual([]);
-    expect(data.priceEvents).toEqual([]);
+    expect(data.priceDrops.active_drops).toEqual([]);
   });
 });

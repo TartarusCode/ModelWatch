@@ -7,11 +7,11 @@ import pytest
 from modelwatch.data_repair import (
     clean_alias_artifacts,
     clean_new_model_events_file,
-    clean_price_drop_baselines,
     clean_price_events_file,
     clean_price_history,
     filter_new_model_events,
     filter_price_events,
+    rebuild_price_drop_state_from_events,
     rebuild_price_drops_output,
     write_jsonl_events,
 )
@@ -22,11 +22,9 @@ from modelwatch.history import (
     save_history,
 )
 from modelwatch.json_output import dump_model_line
-from modelwatch.price_baselines import load_baselines, save_baselines
 from modelwatch.price_events import load_price_events
 from modelwatch.schemas import (
     NewModelEventRecord,
-    PriceDropBaselinesStore,
     PriceEventRecord,
 )
 
@@ -36,10 +34,12 @@ def _zero_price_event(model_id: str) -> PriceEventRecord:
         detected_at=datetime(2026, 6, 25, 13, 30, tzinfo=UTC),
         model_id=model_id,
         field="prompt",
+        episode_start_per_million_usd="1.000000",
         old_per_million_usd="1.000000",
         new_per_million_usd="0.000000",
         pct_drop=1.0,
         saved_per_million_usd="1.000000",
+        status="active",
     )
 
 
@@ -48,10 +48,12 @@ def _price_event(model_id: str) -> PriceEventRecord:
         detected_at=datetime(2026, 6, 25, 19, 0, tzinfo=UTC),
         model_id=model_id,
         field="prompt",
+        episode_start_per_million_usd="1.000000",
         old_per_million_usd="1.000000",
         new_per_million_usd="0.500000",
         pct_drop=0.5,
         saved_per_million_usd="0.500000",
+        status="active",
     )
 
 
@@ -176,48 +178,28 @@ def test_clean_price_history_strips_glitch_points(
     assert len(cleaned.models["paid/model"]) == 2
 
 
-def test_clean_price_drop_baselines_removes_aliases_and_zero_baselines(
-    tmp_path: Path,
-    monkeypatch: pytest.MonkeyPatch,
-) -> None:
-    baselines_path = tmp_path / "price-drop-baselines.json"
-    monkeypatch.setattr("modelwatch.price_baselines.BASELINES_PATH", baselines_path)
-    at = datetime(2026, 6, 25, 12, 0, tzinfo=UTC)
-    store = PriceDropBaselinesStore(
-        generated_at=at,
-        models={
-            "paid/model": {"prompt": "1.000000", "completion": "0.000000"},
-            "~vendor/model-latest": {"prompt": "1.000000"},
-        },
-    )
-    save_baselines(store)
-
-    removed = clean_price_drop_baselines()
-
-    assert removed == 2
-    cleaned = load_baselines()
-    assert "~vendor/model-latest" not in cleaned.models
-    assert cleaned.models["paid/model"] == {"prompt": "1.000000"}
-
-
 def test_rebuild_price_drops_output_writes_filtered_drops(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
 ) -> None:
     events_path = tmp_path / "price-events.jsonl"
     drops_path = tmp_path / "price-drops.json"
+    state_path = tmp_path / "price-drop-state.json"
     monkeypatch.setattr("modelwatch.data_repair.EVENTS_PATH", events_path)
+    monkeypatch.setattr("modelwatch.data_repair.STATE_PATH", state_path)
+    monkeypatch.setattr("modelwatch.price_drop_state.STATE_PATH", state_path)
     now = datetime(2026, 6, 25, 20, 0, tzinfo=UTC)
     events = [
         _price_event("moonshotai/kimi-k2.6"),
         _price_event("~moonshotai/kimi-latest"),
     ]
     write_jsonl_events(events_path, [dump_model_line(event) for event in events])
+    rebuild_price_drop_state_from_events(now=now)
 
     output = rebuild_price_drops_output(now=now, path=drops_path)
 
-    assert len(output.drops) == 1
-    assert output.drops[0].model_id == "moonshotai/kimi-k2.6"
+    assert len(output.episodes) == 1
+    assert output.episodes[0].model_id == "moonshotai/kimi-k2.6"
     assert drops_path.exists()
 
 
@@ -233,10 +215,14 @@ def test_clean_alias_artifacts_runs_all_cleaners(
     new_events_path = data_dir / "new-model-events.jsonl"
     history_path = data_dir / "price-history.json"
     baselines_path = snapshot_dir / "price-drop-baselines.json"
+    baselines_path.write_text("{}", encoding="utf-8")
+    state_path = snapshot_dir / "price-drop-state.json"
     monkeypatch.setattr("modelwatch.data_repair.EVENTS_PATH", events_path)
     monkeypatch.setattr("modelwatch.data_repair.NEW_MODEL_EVENTS_PATH", new_events_path)
     monkeypatch.setattr("modelwatch.history.HISTORY_PATH", history_path)
-    monkeypatch.setattr("modelwatch.price_baselines.BASELINES_PATH", baselines_path)
+    monkeypatch.setattr("modelwatch.data_repair.BASELINES_PATH", baselines_path)
+    monkeypatch.setattr("modelwatch.data_repair.STATE_PATH", state_path)
+    monkeypatch.setattr("modelwatch.price_drop_state.STATE_PATH", state_path)
     write_jsonl_events(
         events_path,
         [dump_model_line(_price_event("~moonshotai/kimi-latest"))],
@@ -250,3 +236,4 @@ def test_clean_alias_artifacts_runs_all_cleaners(
 
     assert counts["price_events_removed"] == 1
     assert counts["new_model_events_removed"] == 1
+    assert counts["legacy_baselines_removed"] is True

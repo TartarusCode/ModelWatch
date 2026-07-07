@@ -1,51 +1,119 @@
 import { Link } from "react-router-dom";
 import { PageHeader } from "../components/PageHeader";
 import { modelDisplayName } from "../lib/modelNames";
-import { recentEventsInDays } from "../lib/recentEvents";
-import {
-  DROP_LOOKBACK_HOURS,
-  sortDropsBySeverity,
-} from "../lib/priceDrops";
+import { DROP_LOOKBACK_HOURS, sortDropsBySeverity } from "../lib/priceDrops";
 import {
   formatPerMillionUsd,
   formatPct,
   pricingFieldLabel,
 } from "../lib/pricing";
 import { useDocumentTitle } from "../lib/useDocumentTitle";
-import type {
-  EnrichedModel,
-  PriceDropRecord,
-  PriceEventRecord,
-} from "../types";
+import type { EnrichedModel, PriceDropRecord, PriceDropsOutput } from "../types";
 
 interface DropsPageProps {
-  drops: PriceDropRecord[];
-  events: PriceEventRecord[];
-  thresholds: { min_pct: number; min_saved_per_million_usd: number };
+  priceDrops: PriceDropsOutput;
   enriched: EnrichedModel[];
 }
 
-export function DropsPage({
-  drops,
-  events,
-  thresholds,
+function DropTable({
+  rows,
   enriched,
-}: DropsPageProps) {
+  showStatus = false,
+}: {
+  rows: PriceDropRecord[];
+  enriched: EnrichedModel[];
+  showStatus?: boolean;
+}) {
+  return (
+    <div className="data-table-wrap">
+      <table className="data-table">
+        <thead>
+          <tr>
+            <th scope="col">When</th>
+            <th scope="col">Model</th>
+            <th scope="col">Field</th>
+            <th scope="col">Was</th>
+            <th scope="col">Now</th>
+            <th scope="col">Drop</th>
+            <th scope="col">Saved</th>
+            {showStatus ? <th scope="col">Status</th> : null}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((drop) => (
+            <tr key={`${drop.detected_at}-${drop.model_id}-${drop.field}`}>
+              <td className="tabular-nums muted">
+                {new Date(drop.detected_at).toLocaleString(undefined, {
+                  month: "short",
+                  day: "numeric",
+                  hour: "2-digit",
+                  minute: "2-digit",
+                })}
+              </td>
+              <td>
+                <Link
+                  to={`/models/${encodeURIComponent(drop.model_id)}`}
+                  className="model-cell__name"
+                >
+                  {modelDisplayName(drop.model_id, enriched)}
+                </Link>
+              </td>
+              <td>{pricingFieldLabel(drop.field)}</td>
+              <td>
+                <span className="price-cell price-cell--muted">
+                  {formatPerMillionUsd(drop.episode_start_per_million_usd)}
+                </span>
+              </td>
+              <td>
+                <span className="price-cell">
+                  {formatPerMillionUsd(drop.new_per_million_usd)}
+                </span>
+              </td>
+              <td>
+                <span className="drop-badge">−{formatPct(drop.pct_drop)}</span>
+              </td>
+              <td>
+                <span className="price-cell price-cell--free">
+                  {formatPerMillionUsd(drop.saved_per_million_usd)}
+                </span>
+              </td>
+              {showStatus ? (
+                <td>
+                  {drop.status === "recovered" ? (
+                    <span className="status-pill status-pill--warn">
+                      Recovered
+                    </span>
+                  ) : (
+                    <span className="muted">Active</span>
+                  )}
+                </td>
+              ) : null}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export function DropsPage({ priceDrops, enriched }: DropsPageProps) {
   useDocumentTitle("ModelWatch — Price drops");
-  const sorted = sortDropsBySeverity(drops);
-  const recent = recentEventsInDays(events, 7);
-  const topDrop = sorted[0];
+  const { thresholds } = priceDrops;
+  const active = sortDropsBySeverity(priceDrops.active_drops);
+  const recovered = sortDropsBySeverity(priceDrops.recovered_drops);
+  const history = sortDropsBySeverity(priceDrops.episodes);
+  const topDrop = active[0];
 
   return (
     <div className="page">
       <PageHeader
         title="Price drops"
-        description={`Significant decreases detected in the last ${DROP_LOOKBACK_HOURS} hours — ≥${(thresholds.min_pct * 100).toFixed(0)}% drop and ≥$${thresholds.min_saved_per_million_usd.toFixed(2)}/M saved. Data refreshes every 30 minutes.`}
+        description={`Active drops are confirmed after ${2} consecutive builds at the new price — ≥${(thresholds.min_pct * 100).toFixed(0)}% vs the prior build and ≥$${thresholds.min_saved_per_million_usd.toFixed(2)}/M saved.`}
       />
 
       {topDrop ? (
         <div className="highlight-card">
-          <span className="highlight-card__label">Largest drop (24h)</span>
+          <span className="highlight-card__label">Largest active drop</span>
           <div className="highlight-card__main">
             <Link
               to={`/models/${encodeURIComponent(topDrop.model_id)}`}
@@ -60,7 +128,7 @@ export function DropsPage({
           <div className="highlight-card__prices">
             <span>
               {pricingFieldLabel(topDrop.field)}:{" "}
-              <s>{formatPerMillionUsd(topDrop.old_per_million_usd)}</s>
+              <s>{formatPerMillionUsd(topDrop.episode_start_per_million_usd)}</s>
             </span>
             <span className="highlight-card__arrow">→</span>
             <span className="highlight-card__new">
@@ -73,139 +141,32 @@ export function DropsPage({
         </div>
       ) : null}
 
-      {sorted.length === 0 ? (
-        <div className="empty-state">
-          <span className="empty-state__icon" aria-hidden>
-            ✓
-          </span>
-          <h2>No drops in the last 24 hours</h2>
-          <p className="muted">
-            No models crossed the significance threshold in the past day. The
-            next scheduled build runs every 30 minutes.
-          </p>
-        </div>
-      ) : (
-        <section className="table-panel">
-          <h2 className="section-title">Last 24 hours</h2>
-          <div className="data-table-wrap">
-            <table className="data-table">
-              <thead>
-                <tr>
-                  <th scope="col">When</th>
-                  <th scope="col">Model</th>
-                  <th scope="col">Field</th>
-                  <th scope="col">Was</th>
-                  <th scope="col">Now</th>
-                  <th scope="col">Drop</th>
-                  <th scope="col">Saved</th>
-                </tr>
-              </thead>
-              <tbody>
-                {sorted.map((drop) => (
-                  <tr
-                    key={`${drop.detected_at ?? ""}-${drop.model_id}-${drop.field}`}
-                  >
-                    <td className="tabular-nums muted">
-                      {drop.detected_at
-                        ? new Date(drop.detected_at).toLocaleString(
-                            undefined,
-                            {
-                              month: "short",
-                              day: "numeric",
-                              hour: "2-digit",
-                              minute: "2-digit",
-                            },
-                          )
-                        : "—"}
-                    </td>
-                    <td>
-                      <Link
-                        to={`/models/${encodeURIComponent(drop.model_id)}`}
-                        className="model-cell__name"
-                      >
-                        {modelDisplayName(drop.model_id, enriched)}
-                      </Link>
-                    </td>
-                    <td>{pricingFieldLabel(drop.field)}</td>
-                    <td>
-                      <span className="price-cell price-cell--muted">
-                        {formatPerMillionUsd(drop.old_per_million_usd)}
-                      </span>
-                    </td>
-                    <td>
-                      <span className="price-cell">
-                        {formatPerMillionUsd(drop.new_per_million_usd)}
-                      </span>
-                    </td>
-                    <td>
-                      <span className="drop-badge">
-                        −{formatPct(drop.pct_drop)}
-                      </span>
-                    </td>
-                    <td>
-                      <span className="price-cell price-cell--free">
-                        {formatPerMillionUsd(drop.saved_per_million_usd)}
-                      </span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
-      )}
+      <section className="table-panel">
+        <h2 className="section-title">Active now</h2>
+        {active.length === 0 ? (
+          <p className="muted">No models are currently below a confirmed drop level.</p>
+        ) : (
+          <DropTable rows={active} enriched={enriched} />
+        )}
+      </section>
+
+      <section className="table-panel" id="recovered">
+        <h2 className="section-title">
+          Recently recovered ({DROP_LOOKBACK_HOURS}h)
+        </h2>
+        {recovered.length === 0 ? (
+          <p className="muted">No recoveries in the last {DROP_LOOKBACK_HOURS} hours.</p>
+        ) : (
+          <DropTable rows={recovered} enriched={enriched} />
+        )}
+      </section>
 
       <section className="table-panel">
-        <h2 className="section-title">Last 7 days</h2>
-        {recent.length === 0 ? (
-          <p className="muted">No recorded events in the last 7 days.</p>
+        <h2 className="section-title">Drop history</h2>
+        {history.length === 0 ? (
+          <p className="muted">No recorded drop episodes.</p>
         ) : (
-          <div className="data-table-wrap">
-            <table className="data-table">
-              <thead>
-                <tr>
-                  <th scope="col">When</th>
-                  <th scope="col">Model</th>
-                  <th scope="col">Field</th>
-                  <th scope="col">Drop</th>
-                  <th scope="col">Saved</th>
-                </tr>
-              </thead>
-              <tbody>
-                {recent.map((event, index) => (
-                  <tr key={`${event.detected_at}-${event.model_id}-${index}`}>
-                    <td className="tabular-nums muted">
-                      {new Date(event.detected_at).toLocaleString(undefined, {
-                        month: "short",
-                        day: "numeric",
-                        hour: "2-digit",
-                        minute: "2-digit",
-                      })}
-                    </td>
-                    <td>
-                      <Link
-                        to={`/models/${encodeURIComponent(event.model_id)}`}
-                        className="model-cell__name"
-                      >
-                        {modelDisplayName(event.model_id, enriched)}
-                      </Link>
-                    </td>
-                    <td>{pricingFieldLabel(event.field)}</td>
-                    <td>
-                      <span className="drop-badge">
-                        −{formatPct(event.pct_drop)}
-                      </span>
-                    </td>
-                    <td>
-                      <span className="price-cell">
-                        {formatPerMillionUsd(event.saved_per_million_usd)}
-                      </span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+          <DropTable rows={history} enriched={enriched} showStatus />
         )}
       </section>
     </div>

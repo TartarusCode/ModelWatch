@@ -58,8 +58,8 @@ def build_paths(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
         "modelwatch.history.HISTORY_PATH", data_dir / "price-history.json"
     )
     monkeypatch.setattr(
-        "modelwatch.price_baselines.BASELINES_PATH",
-        snapshot_dir / "price-drop-baselines.json",
+        "modelwatch.price_drop_state.STATE_PATH",
+        snapshot_dir / "price-drop-state.json",
     )
     return data_dir
 
@@ -124,7 +124,9 @@ def test_run_build_writes_stable_json_artifacts(build_paths: Path) -> None:
     assert models_output.models[0].model.id == model.id
     assert meta.model_count == 1
     assert meta.benchmark_errors >= 1
-    assert drops_output.drops == []
+    assert drops_output.active_drops == []
+    assert drops_output.recovered_drops == []
+    assert drops_output.episodes == []
     assert new_models_output.models == []
     assert model.id in previous.models
     assert json.loads(

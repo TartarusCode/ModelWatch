@@ -2,6 +2,7 @@ import asyncio
 import json
 import logging
 from datetime import UTC, datetime
+from decimal import Decimal
 from pathlib import Path
 
 from pydantic import ValidationError
@@ -22,24 +23,18 @@ from modelwatch.new_models import (
     load_new_model_events,
     models_in_last_hours,
 )
-from modelwatch.price_baselines import (
-    apply_drop_ratchet,
-    build_reference_per_million,
-    compute_moving_average_per_field,
-    load_baselines,
-    save_baselines,
+from modelwatch.price_baselines import compute_moving_average_per_field
+from modelwatch.price_drop_state import (
+    load_price_drop_state,
+    save_price_drop_state,
+    update_model_field_states,
 )
 from modelwatch.price_events import (
     DROP_LOOKBACK_HOURS,
-    drops_in_last_hours,
-    filter_redundant_drop_events,
-    load_price_events,
+    build_price_drops_output,
+    episodes_to_event_records,
 )
-from modelwatch.pricing import (
-    DEFAULT_THRESHOLDS,
-    PriceDrop,
-    detect_price_drops_from_reference,
-)
+from modelwatch.pricing import DEFAULT_THRESHOLDS, per_million_usd
 from modelwatch.provider_stats import build_benchmark_scores, build_provider_stats
 from modelwatch.schemas import (
     BenchmarkFetchStatus,
@@ -95,23 +90,39 @@ def _pricing_dict(pricing: ModelSnapshot) -> dict[str, str]:
     return {key: str(value) for key, value in raw.items()}
 
 
+def _previous_per_million(
+    previous: PreviousSnapshot | None,
+    model_id: str,
+) -> dict[str, Decimal] | None:
+    if previous is None:
+        return None
+    snapshot = previous.models.get(model_id)
+    if snapshot is None:
+        return None
+    result: dict[str, Decimal] = {}
+    for field, value in _pricing_dict(snapshot).items():
+        try:
+            result[field] = per_million_usd(value)
+        except ValueError:
+            continue
+    return result or None
+
+
+def _current_per_million(model: ModelSnapshot) -> dict[str, Decimal]:
+    result: dict[str, Decimal] = {}
+    for field, value in _pricing_dict(model).items():
+        try:
+            result[field] = per_million_usd(value)
+        except ValueError:
+            continue
+    return result
+
+
 def _load_previous() -> PreviousSnapshot | None:
     if not SNAPSHOT_PATH.exists():
         return None
     payload = json.loads(SNAPSHOT_PATH.read_text(encoding="utf-8"))
     return PreviousSnapshot.model_validate(payload)
-
-
-def _drop_to_record(drop: PriceDrop, detected_at: datetime) -> PriceDropRecord:
-    return PriceDropRecord(
-        detected_at=detected_at,
-        model_id=drop.model_id,
-        field=drop.field,
-        old_per_million_usd=f"{drop.old_per_million_usd:.6f}",
-        new_per_million_usd=f"{drop.new_per_million_usd:.6f}",
-        pct_drop=float(drop.pct_drop),
-        saved_per_million_usd=f"{drop.saved_per_million_usd:.6f}",
-    )
 
 
 def _addition_to_event(
@@ -127,15 +138,12 @@ def _addition_to_event(
     )
 
 
-def _drop_to_event(drop: PriceDrop, detected_at: datetime) -> PriceEventRecord:
-    return PriceEventRecord(
-        detected_at=detected_at,
-        model_id=drop.model_id,
-        field=drop.field,
-        old_per_million_usd=f"{drop.old_per_million_usd:.6f}",
-        new_per_million_usd=f"{drop.new_per_million_usd:.6f}",
-        pct_drop=float(drop.pct_drop),
-        saved_per_million_usd=f"{drop.saved_per_million_usd:.6f}",
+def _sync_price_events_jsonl(episodes: list[PriceDropRecord]) -> None:
+    lines = [dump_model_line(event) for event in episodes_to_event_records(episodes)]
+    trimmed = lines[-MAX_EVENTS:]
+    EVENTS_PATH.write_text(
+        "\n".join(trimmed) + ("\n" if trimmed else ""),
+        encoding="utf-8",
     )
 
 
@@ -156,10 +164,6 @@ def _append_jsonl_events(
     combined = existing + new_lines
     trimmed = combined[-MAX_EVENTS:]
     path.write_text("\n".join(trimmed) + "\n", encoding="utf-8")
-
-
-def _append_price_events(events: list[PriceEventRecord]) -> None:
-    _append_jsonl_events(EVENTS_PATH, events)
 
 
 def _append_new_model_events(events: list[NewModelEventRecord]) -> None:
@@ -327,9 +331,11 @@ async def run_build() -> None:
     previous = _load_previous()
     new_additions = detect_new_models(snapshots, previous=previous)
     history = load_history()
-    baselines = load_baselines()
-    all_drops: list[PriceDrop] = []
+    drop_state = load_price_drop_state()
+    current_per_million_by_model: dict[str, dict[str, Decimal]] = {}
     for model in snapshots:
+        if is_latest_alias_model_id(model.id):
+            continue
         history_points = history.models.get(model.id, [])
         moving_average = compute_moving_average_per_field(
             history_points,
@@ -337,41 +343,33 @@ async def run_build() -> None:
         )
         if not moving_average:
             continue
-        reference_per_million, baseline_per_million = build_reference_per_million(
-            moving_average=moving_average,
-            baselines=baselines,
+        current_per_million = _current_per_million(model)
+        current_per_million_by_model[model.id] = current_per_million
+        drop_state, _, _ = update_model_field_states(
+            drop_state,
             model_id=model.id,
-        )
-        drops = detect_price_drops_from_reference(
-            model_id=model.id,
-            current_pricing=_pricing_dict(model),
-            reference_per_million=reference_per_million,
-            baseline_per_million=baseline_per_million or None,
+            current_per_million=current_per_million,
+            previous_per_million=_previous_per_million(previous, model.id),
+            reference_per_million=moving_average,
             thresholds=DEFAULT_THRESHOLDS,
+            now=started,
         )
-        all_drops.extend(drops)
+
+    save_price_drop_state(drop_state)
+    _sync_price_events_jsonl(drop_state.episodes)
 
     new_model_event_records = [
         _addition_to_event(addition, started) for addition in new_additions
     ]
     _append_new_model_events(new_model_event_records)
 
-    event_records = [_drop_to_event(drop, started) for drop in all_drops]
-    existing_events = load_price_events(EVENTS_PATH)
-    event_records = filter_redundant_drop_events(
-        event_records,
-        existing=existing_events,
-    )
-    _append_price_events(event_records)
-    baselines = apply_drop_ratchet(baselines, all_drops, updated_at=started)
-    save_baselines(baselines)
-
     finished = datetime.now(UTC)
-    all_events = load_price_events(EVENTS_PATH)
-    drop_records = drops_in_last_hours(
-        all_events,
-        DROP_LOOKBACK_HOURS,
+    active_drops, recovered_drops, episodes = build_price_drops_output(
+        drop_state.episodes,
+        current_per_million_by_model=current_per_million_by_model,
         now=finished,
+        window_hours=DROP_LOOKBACK_HOURS,
+        thresholds=DEFAULT_THRESHOLDS,
     )
 
     all_new_model_events = load_new_model_events(NEW_MODEL_EVENTS_PATH)
@@ -396,7 +394,9 @@ async def run_build() -> None:
                 DEFAULT_THRESHOLDS.min_saved_per_million_usd
             ),
         ),
-        drops=drop_records,
+        active_drops=active_drops,
+        recovered_drops=recovered_drops,
+        episodes=episodes,
     )
     meta = BuildMeta(
         generated_at=finished,

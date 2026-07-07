@@ -12,8 +12,7 @@ import { isFreeTierModel, pricingFieldLabel, providerFromModelId } from "../lib/
 import { useDocumentTitle } from "../lib/useDocumentTitle";
 import type {
   EnrichedModel,
-  ModelPricing,
-  PriceEventRecord,
+  PriceDropRecord,
   PriceHistoryOutput,
 } from "../types";
 
@@ -26,7 +25,7 @@ const ModelDescription = lazy(() =>
 interface ModelDetailPageProps {
   models: EnrichedModel[];
   priceHistory: PriceHistoryOutput;
-  priceEvents: PriceEventRecord[];
+  episodes: PriceDropRecord[];
 }
 
 function pricingEntries(pricing: ModelPricing): [string, string][] {
@@ -39,7 +38,7 @@ function pricingEntries(pricing: ModelPricing): [string, string][] {
 export function ModelDetailPage({
   models,
   priceHistory,
-  priceEvents,
+  episodes,
 }: ModelDetailPageProps) {
   const { id } = useParams<{ id: string }>();
   const decodedId = id ? decodeURIComponent(id) : "";
@@ -139,7 +138,7 @@ export function ModelDetailPage({
       <PriceHistoryPanel
         modelId={model.id}
         history={priceHistory}
-        events={priceEvents}
+        episodes={episodes}
       />
 
       <div className="detail-grid">

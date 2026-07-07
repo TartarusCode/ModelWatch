@@ -17,15 +17,9 @@ from modelwatch.history import (
 )
 from modelwatch.json_output import write_model_json
 from modelwatch.new_models import models_in_last_hours
-from modelwatch.price_baselines import (
-    build_reference_per_million,
-    load_baselines,
-    save_baselines,
-)
 from modelwatch.schemas import (
     ModelPricing,
     NewModelEventRecord,
-    PriceDropBaselinesStore,
 )
 
 
@@ -102,42 +96,6 @@ def test_merge_build_into_history_appends_points(
     loaded = load_history()
 
     assert len(loaded.models["acme/model"]) == 1
-
-
-def test_load_and_save_baselines_round_trip(
-    tmp_path: Path,
-    monkeypatch: pytest.MonkeyPatch,
-) -> None:
-    baselines_path = tmp_path / "price-drop-baselines.json"
-    monkeypatch.setattr("modelwatch.price_baselines.BASELINES_PATH", baselines_path)
-    at = datetime(2026, 6, 25, 12, 0, tzinfo=UTC)
-    store = PriceDropBaselinesStore(
-        generated_at=at,
-        models={"acme/model": {"prompt": "2.500000"}},
-    )
-
-    save_baselines(store)
-    loaded = load_baselines()
-
-    assert loaded.models["acme/model"]["prompt"] == "2.500000"
-
-
-def test_build_reference_per_million_uses_baseline_when_higher() -> None:
-    at = datetime(2026, 6, 25, 12, 0, tzinfo=UTC)
-    baselines = PriceDropBaselinesStore(
-        generated_at=at,
-        models={"acme/model": {"prompt": "3.000000"}},
-    )
-    moving_average = {"prompt": Decimal("2.5")}
-
-    references, baseline_per_million = build_reference_per_million(
-        moving_average=moving_average,
-        baselines=baselines,
-        model_id="acme/model",
-    )
-
-    assert references["prompt"] == Decimal("3")
-    assert baseline_per_million["prompt"] == Decimal("3")
 
 
 def test_write_model_json_writes_sorted_keys(tmp_path: Path) -> None:

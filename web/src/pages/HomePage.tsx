@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { NewModelBanner } from "../components/NewModelBanner";
 import { PriceDropBanner } from "../components/PriceDropBanner";
 import { ModelTable } from "../components/ModelTable";
@@ -11,6 +12,7 @@ interface HomePageProps {
   models: EnrichedModel[];
   dropCount: number;
   newModelCount: number;
+  recoveredCount: number;
   lastUpdated: string;
 }
 
@@ -18,6 +20,7 @@ export function HomePage({
   models,
   dropCount,
   newModelCount,
+  recoveredCount,
   lastUpdated,
 }: HomePageProps) {
   useDocumentTitle("ModelWatch — Models");
@@ -50,7 +53,7 @@ export function HomePage({
         <StatCard
           label="Price drops"
           value={dropCount.toLocaleString()}
-          hint="Last 24 hours"
+          hint="Active now"
           variant={dropCount > 0 ? "success" : "default"}
           to="/drops"
         />
@@ -65,6 +68,14 @@ export function HomePage({
       </div>
       <NewModelBanner count={newModelCount} />
       <PriceDropBanner count={dropCount} />
+      {recoveredCount > 0 ? (
+        <p className="muted" style={{ marginBottom: "1rem" }}>
+          <Link to="/drops#recovered">
+            {recoveredCount} model{recoveredCount === 1 ? "" : "s"} recovered pricing
+            in the last 24 hours
+          </Link>
+        </p>
+      ) : null}
       <ModelTable models={models} />
     </div>
   );

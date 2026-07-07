@@ -6,10 +6,6 @@ from modelwatch.history import (
     PriceHistoryStore,
     append_build_to_history,
 )
-from modelwatch.pricing import (
-    PriceDropThresholds,
-    detect_price_drops_from_reference,
-)
 from modelwatch.pricing_glitch import (
     is_free_tier_model,
     is_paid_zero_glitch_point,
@@ -17,38 +13,6 @@ from modelwatch.pricing_glitch import (
     sanitize_history_fields,
 )
 from modelwatch.schemas import ModelPricing
-
-
-def test_detect_price_drops_skips_zero_new_price_for_paid_models() -> None:
-    drops = detect_price_drops_from_reference(
-        model_id="deepseek/deepseek-chat",
-        current_pricing={"prompt": "0", "completion": "0"},
-        reference_per_million={
-            "prompt": Decimal("0.200200"),
-            "completion": Decimal("0.800100"),
-        },
-        thresholds=PriceDropThresholds(
-            min_pct=Decimal("0.10"),
-            min_saved_per_million_usd=Decimal("0.05"),
-        ),
-    )
-    assert drops == []
-
-
-def test_detect_price_drops_skips_zero_new_price_for_free_models() -> None:
-    drops = detect_price_drops_from_reference(
-        model_id="cohere/north-mini-code:free",
-        current_pricing={"prompt": "0", "completion": "0"},
-        reference_per_million={
-            "prompt": Decimal("1"),
-            "completion": Decimal("2"),
-        },
-        thresholds=PriceDropThresholds(
-            min_pct=Decimal("0.10"),
-            min_saved_per_million_usd=Decimal("0.05"),
-        ),
-    )
-    assert drops == []
 
 
 def test_append_history_records_zero_for_preview_without_free_tag() -> None:

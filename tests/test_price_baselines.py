@@ -5,12 +5,8 @@ from modelwatch.history import PriceHistoryPoint
 from modelwatch.price_baselines import (
     MA_WINDOW_DAYS,
     MIN_MA_POINTS,
-    apply_drop_ratchet,
     compute_moving_average_per_field,
-    reference_price,
 )
-from modelwatch.pricing import PriceDrop
-from modelwatch.schemas import PriceDropBaselinesStore
 
 
 def _point(
@@ -62,53 +58,3 @@ def test_insufficient_history_returns_empty_ma() -> None:
     )
 
     assert ma == {}
-
-
-def test_reference_price_uses_ma_when_no_baseline() -> None:
-    assert reference_price(Decimal("3"), None) == Decimal("3")
-
-
-def test_reference_price_uses_max_of_ma_and_baseline() -> None:
-    assert reference_price(Decimal("2.80"), Decimal("2.50")) == Decimal("2.80")
-    assert reference_price(Decimal("2.40"), Decimal("2.50")) == Decimal("2.50")
-
-
-def test_apply_drop_ratchet_updates_baseline() -> None:
-    at = datetime(2026, 6, 23, 12, 0, tzinfo=UTC)
-    store = PriceDropBaselinesStore(generated_at=at, models={})
-    drops = [
-        PriceDrop(
-            model_id="acme/model",
-            field="prompt",
-            old_per_million_usd=Decimal("3"),
-            new_per_million_usd=Decimal("2.5"),
-            pct_drop=Decimal("0.1666666666666666666666666667"),
-            saved_per_million_usd=Decimal("0.5"),
-        )
-    ]
-
-    updated = apply_drop_ratchet(store, drops, updated_at=at)
-
-    assert updated.models["acme/model"]["prompt"] == "2.500000"
-
-
-def test_apply_drop_ratchet_only_ratchets_down() -> None:
-    at = datetime(2026, 6, 23, 12, 0, tzinfo=UTC)
-    store = PriceDropBaselinesStore(
-        generated_at=at,
-        models={"acme/model": {"prompt": "2.000000"}},
-    )
-    drops = [
-        PriceDrop(
-            model_id="acme/model",
-            field="prompt",
-            old_per_million_usd=Decimal("3"),
-            new_per_million_usd=Decimal("2.5"),
-            pct_drop=Decimal("0.1666666666666666666666666667"),
-            saved_per_million_usd=Decimal("0.5"),
-        )
-    ]
-
-    updated = apply_drop_ratchet(store, drops, updated_at=at)
-
-    assert updated.models["acme/model"]["prompt"] == "2.000000"

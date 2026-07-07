@@ -1,33 +1,33 @@
 import {
   activeHistoryFields,
-  eventsForModel,
   formatHistoryUsd,
   getModelHistory,
   historyColumnLabel,
   historyPerMillionKey,
   historyToChartPoints,
 } from "../lib/priceHistory";
+import { episodesForModel } from "../lib/priceDrops";
 import { formatPerMillionUsd, formatPct, pricingFieldLabel } from "../lib/pricing";
-import type { PriceEventRecord, PriceHistoryOutput } from "../types";
+import type { PriceDropRecord, PriceHistoryOutput } from "../types";
 import { PriceHistoryChart } from "./PriceHistoryChart";
 
 interface PriceHistoryPanelProps {
   modelId: string;
   history: PriceHistoryOutput;
-  events: PriceEventRecord[];
+  episodes: PriceDropRecord[];
 }
 
 export function PriceHistoryPanel({
   modelId,
   history,
-  events,
+  episodes,
 }: PriceHistoryPanelProps) {
   const points = getModelHistory(history, modelId);
   const historyFields = activeHistoryFields(points);
   const chartPoints = historyToChartPoints(points);
-  const modelEvents = eventsForModel(events, modelId);
+  const modelEpisodes = episodesForModel(episodes, modelId);
 
-  if (points.length === 0 && modelEvents.length === 0) {
+  if (points.length === 0 && modelEpisodes.length === 0) {
     return (
       <section className="card card--wide">
         <h2 className="card__title">Price history</h2>
@@ -84,11 +84,15 @@ export function PriceHistoryPanel({
         </div>
       ) : null}
 
-      {modelEvents.length > 0 ? (
+      {modelEpisodes.length > 0 ? (
         <>
           <h3 className="card__subtitle" style={{ marginTop: "1.25rem" }}>
             Significant drops
           </h3>
+          <p className="muted" style={{ marginBottom: "0.75rem" }}>
+            Confirmed episodes only; prices must hold for two builds before
+            alerting.
+          </p>
           <div className="data-table-wrap">
             <table className="data-table">
               <thead>
@@ -98,25 +102,38 @@ export function PriceHistoryPanel({
                   <th>Was</th>
                   <th>Now</th>
                   <th>Drop</th>
+                  <th>Status</th>
                 </tr>
               </thead>
               <tbody>
-                {modelEvents.map((event, index) => (
-                  <tr key={`${event.detected_at}-${index}`}>
+                {modelEpisodes.map((episode) => (
+                  <tr key={`${episode.detected_at}-${episode.field}`}>
                     <td className="tabular-nums muted">
-                      {new Date(event.detected_at).toLocaleString()}
+                      {new Date(episode.detected_at).toLocaleString()}
                     </td>
-                    <td>{pricingFieldLabel(event.field)}</td>
+                    <td>{pricingFieldLabel(episode.field)}</td>
                     <td className="price-cell price-cell--muted">
-                      {formatPerMillionUsd(event.old_per_million_usd)}
+                      {formatPerMillionUsd(episode.episode_start_per_million_usd)}
                     </td>
                     <td className="price-cell">
-                      {formatPerMillionUsd(event.new_per_million_usd)}
+                      {formatPerMillionUsd(episode.new_per_million_usd)}
                     </td>
                     <td>
                       <span className="drop-badge">
-                        −{formatPct(event.pct_drop)}
+                        −{formatPct(episode.pct_drop)}
                       </span>
+                    </td>
+                    <td>
+                      {episode.status === "recovered" ? (
+                        <span className="status-pill status-pill--warn">
+                          Recovered
+                          {episode.recovered_per_million_usd
+                            ? ` → ${formatPerMillionUsd(episode.recovered_per_million_usd)}`
+                            : ""}
+                        </span>
+                      ) : (
+                        <span className="muted">Active</span>
+                      )}
                     </td>
                   </tr>
                 ))}

@@ -159,13 +159,17 @@ class EnrichedModel(BaseModel):
 class PriceDropRecord(BaseModel):
     model_config = ConfigDict(frozen=True)
 
-    detected_at: datetime | None = None
+    detected_at: datetime
     model_id: str
     field: str
+    episode_start_per_million_usd: str
     old_per_million_usd: str
     new_per_million_usd: str
     pct_drop: float
     saved_per_million_usd: str
+    status: Literal["active", "recovered"] = "active"
+    recovered_at: datetime | None = None
+    recovered_per_million_usd: str | None = None
 
 
 class PriceDropThresholdsOutput(BaseModel):
@@ -181,7 +185,9 @@ class PriceDropsOutput(BaseModel):
     generated_at: datetime
     window_hours: int = 24
     thresholds: PriceDropThresholdsOutput
-    drops: list[PriceDropRecord]
+    active_drops: list[PriceDropRecord]
+    recovered_drops: list[PriceDropRecord]
+    episodes: list[PriceDropRecord]
 
 
 class PriceEventRecord(BaseModel):
@@ -190,10 +196,14 @@ class PriceEventRecord(BaseModel):
     detected_at: datetime
     model_id: str
     field: str
+    episode_start_per_million_usd: str
     old_per_million_usd: str
     new_per_million_usd: str
     pct_drop: float
     saved_per_million_usd: str
+    status: Literal["active", "recovered"] = "active"
+    recovered_at: datetime | None = None
+    recovered_per_million_usd: str | None = None
 
 
 class NewModelRecord(BaseModel):
@@ -246,10 +256,3 @@ class PreviousSnapshot(BaseModel):
 
     generated_at: datetime
     models: dict[str, ModelSnapshot]
-
-
-class PriceDropBaselinesStore(BaseModel):
-    model_config = ConfigDict(frozen=True)
-
-    generated_at: datetime
-    models: dict[str, dict[str, str]]

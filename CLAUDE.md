@@ -28,15 +28,16 @@ npm run build
 
 ## Price-drop rules
 
-Implemented in `modelwatch/pricing.py` and `modelwatch/price_baselines.py`:
+Implemented in `modelwatch/price_drop_state.py` and `modelwatch/price_baselines.py`:
 
-- Compare current pricing to a **reference price** per model/field: `max(7-day moving average, ratchet baseline)`.
-- **7-day MA** is computed from `web/public/data/price-history.json` (time-based window, not snapshot count — handles irregular cron cadence). Requires **≥3 history points** in the window; otherwise skip detection for that model until enough data exists.
-- **Ratchet baseline** stored in `data/snapshots/price-drop-baselines.json`; updated only on confirmed drops (never raised on price increases). When a baseline exists, current price must be **strictly below** it to alert — prevents re-firing when price returns to a previously dropped level after a spike.
-- Significant when **≥10%** drop below reference **and** **≥$0.05/M** saved (USD per 1M tokens). Thresholds: `DEFAULT_THRESHOLDS` in `modelwatch/pricing.py`.
-- **Zero-price glitch guard** (`modelwatch/pricing_glitch.py`): models with a paid price history never alert down to $0. Temporary $0 spikes that recover to a positive price are recorded then stripped by `is_paid_zero_glitch_point` / `uv run python -m modelwatch.data_repair`. A **paid→free transition** (zeros after the last positive point with no later recovery) is kept in history and treated as free tier. Preview models legitimately free without `:free` (e.g. `google/lyria-3-clip-preview`) are free tier when token pricing is $0 and history has no positive main prices. OpenRouter briefly returned $0 for many paid models on 2026-06-25 ~13:30–14:00 UTC; run `uv run python -m modelwatch.data_repair` to purge sandwiched glitch history/events/baselines.
-- Events append to `web/public/data/price-events.jsonl` (max 500 lines).
-- `price-drops.json` lists drops from the last **24 hours** of events (30m builds); UI counts/banner match that window. One row per model+field (latest event); re-alerts at an unchanged settled price are suppressed.
+- **Episode state machine** per `(model_id, field)` in `data/snapshots/price-drop-state.json` with anchors that reset on recovery.
+- **7-day MA** from `web/public/data/price-history.json` is the spike-filter reference (`current < MA`). Requires **≥3 history points** in the window.
+- **Settlement:** price must hold at the new level for **2 consecutive builds** before a drop episode is confirmed and appended to `price-events.jsonl`.
+- **Pending cancel:** if price rises above the pending level before settlement, the pending drop is discarded (filters flash dips).
+- **Thresholds:** prior-build step must meet **≥10%** and **≥$0.05/M** saved; outlier prior prices above `reference × 1.15` are ignored.
+- **Recovery:** after a confirmed drop, price above `episode_start × 1.05` for **2 builds** marks the episode `recovered`, resets the anchor, and removes it from active drops.
+- **Zero-price glitch guard** (`modelwatch/pricing_glitch.py`): paid models never alert down to $0; run `uv run python -m modelwatch.data_repair` after OpenRouter $0 glitches.
+- `price-drops.json` is the **single UI source**: `active_drops`, `recovered_drops` (24h), and `episodes` (full history). Banner counts **active** drops only.
 - JSON artifacts use `modelwatch.json_output` (`sort_keys=True` at every object level) for stable git diffs.
 - `modelwatch.stable_output` sorts the models list by `model.id` and orders benchmark record arrays before write — `sort_keys` does not reorder JSON arrays.
 
