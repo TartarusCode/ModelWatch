@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T13:31:39.317629Z",
+  "generated_at": "2026-07-08T14:02:03.202014Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -7828,10 +7828,10 @@
       "pricing": {
         "completion": "0.00000341",
         "image": null,
-        "input_cache_read": "0.00000014",
+        "input_cache_read": "0.0000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000066",
+        "prompt": "0.00000065",
         "request": null,
         "web_search": null
       },
