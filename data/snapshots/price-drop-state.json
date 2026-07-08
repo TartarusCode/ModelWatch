@@ -948,9 +948,48 @@
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "1.680000",
       "status": "active"
+    },
+    {
+      "detected_at": "2026-07-08T20:31:21.356918Z",
+      "episode_start_per_million_usd": "0.200000",
+      "field": "prompt",
+      "model_id": "tencent/hy3",
+      "new_per_million_usd": "0.140000",
+      "old_per_million_usd": "0.200000",
+      "pct_drop": 0.3,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.060000",
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-07-08T20:31:21.356918Z",
+      "episode_start_per_million_usd": "0.800000",
+      "field": "completion",
+      "model_id": "tencent/hy3",
+      "new_per_million_usd": "0.580000",
+      "old_per_million_usd": "0.800000",
+      "pct_drop": 0.275,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.220000",
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-07-08T20:31:21.356918Z",
+      "episode_start_per_million_usd": "0.500000",
+      "field": "input_cache_read",
+      "model_id": "tencent/hy3",
+      "new_per_million_usd": "0.035000",
+      "old_per_million_usd": "0.500000",
+      "pct_drop": 0.93,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.465000",
+      "status": "active"
     }
   ],
-  "generated_at": "2026-07-08T20:01:37.536436Z",
+  "generated_at": "2026-07-08T20:31:29.789810Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -9750,34 +9789,34 @@
     },
     "tencent/hy3": {
       "completion": {
-        "anchor": "0.8000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.58000000",
+        "confirmed_at": "2026-07-08T20:31:21.356918Z",
+        "confirmed_price": "0.58000000",
         "episode_start_price": "0.8000000",
-        "pending_builds": 1,
-        "pending_price": "0.58000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.5000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.035000000",
+        "confirmed_at": "2026-07-08T20:31:21.356918Z",
+        "confirmed_price": "0.035000000",
         "episode_start_price": "0.5000000",
-        "pending_builds": 1,
-        "pending_price": "0.035000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "prompt": {
-        "anchor": "0.2000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.14000000",
+        "confirmed_at": "2026-07-08T20:31:21.356918Z",
+        "confirmed_price": "0.14000000",
         "episode_start_price": "0.2000000",
-        "pending_builds": 1,
-        "pending_price": "0.14000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "tencent/hy3-preview": {
