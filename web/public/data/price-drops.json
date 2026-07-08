@@ -12,6 +12,32 @@
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.160000",
       "status": "active"
+    },
+    {
+      "detected_at": "2026-07-08T18:31:23.534650Z",
+      "episode_start_per_million_usd": "3.000000",
+      "field": "completion",
+      "model_id": "z-ai/glm-5.2",
+      "new_per_million_usd": "1.320000",
+      "old_per_million_usd": "3.000000",
+      "pct_drop": 0.56,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "1.680000",
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-07-08T18:31:23.534650Z",
+      "episode_start_per_million_usd": "0.930000",
+      "field": "prompt",
+      "model_id": "z-ai/glm-5.2",
+      "new_per_million_usd": "0.420000",
+      "old_per_million_usd": "0.930000",
+      "pct_drop": 0.5483870967741935,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.510000",
+      "status": "active"
     }
   ],
   "episodes": [
@@ -937,9 +963,35 @@
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.160000",
       "status": "active"
+    },
+    {
+      "detected_at": "2026-07-08T18:31:23.534650Z",
+      "episode_start_per_million_usd": "0.930000",
+      "field": "prompt",
+      "model_id": "z-ai/glm-5.2",
+      "new_per_million_usd": "0.420000",
+      "old_per_million_usd": "0.930000",
+      "pct_drop": 0.5483870967741935,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.510000",
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-07-08T18:31:23.534650Z",
+      "episode_start_per_million_usd": "3.000000",
+      "field": "completion",
+      "model_id": "z-ai/glm-5.2",
+      "new_per_million_usd": "1.320000",
+      "old_per_million_usd": "3.000000",
+      "pct_drop": 0.56,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "1.680000",
+      "status": "active"
     }
   ],
-  "generated_at": "2026-07-08T18:01:29.943962Z",
+  "generated_at": "2026-07-08T18:31:34.989276Z",
   "recovered_drops": [
     {
       "detected_at": "2026-05-29T16:41:33.070733Z",
