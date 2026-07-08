@@ -15,7 +15,7 @@ from modelwatch.new_models import load_new_model_events
 from modelwatch.price_drop_state import (
     STATE_PATH,
     PriceDropStateStore,
-    is_episode_active,
+    close_orphaned_active_episodes,
     load_price_drop_state,
     save_price_drop_state,
 )
@@ -109,52 +109,24 @@ def _current_per_million_by_model() -> dict[str, dict[str, Decimal]]:
     return result
 
 
-def reconcile_episode_statuses(
-    episodes: list[PriceDropRecord],
-    *,
-    current_per_million_by_model: dict[str, dict[str, Decimal]],
-    now: datetime,
-) -> list[PriceDropRecord]:
-    reconciled: list[PriceDropRecord] = []
-    for episode in episodes:
-        if episode.status == "recovered":
-            reconciled.append(episode)
-            continue
-        current = current_per_million_by_model.get(episode.model_id, {}).get(
-            episode.field,
-        )
-        if current is None:
-            reconciled.append(episode)
-            continue
-        if is_episode_active(episode, current):
-            reconciled.append(episode)
-            continue
-        reconciled.append(
-            episode.model_copy(
-                update={
-                    "status": "recovered",
-                    "recovered_at": episode.recovered_at or now,
-                    "recovered_per_million_usd": f"{current:.6f}",
-                },
-            ),
-        )
-    return reconciled
-
-
 def clean_price_events_file(path: Path | None = None) -> int:
     target = path or EVENTS_PATH
     events = load_price_events(target)
-    migrated = migrate_legacy_price_events(filter_price_events(events))
+    filtered = filter_price_events(events)
+    migrated = migrate_legacy_price_events(filtered)
     current = _current_per_million_by_model()
-    reconciled = reconcile_episode_statuses(
+    existing = load_price_drop_state() if STATE_PATH.exists() else None
+    models = existing.models if existing is not None else {}
+    healed = close_orphaned_active_episodes(
         migrated,
-        current_per_million_by_model=current,
+        models,
         now=datetime.now(UTC),
+        current_per_million_by_model=current,
     )
-    removed = len(events) - len(reconciled)
+    removed = len(events) - len(filtered)
     write_jsonl_events(
         target,
-        [dump_model_line(event) for event in episodes_to_event_records(reconciled)],
+        [dump_model_line(event) for event in episodes_to_event_records(healed)],
     )
     return max(removed, 0)
 
@@ -210,14 +182,18 @@ def rebuild_price_drop_state_from_events(
 ) -> PriceDropStateStore:
     finished = now or datetime.now(UTC)
     events = load_price_events(EVENTS_PATH)
-    episodes = reconcile_episode_statuses(
+    current = _current_per_million_by_model()
+    existing = load_price_drop_state() if STATE_PATH.exists() else None
+    models = existing.models if existing is not None else {}
+    episodes = close_orphaned_active_episodes(
         migrate_legacy_price_events(filter_price_events(events)),
-        current_per_million_by_model=_current_per_million_by_model(),
+        models,
         now=finished,
+        current_per_million_by_model=current,
     )
     store = PriceDropStateStore(
         generated_at=finished,
-        models={},
+        models=models,
         episodes=episodes,
     )
     save_price_drop_state(store)
@@ -235,14 +211,16 @@ def rebuild_price_drops_output(
 ) -> PriceDropsOutput:
     finished = now or datetime.now(UTC)
     store = load_price_drop_state() if STATE_PATH.exists() else None
-    episodes = store.episodes if store is not None else []
-    current = _current_per_million_by_model()
+    if store is None:
+        store = PriceDropStateStore(
+            generated_at=finished,
+            models={},
+            episodes=[],
+        )
     active, recovered, display_episodes = build_price_drops_output(
-        episodes,
-        current_per_million_by_model=current,
+        store,
         now=finished,
         window_hours=DROP_LOOKBACK_HOURS,
-        thresholds=DEFAULT_THRESHOLDS,
     )
     output = PriceDropsOutput(
         generated_at=finished,

@@ -36,6 +36,7 @@ Implemented in `modelwatch/price_drop_state.py` and `modelwatch/price_baselines.
 - **Pending cancel:** if price rises above the pending level before settlement, the pending drop is discarded (filters flash dips).
 - **Thresholds:** prior-build step must meet **≥10%** and **≥$0.05/M** saved; outlier prior prices above `reference × 1.15` are ignored.
 - **Recovery:** after a confirmed drop, price above `episode_start × 1.05` for **2 builds** marks the episode `recovered`, resets the anchor, and removes it from active drops.
+- **Active drops invariant:** `price-drops.json` `active_drops` is derived only from live `FieldDropState.status == confirmed` in `price-drop-state.json` (`active_drops_from_state`). The `episodes` log is history-only; orphaned rows tagged `active` without a matching confirmed field state are auto-healed to `recovered` each build (`close_orphaned_active_episodes`).
 - **Zero-price glitch guard** (`modelwatch/pricing_glitch.py`): paid models never alert down to $0; run `uv run python -m modelwatch.data_repair` after OpenRouter $0 glitches.
 - `price-drops.json` is the **single UI source**: `active_drops`, `recovered_drops` (24h), and `episodes` (full history). Banner counts **active** drops only.
 - JSON artifacts use `modelwatch.json_output` (`sort_keys=True` at every object level) for stable git diffs.

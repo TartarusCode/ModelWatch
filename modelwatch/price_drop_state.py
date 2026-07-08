@@ -17,7 +17,6 @@ RECOVERY_BUILDS = 2
 RECOVERY_FACTOR = Decimal("1.05")
 SPIKE_TOLERANCE = Decimal("1.15")
 PRICE_TOLERANCE = Decimal("0.000001")
-ACTIVE_PRICE_FACTOR = Decimal("1.02")
 
 STATE_PATH = (
     Path(__file__).resolve().parent.parent
@@ -505,11 +504,59 @@ def _mark_latest_episode_recovered(
     return None
 
 
-def is_episode_active(
-    episode: PriceDropRecord,
-    current_per_million: Decimal,
-) -> bool:
-    if episode.status != "active":
-        return False
-    confirmed = Decimal(episode.new_per_million_usd)
-    return current_per_million <= confirmed * ACTIVE_PRICE_FACTOR
+def active_drops_from_state(store: PriceDropStateStore) -> list[PriceDropRecord]:
+    active: list[PriceDropRecord] = []
+    for model_id, fields in store.models.items():
+        for field, field_state in fields.items():
+            if field_state.status != "confirmed":
+                continue
+            if (
+                field_state.episode_start_price is None
+                or field_state.confirmed_price is None
+            ):
+                continue
+            active.append(
+                _episode_from_confirmation(
+                    model_id=model_id,
+                    field=field,
+                    episode_start=field_state.episode_start_price,
+                    confirmed_price=field_state.confirmed_price,
+                    detected_at=field_state.confirmed_at or store.generated_at,
+                ),
+            )
+    return active
+
+
+def close_orphaned_active_episodes(
+    episodes: list[PriceDropRecord],
+    models: dict[str, dict[str, FieldDropState]],
+    *,
+    now: datetime,
+    current_per_million_by_model: dict[str, dict[str, Decimal]] | None = None,
+) -> list[PriceDropRecord]:
+    healed: list[PriceDropRecord] = []
+    for episode in episodes:
+        if episode.status != "active":
+            healed.append(episode)
+            continue
+        field_state = models.get(episode.model_id, {}).get(episode.field)
+        if field_state is not None and field_state.status == "confirmed":
+            healed.append(episode)
+            continue
+        current: Decimal | None = None
+        if current_per_million_by_model is not None:
+            current = current_per_million_by_model.get(episode.model_id, {}).get(
+                episode.field,
+            )
+        healed.append(
+            episode.model_copy(
+                update={
+                    "status": "recovered",
+                    "recovered_at": now,
+                    "recovered_per_million_usd": (
+                        f"{current:.6f}" if current is not None else None
+                    ),
+                },
+            ),
+        )
+    return healed

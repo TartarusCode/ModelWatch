@@ -5,9 +5,12 @@ from modelwatch.price_drop_state import (
     SETTLEMENT_BUILDS,
     FieldDropState,
     PriceDropStateStore,
+    active_drops_from_state,
+    close_orphaned_active_episodes,
     update_field_drop_state,
 )
 from modelwatch.pricing import DEFAULT_THRESHOLDS, PriceDropThresholds
+from modelwatch.schemas import PriceDropRecord
 
 
 def _thresholds() -> PriceDropThresholds:
@@ -153,6 +156,80 @@ def test_spike_and_return_does_not_confirm() -> None:
 
     assert confirmed is None
     assert state.status == "idle"
+
+
+def test_active_drops_from_state_reflects_confirmed_fields_only() -> None:
+    at = datetime(2026, 7, 7, 12, 0, tzinfo=UTC)
+    confirmed_state = FieldDropState(
+        anchor=Decimal("0.820000"),
+        status="confirmed",
+        episode_start_price=Decimal("0.930000"),
+        confirmed_price=Decimal("0.820000"),
+        confirmed_at=at,
+    )
+    stale_episode = PriceDropRecord(
+        detected_at=datetime(2026, 6, 18, 20, 39, tzinfo=UTC),
+        model_id="z-ai/glm-5.2",
+        field="prompt",
+        episode_start_per_million_usd="1.400000",
+        old_per_million_usd="1.400000",
+        new_per_million_usd="1.200000",
+        pct_drop=0.14285714285714285,
+        saved_per_million_usd="0.200000",
+        status="active",
+    )
+    store = PriceDropStateStore(
+        generated_at=at,
+        models={
+            "z-ai/glm-5.2": {
+                "prompt": confirmed_state,
+                "completion": _idle("3.000000"),
+            },
+        },
+        episodes=[stale_episode],
+    )
+
+    active = active_drops_from_state(store)
+
+    assert len(active) == 1
+    assert active[0].model_id == "z-ai/glm-5.2"
+    assert active[0].field == "prompt"
+    assert active[0].new_per_million_usd == "0.820000"
+    assert active[0].episode_start_per_million_usd == "0.930000"
+
+
+def test_close_orphaned_active_episodes_recovers_unmatched_active_rows() -> None:
+    now = datetime(2026, 7, 8, 12, 0, tzinfo=UTC)
+    stale_episode = PriceDropRecord(
+        detected_at=datetime(2026, 6, 18, 20, 39, tzinfo=UTC),
+        model_id="z-ai/glm-5.2",
+        field="prompt",
+        episode_start_per_million_usd="1.400000",
+        old_per_million_usd="1.400000",
+        new_per_million_usd="1.200000",
+        pct_drop=0.14285714285714285,
+        saved_per_million_usd="0.200000",
+        status="active",
+    )
+    models = {
+        "z-ai/glm-5.2": {
+            "prompt": _idle("0.930000"),
+        },
+    }
+
+    healed = close_orphaned_active_episodes(
+        [stale_episode],
+        models,
+        now=now,
+        current_per_million_by_model={
+            "z-ai/glm-5.2": {"prompt": Decimal("0.930000")},
+        },
+    )
+
+    assert len(healed) == 1
+    assert healed[0].status == "recovered"
+    assert healed[0].recovered_at == now
+    assert healed[0].recovered_per_million_usd == "0.930000"
 
 
 def test_store_round_trip() -> None:

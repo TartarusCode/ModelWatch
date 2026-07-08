@@ -25,6 +25,7 @@ from modelwatch.new_models import (
 )
 from modelwatch.price_baselines import compute_moving_average_per_field
 from modelwatch.price_drop_state import (
+    close_orphaned_active_episodes,
     load_price_drop_state,
     save_price_drop_state,
     update_model_field_states,
@@ -355,6 +356,19 @@ async def run_build() -> None:
             now=started,
         )
 
+    finished = datetime.now(UTC)
+    drop_state = drop_state.model_copy(
+        update={
+            "generated_at": finished,
+            "episodes": close_orphaned_active_episodes(
+                drop_state.episodes,
+                drop_state.models,
+                now=finished,
+                current_per_million_by_model=current_per_million_by_model,
+            ),
+        },
+    )
+
     save_price_drop_state(drop_state)
     _sync_price_events_jsonl(drop_state.episodes)
 
@@ -363,13 +377,10 @@ async def run_build() -> None:
     ]
     _append_new_model_events(new_model_event_records)
 
-    finished = datetime.now(UTC)
     active_drops, recovered_drops, episodes = build_price_drops_output(
-        drop_state.episodes,
-        current_per_million_by_model=current_per_million_by_model,
+        drop_state,
         now=finished,
         window_hours=DROP_LOOKBACK_HOURS,
-        thresholds=DEFAULT_THRESHOLDS,
     )
 
     all_new_model_events = load_new_model_events(NEW_MODEL_EVENTS_PATH)

@@ -1,9 +1,8 @@
 from datetime import datetime, timedelta
-from decimal import Decimal
 from pathlib import Path
 
 from modelwatch.model_filters import is_latest_alias_model_id
-from modelwatch.price_drop_state import is_episode_active
+from modelwatch.price_drop_state import PriceDropStateStore, active_drops_from_state
 from modelwatch.pricing_glitch import is_spurious_zero_drop_event
 from modelwatch.schemas import PriceDropRecord, PriceEventRecord
 
@@ -64,28 +63,6 @@ def filter_spurious_zero_drop_events(
     ]
 
 
-def active_drops(
-    episodes: list[PriceDropRecord],
-    *,
-    current_per_million_by_model: dict[str, dict[str, Decimal]],
-) -> list[PriceDropRecord]:
-    active: list[PriceDropRecord] = []
-    for episode in episodes:
-        if is_latest_alias_model_id(episode.model_id):
-            continue
-        if is_spurious_zero_drop_event(episode.model_id, episode.new_per_million_usd):
-            continue
-        if episode.status != "active":
-            continue
-        model_prices = current_per_million_by_model.get(episode.model_id, {})
-        current = model_prices.get(episode.field)
-        if current is None:
-            continue
-        if is_episode_active(episode, current):
-            active.append(episode)
-    return active
-
-
 def recovered_in_last_hours(
     episodes: list[PriceDropRecord],
     hours: int,
@@ -117,17 +94,12 @@ def episodes_for_display(
 
 
 def build_price_drops_output(
-    episodes: list[PriceDropRecord],
+    store: PriceDropStateStore,
     *,
-    current_per_million_by_model: dict[str, dict[str, Decimal]],
     now: datetime,
     window_hours: int,
-    thresholds: object,
 ) -> tuple[list[PriceDropRecord], list[PriceDropRecord], list[PriceDropRecord]]:
-    filtered = episodes_for_display(episodes)
-    active = active_drops(
-        filtered,
-        current_per_million_by_model=current_per_million_by_model,
-    )
+    filtered = episodes_for_display(store.episodes)
+    active = active_drops_from_state(store)
     recovered = recovered_in_last_hours(filtered, window_hours, now=now)
     return active, recovered, filtered

@@ -2,9 +2,10 @@ from datetime import UTC, datetime, timedelta
 from decimal import Decimal
 from typing import Literal
 
+from modelwatch.price_drop_state import FieldDropState, PriceDropStateStore
 from modelwatch.price_events import (
     DROP_LOOKBACK_HOURS,
-    active_drops,
+    build_price_drops_output,
     episodes_for_display,
     recovered_in_last_hours,
 )
@@ -35,26 +36,37 @@ def _episode(
     )
 
 
-def test_active_drops_requires_current_price_at_or_below_confirmed() -> None:
+def test_build_price_drops_output_uses_state_for_active() -> None:
     now = datetime(2026, 7, 7, 12, 0, tzinfo=UTC)
-    episodes = [
-        _episode(detected_at=now - timedelta(hours=1), new_per_million_usd="0.800000"),
-    ]
-    active = active_drops(
-        episodes,
-        current_per_million_by_model={
-            "acme/model": {"prompt": Decimal("0.800000")},
-        },
+    stale_episode = PriceDropRecord(
+        detected_at=now - timedelta(hours=1),
+        model_id="acme/model",
+        field="prompt",
+        episode_start_per_million_usd="1.000000",
+        old_per_million_usd="1.000000",
+        new_per_million_usd="0.800000",
+        pct_drop=0.2,
+        saved_per_million_usd="0.200000",
+        status="active",
     )
-    assert len(active) == 1
+    store = PriceDropStateStore(
+        generated_at=now,
+        models={
+            "acme/model": {
+                "prompt": FieldDropState.idle(Decimal("0.950000")),
+            },
+        },
+        episodes=[stale_episode],
+    )
 
-    inactive = active_drops(
-        episodes,
-        current_per_million_by_model={
-            "acme/model": {"prompt": Decimal("0.950000")},
-        },
+    active, recovered, display = build_price_drops_output(
+        store,
+        now=now,
+        window_hours=DROP_LOOKBACK_HOURS,
     )
-    assert inactive == []
+
+    assert active == []
+    assert len(display) == 1
 
 
 def test_recovered_in_last_hours_filters_by_recovery_time() -> None:

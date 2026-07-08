@@ -22,6 +22,11 @@ from modelwatch.history import (
     save_history,
 )
 from modelwatch.json_output import dump_model_line
+from modelwatch.price_drop_state import (
+    FieldDropState,
+    PriceDropStateStore,
+    save_price_drop_state,
+)
 from modelwatch.price_events import load_price_events
 from modelwatch.schemas import (
     NewModelEventRecord,
@@ -196,6 +201,49 @@ def test_clean_price_history_strips_glitch_points(
     cleaned = load_history()
     assert "~vendor/model-latest" not in cleaned.models
     assert len(cleaned.models["paid/model"]) == 2
+
+
+def test_rebuild_price_drop_state_preserves_live_models(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    events_path = tmp_path / "price-events.jsonl"
+    state_path = tmp_path / "price-drop-state.json"
+    monkeypatch.setattr("modelwatch.data_repair.EVENTS_PATH", events_path)
+    monkeypatch.setattr("modelwatch.data_repair.STATE_PATH", state_path)
+    monkeypatch.setattr("modelwatch.price_drop_state.STATE_PATH", state_path)
+    now = datetime(2026, 7, 8, 12, 0, tzinfo=UTC)
+    live_state = FieldDropState(
+        anchor=Decimal("0.820000"),
+        status="confirmed",
+        episode_start_price=Decimal("0.930000"),
+        confirmed_price=Decimal("0.820000"),
+        confirmed_at=now,
+    )
+    save_price_drop_state(
+        PriceDropStateStore(
+            generated_at=now,
+            models={"z-ai/glm-5.2": {"prompt": live_state}},
+            episodes=[],
+        ),
+    )
+    stale = PriceEventRecord(
+        detected_at=datetime(2026, 6, 18, 20, 39, tzinfo=UTC),
+        model_id="z-ai/glm-5.2",
+        field="completion",
+        episode_start_per_million_usd="4.200000",
+        old_per_million_usd="4.200000",
+        new_per_million_usd="3.200000",
+        pct_drop=0.23809523809523808,
+        saved_per_million_usd="1.000000",
+        status="active",
+    )
+    write_jsonl_events(events_path, [dump_model_line(stale)])
+
+    store = rebuild_price_drop_state_from_events(now=now)
+
+    assert store.models["z-ai/glm-5.2"]["prompt"].status == "confirmed"
+    assert store.episodes[0].status == "recovered"
 
 
 def test_rebuild_price_drops_output_writes_filtered_drops(
