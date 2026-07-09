@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T01:01:34.195824Z",
+  "generated_at": "2026-07-09T01:31:19.753936Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -16514,53 +16514,6 @@
         "max_completion_tokens": 256000
       }
     },
-    "switchpoint/router": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "switchpoint/router",
-      "context_length": 131072,
-      "created": 1752272899,
-      "default_parameters": {},
-      "description": "Switchpoint AI's router instantly analyzes your request and directs it to the optimal AI from an ever-evolving library. As the world of LLMs advances, our router gets smarter, ensuring you...",
-      "expiration_date": null,
-      "id": "switchpoint/router",
-      "name": "Switchpoint Router",
-      "pricing": {
-        "completion": "0.0000034",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000085",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "seed",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": null
-      }
-    },
     "tencent/hunyuan-a13b-instruct": {
       "architecture": {
         "input_modalities": [
@@ -18205,12 +18158,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.00000176",
+        "completion": "0.00000308",
         "image": null,
-        "input_cache_read": "0.000000104",
+        "input_cache_read": "0.00000018",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000056",
+        "prompt": "0.0000009",
         "request": null,
         "web_search": null
       },
@@ -18240,7 +18193,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 1048576
       }
     },
     "z-ai/glm-5v-turbo": {
