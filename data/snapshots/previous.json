@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T06:01:44.733108Z",
+  "generated_at": "2026-07-09T07:01:27.790024Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -5130,62 +5130,6 @@
         "context_length": 256000,
         "is_moderated": false,
         "max_completion_tokens": 80000
-      }
-    },
-    "liquid/lfm-2-24b-a2b": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "liquid/lfm-2-24b-a2b-20260224",
-      "context_length": 128000,
-      "created": 1772048711,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": 1.05,
-        "temperature": 0.1,
-        "top_k": 50,
-        "top_p": null
-      },
-      "description": "LFM2-24B-A2B is the largest model in the LFM2 family of hybrid architectures designed for efficient on-device deployment. Built as a 24B parameter Mixture-of-Experts model with only 2B active parameters per...",
-      "expiration_date": null,
-      "id": "liquid/lfm-2-24b-a2b",
-      "name": "LiquidAI: LFM2-24B-A2B",
-      "pricing": {
-        "completion": "0.00000012",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000003",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 32768,
-        "is_moderated": false,
-        "max_completion_tokens": null
       }
     },
     "liquid/lfm-2.5-1.2b-instruct:free": {
@@ -18158,12 +18102,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.00000264",
+        "completion": "0.00000308",
         "image": null,
-        "input_cache_read": "0.000000156",
+        "input_cache_read": "0.00000018",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000084",
+        "prompt": "0.0000009",
         "request": null,
         "web_search": null
       },
@@ -18193,7 +18137,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 1048576
       }
     },
     "z-ai/glm-5v-turbo": {
