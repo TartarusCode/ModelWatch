@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T13:07:54.869605Z",
+  "generated_at": "2026-07-09T13:31:15.015509Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3103,63 +3103,6 @@
       "expiration_date": null,
       "id": "google/gemini-2.5-flash-lite",
       "name": "Google: Gemini 2.5 Flash Lite",
-      "pricing": {
-        "completion": "0.0000004",
-        "image": "0.0000001",
-        "input_cache_read": "0.00000001",
-        "input_cache_write": "0.00000008333333333333334",
-        "internal_reasoning": "0.0000004",
-        "prompt": "0.0000001",
-        "request": null,
-        "web_search": "0.014"
-      },
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 1048576,
-        "is_moderated": false,
-        "max_completion_tokens": 65535
-      }
-    },
-    "google/gemini-2.5-flash-lite-preview-09-2025": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "file",
-          "audio",
-          "video"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+file+audio+video->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Gemini"
-      },
-      "canonical_slug": "google/gemini-2.5-flash-lite-preview-09-2025",
-      "context_length": 1048576,
-      "created": 1758819686,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": null
-      },
-      "description": "Gemini 2.5 Flash-Lite is a lightweight reasoning model in the Gemini 2.5 family, optimized for ultra-low latency and cost efficiency. It offers improved throughput, faster token generation, and better performance...",
-      "expiration_date": "2026-07-09",
-      "id": "google/gemini-2.5-flash-lite-preview-09-2025",
-      "name": "Google: Gemini 2.5 Flash Lite Preview 09-2025",
       "pricing": {
         "completion": "0.0000004",
         "image": "0.0000001",
@@ -12973,108 +12916,6 @@
       "expiration_date": null,
       "id": "poolside/laguna-xs-2.1:free",
       "name": "Poolside: Laguna XS 2.1 (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "temperature",
-        "tool_choice",
-        "tools"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 32768
-      }
-    },
-    "poolside/laguna-xs.2": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "poolside/laguna-xs.2-20260421",
-      "context_length": 262144,
-      "created": 1777389604,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": 0.7,
-        "top_k": null,
-        "top_p": 0.9
-      },
-      "description": "Laguna XS.2 is the second-generation model in the XS size class from [Poolside](https://poolside.ai/), their efficient coding agent series. It combines tool calling and reasoning capabilities with a compact footprint, offering...",
-      "expiration_date": "2026-07-09",
-      "id": "poolside/laguna-xs.2",
-      "name": "Poolside: Laguna XS.2",
-      "pricing": {
-        "completion": "0.0000002",
-        "image": null,
-        "input_cache_read": "0.00000005",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000001",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "temperature",
-        "tool_choice",
-        "tools"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 32768
-      }
-    },
-    "poolside/laguna-xs.2:free": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "poolside/laguna-xs.2-20260421",
-      "context_length": 262144,
-      "created": 1777389604,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": 0.7,
-        "top_k": null,
-        "top_p": 0.9
-      },
-      "description": "Laguna XS.2 is the second-generation model in the XS size class from [Poolside](https://poolside.ai/), their efficient coding agent series. It combines tool calling and reasoning capabilities with a compact footprint, offering...",
-      "expiration_date": "2026-07-09",
-      "id": "poolside/laguna-xs.2:free",
-      "name": "Poolside: Laguna XS.2 (free)",
       "pricing": {
         "completion": "0",
         "image": null,
