@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T03:31:23.185507Z",
+  "generated_at": "2026-07-10T04:01:40.255016Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -2795,12 +2795,12 @@
       "id": "deepseek/deepseek-v3.2",
       "name": "DeepSeek: DeepSeek V3.2",
       "pricing": {
-        "completion": "0.0000003432",
+        "completion": "0.00000032175",
         "image": null,
-        "input_cache_read": "0.00000002288",
+        "input_cache_read": "0.00000002145",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000002288",
+        "prompt": "0.0000002145",
         "request": null,
         "web_search": null
       },
