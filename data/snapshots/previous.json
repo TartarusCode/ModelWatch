@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T16:01:40.308720Z",
+  "generated_at": "2026-07-10T16:31:22.879277Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -1537,62 +1537,6 @@
         "context_length": 262144,
         "is_moderated": false,
         "max_completion_tokens": 80000
-      }
-    },
-    "arcee-ai/trinity-mini": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "arcee-ai/trinity-mini-20251201",
-      "context_length": 131072,
-      "created": 1764601720,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": 0.15,
-        "top_p": 0.75
-      },
-      "description": "Trinity Mini is a 26B-parameter (3B active) sparse mixture-of-experts language model featuring 128 experts with 8 active per token. Engineered for efficient reasoning over long contexts (131k) with robust function...",
-      "expiration_date": "2026-07-10",
-      "id": "arcee-ai/trinity-mini",
-      "name": "Arcee AI: Trinity Mini",
-      "pricing": {
-        "completion": "0.00000015",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.000000045",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "include_reasoning",
-        "logprobs",
-        "max_completion_tokens",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 131072
       }
     },
     "arcee-ai/virtuoso-large": {
