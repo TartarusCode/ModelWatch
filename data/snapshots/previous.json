@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T00:01:35.207021Z",
+  "generated_at": "2026-07-10T00:31:26.032040Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -1970,6 +1970,52 @@
         "context_length": 128000,
         "is_moderated": false,
         "max_completion_tokens": 2048
+      }
+    },
+    "cognitivecomputations/dolphin-mistral-24b-venice-edition": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "venice/uncensored",
+      "context_length": 128000,
+      "created": 1752094966,
+      "default_parameters": {},
+      "description": "Venice Uncensored Dolphin Mistral 24B Venice Edition is a fine-tuned variant of Mistral-Small-24B-Instruct-2501, developed by dphn.ai in collaboration with Venice.ai. This model is designed as an “uncensored” instruct-tuned LLM, preserving...",
+      "expiration_date": null,
+      "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
+      "name": "Venice: Uncensored",
+      "pricing": {
+        "completion": "0.0000009",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000002",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "presence_penalty",
+        "response_format",
+        "stop",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 128000,
+        "is_moderated": false,
+        "max_completion_tokens": 8192
       }
     },
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free": {
@@ -18347,12 +18393,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.000001672",
+        "completion": "0.00000154",
         "image": null,
-        "input_cache_read": "0.0000000988",
+        "input_cache_read": "0.000000091",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000532",
+        "prompt": "0.00000049",
         "request": null,
         "web_search": null
       },
@@ -18380,9 +18426,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1024000,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 128000
       }
     },
     "z-ai/glm-5v-turbo": {
