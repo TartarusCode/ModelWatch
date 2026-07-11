@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T02:31:45.743907Z",
+  "generated_at": "2026-07-11T03:01:28.974754Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -5250,56 +5250,6 @@
         "context_length": 8000,
         "is_moderated": false,
         "max_completion_tokens": 2000
-      }
-    },
-    "meta-llama/llama-3-8b-instruct": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": "llama3",
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Llama3"
-      },
-      "canonical_slug": "meta-llama/llama-3-8b-instruct",
-      "context_length": 8192,
-      "created": 1713398400,
-      "default_parameters": {},
-      "description": "Meta's latest class of model (Llama 3) launched with a variety of sizes & flavors. This 8B instruct-tuned version was optimized for high quality dialogue usecases. It has demonstrated strong...",
-      "expiration_date": null,
-      "id": "meta-llama/llama-3-8b-instruct",
-      "name": "Meta: Llama 3 8B Instruct",
-      "pricing": {
-        "completion": "0.00000014",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000014",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 8192,
-        "is_moderated": false,
-        "max_completion_tokens": null
       }
     },
     "meta-llama/llama-3.1-70b-instruct": {
