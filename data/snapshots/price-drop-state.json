@@ -1002,7 +1002,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-07-11T15:31:17.983077Z",
+  "generated_at": "2026-07-11T16:01:33.950764Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -2723,11 +2723,11 @@
         "anchor": "0.87000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": "0.87000000",
-        "pending_builds": 1,
-        "pending_price": "0.696000000",
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.029000000",
@@ -2743,11 +2743,11 @@
         "anchor": "0.435000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": "0.435000000",
-        "pending_builds": 1,
-        "pending_price": "0.348000000",
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "idle"
       }
     },
     "google/gemini-2.5-flash": {
