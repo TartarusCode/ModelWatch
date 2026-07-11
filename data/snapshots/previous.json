@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T03:01:28.974754Z",
+  "generated_at": "2026-07-11T03:31:30.305271Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -1979,7 +1979,7 @@
       "created": 1752094966,
       "default_parameters": {},
       "description": "Venice Uncensored Dolphin Mistral 24B Venice Edition is a fine-tuned variant of Mistral-Small-24B-Instruct-2501, developed by dphn.ai in collaboration with Venice.ai. This model is designed as an “uncensored” instruct-tuned LLM, preserving...",
-      "expiration_date": null,
+      "expiration_date": "2026-07-19",
       "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
       "name": "Venice: Uncensored (free)",
       "pricing": {
@@ -5531,7 +5531,7 @@
       "created": 1727222400,
       "default_parameters": {},
       "description": "Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it...",
-      "expiration_date": null,
+      "expiration_date": "2026-07-19",
       "id": "meta-llama/llama-3.2-3b-instruct:free",
       "name": "Meta: Llama 3.2 3B Instruct (free)",
       "pricing": {
@@ -5631,7 +5631,7 @@
       "created": 1733506137,
       "default_parameters": {},
       "description": "The Meta Llama 3.3 multilingual large language model (LLM) is a pretrained and instruction tuned generative model in 70B (text in/text out). The Llama 3.3 instruction tuned text only model...",
-      "expiration_date": null,
+      "expiration_date": "2026-07-19",
       "id": "meta-llama/llama-3.3-70b-instruct:free",
       "name": "Meta: Llama 3.3 70B Instruct (free)",
       "pricing": {
@@ -8060,7 +8060,7 @@
       "created": 1723766400,
       "default_parameters": {},
       "description": "Hermes 3 is a generalist language model with many improvements over Hermes 2, including advanced agentic capabilities, much better roleplaying, reasoning, multi-turn conversation, long context coherence, and improvements across the...",
-      "expiration_date": null,
+      "expiration_date": "2026-07-19",
       "id": "nousresearch/hermes-3-llama-3.1-405b:free",
       "name": "Nous: Hermes 3 405B Instruct (free)",
       "pricing": {
@@ -14429,7 +14429,7 @@
       "created": 1753230546,
       "default_parameters": {},
       "description": "Qwen3-Coder-480B-A35B-Instruct is a Mixture-of-Experts (MoE) code generation model developed by the Qwen team. It is optimized for agentic coding tasks such as function calling, tool use, and long-context reasoning over...",
-      "expiration_date": null,
+      "expiration_date": "2026-07-19",
       "id": "qwen/qwen3-coder:free",
       "name": "Qwen: Qwen3 Coder 480B A35B (free)",
       "pricing": {
@@ -14639,7 +14639,7 @@
       "created": 1757612213,
       "default_parameters": {},
       "description": "Qwen3-Next-80B-A3B-Instruct is an instruction-tuned chat model in the Qwen3-Next series optimized for fast, stable responses without “thinking” traces. It targets complex tasks across reasoning, code generation, knowledge QA, and multilingual...",
-      "expiration_date": null,
+      "expiration_date": "2026-07-19",
       "id": "qwen/qwen3-next-80b-a3b-instruct:free",
       "name": "Qwen: Qwen3 Next 80B A3B Instruct (free)",
       "pricing": {
