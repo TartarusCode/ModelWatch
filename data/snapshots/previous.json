@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T15:01:29.350497Z",
+  "generated_at": "2026-07-11T15:31:17.983077Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -2929,12 +2929,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro",
       "pricing": {
-        "completion": "0.00000087",
+        "completion": "0.000000696",
         "image": null,
-        "input_cache_read": "0.000000003625",
+        "input_cache_read": "0.000000029",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000435",
+        "prompt": "0.000000348",
         "request": null,
         "web_search": null
       },
@@ -2961,7 +2961,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1024000,
         "is_moderated": false,
         "max_completion_tokens": 384000
       }
