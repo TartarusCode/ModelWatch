@@ -14,6 +14,32 @@
       "status": "active"
     },
     {
+      "detected_at": "2026-07-12T03:31:16.134129Z",
+      "episode_start_per_million_usd": "1.000000",
+      "field": "completion",
+      "model_id": "qwen/qwen2.5-vl-72b-instruct",
+      "new_per_million_usd": "0.750000",
+      "old_per_million_usd": "1.000000",
+      "pct_drop": 0.25,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.250000",
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-07-12T03:31:16.134129Z",
+      "episode_start_per_million_usd": "0.800000",
+      "field": "prompt",
+      "model_id": "qwen/qwen2.5-vl-72b-instruct",
+      "new_per_million_usd": "0.250000",
+      "old_per_million_usd": "0.800000",
+      "pct_drop": 0.6875,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.550000",
+      "status": "active"
+    },
+    {
       "detected_at": "2026-07-08T20:31:21.356918Z",
       "episode_start_per_million_usd": "0.800000",
       "field": "completion",
@@ -1093,9 +1119,35 @@
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "1.100000",
       "status": "active"
+    },
+    {
+      "detected_at": "2026-07-12T03:31:16.134129Z",
+      "episode_start_per_million_usd": "0.800000",
+      "field": "prompt",
+      "model_id": "qwen/qwen2.5-vl-72b-instruct",
+      "new_per_million_usd": "0.250000",
+      "old_per_million_usd": "0.800000",
+      "pct_drop": 0.6875,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.550000",
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-07-12T03:31:16.134129Z",
+      "episode_start_per_million_usd": "1.000000",
+      "field": "completion",
+      "model_id": "qwen/qwen2.5-vl-72b-instruct",
+      "new_per_million_usd": "0.750000",
+      "old_per_million_usd": "1.000000",
+      "pct_drop": 0.25,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.250000",
+      "status": "active"
     }
   ],
-  "generated_at": "2026-07-12T03:01:28.776421Z",
+  "generated_at": "2026-07-12T03:31:49.442811Z",
   "recovered_drops": [
     {
       "detected_at": "2026-07-08T18:31:23.534650Z",
