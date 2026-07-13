@@ -1160,21 +1160,8 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-07-13T00:31:21.297142Z",
+  "generated_at": "2026-07-13T01:01:34.688489Z",
   "recovered_drops": [
-    {
-      "detected_at": "2026-07-11T14:01:18.015594Z",
-      "episode_start_per_million_usd": "1.320000",
-      "field": "completion",
-      "model_id": "z-ai/glm-5.2",
-      "new_per_million_usd": "1.100000",
-      "old_per_million_usd": "1.320000",
-      "pct_drop": 0.16666666666666666,
-      "recovered_at": "2026-07-12T01:01:20.736461Z",
-      "recovered_per_million_usd": "2.860000",
-      "saved_per_million_usd": "0.220000",
-      "status": "recovered"
-    },
     {
       "detected_at": "2026-07-12T03:01:14.983082Z",
       "episode_start_per_million_usd": "2.860000",
