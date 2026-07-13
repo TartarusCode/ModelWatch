@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T03:01:29.815636Z",
+  "generated_at": "2026-07-13T03:31:16.575744Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -18320,9 +18320,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1024000,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 128000
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-5v-turbo": {
