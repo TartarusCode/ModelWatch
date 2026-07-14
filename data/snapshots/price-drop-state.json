@@ -1054,7 +1054,7 @@
       "status": "recovered"
     }
   ],
-  "generated_at": "2026-07-14T06:01:20.304108Z",
+  "generated_at": "2026-07-14T06:31:37.145020Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -4157,11 +4157,11 @@
         "anchor": "0.12000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.12000000",
+        "pending_builds": 1,
+        "pending_price": "0.06000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "gryphe/mythomax-l2-13b": {
