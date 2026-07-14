@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T15:31:37.145802Z",
+  "generated_at": "2026-07-14T16:01:48.393871Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -5037,8 +5037,15 @@
       "canonical_slug": "kwaipilot/kat-coder-air-v2.5-20260710",
       "context_length": 256000,
       "created": 1783714590,
-      "default_parameters": {},
-      "description": "",
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "KAT-Coder-Air V2.5 is a flagship-level Agentic Coding model that can directly hand over an entire issue or an entire business workflow to it, allowing it to autonomously locate and make...",
       "expiration_date": null,
       "id": "kwaipilot/kat-coder-air-v2.5",
       "name": "Kwaipilot: KAT-Coder-Air V2.5",
@@ -5149,8 +5156,15 @@
       "canonical_slug": "kwaipilot/kat-coder-pro-v2.5-20260710",
       "context_length": 256000,
       "created": 1783714589,
-      "default_parameters": {},
-      "description": "",
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "KAT-Coder-Pro V2.5 is a flagship-level Agentic Coding model that can directly hand over an entire issue or an entire business workflow to it, allowing it to autonomously locate and make...",
       "expiration_date": null,
       "id": "kwaipilot/kat-coder-pro-v2.5",
       "name": "Kwaipilot: KAT-Coder-Pro V2.5",
