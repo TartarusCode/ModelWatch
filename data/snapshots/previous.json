@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T23:01:51.958930Z",
+  "generated_at": "2026-07-14T23:31:36.745577Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -4338,10 +4338,10 @@
       "pricing": {
         "completion": "0.00000035",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006",
+        "prompt": "0.00000012",
         "request": null,
         "web_search": null
       },
@@ -4362,7 +4362,6 @@
         "temperature",
         "tool_choice",
         "tools",
-        "top_a",
         "top_k",
         "top_logprobs",
         "top_p"
@@ -4370,7 +4369,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 8192
+        "max_completion_tokens": 262144
       }
     },
     "google/gemma-4-31b-it:free": {
