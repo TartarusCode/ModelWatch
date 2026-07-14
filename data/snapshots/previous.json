@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T12:01:35.567828Z",
+  "generated_at": "2026-07-14T12:31:33.735906Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -16290,56 +16290,6 @@
         "max_completion_tokens": 16384
       }
     },
-    "sao10k/l3.1-70b-hanami-x1": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Llama3"
-      },
-      "canonical_slug": "sao10k/l3.1-70b-hanami-x1",
-      "context_length": 16000,
-      "created": 1736302854,
-      "default_parameters": {},
-      "description": "This is [Sao10K](/sao10k)'s experiment over [Euryale v2.2](/sao10k/l3.1-euryale-70b).",
-      "expiration_date": null,
-      "id": "sao10k/l3.1-70b-hanami-x1",
-      "name": "Sao10K: Llama 3.1 70B Hanami x1",
-      "pricing": {
-        "completion": "0.000003",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.000003",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 16000,
-        "is_moderated": false,
-        "max_completion_tokens": null
-      }
-    },
     "sao10k/l3.1-euryale-70b": {
       "architecture": {
         "input_modalities": [
@@ -16883,7 +16833,6 @@
         "logit_bias",
         "logprobs",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "repetition_penalty",
         "response_format",
@@ -18214,12 +18163,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000029084",
+        "completion": "0.000002904",
         "image": null,
-        "input_cache_read": "0.00000017186",
+        "input_cache_read": "0.0000001716",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000009254",
+        "prompt": "0.000000924",
         "request": null,
         "web_search": null
       },
@@ -18247,9 +18196,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1024000,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 128000
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-5v-turbo": {
