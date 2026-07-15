@@ -2,6 +2,11 @@ import type { PriceDropRecord } from "../types";
 
 export const DROP_LOOKBACK_HOURS = 24;
 
+export type DropTimestampField =
+  | "detected_at"
+  | "recovered_at"
+  | "settled_at";
+
 export function sortDropsBySeverity<T extends PriceDropRecord>(
   drops: T[],
 ): T[] {
@@ -14,6 +19,23 @@ export function sortDropsBySeverity<T extends PriceDropRecord>(
       Number.parseFloat(a.saved_per_million_usd)
     );
   });
+}
+
+function timestampMs(
+  drop: PriceDropRecord,
+  field: DropTimestampField,
+): number {
+  const raw = drop[field] ?? drop.detected_at;
+  return new Date(raw).getTime();
+}
+
+export function sortDropsChronologically<T extends PriceDropRecord>(
+  drops: T[],
+  field: DropTimestampField = "detected_at",
+): T[] {
+  return [...drops].sort(
+    (a, b) => timestampMs(b, field) - timestampMs(a, field),
+  );
 }
 
 export function isDetectedWithinHours(

@@ -4,6 +4,7 @@ import {
   episodesForModel,
   isDetectedWithinHours,
   sortDropsBySeverity,
+  sortDropsChronologically,
   splitDropsByFreshness,
 } from "./priceDrops";
 import type { PriceDropRecord } from "../types";
@@ -34,6 +35,41 @@ describe("priceDrops", () => {
     ]);
 
     expect(sorted[0]?.pct_drop).toBe(0.3);
+  });
+
+  it("sorts drops chronologically newest first", () => {
+    const sorted = sortDropsChronologically([
+      episode({ detected_at: "2026-07-01T00:00:00Z", model_id: "older" }),
+      episode({ detected_at: "2026-07-08T12:00:00Z", model_id: "newer" }),
+      episode({ detected_at: "2026-07-05T00:00:00Z", model_id: "mid" }),
+    ]);
+
+    expect(sorted.map((d) => d.model_id)).toEqual(["newer", "mid", "older"]);
+  });
+
+  it("sorts recovered drops by recovered_at when provided", () => {
+    const sorted = sortDropsChronologically(
+      [
+        episode({
+          detected_at: "2026-07-01T00:00:00Z",
+          status: "recovered",
+          recovered_at: "2026-07-10T00:00:00Z",
+          model_id: "later-recovery",
+        }),
+        episode({
+          detected_at: "2026-07-08T00:00:00Z",
+          status: "recovered",
+          recovered_at: "2026-07-09T00:00:00Z",
+          model_id: "earlier-recovery",
+        }),
+      ],
+      "recovered_at",
+    );
+
+    expect(sorted.map((d) => d.model_id)).toEqual([
+      "later-recovery",
+      "earlier-recovery",
+    ]);
   });
 
   it("filters episodes for a model", () => {

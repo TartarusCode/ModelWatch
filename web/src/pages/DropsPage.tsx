@@ -5,6 +5,7 @@ import {
   DROP_LOOKBACK_HOURS,
   dropAgeLabel,
   sortDropsBySeverity,
+  sortDropsChronologically,
   splitDropsByFreshness,
 } from "../lib/priceDrops";
 import {
@@ -112,17 +113,24 @@ function DropTable({
 export function DropsPage({ priceDrops, enriched }: DropsPageProps) {
   useDocumentTitle("ModelWatch — Price drops");
   const { thresholds } = priceDrops;
-  const active = sortDropsBySeverity(priceDrops.active_drops);
+  const activeBySeverity = sortDropsBySeverity(priceDrops.active_drops);
   const { freshDrops, olderDrops } = splitDropsByFreshness(
-    active,
+    priceDrops.active_drops,
     DROP_LOOKBACK_HOURS,
   );
-  const fresh = sortDropsBySeverity(freshDrops);
-  const older = sortDropsBySeverity(olderDrops);
-  const recovered = sortDropsBySeverity(priceDrops.recovered_drops);
-  const settled = sortDropsBySeverity(priceDrops.settled_drops ?? []);
-  const history = sortDropsBySeverity(priceDrops.episodes);
-  const topDrop = fresh[0] ?? active[0];
+  const fresh = sortDropsChronologically(freshDrops);
+  const older = sortDropsChronologically(olderDrops);
+  const recovered = sortDropsChronologically(
+    priceDrops.recovered_drops,
+    "recovered_at",
+  );
+  const settled = sortDropsChronologically(
+    priceDrops.settled_drops ?? [],
+    "settled_at",
+  );
+  const history = sortDropsChronologically(priceDrops.episodes);
+  const topDrop =
+    sortDropsBySeverity(freshDrops)[0] ?? activeBySeverity[0];
 
   return (
     <div className="page">
@@ -134,7 +142,9 @@ export function DropsPage({ priceDrops, enriched }: DropsPageProps) {
       {topDrop ? (
         <div className="highlight-card">
           <span className="highlight-card__label">
-            {fresh[0] ? "Largest new drop today" : "Largest active drop"}
+            {freshDrops.length > 0
+              ? "Largest new drop today"
+              : "Largest active drop"}
           </span>
           <div className="highlight-card__main">
             <Link
