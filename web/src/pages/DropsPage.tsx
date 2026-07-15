@@ -92,6 +92,10 @@ function DropTable({
                     <span className="status-pill status-pill--warn">
                       Recovered
                     </span>
+                  ) : drop.status === "settled" ? (
+                    <span className="status-pill status-pill--muted">
+                      Settled
+                    </span>
                   ) : (
                     <span className="muted">Active</span>
                   )}
@@ -116,6 +120,7 @@ export function DropsPage({ priceDrops, enriched }: DropsPageProps) {
   const fresh = sortDropsBySeverity(freshDrops);
   const older = sortDropsBySeverity(olderDrops);
   const recovered = sortDropsBySeverity(priceDrops.recovered_drops);
+  const settled = sortDropsBySeverity(priceDrops.settled_drops ?? []);
   const history = sortDropsBySeverity(priceDrops.episodes);
   const topDrop = fresh[0] ?? active[0];
 
@@ -123,7 +128,7 @@ export function DropsPage({ priceDrops, enriched }: DropsPageProps) {
     <div className="page">
       <PageHeader
         title="Price drops"
-        description={`Active drops are confirmed after ${2} consecutive builds at the new price — ≥${(thresholds.min_pct * 100).toFixed(0)}% vs the prior build and ≥$${thresholds.min_saved_per_million_usd.toFixed(2)}/M saved.`}
+        description={`Active drops are confirmed after ${2} consecutive builds at the new price — ≥${(thresholds.min_pct * 100).toFixed(0)}% vs the prior build and ≥$${thresholds.min_saved_per_million_usd.toFixed(2)}/M saved. Drops that hold for 7 days without recovery settle as the new normal.`}
       />
 
       {topDrop ? (
@@ -186,6 +191,15 @@ export function DropsPage({ priceDrops, enriched }: DropsPageProps) {
           <DropTable rows={recovered} enriched={enriched} />
         )}
       </section>
+
+      {settled.length > 0 ? (
+        <section className="table-panel" id="settled">
+          <h2 className="section-title">
+            Recently settled ({DROP_LOOKBACK_HOURS}h)
+          </h2>
+          <DropTable rows={settled} enriched={enriched} />
+        </section>
+      ) : null}
 
       <section className="table-panel">
         <h2 className="section-title">Drop history</h2>

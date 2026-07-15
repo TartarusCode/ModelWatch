@@ -34,6 +34,7 @@ describe("loadSiteData", () => {
             thresholds: { min_pct: 0.1, min_saved_per_million_usd: 0.05 },
             active_drops: [],
             recovered_drops: [],
+            settled_drops: [],
             episodes: [],
           }),
         );

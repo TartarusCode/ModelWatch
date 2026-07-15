@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from decimal import Decimal
 from pathlib import Path
 from typing import Literal
@@ -17,6 +17,7 @@ RECOVERY_BUILDS = 2
 RECOVERY_FACTOR = Decimal("1.05")
 SPIKE_TOLERANCE = Decimal("1.15")
 PRICE_TOLERANCE = Decimal("0.000001")
+SETTLE_AFTER = timedelta(days=7)
 
 STATE_PATH = (
     Path(__file__).resolve().parent.parent
@@ -58,6 +59,7 @@ class FieldUpdateResult:
     state: FieldDropState
     confirmed: PriceDropRecord | None
     recovered: PriceDropRecord | None
+    settled: PriceDropRecord | None = None
 
 
 def load_price_drop_state() -> PriceDropStateStore:
@@ -140,6 +142,21 @@ def _episode_recovered(
     )
 
 
+def _episode_settled(
+    episode: PriceDropRecord,
+    *,
+    settled_price: Decimal,
+    settled_at: datetime,
+) -> PriceDropRecord:
+    return episode.model_copy(
+        update={
+            "status": "settled",
+            "settled_at": settled_at,
+            "settled_per_million_usd": f"{settled_price:.6f}",
+        },
+    )
+
+
 def _pending_triggered(
     *,
     current: Decimal,
@@ -168,7 +185,12 @@ def update_field_drop_state(
     reference: Decimal,
     thresholds: PriceDropThresholds,
     now: datetime,
-) -> tuple[FieldDropState, PriceDropRecord | None, PriceDropRecord | None]:
+) -> tuple[
+    FieldDropState,
+    PriceDropRecord | None,
+    PriceDropRecord | None,
+    PriceDropRecord | None,
+]:
     result = _update_field_drop_state(
         state,
         current=current,
@@ -177,7 +199,7 @@ def update_field_drop_state(
         thresholds=thresholds,
         now=now,
     )
-    return result.state, result.confirmed, result.recovered
+    return result.state, result.confirmed, result.recovered, result.settled
 
 
 def _update_field_drop_state(
@@ -348,6 +370,27 @@ def _update_confirmed_state(
     assert state.episode_start_price is not None
     assert state.confirmed_price is not None
 
+    if state.confirmed_at is not None and now - state.confirmed_at >= SETTLE_AFTER:
+        settled = _episode_from_confirmation(
+            model_id="",
+            field="",
+            episode_start=state.episode_start_price,
+            confirmed_price=state.confirmed_price,
+            detected_at=state.confirmed_at,
+        ).model_copy(
+            update={
+                "status": "settled",
+                "settled_at": now,
+                "settled_per_million_usd": f"{current:.6f}",
+            },
+        )
+        return FieldUpdateResult(
+            state=FieldDropState.idle(current),
+            confirmed=None,
+            recovered=None,
+            settled=settled,
+        )
+
     recovery_threshold = state.episode_start_price * RECOVERY_FACTOR
     if current > recovery_threshold:
         recovery_builds = state.recovery_builds + 1
@@ -417,11 +460,17 @@ def update_model_field_states(
     reference_per_million: dict[str, Decimal],
     thresholds: PriceDropThresholds,
     now: datetime,
-) -> tuple[PriceDropStateStore, list[PriceDropRecord], list[PriceDropRecord]]:
+) -> tuple[
+    PriceDropStateStore,
+    list[PriceDropRecord],
+    list[PriceDropRecord],
+    list[PriceDropRecord],
+]:
     model_states = dict(store.models.get(model_id, {}))
     episodes = list(store.episodes)
     confirmed_episodes: list[PriceDropRecord] = []
     recovered_episodes: list[PriceDropRecord] = []
+    settled_episodes: list[PriceDropRecord] = []
 
     for field, reference in reference_per_million.items():
         current = current_per_million.get(field)
@@ -433,7 +482,7 @@ def update_model_field_states(
         if field_state is None:
             field_state = FieldDropState.idle(current)
 
-        new_state, confirmed, recovered = update_field_drop_state(
+        new_state, confirmed, recovered, settled = update_field_drop_state(
             field_state,
             current=current,
             previous=previous,
@@ -461,6 +510,17 @@ def update_model_field_states(
             if recovered_episode is not None:
                 recovered_episodes.append(recovered_episode)
 
+        if settled is not None:
+            settled_episode = _mark_latest_episode_settled(
+                episodes,
+                model_id=model_id,
+                field=field,
+                settled_price=Decimal(settled.settled_per_million_usd or "0"),
+                settled_at=now,
+            )
+            if settled_episode is not None:
+                settled_episodes.append(settled_episode)
+
     updated_models = dict(store.models)
     if model_states:
         updated_models[model_id] = model_states
@@ -477,6 +537,7 @@ def update_model_field_states(
         ),
         confirmed_episodes,
         recovered_episodes,
+        settled_episodes,
     )
 
 
@@ -498,6 +559,30 @@ def _mark_latest_episode_recovered(
             episode,
             recovered_price=recovered_price,
             recovered_at=recovered_at,
+        )
+        episodes[index] = updated
+        return updated
+    return None
+
+
+def _mark_latest_episode_settled(
+    episodes: list[PriceDropRecord],
+    *,
+    model_id: str,
+    field: str,
+    settled_price: Decimal,
+    settled_at: datetime,
+) -> PriceDropRecord | None:
+    for index in range(len(episodes) - 1, -1, -1):
+        episode = episodes[index]
+        if episode.model_id != model_id or episode.field != field:
+            continue
+        if episode.status != "active":
+            continue
+        updated = _episode_settled(
+            episode,
+            settled_price=settled_price,
+            settled_at=settled_at,
         )
         episodes[index] = updated
         return updated

@@ -80,6 +80,23 @@ def recovered_in_last_hours(
     ]
 
 
+def settled_in_last_hours(
+    episodes: list[PriceDropRecord],
+    hours: int,
+    *,
+    now: datetime,
+) -> list[PriceDropRecord]:
+    cutoff = now - timedelta(hours=hours)
+    return [
+        episode
+        for episode in episodes
+        if episode.status == "settled"
+        and episode.settled_at is not None
+        and episode.settled_at >= cutoff
+        and not is_latest_alias_model_id(episode.model_id)
+    ]
+
+
 def episodes_for_display(
     episodes: list[PriceDropRecord],
 ) -> list[PriceDropRecord]:
@@ -98,8 +115,14 @@ def build_price_drops_output(
     *,
     now: datetime,
     window_hours: int,
-) -> tuple[list[PriceDropRecord], list[PriceDropRecord], list[PriceDropRecord]]:
+) -> tuple[
+    list[PriceDropRecord],
+    list[PriceDropRecord],
+    list[PriceDropRecord],
+    list[PriceDropRecord],
+]:
     filtered = episodes_for_display(store.episodes)
     active = active_drops_from_state(store)
     recovered = recovered_in_last_hours(filtered, window_hours, now=now)
-    return active, recovered, filtered
+    settled = settled_in_last_hours(filtered, window_hours, now=now)
+    return active, recovered, settled, filtered

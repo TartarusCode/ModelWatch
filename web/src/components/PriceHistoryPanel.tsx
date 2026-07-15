@@ -139,6 +139,13 @@ export function PriceHistoryPanel({
                             ? ` → ${formatPerMillionUsd(episode.recovered_per_million_usd)}`
                             : ""}
                         </span>
+                      ) : episode.status === "settled" ? (
+                        <span className="status-pill status-pill--muted">
+                          Settled
+                          {episode.settled_per_million_usd
+                            ? ` @ ${formatPerMillionUsd(episode.settled_per_million_usd)}`
+                            : ""}
+                        </span>
                       ) : (
                         <span className="muted">Active</span>
                       )}

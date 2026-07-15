@@ -217,7 +217,7 @@ def rebuild_price_drops_output(
             models={},
             episodes=[],
         )
-    active, recovered, display_episodes = build_price_drops_output(
+    active, recovered, settled, display_episodes = build_price_drops_output(
         store,
         now=finished,
         window_hours=DROP_LOOKBACK_HOURS,
@@ -233,6 +233,7 @@ def rebuild_price_drops_output(
         ),
         active_drops=active,
         recovered_drops=recovered,
+        settled_drops=settled,
         episodes=display_episodes,
     )
     write_model_json(path, output)
@@ -258,6 +259,7 @@ def main() -> None:
     print(counts)
     print(f"active_drops={len(output.active_drops)}")
     print(f"recovered_drops={len(output.recovered_drops)}")
+    print(f"settled_drops={len(output.settled_drops)}")
     print(f"episodes={len(output.episodes)}")
 
 

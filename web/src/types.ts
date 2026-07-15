@@ -189,9 +189,11 @@ export interface PriceDropRecord {
   new_per_million_usd: string;
   pct_drop: number;
   saved_per_million_usd: string;
-  status: "active" | "recovered";
+  status: "active" | "recovered" | "settled";
   recovered_at?: string | null;
   recovered_per_million_usd?: string | null;
+  settled_at?: string | null;
+  settled_per_million_usd?: string | null;
 }
 
 export interface PriceDropsOutput {
@@ -203,6 +205,7 @@ export interface PriceDropsOutput {
   };
   active_drops: PriceDropRecord[];
   recovered_drops: PriceDropRecord[];
+  settled_drops?: PriceDropRecord[];
   episodes: PriceDropRecord[];
 }
 
@@ -223,9 +226,11 @@ export interface PriceEventRecord {
   new_per_million_usd: string;
   pct_drop: number;
   saved_per_million_usd: string;
-  status: "active" | "recovered";
+  status: "active" | "recovered" | "settled";
   recovered_at?: string | null;
   recovered_per_million_usd?: string | null;
+  settled_at?: string | null;
+  settled_per_million_usd?: string | null;
 }
 
 export interface NewModelRecord {

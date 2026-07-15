@@ -167,9 +167,11 @@ class PriceDropRecord(BaseModel):
     new_per_million_usd: str
     pct_drop: float
     saved_per_million_usd: str
-    status: Literal["active", "recovered"] = "active"
+    status: Literal["active", "recovered", "settled"] = "active"
     recovered_at: datetime | None = None
     recovered_per_million_usd: str | None = None
+    settled_at: datetime | None = None
+    settled_per_million_usd: str | None = None
 
 
 class PriceDropThresholdsOutput(BaseModel):
@@ -187,6 +189,7 @@ class PriceDropsOutput(BaseModel):
     thresholds: PriceDropThresholdsOutput
     active_drops: list[PriceDropRecord]
     recovered_drops: list[PriceDropRecord]
+    settled_drops: list[PriceDropRecord] = Field(default_factory=list)
     episodes: list[PriceDropRecord]
 
 
@@ -201,9 +204,11 @@ class PriceEventRecord(BaseModel):
     new_per_million_usd: str
     pct_drop: float
     saved_per_million_usd: str
-    status: Literal["active", "recovered"] = "active"
+    status: Literal["active", "recovered", "settled"] = "active"
     recovered_at: datetime | None = None
     recovered_per_million_usd: str | None = None
+    settled_at: datetime | None = None
+    settled_per_million_usd: str | None = None
 
 
 class NewModelRecord(BaseModel):

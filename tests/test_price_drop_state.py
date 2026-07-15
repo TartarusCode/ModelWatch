@@ -1,4 +1,4 @@
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from decimal import Decimal
 
 from modelwatch.price_drop_state import (
@@ -8,6 +8,7 @@ from modelwatch.price_drop_state import (
     active_drops_from_state,
     close_orphaned_active_episodes,
     update_field_drop_state,
+    update_model_field_states,
 )
 from modelwatch.pricing import DEFAULT_THRESHOLDS, PriceDropThresholds
 from modelwatch.schemas import PriceDropRecord
@@ -25,7 +26,7 @@ def test_flash_dip_cancelled_before_settlement() -> None:
     state = _idle("0.574000")
     at = datetime(2026, 7, 5, 16, 1, tzinfo=UTC)
 
-    state, confirmed, recovered = update_field_drop_state(
+    state, confirmed, recovered, settled = update_field_drop_state(
         state,
         current=Decimal("0.180000"),
         previous=Decimal("0.574000"),
@@ -36,10 +37,11 @@ def test_flash_dip_cancelled_before_settlement() -> None:
 
     assert confirmed is None
     assert recovered is None
+    assert settled is None
     assert state.status == "pending"
     assert state.pending_price == Decimal("0.180000")
 
-    state, confirmed, recovered = update_field_drop_state(
+    state, confirmed, recovered, settled = update_field_drop_state(
         state,
         current=Decimal("0.500000"),
         previous=Decimal("0.180000"),
@@ -50,6 +52,7 @@ def test_flash_dip_cancelled_before_settlement() -> None:
 
     assert confirmed is None
     assert recovered is None
+    assert settled is None
     assert state.status == "idle"
     assert state.pending_price is None
 
@@ -58,7 +61,7 @@ def test_gradual_decline_confirms_after_settlement_builds() -> None:
     state = _idle("0.930000")
     at = datetime(2026, 7, 4, 11, 31, tzinfo=UTC)
 
-    state, confirmed, _ = update_field_drop_state(
+    state, confirmed, _, _ = update_field_drop_state(
         state,
         current=Decimal("0.820000"),
         previous=Decimal("0.930000"),
@@ -69,7 +72,7 @@ def test_gradual_decline_confirms_after_settlement_builds() -> None:
     assert confirmed is None
     assert state.status == "pending"
 
-    state, confirmed, _ = update_field_drop_state(
+    state, confirmed, _, _ = update_field_drop_state(
         state,
         current=Decimal("0.820000"),
         previous=Decimal("0.820000"),
@@ -94,7 +97,7 @@ def test_recovery_resets_anchor_after_confirmed_drop() -> None:
         confirmed_at=datetime(2026, 7, 4, 12, 1, tzinfo=UTC),
     )
 
-    state, confirmed, recovered = update_field_drop_state(
+    state, confirmed, recovered, settled = update_field_drop_state(
         state,
         current=Decimal("0.980000"),
         previous=Decimal("0.930000"),
@@ -104,9 +107,10 @@ def test_recovery_resets_anchor_after_confirmed_drop() -> None:
     )
     assert confirmed is None
     assert recovered is None
+    assert settled is None
     assert state.recovery_builds == 1
 
-    state, confirmed, recovered = update_field_drop_state(
+    state, confirmed, recovered, settled = update_field_drop_state(
         state,
         current=Decimal("0.980000"),
         previous=Decimal("0.980000"),
@@ -117,10 +121,82 @@ def test_recovery_resets_anchor_after_confirmed_drop() -> None:
 
     assert confirmed is None
     assert recovered is not None
+    assert settled is None
     assert recovered.status == "recovered"
     assert recovered.recovered_per_million_usd == "0.980000"
     assert state.status == "idle"
     assert state.anchor == Decimal("0.980000")
+
+
+def test_confirmed_drop_settles_after_seven_days() -> None:
+    confirmed_at = datetime(2026, 7, 1, 12, 0, tzinfo=UTC)
+    state = FieldDropState(
+        anchor=Decimal("0.840000"),
+        status="confirmed",
+        episode_start_price=Decimal("0.930000"),
+        confirmed_price=Decimal("0.840000"),
+        confirmed_at=confirmed_at,
+    )
+    now = confirmed_at + timedelta(days=8)
+    active_episode = PriceDropRecord(
+        detected_at=confirmed_at,
+        model_id="acme/model",
+        field="prompt",
+        episode_start_per_million_usd="0.930000",
+        old_per_million_usd="0.930000",
+        new_per_million_usd="0.840000",
+        pct_drop=0.0967741935483871,
+        saved_per_million_usd="0.090000",
+        status="active",
+    )
+    store = PriceDropStateStore(
+        generated_at=confirmed_at,
+        models={"acme/model": {"prompt": state}},
+        episodes=[active_episode],
+    )
+
+    store, _, _, settled = update_model_field_states(
+        store,
+        model_id="acme/model",
+        current_per_million={"prompt": Decimal("0.840000")},
+        previous_per_million={"prompt": Decimal("0.840000")},
+        reference_per_million={"prompt": Decimal("0.900000")},
+        thresholds=_thresholds(),
+        now=now,
+    )
+
+    assert len(settled) == 1
+    assert settled[0].status == "settled"
+    assert settled[0].settled_at == now
+    assert settled[0].settled_per_million_usd == "0.840000"
+    assert store.models["acme/model"]["prompt"].status == "idle"
+    assert store.models["acme/model"]["prompt"].anchor == Decimal("0.840000")
+    assert store.episodes[0].status == "settled"
+
+
+def test_confirmed_drop_does_not_settle_before_seven_days() -> None:
+    confirmed_at = datetime(2026, 7, 1, 12, 0, tzinfo=UTC)
+    state = FieldDropState(
+        anchor=Decimal("0.840000"),
+        status="confirmed",
+        episode_start_price=Decimal("0.930000"),
+        confirmed_price=Decimal("0.840000"),
+        confirmed_at=confirmed_at,
+    )
+
+    state, confirmed, recovered, settled = update_field_drop_state(
+        state,
+        current=Decimal("0.840000"),
+        previous=Decimal("0.840000"),
+        reference=Decimal("0.900000"),
+        thresholds=_thresholds(),
+        now=confirmed_at + timedelta(days=6),
+    )
+
+    assert confirmed is None
+    assert recovered is None
+    assert settled is None
+    assert state.status == "confirmed"
 
 
 def test_new_drop_from_recovered_anchor_alerts() -> None:
@@ -128,7 +204,7 @@ def test_new_drop_from_recovered_anchor_alerts() -> None:
     at = datetime(2026, 7, 10, 10, 0, tzinfo=UTC)
 
     for build in range(SETTLEMENT_BUILDS):
-        state, confirmed, _ = update_field_drop_state(
+        state, confirmed, _, _ = update_field_drop_state(
             state,
             current=Decimal("0.800000"),
             previous=Decimal("0.930000") if build == 0 else Decimal("0.800000"),
@@ -145,7 +221,7 @@ def test_new_drop_from_recovered_anchor_alerts() -> None:
 def test_spike_and_return_does_not_confirm() -> None:
     state = _idle("3.000000")
 
-    state, confirmed, _ = update_field_drop_state(
+    state, confirmed, _, _ = update_field_drop_state(
         state,
         current=Decimal("3.000000"),
         previous=Decimal("5.000000"),

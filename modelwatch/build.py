@@ -346,7 +346,7 @@ async def run_build() -> None:
             continue
         current_per_million = _current_per_million(model)
         current_per_million_by_model[model.id] = current_per_million
-        drop_state, _, _ = update_model_field_states(
+        drop_state, _, _, _ = update_model_field_states(
             drop_state,
             model_id=model.id,
             current_per_million=current_per_million,
@@ -377,7 +377,7 @@ async def run_build() -> None:
     ]
     _append_new_model_events(new_model_event_records)
 
-    active_drops, recovered_drops, episodes = build_price_drops_output(
+    active_drops, recovered_drops, settled_drops, episodes = build_price_drops_output(
         drop_state,
         now=finished,
         window_hours=DROP_LOOKBACK_HOURS,
@@ -407,6 +407,7 @@ async def run_build() -> None:
         ),
         active_drops=active_drops,
         recovered_drops=recovered_drops,
+        settled_drops=settled_drops,
         episodes=episodes,
     )
     meta = BuildMeta(
