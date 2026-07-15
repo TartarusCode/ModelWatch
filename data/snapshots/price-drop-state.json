@@ -1061,10 +1061,10 @@
       "new_per_million_usd": "0.060000",
       "old_per_million_usd": "0.120000",
       "pct_drop": 0.5,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-07-15T13:01:33.978048Z",
+      "recovered_per_million_usd": "0.220000",
       "saved_per_million_usd": "0.060000",
-      "status": "active"
+      "status": "recovered"
     },
     {
       "detected_at": "2026-07-15T06:01:15.258244Z",
@@ -1093,7 +1093,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-07-15T12:31:31.062818Z",
+  "generated_at": "2026-07-15T13:01:46.424452Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -4193,14 +4193,14 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.06000000",
-        "confirmed_at": "2026-07-14T07:01:10.455435Z",
-        "confirmed_price": "0.06000000",
-        "episode_start_price": "0.12000000",
+        "anchor": "0.22000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
-        "status": "confirmed"
+        "recovery_builds": 0,
+        "status": "idle"
       }
     },
     "gryphe/mythomax-l2-13b": {
