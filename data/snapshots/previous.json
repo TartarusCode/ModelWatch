@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T05:31:24.714550Z",
+  "generated_at": "2026-07-15T06:01:29.917875Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -18036,7 +18036,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-5-turbo-20260315",
-      "context_length": 262144,
+      "context_length": 202752,
       "created": 1773583573,
       "default_parameters": {
         "frequency_penalty": null,
@@ -18047,7 +18047,7 @@
         "top_p": 0.95
       },
       "description": "GLM-5 Turbo is a new model from Z.ai designed for fast inference and strong performance in agent-driven environments such as OpenClaw scenarios. It is deeply optimized for real-world agent workflows...",
-      "expiration_date": null,
+      "expiration_date": "2098-12-31",
       "id": "z-ai/glm-5-turbo",
       "name": "Z.ai: GLM 5 Turbo",
       "pricing": {
@@ -18061,17 +18061,10 @@
         "web_search": null
       },
       "supported_parameters": [
-        "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
         "max_tokens",
-        "min_p",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
         "response_format",
-        "seed",
-        "stop",
         "temperature",
         "tool_choice",
         "tools",
@@ -18079,7 +18072,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 202752,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
