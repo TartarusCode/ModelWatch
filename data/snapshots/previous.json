@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T14:31:33.718312Z",
+  "generated_at": "2026-07-15T15:01:54.212217Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -6364,6 +6364,7 @@
       "supported_parameters": [
         "frequency_penalty",
         "max_tokens",
+        "prediction",
         "presence_penalty",
         "response_format",
         "seed",
@@ -9358,6 +9359,7 @@
         "logprobs",
         "max_completion_tokens",
         "max_tokens",
+        "prediction",
         "presence_penalty",
         "response_format",
         "seed",
@@ -9414,6 +9416,7 @@
         "logprobs",
         "max_completion_tokens",
         "max_tokens",
+        "prediction",
         "presence_penalty",
         "response_format",
         "seed",
@@ -9470,6 +9473,7 @@
         "logprobs",
         "max_completion_tokens",
         "max_tokens",
+        "prediction",
         "presence_penalty",
         "response_format",
         "seed",
@@ -9525,6 +9529,7 @@
         "logit_bias",
         "logprobs",
         "max_tokens",
+        "prediction",
         "presence_penalty",
         "response_format",
         "seed",
@@ -9581,6 +9586,7 @@
         "logprobs",
         "max_completion_tokens",
         "max_tokens",
+        "prediction",
         "presence_penalty",
         "response_format",
         "seed",
@@ -9636,6 +9642,7 @@
         "logit_bias",
         "logprobs",
         "max_tokens",
+        "prediction",
         "presence_penalty",
         "response_format",
         "seed",
@@ -12455,6 +12462,7 @@
         "max_completion_tokens",
         "max_tokens",
         "min_p",
+        "prediction",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
@@ -18121,12 +18129,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000027236",
+        "completion": "0.0000027148",
         "image": null,
-        "input_cache_read": "0.00000016094",
+        "input_cache_read": "0.00000016042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000008666",
+        "prompt": "0.0000008638",
         "request": null,
         "web_search": null
       },
