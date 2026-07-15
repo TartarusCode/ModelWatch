@@ -5,7 +5,7 @@ import { Layout } from "./components/Layout";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { loadSiteData } from "./lib/data";
 import { newModelRecordsLast24Hours } from "./lib/newModels";
-import { sortDropsBySeverity } from "./lib/priceDrops";
+import { sortDropsBySeverity, splitDropsByFreshness } from "./lib/priceDrops";
 import { DropsPage } from "./pages/DropsPage";
 import { HomePage } from "./pages/HomePage";
 import { ModelDetailPage } from "./pages/ModelDetailPage";
@@ -49,7 +49,9 @@ export function App() {
   }
 
   const activeDrops = sortDropsBySeverity(data.priceDrops.active_drops);
+  const { freshDrops } = splitDropsByFreshness(activeDrops);
   const dropCount = activeDrops.length;
+  const freshDropCount = freshDrops.length;
   const newModelsLast24h = newModelRecordsLast24Hours(data.newModelEvents);
   const newModelCount = newModelsLast24h.length;
 
@@ -72,6 +74,7 @@ export function App() {
               <HomePage
                 models={data.models.models}
                 dropCount={dropCount}
+                freshDropCount={freshDropCount}
                 newModelCount={newModelCount}
                 lastUpdated={data.meta.generated_at}
                 recoveredCount={data.priceDrops.recovered_drops.length}

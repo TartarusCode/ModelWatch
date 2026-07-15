@@ -1,5 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { episodesForModel, sortDropsBySeverity } from "./priceDrops";
+import {
+  dropAgeLabel,
+  episodesForModel,
+  isDetectedWithinHours,
+  sortDropsBySeverity,
+  splitDropsByFreshness,
+} from "./priceDrops";
 import type { PriceDropRecord } from "../types";
 
 function episode(
@@ -44,5 +50,45 @@ describe("priceDrops", () => {
 
     expect(episodes).toHaveLength(1);
     expect(episodes[0]?.model_id).toBe("acme/model");
+  });
+
+  it("treats exact lookback boundary as fresh", () => {
+    const now = new Date("2026-07-15T12:00:00Z");
+    const fresh = episode({ detected_at: "2026-07-14T12:00:00Z" });
+    const older = episode({ detected_at: "2026-07-14T11:59:59Z" });
+
+    expect(isDetectedWithinHours(fresh, 24, now)).toBe(true);
+    expect(isDetectedWithinHours(older, 24, now)).toBe(false);
+  });
+
+  it("splits drops by freshness and handles empty input", () => {
+    const now = new Date("2026-07-15T12:00:00Z");
+    expect(splitDropsByFreshness([], 24, now)).toEqual({
+      freshDrops: [],
+      olderDrops: [],
+    });
+
+    const drops = [
+      episode({ detected_at: "2026-07-15T10:00:00Z", model_id: "a/new" }),
+      episode({ detected_at: "2026-07-08T10:00:00Z", model_id: "b/old" }),
+    ];
+    const { freshDrops, olderDrops } = splitDropsByFreshness(drops, 24, now);
+
+    expect(freshDrops.map((d) => d.model_id)).toEqual(["a/new"]);
+    expect(olderDrops.map((d) => d.model_id)).toEqual(["b/old"]);
+  });
+
+  it("labels drop age for today, one day, and multi-day", () => {
+    const now = new Date("2026-07-15T12:00:00Z");
+
+    expect(
+      dropAgeLabel(episode({ detected_at: "2026-07-15T08:00:00Z" }), now),
+    ).toBe("Today");
+    expect(
+      dropAgeLabel(episode({ detected_at: "2026-07-14T11:00:00Z" }), now),
+    ).toBe("1 day ago");
+    expect(
+      dropAgeLabel(episode({ detected_at: "2026-07-08T12:00:00Z" }), now),
+    ).toBe("7 days ago");
   });
 });

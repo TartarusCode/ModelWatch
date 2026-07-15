@@ -11,6 +11,7 @@ import type { EnrichedModel } from "../types";
 interface HomePageProps {
   models: EnrichedModel[];
   dropCount: number;
+  freshDropCount: number;
   newModelCount: number;
   recoveredCount: number;
   lastUpdated: string;
@@ -19,12 +20,17 @@ interface HomePageProps {
 export function HomePage({
   models,
   dropCount,
+  freshDropCount,
   newModelCount,
   recoveredCount,
   lastUpdated,
 }: HomePageProps) {
   useDocumentTitle("ModelWatch — Models");
   const withBenchmarks = models.filter((m) => hasBenchmarkData(m.benchmarks)).length;
+  const dropHint =
+    freshDropCount > 0
+      ? `Active now · ${freshDropCount} new today`
+      : "Active now";
 
   return (
     <div className="page page--wide">
@@ -53,7 +59,7 @@ export function HomePage({
         <StatCard
           label="Price drops"
           value={dropCount.toLocaleString()}
-          hint="Active now"
+          hint={dropHint}
           variant={dropCount > 0 ? "success" : "default"}
           to="/drops"
         />
@@ -67,7 +73,7 @@ export function HomePage({
         />
       </div>
       <NewModelBanner count={newModelCount} />
-      <PriceDropBanner count={dropCount} />
+      <PriceDropBanner freshCount={freshDropCount} totalCount={dropCount} />
       {recoveredCount > 0 ? (
         <p className="muted" style={{ marginBottom: "1rem" }}>
           <Link to="/drops#recovered">

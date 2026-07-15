@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import { PageHeader } from "../components/PageHeader";
 import { modelDisplayName } from "../lib/modelNames";
-import { DROP_LOOKBACK_HOURS, sortDropsBySeverity } from "../lib/priceDrops";
+import {
+  DROP_LOOKBACK_HOURS,
+  dropAgeLabel,
+  sortDropsBySeverity,
+  splitDropsByFreshness,
+} from "../lib/priceDrops";
 import {
   formatPerMillionUsd,
   formatPct,
@@ -30,6 +35,7 @@ function DropTable({
         <thead>
           <tr>
             <th scope="col">When</th>
+            <th scope="col">Age</th>
             <th scope="col">Model</th>
             <th scope="col">Field</th>
             <th scope="col">Was</th>
@@ -49,6 +55,9 @@ function DropTable({
                   hour: "2-digit",
                   minute: "2-digit",
                 })}
+              </td>
+              <td>
+                <span className="age-badge">{dropAgeLabel(drop)}</span>
               </td>
               <td>
                 <Link
@@ -100,9 +109,15 @@ export function DropsPage({ priceDrops, enriched }: DropsPageProps) {
   useDocumentTitle("ModelWatch — Price drops");
   const { thresholds } = priceDrops;
   const active = sortDropsBySeverity(priceDrops.active_drops);
+  const { freshDrops, olderDrops } = splitDropsByFreshness(
+    active,
+    DROP_LOOKBACK_HOURS,
+  );
+  const fresh = sortDropsBySeverity(freshDrops);
+  const older = sortDropsBySeverity(olderDrops);
   const recovered = sortDropsBySeverity(priceDrops.recovered_drops);
   const history = sortDropsBySeverity(priceDrops.episodes);
-  const topDrop = active[0];
+  const topDrop = fresh[0] ?? active[0];
 
   return (
     <div className="page">
@@ -113,7 +128,9 @@ export function DropsPage({ priceDrops, enriched }: DropsPageProps) {
 
       {topDrop ? (
         <div className="highlight-card">
-          <span className="highlight-card__label">Largest active drop</span>
+          <span className="highlight-card__label">
+            {fresh[0] ? "Largest new drop today" : "Largest active drop"}
+          </span>
           <div className="highlight-card__main">
             <Link
               to={`/models/${encodeURIComponent(topDrop.model_id)}`}
@@ -141,12 +158,21 @@ export function DropsPage({ priceDrops, enriched }: DropsPageProps) {
         </div>
       ) : null}
 
+      {fresh.length > 0 ? (
+        <section className="table-panel">
+          <h2 className="section-title">New today</h2>
+          <DropTable rows={fresh} enriched={enriched} />
+        </section>
+      ) : null}
+
       <section className="table-panel">
-        <h2 className="section-title">Active now</h2>
-        {active.length === 0 ? (
+        <h2 className="section-title">Still active</h2>
+        {older.length === 0 && fresh.length === 0 ? (
           <p className="muted">No models are currently below a confirmed drop level.</p>
+        ) : older.length === 0 ? (
+          <p className="muted">No older active drops — all current drops are from today.</p>
         ) : (
-          <DropTable rows={active} enriched={enriched} />
+          <DropTable rows={older} enriched={enriched} />
         )}
       </section>
 
