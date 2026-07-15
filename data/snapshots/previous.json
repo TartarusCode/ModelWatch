@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T14:01:30.650699Z",
+  "generated_at": "2026-07-15T14:31:33.718312Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -1436,54 +1436,6 @@
         "context_length": 1000000,
         "is_moderated": true,
         "max_completion_tokens": 128000
-      }
-    },
-    "arcee-ai/coder-large": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "arcee-ai/coder-large",
-      "context_length": 32768,
-      "created": 1746478663,
-      "default_parameters": {},
-      "description": "Coder‑Large is a 32 B‑parameter offspring of Qwen 2.5‑Instruct that has been further trained on permissively‑licensed GitHub, CodeSearchNet and synthetic bug‑fix corpora. It supports a 32k context window, enabling multi‑file...",
-      "expiration_date": null,
-      "id": "arcee-ai/coder-large",
-      "name": "Arcee AI: Coder Large",
-      "pricing": {
-        "completion": "0.0000008",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000005",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 32768,
-        "is_moderated": false,
-        "max_completion_tokens": null
       }
     },
     "arcee-ai/trinity-large-thinking": {
@@ -18169,12 +18121,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.000002728",
+        "completion": "0.0000027236",
         "image": null,
-        "input_cache_read": "0.0000001612",
+        "input_cache_read": "0.00000016094",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000868",
+        "prompt": "0.0000008666",
         "request": null,
         "web_search": null
       },
