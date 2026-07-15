@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T13:01:46.424452Z",
+  "generated_at": "2026-07-15T13:31:45.187340Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -5482,12 +5482,12 @@
       "id": "meta-llama/llama-3.2-3b-instruct",
       "name": "Meta: Llama 3.2 3B Instruct",
       "pricing": {
-        "completion": "0.000000335",
+        "completion": "0.00000033",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000509",
+        "prompt": "0.00000005",
         "request": null,
         "web_search": null
       },
@@ -5508,9 +5508,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 80000,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 80000
+        "max_completion_tokens": 131072
       }
     },
     "meta-llama/llama-3.2-3b-instruct:free": {
