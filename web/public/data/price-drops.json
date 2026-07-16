@@ -1323,24 +1323,9 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-07-16T17:31:13.596311Z",
+  "generated_at": "2026-07-16T18:01:38.011308Z",
   "recovered_drops": [],
   "settled_drops": [
-    {
-      "detected_at": "2026-07-08T18:01:22.643556Z",
-      "episode_start_per_million_usd": "0.300000",
-      "field": "input_cache_read",
-      "model_id": "moonshotai/kimi-k2.6",
-      "new_per_million_usd": "0.140000",
-      "old_per_million_usd": "0.300000",
-      "pct_drop": 0.5333333333333333,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.160000",
-      "settled_at": "2026-07-15T18:01:30.761608Z",
-      "settled_per_million_usd": "0.144000",
-      "status": "settled"
-    },
     {
       "detected_at": "2026-07-08T18:31:23.534650Z",
       "episode_start_per_million_usd": "0.930000",
