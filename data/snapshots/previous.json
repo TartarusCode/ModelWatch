@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T07:01:32.794329Z",
+  "generated_at": "2026-07-16T07:31:30.778619Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -7632,12 +7632,12 @@
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
       "pricing": {
-        "completion": "0.00000341",
+        "completion": "0.000004",
         "image": null,
-        "input_cache_read": "0.000000144",
+        "input_cache_read": "0.00000016",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000066",
+        "prompt": "0.00000095",
         "request": null,
         "web_search": null
       },
@@ -7666,7 +7666,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": null
       }
     },
     "moonshotai/kimi-k2.7-code": {
@@ -18129,12 +18129,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000030492",
+        "completion": "0.0000030448",
         "image": null,
-        "input_cache_read": "0.00000018018",
+        "input_cache_read": "0.00000017992",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000009702",
+        "prompt": "0.0000009688",
         "request": null,
         "web_search": null
       },
