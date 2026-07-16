@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T15:31:19.541050Z",
+  "generated_at": "2026-07-16T16:01:35.423035Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -5791,7 +5791,7 @@
       },
       "canonical_slug": "meta/muse-spark-1.1-20260709",
       "context_length": 1048576,
-      "created": 1783733591,
+      "created": 1784215741,
       "default_parameters": {
         "frequency_penalty": null,
         "presence_penalty": null,
@@ -7811,7 +7811,7 @@
       },
       "canonical_slug": "moonshotai/kimi-k3-20260715",
       "context_length": 1048576,
-      "created": 1784119448,
+      "created": 1784215858,
       "default_parameters": {
         "frequency_penalty": null,
         "presence_penalty": null,
@@ -18247,12 +18247,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000029348",
+        "completion": "0.0000029304",
         "image": null,
-        "input_cache_read": "0.00000017342",
+        "input_cache_read": "0.00000017316",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000009338",
+        "prompt": "0.0000009324",
         "request": null,
         "web_search": null
       },
