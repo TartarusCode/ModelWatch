@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T14:01:50.455139Z",
+  "generated_at": "2026-07-16T14:31:37.176288Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -7698,12 +7698,12 @@
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
       "pricing": {
-        "completion": "0.00000349",
+        "completion": "0.0000035",
         "image": null,
-        "input_cache_read": "0.000000149",
+        "input_cache_read": "0.00000016",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000719",
+        "prompt": "0.00000075",
         "request": null,
         "web_search": null
       },
@@ -17874,7 +17874,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-4.7-flash-20260119",
-      "context_length": 202752,
+      "context_length": 200000,
       "created": 1768833913,
       "default_parameters": {
         "frequency_penalty": null,
@@ -17888,10 +17888,10 @@
       "pricing": {
         "completion": "0.0000004",
         "image": null,
-        "input_cache_read": "0.00000001",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006",
+        "prompt": "0.0000000605",
         "request": null,
         "web_search": null
       },
@@ -17917,9 +17917,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 202752,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-5": {
@@ -18129,12 +18129,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000029656",
+        "completion": "0.0000029568",
         "image": null,
-        "input_cache_read": "0.00000017524",
+        "input_cache_read": "0.00000017472",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000009436",
+        "prompt": "0.0000009408",
         "request": null,
         "web_search": null
       },
