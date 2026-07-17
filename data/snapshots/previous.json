@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T22:01:30.623511Z",
+  "generated_at": "2026-07-17T22:31:22.461536Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -17006,6 +17006,68 @@
         "max_completion_tokens": 32768
       }
     },
+    "thinkingmachines/inkling": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "audio"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+audio->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "thinkingmachines/inkling-20260715",
+      "context_length": 1048576,
+      "created": 1784325956,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Inkling is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 41B active parameters out of 975B total. It is designed for general-purpose reasoning, coding, agentic and tool-use systems,...",
+      "expiration_date": null,
+      "id": "thinkingmachines/inkling",
+      "name": "Thinking Machines: Inkling",
+      "pricing": {
+        "completion": "0.00000405",
+        "image": null,
+        "input_cache_read": "0.00000017",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000001",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 524288,
+        "is_moderated": false,
+        "max_completion_tokens": null
+      }
+    },
     "undi95/remm-slerp-l2-13b": {
       "architecture": {
         "input_modalities": [
@@ -18208,12 +18270,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000028732",
+        "completion": "0.0000028688",
         "image": null,
-        "input_cache_read": "0.00000016978",
+        "input_cache_read": "0.00000016952",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000009142",
+        "prompt": "0.0000009128",
         "request": null,
         "web_search": null
       },
