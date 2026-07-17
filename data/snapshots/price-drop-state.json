@@ -1289,9 +1289,39 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-07-17T22:01:14.906858Z",
+      "episode_start_per_million_usd": "0.750000",
+      "field": "prompt",
+      "model_id": "mancer/weaver",
+      "new_per_million_usd": "0.500000",
+      "old_per_million_usd": "0.750000",
+      "pct_drop": 0.3333333333333333,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.250000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-07-17T22:01:14.906858Z",
+      "episode_start_per_million_usd": "1.000000",
+      "field": "completion",
+      "model_id": "mancer/weaver",
+      "new_per_million_usd": "0.750000",
+      "old_per_million_usd": "1.000000",
+      "pct_drop": 0.25,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.250000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-07-17T21:31:16.545377Z",
+  "generated_at": "2026-07-17T22:01:30.623511Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -4769,24 +4799,24 @@
     },
     "mancer/weaver": {
       "completion": {
-        "anchor": "1.000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.75000000",
+        "confirmed_at": "2026-07-17T22:01:14.906858Z",
+        "confirmed_price": "0.75000000",
         "episode_start_price": "1.000000",
-        "pending_builds": 1,
-        "pending_price": "0.75000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "prompt": {
-        "anchor": "0.75000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.5000000",
+        "confirmed_at": "2026-07-17T22:01:14.906858Z",
+        "confirmed_price": "0.5000000",
         "episode_start_price": "0.75000000",
-        "pending_builds": 1,
-        "pending_price": "0.5000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "meta-llama/llama-3-8b-instruct": {
