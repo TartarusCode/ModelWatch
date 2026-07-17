@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T04:02:09.375181Z",
+  "generated_at": "2026-07-17T04:31:08.904346Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -2818,7 +2818,7 @@
       "pricing": {
         "completion": "0.000000196",
         "image": null,
-        "input_cache_read": "0.0000000196",
+        "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.000000098",
@@ -4314,7 +4314,6 @@
         "temperature",
         "tool_choice",
         "tools",
-        "top_a",
         "top_k",
         "top_logprobs",
         "top_p"
@@ -7017,12 +7016,12 @@
       "id": "mistralai/mistral-nemo",
       "name": "Mistral: Mistral Nemo",
       "pricing": {
-        "completion": "0.00000003",
+        "completion": "0.00000004",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000019",
+        "prompt": "0.00000002",
         "request": null,
         "web_search": null
       },
@@ -7821,7 +7820,7 @@
         "top_k": null,
         "top_p": null
       },
-      "description": "Kimi K3 is a 2.8T parameter open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at...",
+      "description": "Kimi K3 is an ultra-large-scale, open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at navigating...",
       "expiration_date": null,
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
@@ -12578,7 +12577,6 @@
         "include_reasoning",
         "logit_bias",
         "logprobs",
-        "max_completion_tokens",
         "max_tokens",
         "min_p",
         "prediction",
@@ -17764,7 +17762,7 @@
         "top_p": null
       },
       "description": "GLM-4.5V is a vision-language foundation model for multimodal agent applications. Built on a Mixture-of-Experts (MoE) architecture with 106B parameters and 12B activated parameters, it achieves state-of-the-art results in video understanding,...",
-      "expiration_date": null,
+      "expiration_date": "2026-12-31",
       "id": "z-ai/glm-4.5v",
       "name": "Z.ai: GLM 4.5V",
       "pricing": {
@@ -18248,12 +18246,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000038236",
+        "completion": "0.0000029304",
         "image": null,
-        "input_cache_read": "0.00000022594",
+        "input_cache_read": "0.00000017316",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000012166",
+        "prompt": "0.0000009324",
         "request": null,
         "web_search": null
       },
