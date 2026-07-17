@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T00:01:45.145243Z",
+  "generated_at": "2026-07-17T00:31:29.373285Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3998,12 +3998,12 @@
       "id": "google/gemma-3-27b-it",
       "name": "Google: Gemma 3 27B",
       "pricing": {
-        "completion": "0.00000045",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.00000004",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -4027,9 +4027,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 110000,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": null
       }
     },
     "google/gemma-3-4b-it": {
@@ -6287,12 +6287,12 @@
       "id": "minimax/minimax-m2.7",
       "name": "MiniMax: MiniMax M2.7",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.000001",
         "image": null,
-        "input_cache_read": "0.00000006",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.00000025",
         "request": null,
         "web_search": null
       },
@@ -6318,7 +6318,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 204800,
+        "context_length": 196608,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
@@ -13689,7 +13689,7 @@
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000012",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -13717,7 +13717,7 @@
       "top_provider": {
         "context_length": 40960,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 40960
       }
     },
     "qwen/qwen3-235b-a22b": {
@@ -15394,12 +15394,12 @@
       "id": "qwen/qwen3.5-397b-a17b",
       "name": "Qwen: Qwen3.5 397B A17B",
       "pricing": {
-        "completion": "0.000003",
+        "completion": "0.00000234",
         "image": null,
-        "input_cache_read": "0.000000225",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000045",
+        "prompt": "0.00000039",
         "request": null,
         "web_search": null
       },
@@ -17992,7 +17992,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-4.7-flash-20260119",
-      "context_length": 200000,
+      "context_length": 202752,
       "created": 1768833913,
       "default_parameters": {
         "frequency_penalty": null,
@@ -18006,10 +18006,10 @@
       "pricing": {
         "completion": "0.0000004",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000605",
+        "prompt": "0.00000006",
         "request": null,
         "web_search": null
       },
@@ -18035,9 +18035,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 202752,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 16384
       }
     },
     "z-ai/glm-5": {
@@ -18247,12 +18247,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000028336",
+        "completion": "0.0000028292",
         "image": null,
-        "input_cache_read": "0.00000016744",
+        "input_cache_read": "0.00000016718",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000009016",
+        "prompt": "0.0000009002",
         "request": null,
         "web_search": null
       },
