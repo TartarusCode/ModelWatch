@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T18:01:20.936966Z",
+  "generated_at": "2026-07-17T18:31:11.868063Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -12492,6 +12492,79 @@
         "max_completion_tokens": null
       }
     },
+    "openrouter/auto-beta": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "audio",
+          "file",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file+audio+video->text+image",
+        "output_modalities": [
+          "text",
+          "image"
+        ],
+        "tokenizer": "Router"
+      },
+      "canonical_slug": "openrouter/auto-beta",
+      "context_length": 2000000,
+      "created": 1784311165,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Auto Router (Beta) is a task-aware router from OpenRouter. It classifies each request, then routes it to one of the most popular models for that task based on community spend,...",
+      "expiration_date": null,
+      "id": "openrouter/auto-beta",
+      "name": "Auto Router (Beta)",
+      "pricing": {
+        "completion": "-1",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "-1",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "prediction",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_a",
+        "top_k",
+        "top_logprobs",
+        "top_p",
+        "web_search_options"
+      ],
+      "top_provider": {
+        "context_length": null,
+        "is_moderated": false,
+        "max_completion_tokens": null
+      }
+    },
     "openrouter/bodybuilder": {
       "architecture": {
         "input_modalities": [
@@ -18135,12 +18208,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000029128",
+        "completion": "0.0000029084",
         "image": null,
-        "input_cache_read": "0.00000017212",
+        "input_cache_read": "0.00000017186",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000009268",
+        "prompt": "0.0000009254",
         "request": null,
         "web_search": null
       },
