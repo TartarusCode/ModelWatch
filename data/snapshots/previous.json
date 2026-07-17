@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T19:01:26.907755Z",
+  "generated_at": "2026-07-17T19:31:20.145376Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -4288,12 +4288,12 @@
       "id": "google/gemma-4-31b-it",
       "name": "Google: Gemma 4 31B",
       "pricing": {
-        "completion": "0.00000055",
+        "completion": "0.00000037",
         "image": null,
-        "input_cache_read": "0.00000012",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000022",
+        "prompt": "0.00000012",
         "request": null,
         "web_search": null
       },
@@ -4322,7 +4322,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 16384
       }
     },
     "google/gemma-4-31b-it:free": {
@@ -18208,12 +18208,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000028996",
+        "completion": "0.0000028952",
         "image": null,
-        "input_cache_read": "0.00000017134",
+        "input_cache_read": "0.00000017108",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000009226",
+        "prompt": "0.0000009212",
         "request": null,
         "web_search": null
       },
