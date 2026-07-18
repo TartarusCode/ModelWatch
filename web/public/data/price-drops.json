@@ -134,6 +134,21 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-07-18T21:31:03.430537Z",
+      "episode_start_per_million_usd": "0.500000",
+      "field": "input_cache_read",
+      "model_id": "x-ai/grok-4.5",
+      "new_per_million_usd": "0.300000",
+      "old_per_million_usd": "0.500000",
+      "pct_drop": 0.4,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.200000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
   "episodes": [
@@ -1471,9 +1486,24 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-07-18T21:31:03.430537Z",
+      "episode_start_per_million_usd": "0.500000",
+      "field": "input_cache_read",
+      "model_id": "x-ai/grok-4.5",
+      "new_per_million_usd": "0.300000",
+      "old_per_million_usd": "0.500000",
+      "pct_drop": 0.4,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.200000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-07-18T21:01:17.703758Z",
+  "generated_at": "2026-07-18T21:31:16.829165Z",
   "recovered_drops": [],
   "settled_drops": [],
   "thresholds": {
