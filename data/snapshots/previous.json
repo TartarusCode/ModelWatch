@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T01:01:10.563916Z",
+  "generated_at": "2026-07-18T01:31:09.948194Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -13868,12 +13868,12 @@
       "id": "qwen/qwen3-30b-a3b",
       "name": "Qwen: Qwen3 30B A3B",
       "pricing": {
-        "completion": "0.0000005",
+        "completion": "0.00000052",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000012",
+        "prompt": "0.00000013",
         "request": null,
         "web_search": null
       },
@@ -13899,9 +13899,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 40960,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 8192
       }
     },
     "qwen/qwen3-30b-a3b-instruct-2507": {
@@ -18269,12 +18269,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000028468",
+        "completion": "0.0000028424",
         "image": null,
-        "input_cache_read": "0.00000016822",
+        "input_cache_read": "0.00000016796",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000009058",
+        "prompt": "0.0000009044",
         "request": null,
         "web_search": null
       },
