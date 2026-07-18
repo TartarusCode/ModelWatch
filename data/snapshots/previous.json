@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T06:01:08.371363Z",
+  "generated_at": "2026-07-18T06:31:17.346529Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -18270,12 +18270,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000010956",
+        "completion": "0.0000010868",
         "image": null,
-        "input_cache_read": "0.00000006474",
+        "input_cache_read": "0.00000006422",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003486",
+        "prompt": "0.0000003458",
         "request": null,
         "web_search": null
       },
