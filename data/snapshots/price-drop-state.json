@@ -1381,7 +1381,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-07-19T00:01:25.072658Z",
+  "generated_at": "2026-07-19T00:31:06.852239Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -4439,7 +4439,7 @@
     },
     "google/gemma-4-26b-a4b-it": {
       "completion": {
-        "anchor": "0.33000000",
+        "anchor": "0.34000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -5241,7 +5241,7 @@
     },
     "minimax/minimax-m2": {
       "completion": {
-        "anchor": "1.02000000",
+        "anchor": "1.2000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -5251,7 +5251,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.255000000",
+        "anchor": "0.3000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -6102,11 +6102,11 @@
         "anchor": "4.000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "4.000000",
+        "pending_builds": 1,
+        "pending_price": "3.42000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.16000000",
@@ -6122,11 +6122,11 @@
         "anchor": "0.95000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.95000000",
+        "pending_builds": 1,
+        "pending_price": "0.684000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "moonshotai/kimi-k2.7-code": {
