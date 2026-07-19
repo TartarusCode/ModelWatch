@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T14:01:22.466888Z",
+  "generated_at": "2026-07-19T14:31:05.229127Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -13461,12 +13461,12 @@
       "id": "qwen/qwen3-14b",
       "name": "Qwen: Qwen3 14B",
       "pricing": {
-        "completion": "0.00000091",
+        "completion": "0.00000024",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000002275",
+        "prompt": "0.00000012",
         "request": null,
         "web_search": null
       },
@@ -13492,9 +13492,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 40960,
         "is_moderated": false,
-        "max_completion_tokens": 8192
+        "max_completion_tokens": 16384
       }
     },
     "qwen/qwen3-235b-a22b": {
@@ -17678,7 +17678,10 @@
       "created": 1766378014,
       "default_parameters": {
         "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
         "temperature": 1,
+        "top_k": null,
         "top_p": 0.95
       },
       "description": "GLM-4.7 is Z.ai’s latest flagship model, featuring upgrades in two key areas: enhanced programming capabilities and more stable multi-step reasoning/execution. It demonstrates significant improvements in executing complex agent tasks while...",
@@ -17990,12 +17993,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000007964",
+        "completion": "0.000000792",
         "image": null,
-        "input_cache_read": "0.00000004706",
+        "input_cache_read": "0.0000000468",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000002534",
+        "prompt": "0.000000252",
         "request": null,
         "web_search": null
       },
