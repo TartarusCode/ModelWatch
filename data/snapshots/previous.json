@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T13:31:10.891972Z",
+  "generated_at": "2026-07-20T14:01:19.862478Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -5165,6 +5165,57 @@
         "context_length": 8000,
         "is_moderated": false,
         "max_completion_tokens": 2000
+      }
+    },
+    "meituan/longcat-2.0": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "meituan/longcat-2.0-20260720",
+      "context_length": 1048756,
+      "created": 1784554658,
+      "default_parameters": {},
+      "description": "LongCat 2.0 is a sparse mixture-of-experts language model from Meituan, with 48B active parameters out of 1.6T total. It is suited for coding, repository-level changes, long-horizon problem solving, and agentic...",
+      "expiration_date": null,
+      "id": "meituan/longcat-2.0",
+      "name": "Meituan: LongCat 2.0",
+      "pricing": {
+        "completion": "0.0000012",
+        "image": null,
+        "input_cache_read": "0.000000006",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000003",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048756,
+        "is_moderated": false,
+        "max_completion_tokens": 262144
       }
     },
     "meta-llama/llama-3.1-70b-instruct": {
@@ -18003,12 +18054,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000030492",
+        "completion": "0.0000030448",
         "image": null,
-        "input_cache_read": "0.00000018018",
+        "input_cache_read": "0.00000017992",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000009702",
+        "prompt": "0.0000009688",
         "request": null,
         "web_search": null
       },
