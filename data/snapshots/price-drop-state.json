@@ -1441,7 +1441,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-07-19T23:31:23.431134Z",
+  "generated_at": "2026-07-20T02:23:57.625363Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -9527,7 +9527,7 @@
     },
     "qwen/qwen3-235b-a22b-thinking-2507": {
       "completion": {
-        "anchor": "1.495000000",
+        "anchor": "3.000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -9537,7 +9537,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.1495000000",
+        "anchor": "0.3000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -11037,6 +11037,38 @@
         "status": "idle"
       }
     },
+    "thinkingmachines/inkling": {
+      "completion": {
+        "anchor": "4.05000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_read": {
+        "anchor": "0.17000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt": {
+        "anchor": "1.000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      }
+    },
     "undi95/remm-slerp-l2-13b": {
       "completion": {
         "anchor": "0.65000000",
@@ -11616,14 +11648,14 @@
         "anchor": "3.15000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "3.15000000",
+        "pending_builds": 1,
+        "pending_price": "2.55000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.19000000",
+        "anchor": "0.2000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
