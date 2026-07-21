@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T00:01:17.916474Z",
+  "generated_at": "2026-07-21T00:31:05.987186Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -2779,12 +2779,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash",
       "pricing": {
-        "completion": "0.000000196",
+        "completion": "0.0000001876",
         "image": null,
-        "input_cache_read": "0.0000000196",
+        "input_cache_read": "0.00000001876",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000098",
+        "prompt": "0.0000000938",
         "request": null,
         "web_search": null
       },
@@ -5933,12 +5933,12 @@
       "id": "minimax/minimax-m2",
       "name": "MiniMax: MiniMax M2",
       "pricing": {
-        "completion": "0.00000102",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000255",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -14399,12 +14399,12 @@
       "id": "qwen/qwen3-next-80b-a3b-instruct",
       "name": "Qwen: Qwen3 Next 80B A3B Instruct",
       "pricing": {
-        "completion": "0.0000011",
+        "completion": "0.00000078",
         "image": null,
-        "input_cache_read": "0.00000007",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.0000000975",
         "request": null,
         "web_search": null
       },
@@ -14428,9 +14428,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 32768
       }
     },
     "qwen/qwen3-next-80b-a3b-thinking": {
@@ -16518,66 +16518,6 @@
         "max_completion_tokens": null
       }
     },
-    "tencent/hy3:free": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "tencent/hy3-20260706",
-      "context_length": 262144,
-      "created": 1783344048,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": 0.9,
-        "top_k": null,
-        "top_p": 1
-      },
-      "description": "Hy3 is a 295B-parameter Mixture-of-Experts model from Tencent (21B active, 192 experts with top-8 routing) built for reasoning, agentic workflows, and real-world production use. It supports a configurable reasoning effort:...",
-      "expiration_date": "2026-07-21",
-      "id": "tencent/hy3:free",
-      "name": "Tencent: Hy3 (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "reasoning_effort",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 262144
-      }
-    },
     "thedrummer/cydonia-24b-v4.1": {
       "architecture": {
         "input_modalities": [
@@ -18057,12 +17997,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000030756",
+        "completion": "0.0000030668",
         "image": null,
-        "input_cache_read": "0.00000018174",
+        "input_cache_read": "0.00000018122",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000009786",
+        "prompt": "0.0000009758",
         "request": null,
         "web_search": null
       },
