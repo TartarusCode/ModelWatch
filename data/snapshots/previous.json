@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T15:31:10.711726Z",
+  "generated_at": "2026-07-21T16:01:31.106770Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3821,6 +3821,126 @@
         "response_format",
         "seed",
         "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 65536
+      }
+    },
+    "google/gemini-3.5-flash-lite": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file+audio+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Gemini"
+      },
+      "canonical_slug": "google/gemini-3.5-flash-lite-20260721",
+      "context_length": 1048576,
+      "created": 1784646726,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Gemini 3.5 Flash-Lite is a high-efficiency model from Google with upgraded agentic capabilities. It is suited for subagents that execute focused tasks within complex, multi-agent workflows.",
+      "expiration_date": null,
+      "id": "google/gemini-3.5-flash-lite",
+      "name": "Google: Gemini 3.5 Flash-Lite",
+      "pricing": {
+        "completion": "0.0000025",
+        "image": "0.0000003",
+        "input_cache_read": "0.00000003",
+        "input_cache_write": "0.00000008333333333333334",
+        "internal_reasoning": "0.0000025",
+        "prompt": "0.0000003",
+        "request": null,
+        "web_search": "0.014"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 65536
+      }
+    },
+    "google/gemini-3.6-flash": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file+audio+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Gemini"
+      },
+      "canonical_slug": "google/gemini-3.6-flash-20260721",
+      "context_length": 1048576,
+      "created": 1784646733,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Gemini 3.6 Flash is a high-efficiency model from Google for coding, agentic workflows, and web and app development. It is designed to produce polished outputs with fewer unnecessary edits and...",
+      "expiration_date": null,
+      "id": "google/gemini-3.6-flash",
+      "name": "Google: Gemini 3.6 Flash",
+      "pricing": {
+        "completion": "0.0000075",
+        "image": "0.0000015",
+        "input_cache_read": "0.00000015",
+        "input_cache_write": "0.00000008333333333333334",
+        "internal_reasoning": "0.0000075",
+        "prompt": "0.0000015",
+        "request": null,
+        "web_search": "0.014"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
         "structured_outputs",
         "temperature",
         "tool_choice",
@@ -17997,12 +18117,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000025476",
+        "completion": "0.0000025388",
         "image": null,
-        "input_cache_read": "0.00000015054",
+        "input_cache_read": "0.00000015002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000008106",
+        "prompt": "0.0000008078",
         "request": null,
         "web_search": null
       },
