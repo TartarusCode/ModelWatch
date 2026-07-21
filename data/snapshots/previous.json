@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T18:01:22.742309Z",
+  "generated_at": "2026-07-21T18:31:14.439228Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -535,7 +535,7 @@
         "tokenizer": "Qwen"
       },
       "canonical_slug": "anthracite-org/magnum-v4-72b",
-      "context_length": 32768,
+      "context_length": 16384,
       "created": 1729555200,
       "default_parameters": {},
       "description": "This is a series of models designed to replicate the prose quality of the Claude 3 models, specifically Sonnet(https://openrouter.ai/anthropic/claude-3.5-sonnet) and Opus(https://openrouter.ai/anthropic/claude-3-opus).\n\nThe model is fine-tuned on top of [Qwen2.5 72B](https://openrouter.ai/qwen/qwen-2.5-72b-instruct).",
@@ -1565,7 +1565,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "baidu/ernie-4.5-vl-424b-a47b",
-      "context_length": 131072,
+      "context_length": 123000,
       "created": 1751300903,
       "default_parameters": {},
       "description": "ERNIE-4.5-VL-424B-A47B is a multimodal Mixture-of-Experts (MoE) model from Baidu’s ERNIE 4.5 series, featuring 424B total parameters with 47B active per token. It is trained jointly on text and image data...",
@@ -2246,7 +2246,7 @@
         "tokenizer": "DeepSeek"
       },
       "canonical_slug": "deepseek/deepseek-chat-v3",
-      "context_length": 131072,
+      "context_length": 163840,
       "created": 1735241320,
       "default_parameters": {},
       "description": "DeepSeek-V3 is the latest model from the DeepSeek team, building upon the instruction following and coding abilities of the previous versions. Pre-trained on nearly 15 trillion tokens, the reported evaluations...",
@@ -2531,7 +2531,7 @@
         "tokenizer": "Llama3"
       },
       "canonical_slug": "deepseek/deepseek-r1-distill-llama-70b",
-      "context_length": 128000,
+      "context_length": 8192,
       "created": 1737663169,
       "default_parameters": {},
       "description": "DeepSeek R1 Distill Llama 70B is a distilled large language model based on [Llama-3.3-70B-Instruct](/meta-llama/llama-3.3-70b-instruct), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). The model combines advanced distillation techniques to achieve high performance across...",
@@ -2580,7 +2580,7 @@
         "tokenizer": "DeepSeek"
       },
       "canonical_slug": "deepseek/deepseek-v3.1-terminus",
-      "context_length": 131072,
+      "context_length": 163840,
       "created": 1758548275,
       "default_parameters": {
         "frequency_penalty": null,
@@ -3291,7 +3291,7 @@
         "tokenizer": "Gemini"
       },
       "canonical_slug": "google/gemini-3-pro-image-20260528",
-      "context_length": 65536,
+      "context_length": 131072,
       "created": 1781754054,
       "default_parameters": {},
       "description": "Nano Banana Pro is Google’s most advanced image-generation and editing model, built on Gemini 3 Pro. It extends the original Nano Banana with significantly improved multimodal reasoning, real-world grounding, and...",
@@ -3480,9 +3480,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 65536,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 65536
       }
     },
     "google/gemini-3.1-flash-lite": {
@@ -3732,7 +3732,7 @@
         "tokenizer": "Gemini"
       },
       "canonical_slug": "google/gemini-3.1-pro-preview-customtools-20260219",
-      "context_length": 1048756,
+      "context_length": 1048576,
       "created": 1772045923,
       "default_parameters": {
         "frequency_penalty": null,
@@ -4069,7 +4069,7 @@
         "tokenizer": "Gemini"
       },
       "canonical_slug": "google/gemma-3-27b-it",
-      "context_length": 131072,
+      "context_length": 262144,
       "created": 1741756359,
       "default_parameters": {
         "frequency_penalty": null,
@@ -4581,7 +4581,7 @@
         "tokenizer": "Llama2"
       },
       "canonical_slug": "gryphe/mythomax-l2-13b",
-      "context_length": 4096,
+      "context_length": 8192,
       "created": 1688256000,
       "default_parameters": {},
       "description": "One of the highest performing and most popular fine-tunes of Llama 2 13B, with rich descriptions and roleplay. #merge",
@@ -5127,7 +5127,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "kwaipilot/kat-coder-pro-v2-20260327",
-      "context_length": 256000,
+      "context_length": 262144,
       "created": 1774649310,
       "default_parameters": {
         "frequency_penalty": null,
@@ -5463,7 +5463,7 @@
         "tokenizer": "Llama3"
       },
       "canonical_slug": "meta-llama/llama-3.2-1b-instruct",
-      "context_length": 131072,
+      "context_length": 60000,
       "created": 1727222400,
       "default_parameters": {},
       "description": "Llama 3.2 1B is a 1-billion-parameter language model focused on efficiently performing natural language tasks, such as summarization, dialogue, and multilingual text analysis. Its smaller size allows it to operate...",
@@ -5676,7 +5676,7 @@
         "tokenizer": "Llama4"
       },
       "canonical_slug": "meta-llama/llama-4-scout-17b-16e-instruct",
-      "context_length": 10000000,
+      "context_length": 1310720,
       "created": 1743881519,
       "default_parameters": {},
       "description": "Llama 4 Scout 17B Instruct (16E) is a mixture-of-experts (MoE) language model developed by Meta, activating 17 billion parameters out of a total of 109B. It supports native multimodal input...",
@@ -5730,7 +5730,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "meta-llama/llama-guard-4-12b",
-      "context_length": 163840,
+      "context_length": 1048576,
       "created": 1745975193,
       "default_parameters": {},
       "description": "Llama Guard 4 is a Llama 4 Scout-derived multimodal pretrained model, fine-tuned for content safety classification. Similar to previous versions, it can be used to classify content in both LLM...",
@@ -5892,7 +5892,7 @@
         "tokenizer": "Mistral"
       },
       "canonical_slug": "microsoft/wizardlm-2-8x22b",
-      "context_length": 65536,
+      "context_length": 65535,
       "created": 1713225600,
       "default_parameters": {},
       "description": "WizardLM-2 8x22B is Microsoft AI's most advanced Wizard model. It demonstrates highly competitive performance compared to leading proprietary models, and it consistently outperforms all existing state-of-the-art opensource models. It is...",
@@ -7274,7 +7274,7 @@
         "tokenizer": "Mistral"
       },
       "canonical_slug": "mistralai/mistral-small-3.2-24b-instruct-2506",
-      "context_length": 131072,
+      "context_length": 256000,
       "created": 1750443016,
       "default_parameters": {
         "temperature": 0.3
@@ -8493,7 +8493,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "nvidia/nemotron-3-super-120b-a12b-20230311",
-      "context_length": 1000000,
+      "context_length": 262144,
       "created": 1773245239,
       "default_parameters": {
         "frequency_penalty": null,
@@ -8549,7 +8549,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-      "context_length": 1000000,
+      "context_length": 512288,
       "created": 1780551208,
       "default_parameters": {
         "frequency_penalty": null,
@@ -13211,7 +13211,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "poolside/laguna-s-2.1-20260720",
-      "context_length": 1048576,
+      "context_length": 262144,
       "created": 1784652683,
       "default_parameters": {
         "frequency_penalty": null,
@@ -13364,7 +13364,7 @@
         "tokenizer": "Qwen"
       },
       "canonical_slug": "qwen/qwen-2.5-72b-instruct",
-      "context_length": 131072,
+      "context_length": 32768,
       "created": 1726704000,
       "default_parameters": {},
       "description": "Qwen2.5 72B is the latest series of Qwen large language models. Qwen2.5 brings the following improvements upon Qwen2: - Significantly more knowledge and has greatly improved capabilities in coding and...",
@@ -13417,7 +13417,7 @@
         "tokenizer": "Qwen"
       },
       "canonical_slug": "qwen/qwen-2.5-7b-instruct",
-      "context_length": 131072,
+      "context_length": 32768,
       "created": 1729036800,
       "default_parameters": {
         "frequency_penalty": null,
@@ -13476,7 +13476,7 @@
         "tokenizer": "Qwen"
       },
       "canonical_slug": "qwen/qwen-2.5-coder-32b-instruct",
-      "context_length": 128000,
+      "context_length": 32768,
       "created": 1731368400,
       "default_parameters": {},
       "description": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). Qwen2.5-Coder brings the following improvements upon CodeQwen1.5: - Significantly improvements in **code generation**, **code reasoning**...",
@@ -13681,7 +13681,7 @@
         "tokenizer": "Qwen"
       },
       "canonical_slug": "qwen/qwen2.5-vl-72b-instruct",
-      "context_length": 131072,
+      "context_length": 128000,
       "created": 1738410311,
       "default_parameters": {},
       "description": "Qwen2.5-VL is proficient in recognizing common objects such as flowers, birds, fish, and insects. It is also highly capable of analyzing texts, charts, icons, graphics, and layouts within images.",
@@ -13733,7 +13733,7 @@
         "tokenizer": "Qwen3"
       },
       "canonical_slug": "qwen/qwen3-14b-04-28",
-      "context_length": 131702,
+      "context_length": 131072,
       "created": 1745876478,
       "default_parameters": {},
       "description": "Qwen3-14B is a dense 14.8B parameter causal language model from the Qwen3 series, designed for both complex reasoning and efficient dialogue. It supports seamless switching between a \"thinking\" mode for...",
@@ -14069,7 +14069,7 @@
         "tokenizer": "Qwen3"
       },
       "canonical_slug": "qwen/qwen3-30b-a3b-thinking-2507",
-      "context_length": 131072,
+      "context_length": 81920,
       "created": 1756399192,
       "default_parameters": {},
       "description": "Qwen3-30B-A3B-Thinking-2507 is a 30B parameter Mixture-of-Experts reasoning model optimized for complex tasks requiring extended multi-step thinking. The model is designed specifically for “thinking mode,” where internal reasoning traces are separated...",
@@ -14229,7 +14229,7 @@
         "tokenizer": "Qwen3"
       },
       "canonical_slug": "qwen/qwen3-coder-480b-a35b-07-25",
-      "context_length": 1048576,
+      "context_length": 262144,
       "created": 1753230546,
       "default_parameters": {},
       "description": "Qwen3-Coder-480B-A35B-Instruct is a Mixture-of-Experts (MoE) code generation model developed by the Qwen team. It is optimized for agentic coding tasks such as function calling, tool use, and long-context reasoning over...",
@@ -14284,7 +14284,7 @@
         "tokenizer": "Qwen3"
       },
       "canonical_slug": "qwen/qwen3-coder-30b-a3b-instruct",
-      "context_length": 160000,
+      "context_length": 262144,
       "created": 1753972379,
       "default_parameters": {},
       "description": "Qwen3-Coder-30B-A3B-Instruct is a 30.5B parameter Mixture-of-Experts (MoE) model with 128 experts (8 active per forward pass), designed for advanced code generation, repository-scale understanding, and agentic tool use. Built on the...",
@@ -14723,7 +14723,7 @@
         "tokenizer": "Qwen3"
       },
       "canonical_slug": "qwen/qwen3-vl-235b-a22b-instruct",
-      "context_length": 131072,
+      "context_length": 262144,
       "created": 1758668687,
       "default_parameters": {
         "frequency_penalty": null,
@@ -14909,7 +14909,7 @@
         "tokenizer": "Qwen3"
       },
       "canonical_slug": "qwen/qwen3-vl-30b-a3b-thinking",
-      "context_length": 131072,
+      "context_length": 262144,
       "created": 1759794479,
       "default_parameters": {
         "frequency_penalty": null,
@@ -14970,7 +14970,7 @@
         "tokenizer": "Qwen"
       },
       "canonical_slug": "qwen/qwen3-vl-32b-instruct",
-      "context_length": 262144,
+      "context_length": 131072,
       "created": 1761231332,
       "default_parameters": {
         "frequency_penalty": null,
@@ -15027,7 +15027,7 @@
         "tokenizer": "Qwen3"
       },
       "canonical_slug": "qwen/qwen3-vl-8b-instruct",
-      "context_length": 256000,
+      "context_length": 262144,
       "created": 1760463308,
       "default_parameters": {
         "frequency_penalty": null,
@@ -15086,7 +15086,7 @@
         "tokenizer": "Qwen3"
       },
       "canonical_slug": "qwen/qwen3-vl-8b-thinking",
-      "context_length": 256000,
+      "context_length": 131072,
       "created": 1760463746,
       "default_parameters": {
         "temperature": 1,
@@ -16514,7 +16514,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "stepfun/step-3.7-flash-20260528",
-      "context_length": 256000,
+      "context_length": 262144,
       "created": 1779985069,
       "default_parameters": {
         "frequency_penalty": null,
@@ -16962,7 +16962,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "thinkingmachines/inkling-20260715",
-      "context_length": 1048576,
+      "context_length": 524288,
       "created": 1784325956,
       "default_parameters": {
         "frequency_penalty": null,
@@ -17484,7 +17484,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "xiaomi/mimo-v2.5-20260422",
-      "context_length": 1048576,
+      "context_length": 1050000,
       "created": 1776874269,
       "default_parameters": {
         "frequency_penalty": null,
@@ -17548,7 +17548,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "xiaomi/mimo-v2.5-pro-20260422",
-      "context_length": 1048576,
+      "context_length": 1050000,
       "created": 1776874273,
       "default_parameters": {
         "frequency_penalty": null,
@@ -17775,7 +17775,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-4.6",
-      "context_length": 202752,
+      "context_length": 204800,
       "created": 1759235576,
       "default_parameters": {
         "frequency_penalty": null,
@@ -17895,7 +17895,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-4.7-20251222",
-      "context_length": 202752,
+      "context_length": 204800,
       "created": 1766378014,
       "default_parameters": {
         "frequency_penalty": null,
@@ -17959,7 +17959,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-4.7-flash-20260119",
-      "context_length": 200000,
+      "context_length": 202752,
       "created": 1768833913,
       "default_parameters": {
         "frequency_penalty": null,
@@ -18135,7 +18135,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-5.1-20260406",
-      "context_length": 202752,
+      "context_length": 204800,
       "created": 1775578025,
       "default_parameters": {
         "frequency_penalty": null,
@@ -18214,12 +18214,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.000002508",
+        "completion": "0.0000024948",
         "image": null,
-        "input_cache_read": "0.0000001482",
+        "input_cache_read": "0.00000014742",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000798",
+        "prompt": "0.0000007938",
         "request": null,
         "web_search": null
       },
