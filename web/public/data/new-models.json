@@ -1,6 +1,118 @@
 {
-  "generated_at": "2026-07-22T21:31:16.345056Z",
+  "generated_at": "2026-07-22T22:01:53.561323Z",
   "models": [
+    {
+      "canonical_slug": "openai/gpt-4.1-mini-2025-04-14",
+      "created": 1744651381,
+      "detected_at": "2026-07-22T22:01:14.326026Z",
+      "model_id": "openai/gpt-4.1-mini:batch",
+      "name": "OpenAI: GPT-4.1 Mini (batch)"
+    },
+    {
+      "canonical_slug": "openai/gpt-4.1-nano-2025-04-14",
+      "created": 1744651369,
+      "detected_at": "2026-07-22T22:01:14.326026Z",
+      "model_id": "openai/gpt-4.1-nano:batch",
+      "name": "OpenAI: GPT-4.1 Nano (batch)"
+    },
+    {
+      "canonical_slug": "openai/gpt-4.1-2025-04-14",
+      "created": 1744651385,
+      "detected_at": "2026-07-22T22:01:14.326026Z",
+      "model_id": "openai/gpt-4.1:batch",
+      "name": "OpenAI: GPT-4.1 (batch)"
+    },
+    {
+      "canonical_slug": "openai/gpt-4o-mini",
+      "created": 1721260800,
+      "detected_at": "2026-07-22T22:01:14.326026Z",
+      "model_id": "openai/gpt-4o-mini:batch",
+      "name": "OpenAI: GPT-4o-mini (batch)"
+    },
+    {
+      "canonical_slug": "openai/gpt-4o",
+      "created": 1715558400,
+      "detected_at": "2026-07-22T22:01:14.326026Z",
+      "model_id": "openai/gpt-4o:batch",
+      "name": "OpenAI: GPT-4o (batch)"
+    },
+    {
+      "canonical_slug": "openai/gpt-5-mini-2025-08-07",
+      "created": 1754587407,
+      "detected_at": "2026-07-22T22:01:14.326026Z",
+      "model_id": "openai/gpt-5-mini:batch",
+      "name": "OpenAI: GPT-5 Mini (batch)"
+    },
+    {
+      "canonical_slug": "openai/gpt-5.1-20251113",
+      "created": 1763060305,
+      "detected_at": "2026-07-22T22:01:14.326026Z",
+      "model_id": "openai/gpt-5.1:batch",
+      "name": "OpenAI: GPT-5.1 (batch)"
+    },
+    {
+      "canonical_slug": "openai/gpt-5.2-pro-20251211",
+      "created": 1765389780,
+      "detected_at": "2026-07-22T22:01:14.326026Z",
+      "model_id": "openai/gpt-5.2-pro:batch",
+      "name": "OpenAI: GPT-5.2 Pro (batch)"
+    },
+    {
+      "canonical_slug": "openai/gpt-5.2-20251211",
+      "created": 1765389775,
+      "detected_at": "2026-07-22T22:01:14.326026Z",
+      "model_id": "openai/gpt-5.2:batch",
+      "name": "OpenAI: GPT-5.2 (batch)"
+    },
+    {
+      "canonical_slug": "openai/gpt-5.4-mini-20260317",
+      "created": 1773748178,
+      "detected_at": "2026-07-22T22:01:14.326026Z",
+      "model_id": "openai/gpt-5.4-mini:batch",
+      "name": "OpenAI: GPT-5.4 Mini (batch)"
+    },
+    {
+      "canonical_slug": "openai/gpt-5.4-nano-20260317",
+      "created": 1773748187,
+      "detected_at": "2026-07-22T22:01:14.326026Z",
+      "model_id": "openai/gpt-5.4-nano:batch",
+      "name": "OpenAI: GPT-5.4 Nano (batch)"
+    },
+    {
+      "canonical_slug": "openai/gpt-5.4-pro-20260305",
+      "created": 1772734366,
+      "detected_at": "2026-07-22T22:01:14.326026Z",
+      "model_id": "openai/gpt-5.4-pro:batch",
+      "name": "OpenAI: GPT-5.4 Pro (batch)"
+    },
+    {
+      "canonical_slug": "openai/gpt-5.4-20260305",
+      "created": 1772734352,
+      "detected_at": "2026-07-22T22:01:14.326026Z",
+      "model_id": "openai/gpt-5.4:batch",
+      "name": "OpenAI: GPT-5.4 (batch)"
+    },
+    {
+      "canonical_slug": "openai/gpt-5.5-pro-20260423",
+      "created": 1777051896,
+      "detected_at": "2026-07-22T22:01:14.326026Z",
+      "model_id": "openai/gpt-5.5-pro:batch",
+      "name": "OpenAI: GPT-5.5 Pro (batch)"
+    },
+    {
+      "canonical_slug": "openai/gpt-5.5-20260423",
+      "created": 1777051893,
+      "detected_at": "2026-07-22T22:01:14.326026Z",
+      "model_id": "openai/gpt-5.5:batch",
+      "name": "OpenAI: GPT-5.5 (batch)"
+    },
+    {
+      "canonical_slug": "openai/gpt-5-2025-08-07",
+      "created": 1754587413,
+      "detected_at": "2026-07-22T22:01:14.326026Z",
+      "model_id": "openai/gpt-5:batch",
+      "name": "OpenAI: GPT-5 (batch)"
+    },
     {
       "canonical_slug": "openai/gpt-5-nano-2025-08-07",
       "created": 1754587402,
