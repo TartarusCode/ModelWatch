@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T22:01:53.561323Z",
+  "generated_at": "2026-07-22T22:31:16.560938Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -680,6 +680,63 @@
         "max_completion_tokens": 128000
       }
     },
+    "anthropic/claude-fable-5:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude"
+      },
+      "canonical_slug": "anthropic/claude-5-fable-20260609",
+      "context_length": 1000000,
+      "created": 1781007515,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Claude Fable 5 is a Mythos-class model from Anthropic, built for autonomous knowledge work and coding. It supports text, image, and file inputs with text output, with reasoning support and...",
+      "expiration_date": null,
+      "id": "anthropic/claude-fable-5:batch",
+      "name": "Anthropic: Claude Fable 5 (batch)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": true,
+        "max_completion_tokens": 128000
+      }
+    },
     "anthropic/claude-haiku-4.5": {
       "architecture": {
         "input_modalities": [
@@ -853,6 +910,62 @@
         "max_completion_tokens": 32000
       }
     },
+    "anthropic/claude-opus-4.1:batch": {
+      "architecture": {
+        "input_modalities": [
+          "image",
+          "text",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude"
+      },
+      "canonical_slug": "anthropic/claude-4.1-opus-20250805",
+      "context_length": 200000,
+      "created": 1754411591,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Claude Opus 4.1 is an updated version of Anthropic’s flagship model, offering improved performance in coding, reasoning, and agentic tasks. It achieves 74.5% on SWE-bench Verified and shows notable gains...",
+      "expiration_date": null,
+      "id": "anthropic/claude-opus-4.1:batch",
+      "name": "Anthropic: Claude Opus 4.1 (batch)",
+      "pricing": {
+        "completion": "0.0000375",
+        "image": null,
+        "input_cache_read": "0.00000075",
+        "input_cache_write": "0.000009375",
+        "internal_reasoning": null,
+        "prompt": "0.0000075",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools"
+      ],
+      "top_provider": {
+        "context_length": 200000,
+        "is_moderated": true,
+        "max_completion_tokens": 32000
+      }
+    },
     "anthropic/claude-opus-4.5": {
       "architecture": {
         "input_modalities": [
@@ -904,6 +1017,63 @@
         "tool_choice",
         "tools",
         "top_k",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 200000,
+        "is_moderated": true,
+        "max_completion_tokens": 64000
+      }
+    },
+    "anthropic/claude-opus-4.5:batch": {
+      "architecture": {
+        "input_modalities": [
+          "file",
+          "image",
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude"
+      },
+      "canonical_slug": "anthropic/claude-4.5-opus-20251124",
+      "context_length": 200000,
+      "created": 1764010580,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Claude Opus 4.5 is Anthropic’s frontier reasoning model optimized for complex software engineering, agentic workflows, and long-horizon computer use. It offers strong multimodal capabilities, competitive performance across real-world coding and...",
+      "expiration_date": null,
+      "id": "anthropic/claude-opus-4.5:batch",
+      "name": "Anthropic: Claude Opus 4.5 (batch)",
+      "pricing": {
+        "completion": "0.0000125",
+        "image": null,
+        "input_cache_read": "0.00000025",
+        "input_cache_write": "0.000003125",
+        "internal_reasoning": null,
+        "prompt": "0.0000025",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
         "verbosity"
       ],
       "top_provider": {
@@ -964,6 +1134,65 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_p",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": true,
+        "max_completion_tokens": 128000
+      }
+    },
+    "anthropic/claude-opus-4.6:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude"
+      },
+      "canonical_slug": "anthropic/claude-4.6-opus-20260205",
+      "context_length": 1000000,
+      "created": 1770219050,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Opus 4.6 is Anthropic’s strongest model for coding and long-running professional tasks. It is built for agents that operate across entire workflows rather than single prompts, making it especially effective...",
+      "expiration_date": null,
+      "id": "anthropic/claude-opus-4.6:batch",
+      "name": "Anthropic: Claude Opus 4.6 (batch)",
+      "pricing": {
+        "completion": "0.0000125",
+        "image": null,
+        "input_cache_read": "0.00000025",
+        "input_cache_write": "0.000003125",
+        "internal_reasoning": null,
+        "prompt": "0.0000025",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
         "top_p",
         "verbosity"
       ],
@@ -1088,6 +1317,63 @@
         "max_completion_tokens": 128000
       }
     },
+    "anthropic/claude-opus-4.7:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude"
+      },
+      "canonical_slug": "anthropic/claude-4.7-opus-20260416",
+      "context_length": 1000000,
+      "created": 1776351100,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Opus 4.7 is the next generation of Anthropic's Opus family, built for long-running, asynchronous agents. Building on the coding and agentic strengths of Opus 4.6, it delivers stronger performance on...",
+      "expiration_date": null,
+      "id": "anthropic/claude-opus-4.7:batch",
+      "name": "Anthropic: Claude Opus 4.7 (batch)",
+      "pricing": {
+        "completion": "0.0000125",
+        "image": null,
+        "input_cache_read": "0.00000025",
+        "input_cache_write": "0.000003125",
+        "internal_reasoning": null,
+        "prompt": "0.0000025",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": true,
+        "max_completion_tokens": 128000
+      }
+    },
     "anthropic/claude-opus-4.8": {
       "architecture": {
         "input_modalities": [
@@ -1183,6 +1469,63 @@
         "input_cache_write": "0.0000125",
         "internal_reasoning": null,
         "prompt": "0.00001",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": true,
+        "max_completion_tokens": 128000
+      }
+    },
+    "anthropic/claude-opus-4.8:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude"
+      },
+      "canonical_slug": "anthropic/claude-4.8-opus-20260528",
+      "context_length": 1000000,
+      "created": 1779905091,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Claude Opus 4.8 is Anthropic's most capable generally available model in the Opus family. It supports text, image, and file inputs with text output, with reasoning support and a 1M-token...",
+      "expiration_date": null,
+      "id": "anthropic/claude-opus-4.8:batch",
+      "name": "Anthropic: Claude Opus 4.8 (batch)",
+      "pricing": {
+        "completion": "0.0000125",
+        "image": null,
+        "input_cache_read": "0.00000025",
+        "input_cache_write": "0.000003125",
+        "internal_reasoning": null,
+        "prompt": "0.0000025",
         "request": null,
         "web_search": "0.01"
       },
@@ -9018,6 +9361,58 @@
         "max_completion_tokens": 4096
       }
     },
+    "openai/gpt-3.5-turbo:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT"
+      },
+      "canonical_slug": "openai/gpt-3.5-turbo",
+      "context_length": 16385,
+      "created": 1685232000,
+      "default_parameters": {},
+      "description": "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021.",
+      "expiration_date": null,
+      "id": "openai/gpt-3.5-turbo:batch",
+      "name": "OpenAI: GPT-3.5 Turbo (batch)",
+      "pricing": {
+        "completion": "0.00000075",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000025",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 16385,
+        "is_moderated": true,
+        "max_completion_tokens": 4096
+      }
+    },
     "openai/gpt-4": {
       "architecture": {
         "input_modalities": [
@@ -9153,6 +9548,59 @@
         "prompt": "0.00001",
         "request": null,
         "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 128000,
+        "is_moderated": true,
+        "max_completion_tokens": 4096
+      }
+    },
+    "openai/gpt-4-turbo:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT"
+      },
+      "canonical_slug": "openai/gpt-4-turbo",
+      "context_length": 128000,
+      "created": 1712620800,
+      "default_parameters": {},
+      "description": "The latest GPT-4 Turbo model with vision capabilities. Vision requests can now use JSON mode and function calling.\n\nTraining data: up to December 2023.",
+      "expiration_date": null,
+      "id": "openai/gpt-4-turbo:batch",
+      "name": "OpenAI: GPT-4 Turbo (batch)",
+      "pricing": {
+        "completion": "0.000015",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000005",
+        "request": null,
+        "web_search": "0.01"
       },
       "supported_parameters": [
         "frequency_penalty",
@@ -19141,12 +19589,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000024596",
+        "completion": "0.0000024508",
         "image": null,
-        "input_cache_read": "0.00000014534",
+        "input_cache_read": "0.00000014482",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007826",
+        "prompt": "0.0000007798",
         "request": null,
         "web_search": null
       },
