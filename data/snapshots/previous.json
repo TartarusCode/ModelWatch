@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T12:31:14.140026Z",
+  "generated_at": "2026-07-22T13:01:25.704804Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3860,10 +3860,10 @@
         "top_k": null,
         "top_p": null
       },
-      "description": "Gemini 3.5 Flash-Lite is a high-efficiency model from Google with upgraded agentic capabilities. It is suited for subagents that execute focused tasks within complex, multi-agent workflows.",
+      "description": "Gemini 3.5 Flash Lite is a high-efficiency model from Google with upgraded agentic capabilities. It is suited for subagents that execute focused tasks within complex, multi-agent workflows.",
       "expiration_date": null,
       "id": "google/gemini-3.5-flash-lite",
-      "name": "Google: Gemini 3.5 Flash-Lite",
+      "name": "Google: Gemini 3.5 Flash Lite",
       "pricing": {
         "completion": "0.0000025",
         "image": "0.0000003",
@@ -18216,12 +18216,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000025916",
+        "completion": "0.0000025784",
         "image": null,
-        "input_cache_read": "0.00000015314",
+        "input_cache_read": "0.00000015236",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000008246",
+        "prompt": "0.0000008204",
         "request": null,
         "web_search": null
       },
