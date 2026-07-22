@@ -1241,9 +1241,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.108000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-07-22T06:31:07.103408Z",
+      "settled_per_million_usd": "0.095000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-07-15T06:01:15.258244Z",
@@ -1256,9 +1256,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.800000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-07-22T06:31:07.103408Z",
+      "settled_per_million_usd": "1.000000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-07-17T01:00:59.455708Z",
@@ -1561,7 +1561,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-07-22T06:01:24.583898Z",
+  "generated_at": "2026-07-22T06:31:19.301262Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -6268,13 +6268,13 @@
       },
       "input_cache_read": {
         "anchor": "0.095000000",
-        "confirmed_at": "2026-07-15T06:01:15.258244Z",
-        "confirmed_price": "0.095000000",
-        "episode_start_price": "0.203000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "prompt": {
         "anchor": "0.57000000",
@@ -9790,13 +9790,13 @@
     "qwen/qwen3-coder": {
       "completion": {
         "anchor": "1.000000",
-        "confirmed_at": "2026-07-15T06:01:15.258244Z",
-        "confirmed_price": "1.000000",
-        "episode_start_price": "1.8000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.1000000",
