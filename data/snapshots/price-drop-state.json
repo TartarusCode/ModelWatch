@@ -1604,9 +1604,39 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-07-23T18:01:11.913588Z",
+      "episode_start_per_million_usd": "0.260000",
+      "field": "prompt",
+      "model_id": "qwen/qwen3.5-27b",
+      "new_per_million_usd": "0.195000",
+      "old_per_million_usd": "0.260000",
+      "pct_drop": 0.25,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.065000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-07-23T18:01:11.913588Z",
+      "episode_start_per_million_usd": "2.600000",
+      "field": "completion",
+      "model_id": "qwen/qwen3.5-27b",
+      "new_per_million_usd": "1.560000",
+      "old_per_million_usd": "2.600000",
+      "pct_drop": 0.4,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "1.040000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-07-23T17:31:25.451168Z",
+  "generated_at": "2026-07-23T18:01:27.656584Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -10484,24 +10514,24 @@
     },
     "qwen/qwen3.5-27b": {
       "completion": {
-        "anchor": "2.6000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "1.56000000",
+        "confirmed_at": "2026-07-23T18:01:11.913588Z",
+        "confirmed_price": "1.56000000",
         "episode_start_price": "2.6000000",
-        "pending_builds": 1,
-        "pending_price": "1.56000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "prompt": {
-        "anchor": "0.26000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.195000000",
+        "confirmed_at": "2026-07-23T18:01:11.913588Z",
+        "confirmed_price": "0.195000000",
         "episode_start_price": "0.26000000",
-        "pending_builds": 1,
-        "pending_price": "0.195000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "qwen/qwen3.5-35b-a3b": {

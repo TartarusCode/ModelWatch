@@ -196,6 +196,36 @@
       "status": "active"
     },
     {
+      "detected_at": "2026-07-23T18:01:11.913588Z",
+      "episode_start_per_million_usd": "2.600000",
+      "field": "completion",
+      "model_id": "qwen/qwen3.5-27b",
+      "new_per_million_usd": "1.560000",
+      "old_per_million_usd": "2.600000",
+      "pct_drop": 0.4,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "1.040000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-07-23T18:01:11.913588Z",
+      "episode_start_per_million_usd": "0.260000",
+      "field": "prompt",
+      "model_id": "qwen/qwen3.5-27b",
+      "new_per_million_usd": "0.195000",
+      "old_per_million_usd": "0.260000",
+      "pct_drop": 0.25,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.065000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
       "detected_at": "2026-07-17T01:00:59.455708Z",
       "episode_start_per_million_usd": "3.000000",
       "field": "completion",
@@ -1936,9 +1966,39 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-07-23T18:01:11.913588Z",
+      "episode_start_per_million_usd": "0.260000",
+      "field": "prompt",
+      "model_id": "qwen/qwen3.5-27b",
+      "new_per_million_usd": "0.195000",
+      "old_per_million_usd": "0.260000",
+      "pct_drop": 0.25,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.065000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-07-23T18:01:11.913588Z",
+      "episode_start_per_million_usd": "2.600000",
+      "field": "completion",
+      "model_id": "qwen/qwen3.5-27b",
+      "new_per_million_usd": "1.560000",
+      "old_per_million_usd": "2.600000",
+      "pct_drop": 0.4,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "1.040000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-07-23T17:31:25.451168Z",
+  "generated_at": "2026-07-23T18:01:27.656584Z",
   "recovered_drops": [
     {
       "detected_at": "2026-07-21T01:01:05.477272Z",
