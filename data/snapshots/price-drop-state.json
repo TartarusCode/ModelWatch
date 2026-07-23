@@ -1523,12 +1523,12 @@
       "new_per_million_usd": "0.780000",
       "old_per_million_usd": "1.100000",
       "pct_drop": 0.2909090909090909,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-07-23T01:01:06.749458Z",
+      "recovered_per_million_usd": "1.200000",
       "saved_per_million_usd": "0.320000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     },
     {
       "detected_at": "2026-07-21T03:01:12.190270Z",
@@ -1559,9 +1559,54 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-07-23T01:01:06.749458Z",
+      "episode_start_per_million_usd": "0.600000",
+      "field": "prompt",
+      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "new_per_million_usd": "0.500000",
+      "old_per_million_usd": "0.600000",
+      "pct_drop": 0.16666666666666666,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.100000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-07-23T01:01:06.749458Z",
+      "episode_start_per_million_usd": "3.600000",
+      "field": "completion",
+      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "new_per_million_usd": "2.200000",
+      "old_per_million_usd": "3.600000",
+      "pct_drop": 0.3888888888888889,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "1.400000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-07-23T01:01:06.749458Z",
+      "episode_start_per_million_usd": "0.200000",
+      "field": "input_cache_read",
+      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "new_per_million_usd": "0.100000",
+      "old_per_million_usd": "0.200000",
+      "pct_drop": 0.5,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.100000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-07-23T00:31:17.552977Z",
+  "generated_at": "2026-07-23T01:01:25.636839Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -6689,34 +6734,34 @@
     },
     "nvidia/nemotron-3-ultra-550b-a55b": {
       "completion": {
-        "anchor": "3.6000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "2.2000000",
+        "confirmed_at": "2026-07-23T01:01:06.749458Z",
+        "confirmed_price": "2.2000000",
         "episode_start_price": "3.6000000",
-        "pending_builds": 1,
-        "pending_price": "2.2000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.2000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.1000000",
+        "confirmed_at": "2026-07-23T01:01:06.749458Z",
+        "confirmed_price": "0.1000000",
         "episode_start_price": "0.2000000",
-        "pending_builds": 1,
-        "pending_price": "0.1000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "prompt": {
-        "anchor": "0.6000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.5000000",
+        "confirmed_at": "2026-07-23T01:01:06.749458Z",
+        "confirmed_price": "0.5000000",
         "episode_start_price": "0.6000000",
-        "pending_builds": 1,
-        "pending_price": "0.5000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "openai/gpt-3.5-turbo": {
@@ -10055,14 +10100,14 @@
     },
     "qwen/qwen3-next-80b-a3b-instruct": {
       "completion": {
-        "anchor": "0.78000000",
-        "confirmed_at": "2026-07-21T01:01:05.477272Z",
-        "confirmed_price": "0.78000000",
-        "episode_start_price": "1.1000000",
+        "anchor": "1.2000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
-        "status": "confirmed"
+        "recovery_builds": 0,
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.07000000",
