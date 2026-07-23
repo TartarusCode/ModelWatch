@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T16:01:36.728317Z",
+  "generated_at": "2026-07-23T16:32:00.274896Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -4083,12 +4083,12 @@
       "id": "google/gemma-3-27b-it",
       "name": "Google: Gemma 3 27B",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.00000045",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.00000008",
         "request": null,
         "web_search": null
       },
@@ -4112,9 +4112,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 110000,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 131072
       }
     },
     "google/gemma-3-4b-it": {
