@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T20:31:22.830678Z",
+  "generated_at": "2026-07-23T21:01:13.064329Z",
   "models": [
     {
       "canonical_slug": "inclusionai/ling-3.0-flash-20260723",
@@ -182,13 +182,6 @@
       "detected_at": "2026-07-22T22:01:14.326026Z",
       "model_id": "openai/gpt-5:batch",
       "name": "OpenAI: GPT-5 (batch)"
-    },
-    {
-      "canonical_slug": "openai/gpt-5-nano-2025-08-07",
-      "created": 1754587402,
-      "detected_at": "2026-07-22T21:01:10.384136Z",
-      "model_id": "openai/gpt-5-nano:batch",
-      "name": "OpenAI: GPT-5 Nano (batch)"
     }
   ],
   "window_hours": 24
