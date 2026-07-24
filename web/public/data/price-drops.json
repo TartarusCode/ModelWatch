@@ -61,6 +61,36 @@
       "status": "active"
     },
     {
+      "detected_at": "2026-07-24T11:01:46.334061Z",
+      "episode_start_per_million_usd": "1.200000",
+      "field": "completion",
+      "model_id": "minimax/minimax-m2.7",
+      "new_per_million_usd": "1.000000",
+      "old_per_million_usd": "1.200000",
+      "pct_drop": 0.16666666666666666,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.200000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-07-24T11:01:46.334061Z",
+      "episode_start_per_million_usd": "0.300000",
+      "field": "prompt",
+      "model_id": "minimax/minimax-m2.7",
+      "new_per_million_usd": "0.250000",
+      "old_per_million_usd": "0.300000",
+      "pct_drop": 0.16666666666666666,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.050000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
       "detected_at": "2026-07-19T01:01:08.992295Z",
       "episode_start_per_million_usd": "4.000000",
       "field": "completion",
@@ -2041,9 +2071,39 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-07-24T11:01:46.334061Z",
+      "episode_start_per_million_usd": "0.300000",
+      "field": "prompt",
+      "model_id": "minimax/minimax-m2.7",
+      "new_per_million_usd": "0.250000",
+      "old_per_million_usd": "0.300000",
+      "pct_drop": 0.16666666666666666,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.050000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-07-24T11:01:46.334061Z",
+      "episode_start_per_million_usd": "1.200000",
+      "field": "completion",
+      "model_id": "minimax/minimax-m2.7",
+      "new_per_million_usd": "1.000000",
+      "old_per_million_usd": "1.200000",
+      "pct_drop": 0.16666666666666666,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.200000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-07-24T10:31:21.973583Z",
+  "generated_at": "2026-07-24T11:02:00.131004Z",
   "recovered_drops": [
     {
       "detected_at": "2026-07-18T22:01:00.384720Z",
