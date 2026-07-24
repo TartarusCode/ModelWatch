@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T01:01:32.472967Z",
+  "generated_at": "2026-07-24T01:31:42.075097Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -4375,10 +4375,10 @@
       "pricing": {
         "completion": "0.00000035",
         "image": null,
-        "input_cache_read": "0.00000009",
+        "input_cache_read": "0.0000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000012",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -4407,7 +4407,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 8192
       }
     },
     "google/gemma-4-31b-it:free": {
@@ -11789,12 +11789,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.00000013",
+        "completion": "0.00000014",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000003",
+        "prompt": "0.000000029",
         "request": null,
         "web_search": null
       },
@@ -11823,7 +11823,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": null
       }
     },
     "openai/gpt-oss-20b:free": {
@@ -15707,12 +15707,12 @@
       "id": "qwen/qwen3.6-27b",
       "name": "Qwen: Qwen3.6 27B",
       "pricing": {
-        "completion": "0.0000036",
+        "completion": "0.0000024",
         "image": null,
-        "input_cache_read": "0.00000012",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000006",
+        "prompt": "0.000000288",
         "request": null,
         "web_search": null
       },
@@ -15740,7 +15740,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": null
       }
     },
     "qwen/qwen3.6-35b-a3b": {
@@ -18270,12 +18270,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.000002464",
+        "completion": "0.0000024596",
         "image": null,
-        "input_cache_read": "0.0000001456",
+        "input_cache_read": "0.00000014534",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000784",
+        "prompt": "0.0000007826",
         "request": null,
         "web_search": null
       },
