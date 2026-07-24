@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T15:01:35.396392Z",
+  "generated_at": "2026-07-24T15:31:10.989927Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3953,6 +3953,62 @@
         "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 65536
+      }
+    },
+    "google/gemini-omni-flash-preview": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text+video",
+        "output_modalities": [
+          "text",
+          "video"
+        ],
+        "tokenizer": "Gemini"
+      },
+      "canonical_slug": "google/gemini-omni-flash-preview-20260722",
+      "context_length": 131072,
+      "created": 1784723611,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Gemini Omni Flash Preview is Google's native multimodal model for video generation and editing. It accepts text, images, and video, and generates short 720p videos with native audio, supporting text-to-video,...",
+      "expiration_date": null,
+      "id": "google/gemini-omni-flash-preview",
+      "name": "Google: Gemini Omni Flash Preview",
+      "pricing": {
+        "completion": "0.000009",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000015",
+        "request": null,
+        "web_search": "0.014"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "temperature",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 131072,
+        "is_moderated": false,
+        "max_completion_tokens": 57920
       }
     },
     "google/gemma-2-27b-it": {
@@ -18270,12 +18326,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000025256",
+        "completion": "0.0000025168",
         "image": null,
-        "input_cache_read": "0.00000014924",
+        "input_cache_read": "0.00000014872",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000008036",
+        "prompt": "0.0000008008",
         "request": null,
         "web_search": null
       },
