@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T07:01:17.162586Z",
+  "generated_at": "2026-07-24T07:31:04.892041Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -6108,12 +6108,12 @@
       "id": "minimax/minimax-m2",
       "name": "MiniMax: MiniMax M2",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.00000102",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.000000255",
         "request": null,
         "web_search": null
       },
@@ -18270,12 +18270,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000024024",
+        "completion": "0.0000023936",
         "image": null,
-        "input_cache_read": "0.00000014196",
+        "input_cache_read": "0.00000014144",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007644",
+        "prompt": "0.0000007616",
         "request": null,
         "web_search": null
       },
