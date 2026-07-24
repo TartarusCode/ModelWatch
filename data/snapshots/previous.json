@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T19:31:41.258279Z",
+  "generated_at": "2026-07-24T20:01:05.221824Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -7925,12 +7925,12 @@
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
       "pricing": {
-        "completion": "0.00000375",
+        "completion": "0.0000035",
         "image": null,
         "input_cache_read": "0.00000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000082",
+        "prompt": "0.00000078",
         "request": null,
         "web_search": null
       },
@@ -8621,12 +8621,12 @@
       "id": "nvidia/nemotron-3-super-120b-a12b",
       "name": "NVIDIA: Nemotron 3 Super",
       "pricing": {
-        "completion": "0.00000045",
+        "completion": "0.0000004",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008",
+        "prompt": "0.000000085",
         "request": null,
         "web_search": null
       },
@@ -8655,7 +8655,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 16384
       }
     },
     "nvidia/nemotron-3-super-120b-a12b:free": {
@@ -11912,12 +11912,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.00000014",
+        "completion": "0.00000013",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000029",
+        "prompt": "0.00000003",
         "request": null,
         "web_search": null
       },
@@ -11946,7 +11946,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 131072
       }
     },
     "openai/gpt-oss-20b:free": {
@@ -15835,7 +15835,7 @@
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000288",
+        "prompt": "0.000000289",
         "request": null,
         "web_search": null
       },
@@ -15861,9 +15861,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 131072
       }
     },
     "qwen/qwen3.6-35b-a3b": {
@@ -18393,12 +18393,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000024508",
+        "completion": "0.000002442",
         "image": null,
-        "input_cache_read": "0.00000014482",
+        "input_cache_read": "0.0000001443",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007798",
+        "prompt": "0.000000777",
         "request": null,
         "web_search": null
       },
