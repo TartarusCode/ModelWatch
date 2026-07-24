@@ -1271,9 +1271,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.060000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-07-24T01:01:16.190816Z",
+      "settled_per_million_usd": "0.390000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-07-17T01:00:59.455708Z",
@@ -1286,9 +1286,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.660000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-07-24T01:01:16.190816Z",
+      "settled_per_million_usd": "2.340000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-07-17T22:01:14.906858Z",
@@ -1636,7 +1636,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-07-24T00:31:02.592285Z",
+  "generated_at": "2026-07-24T01:01:32.472967Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -10601,13 +10601,13 @@
     "qwen/qwen3.5-397b-a17b": {
       "completion": {
         "anchor": "2.34000000",
-        "confirmed_at": "2026-07-17T01:00:59.455708Z",
-        "confirmed_price": "2.34000000",
-        "episode_start_price": "3.000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.225000000",
@@ -10621,13 +10621,13 @@
       },
       "prompt": {
         "anchor": "0.39000000",
-        "confirmed_at": "2026-07-17T01:00:59.455708Z",
-        "confirmed_price": "0.39000000",
-        "episode_start_price": "0.45000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "qwen/qwen3.5-9b": {
