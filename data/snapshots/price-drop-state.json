@@ -3406,7 +3406,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-06T13:17:40.240990Z",
+  "generated_at": "2026-08-06T13:41:21.348147Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -15635,11 +15635,11 @@
         "anchor": "3.74000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "3.74000000",
+        "pending_builds": 1,
+        "pending_price": "1.76000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.221000000",
@@ -15655,11 +15655,11 @@
         "anchor": "1.19000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "1.19000000",
+        "pending_builds": 1,
+        "pending_price": "0.56000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "z-ai/glm-5v-turbo": {
