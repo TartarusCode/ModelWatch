@@ -1,0 +1,136 @@
+name: Build and deploy
+
+on:
+  # Triggered by cron-job.org every 30 minutes — see docs/cron-job-org.md
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  test-and-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.1.0
+        with:
+          version: "0.11.17"
+          enable-cache: true
+          activate-environment: true
+          cache-dependency-glob: |
+            uv.lock
+            pyproject.toml
+          prune-cache: false
+
+      - name: Sync Python dev dependencies
+        run: uv sync --frozen --extra dev
+
+      - name: Run tests
+        run: uv run pytest
+
+      - name: Type check
+        run: uv run mypy modelwatch tests
+
+      - name: Lint
+        run: uv run ruff check modelwatch tests
+
+      - name: Format check
+        run: uv run ruff format --check modelwatch tests
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install web dependencies
+        run: npm ci
+        working-directory: web
+
+      - name: Lint web
+        run: npm run lint
+        working-directory: web
+
+      - name: Test web
+        run: npm run test
+        working-directory: web
+
+  build:
+    needs: test-and-lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          lfs: true
+
+      - name: Install uv
+        id: uv
+        uses: astral-sh/setup-uv@v8.1.0
+        with:
+          version: "0.11.17"
+          enable-cache: true
+          activate-environment: true
+          cache-dependency-glob: |
+            uv.lock
+            pyproject.toml
+          prune-cache: false
+
+      - name: Sync Python dependencies
+        run: uv sync --frozen --no-dev
+
+      - name: Build data
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: uv run python -m modelwatch.build
+
+      - name: Assert benchmark fetch health
+        run: uv run python -m modelwatch.check_build_health
+
+      - name: Commit and push data updates
+        run: |
+          git lfs install
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add web/public/data/ data/snapshots/previous.json data/snapshots/price-drop-state.json
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: refresh OpenRouter snapshot"
+            git push
+          fi
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Build site
+        run: |
+          cd web
+          npm ci
+          npm run build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: web/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
