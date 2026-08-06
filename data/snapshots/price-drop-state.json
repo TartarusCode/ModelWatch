@@ -3404,9 +3404,39 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-08-06T14:01:16.882219Z",
+      "episode_start_per_million_usd": "1.190000",
+      "field": "prompt",
+      "model_id": "z-ai/glm-5.2",
+      "new_per_million_usd": "0.560000",
+      "old_per_million_usd": "1.190000",
+      "pct_drop": 0.5294117647058824,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.630000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-08-06T14:01:16.882219Z",
+      "episode_start_per_million_usd": "3.740000",
+      "field": "completion",
+      "model_id": "z-ai/glm-5.2",
+      "new_per_million_usd": "1.760000",
+      "old_per_million_usd": "3.740000",
+      "pct_drop": 0.5294117647058824,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "1.980000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-08-06T13:41:21.348147Z",
+  "generated_at": "2026-08-06T14:01:30.426008Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -15632,14 +15662,14 @@
     },
     "z-ai/glm-5.2": {
       "completion": {
-        "anchor": "3.74000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "1.76000000",
+        "confirmed_at": "2026-08-06T14:01:16.882219Z",
+        "confirmed_price": "1.76000000",
         "episode_start_price": "3.74000000",
-        "pending_builds": 1,
-        "pending_price": "1.76000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.221000000",
@@ -15652,14 +15682,14 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "1.19000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.56000000",
+        "confirmed_at": "2026-08-06T14:01:16.882219Z",
+        "confirmed_price": "0.56000000",
         "episode_start_price": "1.19000000",
-        "pending_builds": 1,
-        "pending_price": "0.56000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "z-ai/glm-5v-turbo": {
