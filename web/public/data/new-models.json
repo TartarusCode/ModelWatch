@@ -1,6 +1,13 @@
 {
-  "generated_at": "2026-08-06T15:20:32.337572Z",
+  "generated_at": "2026-08-06T22:15:27.638333Z",
   "models": [
+    {
+      "canonical_slug": "inclusionai/ling-3.0-tiny-20260806",
+      "created": 1786034890,
+      "detected_at": "2026-08-06T22:14:57.829679Z",
+      "model_id": "inclusionai/ling-3.0-tiny:free",
+      "name": "inclusionAI: Ling 3.0 Tiny (free)"
+    },
     {
       "canonical_slug": "anthropic/claude-5-fable-20260609",
       "created": 1781007515,
@@ -427,13 +434,6 @@
       "detected_at": "2026-08-06T00:31:04.531633Z",
       "model_id": "inclusionai/ling-3.0-flash",
       "name": "Ling-3.0-flash"
-    },
-    {
-      "canonical_slug": "meta/muse-spark-1.2-20260805",
-      "created": 1785959287,
-      "detected_at": "2026-08-05T20:31:13.256300Z",
-      "model_id": "meta/muse-spark-1.2",
-      "name": "Meta: Muse Spark 1.2"
     }
   ],
   "window_hours": 24
