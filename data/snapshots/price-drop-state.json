@@ -3449,9 +3449,24 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-08-07T08:39:22.169101Z",
+      "episode_start_per_million_usd": "0.500000",
+      "field": "prompt",
+      "model_id": "thinkingmachines/inkling-small",
+      "new_per_million_usd": "0.450000",
+      "old_per_million_usd": "0.500000",
+      "pct_drop": 0.1,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.050000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-08-07T08:10:16.017254Z",
+  "generated_at": "2026-08-07T08:39:34.988302Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -14995,14 +15010,14 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.5000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.45000000",
+        "confirmed_at": "2026-08-07T08:39:22.169101Z",
+        "confirmed_price": "0.45000000",
         "episode_start_price": "0.5000000",
-        "pending_builds": 1,
-        "pending_price": "0.45000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "undi95/remm-slerp-l2-13b": {
