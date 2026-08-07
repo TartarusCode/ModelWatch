@@ -46,36 +46,6 @@
       "status": "active"
     },
     {
-      "detected_at": "2026-07-31T17:01:13.225656Z",
-      "episode_start_per_million_usd": "4.000000",
-      "field": "completion",
-      "model_id": "moonshotai/kimi-k2.6",
-      "new_per_million_usd": "2.480000",
-      "old_per_million_usd": "4.000000",
-      "pct_drop": 0.38,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "1.520000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
-      "detected_at": "2026-07-31T17:01:13.225656Z",
-      "episode_start_per_million_usd": "0.950000",
-      "field": "prompt",
-      "model_id": "moonshotai/kimi-k2.6",
-      "new_per_million_usd": "0.589000",
-      "old_per_million_usd": "0.950000",
-      "pct_drop": 0.38,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.361000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "detected_at": "2026-08-07T15:33:03.584406Z",
       "episode_start_per_million_usd": "0.900000",
       "field": "completion",
@@ -3403,9 +3373,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.361000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-07T17:03:21.711511Z",
+      "settled_per_million_usd": "0.579500",
+      "status": "settled"
     },
     {
       "detected_at": "2026-07-31T17:01:13.225656Z",
@@ -3418,9 +3388,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "1.520000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-07T17:03:21.711511Z",
+      "settled_per_million_usd": "2.440000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-07-31T23:01:17.592653Z",
@@ -3708,7 +3678,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-07T16:31:33.037148Z",
+  "generated_at": "2026-08-07T17:03:35.924018Z",
   "recovered_drops": [],
   "settled_drops": [
     {
@@ -3934,6 +3904,36 @@
       "saved_per_million_usd": "0.100000",
       "settled_at": "2026-08-07T14:46:37.842505Z",
       "settled_per_million_usd": "0.250000",
+      "status": "settled"
+    },
+    {
+      "detected_at": "2026-07-31T17:01:13.225656Z",
+      "episode_start_per_million_usd": "0.950000",
+      "field": "prompt",
+      "model_id": "moonshotai/kimi-k2.6",
+      "new_per_million_usd": "0.589000",
+      "old_per_million_usd": "0.950000",
+      "pct_drop": 0.38,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.361000",
+      "settled_at": "2026-08-07T17:03:21.711511Z",
+      "settled_per_million_usd": "0.579500",
+      "status": "settled"
+    },
+    {
+      "detected_at": "2026-07-31T17:01:13.225656Z",
+      "episode_start_per_million_usd": "4.000000",
+      "field": "completion",
+      "model_id": "moonshotai/kimi-k2.6",
+      "new_per_million_usd": "2.480000",
+      "old_per_million_usd": "4.000000",
+      "pct_drop": 0.38,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "1.520000",
+      "settled_at": "2026-08-07T17:03:21.711511Z",
+      "settled_per_million_usd": "2.440000",
       "status": "settled"
     }
   ],
