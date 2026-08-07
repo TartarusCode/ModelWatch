@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T18:01:32.455174Z",
+  "generated_at": "2026-08-07T18:31:58.836641Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -6637,7 +6637,7 @@
       "top_provider": {
         "context_length": 8000,
         "is_moderated": false,
-        "max_completion_tokens": 2000
+        "max_completion_tokens": 6000
       }
     },
     "meituan/longcat-2.0": {
@@ -20291,7 +20291,7 @@
       "top_provider": {
         "context_length": 6144,
         "is_moderated": false,
-        "max_completion_tokens": 2048
+        "max_completion_tokens": 6144
       }
     },
     "upstage/solar-pro-3": {
