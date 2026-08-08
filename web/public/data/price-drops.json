@@ -92,21 +92,6 @@
     },
     {
       "detected_at": "2026-08-06T14:01:16.882219Z",
-      "episode_start_per_million_usd": "3.740000",
-      "field": "completion",
-      "model_id": "z-ai/glm-5.2",
-      "new_per_million_usd": "1.760000",
-      "old_per_million_usd": "3.740000",
-      "pct_drop": 0.5294117647058824,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "1.980000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
-      "detected_at": "2026-08-06T14:01:16.882219Z",
       "episode_start_per_million_usd": "1.190000",
       "field": "prompt",
       "model_id": "z-ai/glm-5.2",
@@ -3550,12 +3535,12 @@
       "new_per_million_usd": "1.760000",
       "old_per_million_usd": "3.740000",
       "pct_drop": 0.5294117647058824,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-08-08T14:17:21.322829Z",
+      "recovered_per_million_usd": "0.695200",
       "saved_per_million_usd": "1.980000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     },
     {
       "detected_at": "2026-08-07T03:16:29.204936Z",
@@ -3603,8 +3588,24 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-08T13:40:32.089548Z",
-  "recovered_drops": [],
+  "generated_at": "2026-08-08T14:17:21.322829Z",
+  "recovered_drops": [
+    {
+      "detected_at": "2026-08-06T14:01:16.882219Z",
+      "episode_start_per_million_usd": "3.740000",
+      "field": "completion",
+      "model_id": "z-ai/glm-5.2",
+      "new_per_million_usd": "1.760000",
+      "old_per_million_usd": "3.740000",
+      "pct_drop": 0.5294117647058824,
+      "recovered_at": "2026-08-08T14:17:21.322829Z",
+      "recovered_per_million_usd": "0.695200",
+      "saved_per_million_usd": "1.980000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "recovered"
+    }
+  ],
   "settled_drops": [
     {
       "detected_at": "2026-07-31T13:01:03.222930Z",
