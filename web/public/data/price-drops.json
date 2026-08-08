@@ -91,21 +91,6 @@
       "status": "active"
     },
     {
-      "detected_at": "2026-08-08T14:33:19.355751Z",
-      "episode_start_per_million_usd": "1.760000",
-      "field": "completion",
-      "model_id": "z-ai/glm-5.2",
-      "new_per_million_usd": "0.695200",
-      "old_per_million_usd": "1.760000",
-      "pct_drop": 0.605,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "1.064800",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "detected_at": "2026-08-06T14:01:16.882219Z",
       "episode_start_per_million_usd": "1.190000",
       "field": "prompt",
@@ -3610,15 +3595,15 @@
       "new_per_million_usd": "0.695200",
       "old_per_million_usd": "1.760000",
       "pct_drop": 0.605,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-08-08T18:02:14.714448Z",
+      "recovered_per_million_usd": "0.572000",
       "saved_per_million_usd": "1.064800",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     }
   ],
-  "generated_at": "2026-08-08T17:34:04.749143Z",
+  "generated_at": "2026-08-08T18:02:14.714448Z",
   "recovered_drops": [
     {
       "detected_at": "2026-08-06T14:01:16.882219Z",
@@ -3631,6 +3616,21 @@
       "recovered_at": "2026-08-08T14:17:21.322829Z",
       "recovered_per_million_usd": "0.695200",
       "saved_per_million_usd": "1.980000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "recovered"
+    },
+    {
+      "detected_at": "2026-08-08T14:33:19.355751Z",
+      "episode_start_per_million_usd": "1.760000",
+      "field": "completion",
+      "model_id": "z-ai/glm-5.2",
+      "new_per_million_usd": "0.695200",
+      "old_per_million_usd": "1.760000",
+      "pct_drop": 0.605,
+      "recovered_at": "2026-08-08T18:02:14.714448Z",
+      "recovered_per_million_usd": "0.572000",
+      "saved_per_million_usd": "1.064800",
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "recovered"
