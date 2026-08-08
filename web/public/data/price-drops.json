@@ -3618,7 +3618,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-08T14:33:35.963214Z",
+  "generated_at": "2026-08-08T15:02:45.118799Z",
   "recovered_drops": [
     {
       "detected_at": "2026-08-06T14:01:16.882219Z",
@@ -3637,21 +3637,6 @@
     }
   ],
   "settled_drops": [
-    {
-      "detected_at": "2026-07-31T13:01:03.222930Z",
-      "episode_start_per_million_usd": "0.300000",
-      "field": "completion",
-      "model_id": "mistralai/mistral-small-3.2-24b-instruct",
-      "new_per_million_usd": "0.200000",
-      "old_per_million_usd": "0.300000",
-      "pct_drop": 0.3333333333333333,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.100000",
-      "settled_at": "2026-08-07T14:46:37.842505Z",
-      "settled_per_million_usd": "0.250000",
-      "status": "settled"
-    },
     {
       "detected_at": "2026-07-31T17:01:13.225656Z",
       "episode_start_per_million_usd": "0.950000",
