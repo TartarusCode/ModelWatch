@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T15:02:45.118799Z",
+  "generated_at": "2026-08-08T15:31:36.468277Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3392,12 +3392,12 @@
       "id": "deepseek/deepseek-v3.2",
       "name": "DeepSeek: DeepSeek V3.2",
       "pricing": {
-        "completion": "0.00000038",
+        "completion": "0.0000004",
         "image": null,
-        "input_cache_read": "0.00000013",
+        "input_cache_read": "0.0000001345",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000026",
+        "prompt": "0.000000269",
         "request": null,
         "web_search": null
       },
@@ -3425,7 +3425,7 @@
       "top_provider": {
         "context_length": 163840,
         "is_moderated": false,
-        "max_completion_tokens": 163840
+        "max_completion_tokens": 65536
       }
     },
     "deepseek/deepseek-v3.2-exp": {
@@ -18690,7 +18690,7 @@
         "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000014",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
