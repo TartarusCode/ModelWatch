@@ -3518,15 +3518,15 @@
       "new_per_million_usd": "0.484000",
       "old_per_million_usd": "0.572000",
       "pct_drop": 0.15384615384615385,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-08-09T00:24:15.717418Z",
+      "recovered_per_million_usd": "0.396000",
       "saved_per_million_usd": "0.088000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     }
   ],
-  "generated_at": "2026-08-08T23:42:32.899088Z",
+  "generated_at": "2026-08-09T00:24:15.717418Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -15336,7 +15336,7 @@
     },
     "qwen/qwen3.5-397b-a17b": {
       "completion": {
-        "anchor": "2.34000000",
+        "anchor": "3.6000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -15356,7 +15356,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.39000000",
+        "anchor": "0.5000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -17051,11 +17051,11 @@
         "anchor": "0.484000000",
         "confirmed_at": "2026-08-08T23:42:22.723766Z",
         "confirmed_price": "0.484000000",
-        "episode_start_price": "0.572000000",
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.484000000",
+        "pending_builds": 1,
+        "pending_price": "0.396000000",
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.221000000",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T23:42:32.899088Z",
+  "generated_at": "2026-08-09T00:24:15.717418Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3392,12 +3392,12 @@
       "id": "deepseek/deepseek-v3.2",
       "name": "DeepSeek: DeepSeek V3.2",
       "pricing": {
-        "completion": "0.0000004",
+        "completion": "0.00000038",
         "image": null,
-        "input_cache_read": "0.0000001345",
+        "input_cache_read": "0.00000013",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000269",
+        "prompt": "0.00000026",
         "request": null,
         "web_search": null
       },
@@ -3425,7 +3425,7 @@
       "top_provider": {
         "context_length": 163840,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 163840
       }
     },
     "deepseek/deepseek-v3.2-exp": {
@@ -9920,12 +9920,12 @@
       "id": "nvidia/nemotron-3-super-120b-a12b",
       "name": "NVIDIA: Nemotron 3 Super",
       "pricing": {
-        "completion": "0.0000004",
+        "completion": "0.0000009",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000085",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -9954,7 +9954,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": null
       }
     },
     "nvidia/nemotron-3-super-120b-a12b:free": {
@@ -10656,7 +10656,7 @@
       ],
       "top_provider": {
         "context_length": 8191,
-        "is_moderated": true,
+        "is_moderated": false,
         "max_completion_tokens": 4096
       }
     },
@@ -18316,12 +18316,12 @@
       "id": "qwen/qwen3.5-397b-a17b",
       "name": "Qwen: Qwen3.5 397B A17B",
       "pricing": {
-        "completion": "0.00000234",
+        "completion": "0.0000036",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.0000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000039",
+        "prompt": "0.0000005",
         "request": null,
         "web_search": null
       },
@@ -18349,7 +18349,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 262144
       }
     },
     "qwen/qwen3.5-9b": {
@@ -21448,12 +21448,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.000000484",
+        "completion": "0.000000396",
         "image": null,
-        "input_cache_read": "0.0000000286",
+        "input_cache_read": "0.0000000234",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000154",
+        "prompt": "0.000000126",
         "request": null,
         "web_search": null
       },
