@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T22:04:05.704124Z",
+  "generated_at": "2026-08-09T22:32:58.176615Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -5573,12 +5573,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.00000034",
+        "completion": "0.0000004",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000007",
+        "prompt": "0.00000012",
         "request": null,
         "web_search": null
       },
@@ -5606,7 +5606,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 262144
       }
     },
     "google/gemma-4-26b-a4b-it:free": {
@@ -9752,7 +9752,7 @@
       "pricing": {
         "completion": "0.0000002",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.000000025",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.00000005",
@@ -9783,7 +9783,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 228000
       }
     },
     "nvidia/nemotron-3-nano-30b-a3b:free": {
