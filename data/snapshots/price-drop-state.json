@@ -3571,7 +3571,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-10T00:01:39.895303Z",
+  "generated_at": "2026-08-10T00:31:44.067962Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -8722,11 +8722,11 @@
         "anchor": "0.8000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.8000000",
+        "pending_builds": 1,
+        "pending_price": "0.696000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "prompt": {
         "anchor": "0.2000000",
@@ -10258,11 +10258,11 @@
         "anchor": "0.3000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.3000000",
+        "pending_builds": 1,
+        "pending_price": "0.085000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b": {
@@ -14658,21 +14658,21 @@
         "anchor": "0.91000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.91000000",
+        "pending_builds": 1,
+        "pending_price": "0.24000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "prompt": {
         "anchor": "0.2275000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.2275000000",
+        "pending_builds": 1,
+        "pending_price": "0.12000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "qwen/qwen3-235b-a22b": {
@@ -15384,11 +15384,11 @@
         "anchor": "3.6000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "3.6000000",
+        "pending_builds": 1,
+        "pending_price": "2.34000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.225000000",

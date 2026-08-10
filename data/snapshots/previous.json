@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T00:01:39.895303Z",
+  "generated_at": "2026-08-10T00:31:44.067962Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -6981,7 +6981,7 @@
       "id": "meta-llama/llama-4-maverick",
       "name": "Meta: Llama 4 Maverick",
       "pricing": {
-        "completion": "0.0000008",
+        "completion": "0.000000696",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
@@ -7010,9 +7010,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": null
       }
     },
     "meta-llama/llama-4-scout": {
@@ -9920,12 +9920,12 @@
       "id": "nvidia/nemotron-3-super-120b-a12b",
       "name": "NVIDIA: Nemotron 3 Super",
       "pricing": {
-        "completion": "0.0000009",
+        "completion": "0.0000004",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.000000085",
         "request": null,
         "web_search": null
       },
@@ -9954,7 +9954,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 16384
       }
     },
     "nvidia/nemotron-3-super-120b-a12b:free": {
@@ -16677,12 +16677,12 @@
       "id": "qwen/qwen3-14b",
       "name": "Qwen: Qwen3 14B",
       "pricing": {
-        "completion": "0.00000091",
+        "completion": "0.00000024",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000002275",
+        "prompt": "0.00000012",
         "request": null,
         "web_search": null
       },
@@ -16708,9 +16708,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 40960,
         "is_moderated": false,
-        "max_completion_tokens": 8192
+        "max_completion_tokens": 16384
       }
     },
     "qwen/qwen3-235b-a22b": {
@@ -17658,9 +17658,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 32768
       }
     },
     "qwen/qwen3-vl-235b-a22b-instruct": {
@@ -18316,12 +18316,12 @@
       "id": "qwen/qwen3.5-397b-a17b",
       "name": "Qwen: Qwen3.5 397B A17B",
       "pricing": {
-        "completion": "0.0000036",
+        "completion": "0.00000234",
         "image": null,
-        "input_cache_read": "0.0000003",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005",
+        "prompt": "0.00000039",
         "request": null,
         "web_search": null
       },
@@ -18349,7 +18349,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 65536
       }
     },
     "qwen/qwen3.5-9b": {
