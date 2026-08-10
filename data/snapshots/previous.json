@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T18:32:16.401147Z",
+  "generated_at": "2026-08-10T19:11:19.243127Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -17183,7 +17183,7 @@
       "id": "qwen/qwen3-coder-30b-a3b-instruct",
       "name": "Qwen: Qwen3 Coder 30B A3B Instruct",
       "pricing": {
-        "completion": "0.00000027",
+        "completion": "0.00000028",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
@@ -17210,9 +17210,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 160000,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 262144
       }
     },
     "qwen/qwen3-coder-flash": {
@@ -21399,12 +21399,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000017116",
+        "completion": "0.0000016676",
         "image": null,
-        "input_cache_read": "0.00000010114",
+        "input_cache_read": "0.00000009854",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005446",
+        "prompt": "0.0000005306",
         "request": null,
         "web_search": null
       },
