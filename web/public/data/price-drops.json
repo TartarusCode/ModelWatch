@@ -181,21 +181,6 @@
       "status": "active"
     },
     {
-      "detected_at": "2026-08-09T02:05:23.181889Z",
-      "episode_start_per_million_usd": "0.396000",
-      "field": "completion",
-      "model_id": "z-ai/glm-5.2",
-      "new_per_million_usd": "0.308000",
-      "old_per_million_usd": "0.396000",
-      "pct_drop": 0.2222222222222222,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.088000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "detected_at": "2026-08-06T14:01:16.882219Z",
       "episode_start_per_million_usd": "1.190000",
       "field": "prompt",
@@ -3760,12 +3745,12 @@
       "new_per_million_usd": "0.308000",
       "old_per_million_usd": "0.396000",
       "pct_drop": 0.2222222222222222,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-08-10T04:04:25.367933Z",
+      "recovered_per_million_usd": "2.420000",
       "saved_per_million_usd": "0.088000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     },
     {
       "detected_at": "2026-08-09T13:48:16.019070Z",
@@ -3858,8 +3843,24 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-10T03:31:35.575476Z",
-  "recovered_drops": [],
+  "generated_at": "2026-08-10T04:04:39.888746Z",
+  "recovered_drops": [
+    {
+      "detected_at": "2026-08-09T02:05:23.181889Z",
+      "episode_start_per_million_usd": "0.396000",
+      "field": "completion",
+      "model_id": "z-ai/glm-5.2",
+      "new_per_million_usd": "0.308000",
+      "old_per_million_usd": "0.396000",
+      "pct_drop": 0.2222222222222222,
+      "recovered_at": "2026-08-10T04:04:25.367933Z",
+      "recovered_per_million_usd": "2.420000",
+      "saved_per_million_usd": "0.088000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "recovered"
+    }
+  ],
   "settled_drops": [],
   "thresholds": {
     "min_pct": 0.1,
