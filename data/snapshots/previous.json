@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T23:46:02.276154Z",
+  "generated_at": "2026-08-11T00:01:41.425653Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3635,12 +3635,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro",
       "pricing": {
-        "completion": "0.00000087",
+        "completion": "0.00000128864",
         "image": null,
-        "input_cache_read": "0.000000003625",
+        "input_cache_read": "0.0000000543645",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000435",
+        "prompt": "0.00000064432",
         "request": null,
         "web_search": null
       },
@@ -3669,7 +3669,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 384000
+        "max_completion_tokens": 393216
       }
     },
     "google/gemini-2.5-flash": {
@@ -6985,7 +6985,7 @@
       "id": "meta-llama/llama-4-maverick",
       "name": "Meta: Llama 4 Maverick",
       "pricing": {
-        "completion": "0.0000008",
+        "completion": "0.000000696",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
@@ -7014,9 +7014,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": null
       }
     },
     "meta-llama/llama-4-scout": {
