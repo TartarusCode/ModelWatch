@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T13:02:51.813900Z",
+  "generated_at": "2026-08-11T13:31:42.766988Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -10308,6 +10308,52 @@
         "context_length": 128000,
         "is_moderated": false,
         "max_completion_tokens": 8192
+      }
+    },
+    "nvidia/nemotron-3.5-lightning:free": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "nvidia/nemotron-3.5-lightning-20260807",
+      "context_length": 1000000,
+      "created": 1786452751,
+      "default_parameters": {},
+      "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
+      "expiration_date": null,
+      "id": "nvidia/nemotron-3.5-lightning:free",
+      "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "seed",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": false,
+        "max_completion_tokens": 65536
       }
     },
     "nvidia/nemotron-nano-12b-v2-vl:free": {
@@ -21493,12 +21539,12 @@
       "id": "z-ai/glm-5.1",
       "name": "Z.ai: GLM 5.1",
       "pricing": {
-        "completion": "0.0000044",
+        "completion": "0.000002992",
         "image": null,
-        "input_cache_read": "0.00000026",
+        "input_cache_read": "0.0000001768",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000014",
+        "prompt": "0.000000952",
         "request": null,
         "web_search": null
       },
