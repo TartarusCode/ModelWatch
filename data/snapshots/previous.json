@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T16:36:24.875740Z",
+  "generated_at": "2026-08-12T17:25:49.017146Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -2465,7 +2465,7 @@
       },
       "canonical_slug": "bytedance-seed/seed-2-1-turbo-20260810",
       "context_length": 262144,
-      "created": 1786392277,
+      "created": 1786552176,
       "default_parameters": {},
       "description": "Seed 2.1 Turbo is a multimodal model from ByteDance Seed for coding and long-horizon agent workflows. It is suited for end-to-end software delivery, multi-step task execution, and understanding visual and...",
       "expiration_date": null,
@@ -2490,6 +2490,7 @@
         "stop",
         "structured_outputs",
         "temperature",
+        "tool_choice",
         "tools",
         "top_p"
       ],
@@ -19436,15 +19437,23 @@
         "web_search": null
       },
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
+        "logprobs",
         "max_tokens",
+        "presence_penalty",
         "reasoning",
         "reasoning_effort",
+        "repetition_penalty",
         "response_format",
+        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
