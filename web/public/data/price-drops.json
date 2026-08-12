@@ -181,21 +181,6 @@
       "status": "active"
     },
     {
-      "detected_at": "2026-08-05T14:01:02.373343Z",
-      "episode_start_per_million_usd": "0.980000",
-      "field": "prompt",
-      "model_id": "qwen/qwen3-vl-235b-a22b-thinking",
-      "new_per_million_usd": "0.400000",
-      "old_per_million_usd": "0.980000",
-      "pct_drop": 0.5918367346938775,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.580000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "detected_at": "2026-08-10T01:12:07.125565Z",
       "episode_start_per_million_usd": "3.600000",
       "field": "completion",
@@ -3598,9 +3583,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.580000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-12T14:01:14.629481Z",
+      "settled_per_million_usd": "0.400000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-06T01:01:05.495488Z",
@@ -3918,7 +3903,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-12T13:32:03.271462Z",
+  "generated_at": "2026-08-12T14:01:29.923976Z",
   "recovered_drops": [
     {
       "detected_at": "2026-08-06T14:01:16.882219Z",
@@ -3936,7 +3921,23 @@
       "status": "recovered"
     }
   ],
-  "settled_drops": [],
+  "settled_drops": [
+    {
+      "detected_at": "2026-08-05T14:01:02.373343Z",
+      "episode_start_per_million_usd": "0.980000",
+      "field": "prompt",
+      "model_id": "qwen/qwen3-vl-235b-a22b-thinking",
+      "new_per_million_usd": "0.400000",
+      "old_per_million_usd": "0.980000",
+      "pct_drop": 0.5918367346938775,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.580000",
+      "settled_at": "2026-08-12T14:01:14.629481Z",
+      "settled_per_million_usd": "0.400000",
+      "status": "settled"
+    }
+  ],
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05
