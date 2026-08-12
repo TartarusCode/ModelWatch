@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T16:02:47.395722Z",
+  "generated_at": "2026-08-12T16:36:24.875740Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -2515,7 +2515,7 @@
       },
       "canonical_slug": "bytedance-seed/seed-2.0-code-20260730",
       "context_length": 262144,
-      "created": 1785451719,
+      "created": 1786550701,
       "default_parameters": {},
       "description": "Seed 2.0 Code is a model from ByteDance Seed optimized for agentic coding. It is suited for frontend development, multilingual programming tasks, and coding-agent workflows in tools such as Claude...",
       "expiration_date": null,
@@ -3769,6 +3769,61 @@
         "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 393216
+      }
+    },
+    "deepseek/deepseek-v4-pro-0813": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "DeepSeek"
+      },
+      "canonical_slug": "deepseek/deepseek-v4-pro-20260813",
+      "context_length": 1048576,
+      "created": 1786549364,
+      "default_parameters": {
+        "temperature": 1,
+        "top_p": 1
+      },
+      "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro.",
+      "expiration_date": null,
+      "id": "deepseek/deepseek-v4-pro-0813",
+      "name": "DeepSeek: DeepSeek V4 Pro 0813",
+      "pricing": {
+        "completion": "0.00000087",
+        "image": null,
+        "input_cache_read": "0.000000003625",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000000435",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 384000
       }
     },
     "google/gemini-2.5-flash": {
@@ -19344,6 +19399,58 @@
         "context_length": 1000000,
         "is_moderated": false,
         "max_completion_tokens": 131072
+      }
+    },
+    "qwen/qwen3.8-2.4t-a95b": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen"
+      },
+      "canonical_slug": "qwen/qwen3.8-2.4t-a95b-20260812",
+      "context_length": 262144,
+      "created": 1786551702,
+      "default_parameters": {
+        "temperature": 1,
+        "top_k": 20,
+        "top_p": 0.95
+      },
+      "description": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of [Qwen3.8 Max](/qwen/qwen3.8-max), with 95 billion active parameters out of 2.4 trillion total. It is...",
+      "expiration_date": null,
+      "id": "qwen/qwen3.8-2.4t-a95b",
+      "name": "Qwen: Qwen3.8 2.4T A95B",
+      "pricing": {
+        "completion": "0.000006",
+        "image": null,
+        "input_cache_read": "0.0000002",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000002",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 52429
       }
     },
     "qwen/qwen3.8-max": {
