@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T07:04:18.316371Z",
+  "generated_at": "2026-08-12T13:32:03.271462Z",
   "models": [
     {
       "canonical_slug": "liquid/lfm-2.5-2.6b-20260811",
@@ -21,20 +21,6 @@
       "detected_at": "2026-08-11T17:10:33.943487Z",
       "model_id": "nvidia/nemotron-3.5-lightning",
       "name": "NVIDIA: Nemotron 3.5 Lightning"
-    },
-    {
-      "canonical_slug": "nvidia/nemotron-3.5-lightning-20260807",
-      "created": 1786452751,
-      "detected_at": "2026-08-11T13:31:20.687291Z",
-      "model_id": "nvidia/nemotron-3.5-lightning:free",
-      "name": "NVIDIA: Nemotron 3.5 Lightning (free)"
-    },
-    {
-      "canonical_slug": "sakana/namazu-20260811",
-      "created": 1786410129,
-      "detected_at": "2026-08-11T07:07:43.308543Z",
-      "model_id": "sakana/sakana-namazu",
-      "name": "Sakana: Sakana Namazu"
     }
   ],
   "window_hours": 24
