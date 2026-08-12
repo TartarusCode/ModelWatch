@@ -3674,9 +3674,24 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-08-12T01:01:22.641513Z",
+      "episode_start_per_million_usd": "1.900000",
+      "field": "completion",
+      "model_id": "qwen/qwen3-vl-235b-a22b-instruct",
+      "new_per_million_usd": "1.040000",
+      "old_per_million_usd": "1.900000",
+      "pct_drop": 0.45263157894736844,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.860000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-08-12T00:34:12.537664Z",
+  "generated_at": "2026-08-12T01:01:34.812591Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -15246,14 +15261,14 @@
     },
     "qwen/qwen3-vl-235b-a22b-instruct": {
       "completion": {
-        "anchor": "1.9000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "1.04000000",
+        "confirmed_at": "2026-08-12T01:01:22.641513Z",
+        "confirmed_price": "1.04000000",
         "episode_start_price": "1.9000000",
-        "pending_builds": 1,
-        "pending_price": "1.04000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.11000000",
