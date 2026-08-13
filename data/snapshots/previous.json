@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T12:31:23.197127Z",
+  "generated_at": "2026-08-13T13:20:24.527067Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3814,6 +3814,7 @@
         "reasoning",
         "reasoning_effort",
         "response_format",
+        "seed",
         "stop",
         "temperature",
         "tool_choice",
@@ -7842,10 +7843,10 @@
       "pricing": {
         "completion": "0.0000009",
         "image": null,
-        "input_cache_read": "0.00000006",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000225",
+        "prompt": "0.00000022",
         "request": null,
         "web_search": null
       },
@@ -7856,6 +7857,7 @@
         "logprobs",
         "max_tokens",
         "min_p",
+        "parallel_tool_calls",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
@@ -7871,9 +7873,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 65536,
+        "context_length": 196608,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 196608
       }
     },
     "minimax/minimax-m2.7": {
@@ -20750,7 +20752,7 @@
       "context_length": 524288,
       "created": 1786371636,
       "default_parameters": {},
-      "description": "Solar Pro 4 is a large language model from Upstage. It is suited for agentic workflows, office productivity, document-intensive work, and coding.",
+      "description": "Solar Pro 4 is Upstage's cost-efficient large language model, featuring a 524K context window. It is built for long-horizon tasks and agentic workflows, with strong capabilities in office productivity, document-intensive...",
       "expiration_date": null,
       "id": "upstage/solar-pro4",
       "name": "Upstage: Solar Pro 4",
@@ -21931,12 +21933,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.00000198",
+        "completion": "0.00000315",
         "image": null,
-        "input_cache_read": "0.0000000945",
+        "input_cache_read": "0.0000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000063",
+        "prompt": "0.0000005",
         "request": null,
         "web_search": null
       },
@@ -21964,9 +21966,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-5.2:batch": {
