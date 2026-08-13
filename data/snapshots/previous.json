@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T20:40:40.891811Z",
+  "generated_at": "2026-08-13T21:02:10.392838Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -10588,7 +10588,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "nvidia/nemotron-3.5-lightning-20260807",
-      "context_length": 1048576,
+      "context_length": 1000000,
       "created": 1786452751,
       "default_parameters": {},
       "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
