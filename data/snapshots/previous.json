@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T06:01:34.218778Z",
+  "generated_at": "2026-08-13T06:46:04.190542Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -535,7 +535,7 @@
         "tokenizer": "Qwen"
       },
       "canonical_slug": "anthracite-org/magnum-v4-72b",
-      "context_length": 16384,
+      "context_length": 32768,
       "created": 1729555200,
       "default_parameters": {},
       "description": "This is a series of models designed to replicate the prose quality of the Claude 3 models, specifically Sonnet(https://openrouter.ai/anthropic/claude-3.5-sonnet) and Opus(https://openrouter.ai/anthropic/claude-3-opus).\n\nThe model is fine-tuned on top of [Qwen2.5 72B](https://openrouter.ai/qwen/qwen-2.5-72b-instruct).",
@@ -571,9 +571,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 16384,
+        "context_length": 32768,
         "is_moderated": false,
-        "max_completion_tokens": 2048
+        "max_completion_tokens": 4096
       }
     },
     "anthropic/claude-3-haiku": {
@@ -18651,12 +18651,12 @@
       "id": "qwen/qwen3.5-397b-a17b",
       "name": "Qwen: Qwen3.5 397B A17B",
       "pricing": {
-        "completion": "0.000003",
+        "completion": "0.0000036",
         "image": null,
-        "input_cache_read": "0.000000045",
+        "input_cache_read": "0.0000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000045",
+        "prompt": "0.0000005",
         "request": null,
         "web_search": null
       },
@@ -18684,7 +18684,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 262144
       }
     },
     "qwen/qwen3.5-9b": {
