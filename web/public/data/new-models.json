@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-13T16:31:39.585147Z",
+  "generated_at": "2026-08-13T17:14:09.786934Z",
   "models": [
+    {
+      "canonical_slug": "google/gemini-3.7-flash-20260813",
+      "created": 1786640581,
+      "detected_at": "2026-08-13T17:13:52.054547Z",
+      "model_id": "google/gemini-3.7-flash",
+      "name": "Google: Gemini 3.7 Flash"
+    },
+    {
+      "canonical_slug": "google/gemini-3.7-flash-20260813",
+      "created": 1786640581,
+      "detected_at": "2026-08-13T17:13:52.054547Z",
+      "model_id": "google/gemini-3.7-flash:batch",
+      "name": "Google: Gemini 3.7 Flash (batch)"
+    },
     {
       "canonical_slug": "liquid/lfm-2.5-2.6b-20260811",
       "created": 1786470519,
       "detected_at": "2026-08-12T19:01:26.039060Z",
       "model_id": "liquid/lfm-2.5-2.6b:free",
       "name": "LiquidAI: LFM2.5-2.6B (free)"
-    },
-    {
-      "canonical_slug": "deepseek/deepseek-v4-pro-20260813",
-      "created": 1786549364,
-      "detected_at": "2026-08-12T16:35:58.375372Z",
-      "model_id": "deepseek/deepseek-v4-pro-0813",
-      "name": "DeepSeek: DeepSeek V4 Pro 0813"
-    },
-    {
-      "canonical_slug": "qwen/qwen3.8-2.4t-a95b-20260812",
-      "created": 1786551702,
-      "detected_at": "2026-08-12T16:35:58.375372Z",
-      "model_id": "qwen/qwen3.8-2.4t-a95b",
-      "name": "Qwen: Qwen3.8 2.4T A95B"
     }
   ],
   "window_hours": 24
