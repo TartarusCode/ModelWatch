@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T23:25:53.932896Z",
+  "generated_at": "2026-08-13T00:19:35.286668Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3735,12 +3735,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro",
       "pricing": {
-        "completion": "0.00000087",
+        "completion": "0.000002336",
         "image": null,
-        "input_cache_read": "0.000000003625",
+        "input_cache_read": "0.00000009855",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000435",
+        "prompt": "0.000001168",
         "request": null,
         "web_search": null
       },
@@ -3769,7 +3769,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 384000
+        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4-pro-0813": {
@@ -9370,12 +9370,12 @@
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
       "pricing": {
-        "completion": "0.00000244",
+        "completion": "0.000004",
         "image": null,
-        "input_cache_read": "0.0000000976",
+        "input_cache_read": "0.00000016",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005795",
+        "prompt": "0.00000095",
         "request": null,
         "web_search": null
       },
@@ -10886,7 +10886,7 @@
       ],
       "top_provider": {
         "context_length": 16385,
-        "is_moderated": true,
+        "is_moderated": false,
         "max_completion_tokens": 4096
       }
     },
@@ -18583,12 +18583,12 @@
       "id": "qwen/qwen3.5-35b-a3b",
       "name": "Qwen: Qwen3.5-35B-A3B",
       "pricing": {
-        "completion": "0.000001",
+        "completion": "0.00000125",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000025",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000014",
+        "prompt": "0.00000025",
         "request": null,
         "web_search": null
       },
@@ -18649,12 +18649,12 @@
       "id": "qwen/qwen3.5-397b-a17b",
       "name": "Qwen: Qwen3.5 397B A17B",
       "pricing": {
-        "completion": "0.0000036",
+        "completion": "0.000003",
         "image": null,
-        "input_cache_read": "0.0000003",
+        "input_cache_read": "0.000000045",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005",
+        "prompt": "0.00000045",
         "request": null,
         "web_search": null
       },
@@ -18682,7 +18682,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 65536
       }
     },
     "qwen/qwen3.5-9b": {
@@ -21923,12 +21923,12 @@
       "id": "z-ai/glm-5.1",
       "name": "Z.ai: GLM 5.1",
       "pricing": {
-        "completion": "0.000002992",
+        "completion": "0.0000044",
         "image": null,
-        "input_cache_read": "0.0000001768",
+        "input_cache_read": "0.00000026",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000952",
+        "prompt": "0.0000014",
         "request": null,
         "web_search": null
       },
@@ -21987,12 +21987,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.00000154",
+        "completion": "0.00000315",
         "image": null,
-        "input_cache_read": "0.000000091",
+        "input_cache_read": "0.0000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000049",
+        "prompt": "0.0000005",
         "request": null,
         "web_search": null
       },

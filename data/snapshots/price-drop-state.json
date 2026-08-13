@@ -3721,7 +3721,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-12T23:25:53.932896Z",
+  "generated_at": "2026-08-13T00:19:35.286668Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -6172,11 +6172,11 @@
         "anchor": "2.336000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": "2.336000000",
-        "pending_builds": 1,
-        "pending_price": "0.87000000",
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.09855000000",
@@ -6192,11 +6192,11 @@
         "anchor": "1.168000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": "1.168000000",
-        "pending_builds": 1,
-        "pending_price": "0.435000000",
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "idle"
       }
     },
     "google/gemini-2.5-flash": {
@@ -8924,6 +8924,38 @@
       },
       "prompt": {
         "anchor": "0.18000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      }
+    },
+    "meta/muse-glimmer-30b": {
+      "completion": {
+        "anchor": "1.5000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_read": {
+        "anchor": "0.04000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt": {
+        "anchor": "0.35000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -15499,7 +15531,7 @@
     },
     "qwen/qwen3.5-35b-a3b": {
       "completion": {
-        "anchor": "1.000000",
+        "anchor": "1.25000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -15519,7 +15551,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.15000000",
+        "anchor": "0.25000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -15544,11 +15576,11 @@
         "anchor": "0.3000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.3000000",
+        "pending_builds": 1,
+        "pending_price": "0.045000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "prompt": {
         "anchor": "0.5000000",
