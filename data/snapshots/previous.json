@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T11:41:50.237516Z",
+  "generated_at": "2026-08-13T12:01:37.294466Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -6550,7 +6550,6 @@
         "web_search": null
       },
       "supported_parameters": [
-        "frequency_penalty",
         "logprobs",
         "max_tokens",
         "presence_penalty",
@@ -6669,7 +6668,6 @@
         "web_search": null
       },
       "supported_parameters": [
-        "frequency_penalty",
         "logprobs",
         "max_tokens",
         "presence_penalty",
@@ -7844,10 +7842,10 @@
       "pricing": {
         "completion": "0.0000009",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.00000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000022",
+        "prompt": "0.000000225",
         "request": null,
         "web_search": null
       },
@@ -7858,7 +7856,6 @@
         "logprobs",
         "max_tokens",
         "min_p",
-        "parallel_tool_calls",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
@@ -7874,9 +7871,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 196608,
+        "context_length": 65536,
         "is_moderated": false,
-        "max_completion_tokens": 196608
+        "max_completion_tokens": null
       }
     },
     "minimax/minimax-m2.7": {
