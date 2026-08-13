@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T00:19:35.286668Z",
+  "generated_at": "2026-08-13T00:35:16.002562Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -10573,6 +10573,8 @@
         "stop",
         "structured_outputs",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_k",
         "top_logprobs",
         "top_p"
@@ -19442,11 +19444,13 @@
         "logit_bias",
         "logprobs",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
         "repetition_penalty",
         "response_format",
+        "seed",
         "stop",
         "structured_outputs",
         "temperature",
