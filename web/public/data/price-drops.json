@@ -3963,24 +3963,9 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-13T13:40:21.801758Z",
+  "generated_at": "2026-08-13T14:12:19.124741Z",
   "recovered_drops": [],
   "settled_drops": [
-    {
-      "detected_at": "2026-08-05T14:01:02.373343Z",
-      "episode_start_per_million_usd": "0.980000",
-      "field": "prompt",
-      "model_id": "qwen/qwen3-vl-235b-a22b-thinking",
-      "new_per_million_usd": "0.400000",
-      "old_per_million_usd": "0.980000",
-      "pct_drop": 0.5918367346938775,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.580000",
-      "settled_at": "2026-08-12T14:01:14.629481Z",
-      "settled_per_million_usd": "0.400000",
-      "status": "settled"
-    },
     {
       "detected_at": "2026-08-06T01:01:05.495488Z",
       "episode_start_per_million_usd": "0.140000",
