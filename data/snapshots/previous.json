@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T17:31:54.101841Z",
+  "generated_at": "2026-08-13T18:01:38.522053Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -5348,12 +5348,12 @@
       "id": "google/gemini-3.6-flash",
       "name": "Google: Gemini 3.6 Flash",
       "pricing": {
-        "completion": "0.0000075",
-        "image": "0.0000015",
-        "input_cache_read": "0.00000015",
-        "input_cache_write": "0.0000000833333333333333",
-        "internal_reasoning": "0.0000075",
-        "prompt": "0.0000015",
+        "completion": "0.00000375",
+        "image": "0.00000075",
+        "input_cache_read": "0.000000075",
+        "input_cache_write": "0.0000000416666666666667",
+        "internal_reasoning": "0.00000375",
+        "prompt": "0.00000075",
         "request": null,
         "web_search": "0.014"
       },
@@ -5409,12 +5409,12 @@
       "id": "google/gemini-3.6-flash:batch",
       "name": "Google: Gemini 3.6 Flash (batch)",
       "pricing": {
-        "completion": "0.00000375",
-        "image": "0.00000075",
-        "input_cache_read": "0.000000075",
-        "input_cache_write": "0.0000000833333333333333",
-        "internal_reasoning": "0.00000375",
-        "prompt": "0.00000075",
+        "completion": "0.000001875",
+        "image": "0.000000375",
+        "input_cache_read": "0.0000000375",
+        "input_cache_write": "0.0000000416666666666667",
+        "internal_reasoning": "0.000001875",
+        "prompt": "0.000000375",
         "request": null,
         "web_search": "0.014"
       },
@@ -5464,7 +5464,7 @@
         "completion": "0.000001875",
         "image": "0.000000375",
         "input_cache_read": "0.0000000375",
-        "input_cache_write": "0.0000000416666666666667",
+        "input_cache_write": "0.0000000208333333333333",
         "internal_reasoning": "0.000001875",
         "prompt": "0.000000375",
         "request": null,
@@ -5515,12 +5515,12 @@
       "id": "google/gemini-3.7-flash:batch",
       "name": "Google: Gemini 3.7 Flash (batch)",
       "pricing": {
-        "completion": "0.000001875",
-        "image": "0.000000375",
-        "input_cache_read": "0.0000000375",
-        "input_cache_write": "0.0000000416666666666667",
-        "internal_reasoning": "0.000001875",
-        "prompt": "0.000000375",
+        "completion": "0.0000009375",
+        "image": "0.0000001875",
+        "input_cache_read": "0.00000001875",
+        "input_cache_write": "0.0000000208333333333333",
+        "internal_reasoning": "0.0000009375",
+        "prompt": "0.0000001875",
         "request": null,
         "web_search": "0.007"
       },
@@ -9416,12 +9416,12 @@
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
       "pricing": {
-        "completion": "0.00000244",
+        "completion": "0.00000236",
         "image": null,
-        "input_cache_read": "0.0000000976",
+        "input_cache_read": "0.0000000944",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005795",
+        "prompt": "0.0000005605",
         "request": null,
         "web_search": null
       },
