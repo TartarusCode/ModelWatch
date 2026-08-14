@@ -316,21 +316,6 @@
       "status": "active"
     },
     {
-      "detected_at": "2026-08-07T08:39:22.169101Z",
-      "episode_start_per_million_usd": "0.500000",
-      "field": "prompt",
-      "model_id": "thinkingmachines/inkling-small",
-      "new_per_million_usd": "0.450000",
-      "old_per_million_usd": "0.500000",
-      "pct_drop": 0.1,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.050000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "detected_at": "2026-08-12T22:31:13.298682Z",
       "episode_start_per_million_usd": "4.400000",
       "field": "completion",
@@ -3838,9 +3823,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.050000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-14T09:14:09.532882Z",
+      "settled_per_million_usd": "0.450000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-07T15:33:03.584406Z",
@@ -4278,7 +4263,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-14T08:01:41.334223Z",
+  "generated_at": "2026-08-14T09:14:22.188959Z",
   "recovered_drops": [],
   "settled_drops": [
     {
@@ -4294,6 +4279,21 @@
       "saved_per_million_usd": "0.060000",
       "settled_at": "2026-08-14T04:19:29.454378Z",
       "settled_per_million_usd": "0.340000",
+      "status": "settled"
+    },
+    {
+      "detected_at": "2026-08-07T08:39:22.169101Z",
+      "episode_start_per_million_usd": "0.500000",
+      "field": "prompt",
+      "model_id": "thinkingmachines/inkling-small",
+      "new_per_million_usd": "0.450000",
+      "old_per_million_usd": "0.500000",
+      "pct_drop": 0.1,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.050000",
+      "settled_at": "2026-08-14T09:14:09.532882Z",
+      "settled_per_million_usd": "0.450000",
       "status": "settled"
     }
   ],
