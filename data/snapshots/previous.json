@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T04:31:33.423953Z",
+  "generated_at": "2026-08-14T05:21:59.453549Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3870,6 +3870,7 @@
         "response_format",
         "structured_outputs",
         "temperature",
+        "tool_choice",
         "tools",
         "top_p"
       ],
