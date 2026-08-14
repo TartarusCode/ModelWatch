@@ -196,21 +196,6 @@
       "status": "active"
     },
     {
-      "detected_at": "2026-08-07T15:33:03.584406Z",
-      "episode_start_per_million_usd": "0.900000",
-      "field": "completion",
-      "model_id": "nvidia/nemotron-3-super-120b-a12b",
-      "new_per_million_usd": "0.400000",
-      "old_per_million_usd": "0.900000",
-      "pct_drop": 0.5555555555555556,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.500000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "detected_at": "2026-08-10T01:12:07.125565Z",
       "episode_start_per_million_usd": "0.300000",
       "field": "prompt",
@@ -3823,9 +3808,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.500000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-14T16:09:55.193042Z",
+      "settled_per_million_usd": "0.400000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-08T14:33:19.355751Z",
@@ -4248,7 +4233,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-14T15:31:38.357738Z",
+  "generated_at": "2026-08-14T16:10:10.235869Z",
   "recovered_drops": [
     {
       "detected_at": "2026-08-13T20:21:13.974117Z",
@@ -4295,6 +4280,21 @@
       "saved_per_million_usd": "0.050000",
       "settled_at": "2026-08-14T09:14:09.532882Z",
       "settled_per_million_usd": "0.450000",
+      "status": "settled"
+    },
+    {
+      "detected_at": "2026-08-07T15:33:03.584406Z",
+      "episode_start_per_million_usd": "0.900000",
+      "field": "completion",
+      "model_id": "nvidia/nemotron-3-super-120b-a12b",
+      "new_per_million_usd": "0.400000",
+      "old_per_million_usd": "0.900000",
+      "pct_drop": 0.5555555555555556,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.500000",
+      "settled_at": "2026-08-14T16:09:55.193042Z",
+      "settled_per_million_usd": "0.400000",
       "status": "settled"
     }
   ],

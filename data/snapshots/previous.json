@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T15:31:38.357738Z",
+  "generated_at": "2026-08-14T16:10:10.235869Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -19469,7 +19469,7 @@
         "tokenizer": "Qwen"
       },
       "canonical_slug": "qwen/qwen3.8-2.4t-a95b-20260812",
-      "context_length": 1010000,
+      "context_length": 1048576,
       "created": 1786551702,
       "default_parameters": {
         "temperature": 1,
