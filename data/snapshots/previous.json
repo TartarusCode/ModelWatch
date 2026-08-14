@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T18:50:44.534271Z",
+  "generated_at": "2026-08-14T19:16:11.868687Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -7255,7 +7255,7 @@
       "id": "meta-llama/llama-4-maverick",
       "name": "Meta: Llama 4 Maverick",
       "pricing": {
-        "completion": "0.000000696",
+        "completion": "0.0000008",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
@@ -7284,9 +7284,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 128000,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 16384
       }
     },
     "meta-llama/llama-4-scout": {
