@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T12:02:05.261115Z",
+  "generated_at": "2026-08-14T12:33:36.942796Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -18637,12 +18637,12 @@
       "id": "qwen/qwen3.5-35b-a3b",
       "name": "Qwen: Qwen3.5-35B-A3B",
       "pricing": {
-        "completion": "0.00000125",
+        "completion": "0.0000018",
         "image": null,
-        "input_cache_read": "0.00000025",
+        "input_cache_read": "0.000000225",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000025",
+        "prompt": "0.000000225",
         "request": null,
         "web_search": null
       },
@@ -18670,7 +18670,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 65536
       }
     },
     "qwen/qwen3.5-397b-a17b": {
