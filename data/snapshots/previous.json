@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T05:31:45.628364Z",
+  "generated_at": "2026-08-15T06:02:42.085133Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3612,12 +3612,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000015372",
+        "completion": "0.00000015092",
         "image": null,
-        "input_cache_read": "0.000000015372",
+        "input_cache_read": "0.000000015092",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000007686",
+        "prompt": "0.00000007546",
         "request": null,
         "web_search": null
       },
@@ -3832,6 +3832,54 @@
         "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 384000
+      }
+    },
+    "dots-studio/dots-3-note-preview:free": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "dots-studio/dots-3-note-preview-20260813",
+      "context_length": 512000,
+      "created": 1786680361,
+      "default_parameters": {},
+      "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
+      "expiration_date": null,
+      "id": "dots-studio/dots-3-note-preview:free",
+      "name": "Dots Studio: Dots3-Note Preview (free)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 512000,
+        "is_moderated": false,
+        "max_completion_tokens": 512000
       }
     },
     "google/gemini-2.5-flash": {
