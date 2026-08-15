@@ -4353,7 +4353,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-15T04:01:37.179089Z",
+  "generated_at": "2026-08-15T04:31:23.530300Z",
   "recovered_drops": [
     {
       "detected_at": "2026-08-13T20:21:13.974117Z",
@@ -4372,21 +4372,6 @@
     }
   ],
   "settled_drops": [
-    {
-      "detected_at": "2026-08-07T03:16:29.204936Z",
-      "episode_start_per_million_usd": "0.400000",
-      "field": "completion",
-      "model_id": "google/gemma-4-31b-it",
-      "new_per_million_usd": "0.340000",
-      "old_per_million_usd": "0.400000",
-      "pct_drop": 0.15,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.060000",
-      "settled_at": "2026-08-14T04:19:29.454378Z",
-      "settled_per_million_usd": "0.340000",
-      "status": "settled"
-    },
     {
       "detected_at": "2026-08-07T08:39:22.169101Z",
       "episode_start_per_million_usd": "0.500000",
