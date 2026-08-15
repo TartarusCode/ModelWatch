@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T00:44:32.828097Z",
+  "generated_at": "2026-08-15T01:01:45.734729Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3428,7 +3428,7 @@
         "top_p": null
       },
       "description": "DeepSeek-V3.1 Terminus is an update to [DeepSeek V3.1](/deepseek/deepseek-chat-v3.1) that maintains the model's original capabilities while addressing issues reported by users, including language consistency and agent capabilities, further optimizing the model's...",
-      "expiration_date": null,
+      "expiration_date": "2026-08-17",
       "id": "deepseek/deepseek-v3.1-terminus",
       "name": "DeepSeek: DeepSeek V3.1 Terminus",
       "pricing": {
@@ -3612,12 +3612,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000016492",
+        "completion": "0.00000016212",
         "image": null,
-        "input_cache_read": "0.000000016492",
+        "input_cache_read": "0.000000016212",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008246",
+        "prompt": "0.00000008106",
         "request": null,
         "web_search": null
       },
@@ -14930,66 +14930,6 @@
         "context_length": 131072,
         "is_moderated": false,
         "max_completion_tokens": 131072
-      }
-    },
-    "openai/gpt-oss-20b:free": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT"
-      },
-      "canonical_slug": "openai/gpt-oss-20b",
-      "context_length": 131072,
-      "created": 1754414229,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": null
-      },
-      "description": "gpt-oss-20b is an open-weight 21B parameter model released by OpenAI under the Apache 2.0 license. It uses a Mixture-of-Experts (MoE) architecture with 3.6B active parameters per forward pass, optimized for...",
-      "expiration_date": null,
-      "id": "openai/gpt-oss-20b:free",
-      "name": "OpenAI: gpt-oss-20b (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "reasoning_effort",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 32768
       }
     },
     "openai/gpt-oss-safeguard-20b": {
