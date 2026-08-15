@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T08:01:30.699840Z",
+  "generated_at": "2026-08-15T14:32:26.280642Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3612,12 +3612,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000014812",
+        "completion": "0.00000012852",
         "image": null,
-        "input_cache_read": "0.000000014812",
+        "input_cache_read": "0.000000012852",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000007406",
+        "prompt": "0.00000006426",
         "request": null,
         "web_search": null
       },
@@ -6042,7 +6042,6 @@
         "temperature",
         "tool_choice",
         "tools",
-        "top_a",
         "top_k",
         "top_logprobs",
         "top_p"
@@ -9472,12 +9471,12 @@
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
       "pricing": {
-        "completion": "0.00000341",
+        "completion": "0.00000228",
         "image": null,
-        "input_cache_read": "0.00000015",
+        "input_cache_read": "0.0000000912",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000065",
+        "prompt": "0.0000005415",
         "request": null,
         "web_search": null
       },
@@ -17007,12 +17006,12 @@
       "id": "qwen/qwen-plus-2025-07-28:thinking",
       "name": "Qwen: Qwen Plus 0728 (thinking)",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.00000078",
         "image": null,
         "input_cache_read": null,
-        "input_cache_write": "0.0000005",
+        "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000004",
+        "prompt": "0.00000026",
         "request": null,
         "web_search": null
       },
@@ -19618,6 +19617,8 @@
         "stop",
         "structured_outputs",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_k",
         "top_logprobs",
         "top_p"
@@ -22153,12 +22154,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.00000154",
+        "completion": "0.000001452",
         "image": null,
-        "input_cache_read": "0.000000091",
+        "input_cache_read": "0.0000000858",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000049",
+        "prompt": "0.000000462",
         "request": null,
         "web_search": null
       },

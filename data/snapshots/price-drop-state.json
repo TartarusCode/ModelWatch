@@ -3653,12 +3653,12 @@
       "new_per_million_usd": "0.579500",
       "old_per_million_usd": "0.950000",
       "pct_drop": 0.39,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-08-15T14:32:26.280642Z",
+      "recovered_per_million_usd": "0.541500",
       "saved_per_million_usd": "0.370500",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     },
     {
       "detected_at": "2026-08-11T14:32:27.196973Z",
@@ -3668,12 +3668,12 @@
       "new_per_million_usd": "2.440000",
       "old_per_million_usd": "4.000000",
       "pct_drop": 0.39,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-08-15T14:32:26.280642Z",
+      "recovered_per_million_usd": "2.280000",
       "saved_per_million_usd": "1.560000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     },
     {
       "detected_at": "2026-08-12T01:01:22.641513Z",
@@ -3961,7 +3961,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-15T08:01:30.699840Z",
+  "generated_at": "2026-08-15T14:32:26.280642Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -10502,11 +10502,11 @@
         "anchor": "2.44000000",
         "confirmed_at": "2026-08-11T14:32:27.196973Z",
         "confirmed_price": "2.44000000",
-        "episode_start_price": "4.000000",
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "2.44000000",
+        "pending_builds": 1,
+        "pending_price": "2.28000000",
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.2000000",
@@ -10522,11 +10522,11 @@
         "anchor": "0.5795000000",
         "confirmed_at": "2026-08-11T14:32:27.196973Z",
         "confirmed_price": "0.5795000000",
-        "episode_start_price": "0.95000000",
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.5795000000",
+        "pending_builds": 1,
+        "pending_price": "0.5415000000",
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "pending"
       }
     },
     "moonshotai/kimi-k2.7-code": {
@@ -15278,11 +15278,11 @@
         "anchor": "1.2000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "1.2000000",
+        "pending_builds": 1,
+        "pending_price": "0.78000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_write": {
         "anchor": "0.5000000",
@@ -15298,11 +15298,11 @@
         "anchor": "0.4000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.4000000",
+        "pending_builds": 1,
+        "pending_price": "0.26000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "qwen/qwen2.5-vl-72b-instruct": {
