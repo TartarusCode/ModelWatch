@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-08-15T01:01:45.734729Z",
+  "generated_at": "2026-08-15T01:51:40.900456Z",
   "models": [
+    {
+      "canonical_slug": "openai/gpt-oss-20b",
+      "created": 1754414229,
+      "detected_at": "2026-08-15T01:51:31.453380Z",
+      "model_id": "openai/gpt-oss-20b:free",
+      "name": "OpenAI: gpt-oss-20b (free)"
+    },
+    {
+      "canonical_slug": "qwen/qwen3.8-27b-20260814",
+      "created": 1786722910,
+      "detected_at": "2026-08-15T01:51:31.453380Z",
+      "model_id": "qwen/qwen3.8-27b",
+      "name": "Qwen: Qwen3.8 27B"
+    },
     {
       "canonical_slug": "dots-studio/dots-3-note-preview-20260813",
       "created": 1786680361,
