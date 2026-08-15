@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T00:02:30.903370Z",
+  "generated_at": "2026-08-15T00:44:32.828097Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3612,12 +3612,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000028",
+        "completion": "0.00000016492",
         "image": null,
-        "input_cache_read": "0.000000028",
+        "input_cache_read": "0.000000016492",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000014",
+        "prompt": "0.00000008246",
         "request": null,
         "web_search": null
       },
@@ -3646,9 +3646,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1024000,
         "is_moderated": false,
-        "max_completion_tokens": 393216
+        "max_completion_tokens": 384000
       }
     },
     "deepseek/deepseek-v4-flash-0731": {
@@ -9424,12 +9424,12 @@
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
       "pricing": {
-        "completion": "0.00000236",
+        "completion": "0.00000341",
         "image": null,
-        "input_cache_read": "0.0000000944",
+        "input_cache_read": "0.00000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005605",
+        "prompt": "0.00000065",
         "request": null,
         "web_search": null
       },
@@ -21981,12 +21981,12 @@
       "id": "z-ai/glm-5.1",
       "name": "Z.ai: GLM 5.1",
       "pricing": {
-        "completion": "0.0000044",
+        "completion": "0.000003036",
         "image": null,
-        "input_cache_read": "0.00000026",
+        "input_cache_read": "0.0000001794",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000014",
+        "prompt": "0.000000966",
         "request": null,
         "web_search": null
       },
@@ -22012,9 +22012,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 202752,
+        "context_length": 200000,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 128000
       }
     },
     "z-ai/glm-5.2": {
