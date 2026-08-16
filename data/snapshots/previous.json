@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T23:07:54.947512Z",
+  "generated_at": "2026-08-16T23:32:24.950832Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -19058,12 +19058,12 @@
       "id": "qwen/qwen3.6-27b",
       "name": "Qwen: Qwen3.6 27B",
       "pricing": {
-        "completion": "0.000002",
+        "completion": "0.0000024",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.000000289",
         "request": null,
         "web_search": null
       },
@@ -19089,9 +19089,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 131072
       }
     },
     "qwen/qwen3.6-35b-a3b": {
