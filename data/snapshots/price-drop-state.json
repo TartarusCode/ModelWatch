@@ -4169,9 +4169,39 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-08-16T22:36:44.884255Z",
+      "episode_start_per_million_usd": "0.120000",
+      "field": "prompt",
+      "model_id": "google/gemma-4-26b-a4b-it",
+      "new_per_million_usd": "0.070000",
+      "old_per_million_usd": "0.120000",
+      "pct_drop": 0.4166666666666667,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.050000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-08-16T22:36:44.884255Z",
+      "episode_start_per_million_usd": "0.400000",
+      "field": "completion",
+      "model_id": "google/gemma-4-26b-a4b-it",
+      "new_per_million_usd": "0.340000",
+      "old_per_million_usd": "0.400000",
+      "pct_drop": 0.15,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.060000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-08-16T22:10:53.356021Z",
+  "generated_at": "2026-08-16T22:36:54.814887Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -8859,14 +8889,14 @@
     },
     "google/gemma-4-26b-a4b-it": {
       "completion": {
-        "anchor": "0.4000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.34000000",
+        "confirmed_at": "2026-08-16T22:36:44.884255Z",
+        "confirmed_price": "0.34000000",
         "episode_start_price": "0.4000000",
-        "pending_builds": 1,
-        "pending_price": "0.34000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.05000000",
@@ -8879,14 +8909,14 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.12000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.07000000",
+        "confirmed_at": "2026-08-16T22:36:44.884255Z",
+        "confirmed_price": "0.07000000",
         "episode_start_price": "0.12000000",
-        "pending_builds": 1,
-        "pending_price": "0.07000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "google/gemma-4-31b-it": {
