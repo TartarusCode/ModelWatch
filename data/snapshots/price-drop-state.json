@@ -4171,7 +4171,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-16T21:31:45.738099Z",
+  "generated_at": "2026-08-16T22:10:53.356021Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -8862,11 +8862,11 @@
         "anchor": "0.4000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.4000000",
+        "pending_builds": 1,
+        "pending_price": "0.34000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.05000000",
@@ -8882,11 +8882,11 @@
         "anchor": "0.12000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.12000000",
+        "pending_builds": 1,
+        "pending_price": "0.07000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "google/gemma-4-31b-it": {
