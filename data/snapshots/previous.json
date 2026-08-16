@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T16:01:20.741453Z",
+  "generated_at": "2026-08-16T16:31:20.458950Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -10650,12 +10650,12 @@
       "id": "nvidia/nemotron-3.5-lightning",
       "name": "NVIDIA: Nemotron 3.5 Lightning",
       "pricing": {
-        "completion": "0.00000025",
+        "completion": "0.0000002",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.00000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.00000008",
         "request": null,
         "web_search": null
       },
@@ -10683,7 +10683,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 131072
       }
     },
     "nvidia/nemotron-3.5-lightning:free": {
