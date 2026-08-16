@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T07:01:22.951274Z",
+  "generated_at": "2026-08-16T07:31:25.648026Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -7787,7 +7787,7 @@
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000004",
+        "prompt": "0.00000055",
         "request": null,
         "web_search": null
       },
@@ -11144,7 +11144,7 @@
       ],
       "top_provider": {
         "context_length": 8191,
-        "is_moderated": true,
+        "is_moderated": false,
         "max_completion_tokens": 4096
       }
     },
