@@ -136,21 +136,6 @@
       "status": "active"
     },
     {
-      "detected_at": "2026-08-09T13:48:16.019070Z",
-      "episode_start_per_million_usd": "0.110000",
-      "field": "completion",
-      "model_id": "gryphe/mythomax-l2-13b",
-      "new_per_million_usd": "0.060000",
-      "old_per_million_usd": "0.110000",
-      "pct_drop": 0.45454545454545453,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.050000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "detected_at": "2026-08-10T01:12:07.125565Z",
       "episode_start_per_million_usd": "0.800000",
       "field": "completion",
@@ -4078,9 +4063,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.050000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-16T14:02:47.394648Z",
+      "settled_per_million_usd": "0.060000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-10T01:12:07.125565Z",
@@ -4653,7 +4638,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-16T07:31:25.648026Z",
+  "generated_at": "2026-08-16T14:03:06.802809Z",
   "recovered_drops": [
     {
       "detected_at": "2026-08-11T14:32:27.196973Z",
@@ -4716,7 +4701,23 @@
       "status": "recovered"
     }
   ],
-  "settled_drops": [],
+  "settled_drops": [
+    {
+      "detected_at": "2026-08-09T13:48:16.019070Z",
+      "episode_start_per_million_usd": "0.110000",
+      "field": "completion",
+      "model_id": "gryphe/mythomax-l2-13b",
+      "new_per_million_usd": "0.060000",
+      "old_per_million_usd": "0.110000",
+      "pct_drop": 0.45454545454545453,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.050000",
+      "settled_at": "2026-08-16T14:02:47.394648Z",
+      "settled_per_million_usd": "0.060000",
+      "status": "settled"
+    }
+  ],
   "thresholds": {
     "min_pct": 0.1,
     "min_saved_per_million_usd": 0.05
