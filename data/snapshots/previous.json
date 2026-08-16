@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T04:31:25.702105Z",
+  "generated_at": "2026-08-16T05:01:25.312194Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3612,12 +3612,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000012852",
+        "completion": "0.00000012572",
         "image": null,
-        "input_cache_read": "0.000000012852",
+        "input_cache_read": "0.000000012572",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006426",
+        "prompt": "0.00000006286",
         "request": null,
         "web_search": null
       },
@@ -22154,12 +22154,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.000001012",
+        "completion": "0.000000968",
         "image": null,
-        "input_cache_read": "0.0000000598",
+        "input_cache_read": "0.0000000572",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000322",
+        "prompt": "0.000000308",
         "request": null,
         "web_search": null
       },
@@ -22187,9 +22187,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1024000,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 128000
       }
     },
     "z-ai/glm-5.2:batch": {
