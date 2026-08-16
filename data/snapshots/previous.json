@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T06:01:43.509373Z",
+  "generated_at": "2026-08-16T06:31:28.693283Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -9471,12 +9471,12 @@
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
       "pricing": {
-        "completion": "0.00000341",
+        "completion": "0.00000228",
         "image": null,
-        "input_cache_read": "0.00000015",
+        "input_cache_read": "0.0000000912",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000065",
+        "prompt": "0.0000005415",
         "request": null,
         "web_search": null
       },
