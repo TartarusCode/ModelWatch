@@ -4201,7 +4201,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-16T23:32:24.950832Z",
+  "generated_at": "2026-08-17T00:23:26.495861Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -6696,31 +6696,31 @@
         "anchor": "2.336000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "2.336000000",
+        "pending_builds": 1,
+        "pending_price": "0.87000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.09855000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.09855000000",
+        "pending_builds": 1,
+        "pending_price": "0.003625000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "prompt": {
         "anchor": "1.168000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "1.168000000",
+        "pending_builds": 1,
+        "pending_price": "0.435000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "deepseek/deepseek-v4-pro-0813": {
@@ -6728,11 +6728,11 @@
         "anchor": "1.98000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "1.98000000",
+        "pending_builds": 1,
+        "pending_price": "0.87000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.022000000",
@@ -16088,11 +16088,11 @@
         "anchor": "0.26000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.26000000",
+        "pending_builds": 1,
+        "pending_price": "0.21000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "qwen/qwen3-vl-235b-a22b-thinking": {
