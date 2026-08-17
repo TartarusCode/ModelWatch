@@ -196,6 +196,36 @@
       "status": "active"
     },
     {
+      "detected_at": "2026-08-17T14:31:33.144814Z",
+      "episode_start_per_million_usd": "4.000000",
+      "field": "completion",
+      "model_id": "moonshotai/kimi-k2.6",
+      "new_per_million_usd": "2.360000",
+      "old_per_million_usd": "4.000000",
+      "pct_drop": 0.41,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "1.640000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-08-17T14:31:33.144814Z",
+      "episode_start_per_million_usd": "0.950000",
+      "field": "prompt",
+      "model_id": "moonshotai/kimi-k2.6",
+      "new_per_million_usd": "0.560500",
+      "old_per_million_usd": "0.950000",
+      "pct_drop": 0.41,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.389500",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
       "detected_at": "2026-08-16T17:02:30.124204Z",
       "episode_start_per_million_usd": "0.250000",
       "field": "completion",
@@ -4771,9 +4801,39 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-08-17T14:31:33.144814Z",
+      "episode_start_per_million_usd": "0.950000",
+      "field": "prompt",
+      "model_id": "moonshotai/kimi-k2.6",
+      "new_per_million_usd": "0.560500",
+      "old_per_million_usd": "0.950000",
+      "pct_drop": 0.41,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.389500",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-08-17T14:31:33.144814Z",
+      "episode_start_per_million_usd": "4.000000",
+      "field": "completion",
+      "model_id": "moonshotai/kimi-k2.6",
+      "new_per_million_usd": "2.360000",
+      "old_per_million_usd": "4.000000",
+      "pct_drop": 0.41,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "1.640000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-08-17T14:01:41.878909Z",
+  "generated_at": "2026-08-17T14:31:48.071669Z",
   "recovered_drops": [
     {
       "detected_at": "2026-08-16T07:01:09.334437Z",
@@ -4867,21 +4927,6 @@
     }
   ],
   "settled_drops": [
-    {
-      "detected_at": "2026-08-09T13:48:16.019070Z",
-      "episode_start_per_million_usd": "0.110000",
-      "field": "completion",
-      "model_id": "gryphe/mythomax-l2-13b",
-      "new_per_million_usd": "0.060000",
-      "old_per_million_usd": "0.110000",
-      "pct_drop": 0.45454545454545453,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.050000",
-      "settled_at": "2026-08-16T14:02:47.394648Z",
-      "settled_per_million_usd": "0.060000",
-      "status": "settled"
-    },
     {
       "detected_at": "2026-08-10T01:12:07.125565Z",
       "episode_start_per_million_usd": "0.300000",
