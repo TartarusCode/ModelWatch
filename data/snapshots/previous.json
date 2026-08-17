@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T12:31:49.837929Z",
+  "generated_at": "2026-08-17T13:17:44.865920Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3428,13 +3428,13 @@
         "top_p": null
       },
       "description": "DeepSeek-V3.1 Terminus is an update to [DeepSeek V3.1](/deepseek/deepseek-chat-v3.1) that maintains the model's original capabilities while addressing issues reported by users, including language consistency and agent capabilities, further optimizing the model's...",
-      "expiration_date": "2026-08-17",
+      "expiration_date": null,
       "id": "deepseek/deepseek-v3.1-terminus",
       "name": "DeepSeek: DeepSeek V3.1 Terminus",
       "pricing": {
-        "completion": "0.00000095",
+        "completion": "0.000001",
         "image": null,
-        "input_cache_read": "0.00000013",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.00000027",
@@ -3463,7 +3463,7 @@
       "top_provider": {
         "context_length": 163840,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 163840
       }
     },
     "deepseek/deepseek-v3.2": {
