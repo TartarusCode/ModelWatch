@@ -4574,9 +4574,24 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-08-18T11:02:20.068934Z",
+      "episode_start_per_million_usd": "1.320000",
+      "field": "prompt",
+      "model_id": "deepseek/deepseek-v4-pro-0813",
+      "new_per_million_usd": "0.660000",
+      "old_per_million_usd": "1.320000",
+      "pct_drop": 0.5,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.660000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-08-18T10:31:29.617282Z",
+  "generated_at": "2026-08-18T11:02:37.416909Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -7120,14 +7135,14 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "1.32000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.66000000",
+        "confirmed_at": "2026-08-18T11:02:20.068934Z",
+        "confirmed_price": "0.66000000",
         "episode_start_price": "1.32000000",
-        "pending_builds": 1,
-        "pending_price": "0.66000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "google/gemini-2.5-flash": {
