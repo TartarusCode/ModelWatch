@@ -4576,7 +4576,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-18T09:02:36.559305Z",
+  "generated_at": "2026-08-18T09:31:33.298261Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -7123,11 +7123,11 @@
         "anchor": "1.32000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": "1.32000000",
-        "pending_builds": 1,
-        "pending_price": "0.66000000",
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "idle"
       }
     },
     "google/gemini-2.5-flash": {
