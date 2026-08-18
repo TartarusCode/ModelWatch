@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T15:31:44.262776Z",
+  "generated_at": "2026-08-18T16:03:32.977527Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3514,12 +3514,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.0000001652",
+        "completion": "0.0000001596",
         "image": null,
-        "input_cache_read": "0.00000001652",
+        "input_cache_read": "0.00000001596",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000826",
+        "prompt": "0.0000000798",
         "request": null,
         "web_search": null
       },
