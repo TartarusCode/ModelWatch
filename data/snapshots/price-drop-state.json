@@ -4591,7 +4591,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-18T19:31:43.785584Z",
+  "generated_at": "2026-08-18T20:01:46.188296Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -10421,7 +10421,7 @@
     },
     "minimax/minimax-m3:batch": {
       "completion": {
-        "anchor": "0.6000000",
+        "anchor": "1.2000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -10431,7 +10431,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.03000000",
+        "anchor": "0.06000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -10441,7 +10441,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.15000000",
+        "anchor": "0.3000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -11193,7 +11193,7 @@
     },
     "moonshotai/kimi-k2.7-code:batch": {
       "completion": {
-        "anchor": "2.000000",
+        "anchor": "4.000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -11203,7 +11203,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.095000000",
+        "anchor": "0.19000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -11213,7 +11213,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.475000000",
+        "anchor": "0.95000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -11571,7 +11571,7 @@
     },
     "nvidia/nemotron-3-ultra-550b-a55b:batch": {
       "completion": {
-        "anchor": "1.8000000",
+        "anchor": "3.6000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -11581,7 +11581,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.1000000",
+        "anchor": "0.2000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -11591,7 +11591,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.3000000",
+        "anchor": "0.6000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -17811,7 +17811,7 @@
     },
     "thinkingmachines/inkling:batch": {
       "completion": {
-        "anchor": "2.025000000",
+        "anchor": "4.05000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -17821,7 +17821,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.085000000",
+        "anchor": "0.17000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -17831,7 +17831,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.5000000",
+        "anchor": "1.000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -18619,7 +18619,7 @@
     },
     "z-ai/glm-5.2:batch": {
       "completion": {
-        "anchor": "2.2000000",
+        "anchor": "4.4000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -18629,7 +18629,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.13000000",
+        "anchor": "0.26000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,
@@ -18639,7 +18639,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.7000000",
+        "anchor": "1.4000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "episode_start_price": null,

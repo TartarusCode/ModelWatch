@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T19:31:43.785584Z",
+  "generated_at": "2026-08-18T20:01:46.188296Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -8101,12 +8101,12 @@
       "id": "minimax/minimax-m3:batch",
       "name": "MiniMax: MiniMax M3 (batch)",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.00000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -9507,12 +9507,12 @@
       "id": "moonshotai/kimi-k2.7-code:batch",
       "name": "MoonshotAI: Kimi K2.7 Code (batch)",
       "pricing": {
-        "completion": "0.000002",
+        "completion": "0.000004",
         "image": null,
-        "input_cache_read": "0.000000095",
+        "input_cache_read": "0.00000019",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000475",
+        "prompt": "0.00000095",
         "request": null,
         "web_search": null
       },
@@ -10393,12 +10393,12 @@
       "id": "nvidia/nemotron-3-ultra-550b-a55b:batch",
       "name": "NVIDIA: Nemotron 3 Ultra (batch)",
       "pricing": {
-        "completion": "0.0000018",
+        "completion": "0.0000036",
         "image": null,
-        "input_cache_read": "0.0000001",
+        "input_cache_read": "0.0000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.0000006",
         "request": null,
         "web_search": null
       },
@@ -20719,12 +20719,12 @@
       "id": "thinkingmachines/inkling:batch",
       "name": "Thinking Machines: Inkling (batch)",
       "pricing": {
-        "completion": "0.000002025",
+        "completion": "0.00000405",
         "image": null,
-        "input_cache_read": "0.000000085",
+        "input_cache_read": "0.00000017",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005",
+        "prompt": "0.000001",
         "request": null,
         "web_search": null
       },
@@ -22046,12 +22046,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.000001496",
+        "completion": "0.00000374",
         "image": null,
-        "input_cache_read": "0.0000000884",
+        "input_cache_read": "0.000000221",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000476",
+        "prompt": "0.00000119",
         "request": null,
         "web_search": null
       },
@@ -22081,7 +22081,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 262144
       }
     },
     "z-ai/glm-5.2:batch": {
@@ -22112,12 +22112,12 @@
       "id": "z-ai/glm-5.2:batch",
       "name": "Z.ai: GLM 5.2 (batch)",
       "pricing": {
-        "completion": "0.0000022",
+        "completion": "0.0000044",
         "image": null,
-        "input_cache_read": "0.00000013",
+        "input_cache_read": "0.00000026",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007",
+        "prompt": "0.0000014",
         "request": null,
         "web_search": null
       },
