@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T00:45:01.054630Z",
+  "generated_at": "2026-08-18T01:15:41.653587Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -1038,14 +1038,7 @@
       "canonical_slug": "anthropic/claude-4.5-opus-20251124",
       "context_length": 200000,
       "created": 1764010580,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
+      "default_parameters": {},
       "description": "Claude Opus 4.5 is Anthropic’s frontier reasoning model optimized for complex software engineering, agentic workflows, and long-horizon computer use. It offers strong multimodal capabilities, competitive performance across real-world coding and...",
       "expiration_date": null,
       "id": "anthropic/claude-opus-4.5",
@@ -1097,14 +1090,7 @@
       "canonical_slug": "anthropic/claude-4.5-opus-20251124",
       "context_length": 200000,
       "created": 1764010580,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
+      "default_parameters": {},
       "description": "Claude Opus 4.5 is Anthropic’s frontier reasoning model optimized for complex software engineering, agentic workflows, and long-horizon computer use. It offers strong multimodal capabilities, competitive performance across real-world coding and...",
       "expiration_date": null,
       "id": "anthropic/claude-opus-4.5:batch",
@@ -1154,14 +1140,7 @@
       "canonical_slug": "anthropic/claude-4.6-opus-20260205",
       "context_length": 1000000,
       "created": 1770219050,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
+      "default_parameters": {},
       "description": "Opus 4.6 is Anthropic’s strongest model for coding and long-running professional tasks. It is built for agents that operate across entire workflows rather than single prompts, making it especially effective...",
       "expiration_date": null,
       "id": "anthropic/claude-opus-4.6",
@@ -1215,14 +1194,7 @@
       "canonical_slug": "anthropic/claude-4.6-opus-20260205",
       "context_length": 1000000,
       "created": 1770219050,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
+      "default_parameters": {},
       "description": "Opus 4.6 is Anthropic’s strongest model for coding and long-running professional tasks. It is built for agents that operate across entire workflows rather than single prompts, making it especially effective...",
       "expiration_date": null,
       "id": "anthropic/claude-opus-4.6:batch",
@@ -1274,14 +1246,7 @@
       "canonical_slug": "anthropic/claude-4.7-opus-20260416",
       "context_length": 1000000,
       "created": 1776351100,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
+      "default_parameters": {},
       "description": "Opus 4.7 is the next generation of Anthropic's Opus family, built for long-running, asynchronous agents. Building on the coding and agentic strengths of Opus 4.6, it delivers stronger performance on...",
       "expiration_date": null,
       "id": "anthropic/claude-opus-4.7",
@@ -1389,14 +1354,7 @@
       "canonical_slug": "anthropic/claude-4.7-opus-20260416",
       "context_length": 1000000,
       "created": 1776351100,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
+      "default_parameters": {},
       "description": "Opus 4.7 is the next generation of Anthropic's Opus family, built for long-running, asynchronous agents. Building on the coding and agentic strengths of Opus 4.6, it delivers stronger performance on...",
       "expiration_date": null,
       "id": "anthropic/claude-opus-4.7:batch",
@@ -1446,14 +1404,7 @@
       "canonical_slug": "anthropic/claude-4.8-opus-20260528",
       "context_length": 1000000,
       "created": 1779905091,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
+      "default_parameters": {},
       "description": "Claude Opus 4.8 is Anthropic's most capable generally available model in the Opus family. It supports text, image, and file inputs with text output, with reasoning support and a 1M-token...",
       "expiration_date": null,
       "id": "anthropic/claude-opus-4.8",
@@ -1562,14 +1513,7 @@
       "canonical_slug": "anthropic/claude-4.8-opus-20260528",
       "context_length": 1000000,
       "created": 1779905091,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
+      "default_parameters": {},
       "description": "Claude Opus 4.8 is Anthropic's most capable generally available model in the Opus family. It supports text, image, and file inputs with text output, with reasoning support and a 1M-token...",
       "expiration_date": null,
       "id": "anthropic/claude-opus-4.8:batch",
@@ -1944,14 +1888,7 @@
       "canonical_slug": "anthropic/claude-4.6-sonnet-20260217",
       "context_length": 1000000,
       "created": 1771342990,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
+      "default_parameters": {},
       "description": "Sonnet 4.6 is Anthropic's most capable Sonnet-class model yet, with frontier performance across coding, agents, and professional work. It excels at iterative development, complex codebase navigation, end-to-end project management with...",
       "expiration_date": null,
       "id": "anthropic/claude-sonnet-4.6",
@@ -2005,14 +1942,7 @@
       "canonical_slug": "anthropic/claude-4.6-sonnet-20260217",
       "context_length": 1000000,
       "created": 1771342990,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
+      "default_parameters": {},
       "description": "Sonnet 4.6 is Anthropic's most capable Sonnet-class model yet, with frontier performance across coding, agents, and professional work. It excels at iterative development, complex codebase navigation, end-to-end project management with...",
       "expiration_date": null,
       "id": "anthropic/claude-sonnet-4.6:batch",
@@ -3707,12 +3637,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.00000198",
+        "completion": "0.00000396",
         "image": null,
-        "input_cache_read": "0.000000022",
+        "input_cache_read": "0.000000044",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000066",
+        "prompt": "0.00000132",
         "request": null,
         "web_search": null
       },
@@ -3769,12 +3699,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000198",
+        "completion": "0.00000396",
         "image": null,
-        "input_cache_read": "0.000000022",
+        "input_cache_read": "0.000000044",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000066",
+        "prompt": "0.00000132",
         "request": null,
         "web_search": null
       },
@@ -6816,67 +6746,6 @@
         "context_length": 256000,
         "is_moderated": false,
         "max_completion_tokens": 80000
-      }
-    },
-    "liquid/lfm-2.5-2.6b:free": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "liquid/lfm-2.5-2.6b-20260811",
-      "context_length": 128000,
-      "created": 1786470519,
-      "default_parameters": {
-        "repetition_penalty": 1.1,
-        "temperature": 0.1,
-        "top_k": 50
-      },
-      "description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or...",
-      "expiration_date": null,
-      "id": "liquid/lfm-2.5-2.6b:free",
-      "name": "LiquidAI: LFM2.5-2.6B (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_completion_tokens",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 128000,
-        "is_moderated": false,
-        "max_completion_tokens": 8192
       }
     },
     "mancer/weaver": {
@@ -16102,7 +15971,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logprobs",
-        "max_completion_tokens",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -18526,12 +18394,12 @@
       "id": "qwen/qwen3.5-122b-a10b",
       "name": "Qwen: Qwen3.5-122B-A10B",
       "pricing": {
-        "completion": "0.0000024",
+        "completion": "0.00000208",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000029",
+        "prompt": "0.00000026",
         "request": null,
         "web_search": null
       },
@@ -18559,7 +18427,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 81920
+        "max_completion_tokens": 262144
       }
     },
     "qwen/qwen3.5-27b": {
