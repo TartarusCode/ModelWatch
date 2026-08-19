@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T03:31:21.995878Z",
+  "generated_at": "2026-08-19T04:01:20.735202Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -6502,7 +6502,6 @@
         "response_format",
         "seed",
         "stop",
-        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
@@ -6748,67 +6747,6 @@
         "context_length": 256000,
         "is_moderated": false,
         "max_completion_tokens": 80000
-      }
-    },
-    "liquid/lfm-2.5-2.6b:free": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "liquid/lfm-2.5-2.6b-20260811",
-      "context_length": 128000,
-      "created": 1786470519,
-      "default_parameters": {
-        "repetition_penalty": 1.1,
-        "temperature": 0.1,
-        "top_k": 50
-      },
-      "description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or...",
-      "expiration_date": null,
-      "id": "liquid/lfm-2.5-2.6b:free",
-      "name": "LiquidAI: LFM2.5-2.6B (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_completion_tokens",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 128000,
-        "is_moderated": false,
-        "max_completion_tokens": 8192
       }
     },
     "mancer/weaver": {
@@ -16034,7 +15972,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logprobs",
-        "max_completion_tokens",
         "max_tokens",
         "min_p",
         "presence_penalty",
