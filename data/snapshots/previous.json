@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T00:01:40.272830Z",
+  "generated_at": "2026-08-19T00:31:39.570865Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -3514,12 +3514,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.0000001484",
+        "completion": "0.0000001652",
         "image": null,
-        "input_cache_read": "0.00000001484",
+        "input_cache_read": "0.00000001652",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000742",
+        "prompt": "0.0000000826",
         "request": null,
         "web_search": null
       },
@@ -5473,12 +5473,12 @@
       "id": "google/gemini-3.7-flash:batch",
       "name": "Google: Gemini 3.7 Flash (batch)",
       "pricing": {
-        "completion": "0.00000046875",
-        "image": "0.00000009375",
-        "input_cache_read": "0.000000009375",
-        "input_cache_write": "0.0000000104166666666667",
-        "internal_reasoning": "0.00000046875",
-        "prompt": "0.00000009375",
+        "completion": "0.0000009375",
+        "image": "0.0000001875",
+        "input_cache_read": "0.00000001875",
+        "input_cache_write": "0.0000000208333333333333",
+        "internal_reasoning": "0.0000009375",
+        "prompt": "0.0000001875",
         "request": null,
         "web_search": "0.014"
       },
@@ -5920,10 +5920,10 @@
       "pricing": {
         "completion": "0.00000034",
         "image": null,
-        "input_cache_read": "0.0000001",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
@@ -5951,7 +5951,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 16384
       }
     },
     "google/gemma-4-31b-it:free": {
@@ -9310,12 +9310,12 @@
       "id": "moonshotai/kimi-k2.5",
       "name": "MoonshotAI: Kimi K2.5",
       "pricing": {
-        "completion": "0.00000285",
+        "completion": "0.00000225",
         "image": null,
-        "input_cache_read": "0.000000095",
+        "input_cache_read": "0.00000007",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000057",
+        "prompt": "0.00000045",
         "request": null,
         "web_search": null
       },
@@ -17911,10 +17911,10 @@
       "pricing": {
         "completion": "0.0000011",
         "image": null,
-        "input_cache_read": "0.00000007",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
@@ -17940,7 +17940,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 16384
       }
     },
     "qwen/qwen3-next-80b-a3b-thinking": {
@@ -18458,12 +18458,12 @@
       "id": "qwen/qwen3.5-122b-a10b",
       "name": "Qwen: Qwen3.5-122B-A10B",
       "pricing": {
-        "completion": "0.0000024",
+        "completion": "0.00000208",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000029",
+        "prompt": "0.00000026",
         "request": null,
         "web_search": null
       },
@@ -18491,7 +18491,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 81920
+        "max_completion_tokens": 262144
       }
     },
     "qwen/qwen3.5-27b": {
@@ -22046,12 +22046,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.00000374",
+        "completion": "0.000003036",
         "image": null,
-        "input_cache_read": "0.000000221",
+        "input_cache_read": "0.0000001932",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000119",
+        "prompt": "0.000000966",
         "request": null,
         "web_search": null
       },
@@ -22081,7 +22081,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-5.2:batch": {
