@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T23:35:55.136875Z",
+  "generated_at": "2026-08-19T00:01:40.272830Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "architecture": {
@@ -5473,12 +5473,12 @@
       "id": "google/gemini-3.7-flash:batch",
       "name": "Google: Gemini 3.7 Flash (batch)",
       "pricing": {
-        "completion": "0.0000009375",
-        "image": "0.0000001875",
-        "input_cache_read": "0.00000001875",
-        "input_cache_write": "0.0000000208333333333333",
-        "internal_reasoning": "0.0000009375",
-        "prompt": "0.0000001875",
+        "completion": "0.00000046875",
+        "image": "0.00000009375",
+        "input_cache_read": "0.000000009375",
+        "input_cache_write": "0.0000000104166666666667",
+        "internal_reasoning": "0.00000046875",
+        "prompt": "0.00000009375",
         "request": null,
         "web_search": "0.014"
       },
@@ -9375,12 +9375,12 @@
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
       "pricing": {
-        "completion": "0.00000236",
+        "completion": "0.000004",
         "image": null,
-        "input_cache_read": "0.0000000944",
+        "input_cache_read": "0.00000016",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005605",
+        "prompt": "0.00000095",
         "request": null,
         "web_search": null
       },

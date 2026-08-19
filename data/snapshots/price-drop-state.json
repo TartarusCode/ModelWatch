@@ -4591,7 +4591,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-18T23:35:55.136875Z",
+  "generated_at": "2026-08-19T00:01:40.272830Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -9090,21 +9090,21 @@
         "anchor": "0.9375000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.9375000000",
+        "pending_builds": 1,
+        "pending_price": "0.46875000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "image": {
         "anchor": "0.1875000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.1875000000",
+        "pending_builds": 1,
+        "pending_price": "0.09375000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.01875000000",
@@ -9130,21 +9130,21 @@
         "anchor": "0.9375000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.9375000000",
+        "pending_builds": 1,
+        "pending_price": "0.46875000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "prompt": {
         "anchor": "0.1875000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.1875000000",
+        "pending_builds": 1,
+        "pending_price": "0.09375000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "web_search": {
         "anchor": "14000.000",
