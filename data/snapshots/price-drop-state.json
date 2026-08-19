@@ -3701,9 +3701,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.448000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-19T22:47:23.781335Z",
+      "settled_per_million_usd": "0.966000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-12T22:31:13.298682Z",
@@ -3716,9 +3716,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "1.408000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-19T22:47:23.781335Z",
+      "settled_per_million_usd": "3.036000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-13T00:34:54.694577Z",
@@ -4681,7 +4681,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-19T22:07:15.625479Z",
+  "generated_at": "2026-08-19T22:47:41.378217Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -18645,14 +18645,14 @@
     },
     "z-ai/glm-5.1": {
       "completion": {
-        "anchor": "2.992000000",
-        "confirmed_at": "2026-08-12T22:31:13.298682Z",
-        "confirmed_price": "2.992000000",
-        "episode_start_price": "4.4000000",
+        "anchor": "3.036000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.26000000",
@@ -18665,14 +18665,14 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.952000000",
-        "confirmed_at": "2026-08-12T22:31:13.298682Z",
-        "confirmed_price": "0.952000000",
-        "episode_start_price": "1.4000000",
+        "anchor": "0.966000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "z-ai/glm-5.2": {
