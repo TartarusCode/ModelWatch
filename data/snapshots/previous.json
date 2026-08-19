@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T21:44:04.514286Z",
+  "generated_at": "2026-08-19T22:07:15.625479Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6765,60 +6765,6 @@
         "context_length": 128000,
         "is_moderated": false,
         "max_completion_tokens": 8192
-      }
-    },
-    "mancer/weaver": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": "alpaca",
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Llama2"
-      },
-      "canonical_slug": "mancer/weaver",
-      "context_length": 8000,
-      "created": 1690934400,
-      "default_parameters": {},
-      "description": "An attempt to recreate Claude-style verbosity, but don't expect the same level of coherence or memory. Meant for use in roleplay/narrative situations.",
-      "expiration_date": null,
-      "id": "mancer/weaver",
-      "name": "Mancer: Weaver (alpha)",
-      "pricing": {
-        "completion": "0.00000075",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000005",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "logprobs",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_a",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 8000,
-        "is_moderated": false,
-        "max_completion_tokens": 6000
       }
     },
     "meituan/longcat-2.0": {
