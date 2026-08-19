@@ -16,21 +16,6 @@
       "status": "active"
     },
     {
-      "detected_at": "2026-08-17T11:01:33.988315Z",
-      "episode_start_per_million_usd": "1.320000",
-      "field": "prompt",
-      "model_id": "deepseek/deepseek-v4-pro",
-      "new_per_million_usd": "0.660000",
-      "old_per_million_usd": "1.320000",
-      "pct_drop": 0.5,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.660000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "detected_at": "2026-08-18T11:02:20.068934Z",
       "episode_start_per_million_usd": "1.320000",
       "field": "prompt",
@@ -5080,12 +5065,12 @@
       "new_per_million_usd": "0.660000",
       "old_per_million_usd": "1.320000",
       "pct_drop": 0.5,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-08-19T09:53:49.112951Z",
+      "recovered_per_million_usd": "1.440000",
       "saved_per_million_usd": "0.660000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     },
     {
       "detected_at": "2026-08-17T14:31:33.144814Z",
@@ -5433,8 +5418,24 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-19T09:06:04.962518Z",
-  "recovered_drops": [],
+  "generated_at": "2026-08-19T09:54:01.755004Z",
+  "recovered_drops": [
+    {
+      "detected_at": "2026-08-17T11:01:33.988315Z",
+      "episode_start_per_million_usd": "1.320000",
+      "field": "prompt",
+      "model_id": "deepseek/deepseek-v4-pro",
+      "new_per_million_usd": "0.660000",
+      "old_per_million_usd": "1.320000",
+      "pct_drop": 0.5,
+      "recovered_at": "2026-08-19T09:53:49.112951Z",
+      "recovered_per_million_usd": "1.440000",
+      "saved_per_million_usd": "0.660000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "recovered"
+    }
+  ],
   "settled_drops": [
     {
       "detected_at": "2026-08-12T01:01:22.641513Z",
