@@ -5433,24 +5433,8 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-19T08:05:04.474917Z",
-  "recovered_drops": [
-    {
-      "detected_at": "2026-08-16T00:31:05.529183Z",
-      "episode_start_per_million_usd": "0.600000",
-      "field": "prompt",
-      "model_id": "qwen/qwen3.6-27b",
-      "new_per_million_usd": "0.300000",
-      "old_per_million_usd": "0.600000",
-      "pct_drop": 0.5,
-      "recovered_at": "2026-08-18T08:32:58.736453Z",
-      "recovered_per_million_usd": "0.289000",
-      "saved_per_million_usd": "0.300000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered"
-    }
-  ],
+  "generated_at": "2026-08-19T08:49:45.801581Z",
+  "recovered_drops": [],
   "settled_drops": [
     {
       "detected_at": "2026-08-12T01:01:22.641513Z",
