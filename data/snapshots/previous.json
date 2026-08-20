@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T13:01:49.540198Z",
+  "generated_at": "2026-08-20T13:31:25.613330Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3471,12 +3471,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.000000177212",
+        "completion": "0.0000001736",
         "image": null,
-        "input_cache_read": "0.0000000177212",
+        "input_cache_read": "0.00000001736",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000088606",
+        "prompt": "0.0000000868",
         "request": null,
         "web_search": null
       },
@@ -10447,7 +10447,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "nvidia/nemotron-3.5-lightning-20260807",
-      "context_length": 1000000,
+      "context_length": 262144,
       "created": 1786452751,
       "default_parameters": {},
       "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
@@ -20127,6 +20127,92 @@
         "context_length": 131072,
         "is_moderated": false,
         "max_completion_tokens": 131072
+      }
+    },
+    "tencent/hy-mt2-1.8b": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "tencent/hy-mt2-1.8b-20260521",
+      "context_length": 8192,
+      "created": 1787231581,
+      "default_parameters": {},
+      "description": "Hy-MT2-1.8B is a compact 1.8B-parameter translation model from Tencent. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and style-guided...",
+      "expiration_date": null,
+      "id": "tencent/hy-mt2-1.8b",
+      "name": "Tencent: Hy-MT2-1.8B",
+      "pricing": {
+        "completion": "0.000000177",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000000044",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "max_completion_tokens",
+        "max_tokens",
+        "stop",
+        "temperature"
+      ],
+      "top_provider": {
+        "context_length": 8192,
+        "is_moderated": false,
+        "max_completion_tokens": 4096
+      }
+    },
+    "tencent/hy-mt2-30b-a3b": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "tencent/hy-mt2-30b-a3b-20260521",
+      "context_length": 8192,
+      "created": 1787231561,
+      "default_parameters": {},
+      "description": "Hy-MT2-30B-A3B is Tencent's flagship translation model in the Hy-MT2 family. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and...",
+      "expiration_date": null,
+      "id": "tencent/hy-mt2-30b-a3b",
+      "name": "Tencent: Hy-MT2-30B-A3B",
+      "pricing": {
+        "completion": "0.000000295",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000000074",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "max_completion_tokens",
+        "max_tokens",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature"
+      ],
+      "top_provider": {
+        "context_length": 8192,
+        "is_moderated": false,
+        "max_completion_tokens": 4096
       }
     },
     "tencent/hy3": {
