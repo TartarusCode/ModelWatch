@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T02:01:31.980267Z",
+  "generated_at": "2026-08-20T02:39:36.926046Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3471,12 +3471,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.0000001652",
+        "completion": "0.000000177212",
         "image": null,
-        "input_cache_read": "0.00000001652",
+        "input_cache_read": "0.0000000177212",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000826",
+        "prompt": "0.000000088606",
         "request": null,
         "web_search": null
       },
@@ -18863,12 +18863,12 @@
       "id": "qwen/qwen3.6-27b",
       "name": "Qwen: Qwen3.6 27B",
       "pricing": {
-        "completion": "0.000002",
+        "completion": "0.0000036",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.00000012",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.0000006",
         "request": null,
         "web_search": null
       },
@@ -18896,7 +18896,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 262144
       }
     },
     "qwen/qwen3.6-35b-a3b": {
