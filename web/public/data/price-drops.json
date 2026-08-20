@@ -5478,7 +5478,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-20T00:42:52.726066Z",
+  "generated_at": "2026-08-20T01:12:06.539772Z",
   "recovered_drops": [
     {
       "detected_at": "2026-08-17T11:01:33.988315Z",
@@ -5497,21 +5497,6 @@
     }
   ],
   "settled_drops": [
-    {
-      "detected_at": "2026-08-12T01:01:22.641513Z",
-      "episode_start_per_million_usd": "1.900000",
-      "field": "completion",
-      "model_id": "qwen/qwen3-vl-235b-a22b-instruct",
-      "new_per_million_usd": "1.040000",
-      "old_per_million_usd": "1.900000",
-      "pct_drop": 0.45263157894736844,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.860000",
-      "settled_at": "2026-08-19T01:04:16.757827Z",
-      "settled_per_million_usd": "1.900000",
-      "status": "settled"
-    },
     {
       "detected_at": "2026-08-12T22:31:13.298682Z",
       "episode_start_per_million_usd": "1.400000",
