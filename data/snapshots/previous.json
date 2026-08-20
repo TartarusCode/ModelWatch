@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T00:02:07.126508Z",
+  "generated_at": "2026-08-20T00:42:52.726066Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3471,12 +3471,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.0000001484",
+        "completion": "0.0000001652",
         "image": null,
-        "input_cache_read": "0.00000001484",
+        "input_cache_read": "0.00000001652",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000742",
+        "prompt": "0.0000000826",
         "request": null,
         "web_search": null
       },
@@ -3656,12 +3656,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000198",
+        "completion": "0.000003168",
         "image": null,
-        "input_cache_read": "0.000000022",
+        "input_cache_read": "0.0000000352",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000066",
+        "prompt": "0.000001056",
         "request": null,
         "web_search": null
       },
@@ -3688,9 +3688,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1048575,
         "is_moderated": false,
-        "max_completion_tokens": 384000
+        "max_completion_tokens": null
       }
     },
     "dots-studio/dots-3-note-preview:free": {
@@ -5877,10 +5877,10 @@
       "pricing": {
         "completion": "0.00000034",
         "image": null,
-        "input_cache_read": "0.0000001",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
@@ -5908,7 +5908,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 16384
       }
     },
     "google/gemma-4-31b-it:free": {
@@ -8192,6 +8192,55 @@
       ],
       "top_provider": {
         "context_length": 131072,
+        "is_moderated": false,
+        "max_completion_tokens": null
+      }
+    },
+    "mistralai/ministral-8b": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Mistral"
+      },
+      "canonical_slug": "mistralai/ministral-8b",
+      "context_length": 128000,
+      "created": 1729123200,
+      "default_parameters": {
+        "temperature": 0.3
+      },
+      "description": "Ministral 8B is an 8B parameter model featuring a unique interleaved sliding-window attention pattern for faster, memory-efficient inference. Designed for edge use cases, it supports up to 128k context length...",
+      "expiration_date": null,
+      "id": "mistralai/ministral-8b",
+      "name": "Mistral: Ministral 8B",
+      "pricing": {
+        "completion": "0.00000011",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000011",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "presence_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 128000,
         "is_moderated": false,
         "max_completion_tokens": null
       }
