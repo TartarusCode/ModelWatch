@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T21:09:34.657293Z",
+  "generated_at": "2026-08-20T21:35:34.579034Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -22179,7 +22179,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-5.2-20260616",
-      "context_length": 512000,
+      "context_length": 1048575,
       "created": 1781631930,
       "default_parameters": {
         "frequency_penalty": null,
@@ -22223,7 +22223,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 512000,
+        "context_length": 1048575,
         "is_moderated": false,
         "max_completion_tokens": null
       }
