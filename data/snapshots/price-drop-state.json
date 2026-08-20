@@ -3746,9 +3746,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.750000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-20T19:01:22.323925Z",
+      "settled_per_million_usd": "0.750000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-13T18:54:07.819275Z",
@@ -3761,9 +3761,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "3.750000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-20T19:01:22.323925Z",
+      "settled_per_million_usd": "3.750000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-13T18:54:07.819275Z",
@@ -3776,9 +3776,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.750000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-20T19:01:22.323925Z",
+      "settled_per_million_usd": "0.750000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-13T18:54:07.819275Z",
@@ -3791,9 +3791,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "3.750000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-20T19:01:22.323925Z",
+      "settled_per_million_usd": "3.750000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-13T18:54:07.819275Z",
@@ -3806,9 +3806,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.075000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-20T19:01:22.323925Z",
+      "settled_per_million_usd": "0.075000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-13T18:54:07.819275Z",
@@ -3821,9 +3821,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.375000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-20T19:01:22.323925Z",
+      "settled_per_million_usd": "0.375000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-13T18:54:07.819275Z",
@@ -3836,9 +3836,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "1.875000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-20T19:01:22.323925Z",
+      "settled_per_million_usd": "1.875000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-13T18:54:07.819275Z",
@@ -3851,9 +3851,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.375000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-20T19:01:22.323925Z",
+      "settled_per_million_usd": "0.375000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-13T18:54:07.819275Z",
@@ -3866,9 +3866,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "1.875000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-20T19:01:22.323925Z",
+      "settled_per_million_usd": "1.875000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-13T20:21:13.974117Z",
@@ -4681,7 +4681,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-20T18:33:10.204847Z",
+  "generated_at": "2026-08-20T19:01:34.840687Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -8962,33 +8962,33 @@
     "google/gemini-3.6-flash": {
       "completion": {
         "anchor": "3.75000000",
-        "confirmed_at": "2026-08-13T18:54:07.819275Z",
-        "confirmed_price": "3.75000000",
-        "episode_start_price": "7.5000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "image": {
         "anchor": "0.75000000",
-        "confirmed_at": "2026-08-13T18:54:07.819275Z",
-        "confirmed_price": "0.75000000",
-        "episode_start_price": "1.5000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.075000000",
-        "confirmed_at": "2026-08-13T18:54:07.819275Z",
-        "confirmed_price": "0.075000000",
-        "episode_start_price": "0.15000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_write": {
         "anchor": "0.08333333333333334000000",
@@ -9002,23 +9002,23 @@
       },
       "internal_reasoning": {
         "anchor": "3.75000000",
-        "confirmed_at": "2026-08-13T18:54:07.819275Z",
-        "confirmed_price": "3.75000000",
-        "episode_start_price": "7.5000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "prompt": {
         "anchor": "0.75000000",
-        "confirmed_at": "2026-08-13T18:54:07.819275Z",
-        "confirmed_price": "0.75000000",
-        "episode_start_price": "1.5000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "web_search": {
         "anchor": "14000.000",
@@ -9034,23 +9034,23 @@
     "google/gemini-3.6-flash:batch": {
       "completion": {
         "anchor": "1.875000000",
-        "confirmed_at": "2026-08-13T18:54:07.819275Z",
-        "confirmed_price": "1.875000000",
-        "episode_start_price": "3.75000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "image": {
         "anchor": "0.375000000",
-        "confirmed_at": "2026-08-13T18:54:07.819275Z",
-        "confirmed_price": "0.375000000",
-        "episode_start_price": "0.75000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.075000000",
@@ -9074,23 +9074,23 @@
       },
       "internal_reasoning": {
         "anchor": "1.875000000",
-        "confirmed_at": "2026-08-13T18:54:07.819275Z",
-        "confirmed_price": "1.875000000",
-        "episode_start_price": "3.75000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "prompt": {
         "anchor": "0.375000000",
-        "confirmed_at": "2026-08-13T18:54:07.819275Z",
-        "confirmed_price": "0.375000000",
-        "episode_start_price": "0.75000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "web_search": {
         "anchor": "14000.000",
