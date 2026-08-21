@@ -496,21 +496,6 @@
       "status": "active"
     },
     {
-      "detected_at": "2026-08-14T03:02:52.290638Z",
-      "episode_start_per_million_usd": "0.600000",
-      "field": "completion",
-      "model_id": "qwen/qwen3-vl-30b-a3b-instruct",
-      "new_per_million_usd": "0.520000",
-      "old_per_million_usd": "0.600000",
-      "pct_drop": 0.13333333333333333,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.080000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "detected_at": "2026-08-18T01:52:23.151923Z",
       "episode_start_per_million_usd": "3.200000",
       "field": "completion",
@@ -4573,9 +4558,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.080000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-21T03:11:39.339066Z",
+      "settled_per_million_usd": "0.520000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-14T19:15:39.776326Z",
@@ -5388,24 +5373,8 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-21T02:34:54.675961Z",
-  "recovered_drops": [
-    {
-      "detected_at": "2026-08-18T09:02:21.393917Z",
-      "episode_start_per_million_usd": "0.300000",
-      "field": "prompt",
-      "model_id": "qwen/qwen3.6-27b",
-      "new_per_million_usd": "0.289000",
-      "old_per_million_usd": "0.300000",
-      "pct_drop": 0.03666666666666667,
-      "recovered_at": "2026-08-20T03:01:19.539605Z",
-      "recovered_per_million_usd": "0.600000",
-      "saved_per_million_usd": "0.011000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered"
-    }
-  ],
+  "generated_at": "2026-08-21T03:12:03.519455Z",
+  "recovered_drops": [],
   "settled_drops": [
     {
       "detected_at": "2026-08-13T18:54:07.819275Z",
@@ -5540,6 +5509,21 @@
       "saved_per_million_usd": "1.875000",
       "settled_at": "2026-08-20T19:01:22.323925Z",
       "settled_per_million_usd": "1.875000",
+      "status": "settled"
+    },
+    {
+      "detected_at": "2026-08-14T03:02:52.290638Z",
+      "episode_start_per_million_usd": "0.600000",
+      "field": "completion",
+      "model_id": "qwen/qwen3-vl-30b-a3b-instruct",
+      "new_per_million_usd": "0.520000",
+      "old_per_million_usd": "0.600000",
+      "pct_drop": 0.13333333333333333,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.080000",
+      "settled_at": "2026-08-21T03:11:39.339066Z",
+      "settled_per_million_usd": "0.520000",
       "status": "settled"
     }
   ],
