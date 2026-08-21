@@ -3926,9 +3926,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.350000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-21T22:38:27.072257Z",
+      "settled_per_million_usd": "0.600000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-14T22:10:35.499769Z",
@@ -3941,9 +3941,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.630000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-21T22:38:27.072257Z",
+      "settled_per_million_usd": "1.920000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-14T22:10:35.499769Z",
@@ -3956,9 +3956,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.080000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-21T22:38:27.072257Z",
+      "settled_per_million_usd": "0.120000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-15T15:01:16.227037Z",
@@ -4951,7 +4951,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-21T22:10:29.529995Z",
+  "generated_at": "2026-08-21T22:38:44.361774Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -18852,33 +18852,33 @@
     "z-ai/glm-5": {
       "completion": {
         "anchor": "1.92000000",
-        "confirmed_at": "2026-08-14T22:10:35.499769Z",
-        "confirmed_price": "1.92000000",
-        "episode_start_price": "2.55000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.12000000",
-        "confirmed_at": "2026-08-14T22:10:35.499769Z",
-        "confirmed_price": "0.12000000",
-        "episode_start_price": "0.2000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "prompt": {
         "anchor": "0.6000000",
-        "confirmed_at": "2026-08-14T22:10:35.499769Z",
-        "confirmed_price": "0.6000000",
-        "episode_start_price": "0.95000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "z-ai/glm-5-turbo": {
