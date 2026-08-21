@@ -586,21 +586,6 @@
       "status": "active"
     },
     {
-      "detected_at": "2026-08-14T19:15:39.776326Z",
-      "episode_start_per_million_usd": "0.500000",
-      "field": "prompt",
-      "model_id": "qwen/qwen3.5-397b-a17b",
-      "new_per_million_usd": "0.390000",
-      "old_per_million_usd": "0.500000",
-      "pct_drop": 0.22,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.110000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "detected_at": "2026-08-16T00:31:05.529183Z",
       "episode_start_per_million_usd": "3.600000",
       "field": "completion",
@@ -4618,9 +4603,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.110000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-21T19:35:34.154281Z",
+      "settled_per_million_usd": "0.390000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-14T22:10:35.499769Z",
@@ -5463,7 +5448,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-21T19:08:59.681996Z",
+  "generated_at": "2026-08-21T19:35:52.991853Z",
   "recovered_drops": [],
   "settled_drops": [
     {
@@ -5479,6 +5464,21 @@
       "saved_per_million_usd": "0.080000",
       "settled_at": "2026-08-21T03:11:39.339066Z",
       "settled_per_million_usd": "0.520000",
+      "status": "settled"
+    },
+    {
+      "detected_at": "2026-08-14T19:15:39.776326Z",
+      "episode_start_per_million_usd": "0.500000",
+      "field": "prompt",
+      "model_id": "qwen/qwen3.5-397b-a17b",
+      "new_per_million_usd": "0.390000",
+      "old_per_million_usd": "0.500000",
+      "pct_drop": 0.22,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.110000",
+      "settled_at": "2026-08-21T19:35:34.154281Z",
+      "settled_per_million_usd": "0.390000",
       "status": "settled"
     }
   ],

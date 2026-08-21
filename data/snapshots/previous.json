@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T19:08:59.681996Z",
+  "generated_at": "2026-08-21T19:35:52.991853Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -20877,6 +20877,64 @@
         "max_completion_tokens": 262144
       }
     },
+    "thinkingmachines/inkling-small:free": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "audio"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+audio->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "thinkingmachines/inkling-small-20260730",
+      "context_length": 262144,
+      "created": 1785443117,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Inkling Small is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 12B active parameters out of 276B total. It is positioned as the smaller, more efficient member of...",
+      "expiration_date": null,
+      "id": "thinkingmachines/inkling-small:free",
+      "name": "Thinking Machines: Inkling Small (free)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "seed",
+        "stop",
+        "temperature",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 262144
+      }
+    },
     "thinkingmachines/inkling:batch": {
       "architecture": {
         "input_modalities": [
@@ -20937,6 +20995,64 @@
         "context_length": 524288,
         "is_moderated": false,
         "max_completion_tokens": null
+      }
+    },
+    "thinkingmachines/inkling:free": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "audio"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+audio->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "thinkingmachines/inkling-20260715",
+      "context_length": 262144,
+      "created": 1784325956,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Inkling is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 41B active parameters out of 975B total. It is designed for general-purpose reasoning, coding, agentic and tool-use systems,...",
+      "expiration_date": null,
+      "id": "thinkingmachines/inkling:free",
+      "name": "Thinking Machines: Inkling (free)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "seed",
+        "stop",
+        "temperature",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 262144
       }
     },
     "undi95/remm-slerp-l2-13b": {
