@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T21:37:36.456179Z",
+  "generated_at": "2026-08-21T22:10:29.529995Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -2875,62 +2875,6 @@
         "max_completion_tokens": 64000
       }
     },
-    "deepcogito/cogito-v2.1-671b": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "deepcogito/cogito-v2.1-671b-20251118",
-      "context_length": 128000,
-      "created": 1763071233,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": null
-      },
-      "description": "Cogito v2.1 671B MoE represents one of the strongest open models globally, matching performance of frontier closed and open models. This model is trained using self play with reinforcement learning...",
-      "expiration_date": null,
-      "id": "deepcogito/cogito-v2.1-671b",
-      "name": "Deep Cogito: Cogito v2.1 671B",
-      "pricing": {
-        "completion": "0.00000125",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000125",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 128000,
-        "is_moderated": false,
-        "max_completion_tokens": null
-      }
-    },
     "deepseek/deepseek-chat": {
       "architecture": {
         "input_modalities": [
@@ -3471,12 +3415,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000016212",
+        "completion": "0.00000015932",
         "image": null,
-        "input_cache_read": "0.000000016212",
+        "input_cache_read": "0.000000015932",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008106",
+        "prompt": "0.00000007966",
         "request": null,
         "web_search": null
       },
@@ -7493,6 +7437,60 @@
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.00000125",
+        "request": null,
+        "web_search": "0.0025"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": true,
+        "max_completion_tokens": null
+      }
+    },
+    "meta/muse-spark-1.2-contributor": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file+audio+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "meta/muse-spark-1.2-contributor-20260805",
+      "context_length": 1048576,
+      "created": 1787336476,
+      "default_parameters": {},
+      "description": "Muse Spark 1.2 contributor tier is a reasoning model from Meta designed for developers who want to start building at an even lower cost. It’s meaningfully cheaper than Muse Spark...",
+      "expiration_date": null,
+      "id": "meta/muse-spark-1.2-contributor",
+      "name": "Meta: Muse Spark 1.2 Contributor",
+      "pricing": {
+        "completion": "0.0000002",
+        "image": null,
+        "input_cache_read": "0.000000002",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000001",
         "request": null,
         "web_search": "0.0025"
       },
