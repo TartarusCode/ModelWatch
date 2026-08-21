@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T21:03:42.980800Z",
+  "generated_at": "2026-08-21T21:37:36.456179Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -9016,7 +9016,7 @@
         "tokenizer": "Mistral"
       },
       "canonical_slug": "mistralai/mistral-small-3.2-24b-instruct-2506",
-      "context_length": 256000,
+      "context_length": 131072,
       "created": 1750443016,
       "default_parameters": {
         "temperature": 0.3
@@ -9026,12 +9026,12 @@
       "id": "mistralai/mistral-small-3.2-24b-instruct",
       "name": "Mistral: Mistral Small 3.2 24B",
       "pricing": {
-        "completion": "0.00000025",
+        "completion": "0.0000002",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009375",
+        "prompt": "0.000000075",
         "request": null,
         "web_search": null
       },
@@ -9055,7 +9055,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 256000,
+        "context_length": 128000,
         "is_moderated": false,
         "max_completion_tokens": 16384
       }
@@ -14209,12 +14209,12 @@
       "id": "openai/gpt-5.6-sol",
       "name": "OpenAI: GPT-5.6 Sol",
       "pricing": {
-        "completion": "0.000015",
+        "completion": "0.00001",
         "image": null,
-        "input_cache_read": "0.00000025",
-        "input_cache_write": "0.000003125",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.0000025",
         "internal_reasoning": null,
-        "prompt": "0.0000025",
+        "prompt": "0.000002",
         "request": null,
         "web_search": "0.01"
       },
@@ -14266,12 +14266,12 @@
       "id": "openai/gpt-5.6-sol-pro",
       "name": "OpenAI: GPT-5.6 Sol Pro",
       "pricing": {
-        "completion": "0.000015",
+        "completion": "0.00001",
         "image": null,
-        "input_cache_read": "0.00000025",
-        "input_cache_write": "0.000003125",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.0000025",
         "internal_reasoning": null,
-        "prompt": "0.0000025",
+        "prompt": "0.000002",
         "request": null,
         "web_search": "0.01"
       },
@@ -14323,12 +14323,12 @@
       "id": "openai/gpt-5.6-sol-pro:batch",
       "name": "OpenAI: GPT-5.6 Sol Pro (batch)",
       "pricing": {
-        "completion": "0.0000075",
+        "completion": "0.000005",
         "image": null,
-        "input_cache_read": "0.000000125",
-        "input_cache_write": null,
+        "input_cache_read": "0.0000001",
+        "input_cache_write": "0.00000125",
         "internal_reasoning": null,
-        "prompt": "0.00000125",
+        "prompt": "0.000001",
         "request": null,
         "web_search": "0.01"
       },
@@ -14379,12 +14379,12 @@
       "id": "openai/gpt-5.6-sol:batch",
       "name": "OpenAI: GPT-5.6 Sol (batch)",
       "pricing": {
-        "completion": "0.0000075",
+        "completion": "0.000005",
         "image": null,
-        "input_cache_read": "0.000000125",
-        "input_cache_write": null,
+        "input_cache_read": "0.0000001",
+        "input_cache_write": "0.00000125",
         "internal_reasoning": null,
-        "prompt": "0.00000125",
+        "prompt": "0.000001",
         "request": null,
         "web_search": "0.01"
       },
