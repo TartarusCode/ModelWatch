@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T00:01:57.445571Z",
+  "generated_at": "2026-08-22T00:44:43.323027Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3004,12 +3004,12 @@
       "id": "deepseek/deepseek-chat-v3.1",
       "name": "DeepSeek: DeepSeek V3.1",
       "pricing": {
-        "completion": "0.00000095",
+        "completion": "0.00000165",
         "image": null,
-        "input_cache_read": "0.00000013",
+        "input_cache_read": "0.00000055",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000025",
+        "prompt": "0.00000055",
         "request": null,
         "web_search": null
       },
@@ -3035,9 +3035,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 163840,
+        "context_length": 161000,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 161000
       }
     },
     "deepseek/deepseek-r1": {
@@ -3297,12 +3297,12 @@
       "id": "deepseek/deepseek-v3.2",
       "name": "DeepSeek: DeepSeek V3.2",
       "pricing": {
-        "completion": "0.0000004",
+        "completion": "0.00000038",
         "image": null,
-        "input_cache_read": "0.0000001345",
+        "input_cache_read": "0.00000013",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000269",
+        "prompt": "0.00000026",
         "request": null,
         "web_search": null
       },
@@ -3330,7 +3330,7 @@
       "top_provider": {
         "context_length": 163840,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 163840
       }
     },
     "deepseek/deepseek-v3.2-exp": {
@@ -3415,12 +3415,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000015932",
+        "completion": "0.00000015652",
         "image": null,
-        "input_cache_read": "0.000000015932",
+        "input_cache_read": "0.000000015652",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000007966",
+        "prompt": "0.00000007826",
         "request": null,
         "web_search": null
       },
@@ -3591,12 +3591,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.0000032",
+        "completion": "0.00000109794",
         "image": null,
-        "input_cache_read": "0.000000135",
+        "input_cache_read": "0.0000000457475",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000016",
+        "prompt": "0.00000054897",
         "request": null,
         "web_search": null
       },
@@ -3624,9 +3624,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1024000,
         "is_moderated": false,
-        "max_completion_tokens": 393216
+        "max_completion_tokens": 384000
       }
     },
     "deepseek/deepseek-v4-pro-0813": {
@@ -7902,9 +7902,9 @@
       "id": "minimax/minimax-m2.5",
       "name": "MiniMax: MiniMax M2.5",
       "pricing": {
-        "completion": "0.00000095",
+        "completion": "0.00000108",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.000000027",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.00000027",
@@ -7933,9 +7933,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 198000,
+        "context_length": 200000,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 128000
       }
     },
     "minimax/minimax-m2.7": {
@@ -14929,66 +14929,6 @@
         "max_completion_tokens": 131072
       }
     },
-    "openai/gpt-oss-20b:free": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT"
-      },
-      "canonical_slug": "openai/gpt-oss-20b",
-      "context_length": 131072,
-      "created": 1754414229,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": null
-      },
-      "description": "gpt-oss-20b is an open-weight 21B parameter model released by OpenAI under the Apache 2.0 license. It uses a Mixture-of-Experts (MoE) architecture with 3.6B active parameters per forward pass, optimized for...",
-      "expiration_date": null,
-      "id": "openai/gpt-oss-20b:free",
-      "name": "OpenAI: gpt-oss-20b (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "reasoning_effort",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 32768
-      }
-    },
     "openai/gpt-oss-safeguard-20b": {
       "architecture": {
         "input_modalities": [
@@ -18537,7 +18477,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 65536
       }
     },
     "qwen/qwen3.5-27b": {
