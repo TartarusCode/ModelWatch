@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T15:37:21.633580Z",
+  "generated_at": "2026-08-22T16:33:26.529417Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -7315,12 +7315,12 @@
       "id": "meta/muse-glimmer-30b",
       "name": "Meta: Muse Glimmer 30B",
       "pricing": {
-        "completion": "0.0000011",
+        "completion": "0.0000015",
         "image": null,
         "input_cache_read": "0.00000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.00000035",
         "request": null,
         "web_search": null
       },
@@ -7349,7 +7349,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": null
       }
     },
     "meta/muse-spark-1.1": {
