@@ -4949,9 +4949,39 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-08-22T01:13:43.663029Z",
+      "episode_start_per_million_usd": "1.600000",
+      "field": "prompt",
+      "model_id": "deepseek/deepseek-v4-pro",
+      "new_per_million_usd": "0.548970",
+      "old_per_million_usd": "1.600000",
+      "pct_drop": 0.65689375,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "1.051030",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-08-22T01:13:43.663029Z",
+      "episode_start_per_million_usd": "1.980000",
+      "field": "completion",
+      "model_id": "deepseek/deepseek-v4-pro",
+      "new_per_million_usd": "1.097940",
+      "old_per_million_usd": "1.980000",
+      "pct_drop": 0.4454848484848485,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.882060",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-08-22T00:44:43.323027Z",
+  "generated_at": "2026-08-22T01:13:56.715228Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -7443,14 +7473,14 @@
     },
     "deepseek/deepseek-v4-pro": {
       "completion": {
-        "anchor": "1.98000000",
-        "confirmed_at": "2026-08-18T07:46:23.323887Z",
-        "confirmed_price": "1.98000000",
+        "anchor": "1.09794000000",
+        "confirmed_at": "2026-08-22T01:13:43.663029Z",
+        "confirmed_price": "1.09794000000",
         "episode_start_price": "1.98000000",
-        "pending_builds": 1,
-        "pending_price": "1.09794000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.135000000",
@@ -7463,14 +7493,14 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "1.6000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.54897000000",
+        "confirmed_at": "2026-08-22T01:13:43.663029Z",
+        "confirmed_price": "0.54897000000",
         "episode_start_price": "1.6000000",
-        "pending_builds": 1,
-        "pending_price": "0.54897000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "deepseek/deepseek-v4-pro-0813": {
