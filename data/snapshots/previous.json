@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T01:31:25.706439Z",
+  "generated_at": "2026-08-22T02:20:57.393877Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -17897,10 +17897,10 @@
       "pricing": {
         "completion": "0.0000011",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000007",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -17926,7 +17926,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 262144
       }
     },
     "qwen/qwen3-next-80b-a3b-thinking": {
