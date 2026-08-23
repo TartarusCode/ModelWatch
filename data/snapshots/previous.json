@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T00:47:18.714801Z",
+  "generated_at": "2026-08-23T01:19:02.444874Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3415,12 +3415,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000011172",
+        "completion": "0.00000010892",
         "image": null,
-        "input_cache_read": "0.000000011172",
+        "input_cache_read": "0.000000010892",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000005586",
+        "prompt": "0.00000005446",
         "request": null,
         "web_search": null
       },
