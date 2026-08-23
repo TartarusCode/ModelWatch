@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T23:33:39.863632Z",
+  "generated_at": "2026-08-23T00:12:39.100827Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3415,12 +3415,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000011452",
+        "completion": "0.00000011172",
         "image": null,
-        "input_cache_read": "0.000000011452",
+        "input_cache_read": "0.000000011172",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000005726",
+        "prompt": "0.00000005586",
         "request": null,
         "web_search": null
       },
@@ -9421,12 +9421,12 @@
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
       "pricing": {
-        "completion": "0.00000228",
+        "completion": "0.000004",
         "image": null,
-        "input_cache_read": "0.0000000912",
+        "input_cache_read": "0.00000016",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005415",
+        "prompt": "0.00000095",
         "request": null,
         "web_search": null
       },
@@ -9455,7 +9455,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": null
       }
     },
     "moonshotai/kimi-k2.7-code": {
@@ -17230,12 +17230,12 @@
       "id": "qwen/qwen3-30b-a3b",
       "name": "Qwen: Qwen3 30B A3B",
       "pricing": {
-        "completion": "0.00000052",
+        "completion": "0.0000005",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000013",
+        "prompt": "0.00000012",
         "request": null,
         "web_search": null
       },
@@ -17258,9 +17258,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 40960,
         "is_moderated": false,
-        "max_completion_tokens": 8192
+        "max_completion_tokens": 16384
       }
     },
     "qwen/qwen3-30b-a3b-instruct-2507": {
@@ -18477,7 +18477,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 262144
       }
     },
     "qwen/qwen3.5-27b": {
@@ -20761,10 +20761,10 @@
       "pricing": {
         "completion": "0.00000405",
         "image": null,
-        "input_cache_read": "0.00000016",
+        "input_cache_read": "0.00000017",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000095",
+        "prompt": "0.000001",
         "request": null,
         "web_search": null
       },
@@ -20790,7 +20790,7 @@
       "top_provider": {
         "context_length": 524288,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": null
       }
     },
     "thinkingmachines/inkling-small": {
