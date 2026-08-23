@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T19:35:20.723006Z",
+  "generated_at": "2026-08-23T20:10:08.286890Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -9421,12 +9421,12 @@
       "id": "moonshotai/kimi-k2.6",
       "name": "MoonshotAI: Kimi K2.6",
       "pricing": {
-        "completion": "0.000004",
+        "completion": "0.00000228",
         "image": null,
-        "input_cache_read": "0.00000016",
+        "input_cache_read": "0.0000000912",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000095",
+        "prompt": "0.0000005415",
         "request": null,
         "web_search": null
       },
@@ -9455,7 +9455,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 262144
       }
     },
     "moonshotai/kimi-k2.7-code": {
@@ -9650,7 +9650,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 1048576
       }
     },
     "morph/morph-v3-fast": {
@@ -17230,12 +17230,12 @@
       "id": "qwen/qwen3-30b-a3b",
       "name": "Qwen: Qwen3 30B A3B",
       "pricing": {
-        "completion": "0.0000005",
+        "completion": "0.00000052",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000012",
+        "prompt": "0.00000013",
         "request": null,
         "web_search": null
       },
@@ -17258,9 +17258,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 40960,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 8192
       }
     },
     "qwen/qwen3-30b-a3b-instruct-2507": {
