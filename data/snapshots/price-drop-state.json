@@ -5026,7 +5026,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-23T12:01:32.439427Z",
+  "generated_at": "2026-08-23T12:31:34.708890Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -10827,11 +10827,11 @@
         "anchor": "1.2000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "1.2000000",
+        "pending_builds": 1,
+        "pending_price": "0.96000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.06000000",
@@ -10847,11 +10847,11 @@
         "anchor": "0.3000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.3000000",
+        "pending_builds": 1,
+        "pending_price": "0.24000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "minimax/minimax-m3": {
