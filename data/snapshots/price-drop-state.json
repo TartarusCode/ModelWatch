@@ -4151,9 +4151,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.050000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-23T17:09:34.158991Z",
+      "settled_per_million_usd": "0.200000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-16T20:08:31.776419Z",
@@ -5056,7 +5056,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-23T16:33:39.303223Z",
+  "generated_at": "2026-08-23T17:09:53.651172Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -12123,13 +12123,13 @@
     "nvidia/nemotron-3.5-lightning": {
       "completion": {
         "anchor": "0.2000000",
-        "confirmed_at": "2026-08-16T17:02:30.124204Z",
-        "confirmed_price": "0.2000000",
-        "episode_start_price": "0.25000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.05000000",

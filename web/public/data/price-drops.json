@@ -316,21 +316,6 @@
       "status": "active"
     },
     {
-      "detected_at": "2026-08-16T17:02:30.124204Z",
-      "episode_start_per_million_usd": "0.250000",
-      "field": "completion",
-      "model_id": "nvidia/nemotron-3.5-lightning",
-      "new_per_million_usd": "0.200000",
-      "old_per_million_usd": "0.250000",
-      "pct_drop": 0.2,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.050000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "detected_at": "2026-08-21T22:10:19.109842Z",
       "episode_start_per_million_usd": "15.000000",
       "field": "completion",
@@ -4798,9 +4783,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.050000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-23T17:09:34.158991Z",
+      "settled_per_million_usd": "0.200000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-16T20:08:31.776419Z",
@@ -5703,7 +5688,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-23T16:33:39.303223Z",
+  "generated_at": "2026-08-23T17:09:53.651172Z",
   "recovered_drops": [],
   "settled_drops": [
     {
@@ -5779,6 +5764,21 @@
       "saved_per_million_usd": "2.719200",
       "settled_at": "2026-08-23T04:03:09.111702Z",
       "settled_per_million_usd": "3.036000",
+      "status": "settled"
+    },
+    {
+      "detected_at": "2026-08-16T17:02:30.124204Z",
+      "episode_start_per_million_usd": "0.250000",
+      "field": "completion",
+      "model_id": "nvidia/nemotron-3.5-lightning",
+      "new_per_million_usd": "0.200000",
+      "old_per_million_usd": "0.250000",
+      "pct_drop": 0.2,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.050000",
+      "settled_at": "2026-08-23T17:09:34.158991Z",
+      "settled_per_million_usd": "0.200000",
       "status": "settled"
     }
   ],
