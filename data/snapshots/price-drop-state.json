@@ -4613,12 +4613,12 @@
       "new_per_million_usd": "0.450000",
       "old_per_million_usd": "0.570000",
       "pct_drop": 0.21052631578947367,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-08-24T15:01:49.764015Z",
+      "recovered_per_million_usd": "0.600000",
       "saved_per_million_usd": "0.120000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     },
     {
       "detected_at": "2026-08-19T01:04:16.757827Z",
@@ -4628,12 +4628,12 @@
       "new_per_million_usd": "2.250000",
       "old_per_million_usd": "2.850000",
       "pct_drop": 0.21052631578947367,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-08-24T15:01:49.764015Z",
+      "recovered_per_million_usd": "3.000000",
       "saved_per_million_usd": "0.600000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     },
     {
       "detected_at": "2026-08-19T11:01:14.302084Z",
@@ -5131,7 +5131,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-24T14:31:37.092372Z",
+  "generated_at": "2026-08-24T15:02:09.738186Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -11733,14 +11733,14 @@
     },
     "moonshotai/kimi-k2.5": {
       "completion": {
-        "anchor": "2.25000000",
-        "confirmed_at": "2026-08-19T01:04:16.757827Z",
-        "confirmed_price": "2.25000000",
-        "episode_start_price": "2.85000000",
+        "anchor": "3.000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
-        "status": "confirmed"
+        "recovery_builds": 0,
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.1000000",
@@ -11753,14 +11753,14 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.45000000",
-        "confirmed_at": "2026-08-19T01:04:16.757827Z",
-        "confirmed_price": "0.45000000",
-        "episode_start_price": "0.57000000",
+        "anchor": "0.6000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
-        "status": "confirmed"
+        "recovery_builds": 0,
+        "status": "idle"
       }
     },
     "moonshotai/kimi-k2.6": {
