@@ -4733,12 +4733,12 @@
       "new_per_million_usd": "0.080000",
       "old_per_million_usd": "0.140000",
       "pct_drop": 0.42857142857142855,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-08-24T13:01:41.376135Z",
+      "recovered_per_million_usd": "0.065800",
       "saved_per_million_usd": "0.060000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     },
     {
       "detected_at": "2026-08-21T10:35:54.172815Z",
@@ -4748,12 +4748,12 @@
       "new_per_million_usd": "0.180000",
       "old_per_million_usd": "0.280000",
       "pct_drop": 0.35714285714285715,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-08-24T13:01:41.376135Z",
+      "recovered_per_million_usd": "0.131600",
       "saved_per_million_usd": "0.100000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     },
     {
       "detected_at": "2026-08-21T22:10:19.109842Z",
@@ -5101,7 +5101,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-24T12:31:20.886384Z",
+  "generated_at": "2026-08-24T13:01:41.376135Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -7564,11 +7564,11 @@
         "anchor": "0.18000000",
         "confirmed_at": "2026-08-21T10:35:54.172815Z",
         "confirmed_price": "0.18000000",
-        "episode_start_price": "0.28000000",
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.18000000",
+        "pending_builds": 1,
+        "pending_price": "0.1316000000",
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.028000000",
@@ -7584,11 +7584,11 @@
         "anchor": "0.08000000",
         "confirmed_at": "2026-08-21T10:35:54.172815Z",
         "confirmed_price": "0.08000000",
-        "episode_start_price": "0.14000000",
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.08000000",
+        "pending_builds": 1,
+        "pending_price": "0.0658000000",
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "pending"
       }
     },
     "deepseek/deepseek-v4-flash-vision-exp": {
