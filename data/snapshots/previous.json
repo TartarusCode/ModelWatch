@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T22:09:42.223701Z",
+  "generated_at": "2026-08-24T22:38:32.827058Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -20591,7 +20591,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "thinkingmachines/inkling-small-20260730",
-      "context_length": 262144,
+      "context_length": 1048576,
       "created": 1785443117,
       "default_parameters": {
         "frequency_penalty": null,
@@ -20629,7 +20629,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 262144
       }
@@ -20711,7 +20711,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "thinkingmachines/inkling-20260715",
-      "context_length": 262144,
+      "context_length": 1048576,
       "created": 1784325956,
       "default_parameters": {
         "frequency_penalty": null,
@@ -20749,7 +20749,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 262144
       }
