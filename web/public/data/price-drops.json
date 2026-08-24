@@ -361,21 +361,6 @@
       "status": "active"
     },
     {
-      "detected_at": "2026-08-17T19:05:29.156163Z",
-      "episode_start_per_million_usd": "0.250000",
-      "field": "input_cache_read",
-      "model_id": "openai/gpt-5.6-sol-pro:batch",
-      "new_per_million_usd": "0.125000",
-      "old_per_million_usd": "0.250000",
-      "pct_drop": 0.5,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.125000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "detected_at": "2026-08-21T22:10:19.109842Z",
       "episode_start_per_million_usd": "1.250000",
       "field": "prompt",
@@ -401,21 +386,6 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "2.500000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
-      "detected_at": "2026-08-17T19:05:29.156163Z",
-      "episode_start_per_million_usd": "0.250000",
-      "field": "input_cache_read",
-      "model_id": "openai/gpt-5.6-sol:batch",
-      "new_per_million_usd": "0.125000",
-      "old_per_million_usd": "0.250000",
-      "pct_drop": 0.5,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.125000",
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
@@ -5008,9 +4978,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.125000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-24T19:33:50.162683Z",
+      "settled_per_million_usd": "0.100000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-17T19:05:29.156163Z",
@@ -5053,9 +5023,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.125000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-24T19:33:50.162683Z",
+      "settled_per_million_usd": "0.100000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-18T01:52:23.151923Z",
@@ -5658,7 +5628,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-24T19:01:31.253854Z",
+  "generated_at": "2026-08-24T19:34:24.684421Z",
   "recovered_drops": [
     {
       "detected_at": "2026-08-17T14:31:33.144814Z",
@@ -5840,6 +5810,36 @@
       "saved_per_million_usd": "0.050000",
       "settled_at": "2026-08-24T01:11:18.410420Z",
       "settled_per_million_usd": "0.210000",
+      "status": "settled"
+    },
+    {
+      "detected_at": "2026-08-17T19:05:29.156163Z",
+      "episode_start_per_million_usd": "0.250000",
+      "field": "input_cache_read",
+      "model_id": "openai/gpt-5.6-sol-pro:batch",
+      "new_per_million_usd": "0.125000",
+      "old_per_million_usd": "0.250000",
+      "pct_drop": 0.5,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.125000",
+      "settled_at": "2026-08-24T19:33:50.162683Z",
+      "settled_per_million_usd": "0.100000",
+      "status": "settled"
+    },
+    {
+      "detected_at": "2026-08-17T19:05:29.156163Z",
+      "episode_start_per_million_usd": "0.250000",
+      "field": "input_cache_read",
+      "model_id": "openai/gpt-5.6-sol:batch",
+      "new_per_million_usd": "0.125000",
+      "old_per_million_usd": "0.250000",
+      "pct_drop": 0.5,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.125000",
+      "settled_at": "2026-08-24T19:33:50.162683Z",
+      "settled_per_million_usd": "0.100000",
       "status": "settled"
     }
   ],

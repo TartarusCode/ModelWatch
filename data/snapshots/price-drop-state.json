@@ -4481,9 +4481,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.125000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-24T19:33:50.162683Z",
+      "settled_per_million_usd": "0.100000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-17T19:05:29.156163Z",
@@ -4526,9 +4526,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.125000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-24T19:33:50.162683Z",
+      "settled_per_million_usd": "0.100000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-18T01:52:23.151923Z",
@@ -5131,7 +5131,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-24T19:01:31.253854Z",
+  "generated_at": "2026-08-24T19:34:24.684421Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -14931,14 +14931,14 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.125000000",
-        "confirmed_at": "2026-08-17T19:05:29.156163Z",
-        "confirmed_price": "0.125000000",
-        "episode_start_price": "0.25000000",
+        "anchor": "0.1000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_write": {
         "anchor": "1.25000000",
@@ -14983,14 +14983,14 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.125000000",
-        "confirmed_at": "2026-08-17T19:05:29.156163Z",
-        "confirmed_price": "0.125000000",
-        "episode_start_price": "0.25000000",
+        "anchor": "0.1000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_write": {
         "anchor": "1.25000000",
