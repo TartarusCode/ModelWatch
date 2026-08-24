@@ -4211,9 +4211,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.050000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-24T01:11:18.410420Z",
+      "settled_per_million_usd": "0.210000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-17T01:34:06.769521Z",
@@ -5101,7 +5101,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-24T00:31:21.006829Z",
+  "generated_at": "2026-08-24T01:11:40.324572Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -17102,13 +17102,13 @@
       },
       "prompt": {
         "anchor": "0.21000000",
-        "confirmed_at": "2026-08-17T00:37:28.425169Z",
-        "confirmed_price": "0.21000000",
-        "episode_start_price": "0.26000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "qwen/qwen3-vl-235b-a22b-thinking": {
