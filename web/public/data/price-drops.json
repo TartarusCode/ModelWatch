@@ -5658,7 +5658,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-24T17:08:38.015867Z",
+  "generated_at": "2026-08-24T17:39:49.936742Z",
   "recovered_drops": [
     {
       "detected_at": "2026-08-17T14:31:33.144814Z",
@@ -5782,21 +5782,6 @@
     }
   ],
   "settled_drops": [
-    {
-      "detected_at": "2026-08-16T17:02:30.124204Z",
-      "episode_start_per_million_usd": "0.250000",
-      "field": "completion",
-      "model_id": "nvidia/nemotron-3.5-lightning",
-      "new_per_million_usd": "0.200000",
-      "old_per_million_usd": "0.250000",
-      "pct_drop": 0.2,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "0.050000",
-      "settled_at": "2026-08-23T17:09:34.158991Z",
-      "settled_per_million_usd": "0.200000",
-      "status": "settled"
-    },
     {
       "detected_at": "2026-08-16T20:08:31.776419Z",
       "episode_start_per_million_usd": "0.800000",
