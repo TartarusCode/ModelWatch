@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T15:39:54.883116Z",
+  "generated_at": "2026-08-24T16:15:26.812944Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -8000,6 +8000,60 @@
       ],
       "top_provider": {
         "context_length": 256000,
+        "is_moderated": false,
+        "max_completion_tokens": null
+      }
+    },
+    "mistralai/devstral-2512": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Mistral"
+      },
+      "canonical_slug": "mistralai/devstral-2512",
+      "context_length": 262144,
+      "created": 1765285419,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "temperature": 0.3,
+        "top_p": null
+      },
+      "description": "Devstral 2 is a state-of-the-art open-source model by Mistral AI specializing in agentic coding. It is a 123B-parameter dense transformer model supporting a 256K context window. Devstral 2 supports exploring...",
+      "expiration_date": null,
+      "id": "mistralai/devstral-2512",
+      "name": "Mistral: Devstral 2 2512",
+      "pricing": {
+        "completion": "0.0000022",
+        "image": null,
+        "input_cache_read": "0.000000044",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000044",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "presence_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
         "is_moderated": false,
         "max_completion_tokens": null
       }
