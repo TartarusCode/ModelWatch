@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T01:44:32.448012Z",
+  "generated_at": "2026-08-25T02:24:10.595943Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -21561,7 +21561,7 @@
         "top_p": null
       },
       "description": "GLM-4.5V is a vision-language foundation model for multimodal agent applications. Built on a Mixture-of-Experts (MoE) architecture with 106B parameters and 12B activated parameters, it achieves state-of-the-art results in video understanding,...",
-      "expiration_date": "2026-12-31",
+      "expiration_date": null,
       "id": "z-ai/glm-4.5v",
       "name": "Z.ai: GLM 4.5V",
       "pricing": {
@@ -21985,12 +21985,12 @@
       "id": "z-ai/glm-5.1",
       "name": "Z.ai: GLM 5.1",
       "pricing": {
-        "completion": "0.00000396",
+        "completion": "0.000003036",
         "image": null,
-        "input_cache_read": "0.000000234",
+        "input_cache_read": "0.0000001794",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000126",
+        "prompt": "0.000000966",
         "request": null,
         "web_search": null
       },
@@ -22016,9 +22016,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 202752,
+        "context_length": 200000,
         "is_moderated": false,
-        "max_completion_tokens": 202752
+        "max_completion_tokens": 128000
       }
     },
     "z-ai/glm-5.2": {
