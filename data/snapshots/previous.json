@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T02:33:38.529785Z",
+  "generated_at": "2026-08-25T03:01:31.048127Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -7814,6 +7814,57 @@
         "tools",
         "top_k",
         "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 196608,
+        "is_moderated": false,
+        "max_completion_tokens": null
+      }
+    },
+    "minimax/minimax-m2.7:free": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "minimax/minimax-m2.7-20260318",
+      "context_length": 196608,
+      "created": 1773836697,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": 1,
+        "top_k": null,
+        "top_p": 0.95
+      },
+      "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent...",
+      "expiration_date": null,
+      "id": "minimax/minimax-m2.7:free",
+      "name": "MiniMax: MiniMax M2.7 (free)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "seed",
+        "temperature",
         "top_p"
       ],
       "top_provider": {
