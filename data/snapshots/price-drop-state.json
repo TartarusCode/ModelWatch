@@ -4586,9 +4586,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.660000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-25T11:02:46.986454Z",
+      "settled_per_million_usd": "1.122000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-19T01:04:16.757827Z",
@@ -5146,7 +5146,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-25T10:42:03.249077Z",
+  "generated_at": "2026-08-25T11:02:59.142825Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -7722,14 +7722,14 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.66000000",
-        "confirmed_at": "2026-08-18T11:02:20.068934Z",
-        "confirmed_price": "0.66000000",
-        "episode_start_price": "1.32000000",
+        "anchor": "1.122000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "google/gemini-2.5-flash": {
