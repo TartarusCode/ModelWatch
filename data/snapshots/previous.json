@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T21:07:01.127302Z",
+  "generated_at": "2026-08-25T21:50:06.176189Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -5668,56 +5668,6 @@
         "max_completion_tokens": 16384
       }
     },
-    "google/gemma-3n-e4b-it": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "google/gemma-3n-e4b-it",
-      "context_length": 32768,
-      "created": 1747776824,
-      "default_parameters": {},
-      "description": "Gemma 3n E4B-it is optimized for efficient execution on mobile and low-resource devices, such as phones, laptops, and tablets. It supports multimodal inputs—including text, visual data, and audio—enabling diverse tasks...",
-      "expiration_date": null,
-      "id": "google/gemma-3n-e4b-it",
-      "name": "Google: Gemma 3n 4B",
-      "pricing": {
-        "completion": "0.00000012",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000006",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 32768,
-        "is_moderated": false,
-        "max_completion_tokens": 29491
-      }
-    },
     "google/gemma-4-26b-a4b-it": {
       "architecture": {
         "input_modalities": [
@@ -7072,7 +7022,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "meta-llama/llama-guard-4-12b",
-      "context_length": 1048576,
+      "context_length": 163840,
       "created": 1745975193,
       "default_parameters": {},
       "description": "Llama Guard 4 is a Llama 4 Scout-derived multimodal pretrained model, fine-tuned for content safety classification. Similar to previous versions, it can be used to classify content in both LLM...",
@@ -21615,7 +21565,7 @@
         "top_p": null
       },
       "description": "GLM-4.5V is a vision-language foundation model for multimodal agent applications. Built on a Mixture-of-Experts (MoE) architecture with 106B parameters and 12B activated parameters, it achieves state-of-the-art results in video understanding,...",
-      "expiration_date": null,
+      "expiration_date": "2026-12-31",
       "id": "z-ai/glm-4.5v",
       "name": "Z.ai: GLM 4.5V",
       "pricing": {
