@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T03:01:31.048127Z",
+  "generated_at": "2026-08-25T03:31:35.901782Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -7863,8 +7863,11 @@
         "include_reasoning",
         "max_tokens",
         "reasoning",
+        "response_format",
         "seed",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_p"
       ],
       "top_provider": {
