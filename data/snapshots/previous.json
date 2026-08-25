@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T13:53:05.737356Z",
+  "generated_at": "2026-08-25T14:06:15.270165Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -181,7 +181,7 @@
       "top_provider": {
         "context_length": 32768,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 29491
       }
     },
     "allenai/olmo-3-32b-think": {
@@ -237,7 +237,7 @@
       "top_provider": {
         "context_length": 65536,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 58982
       }
     },
     "amazon/nova-2-lite-v1": {
@@ -2093,7 +2093,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 235929
       }
     },
     "arcee-ai/virtuoso-large": {
@@ -2354,7 +2354,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 235929
       }
     },
     "bytedance-seed/seed-2.0-code": {
@@ -2980,7 +2980,7 @@
       "top_provider": {
         "context_length": 163840,
         "is_moderated": false,
-        "max_completion_tokens": 163840
+        "max_completion_tokens": 147456
       }
     },
     "deepseek/deepseek-chat-v3.1": {
@@ -3037,7 +3037,7 @@
       "top_provider": {
         "context_length": 161000,
         "is_moderated": false,
-        "max_completion_tokens": 161000
+        "max_completion_tokens": 144900
       }
     },
     "deepseek/deepseek-r1": {
@@ -3207,7 +3207,7 @@
       "top_provider": {
         "context_length": 8192,
         "is_moderated": false,
-        "max_completion_tokens": 8192
+        "max_completion_tokens": 7372
       }
     },
     "deepseek/deepseek-v3.1-terminus": {
@@ -3330,7 +3330,7 @@
       "top_provider": {
         "context_length": 163840,
         "is_moderated": false,
-        "max_completion_tokens": 163840
+        "max_completion_tokens": 147456
       }
     },
     "deepseek/deepseek-v3.2-exp": {
@@ -3687,7 +3687,7 @@
       "top_provider": {
         "context_length": 1048575,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 943717
       }
     },
     "dots-studio/dots-3-note-preview:free": {
@@ -3735,7 +3735,7 @@
       "top_provider": {
         "context_length": 512000,
         "is_moderated": false,
-        "max_completion_tokens": 512000
+        "max_completion_tokens": 460800
       }
     },
     "google/gemini-2.5-flash": {
@@ -4574,7 +4574,7 @@
       "top_provider": {
         "context_length": 65536,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 58982
       }
     },
     "google/gemini-3.1-flash-lite": {
@@ -4683,7 +4683,7 @@
       "top_provider": {
         "context_length": 65536,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 58982
       }
     },
     "google/gemini-3.1-flash-lite-preview": {
@@ -5613,7 +5613,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 117964
       }
     },
     "google/gemma-3-4b-it": {
@@ -5715,7 +5715,7 @@
       "top_provider": {
         "context_length": 32768,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 29491
       }
     },
     "google/gemma-4-26b-a4b-it": {
@@ -5897,7 +5897,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 235929
       }
     },
     "google/gemma-4-31b-it:free": {
@@ -6111,7 +6111,7 @@
       "top_provider": {
         "context_length": 4096,
         "is_moderated": false,
-        "max_completion_tokens": 4096
+        "max_completion_tokens": 3686
       }
     },
     "ibm-granite/granite-4.0-h-micro": {
@@ -6167,7 +6167,7 @@
       "top_provider": {
         "context_length": 131000,
         "is_moderated": false,
-        "max_completion_tokens": 131000
+        "max_completion_tokens": 117900
       }
     },
     "ibm-granite/granite-4.1-8b": {
@@ -6227,7 +6227,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 117964
       }
     },
     "inception/mercury-2": {
@@ -6789,7 +6789,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 117964
       }
     },
     "meta-llama/llama-3.2-1b-instruct": {
@@ -6838,7 +6838,7 @@
       "top_provider": {
         "context_length": 60000,
         "is_moderated": false,
-        "max_completion_tokens": 60000
+        "max_completion_tokens": 54000
       }
     },
     "meta-llama/llama-3.2-3b-instruct": {
@@ -6890,7 +6890,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 117964
       }
     },
     "meta-llama/llama-3.3-70b-instruct": {
@@ -7169,7 +7169,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 117964
       }
     },
     "meta/muse-spark-1.1": {
@@ -7223,7 +7223,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": true,
-        "max_completion_tokens": null
+        "max_completion_tokens": 943718
       }
     },
     "meta/muse-spark-1.2": {
@@ -7277,7 +7277,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": true,
-        "max_completion_tokens": null
+        "max_completion_tokens": 943718
       }
     },
     "meta/muse-spark-1.2-contributor": {
@@ -7331,7 +7331,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": true,
-        "max_completion_tokens": null
+        "max_completion_tokens": 943718
       }
     },
     "microsoft/phi-4": {
@@ -7382,7 +7382,7 @@
       "top_provider": {
         "context_length": 16384,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 14745
       }
     },
     "microsoft/wizardlm-2-8x22b": {
@@ -7476,7 +7476,7 @@
       "top_provider": {
         "context_length": 1000192,
         "is_moderated": false,
-        "max_completion_tokens": 1000192
+        "max_completion_tokens": 900172
       }
     },
     "minimax/minimax-m1": {
@@ -7819,7 +7819,7 @@
       "top_provider": {
         "context_length": 196608,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 176947
       }
     },
     "minimax/minimax-m2.7:free": {
@@ -7873,7 +7873,7 @@
       "top_provider": {
         "context_length": 196608,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 176947
       }
     },
     "minimax/minimax-m3": {
@@ -8002,7 +8002,7 @@
       "top_provider": {
         "context_length": 524288,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 471859
       }
     },
     "minimax/minimax-m3:free": {
@@ -8058,7 +8058,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 943718
       }
     },
     "mistralai/codestral-2508": {
@@ -8111,7 +8111,7 @@
       "top_provider": {
         "context_length": 256000,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 204800
       }
     },
     "mistralai/devstral-2512": {
@@ -8165,7 +8165,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 209715
       }
     },
     "mistralai/ministral-14b-2512": {
@@ -8219,7 +8219,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 209715
       }
     },
     "mistralai/ministral-3b-2512": {
@@ -8273,7 +8273,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 104857
       }
     },
     "mistralai/ministral-8b": {
@@ -8322,7 +8322,7 @@
       "top_provider": {
         "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 102400
       }
     },
     "mistralai/ministral-8b-2512": {
@@ -8376,7 +8376,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 209715
       }
     },
     "mistralai/mistral-large": {
@@ -8428,7 +8428,7 @@
       "top_provider": {
         "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 102400
       }
     },
     "mistralai/mistral-large-2407": {
@@ -8480,7 +8480,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 104857
       }
     },
     "mistralai/mistral-large-2512": {
@@ -8535,7 +8535,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 209715
       }
     },
     "mistralai/mistral-medium-3": {
@@ -8588,7 +8588,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 104857
       }
     },
     "mistralai/mistral-medium-3-5": {
@@ -8649,7 +8649,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 209715
       }
     },
     "mistralai/mistral-medium-3.1": {
@@ -8702,7 +8702,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 104857
       }
     },
     "mistralai/mistral-nemo": {
@@ -8811,7 +8811,7 @@
       "top_provider": {
         "context_length": 32768,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 26214
       }
     },
     "mistralai/mistral-small-24b-instruct-2501": {
@@ -8927,7 +8927,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 209715
       }
     },
     "mistralai/mistral-small-3.1-24b-instruct": {
@@ -8981,7 +8981,7 @@
       "top_provider": {
         "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": 128000
+        "max_completion_tokens": 102400
       }
     },
     "mistralai/mistral-small-3.2-24b-instruct": {
@@ -9091,7 +9091,7 @@
       "top_provider": {
         "context_length": 65536,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 52428
       }
     },
     "mistralai/voxtral-small-24b-2507": {
@@ -9146,7 +9146,7 @@
       "top_provider": {
         "context_length": 32000,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 25600
       }
     },
     "moonshotai/kimi-k2": {
@@ -9373,7 +9373,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 235929
       }
     },
     "moonshotai/kimi-k2.6": {
@@ -9439,7 +9439,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 235929
       }
     },
     "moonshotai/kimi-k2.7-code": {
@@ -9505,7 +9505,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 235929
       }
     },
     "moonshotai/kimi-k2.7-code:batch": {
@@ -9567,7 +9567,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 235929
       }
     },
     "moonshotai/kimi-k3": {
@@ -9634,7 +9634,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 1048576
+        "max_completion_tokens": 943718
       }
     },
     "morph/morph-v3-fast": {
@@ -9786,7 +9786,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 235929
       }
     },
     "nex-agi/nex-n2-pro": {
@@ -9843,7 +9843,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 235929
       }
     },
     "nousresearch/hermes-3-llama-3.1-405b": {
@@ -9993,7 +9993,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 117964
       }
     },
     "nousresearch/hermes-4-70b": {
@@ -10041,7 +10041,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 117964
       }
     },
     "nvidia/nemotron-3-nano-30b-a3b": {
@@ -10102,7 +10102,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 235929
       }
     },
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
@@ -10279,7 +10279,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 235929
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b": {
@@ -10342,7 +10342,7 @@
       "top_provider": {
         "context_length": 512288,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 461059
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b:batch": {
@@ -10404,7 +10404,7 @@
       "top_provider": {
         "context_length": 512288,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 461059
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b:free": {
@@ -10717,7 +10717,7 @@
       "top_provider": {
         "context_length": 4095,
         "is_moderated": false,
-        "max_completion_tokens": 4096
+        "max_completion_tokens": 3685
       }
     },
     "openai/gpt-3.5-turbo-16k": {
@@ -10820,7 +10820,7 @@
       "top_provider": {
         "context_length": 4095,
         "is_moderated": true,
-        "max_completion_tokens": 4096
+        "max_completion_tokens": 3685
       }
     },
     "openai/gpt-3.5-turbo:batch": {
@@ -14694,7 +14694,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 117964
       }
     },
     "openai/gpt-oss-20b": {
@@ -14756,7 +14756,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 117964
       }
     },
     "openai/gpt-oss-safeguard-20b": {
@@ -16061,7 +16061,7 @@
       "top_provider": {
         "context_length": 127072,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 114364
       }
     },
     "perplexity/sonar-deep-research": {
@@ -16108,7 +16108,7 @@
       "top_provider": {
         "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 115200
       }
     },
     "perplexity/sonar-pro": {
@@ -16255,7 +16255,7 @@
       "top_provider": {
         "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 115200
       }
     },
     "poolside/laguna-s-2.1": {
@@ -16540,7 +16540,7 @@
       "top_provider": {
         "context_length": 32768,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 29491
       }
     },
     "qwen/qwen-2.5-coder-32b-instruct": {
@@ -16589,7 +16589,7 @@
       "top_provider": {
         "context_length": 32768,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 29491
       }
     },
     "qwen/qwen-plus": {
@@ -16808,7 +16808,7 @@
       "top_provider": {
         "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": 128000
+        "max_completion_tokens": 115200
       }
     },
     "qwen/qwen3-14b": {
@@ -17029,7 +17029,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 117964
       }
     },
     "qwen/qwen3-30b-a3b": {
@@ -17415,7 +17415,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3-coder-flash": {
@@ -17528,7 +17528,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3-coder-plus": {
@@ -17753,7 +17753,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3-next-80b-a3b-thinking": {
@@ -18304,7 +18304,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3.5-27b": {
@@ -18436,7 +18436,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3.5-397b-a17b": {
@@ -18502,7 +18502,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3.5-9b": {
@@ -18568,7 +18568,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3.5-flash-02-23": {
@@ -18871,7 +18871,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3.6-flash": {
@@ -19462,7 +19462,7 @@
       "top_provider": {
         "context_length": 16384,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 14745
       }
     },
     "rekaai/reka-flash-3": {
@@ -19520,7 +19520,7 @@
       "top_provider": {
         "context_length": 65536,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 58982
       }
     },
     "relace/relace-apply-3": {
@@ -19768,7 +19768,7 @@
       "top_provider": {
         "context_length": 8192,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 7372
       }
     },
     "sao10k/l3.1-euryale-70b": {
@@ -20045,7 +20045,7 @@
       "top_provider": {
         "context_length": 256000,
         "is_moderated": false,
-        "max_completion_tokens": 256000
+        "max_completion_tokens": 230400
       }
     },
     "tencent/hunyuan-a13b-instruct": {
@@ -20092,7 +20092,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 117964
       }
     },
     "tencent/hy-mt2-1.8b": {
@@ -20340,7 +20340,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 235929
       }
     },
     "thedrummer/cydonia-24b-v4.1": {
@@ -20396,7 +20396,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 117964
       }
     },
     "thedrummer/rocinante-12b": {
@@ -20448,7 +20448,7 @@
       "top_provider": {
         "context_length": 65536,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 58982
       }
     },
     "thedrummer/skyfall-36b-v2": {
@@ -20500,7 +20500,7 @@
       "top_provider": {
         "context_length": 32768,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 29491
       }
     },
     "thedrummer/unslopnemo-12b": {
@@ -20554,7 +20554,7 @@
       "top_provider": {
         "context_length": 32768,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 26214
       }
     },
     "thinkingmachines/inkling": {
@@ -20803,7 +20803,7 @@
       "top_provider": {
         "context_length": 524288,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 471859
       }
     },
     "thinkingmachines/inkling:free": {
@@ -20971,7 +20971,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 117964
       }
     },
     "upstage/solar-pro4": {
@@ -21126,7 +21126,7 @@
       "top_provider": {
         "context_length": 2000000,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 1800000
       }
     },
     "x-ai/grok-4.20-multi-agent": {
@@ -21184,7 +21184,7 @@
       "top_provider": {
         "context_length": 2000000,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 1800000
       }
     },
     "x-ai/grok-4.3": {
@@ -21244,7 +21244,7 @@
       "top_provider": {
         "context_length": 1000000,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 900000
       }
     },
     "x-ai/grok-4.5": {
@@ -21297,7 +21297,7 @@
       "top_provider": {
         "context_length": 500000,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 450000
       }
     },
     "x-ai/grok-4.6": {
@@ -21350,7 +21350,7 @@
       "top_provider": {
         "context_length": 500000,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 450000
       }
     },
     "x-ai/grok-build-0.1": {
@@ -21409,7 +21409,7 @@
       "top_provider": {
         "context_length": 256000,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 230400
       }
     },
     "xiaomi/mimo-v2.5": {
@@ -22128,7 +22128,7 @@
       "top_provider": {
         "context_length": 202752,
         "is_moderated": false,
-        "max_completion_tokens": 202752
+        "max_completion_tokens": 182476
       }
     },
     "z-ai/glm-5.2": {
@@ -22256,7 +22256,7 @@
       "top_provider": {
         "context_length": 1048575,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 943717
       }
     },
     "z-ai/glm-5.2:free": {
@@ -22318,7 +22318,7 @@
       "top_provider": {
         "context_length": 256000,
         "is_moderated": false,
-        "max_completion_tokens": 256000
+        "max_completion_tokens": 230400
       }
     },
     "z-ai/glm-5.3": {
