@@ -5688,7 +5688,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-26T02:01:28.482760Z",
+  "generated_at": "2026-08-26T03:28:55.957942Z",
   "recovered_drops": [],
   "settled_drops": [
     {
@@ -5704,21 +5704,6 @@
       "saved_per_million_usd": "0.255000",
       "settled_at": "2026-08-26T01:46:57.974297Z",
       "settled_per_million_usd": "0.300000",
-      "status": "settled"
-    },
-    {
-      "detected_at": "2026-08-18T01:52:23.151923Z",
-      "episode_start_per_million_usd": "3.200000",
-      "field": "completion",
-      "model_id": "qwen/qwen3.5-122b-a10b",
-      "new_per_million_usd": "2.080000",
-      "old_per_million_usd": "3.200000",
-      "pct_drop": 0.35,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "saved_per_million_usd": "1.120000",
-      "settled_at": "2026-08-25T02:23:47.610002Z",
-      "settled_per_million_usd": "2.080000",
       "status": "settled"
     },
     {

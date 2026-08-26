@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T02:01:28.482760Z",
+  "generated_at": "2026-08-26T03:28:55.957942Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -5816,10 +5816,10 @@
       "pricing": {
         "completion": "0.00000034",
         "image": null,
-        "input_cache_read": "0.0000001",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
@@ -5847,7 +5847,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 16384
       }
     },
     "google/gemma-4-31b-it:free": {
@@ -18361,12 +18361,12 @@
       "id": "qwen/qwen3.5-397b-a17b",
       "name": "Qwen: Qwen3.5 397B A17B",
       "pricing": {
-        "completion": "0.0000036",
+        "completion": "0.00000234",
         "image": null,
-        "input_cache_read": "0.0000003",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005",
+        "prompt": "0.00000039",
         "request": null,
         "web_search": null
       },
@@ -18394,7 +18394,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 65536
       }
     },
     "qwen/qwen3.5-9b": {
