@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T16:40:54.535299Z",
+  "generated_at": "2026-08-26T17:35:48.431376Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -9286,16 +9286,16 @@
         "top_p": null
       },
       "description": "Kimi K2.5 is Moonshot AI's native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed...",
-      "expiration_date": "2026-08-31",
+      "expiration_date": null,
       "id": "moonshotai/kimi-k2.5",
       "name": "MoonshotAI: Kimi K2.5",
       "pricing": {
-        "completion": "0.000003",
+        "completion": "0.00000225",
         "image": null,
-        "input_cache_read": "0.0000001",
+        "input_cache_read": "0.00000007",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000006",
+        "prompt": "0.00000045",
         "request": null,
         "web_search": null
       },
@@ -22249,11 +22249,16 @@
         "web_search": null
       },
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
+        "presence_penalty",
         "reasoning",
         "reasoning_effort",
+        "repetition_penalty",
         "response_format",
+        "seed",
+        "stop",
         "temperature",
         "tool_choice",
         "tools",

@@ -479,6 +479,21 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-08-26T17:35:29.814296Z",
+      "episode_start_per_million_usd": "0.528000",
+      "field": "completion",
+      "model_id": "tencent/hy3",
+      "new_per_million_usd": "0.330000",
+      "old_per_million_usd": "0.528000",
+      "pct_drop": 0.375,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.198000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
   "episodes": [
@@ -5731,9 +5746,24 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-08-26T17:35:29.814296Z",
+      "episode_start_per_million_usd": "0.528000",
+      "field": "completion",
+      "model_id": "tencent/hy3",
+      "new_per_million_usd": "0.330000",
+      "old_per_million_usd": "0.528000",
+      "pct_drop": 0.375,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.198000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-08-26T16:40:54.535299Z",
+  "generated_at": "2026-08-26T17:35:48.431376Z",
   "recovered_drops": [],
   "settled_drops": [
     {
