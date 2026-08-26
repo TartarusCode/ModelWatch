@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T20:55:39.497573Z",
+  "generated_at": "2026-08-26T21:43:24.329201Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -9286,16 +9286,16 @@
         "top_p": null
       },
       "description": "Kimi K2.5 is Moonshot AI's native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed...",
-      "expiration_date": null,
+      "expiration_date": "2026-08-31",
       "id": "moonshotai/kimi-k2.5",
       "name": "MoonshotAI: Kimi K2.5",
       "pricing": {
-        "completion": "0.00000225",
+        "completion": "0.000003",
         "image": null,
-        "input_cache_read": "0.00000007",
+        "input_cache_read": "0.0000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000045",
+        "prompt": "0.0000006",
         "request": null,
         "web_search": null
       },
@@ -19223,6 +19223,62 @@
         "reasoning",
         "reasoning_effort",
         "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
+      }
+    },
+    "qwen/qwen3.8-flash": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen"
+      },
+      "canonical_slug": "qwen/qwen3.8-flash-20260826",
+      "context_length": 1000000,
+      "created": 1787773060,
+      "default_parameters": {},
+      "description": "Qwen3.8 Flash is a multimodal reasoning model from Alibaba. It is suited for coding assistance, agentic workflows, visual understanding, document and codebase analysis, desktop interaction, chart analysis, and long-video analysis.",
+      "expiration_date": null,
+      "id": "qwen/qwen3.8-flash",
+      "name": "Qwen: Qwen3.8 Flash",
+      "pricing": {
+        "completion": "0.00000047",
+        "image": null,
+        "input_cache_read": "0.000000016",
+        "input_cache_write": "0.0000002",
+        "internal_reasoning": null,
+        "prompt": "0.00000016",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
         "response_format",
         "seed",
         "stop",
