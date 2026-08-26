@@ -391,6 +391,36 @@
       "status": "active"
     },
     {
+      "detected_at": "2026-08-26T00:45:00.932158Z",
+      "episode_start_per_million_usd": "1.000000",
+      "field": "completion",
+      "model_id": "qwen/qwen2.5-vl-72b-instruct",
+      "new_per_million_usd": "0.750000",
+      "old_per_million_usd": "1.000000",
+      "pct_drop": 0.25,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.250000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-08-26T00:45:00.932158Z",
+      "episode_start_per_million_usd": "0.800000",
+      "field": "prompt",
+      "model_id": "qwen/qwen2.5-vl-72b-instruct",
+      "new_per_million_usd": "0.250000",
+      "old_per_million_usd": "0.800000",
+      "pct_drop": 0.6875,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.550000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
       "detected_at": "2026-08-21T07:32:26.519097Z",
       "episode_start_per_million_usd": "0.910000",
       "field": "completion",
@@ -5656,9 +5686,39 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-08-26T00:45:00.932158Z",
+      "episode_start_per_million_usd": "0.800000",
+      "field": "prompt",
+      "model_id": "qwen/qwen2.5-vl-72b-instruct",
+      "new_per_million_usd": "0.250000",
+      "old_per_million_usd": "0.800000",
+      "pct_drop": 0.6875,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.550000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-08-26T00:45:00.932158Z",
+      "episode_start_per_million_usd": "1.000000",
+      "field": "completion",
+      "model_id": "qwen/qwen2.5-vl-72b-instruct",
+      "new_per_million_usd": "0.750000",
+      "old_per_million_usd": "1.000000",
+      "pct_drop": 0.25,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.250000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-08-26T00:23:37.961821Z",
+  "generated_at": "2026-08-26T00:45:13.738917Z",
   "recovered_drops": [
     {
       "detected_at": "2026-08-24T13:40:21.018594Z",
