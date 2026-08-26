@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T23:36:03.871418Z",
+  "generated_at": "2026-08-26T00:23:37.961821Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3415,12 +3415,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.000000154",
+        "completion": "0.000000177212",
         "image": null,
-        "input_cache_read": "0.0000000154",
+        "input_cache_read": "0.0000000177212",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000077",
+        "prompt": "0.000000088606",
         "request": null,
         "web_search": null
       },
@@ -3591,12 +3591,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.00000111186",
+        "completion": "0.000001580616",
         "image": null,
-        "input_cache_read": "0.0000000463275",
+        "input_cache_read": "0.000000065859",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000055593",
+        "prompt": "0.000000790308",
         "request": null,
         "web_search": null
       },
@@ -6864,12 +6864,12 @@
       "id": "meta-llama/llama-3.3-70b-instruct",
       "name": "Meta: Llama 3.3 70B Instruct",
       "pricing": {
-        "completion": "0.00000032",
+        "completion": "0.00000071",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000071",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.00000071",
         "request": null,
         "web_search": null
       },
@@ -6893,9 +6893,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 115200
       }
     },
     "meta-llama/llama-4-maverick": {
@@ -6976,12 +6976,12 @@
       "id": "meta-llama/llama-4-scout",
       "name": "Meta: Llama 4 Scout",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.00000034",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.000000055",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.00000011",
         "request": null,
         "web_search": null
       },
@@ -7003,9 +7003,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 327680,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 8192
       }
     },
     "meta-llama/llama-guard-4-12b": {
@@ -16672,12 +16672,12 @@
       "id": "qwen/qwen2.5-vl-72b-instruct",
       "name": "Qwen: Qwen2.5 VL 72B Instruct",
       "pricing": {
-        "completion": "0.000001",
+        "completion": "0.00000075",
         "image": null,
-        "input_cache_read": "0.0000004",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000008",
+        "prompt": "0.00000025",
         "request": null,
         "web_search": null
       },
@@ -16698,9 +16698,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 128000,
+        "context_length": 32000,
         "is_moderated": false,
-        "max_completion_tokens": 115200
+        "max_completion_tokens": 28800
       }
     },
     "qwen/qwen3-14b": {
