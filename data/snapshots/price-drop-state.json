@@ -3731,9 +3731,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.255000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-26T01:46:57.974297Z",
+      "settled_per_million_usd": "0.300000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-13T18:54:07.819275Z",
@@ -4601,9 +4601,9 @@
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "saved_per_million_usd": "0.070000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-08-26T01:46:57.974297Z",
+      "settled_per_million_usd": "0.100000",
+      "status": "settled"
     },
     {
       "detected_at": "2026-08-19T01:04:16.757827Z",
@@ -5206,7 +5206,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-26T01:01:39.045014Z",
+  "generated_at": "2026-08-26T01:47:19.411342Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -9968,14 +9968,14 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.05000000",
-        "confirmed_at": "2026-08-19T01:04:16.757827Z",
-        "confirmed_price": "0.05000000",
-        "episode_start_price": "0.12000000",
+        "anchor": "0.1000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "prompt": {
         "anchor": "0.22000000",
@@ -17436,14 +17436,14 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.045000000",
-        "confirmed_at": "2026-08-13T00:34:54.694577Z",
-        "confirmed_price": "0.045000000",
-        "episode_start_price": "0.3000000",
+        "anchor": "0.3000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "prompt": {
         "anchor": "0.5000000",
