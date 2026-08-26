@@ -5294,9 +5294,39 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "detected_at": "2026-08-26T19:03:04.743641Z",
+      "episode_start_per_million_usd": "1.320000",
+      "field": "prompt",
+      "model_id": "deepseek/deepseek-v4-pro-0813",
+      "new_per_million_usd": "1.122000",
+      "old_per_million_usd": "1.320000",
+      "pct_drop": 0.15,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.198000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "detected_at": "2026-08-26T19:03:04.743641Z",
+      "episode_start_per_million_usd": "3.960000",
+      "field": "completion",
+      "model_id": "deepseek/deepseek-v4-pro-0813",
+      "new_per_million_usd": "3.366000",
+      "old_per_million_usd": "3.960000",
+      "pct_drop": 0.15,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "saved_per_million_usd": "0.594000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-08-26T18:40:40.260028Z",
+  "generated_at": "2026-08-26T19:03:22.055016Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -7852,14 +7882,14 @@
     },
     "deepseek/deepseek-v4-pro-0813": {
       "completion": {
-        "anchor": "3.96000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "3.366000000",
+        "confirmed_at": "2026-08-26T19:03:04.743641Z",
+        "confirmed_price": "3.366000000",
         "episode_start_price": "3.96000000",
-        "pending_builds": 1,
-        "pending_price": "3.366000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.044000000",
@@ -7872,14 +7902,14 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "1.32000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "1.122000000",
+        "confirmed_at": "2026-08-26T19:03:04.743641Z",
+        "confirmed_price": "1.122000000",
         "episode_start_price": "1.32000000",
-        "pending_builds": 1,
-        "pending_price": "1.122000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "google/gemini-2.5-flash": {

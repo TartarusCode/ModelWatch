@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T18:40:40.260028Z",
+  "generated_at": "2026-08-26T19:03:22.055016Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3415,12 +3415,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000016212",
+        "completion": "0.00000015904",
         "image": null,
-        "input_cache_read": "0.000000016212",
+        "input_cache_read": "0.000000015904",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008106",
+        "prompt": "0.00000007952",
         "request": null,
         "web_search": null
       },
@@ -22228,7 +22228,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-5.3-flash-20260826",
-      "context_length": 1048576,
+      "context_length": 1310720,
       "created": 1787752741,
       "default_parameters": {
         "temperature": 1,
@@ -22251,7 +22251,10 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
+        "logprobs",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
@@ -22259,10 +22262,12 @@
         "response_format",
         "seed",
         "stop",
+        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
