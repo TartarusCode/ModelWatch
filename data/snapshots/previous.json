@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T22:01:25.026623Z",
+  "generated_at": "2026-08-27T22:31:21.557890Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3415,12 +3415,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000015288",
+        "completion": "0.0000001498",
         "image": null,
-        "input_cache_read": "0.000000015288",
+        "input_cache_read": "0.00000001498",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000007644",
+        "prompt": "0.0000000749",
         "request": null,
         "web_search": null
       },
@@ -9462,68 +9462,6 @@
         "max_completion_tokens": 235929
       }
     },
-    "moonshotai/kimi-k2.7-code:batch": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "instruct_type": null,
-        "modality": "text+image->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "moonshotai/kimi-k2.7-code-20260612",
-      "context_length": 262144,
-      "created": 1781266361,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "MoonshotAI: Kimi K2.7 Code is a coding-focused model in Moonshot AI's Kimi K2 family, built to complete end-to-end programming tasks reliably over long contexts. It uses a native multimodal mixture-of-experts...",
-      "expiration_date": null,
-      "id": "moonshotai/kimi-k2.7-code:batch",
-      "name": "MoonshotAI: Kimi K2.7 Code (batch)",
-      "pricing": {
-        "completion": "0.000004",
-        "image": null,
-        "input_cache_read": "0.00000019",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000095",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 235929
-      }
-    },
     "moonshotai/kimi-k3": {
       "architecture": {
         "input_modalities": [
@@ -10249,7 +10187,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-      "context_length": 512288,
+      "context_length": 262144,
       "created": 1780551208,
       "default_parameters": {
         "frequency_penalty": null,
@@ -10264,12 +10202,12 @@
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
       "name": "NVIDIA: Nemotron 3 Ultra",
       "pricing": {
-        "completion": "0.0000036",
+        "completion": "0.0000022",
         "image": null,
-        "input_cache_read": "0.0000002",
+        "input_cache_read": "0.0000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000006",
+        "prompt": "0.0000005",
         "request": null,
         "web_search": null
       },
@@ -10294,9 +10232,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 512288,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 461059
+        "max_completion_tokens": 16384
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b:batch": {

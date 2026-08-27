@@ -5745,7 +5745,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-27T22:01:25.026623Z",
+  "generated_at": "2026-08-27T22:31:21.557890Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -8402,7 +8402,7 @@
     },
     "deepseek/deepseek-v4-flash": {
       "completion": {
-        "anchor": "0.15288000000",
+        "anchor": "0.1498000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -8413,7 +8413,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.015288000000",
+        "anchor": "0.01498000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -8424,7 +8424,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.07644000000",
+        "anchor": "0.0749000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -13458,34 +13458,34 @@
         "anchor": "3.6000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "3.6000000",
+        "pending_builds": 1,
+        "pending_price": "2.2000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.2000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.2000000",
+        "pending_builds": 1,
+        "pending_price": "0.1000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "prompt": {
         "anchor": "0.6000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.6000000",
+        "pending_builds": 1,
+        "pending_price": "0.5000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b:batch": {
