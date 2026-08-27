@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T08:01:27.982087Z",
+  "generated_at": "2026-08-27T08:42:42.777672Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -9286,16 +9286,16 @@
         "top_p": null
       },
       "description": "Kimi K2.5 is Moonshot AI's native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed...",
-      "expiration_date": null,
+      "expiration_date": "2026-08-31",
       "id": "moonshotai/kimi-k2.5",
       "name": "MoonshotAI: Kimi K2.5",
       "pricing": {
-        "completion": "0.00000225",
+        "completion": "0.000003",
         "image": null,
-        "input_cache_read": "0.00000007",
+        "input_cache_read": "0.0000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000045",
+        "prompt": "0.0000006",
         "request": null,
         "web_search": null
       },
@@ -18295,12 +18295,12 @@
       "id": "qwen/qwen3.5-35b-a3b",
       "name": "Qwen: Qwen3.5-35B-A3B",
       "pricing": {
-        "completion": "0.0000018",
+        "completion": "0.00000125",
         "image": null,
-        "input_cache_read": "0.000000225",
+        "input_cache_read": "0.00000025",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000225",
+        "prompt": "0.00000025",
         "request": null,
         "web_search": null
       },
@@ -18328,7 +18328,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3.5-397b-a17b": {
@@ -18730,12 +18730,12 @@
       "id": "qwen/qwen3.6-35b-a3b",
       "name": "Qwen: Qwen3.6 35B A3B",
       "pricing": {
-        "completion": "0.000001",
+        "completion": "0.0000009",
         "image": null,
         "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000014",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
