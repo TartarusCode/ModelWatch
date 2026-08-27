@@ -16,14 +16,14 @@ PRICING_FIELDS = (
 
 
 @dataclass(frozen=True)
-class PriceDropThresholds:
+class PriceChangeThresholds:
     min_pct: Decimal
-    min_saved_per_million_usd: Decimal
+    min_delta_per_million_usd: Decimal
 
 
-DEFAULT_THRESHOLDS = PriceDropThresholds(
+DEFAULT_THRESHOLDS = PriceChangeThresholds(
     min_pct=Decimal("0.10"),
-    min_saved_per_million_usd=Decimal("0.05"),
+    min_delta_per_million_usd=Decimal("0.05"),
 )
 
 

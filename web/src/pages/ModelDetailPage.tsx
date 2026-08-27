@@ -11,7 +11,7 @@ import { ProviderPricingPanel } from "../components/ProviderPricingPanel";
 import { fetchModelPriceHistory } from "../lib/data";
 import { isFreeTierModel, pricingFieldLabel, providerFromModelId } from "../lib/pricing";
 import { useDocumentTitle } from "../lib/useDocumentTitle";
-import type { EnrichedModel, ModelPricing, PriceDropRecord, PriceHistoryPoint } from "../types";
+import type { EnrichedModel, ModelPricing, PriceChangeRecord, PriceHistoryPoint } from "../types";
 
 const ModelDescription = lazy(() =>
   import("../components/ModelDescription").then((module) => ({
@@ -21,7 +21,7 @@ const ModelDescription = lazy(() =>
 
 interface ModelDetailPageProps {
   models: EnrichedModel[];
-  episodes: PriceDropRecord[];
+  episodes: PriceChangeRecord[];
 }
 
 function pricingEntries(pricing: ModelPricing): [string, string][] {

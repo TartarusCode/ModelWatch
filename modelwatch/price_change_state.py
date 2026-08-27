@@ -9,13 +9,15 @@ from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field
 
 from modelwatch.json_output import write_model_json
-from modelwatch.pricing import PriceDropThresholds
-from modelwatch.schemas import PriceDropRecord
+from modelwatch.pricing import PriceChangeThresholds
+from modelwatch.schemas import ChangeDirection, PriceChangeRecord
 
 SETTLEMENT_BUILDS = 2
 RECOVERY_BUILDS = 2
-RECOVERY_FACTOR = Decimal("1.05")
+CUT_RECOVERY_FACTOR = Decimal("1.05")
+HIKE_RECOVERY_FACTOR = Decimal("0.95")
 SPIKE_TOLERANCE = Decimal("1.15")
+DIP_TOLERANCE = Decimal("0.85")
 PRICE_TOLERANCE = Decimal("0.000001")
 SETTLE_AFTER = timedelta(days=7)
 
@@ -23,17 +25,18 @@ STATE_PATH = (
     Path(__file__).resolve().parent.parent
     / "data"
     / "snapshots"
-    / "price-drop-state.json"
+    / "price-change-state.json"
 )
 
 FieldStatus = Literal["idle", "pending", "confirmed"]
 
 
-class FieldDropState(BaseModel):
+class FieldChangeState(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     anchor: Decimal
     status: FieldStatus = "idle"
+    direction: ChangeDirection | None = None
     pending_price: Decimal | None = None
     pending_builds: int = 0
     episode_start_price: Decimal | None = None
@@ -42,37 +45,37 @@ class FieldDropState(BaseModel):
     recovery_builds: int = 0
 
     @classmethod
-    def idle(cls, anchor: Decimal) -> FieldDropState:
+    def idle(cls, anchor: Decimal) -> FieldChangeState:
         return cls(anchor=anchor, status="idle")
 
 
-class PriceDropStateStore(BaseModel):
+class PriceChangeStateStore(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     generated_at: datetime
-    models: dict[str, dict[str, FieldDropState]] = Field(default_factory=dict)
-    episodes: list[PriceDropRecord] = Field(default_factory=list)
+    models: dict[str, dict[str, FieldChangeState]] = Field(default_factory=dict)
+    episodes: list[PriceChangeRecord] = Field(default_factory=list)
 
 
 @dataclass(frozen=True)
 class FieldUpdateResult:
-    state: FieldDropState
-    confirmed: PriceDropRecord | None
-    recovered: PriceDropRecord | None
-    settled: PriceDropRecord | None = None
+    state: FieldChangeState
+    confirmed: PriceChangeRecord | None
+    recovered: PriceChangeRecord | None
+    settled: PriceChangeRecord | None = None
 
 
-def load_price_drop_state() -> PriceDropStateStore:
+def load_price_change_state() -> PriceChangeStateStore:
     if not STATE_PATH.exists():
         now = datetime.now(UTC)
-        return PriceDropStateStore(generated_at=now, models={}, episodes=[])
+        return PriceChangeStateStore(generated_at=now, models={}, episodes=[])
     import json
 
     payload = json.loads(STATE_PATH.read_text(encoding="utf-8"))
-    return PriceDropStateStore.model_validate(payload)
+    return PriceChangeStateStore.model_validate(payload)
 
 
-def save_price_drop_state(store: PriceDropStateStore) -> None:
+def save_price_change_state(store: PriceChangeStateStore) -> None:
     STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
     write_model_json(STATE_PATH, store)
 
@@ -81,7 +84,7 @@ def _prices_match(left: Decimal, right: Decimal) -> bool:
     return abs(left - right) <= PRICE_TOLERANCE
 
 
-def _effective_prior(reference: Decimal, previous: Decimal | None) -> Decimal:
+def _effective_prior_for_cut(reference: Decimal, previous: Decimal | None) -> Decimal:
     if previous is None:
         return reference
     if previous > reference * SPIKE_TOLERANCE:
@@ -89,50 +92,67 @@ def _effective_prior(reference: Decimal, previous: Decimal | None) -> Decimal:
     return previous
 
 
-def _meets_drop_thresholds(
+def _effective_prior_for_hike(reference: Decimal, previous: Decimal | None) -> Decimal:
+    if previous is None:
+        return reference
+    if previous < reference * DIP_TOLERANCE:
+        return reference
+    return previous
+
+
+def _meets_change_thresholds(
     *,
     prior: Decimal,
     current: Decimal,
-    thresholds: PriceDropThresholds,
+    direction: ChangeDirection,
+    thresholds: PriceChangeThresholds,
 ) -> bool:
-    if current >= prior:
+    if direction == "cut":
+        if current >= prior:
+            return False
+        delta = prior - current
+        if delta < thresholds.min_delta_per_million_usd:
+            return False
+        return (delta / prior) >= thresholds.min_pct
+    if current <= prior:
         return False
-    saved = prior - current
-    if saved < thresholds.min_saved_per_million_usd:
+    delta = current - prior
+    if delta < thresholds.min_delta_per_million_usd:
         return False
-    pct_drop = saved / prior
-    return pct_drop >= thresholds.min_pct
+    return (delta / prior) >= thresholds.min_pct
 
 
 def _episode_from_confirmation(
     *,
     model_id: str,
     field: str,
+    direction: ChangeDirection,
     episode_start: Decimal,
     confirmed_price: Decimal,
     detected_at: datetime,
-) -> PriceDropRecord:
-    saved = episode_start - confirmed_price
-    pct_drop = float(saved / episode_start) if episode_start > 0 else 0.0
-    return PriceDropRecord(
+) -> PriceChangeRecord:
+    delta = confirmed_price - episode_start
+    pct_change = float(delta / episode_start) if episode_start > 0 else 0.0
+    return PriceChangeRecord(
         detected_at=detected_at,
         model_id=model_id,
         field=field,
+        direction=direction,
         episode_start_per_million_usd=f"{episode_start:.6f}",
         old_per_million_usd=f"{episode_start:.6f}",
         new_per_million_usd=f"{confirmed_price:.6f}",
-        pct_drop=pct_drop,
-        saved_per_million_usd=f"{saved:.6f}",
+        pct_change=pct_change,
+        delta_per_million_usd=f"{delta:.6f}",
         status="active",
     )
 
 
 def _episode_recovered(
-    episode: PriceDropRecord,
+    episode: PriceChangeRecord,
     *,
     recovered_price: Decimal,
     recovered_at: datetime,
-) -> PriceDropRecord:
+) -> PriceChangeRecord:
     return episode.model_copy(
         update={
             "status": "recovered",
@@ -143,11 +163,11 @@ def _episode_recovered(
 
 
 def _episode_settled(
-    episode: PriceDropRecord,
+    episode: PriceChangeRecord,
     *,
     settled_price: Decimal,
     settled_at: datetime,
-) -> PriceDropRecord:
+) -> PriceChangeRecord:
     return episode.model_copy(
         update={
             "status": "settled",
@@ -157,41 +177,63 @@ def _episode_settled(
     )
 
 
-def _pending_triggered(
+def _pending_cut_triggered(
     *,
     current: Decimal,
     previous: Decimal | None,
     anchor: Decimal,
     reference: Decimal,
-    thresholds: PriceDropThresholds,
+    thresholds: PriceChangeThresholds,
 ) -> bool:
     if current >= anchor:
         return False
     if current >= reference:
         return False
-    prior = _effective_prior(reference, previous)
-    return _meets_drop_thresholds(
+    prior = _effective_prior_for_cut(reference, previous)
+    return _meets_change_thresholds(
         prior=prior,
         current=current,
+        direction="cut",
         thresholds=thresholds,
     )
 
 
-def update_field_drop_state(
-    state: FieldDropState,
+def _pending_hike_triggered(
+    *,
+    current: Decimal,
+    previous: Decimal | None,
+    anchor: Decimal,
+    reference: Decimal,
+    thresholds: PriceChangeThresholds,
+) -> bool:
+    if current <= anchor:
+        return False
+    if current <= reference:
+        return False
+    prior = _effective_prior_for_hike(reference, previous)
+    return _meets_change_thresholds(
+        prior=prior,
+        current=current,
+        direction="hike",
+        thresholds=thresholds,
+    )
+
+
+def update_field_change_state(
+    state: FieldChangeState,
     *,
     current: Decimal,
     previous: Decimal | None,
     reference: Decimal,
-    thresholds: PriceDropThresholds,
+    thresholds: PriceChangeThresholds,
     now: datetime,
 ) -> tuple[
-    FieldDropState,
-    PriceDropRecord | None,
-    PriceDropRecord | None,
-    PriceDropRecord | None,
+    FieldChangeState,
+    PriceChangeRecord | None,
+    PriceChangeRecord | None,
+    PriceChangeRecord | None,
 ]:
-    result = _update_field_drop_state(
+    result = _update_field_change_state(
         state,
         current=current,
         previous=previous,
@@ -202,13 +244,13 @@ def update_field_drop_state(
     return result.state, result.confirmed, result.recovered, result.settled
 
 
-def _update_field_drop_state(
-    state: FieldDropState,
+def _update_field_change_state(
+    state: FieldChangeState,
     *,
     current: Decimal,
     previous: Decimal | None,
     reference: Decimal,
-    thresholds: PriceDropThresholds,
+    thresholds: PriceChangeThresholds,
     now: datetime,
 ) -> FieldUpdateResult:
     if state.status == "confirmed":
@@ -240,89 +282,147 @@ def _update_field_drop_state(
 
 
 def _update_idle_state(
-    state: FieldDropState,
+    state: FieldChangeState,
     *,
     current: Decimal,
     previous: Decimal | None,
     reference: Decimal,
-    thresholds: PriceDropThresholds,
+    thresholds: PriceChangeThresholds,
     now: datetime,
 ) -> FieldUpdateResult:
-    if not _pending_triggered(
+    if _pending_cut_triggered(
         current=current,
         previous=previous,
         anchor=state.anchor,
         reference=reference,
         thresholds=thresholds,
     ):
-        if current > state.anchor:
-            return FieldUpdateResult(
-                state=state.model_copy(update={"anchor": current}),
-                confirmed=None,
-                recovered=None,
-            )
-        return FieldUpdateResult(state=state, confirmed=None, recovered=None)
+        return FieldUpdateResult(
+            state=state.model_copy(
+                update={
+                    "status": "pending",
+                    "direction": "cut",
+                    "pending_price": current,
+                    "pending_builds": 1,
+                    "episode_start_price": state.anchor,
+                },
+            ),
+            confirmed=None,
+            recovered=None,
+        )
 
-    return FieldUpdateResult(
-        state=state.model_copy(
-            update={
-                "status": "pending",
-                "pending_price": current,
-                "pending_builds": 1,
-                "episode_start_price": state.anchor,
-            },
-        ),
-        confirmed=None,
-        recovered=None,
-    )
+    if _pending_hike_triggered(
+        current=current,
+        previous=previous,
+        anchor=state.anchor,
+        reference=reference,
+        thresholds=thresholds,
+    ):
+        return FieldUpdateResult(
+            state=state.model_copy(
+                update={
+                    "status": "pending",
+                    "direction": "hike",
+                    "pending_price": current,
+                    "pending_builds": 1,
+                    "episode_start_price": state.anchor,
+                },
+            ),
+            confirmed=None,
+            recovered=None,
+        )
+
+    if not _prices_match(current, state.anchor):
+        return FieldUpdateResult(
+            state=state.model_copy(update={"anchor": current}),
+            confirmed=None,
+            recovered=None,
+        )
+    return FieldUpdateResult(state=state, confirmed=None, recovered=None)
 
 
 def _update_pending_state(
-    state: FieldDropState,
+    state: FieldChangeState,
     *,
     current: Decimal,
     previous: Decimal | None,
     reference: Decimal,
-    thresholds: PriceDropThresholds,
+    thresholds: PriceChangeThresholds,
     now: datetime,
 ) -> FieldUpdateResult:
     assert state.pending_price is not None
     assert state.episode_start_price is not None
+    assert state.direction is not None
+    direction = state.direction
 
-    if current > state.pending_price and not _prices_match(
-        current, state.pending_price
-    ):
-        return FieldUpdateResult(
-            state=FieldDropState.idle(state.anchor),
-            confirmed=None,
-            recovered=None,
-        )
-
-    if current < state.pending_price and not _prices_match(
-        current, state.pending_price
-    ):
-        if _pending_triggered(
-            current=current,
-            previous=previous,
-            anchor=state.anchor,
-            reference=reference,
-            thresholds=thresholds,
+    if direction == "cut":
+        if current > state.pending_price and not _prices_match(
+            current, state.pending_price
         ):
             return FieldUpdateResult(
-                state=state.model_copy(
-                    update={
-                        "pending_price": current,
-                        "pending_builds": 1,
-                    },
-                ),
+                state=FieldChangeState.idle(state.anchor),
                 confirmed=None,
                 recovered=None,
             )
-        return FieldUpdateResult(
-            state=FieldDropState.idle(state.anchor),
-            confirmed=None,
-            recovered=None,
-        )
+        if current < state.pending_price and not _prices_match(
+            current, state.pending_price
+        ):
+            if _pending_cut_triggered(
+                current=current,
+                previous=previous,
+                anchor=state.anchor,
+                reference=reference,
+                thresholds=thresholds,
+            ):
+                return FieldUpdateResult(
+                    state=state.model_copy(
+                        update={
+                            "pending_price": current,
+                            "pending_builds": 1,
+                        },
+                    ),
+                    confirmed=None,
+                    recovered=None,
+                )
+            return FieldUpdateResult(
+                state=FieldChangeState.idle(state.anchor),
+                confirmed=None,
+                recovered=None,
+            )
+    else:
+        if current < state.pending_price and not _prices_match(
+            current, state.pending_price
+        ):
+            return FieldUpdateResult(
+                state=FieldChangeState.idle(state.anchor),
+                confirmed=None,
+                recovered=None,
+            )
+        if current > state.pending_price and not _prices_match(
+            current, state.pending_price
+        ):
+            if _pending_hike_triggered(
+                current=current,
+                previous=previous,
+                anchor=state.anchor,
+                reference=reference,
+                thresholds=thresholds,
+            ):
+                return FieldUpdateResult(
+                    state=state.model_copy(
+                        update={
+                            "pending_price": current,
+                            "pending_builds": 1,
+                        },
+                    ),
+                    confirmed=None,
+                    recovered=None,
+                )
+            return FieldUpdateResult(
+                state=FieldChangeState.idle(state.anchor),
+                confirmed=None,
+                recovered=None,
+            )
 
     pending_builds = state.pending_builds + 1
     if pending_builds < SETTLEMENT_BUILDS:
@@ -337,6 +437,7 @@ def _update_pending_state(
     confirmed = _episode_from_confirmation(
         model_id="",
         field="",
+        direction=direction,
         episode_start=episode_start,
         confirmed_price=confirmed_price,
         detected_at=now,
@@ -359,21 +460,24 @@ def _update_pending_state(
 
 
 def _update_confirmed_state(
-    state: FieldDropState,
+    state: FieldChangeState,
     *,
     current: Decimal,
     previous: Decimal | None,
     reference: Decimal,
-    thresholds: PriceDropThresholds,
+    thresholds: PriceChangeThresholds,
     now: datetime,
 ) -> FieldUpdateResult:
     assert state.episode_start_price is not None
     assert state.confirmed_price is not None
+    assert state.direction is not None
+    direction = state.direction
 
     if state.confirmed_at is not None and now - state.confirmed_at >= SETTLE_AFTER:
         settled = _episode_from_confirmation(
             model_id="",
             field="",
+            direction=direction,
             episode_start=state.episode_start_price,
             confirmed_price=state.confirmed_price,
             detected_at=state.confirmed_at,
@@ -385,19 +489,26 @@ def _update_confirmed_state(
             },
         )
         return FieldUpdateResult(
-            state=FieldDropState.idle(current),
+            state=FieldChangeState.idle(current),
             confirmed=None,
             recovered=None,
             settled=settled,
         )
 
-    recovery_threshold = state.episode_start_price * RECOVERY_FACTOR
-    if current > recovery_threshold:
+    if direction == "cut":
+        recovery_threshold = state.episode_start_price * CUT_RECOVERY_FACTOR
+        recovering = current > recovery_threshold
+    else:
+        recovery_threshold = state.episode_start_price * HIKE_RECOVERY_FACTOR
+        recovering = current < recovery_threshold
+
+    if recovering:
         recovery_builds = state.recovery_builds + 1
         if recovery_builds >= RECOVERY_BUILDS:
             recovered = _episode_from_confirmation(
                 model_id="",
                 field="",
+                direction=direction,
                 episode_start=state.episode_start_price,
                 confirmed_price=state.confirmed_price,
                 detected_at=state.confirmed_at or now,
@@ -409,7 +520,7 @@ def _update_confirmed_state(
                 },
             )
             return FieldUpdateResult(
-                state=FieldDropState.idle(current),
+                state=FieldChangeState.idle(current),
                 confirmed=None,
                 recovered=recovered,
             )
@@ -419,30 +530,60 @@ def _update_confirmed_state(
             recovered=None,
         )
 
-    if (
-        current < state.confirmed_price
-        and not _prices_match(current, state.confirmed_price)
-        and _pending_triggered(
-            current=current,
-            previous=previous,
-            anchor=state.anchor,
-            reference=reference,
-            thresholds=thresholds,
+    if direction == "cut":
+        deepening = (
+            current < state.confirmed_price
+            and not _prices_match(current, state.confirmed_price)
+            and _pending_cut_triggered(
+                current=current,
+                previous=previous,
+                anchor=state.anchor,
+                reference=reference,
+                thresholds=thresholds,
+            )
         )
-    ):
-        return FieldUpdateResult(
-            state=state.model_copy(
-                update={
-                    "status": "pending",
-                    "pending_price": current,
-                    "pending_builds": 1,
-                    "episode_start_price": state.anchor,
-                    "recovery_builds": 0,
-                },
-            ),
-            confirmed=None,
-            recovered=None,
+        if deepening:
+            return FieldUpdateResult(
+                state=state.model_copy(
+                    update={
+                        "status": "pending",
+                        "direction": "cut",
+                        "pending_price": current,
+                        "pending_builds": 1,
+                        "episode_start_price": state.anchor,
+                        "recovery_builds": 0,
+                    },
+                ),
+                confirmed=None,
+                recovered=None,
+            )
+    else:
+        steepening = (
+            current > state.confirmed_price
+            and not _prices_match(current, state.confirmed_price)
+            and _pending_hike_triggered(
+                current=current,
+                previous=previous,
+                anchor=state.anchor,
+                reference=reference,
+                thresholds=thresholds,
+            )
         )
+        if steepening:
+            return FieldUpdateResult(
+                state=state.model_copy(
+                    update={
+                        "status": "pending",
+                        "direction": "hike",
+                        "pending_price": current,
+                        "pending_builds": 1,
+                        "episode_start_price": state.anchor,
+                        "recovery_builds": 0,
+                    },
+                ),
+                confirmed=None,
+                recovered=None,
+            )
 
     return FieldUpdateResult(
         state=state.model_copy(update={"recovery_builds": 0}),
@@ -451,26 +592,26 @@ def _update_confirmed_state(
     )
 
 
-def update_model_field_states(
-    store: PriceDropStateStore,
+def update_model_field_change_states(
+    store: PriceChangeStateStore,
     *,
     model_id: str,
     current_per_million: dict[str, Decimal],
     previous_per_million: dict[str, Decimal] | None,
     reference_per_million: dict[str, Decimal],
-    thresholds: PriceDropThresholds,
+    thresholds: PriceChangeThresholds,
     now: datetime,
 ) -> tuple[
-    PriceDropStateStore,
-    list[PriceDropRecord],
-    list[PriceDropRecord],
-    list[PriceDropRecord],
+    PriceChangeStateStore,
+    list[PriceChangeRecord],
+    list[PriceChangeRecord],
+    list[PriceChangeRecord],
 ]:
     model_states = dict(store.models.get(model_id, {}))
     episodes = list(store.episodes)
-    confirmed_episodes: list[PriceDropRecord] = []
-    recovered_episodes: list[PriceDropRecord] = []
-    settled_episodes: list[PriceDropRecord] = []
+    confirmed_episodes: list[PriceChangeRecord] = []
+    recovered_episodes: list[PriceChangeRecord] = []
+    settled_episodes: list[PriceChangeRecord] = []
 
     for field, reference in reference_per_million.items():
         current = current_per_million.get(field)
@@ -480,9 +621,9 @@ def update_model_field_states(
         previous = previous_per_million.get(field) if previous_per_million else None
         field_state = model_states.get(field)
         if field_state is None:
-            field_state = FieldDropState.idle(current)
+            field_state = FieldChangeState.idle(current)
 
-        new_state, confirmed, recovered, settled = update_field_drop_state(
+        new_state, confirmed, recovered, settled = update_field_change_state(
             field_state,
             current=current,
             previous=previous,
@@ -542,13 +683,13 @@ def update_model_field_states(
 
 
 def _mark_latest_episode_recovered(
-    episodes: list[PriceDropRecord],
+    episodes: list[PriceChangeRecord],
     *,
     model_id: str,
     field: str,
     recovered_price: Decimal,
     recovered_at: datetime,
-) -> PriceDropRecord | None:
+) -> PriceChangeRecord | None:
     for index in range(len(episodes) - 1, -1, -1):
         episode = episodes[index]
         if episode.model_id != model_id or episode.field != field:
@@ -566,13 +707,13 @@ def _mark_latest_episode_recovered(
 
 
 def _mark_latest_episode_settled(
-    episodes: list[PriceDropRecord],
+    episodes: list[PriceChangeRecord],
     *,
     model_id: str,
     field: str,
     settled_price: Decimal,
     settled_at: datetime,
-) -> PriceDropRecord | None:
+) -> PriceChangeRecord | None:
     for index in range(len(episodes) - 1, -1, -1):
         episode = episodes[index]
         if episode.model_id != model_id or episode.field != field:
@@ -589,8 +730,8 @@ def _mark_latest_episode_settled(
     return None
 
 
-def active_drops_from_state(store: PriceDropStateStore) -> list[PriceDropRecord]:
-    active: list[PriceDropRecord] = []
+def active_changes_from_state(store: PriceChangeStateStore) -> list[PriceChangeRecord]:
+    active: list[PriceChangeRecord] = []
     for model_id, fields in store.models.items():
         for field, field_state in fields.items():
             if field_state.status != "confirmed":
@@ -598,12 +739,14 @@ def active_drops_from_state(store: PriceDropStateStore) -> list[PriceDropRecord]
             if (
                 field_state.episode_start_price is None
                 or field_state.confirmed_price is None
+                or field_state.direction is None
             ):
                 continue
             active.append(
                 _episode_from_confirmation(
                     model_id=model_id,
                     field=field,
+                    direction=field_state.direction,
                     episode_start=field_state.episode_start_price,
                     confirmed_price=field_state.confirmed_price,
                     detected_at=field_state.confirmed_at or store.generated_at,
@@ -612,14 +755,14 @@ def active_drops_from_state(store: PriceDropStateStore) -> list[PriceDropRecord]
     return active
 
 
-def close_orphaned_active_episodes(
-    episodes: list[PriceDropRecord],
-    models: dict[str, dict[str, FieldDropState]],
+def close_orphaned_active_changes(
+    episodes: list[PriceChangeRecord],
+    models: dict[str, dict[str, FieldChangeState]],
     *,
     now: datetime,
     current_per_million_by_model: dict[str, dict[str, Decimal]] | None = None,
-) -> list[PriceDropRecord]:
-    healed: list[PriceDropRecord] = []
+) -> list[PriceChangeRecord]:
+    healed: list[PriceChangeRecord] = []
     for episode in episodes:
         if episode.status != "active":
             healed.append(episode)

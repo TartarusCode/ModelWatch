@@ -3,7 +3,7 @@ import type { BuildMeta } from "../types";
 
 interface LayoutProps {
   meta: BuildMeta | null;
-  dropCount: number;
+  changeCount: number;
   newModelCount: number;
 }
 
@@ -24,7 +24,7 @@ function formatRelativeTime(iso: string): string {
   return new Date(iso).toLocaleDateString();
 }
 
-export function Layout({ meta, dropCount, newModelCount }: LayoutProps) {
+export function Layout({ meta, changeCount, newModelCount }: LayoutProps) {
   return (
     <div className="app">
       <a href="#main-content" className="skip-link">
@@ -67,17 +67,17 @@ export function Layout({ meta, dropCount, newModelCount }: LayoutProps) {
             ) : null}
           </NavLink>
           <NavLink
-            to="/drops"
+            to="/changes"
             className={({ isActive }) =>
               `sidebar__link${isActive ? " sidebar__link--active" : ""}`
             }
           >
             <span className="sidebar__link-icon" aria-hidden>
-              ↓
+              ↔
             </span>
-            Price drops
-            {dropCount > 0 ? (
-              <span className="sidebar__badge">{dropCount}</span>
+            Price changes
+            {changeCount > 0 ? (
+              <span className="sidebar__badge">{changeCount}</span>
             ) : null}
           </NavLink>
         </nav>

@@ -2,15 +2,15 @@ from datetime import UTC, datetime, timedelta
 from decimal import Decimal
 from typing import Literal
 
-from modelwatch.price_drop_state import FieldDropState, PriceDropStateStore
-from modelwatch.price_events import (
-    DROP_LOOKBACK_HOURS,
-    build_price_drops_output,
+from modelwatch.price_change_state import FieldChangeState, PriceChangeStateStore
+from modelwatch.price_changes import (
+    CHANGE_LOOKBACK_HOURS,
+    build_price_changes_output,
     episodes_for_display,
-    recovered_in_last_hours,
-    settled_in_last_hours,
+    recovered_changes_in_last_hours,
+    settled_changes_in_last_hours,
 )
-from modelwatch.schemas import PriceDropRecord
+from modelwatch.schemas import PriceChangeRecord
 
 
 def _episode(
@@ -18,55 +18,69 @@ def _episode(
     detected_at: datetime,
     model_id: str = "acme/model",
     field: str = "prompt",
+    direction: Literal["cut", "hike"] = "cut",
     status: Literal["active", "recovered", "settled"] = "active",
     new_per_million_usd: str = "0.800000",
     recovered_at: datetime | None = None,
     settled_at: datetime | None = None,
-) -> PriceDropRecord:
-    return PriceDropRecord(
+) -> PriceChangeRecord:
+    if direction == "cut":
+        pct_change = -0.2
+        delta = "-0.200000"
+        start = "1.000000"
+    else:
+        pct_change = 0.2
+        delta = "0.200000"
+        start = "1.000000"
+        new_per_million_usd = (
+            "1.200000" if new_per_million_usd == "0.800000" else new_per_million_usd
+        )
+    return PriceChangeRecord(
         detected_at=detected_at,
         model_id=model_id,
         field=field,
-        episode_start_per_million_usd="1.000000",
-        old_per_million_usd="1.000000",
+        direction=direction,
+        episode_start_per_million_usd=start,
+        old_per_million_usd=start,
         new_per_million_usd=new_per_million_usd,
-        pct_drop=0.2,
-        saved_per_million_usd="0.200000",
+        pct_change=pct_change,
+        delta_per_million_usd=delta,
         status=status,
         recovered_at=recovered_at,
         recovered_per_million_usd="0.950000" if recovered_at else None,
         settled_at=settled_at,
-        settled_per_million_usd="0.800000" if settled_at else None,
+        settled_per_million_usd=new_per_million_usd if settled_at else None,
     )
 
 
-def test_build_price_drops_output_uses_state_for_active() -> None:
+def test_build_price_changes_output_uses_state_for_active() -> None:
     now = datetime(2026, 7, 7, 12, 0, tzinfo=UTC)
-    stale_episode = PriceDropRecord(
+    stale_episode = PriceChangeRecord(
         detected_at=now - timedelta(hours=1),
         model_id="acme/model",
         field="prompt",
+        direction="cut",
         episode_start_per_million_usd="1.000000",
         old_per_million_usd="1.000000",
         new_per_million_usd="0.800000",
-        pct_drop=0.2,
-        saved_per_million_usd="0.200000",
+        pct_change=-0.2,
+        delta_per_million_usd="-0.200000",
         status="active",
     )
-    store = PriceDropStateStore(
+    store = PriceChangeStateStore(
         generated_at=now,
         models={
             "acme/model": {
-                "prompt": FieldDropState.idle(Decimal("0.950000")),
+                "prompt": FieldChangeState.idle(Decimal("0.950000")),
             },
         },
         episodes=[stale_episode],
     )
 
-    active, recovered, settled, display = build_price_drops_output(
+    active, recovered, settled, display = build_price_changes_output(
         store,
         now=now,
-        window_hours=DROP_LOOKBACK_HOURS,
+        window_hours=CHANGE_LOOKBACK_HOURS,
     )
 
     assert active == []
@@ -75,9 +89,9 @@ def test_build_price_drops_output_uses_state_for_active() -> None:
     assert len(display) == 1
 
 
-def test_build_price_drops_output_includes_recent_settled() -> None:
+def test_build_price_changes_output_includes_recent_settled() -> None:
     now = datetime(2026, 7, 15, 12, 0, tzinfo=UTC)
-    store = PriceDropStateStore(
+    store = PriceChangeStateStore(
         generated_at=now,
         models={},
         episodes=[
@@ -95,17 +109,17 @@ def test_build_price_drops_output_includes_recent_settled() -> None:
         ],
     )
 
-    _, _, settled, _ = build_price_drops_output(
+    _, _, settled, _ = build_price_changes_output(
         store,
         now=now,
-        window_hours=DROP_LOOKBACK_HOURS,
+        window_hours=CHANGE_LOOKBACK_HOURS,
     )
 
     assert len(settled) == 1
     assert settled[0].field == "prompt"
 
 
-def test_recovered_in_last_hours_filters_by_recovery_time() -> None:
+def test_recovered_changes_in_last_hours_filters_by_recovery_time() -> None:
     now = datetime(2026, 7, 7, 12, 0, tzinfo=UTC)
     episodes = [
         _episode(
@@ -119,15 +133,15 @@ def test_recovered_in_last_hours_filters_by_recovery_time() -> None:
             recovered_at=now - timedelta(days=2),
         ),
     ]
-    recovered = recovered_in_last_hours(
+    recovered = recovered_changes_in_last_hours(
         episodes,
-        DROP_LOOKBACK_HOURS,
+        CHANGE_LOOKBACK_HOURS,
         now=now,
     )
     assert len(recovered) == 1
 
 
-def test_settled_in_last_hours_filters_by_settle_time() -> None:
+def test_settled_changes_in_last_hours_filters_by_settle_time() -> None:
     now = datetime(2026, 7, 15, 12, 0, tzinfo=UTC)
     episodes = [
         _episode(
@@ -142,7 +156,7 @@ def test_settled_in_last_hours_filters_by_settle_time() -> None:
             field="completion",
         ),
     ]
-    settled = settled_in_last_hours(episodes, DROP_LOOKBACK_HOURS, now=now)
+    settled = settled_changes_in_last_hours(episodes, CHANGE_LOOKBACK_HOURS, now=now)
     assert len(settled) == 1
 
 

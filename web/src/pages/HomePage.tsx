@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { NewModelBanner } from "../components/NewModelBanner";
-import { PriceDropBanner } from "../components/PriceDropBanner";
+import { PriceChangeBanner } from "../components/PriceChangeBanner";
 import { ModelTable } from "../components/ModelTable";
 import { PageHeader } from "../components/PageHeader";
 import { StatCard } from "../components/StatCard";
@@ -10,8 +10,10 @@ import type { EnrichedModel } from "../types";
 
 interface HomePageProps {
   models: EnrichedModel[];
-  dropCount: number;
-  freshDropCount: number;
+  changeCount: number;
+  freshChangeCount: number;
+  cutCount: number;
+  hikeCount: number;
   newModelCount: number;
   recoveredCount: number;
   lastUpdated: string;
@@ -19,17 +21,19 @@ interface HomePageProps {
 
 export function HomePage({
   models,
-  dropCount,
-  freshDropCount,
+  changeCount,
+  freshChangeCount,
+  cutCount,
+  hikeCount,
   newModelCount,
   recoveredCount,
   lastUpdated,
 }: HomePageProps) {
   useDocumentTitle("ModelWatch — Models");
   const withBenchmarks = models.filter((m) => hasBenchmarkData(m.benchmarks)).length;
-  const dropHint =
-    freshDropCount > 0
-      ? `Active now · ${freshDropCount} new today`
+  const changeHint =
+    freshChangeCount > 0
+      ? `Active now · ${freshChangeCount} new today`
       : "Active now";
 
   return (
@@ -57,11 +61,11 @@ export function HomePage({
           to="/new"
         />
         <StatCard
-          label="Price drops"
-          value={dropCount.toLocaleString()}
-          hint={dropHint}
-          variant={dropCount > 0 ? "success" : "default"}
-          to="/drops"
+          label="Price changes"
+          value={changeCount.toLocaleString()}
+          hint={changeHint}
+          variant={changeCount > 0 ? "success" : "default"}
+          to="/changes"
         />
         <StatCard
           label="Updated"
@@ -73,10 +77,15 @@ export function HomePage({
         />
       </div>
       <NewModelBanner count={newModelCount} />
-      <PriceDropBanner freshCount={freshDropCount} totalCount={dropCount} />
+      <PriceChangeBanner
+        freshCount={freshChangeCount}
+        totalCount={changeCount}
+        cutCount={cutCount}
+        hikeCount={hikeCount}
+      />
       {recoveredCount > 0 ? (
         <p className="muted" style={{ marginBottom: "1rem" }}>
-          <Link to="/drops#recovered">
+          <Link to="/changes#recovered">
             {recoveredCount} model{recoveredCount === 1 ? "" : "s"} recovered pricing
             in the last 24 hours
           </Link>

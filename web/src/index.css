@@ -346,8 +346,8 @@ a:hover {
   color: var(--text-tertiary);
 }
 
-/* Drop alert */
-.drop-alert {
+/* Price change alert */
+.change-alert {
   display: flex;
   align-items: center;
   gap: 0.875rem;
@@ -361,13 +361,13 @@ a:hover {
   transition: border-color 0.15s, transform 0.15s;
 }
 
-.drop-alert:hover {
+.change-alert:hover {
   border-color: rgba(74, 222, 128, 0.5);
   text-decoration: none;
   transform: translateY(-1px);
 }
 
-.drop-alert__icon {
+.change-alert__icon {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -380,16 +380,16 @@ a:hover {
   flex-shrink: 0;
 }
 
-.drop-alert__content {
+.change-alert__content {
   flex: 1;
   font-size: 0.9375rem;
 }
 
-.drop-alert__content strong {
+.change-alert__content strong {
   color: var(--success);
 }
 
-.drop-alert__cta {
+.change-alert__cta {
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--success);
@@ -1009,15 +1009,23 @@ a:hover {
   color: var(--text-tertiary);
 }
 
-.drop-badge {
+.change-badge {
   display: inline-block;
   font-family: var(--font-mono);
   font-size: 0.8125rem;
   font-weight: 600;
-  color: var(--success);
-  background: var(--success-muted);
   padding: 0.1875rem 0.5rem;
   border-radius: var(--radius-sm);
+}
+
+.change-badge--cut {
+  color: var(--success);
+  background: var(--success-muted);
+}
+
+.change-badge--hike {
+  color: var(--danger);
+  background: rgba(248, 113, 113, 0.12);
 }
 
 .age-badge {
@@ -1032,7 +1040,7 @@ a:hover {
   white-space: nowrap;
 }
 
-/* Highlight card (drops) */
+/* Highlight card (price changes) */
 .highlight-card {
   background: linear-gradient(135deg, var(--success-muted), var(--surface));
   border: 1px solid rgba(74, 222, 128, 0.25);
@@ -1041,12 +1049,21 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
+.highlight-card--hike {
+  background: linear-gradient(135deg, rgba(248, 113, 113, 0.12), var(--surface));
+  border-color: rgba(248, 113, 113, 0.25);
+}
+
 .highlight-card__label {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--success);
   font-weight: 600;
+}
+
+.highlight-card--hike .highlight-card__label {
+  color: var(--danger);
 }
 
 .highlight-card__main {
@@ -1070,6 +1087,10 @@ a:hover {
   color: var(--success);
 }
 
+.highlight-card__pct--hike {
+  color: var(--danger);
+}
+
 .highlight-card__prices {
   display: flex;
   flex-wrap: wrap;
@@ -1089,14 +1110,25 @@ a:hover {
   color: var(--text);
 }
 
-.highlight-card__saved {
-  color: var(--success);
+.highlight-card__delta {
   font-weight: 600;
+  color: var(--success);
+}
+
+.highlight-card__delta--hike {
+  color: var(--danger);
 }
 
 .highlight-card__sub {
   margin: 0.5rem 0 0;
   font-size: 0.875rem;
+}
+
+.filter-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .section-title {

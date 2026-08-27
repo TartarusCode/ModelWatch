@@ -180,15 +180,16 @@ export interface ModelsOutput {
   models: EnrichedModel[];
 }
 
-export interface PriceDropRecord {
+export interface PriceChangeRecord {
   detected_at: string;
   model_id: string;
   field: string;
+  direction: "cut" | "hike";
   episode_start_per_million_usd: string;
   old_per_million_usd: string;
   new_per_million_usd: string;
-  pct_drop: number;
-  saved_per_million_usd: string;
+  pct_change: number;
+  delta_per_million_usd: string;
   status: "active" | "recovered" | "settled";
   recovered_at?: string | null;
   recovered_per_million_usd?: string | null;
@@ -196,17 +197,17 @@ export interface PriceDropRecord {
   settled_per_million_usd?: string | null;
 }
 
-export interface PriceDropsOutput {
+export interface PriceChangesOutput {
   generated_at: string;
   window_hours?: number;
   thresholds: {
     min_pct: number;
-    min_saved_per_million_usd: number;
+    min_delta_per_million_usd: number;
   };
-  active_drops: PriceDropRecord[];
-  recovered_drops: PriceDropRecord[];
-  settled_drops?: PriceDropRecord[];
-  episodes: PriceDropRecord[];
+  active_changes: PriceChangeRecord[];
+  recovered_changes: PriceChangeRecord[];
+  settled_changes?: PriceChangeRecord[];
+  episodes: PriceChangeRecord[];
 }
 
 export interface BuildMeta {
@@ -217,15 +218,16 @@ export interface BuildMeta {
   benchmark_empty: number;
 }
 
-export interface PriceEventRecord {
+export interface PriceChangeEventRecord {
   detected_at: string;
   model_id: string;
   field: string;
+  direction: "cut" | "hike";
   episode_start_per_million_usd: string;
   old_per_million_usd: string;
   new_per_million_usd: string;
-  pct_drop: number;
-  saved_per_million_usd: string;
+  pct_change: number;
+  delta_per_million_usd: string;
   status: "active" | "recovered" | "settled";
   recovered_at?: string | null;
   recovered_per_million_usd?: string | null;
@@ -280,7 +282,7 @@ export interface PriceHistoryOutput {
 export interface SiteData {
   meta: BuildMeta;
   models: ModelsOutput;
-  priceDrops: PriceDropsOutput;
+  priceChanges: PriceChangesOutput;
   newModels: NewModelsOutput;
   newModelEvents: NewModelEventRecord[];
 }

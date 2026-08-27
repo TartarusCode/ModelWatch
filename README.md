@@ -11,8 +11,8 @@ Live site (after enabling Pages): [tartaruscode.github.io/ModelWatch](https://ta
 - Browse 300+ models with prompt/completion pricing in **$/1M tokens**
 - Filter by provider, context length, tools, reasoning, benchmark availability
 - Model detail pages with full pricing, parameters, Design Arena and Artificial Analysis data
-- **Price drops**: highlights decreases ≥10% with ≥$0.05/M saved vs the previous snapshot
-- 7-day price event history from scheduled rebuilds
+- **Price changes**: highlights cuts and hikes ≥10% with ≥$0.05/M magnitude vs the previous snapshot
+- Price-change history from scheduled rebuilds (active / recovered / settled episodes)
 
 ## Data sources
 

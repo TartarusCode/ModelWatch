@@ -4,7 +4,7 @@ import type {
   ModelsOutput,
   NewModelEventRecord,
   NewModelsOutput,
-  PriceDropsOutput,
+  PriceChangesOutput,
   PriceHistoryPoint,
   SiteData,
 } from "../types";
@@ -59,17 +59,17 @@ export async function fetchModelPriceHistory(
 }
 
 export async function loadSiteData(): Promise<SiteData> {
-  const [meta, models, priceDrops, newModels, newModelEvents] = await Promise.all([
+  const [meta, models, priceChanges, newModels, newModelEvents] = await Promise.all([
     fetchJson<BuildMeta>("data/meta.json"),
     fetchJson<ModelsOutput>("data/models.json"),
-    fetchJson<PriceDropsOutput>("data/price-drops.json"),
+    fetchJson<PriceChangesOutput>("data/price-changes.json"),
     fetchJson<NewModelsOutput>("data/new-models.json"),
     fetchJsonlEvents<NewModelEventRecord>("data/new-model-events.jsonl"),
   ]);
   return {
     meta,
     models,
-    priceDrops,
+    priceChanges,
     newModels,
     newModelEvents,
   };

@@ -13,7 +13,7 @@ from modelwatch.schemas import (
     ModelsOutput,
     NewModelsOutput,
     PreviousSnapshot,
-    PriceDropsOutput,
+    PriceChangesOutput,
     TopProviderInfo,
 )
 
@@ -49,7 +49,9 @@ def build_paths(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
     monkeypatch.setattr(
         "modelwatch.build.SNAPSHOT_PATH", snapshot_dir / "previous.json"
     )
-    monkeypatch.setattr("modelwatch.build.EVENTS_PATH", data_dir / "price-events.jsonl")
+    monkeypatch.setattr(
+        "modelwatch.build.EVENTS_PATH", data_dir / "price-change-events.jsonl"
+    )
     monkeypatch.setattr(
         "modelwatch.build.NEW_MODEL_EVENTS_PATH",
         data_dir / "new-model-events.jsonl",
@@ -68,8 +70,8 @@ def build_paths(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
         data_dir / "price-history.json",
     )
     monkeypatch.setattr(
-        "modelwatch.price_drop_state.STATE_PATH",
-        snapshot_dir / "price-drop-state.json",
+        "modelwatch.price_change_state.STATE_PATH",
+        snapshot_dir / "price-change-state.json",
     )
     return data_dir
 
@@ -113,8 +115,8 @@ def test_run_build_writes_stable_json_artifacts(build_paths: Path) -> None:
     models_output = ModelsOutput.model_validate_json(
         (build_paths / "models.json").read_text(encoding="utf-8"),
     )
-    drops_output = PriceDropsOutput.model_validate_json(
-        (build_paths / "price-drops.json").read_text(encoding="utf-8"),
+    changes_output = PriceChangesOutput.model_validate_json(
+        (build_paths / "price-changes.json").read_text(encoding="utf-8"),
     )
     new_models_output = NewModelsOutput.model_validate_json(
         (build_paths / "new-models.json").read_text(encoding="utf-8"),
@@ -134,9 +136,9 @@ def test_run_build_writes_stable_json_artifacts(build_paths: Path) -> None:
     assert models_output.models[0].model.id == model.id
     assert meta.model_count == 1
     assert meta.benchmark_errors >= 1
-    assert drops_output.active_drops == []
-    assert drops_output.recovered_drops == []
-    assert drops_output.episodes == []
+    assert changes_output.active_changes == []
+    assert changes_output.recovered_changes == []
+    assert changes_output.episodes == []
     assert new_models_output.models == []
     assert model.id in previous.models
     assert json.loads(
