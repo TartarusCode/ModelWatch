@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T23:17:48.076861Z",
+  "generated_at": "2026-08-27T00:08:58.633461Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -9286,16 +9286,16 @@
         "top_p": null
       },
       "description": "Kimi K2.5 is Moonshot AI's native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed...",
-      "expiration_date": "2026-08-31",
+      "expiration_date": null,
       "id": "moonshotai/kimi-k2.5",
       "name": "MoonshotAI: Kimi K2.5",
       "pricing": {
-        "completion": "0.000003",
+        "completion": "0.00000225",
         "image": null,
-        "input_cache_read": "0.0000001",
+        "input_cache_read": "0.00000007",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000006",
+        "prompt": "0.00000045",
         "request": null,
         "web_search": null
       },
@@ -10021,7 +10021,7 @@
       "pricing": {
         "completion": "0.0000002",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.000000025",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.00000005",
@@ -10052,7 +10052,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 228000
       }
     },
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
@@ -16672,12 +16672,12 @@
       "id": "qwen/qwen2.5-vl-72b-instruct",
       "name": "Qwen: Qwen2.5 VL 72B Instruct",
       "pricing": {
-        "completion": "0.00000075",
+        "completion": "0.000001",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.0000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000025",
+        "prompt": "0.0000008",
         "request": null,
         "web_search": null
       },
@@ -16698,9 +16698,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 32000,
+        "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": 28800
+        "max_completion_tokens": 115200
       }
     },
     "qwen/qwen3-14b": {
@@ -16832,12 +16832,12 @@
       "id": "qwen/qwen3-235b-a22b-2507",
       "name": "Qwen: Qwen3 235B A22B Instruct 2507",
       "pricing": {
-        "completion": "0.00000055",
+        "completion": "0.00000035",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.0000000175",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.0000000875",
         "request": null,
         "web_search": null
       },
@@ -16863,7 +16863,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3-235b-a22b-thinking-2507": {
@@ -18295,12 +18295,12 @@
       "id": "qwen/qwen3.5-35b-a3b",
       "name": "Qwen: Qwen3.5-35B-A3B",
       "pricing": {
-        "completion": "0.00000125",
+        "completion": "0.0000018",
         "image": null,
-        "input_cache_read": "0.00000025",
+        "input_cache_read": "0.000000225",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000025",
+        "prompt": "0.000000225",
         "request": null,
         "web_search": null
       },
@@ -18328,7 +18328,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 65536
       }
     },
     "qwen/qwen3.5-397b-a17b": {
@@ -21631,12 +21631,12 @@
       "id": "z-ai/glm-4.6",
       "name": "Z.ai: GLM 4.6",
       "pricing": {
-        "completion": "0.000002",
+        "completion": "0.00000175",
         "image": null,
-        "input_cache_read": "0.0000001",
+        "input_cache_read": "0.00000008",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005",
+        "prompt": "0.00000043",
         "request": null,
         "web_search": null
       },
@@ -21660,9 +21660,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 202752,
+        "context_length": 198000,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 16384
       }
     },
     "z-ai/glm-4.6v": {
