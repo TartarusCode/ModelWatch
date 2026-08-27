@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T21:31:23.593491Z",
+  "generated_at": "2026-08-27T22:01:25.026623Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -20295,58 +20295,6 @@
         "context_length": 131072,
         "is_moderated": false,
         "max_completion_tokens": 117964
-      }
-    },
-    "thedrummer/rocinante-12b": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": "chatml",
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Qwen"
-      },
-      "canonical_slug": "thedrummer/rocinante-12b",
-      "context_length": 65536,
-      "created": 1727654400,
-      "default_parameters": {},
-      "description": "Rocinante 12B is designed for engaging storytelling and rich prose. Early testers have reported: - Expanded vocabulary with unique and expressive word choices - Enhanced creativity for vivid narratives -...",
-      "expiration_date": null,
-      "id": "thedrummer/rocinante-12b",
-      "name": "TheDrummer: Rocinante 12B",
-      "pricing": {
-        "completion": "0.0000005",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000025",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 65536,
-        "is_moderated": false,
-        "max_completion_tokens": 58982
       }
     },
     "thedrummer/skyfall-36b-v2": {
