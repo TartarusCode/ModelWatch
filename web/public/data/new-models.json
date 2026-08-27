@@ -1,5 +1,20 @@
 {
-  "generated_at": "2026-07-19T07:31:16.409101Z",
-  "models": [],
+  "generated_at": "2026-08-27T19:43:47.711003Z",
+  "models": [
+    {
+      "canonical_slug": "inclusionai/ling-3.0-flash-fin-20260827",
+      "created": 1787846290,
+      "detected_at": "2026-08-27T16:12:42.192888Z",
+      "model_id": "inclusionai/ling-3.0-flash-fin:free",
+      "name": "Ling 3.0 Flash Fin (free)"
+    },
+    {
+      "canonical_slug": "qwen/qwen3.8-flash-20260826",
+      "created": 1787773060,
+      "detected_at": "2026-08-26T21:43:02.285754Z",
+      "model_id": "qwen/qwen3.8-flash",
+      "name": "Qwen: Qwen3.8 Flash"
+    }
+  ],
   "window_hours": 24
 }
