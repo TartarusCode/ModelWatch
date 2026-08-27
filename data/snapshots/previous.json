@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T23:01:44.214707Z",
+  "generated_at": "2026-08-27T23:31:23.055738Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3415,12 +3415,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.0000001498",
+        "completion": "0.00000014672",
         "image": null,
-        "input_cache_read": "0.00000001498",
+        "input_cache_read": "0.000000014672",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000749",
+        "prompt": "0.00000007336",
         "request": null,
         "web_search": null
       },
@@ -6475,7 +6475,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "kwaipilot/kat-coder-pro-v2.5-20260710",
-      "context_length": 256000,
+      "context_length": 262144,
       "created": 1783714589,
       "default_parameters": {
         "frequency_penalty": null,
@@ -6500,15 +6500,21 @@
         "web_search": null
       },
       "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
         "logprobs",
         "max_tokens",
+        "min_p",
         "presence_penalty",
+        "repetition_penalty",
         "response_format",
+        "seed",
         "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_logprobs",
         "top_p"
       ],
@@ -15536,15 +15542,8 @@
       "canonical_slug": "openrouter/auto",
       "context_length": 2000000,
       "created": 1699401600,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "Your prompt will be processed by a meta-model and routed to one of dozens of models (see below), optimizing for the best possible output. To see which model was used,...",
+      "default_parameters": {},
+      "description": "The Auto Router automatically selects the best model for your prompt, powered by the wisdom of the market. It routes you based on what the OpenRouter community collectively spends on...",
       "expiration_date": null,
       "id": "openrouter/auto",
       "name": "Auto Router",
