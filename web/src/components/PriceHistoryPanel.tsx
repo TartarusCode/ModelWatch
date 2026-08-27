@@ -5,15 +5,19 @@ import {
   historyPerMillionKey,
   historyToChartPoints,
 } from "../lib/priceHistory";
-import { episodesForModel } from "../lib/priceDrops";
-import { formatPerMillionUsd, formatPct, pricingFieldLabel } from "../lib/pricing";
-import type { PriceDropRecord, PriceHistoryPoint } from "../types";
+import { episodesForModel } from "../lib/priceChanges";
+import {
+  formatPerMillionUsd,
+  formatSignedPct,
+  pricingFieldLabel,
+} from "../lib/pricing";
+import type { PriceChangeRecord, PriceHistoryPoint } from "../types";
 import { PriceHistoryChart } from "./PriceHistoryChart";
 
 interface PriceHistoryPanelProps {
   modelId: string;
   points: PriceHistoryPoint[] | null;
-  episodes: PriceDropRecord[];
+  episodes: PriceChangeRecord[];
 }
 
 export function PriceHistoryPanel({
@@ -95,7 +99,7 @@ export function PriceHistoryPanel({
       {modelEpisodes.length > 0 ? (
         <>
           <h3 className="card__subtitle" style={{ marginTop: "1.25rem" }}>
-            Significant drops
+            Price changes
           </h3>
           <p className="muted" style={{ marginBottom: "0.75rem" }}>
             Confirmed episodes only; prices must hold for two builds before
@@ -107,9 +111,10 @@ export function PriceHistoryPanel({
                 <tr>
                   <th>When</th>
                   <th>Field</th>
+                  <th>Dir</th>
                   <th>Was</th>
                   <th>Now</th>
-                  <th>Drop</th>
+                  <th>Change</th>
                   <th>Status</th>
                 </tr>
               </thead>
@@ -120,6 +125,13 @@ export function PriceHistoryPanel({
                       {new Date(episode.detected_at).toLocaleString()}
                     </td>
                     <td>{pricingFieldLabel(episode.field)}</td>
+                    <td>
+                      <span
+                        className={`change-badge change-badge--${episode.direction}`}
+                      >
+                        {episode.direction === "cut" ? "Cut" : "Hike"}
+                      </span>
+                    </td>
                     <td className="price-cell price-cell--muted">
                       {formatPerMillionUsd(episode.episode_start_per_million_usd)}
                     </td>
@@ -127,8 +139,10 @@ export function PriceHistoryPanel({
                       {formatPerMillionUsd(episode.new_per_million_usd)}
                     </td>
                     <td>
-                      <span className="drop-badge">
-                        −{formatPct(episode.pct_drop)}
+                      <span
+                        className={`change-badge change-badge--${episode.direction}`}
+                      >
+                        {formatSignedPct(episode.pct_change)}
                       </span>
                     </td>
                     <td>

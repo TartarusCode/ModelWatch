@@ -3,16 +3,16 @@ from decimal import Decimal
 import pytest
 
 from modelwatch.pricing import (
-    PriceDropThresholds,
+    PriceChangeThresholds,
     per_million_usd,
     pricing_fields_to_compare,
 )
 
 
-def _thresholds() -> PriceDropThresholds:
-    return PriceDropThresholds(
+def _thresholds() -> PriceChangeThresholds:
+    return PriceChangeThresholds(
         min_pct=Decimal("0.10"),
-        min_saved_per_million_usd=Decimal("0.05"),
+        min_delta_per_million_usd=Decimal("0.05"),
     )
 
 

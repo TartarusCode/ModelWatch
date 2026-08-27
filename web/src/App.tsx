@@ -5,8 +5,12 @@ import { Layout } from "./components/Layout";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { loadSiteData } from "./lib/data";
 import { newModelRecordsLast24Hours } from "./lib/newModels";
-import { sortDropsBySeverity, splitDropsByFreshness } from "./lib/priceDrops";
-import { DropsPage } from "./pages/DropsPage";
+import {
+  countChangesByDirection,
+  sortChangesBySeverity,
+  splitChangesByFreshness,
+} from "./lib/priceChanges";
+import { ChangesPage } from "./pages/ChangesPage";
 import { HomePage } from "./pages/HomePage";
 import { ModelDetailPage } from "./pages/ModelDetailPage";
 import { NewModelsPage } from "./pages/NewModelsPage";
@@ -48,10 +52,12 @@ export function App() {
     );
   }
 
-  const activeDrops = sortDropsBySeverity(data.priceDrops.active_drops);
-  const { freshDrops } = splitDropsByFreshness(activeDrops);
-  const dropCount = activeDrops.length;
-  const freshDropCount = freshDrops.length;
+  const activeChanges = sortChangesBySeverity(data.priceChanges.active_changes);
+  const { freshChanges } = splitChangesByFreshness(activeChanges);
+  const changeCount = activeChanges.length;
+  const freshChangeCount = freshChanges.length;
+  const { cuts: cutCount, hikes: hikeCount } =
+    countChangesByDirection(activeChanges);
   const newModelsLast24h = newModelRecordsLast24Hours(data.newModelEvents);
   const newModelCount = newModelsLast24h.length;
 
@@ -63,7 +69,7 @@ export function App() {
           element={
             <Layout
               meta={data.meta}
-              dropCount={dropCount}
+              changeCount={changeCount}
               newModelCount={newModelCount}
             />
           }
@@ -73,11 +79,13 @@ export function App() {
             element={
               <HomePage
                 models={data.models.models}
-                dropCount={dropCount}
-                freshDropCount={freshDropCount}
+                changeCount={changeCount}
+                freshChangeCount={freshChangeCount}
+                cutCount={cutCount}
+                hikeCount={hikeCount}
                 newModelCount={newModelCount}
                 lastUpdated={data.meta.generated_at}
-                recoveredCount={data.priceDrops.recovered_drops.length}
+                recoveredCount={data.priceChanges.recovered_changes.length}
               />
             }
           />
@@ -92,20 +100,24 @@ export function App() {
             }
           />
           <Route
-            path="drops"
+            path="changes"
             element={
-              <DropsPage
-                priceDrops={data.priceDrops}
+              <ChangesPage
+                priceChanges={data.priceChanges}
                 enriched={data.models.models}
               />
             }
+          />
+          <Route
+            path="drops"
+            element={<Navigate to="/changes" replace />}
           />
           <Route
             path="models/:id"
             element={
               <ModelDetailPage
                 models={data.models.models}
-                episodes={data.priceDrops.episodes}
+                episodes={data.priceChanges.episodes}
               />
             }
           />

@@ -24,15 +24,15 @@ from modelwatch.new_models import (
     models_in_last_hours,
 )
 from modelwatch.price_baselines import compute_moving_average_per_field
-from modelwatch.price_drop_state import (
-    close_orphaned_active_episodes,
-    load_price_drop_state,
-    save_price_drop_state,
-    update_model_field_states,
+from modelwatch.price_change_state import (
+    close_orphaned_active_changes,
+    load_price_change_state,
+    save_price_change_state,
+    update_model_field_change_states,
 )
-from modelwatch.price_events import (
-    DROP_LOOKBACK_HOURS,
-    build_price_drops_output,
+from modelwatch.price_changes import (
+    CHANGE_LOOKBACK_HOURS,
+    build_price_changes_output,
     episodes_to_event_records,
 )
 from modelwatch.pricing import DEFAULT_THRESHOLDS, per_million_usd
@@ -48,17 +48,17 @@ from modelwatch.schemas import (
     NewModelEventRecord,
     NewModelsOutput,
     PreviousSnapshot,
-    PriceDropRecord,
-    PriceDropsOutput,
-    PriceDropThresholdsOutput,
-    PriceEventRecord,
+    PriceChangeEventRecord,
+    PriceChangeRecord,
+    PriceChangesOutput,
+    PriceChangeThresholdsOutput,
 )
 from modelwatch.stable_output import stabilize_enriched_models
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "web" / "public" / "data"
 SNAPSHOT_PATH = ROOT / "data" / "snapshots" / "previous.json"
-EVENTS_PATH = DATA_DIR / "price-events.jsonl"
+EVENTS_PATH = DATA_DIR / "price-change-events.jsonl"
 NEW_MODEL_EVENTS_PATH = DATA_DIR / "new-model-events.jsonl"
 MAX_EVENTS = 500
 DESCRIPTION_MAX_LEN = 500
@@ -139,7 +139,7 @@ def _addition_to_event(
     )
 
 
-def _sync_price_events_jsonl(episodes: list[PriceDropRecord]) -> None:
+def _sync_price_change_events_jsonl(episodes: list[PriceChangeRecord]) -> None:
     lines = [dump_model_line(event) for event in episodes_to_event_records(episodes)]
     trimmed = lines[-MAX_EVENTS:]
     EVENTS_PATH.write_text(
@@ -150,7 +150,7 @@ def _sync_price_events_jsonl(episodes: list[PriceDropRecord]) -> None:
 
 def _append_jsonl_events(
     path: Path,
-    events: list[PriceEventRecord] | list[NewModelEventRecord],
+    events: list[PriceChangeEventRecord] | list[NewModelEventRecord],
 ) -> None:
     if not events:
         return
@@ -332,7 +332,7 @@ async def run_build() -> None:
     previous = _load_previous()
     new_additions = detect_new_models(snapshots, previous=previous)
     history = load_history()
-    drop_state = load_price_drop_state()
+    change_state = load_price_change_state()
     current_per_million_by_model: dict[str, dict[str, Decimal]] = {}
     for model in snapshots:
         if is_latest_alias_model_id(model.id):
@@ -346,8 +346,8 @@ async def run_build() -> None:
             continue
         current_per_million = _current_per_million(model)
         current_per_million_by_model[model.id] = current_per_million
-        drop_state, _, _, _ = update_model_field_states(
-            drop_state,
+        change_state, _, _, _ = update_model_field_change_states(
+            change_state,
             model_id=model.id,
             current_per_million=current_per_million,
             previous_per_million=_previous_per_million(previous, model.id),
@@ -357,30 +357,32 @@ async def run_build() -> None:
         )
 
     finished = datetime.now(UTC)
-    drop_state = drop_state.model_copy(
+    change_state = change_state.model_copy(
         update={
             "generated_at": finished,
-            "episodes": close_orphaned_active_episodes(
-                drop_state.episodes,
-                drop_state.models,
+            "episodes": close_orphaned_active_changes(
+                change_state.episodes,
+                change_state.models,
                 now=finished,
                 current_per_million_by_model=current_per_million_by_model,
             ),
         },
     )
 
-    save_price_drop_state(drop_state)
-    _sync_price_events_jsonl(drop_state.episodes)
+    save_price_change_state(change_state)
+    _sync_price_change_events_jsonl(change_state.episodes)
 
     new_model_event_records = [
         _addition_to_event(addition, started) for addition in new_additions
     ]
     _append_new_model_events(new_model_event_records)
 
-    active_drops, recovered_drops, settled_drops, episodes = build_price_drops_output(
-        drop_state,
-        now=finished,
-        window_hours=DROP_LOOKBACK_HOURS,
+    active_changes, recovered_changes, settled_changes, episodes = (
+        build_price_changes_output(
+            change_state,
+            now=finished,
+            window_hours=CHANGE_LOOKBACK_HOURS,
+        )
     )
 
     all_new_model_events = load_new_model_events(NEW_MODEL_EVENTS_PATH)
@@ -396,18 +398,18 @@ async def run_build() -> None:
         window_hours=NEW_MODEL_LOOKBACK_HOURS,
         models=new_model_records,
     )
-    drops_output = PriceDropsOutput(
+    changes_output = PriceChangesOutput(
         generated_at=finished,
-        window_hours=DROP_LOOKBACK_HOURS,
-        thresholds=PriceDropThresholdsOutput(
+        window_hours=CHANGE_LOOKBACK_HOURS,
+        thresholds=PriceChangeThresholdsOutput(
             min_pct=float(DEFAULT_THRESHOLDS.min_pct),
-            min_saved_per_million_usd=float(
-                DEFAULT_THRESHOLDS.min_saved_per_million_usd
+            min_delta_per_million_usd=float(
+                DEFAULT_THRESHOLDS.min_delta_per_million_usd
             ),
         ),
-        active_drops=active_drops,
-        recovered_drops=recovered_drops,
-        settled_drops=settled_drops,
+        active_changes=active_changes,
+        recovered_changes=recovered_changes,
+        settled_changes=settled_changes,
         episodes=episodes,
     )
     meta = BuildMeta(
@@ -419,7 +421,7 @@ async def run_build() -> None:
     )
 
     write_model_json(DATA_DIR / "models.json", models_output)
-    write_model_json(DATA_DIR / "price-drops.json", drops_output)
+    write_model_json(DATA_DIR / "price-changes.json", changes_output)
     write_model_json(DATA_DIR / "new-models.json", new_models_output)
     write_model_json(DATA_DIR / "meta.json", meta)
 

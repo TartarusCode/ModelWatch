@@ -80,6 +80,35 @@ export function formatPct(pct: number): string {
   return `${(pct * 100).toFixed(1)}%`;
 }
 
+export function formatSignedPct(pct: number): string {
+  const abs = formatPct(Math.abs(pct));
+  if (pct > 0) {
+    return `+${abs}`;
+  }
+  if (pct < 0) {
+    return `−${abs}`;
+  }
+  return abs;
+}
+
+export function formatSignedPerMillionUsd(
+  value: string | number | null | undefined,
+): string {
+  const num =
+    typeof value === "number" ? value : Number.parseFloat(String(value ?? ""));
+  if (!Number.isFinite(num)) {
+    return "Varies";
+  }
+  const formatted = formatPerMillionUsd(Math.abs(num));
+  if (num > 0) {
+    return `+${formatted}`;
+  }
+  if (num < 0) {
+    return `−${formatted}`;
+  }
+  return formatted;
+}
+
 /**
  * Display-only free-tier badge; uses current pricing only (no price history).
  * A transient API glitch could briefly show the badge on paid models until the next build.

@@ -1,4 +1,4 @@
-import type { PriceEventRecord, PriceHistoryOutput, PriceHistoryPoint } from "../types";
+import type { PriceChangeEventRecord, PriceHistoryOutput, PriceHistoryPoint } from "../types";
 import { pricingFieldLabel } from "./pricing";
 
 export const PRICE_HISTORY_FIELDS = [
@@ -78,9 +78,9 @@ export function historyColumnLabel(field: PriceHistoryField): string {
 }
 
 export function eventsForModel(
-  events: PriceEventRecord[],
+  events: PriceChangeEventRecord[],
   modelId: string,
-): PriceEventRecord[] {
+): PriceChangeEventRecord[] {
   return events
     .filter((event) => event.model_id === modelId)
     .sort(

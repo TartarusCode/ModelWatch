@@ -156,55 +156,61 @@ class EnrichedModel(BaseModel):
     provider_stats: ModelProviderStats
 
 
-class PriceDropRecord(BaseModel):
+ChangeDirection = Literal["cut", "hike"]
+ChangeStatus = Literal["active", "recovered", "settled"]
+
+
+class PriceChangeRecord(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     detected_at: datetime
     model_id: str
     field: str
+    direction: ChangeDirection
     episode_start_per_million_usd: str
     old_per_million_usd: str
     new_per_million_usd: str
-    pct_drop: float
-    saved_per_million_usd: str
-    status: Literal["active", "recovered", "settled"] = "active"
+    pct_change: float
+    delta_per_million_usd: str
+    status: ChangeStatus = "active"
     recovered_at: datetime | None = None
     recovered_per_million_usd: str | None = None
     settled_at: datetime | None = None
     settled_per_million_usd: str | None = None
 
 
-class PriceDropThresholdsOutput(BaseModel):
+class PriceChangeThresholdsOutput(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     min_pct: float
-    min_saved_per_million_usd: float
+    min_delta_per_million_usd: float
 
 
-class PriceDropsOutput(BaseModel):
+class PriceChangesOutput(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     generated_at: datetime
     window_hours: int = 24
-    thresholds: PriceDropThresholdsOutput
-    active_drops: list[PriceDropRecord]
-    recovered_drops: list[PriceDropRecord]
-    settled_drops: list[PriceDropRecord] = Field(default_factory=list)
-    episodes: list[PriceDropRecord]
+    thresholds: PriceChangeThresholdsOutput
+    active_changes: list[PriceChangeRecord]
+    recovered_changes: list[PriceChangeRecord]
+    settled_changes: list[PriceChangeRecord] = Field(default_factory=list)
+    episodes: list[PriceChangeRecord]
 
 
-class PriceEventRecord(BaseModel):
+class PriceChangeEventRecord(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     detected_at: datetime
     model_id: str
     field: str
+    direction: ChangeDirection
     episode_start_per_million_usd: str
     old_per_million_usd: str
     new_per_million_usd: str
-    pct_drop: float
-    saved_per_million_usd: str
-    status: Literal["active", "recovered", "settled"] = "active"
+    pct_change: float
+    delta_per_million_usd: str
+    status: ChangeStatus = "active"
     recovered_at: datetime | None = None
     recovered_per_million_usd: str | None = None
     settled_at: datetime | None = None

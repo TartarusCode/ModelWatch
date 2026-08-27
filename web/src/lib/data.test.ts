@@ -27,14 +27,14 @@ describe("loadSiteData", () => {
           }),
         );
       }
-      if (url.endsWith("price-drops.json")) {
+      if (url.endsWith("price-changes.json")) {
         return new Response(
           JSON.stringify({
             generated_at: "2026-06-25T12:00:00Z",
-            thresholds: { min_pct: 0.1, min_saved_per_million_usd: 0.05 },
-            active_drops: [],
-            recovered_drops: [],
-            settled_drops: [],
+            thresholds: { min_pct: 0.1, min_delta_per_million_usd: 0.05 },
+            active_changes: [],
+            recovered_changes: [],
+            settled_changes: [],
             episodes: [],
           }),
         );
@@ -58,7 +58,7 @@ describe("loadSiteData", () => {
 
     expect(data.meta.model_count).toBe(1);
     expect(data.models.models).toEqual([]);
-    expect(data.priceDrops.active_drops).toEqual([]);
+    expect(data.priceChanges.active_changes).toEqual([]);
   });
 
   it("encodes colons in model history filenames", () => {
