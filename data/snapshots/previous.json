@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T04:01:18.205626Z",
+  "generated_at": "2026-08-27T05:27:59.112873Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3536,12 +3536,12 @@
       "id": "deepseek/deepseek-v4-flash-vision-exp",
       "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
       "pricing": {
-        "completion": "0.00000132",
+        "completion": "0.00000066",
         "image": null,
-        "input_cache_read": "0.000000014",
+        "input_cache_read": "0.000000007",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000044",
+        "prompt": "0.00000022",
         "request": null,
         "web_search": null
       },
