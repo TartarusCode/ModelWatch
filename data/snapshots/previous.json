@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T22:01:18.084395Z",
+  "generated_at": "2026-08-28T22:31:20.457928Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -10070,12 +10070,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.00001275",
+        "completion": "0.000015",
         "image": null,
-        "input_cache_read": "0.00000025599999",
+        "input_cache_read": "0.0000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000255",
+        "prompt": "0.000003",
         "request": null,
         "web_search": null
       },
@@ -18018,7 +18018,7 @@
       "pricing": {
         "completion": "0.000006",
         "image": null,
-        "input_cache_read": "0.0000002",
+        "input_cache_read": "0.00000025",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.000002",
@@ -18048,9 +18048,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 1000000,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 262144
       }
     },
     "qwen/qwen3.8-2.4t-a95b:batch": {
@@ -18078,12 +18078,12 @@
       "id": "qwen/qwen3.8-2.4t-a95b:batch",
       "name": "Qwen: Qwen3.8 2.4T A95B (batch)",
       "pricing": {
-        "completion": "0.000006",
+        "completion": "0.00000625",
         "image": null,
-        "input_cache_read": "0.00000025",
+        "input_cache_read": "0.0000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000002",
+        "prompt": "0.0000025",
         "request": null,
         "web_search": null
       },
