@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T16:31:15.106108Z",
+  "generated_at": "2026-08-28T17:01:30.576578Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3475,12 +3475,12 @@
       "id": "deepseek/deepseek-v4-flash-0731",
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "pricing": {
-        "completion": "0.00000014",
+        "completion": "0.00000012",
         "image": null,
-        "input_cache_read": "0.000000014",
+        "input_cache_read": "0.000000012",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000007",
+        "prompt": "0.00000006",
         "request": null,
         "web_search": null
       },
@@ -3591,12 +3591,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001544076",
+        "completion": "0.000001523892",
         "image": null,
-        "input_cache_read": "0.0000000643365",
+        "input_cache_read": "0.0000000634955",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000772038",
+        "prompt": "0.000000761946",
         "request": null,
         "web_search": null
       },
@@ -9405,7 +9405,7 @@
         "tokenizer": "Mistral"
       },
       "canonical_slug": "mistralai/voxtral-small-24b-2507",
-      "context_length": 32000,
+      "context_length": 32768,
       "created": 1761835144,
       "default_parameters": {
         "frequency_penalty": null,
@@ -9440,9 +9440,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 32000,
+        "context_length": 32768,
         "is_moderated": false,
-        "max_completion_tokens": 25600
+        "max_completion_tokens": 26214
       }
     },
     "moonshotai/kimi-k2": {
@@ -17539,7 +17539,7 @@
       "pricing": {
         "completion": "0.000006",
         "image": null,
-        "input_cache_read": "0.00000025",
+        "input_cache_read": "0.0000002",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.000002",
@@ -17569,9 +17569,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1000000,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 131072
       }
     },
     "qwen/qwen3.8-2.4t-a95b:batch": {
@@ -17599,12 +17599,12 @@
       "id": "qwen/qwen3.8-2.4t-a95b:batch",
       "name": "Qwen: Qwen3.8 2.4T A95B (batch)",
       "pricing": {
-        "completion": "0.00000625",
+        "completion": "0.000006",
         "image": null,
-        "input_cache_read": "0.0000005",
+        "input_cache_read": "0.00000025",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000025",
+        "prompt": "0.000002",
         "request": null,
         "web_search": null
       },
@@ -20625,7 +20625,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-5.3-20260816",
-      "context_length": 1048576,
+      "context_length": 1310720,
       "created": 1787086655,
       "default_parameters": {
         "temperature": 1,
