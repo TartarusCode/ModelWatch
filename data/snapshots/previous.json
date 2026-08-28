@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T02:01:27.518936Z",
+  "generated_at": "2026-08-28T02:31:24.025299Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -1024,7 +1024,7 @@
       ],
       "top_provider": {
         "context_length": 200000,
-        "is_moderated": false,
+        "is_moderated": true,
         "max_completion_tokens": 64000
       }
     },
@@ -19145,10 +19145,10 @@
       "pricing": {
         "completion": "0.00000255",
         "image": null,
-        "input_cache_read": "0.00000005",
-        "input_cache_write": null,
+        "input_cache_read": "0.000000085",
+        "input_cache_write": "0.00000053125",
         "internal_reasoning": null,
-        "prompt": "0.0000004",
+        "prompt": "0.000000425",
         "request": null,
         "web_search": null
       },
@@ -19175,7 +19175,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 1000000,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
