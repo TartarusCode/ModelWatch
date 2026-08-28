@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T23:01:15.458043Z",
+  "generated_at": "2026-08-28T23:31:24.181165Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -182,62 +182,6 @@
         "context_length": 32768,
         "is_moderated": false,
         "max_completion_tokens": 29491
-      }
-    },
-    "allenai/olmo-3-32b-think": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "allenai/olmo-3-32b-think-20251121",
-      "context_length": 65536,
-      "created": 1763758276,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": 0.6,
-        "top_p": 0.95
-      },
-      "description": "Olmo 3 32B Think is a large-scale, 32-billion-parameter model purpose-built for deep reasoning, complex logic chains and advanced instruction-following scenarios. Its capacity enables strong performance on demanding evaluation tasks and...",
-      "expiration_date": null,
-      "id": "allenai/olmo-3-32b-think",
-      "name": "AllenAI: Olmo 3 32B Think",
-      "pricing": {
-        "completion": "0.0000005",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000015",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logit_bias",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 65536,
-        "is_moderated": false,
-        "max_completion_tokens": 58982
       }
     },
     "amazon/nova-2-lite-v1": {
@@ -2096,56 +2040,6 @@
         "max_completion_tokens": 235929
       }
     },
-    "arcee-ai/virtuoso-large": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "arcee-ai/virtuoso-large",
-      "context_length": 131072,
-      "created": 1746478885,
-      "default_parameters": {},
-      "description": "Virtuoso‑Large is Arcee's top‑tier general‑purpose LLM at 72 B parameters, tuned to tackle cross‑domain reasoning, creative writing and enterprise QA. Unlike many 70 B peers, it retains the 128 k...",
-      "expiration_date": null,
-      "id": "arcee-ai/virtuoso-large",
-      "name": "Arcee AI: Virtuoso Large",
-      "pricing": {
-        "completion": "0.0000012",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000075",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 64000
-      }
-    },
     "baidu/ernie-4.5-vl-424b-a47b": {
       "architecture": {
         "input_modalities": [
@@ -3475,12 +3369,12 @@
       "id": "deepseek/deepseek-v4-flash-0731",
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "pricing": {
-        "completion": "0.0000001",
+        "completion": "0.00000009",
         "image": null,
-        "input_cache_read": "0.00000001",
+        "input_cache_read": "0.000000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000005",
+        "prompt": "0.000000045",
         "request": null,
         "web_search": null
       },
