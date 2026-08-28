@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T14:01:14.528717Z",
+  "generated_at": "2026-08-28T14:31:51.290212Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3415,12 +3415,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000017416",
+        "completion": "0.0000001736",
         "image": null,
-        "input_cache_read": "0.000000017416",
+        "input_cache_read": "0.00000001736",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008708",
+        "prompt": "0.0000000868",
         "request": null,
         "web_search": null
       },
@@ -3591,12 +3591,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.00000174",
+        "completion": "0.000001564608",
         "image": null,
-        "input_cache_read": "0.0000000725",
+        "input_cache_read": "0.000000065192",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000087",
+        "prompt": "0.000000782304",
         "request": null,
         "web_search": null
       },
@@ -19963,7 +19963,7 @@
         "top_p": null
       },
       "description": "GLM-4.5V is a vision-language foundation model for multimodal agent applications. Built on a Mixture-of-Experts (MoE) architecture with 106B parameters and 12B activated parameters, it achieves state-of-the-art results in video understanding,...",
-      "expiration_date": null,
+      "expiration_date": "2026-12-31",
       "id": "z-ai/glm-4.5v",
       "name": "Z.ai: GLM 4.5V",
       "pricing": {
