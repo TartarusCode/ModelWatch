@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T06:01:23.065986Z",
+  "generated_at": "2026-08-28T06:31:23.617578Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3536,12 +3536,12 @@
       "id": "deepseek/deepseek-v4-flash-vision-exp",
       "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
       "pricing": {
-        "completion": "0.00000066",
+        "completion": "0.00000132",
         "image": null,
-        "input_cache_read": "0.000000007",
+        "input_cache_read": "0.000000014",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000022",
+        "prompt": "0.00000044",
         "request": null,
         "web_search": null
       },
@@ -3653,12 +3653,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000198",
+        "completion": "0.00000396",
         "image": null,
-        "input_cache_read": "0.000000022",
+        "input_cache_read": "0.000000044",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000066",
+        "prompt": "0.00000132",
         "request": null,
         "web_search": null
       },
@@ -16729,12 +16729,12 @@
       "id": "qwen/qwen3.6-27b",
       "name": "Qwen: Qwen3.6 27B",
       "pricing": {
-        "completion": "0.0000032",
+        "completion": "0.0000036",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000012",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000032",
+        "prompt": "0.0000006",
         "request": null,
         "web_search": null
       },
@@ -16762,7 +16762,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 81920
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3.6-35b-a3b": {
@@ -18298,6 +18298,51 @@
         "context_length": 262144,
         "is_moderated": false,
         "max_completion_tokens": 235929
+      }
+    },
+    "tencent/hy4-preview": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "tencent/hy4-preview-20260827",
+      "context_length": 1048576,
+      "created": 1787897375,
+      "default_parameters": {},
+      "description": "Tencent: Hy4 preview is a mixture-of-experts model from Tencent, with 49B active parameters out of 770B total. It is designed for coding agents, complex tool-use workflows, and productivity tasks that...",
+      "expiration_date": null,
+      "id": "tencent/hy4-preview",
+      "name": "Tencent: Hy4 preview",
+      "pricing": {
+        "completion": "0.000002501",
+        "image": null,
+        "input_cache_read": "0.000000042",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000000834",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "stop",
+        "temperature"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 64000
       }
     },
     "thedrummer/cydonia-24b-v4.1": {
