@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T20:01:30.828591Z",
+  "generated_at": "2026-08-28T20:31:18.163893Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -19514,6 +19514,70 @@
         "context_length": 524288,
         "is_moderated": false,
         "max_completion_tokens": 262144
+      }
+    },
+    "thinkingmachines/inkling-small:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "audio"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+audio->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "thinkingmachines/inkling-small-20260730",
+      "context_length": 524288,
+      "created": 1785443117,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Inkling Small is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 12B active parameters out of 276B total. It is positioned as the smaller, more efficient member of...",
+      "expiration_date": null,
+      "id": "thinkingmachines/inkling-small:batch",
+      "name": "Thinking Machines: Inkling Small (batch)",
+      "pricing": {
+        "completion": "0.0000012",
+        "image": null,
+        "input_cache_read": "0.0000001",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000005",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 524288,
+        "is_moderated": false,
+        "max_completion_tokens": 471859
       }
     },
     "thinkingmachines/inkling-small:free": {
