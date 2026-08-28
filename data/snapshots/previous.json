@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T16:01:36.035161Z",
+  "generated_at": "2026-08-28T16:31:15.106108Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3591,12 +3591,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001564608",
+        "completion": "0.000001544076",
         "image": null,
-        "input_cache_read": "0.000000065192",
+        "input_cache_read": "0.0000000643365",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000782304",
+        "prompt": "0.000000772038",
         "request": null,
         "web_search": null
       },
@@ -18607,12 +18607,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.000000528",
+        "completion": "0.00000033",
         "image": null,
-        "input_cache_read": "0.000000033",
+        "input_cache_read": "0.000000020625",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000132",
+        "prompt": "0.0000000825",
         "request": null,
         "web_search": null
       },
