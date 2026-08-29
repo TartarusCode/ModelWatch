@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T23:01:10.753513Z",
+  "generated_at": "2026-08-29T23:31:22.251468Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3309,12 +3309,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000016352",
+        "completion": "0.00000016296",
         "image": null,
-        "input_cache_read": "0.000000016352",
+        "input_cache_read": "0.000000016296",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008176",
+        "prompt": "0.00000008148",
         "request": null,
         "web_search": null
       },
@@ -3540,12 +3540,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001077756",
+        "completion": "0.000001057572",
         "image": null,
-        "input_cache_read": "0.0000000449065",
+        "input_cache_read": "0.0000000440655",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000538878",
+        "prompt": "0.000000528786",
         "request": null,
         "web_search": null
       },
@@ -19313,10 +19313,10 @@
       "pricing": {
         "completion": "0.00000405",
         "image": null,
-        "input_cache_read": "0.00000016",
+        "input_cache_read": "0.00000017",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000095",
+        "prompt": "0.000001",
         "request": null,
         "web_search": null
       },
@@ -19342,7 +19342,7 @@
       "top_provider": {
         "context_length": 524288,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 471859
       }
     },
     "thinkingmachines/inkling-small": {
