@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T07:31:13.388981Z",
+  "generated_at": "2026-08-29T08:01:28.664875Z",
   "models": [
     {
       "canonical_slug": "thinkingmachines/inkling-small-20260730",
@@ -140,48 +140,6 @@
       "detected_at": "2026-08-28T15:30:58.343912Z",
       "model_id": "z-ai/glm-5.3-flash:batch",
       "name": "Z.ai: GLM 5.3 Flash (batch)"
-    },
-    {
-      "canonical_slug": "mistralai/codestral-2508",
-      "created": 1754079630,
-      "detected_at": "2026-08-28T08:01:02.828499Z",
-      "model_id": "mistralai/codestral-2508:batch",
-      "name": "Mistral: Codestral 2508 (batch)"
-    },
-    {
-      "canonical_slug": "mistralai/ministral-8b-2512",
-      "created": 1764681654,
-      "detected_at": "2026-08-28T08:01:02.828499Z",
-      "model_id": "mistralai/ministral-8b-2512:batch",
-      "name": "Mistral: Ministral 3 8B 2512 (batch)"
-    },
-    {
-      "canonical_slug": "mistralai/mistral-large-2512",
-      "created": 1764624472,
-      "detected_at": "2026-08-28T08:01:02.828499Z",
-      "model_id": "mistralai/mistral-large-2512:batch",
-      "name": "Mistral: Mistral Large 3 2512 (batch)"
-    },
-    {
-      "canonical_slug": "mistralai/mistral-medium-3.5-20260430",
-      "created": 1777570439,
-      "detected_at": "2026-08-28T08:01:02.828499Z",
-      "model_id": "mistralai/mistral-medium-3-5:batch",
-      "name": "Mistral: Mistral Medium 3.5 (batch)"
-    },
-    {
-      "canonical_slug": "mistralai/mistral-medium-3.1",
-      "created": 1755095639,
-      "detected_at": "2026-08-28T08:01:02.828499Z",
-      "model_id": "mistralai/mistral-medium-3.1:batch",
-      "name": "Mistral: Mistral Medium 3.1 (batch)"
-    },
-    {
-      "canonical_slug": "mistralai/mistral-small-2603",
-      "created": 1773695685,
-      "detected_at": "2026-08-28T08:01:02.828499Z",
-      "model_id": "mistralai/mistral-small-2603:batch",
-      "name": "Mistral: Mistral Small 4 (batch)"
     }
   ],
   "window_hours": 24
