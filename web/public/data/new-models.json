@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T15:01:27.497181Z",
+  "generated_at": "2026-08-29T15:31:06.562220Z",
   "models": [
     {
       "canonical_slug": "thinkingmachines/inkling-small-20260730",
@@ -68,76 +68,6 @@
       "canonical_slug": "z-ai/glm-5.3-flash-20260826",
       "created": 1787752741,
       "detected_at": "2026-08-28T19:30:59.717176Z",
-      "model_id": "z-ai/glm-5.3-flash:batch",
-      "name": "Z.ai: GLM 5.3 Flash (batch)"
-    },
-    {
-      "canonical_slug": "deepseek/deepseek-v4-flash-20260731",
-      "created": 1785478908,
-      "detected_at": "2026-08-28T15:30:58.343912Z",
-      "model_id": "deepseek/deepseek-v4-flash-0731:batch",
-      "name": "DeepSeek: DeepSeek V4 Flash 0731 (batch)"
-    },
-    {
-      "canonical_slug": "google/gemma-4-31b-it-20260402",
-      "created": 1775148486,
-      "detected_at": "2026-08-28T15:30:58.343912Z",
-      "model_id": "google/gemma-4-31b-it:batch",
-      "name": "Google: Gemma 4 31B (batch)"
-    },
-    {
-      "canonical_slug": "meta/muse-glimmer-30b-20260810",
-      "created": 1786302394,
-      "detected_at": "2026-08-28T15:30:58.343912Z",
-      "model_id": "meta/muse-glimmer-30b:batch",
-      "name": "Meta: Muse Glimmer 30B (batch)"
-    },
-    {
-      "canonical_slug": "moonshotai/kimi-k3-20260715",
-      "created": 1784215858,
-      "detected_at": "2026-08-28T15:30:58.343912Z",
-      "model_id": "moonshotai/kimi-k3:batch",
-      "name": "MoonshotAI: Kimi K3 (batch)"
-    },
-    {
-      "canonical_slug": "openai/gpt-oss-120b",
-      "created": 1754414231,
-      "detected_at": "2026-08-28T15:30:58.343912Z",
-      "model_id": "openai/gpt-oss-120b:batch",
-      "name": "OpenAI: gpt-oss-120b (batch)"
-    },
-    {
-      "canonical_slug": "openai/gpt-oss-20b",
-      "created": 1754414229,
-      "detected_at": "2026-08-28T15:30:58.343912Z",
-      "model_id": "openai/gpt-oss-20b:batch",
-      "name": "OpenAI: gpt-oss-20b (batch)"
-    },
-    {
-      "canonical_slug": "qwen/qwen3.5-9b-20260310",
-      "created": 1773152396,
-      "detected_at": "2026-08-28T15:30:58.343912Z",
-      "model_id": "qwen/qwen3.5-9b:batch",
-      "name": "Qwen: Qwen3.5-9B (batch)"
-    },
-    {
-      "canonical_slug": "qwen/qwen3.8-2.4t-a95b-20260812",
-      "created": 1786551702,
-      "detected_at": "2026-08-28T15:30:58.343912Z",
-      "model_id": "qwen/qwen3.8-2.4t-a95b:batch",
-      "name": "Qwen: Qwen3.8 2.4T A95B (batch)"
-    },
-    {
-      "canonical_slug": "thinkingmachines/inkling-small-20260730",
-      "created": 1785443117,
-      "detected_at": "2026-08-28T15:30:58.343912Z",
-      "model_id": "thinkingmachines/inkling-small:batch",
-      "name": "Thinking Machines: Inkling Small (batch)"
-    },
-    {
-      "canonical_slug": "z-ai/glm-5.3-flash-20260826",
-      "created": 1787752741,
-      "detected_at": "2026-08-28T15:30:58.343912Z",
       "model_id": "z-ai/glm-5.3-flash:batch",
       "name": "Z.ai: GLM 5.3 Flash (batch)"
     }
