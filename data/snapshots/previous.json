@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T00:01:14.308863Z",
+  "generated_at": "2026-08-29T00:31:26.824919Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3191,12 +3191,12 @@
       "id": "deepseek/deepseek-v3.2",
       "name": "DeepSeek: DeepSeek V3.2",
       "pricing": {
-        "completion": "0.0000004",
+        "completion": "0.00000038",
         "image": null,
-        "input_cache_read": "0.0000001345",
+        "input_cache_read": "0.00000013",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000269",
+        "prompt": "0.00000026",
         "request": null,
         "web_search": null
       },
@@ -3224,7 +3224,7 @@
       "top_provider": {
         "context_length": 163840,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 147456
       }
     },
     "deepseek/deepseek-v3.2-exp": {
@@ -3540,12 +3540,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001462992",
+        "completion": "0.000001442808",
         "image": null,
-        "input_cache_read": "0.000000060958",
+        "input_cache_read": "0.000000060117",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000731496",
+        "prompt": "0.000000721404",
         "request": null,
         "web_search": null
       },
@@ -18980,12 +18980,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
