@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T16:01:25.551303Z",
+  "generated_at": "2026-08-30T16:31:10.961397Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -18980,12 +18980,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.000000528",
+        "completion": "0.00000033",
         "image": null,
-        "input_cache_read": "0.000000033",
+        "input_cache_read": "0.000000020625",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000132",
+        "prompt": "0.0000000825",
         "request": null,
         "web_search": null
       },
