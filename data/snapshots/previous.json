@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T12:01:19.133704Z",
+  "generated_at": "2026-08-30T12:30:58.689824Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3309,12 +3309,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.0000001596",
+        "completion": "0.00000015904",
         "image": null,
-        "input_cache_read": "0.00000001596",
+        "input_cache_read": "0.000000015904",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000798",
+        "prompt": "0.00000007952",
         "request": null,
         "web_search": null
       },
@@ -3540,12 +3540,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000000854688",
+        "completion": "0.000000834504",
         "image": null,
-        "input_cache_read": "0.000000035612",
+        "input_cache_read": "0.000000034771",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000427344",
+        "prompt": "0.000000417252",
         "request": null,
         "web_search": null
       },
@@ -8332,12 +8332,12 @@
       "id": "mistralai/devstral-2512",
       "name": "Mistral: Devstral 2 2512",
       "pricing": {
-        "completion": "0.0000022",
+        "completion": "0.000002",
         "image": null,
-        "input_cache_read": "0.000000044",
+        "input_cache_read": "0.00000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000044",
+        "prompt": "0.0000004",
         "request": null,
         "web_search": null
       },
