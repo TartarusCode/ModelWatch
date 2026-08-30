@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T00:01:25.828722Z",
+  "generated_at": "2026-08-30T00:31:18.092568Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3191,12 +3191,12 @@
       "id": "deepseek/deepseek-v3.2",
       "name": "DeepSeek: DeepSeek V3.2",
       "pricing": {
-        "completion": "0.0000004",
+        "completion": "0.00000038",
         "image": null,
-        "input_cache_read": "0.0000001345",
+        "input_cache_read": "0.00000013",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000269",
+        "prompt": "0.00000026",
         "request": null,
         "web_search": null
       },
@@ -3224,7 +3224,7 @@
       "top_provider": {
         "context_length": 163840,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 147456
       }
     },
     "deepseek/deepseek-v3.2-exp": {
@@ -3309,12 +3309,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000016296",
+        "completion": "0.0000001624",
         "image": null,
-        "input_cache_read": "0.000000016296",
+        "input_cache_read": "0.00000001624",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008148",
+        "prompt": "0.0000000812",
         "request": null,
         "web_search": null
       },
@@ -3540,12 +3540,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001057572",
+        "completion": "0.00000103704",
         "image": null,
-        "input_cache_read": "0.0000000440655",
+        "input_cache_read": "0.00000004321",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000528786",
+        "prompt": "0.00000051852",
         "request": null,
         "web_search": null
       },
@@ -7049,7 +7049,7 @@
       "id": "meta-llama/llama-4-maverick",
       "name": "Meta: Llama 4 Maverick",
       "pricing": {
-        "completion": "0.0000008",
+        "completion": "0.000000696",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
@@ -7078,9 +7078,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 115200
       }
     },
     "meta-llama/llama-4-scout": {
@@ -13071,7 +13071,7 @@
       ],
       "top_provider": {
         "context_length": 1050000,
-        "is_moderated": false,
+        "is_moderated": true,
         "max_completion_tokens": 128000
       }
     },
@@ -16325,10 +16325,10 @@
       "pricing": {
         "completion": "0.0000011",
         "image": null,
-        "input_cache_read": "0.00000007",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
@@ -16354,7 +16354,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 16384
       }
     },
     "qwen/qwen3-next-80b-a3b-thinking": {
@@ -18980,12 +18980,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -20885,12 +20885,12 @@
       "id": "z-ai/glm-5.1",
       "name": "Z.ai: GLM 5.1",
       "pricing": {
-        "completion": "0.00000396",
+        "completion": "0.000003036",
         "image": null,
-        "input_cache_read": "0.000000234",
+        "input_cache_read": "0.0000001794",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000126",
+        "prompt": "0.000000966",
         "request": null,
         "web_search": null
       },
@@ -20916,9 +20916,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 202752,
+        "context_length": 200000,
         "is_moderated": false,
-        "max_completion_tokens": 182476
+        "max_completion_tokens": 128000
       }
     },
     "z-ai/glm-5.2": {
