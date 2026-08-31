@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T14:31:14.951966Z",
+  "generated_at": "2026-08-31T15:01:21.935147Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6417,62 +6417,6 @@
         "max_completion_tokens": 32768
       }
     },
-    "kwaipilot/kat-coder-air-v2.5": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "kwaipilot/kat-coder-air-v2.5-20260710",
-      "context_length": 256000,
-      "created": 1783714590,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "KAT-Coder-Air V2.5 is a flagship-level Agentic Coding model that can directly hand over an entire issue or an entire business workflow to it, allowing it to autonomously locate and make...",
-      "expiration_date": null,
-      "id": "kwaipilot/kat-coder-air-v2.5",
-      "name": "Kwaipilot: KAT-Coder-Air V2.5",
-      "pricing": {
-        "completion": "0.0000006",
-        "image": null,
-        "input_cache_read": "0.00000003",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000015",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 256000,
-        "is_moderated": false,
-        "max_completion_tokens": 80000
-      }
-    },
     "kwaipilot/kat-coder-pro-v2": {
       "architecture": {
         "input_modalities": [
@@ -6573,7 +6517,6 @@
       "supported_parameters": [
         "frequency_penalty",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -6586,13 +6529,12 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
-        "context_length": 256000,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 80000
+        "max_completion_tokens": 235929
       }
     },
     "liquid/lfm-2.5-2.6b:free": {
