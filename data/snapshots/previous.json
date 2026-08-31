@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T16:31:13.546254Z",
+  "generated_at": "2026-08-31T17:01:18.877693Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -17855,7 +17855,7 @@
       "pricing": {
         "completion": "0.000006",
         "image": null,
-        "input_cache_read": "0.00000025",
+        "input_cache_read": "0.0000002",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.000002",
@@ -17885,9 +17885,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1000000,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 131072
       }
     },
     "qwen/qwen3.8-2.4t-a95b:batch": {
@@ -17915,12 +17915,12 @@
       "id": "qwen/qwen3.8-2.4t-a95b:batch",
       "name": "Qwen: Qwen3.8 2.4T A95B (batch)",
       "pricing": {
-        "completion": "0.00000625",
+        "completion": "0.000006",
         "image": null,
-        "input_cache_read": "0.0000005",
+        "input_cache_read": "0.00000025",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000025",
+        "prompt": "0.000002",
         "request": null,
         "web_search": null
       },
