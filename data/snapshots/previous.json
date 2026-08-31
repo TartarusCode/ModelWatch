@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T12:31:14.834341Z",
+  "generated_at": "2026-08-31T13:01:25.742005Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6513,7 +6513,6 @@
       "supported_parameters": [
         "frequency_penalty",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -6526,13 +6525,12 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
-        "context_length": 256000,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 80000
+        "max_completion_tokens": 144000
       }
     },
     "kwaipilot/kat-coder-pro-v2.5": {
