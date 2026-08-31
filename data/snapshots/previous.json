@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T00:01:30.718412Z",
+  "generated_at": "2026-08-31T00:31:23.178492Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3540,12 +3540,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.0000020706",
+        "completion": "0.0000032",
         "image": null,
-        "input_cache_read": "0.000000086275",
+        "input_cache_read": "0.000000135",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000010353",
+        "prompt": "0.0000016",
         "request": null,
         "web_search": null
       },
@@ -3573,9 +3573,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1024000,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 384000
+        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4-pro-0813": {
@@ -7049,7 +7049,7 @@
       "id": "meta-llama/llama-4-maverick",
       "name": "Meta: Llama 4 Maverick",
       "pricing": {
-        "completion": "0.0000008",
+        "completion": "0.000000696",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
@@ -7078,9 +7078,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 115200
       }
     },
     "meta-llama/llama-4-scout": {
@@ -9762,16 +9762,16 @@
         "top_p": null
       },
       "description": "Kimi K2.5 is Moonshot AI's native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed...",
-      "expiration_date": "2026-08-31",
+      "expiration_date": null,
       "id": "moonshotai/kimi-k2.5",
       "name": "MoonshotAI: Kimi K2.5",
       "pricing": {
-        "completion": "0.000003",
+        "completion": "0.00000225",
         "image": null,
-        "input_cache_read": "0.0000001",
+        "input_cache_read": "0.00000007",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000006",
+        "prompt": "0.00000045",
         "request": null,
         "web_search": null
       },
@@ -9964,12 +9964,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.000015",
+        "completion": "0.00001425",
         "image": null,
-        "input_cache_read": "0.0000003",
+        "input_cache_read": "0.000000285",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000003",
+        "prompt": "0.00000285",
         "request": null,
         "web_search": null
       },
@@ -18980,12 +18980,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
