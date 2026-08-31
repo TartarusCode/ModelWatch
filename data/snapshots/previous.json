@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T17:31:35.874687Z",
+  "generated_at": "2026-08-31T18:01:26.110909Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -5028,12 +5028,12 @@
       "id": "google/gemini-3.5-flash",
       "name": "Google: Gemini 3.5 Flash",
       "pricing": {
-        "completion": "0.000009",
-        "image": "0.0000015",
-        "input_cache_read": "0.00000015",
+        "completion": "0.0000099",
+        "image": "0.00000165",
+        "input_cache_read": "0.000000165",
         "input_cache_write": "0.0000000833333333333333",
-        "internal_reasoning": "0.000009",
-        "prompt": "0.0000015",
+        "internal_reasoning": "0.0000099",
+        "prompt": "0.00000165",
         "request": null,
         "web_search": "0.014"
       },

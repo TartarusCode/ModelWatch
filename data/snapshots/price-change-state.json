@@ -6209,7 +6209,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-08-31T17:31:35.874687Z",
+  "generated_at": "2026-08-31T18:01:26.110909Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -10711,26 +10711,26 @@
         "anchor": "9.000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "9.000000",
+        "pending_builds": 1,
+        "pending_price": "9.9000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "image": {
         "anchor": "1.5000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "1.5000000",
+        "pending_builds": 1,
+        "pending_price": "1.65000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.15000000",
+        "anchor": "0.165000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -10755,23 +10755,23 @@
         "anchor": "9.000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "9.000000",
+        "pending_builds": 1,
+        "pending_price": "9.9000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "prompt": {
         "anchor": "1.5000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "1.5000000",
+        "pending_builds": 1,
+        "pending_price": "1.65000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "web_search": {
         "anchor": "14000.000",
