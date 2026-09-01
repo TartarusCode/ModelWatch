@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T00:01:37.244744Z",
+  "generated_at": "2026-09-01T00:31:12.413577Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3533,12 +3533,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.00000174",
+        "completion": "0.0000032",
         "image": null,
-        "input_cache_read": "0.0000000725",
+        "input_cache_read": "0.000000135",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000087",
+        "prompt": "0.0000016",
         "request": null,
         "web_search": null
       },
@@ -3566,9 +3566,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1024000,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 384000
+        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4-pro-0813": {
@@ -6094,12 +6094,12 @@
       "id": "gryphe/mythomax-l2-13b",
       "name": "MythoMax 13B",
       "pricing": {
-        "completion": "0.00000006",
+        "completion": "0.0000006",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006",
+        "prompt": "0.0000004",
         "request": null,
         "web_search": null
       },
@@ -6122,9 +6122,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 4096,
+        "context_length": 8192,
         "is_moderated": false,
-        "max_completion_tokens": 3686
+        "max_completion_tokens": 7372
       }
     },
     "ibm-granite/granite-4.0-h-micro": {
@@ -17102,12 +17102,12 @@
       "id": "qwen/qwen3-235b-a22b-2507",
       "name": "Qwen: Qwen3 235B A22B Instruct 2507",
       "pricing": {
-        "completion": "0.00000035",
+        "completion": "0.00000055",
         "image": null,
-        "input_cache_read": "0.0000000175",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000875",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
@@ -17133,7 +17133,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 16384
       }
     },
     "qwen/qwen3-235b-a22b-thinking-2507": {
@@ -20541,12 +20541,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
