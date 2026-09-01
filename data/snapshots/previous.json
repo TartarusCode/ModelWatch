@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T13:01:31.149971Z",
+  "generated_at": "2026-09-01T13:31:15.105166Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -1281,56 +1281,6 @@
         "max_completion_tokens": 128000
       }
     },
-    "anthropic/claude-opus-4.8-fast": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "file"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+file->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Claude"
-      },
-      "canonical_slug": "anthropic/claude-4.8-opus-fast-20260528",
-      "context_length": 1000000,
-      "created": 1779913703,
-      "default_parameters": {},
-      "description": "Fast-mode variant of [Opus 4.8](/anthropic/claude-opus-4.8) - identical capabilities with higher output speed at 2x pricing relative to regular Opus 4.8. Learn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode Note: As of September...",
-      "expiration_date": null,
-      "id": "anthropic/claude-opus-4.8-fast",
-      "name": "Anthropic: Claude Opus 4.8 (Fast)",
-      "pricing": {
-        "completion": "0.00005",
-        "image": null,
-        "input_cache_read": "0.000001",
-        "input_cache_write": "0.0000125",
-        "internal_reasoning": null,
-        "prompt": "0.00001",
-        "request": null,
-        "web_search": "0.01"
-      },
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "tool_choice",
-        "tools",
-        "verbosity"
-      ],
-      "top_provider": {
-        "context_length": 1000000,
-        "is_moderated": true,
-        "max_completion_tokens": 128000
-      }
-    },
     "anthropic/claude-opus-4.8:batch": {
       "architecture": {
         "input_modalities": [
@@ -1423,56 +1373,6 @@
         "stop",
         "structured_outputs",
         "temperature",
-        "tool_choice",
-        "tools",
-        "verbosity"
-      ],
-      "top_provider": {
-        "context_length": 1000000,
-        "is_moderated": true,
-        "max_completion_tokens": 128000
-      }
-    },
-    "anthropic/claude-opus-5-fast": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "file"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+file->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Claude"
-      },
-      "canonical_slug": "anthropic/claude-opus-5-fast-20260723",
-      "context_length": 1000000,
-      "created": 1784912546,
-      "default_parameters": {},
-      "description": "Fast-mode variant of [Opus 5](/anthropic/claude-opus-5) - identical capabilities with higher output speed at 2x pricing relative to regular Opus 5. Learn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode Note: As of September...",
-      "expiration_date": null,
-      "id": "anthropic/claude-opus-5-fast",
-      "name": "Claude Opus 5 (Fast)",
-      "pricing": {
-        "completion": "0.00005",
-        "image": null,
-        "input_cache_read": "0.000001",
-        "input_cache_write": "0.0000125",
-        "internal_reasoning": null,
-        "prompt": "0.00001",
-        "request": null,
-        "web_search": "0.01"
-      },
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "stop",
-        "structured_outputs",
         "tool_choice",
         "tools",
         "verbosity"
@@ -3235,12 +3135,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000016184",
+        "completion": "0.00000015876",
         "image": null,
-        "input_cache_read": "0.000000016184",
+        "input_cache_read": "0.000000015876",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008092",
+        "prompt": "0.00000007938",
         "request": null,
         "web_search": null
       },
