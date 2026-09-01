@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T05:33:18.188583Z",
+  "generated_at": "2026-09-01T06:01:31.738797Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -8245,59 +8245,6 @@
         "max_completion_tokens": 204800
       }
     },
-    "mistralai/codestral-2508:batch": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "file"
-        ],
-        "instruct_type": null,
-        "modality": "text+file->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Mistral"
-      },
-      "canonical_slug": "mistralai/codestral-2508",
-      "context_length": 256000,
-      "created": 1754079630,
-      "default_parameters": {
-        "temperature": 0.3
-      },
-      "description": "Mistral's cutting-edge language model for coding released end of July 2025. Codestral specializes in low-latency, high-frequency tasks such as fill-in-the-middle (FIM), code correction and test generation.\n\n[Blog Post](https://mistral.ai/news/codestral-25-08)",
-      "expiration_date": null,
-      "id": "mistralai/codestral-2508:batch",
-      "name": "Mistral: Codestral 2508 (batch)",
-      "pricing": {
-        "completion": "0.0000009",
-        "image": null,
-        "input_cache_read": "0.00000003",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000003",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "prediction",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 256000,
-        "is_moderated": false,
-        "max_completion_tokens": 204800
-      }
-    },
     "mistralai/devstral-2512": {
       "architecture": {
         "input_modalities": [
@@ -8514,60 +8461,6 @@
         "max_completion_tokens": 209715
       }
     },
-    "mistralai/ministral-8b-2512:batch": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "instruct_type": null,
-        "modality": "text+image->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Mistral"
-      },
-      "canonical_slug": "mistralai/ministral-8b-2512",
-      "context_length": 262144,
-      "created": 1764681654,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": 0.3,
-        "top_p": null
-      },
-      "description": "A balanced model in the Ministral 3 family, Ministral 3 8B is a powerful, efficient tiny language model with vision capabilities.",
-      "expiration_date": null,
-      "id": "mistralai/ministral-8b-2512:batch",
-      "name": "Mistral: Ministral 3 8B 2512 (batch)",
-      "pricing": {
-        "completion": "0.00000015",
-        "image": null,
-        "input_cache_read": "0.000000015",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000015",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 209715
-      }
-    },
     "mistralai/mistral-large": {
       "architecture": {
         "input_modalities": [
@@ -8698,61 +8591,6 @@
       "expiration_date": null,
       "id": "mistralai/mistral-large-2512",
       "name": "Mistral: Mistral Large 3 2512",
-      "pricing": {
-        "completion": "0.0000015",
-        "image": null,
-        "input_cache_read": "0.00000005",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000005",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 209715
-      }
-    },
-    "mistralai/mistral-large-2512:batch": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "file"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+file->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Mistral"
-      },
-      "canonical_slug": "mistralai/mistral-large-2512",
-      "context_length": 262144,
-      "created": 1764624472,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": 0.0645,
-        "top_p": null
-      },
-      "description": "Mistral Large 3 2512 is Mistral’s most capable model to date, featuring a sparse mixture-of-experts architecture with 41B active parameters (675B total), and released under the Apache 2.0 license.",
-      "expiration_date": null,
-      "id": "mistralai/mistral-large-2512:batch",
-      "name": "Mistral: Mistral Large 3 2512 (batch)",
       "pricing": {
         "completion": "0.0000015",
         "image": null,
@@ -9010,59 +8848,6 @@
         "max_completion_tokens": 104857
       }
     },
-    "mistralai/mistral-medium-3.1:batch": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "file"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+file->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Mistral"
-      },
-      "canonical_slug": "mistralai/mistral-medium-3.1",
-      "context_length": 131072,
-      "created": 1755095639,
-      "default_parameters": {
-        "temperature": 0.3
-      },
-      "description": "Mistral Medium 3.1 is an updated version of Mistral Medium 3, which is a high-performance enterprise-grade language model designed to deliver frontier-level capabilities at significantly reduced operational cost. It balances...",
-      "expiration_date": null,
-      "id": "mistralai/mistral-medium-3.1:batch",
-      "name": "Mistral: Mistral Medium 3.1 (batch)",
-      "pricing": {
-        "completion": "0.000002",
-        "image": null,
-        "input_cache_read": "0.00000004",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000004",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 104857
-      }
-    },
     "mistralai/mistral-nemo": {
       "architecture": {
         "input_modalities": [
@@ -9280,66 +9065,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 209715
-      }
-    },
-    "mistralai/mistral-small-2603:batch": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "instruct_type": null,
-        "modality": "text+image->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Mistral"
-      },
-      "canonical_slug": "mistralai/mistral-small-2603",
-      "context_length": 262144,
-      "created": 1773695685,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "Mistral Small 4 is the next major release in the Mistral Small family, unifying the capabilities of several flagship Mistral models into a single system. It combines strong reasoning from...",
-      "expiration_date": null,
-      "id": "mistralai/mistral-small-2603:batch",
-      "name": "Mistral: Mistral Small 4 (batch)",
-      "pricing": {
-        "completion": "0.0000006",
-        "image": null,
-        "input_cache_read": "0.000000015",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000015",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
         "top_p"
       ],
       "top_provider": {
