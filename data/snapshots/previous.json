@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T19:01:26.751964Z",
+  "generated_at": "2026-09-01T19:31:29.227611Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -625,7 +625,7 @@
       ],
       "top_provider": {
         "context_length": 1000000,
-        "is_moderated": false,
+        "is_moderated": true,
         "max_completion_tokens": 128000
       }
     },
