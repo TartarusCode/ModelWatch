@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T12:31:32.874085Z",
+  "generated_at": "2026-09-01T13:01:31.149971Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -1451,7 +1451,7 @@
       "context_length": 1000000,
       "created": 1784912546,
       "default_parameters": {},
-      "description": "Fast-mode variant of [Opus 5](/anthropic/claude-opus-5) - identical capabilities with higher output speed at 2x pricing relative to regular Opus 5.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode",
+      "description": "Fast-mode variant of [Opus 5](/anthropic/claude-opus-5) - identical capabilities with higher output speed at 2x pricing relative to regular Opus 5. Learn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode Note: As of September...",
       "expiration_date": null,
       "id": "anthropic/claude-opus-5-fast",
       "name": "Claude Opus 5 (Fast)",
