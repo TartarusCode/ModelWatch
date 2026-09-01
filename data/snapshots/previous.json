@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T08:01:39.088328Z",
+  "generated_at": "2026-09-01T08:31:20.588075Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6094,12 +6094,12 @@
       "id": "gryphe/mythomax-l2-13b",
       "name": "MythoMax 13B",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.00000006",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000035",
+        "prompt": "0.00000006",
         "request": null,
         "web_search": null
       },
@@ -6122,9 +6122,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 8192,
+        "context_length": 4096,
         "is_moderated": false,
-        "max_completion_tokens": 7372
+        "max_completion_tokens": 3686
       }
     },
     "ibm-granite/granite-4.0-h-micro": {
