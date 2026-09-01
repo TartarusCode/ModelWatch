@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T12:01:32.977333Z",
+  "generated_at": "2026-09-01T12:31:32.874085Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -1179,63 +1179,6 @@
         "max_completion_tokens": 128000
       }
     },
-    "anthropic/claude-opus-4.7-fast": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "file"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+file->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Claude"
-      },
-      "canonical_slug": "anthropic/claude-4.7-opus-fast-20260512",
-      "context_length": 1000000,
-      "created": 1778613011,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "Fast-mode variant of [Opus 4.7](/anthropic/claude-opus-4.7) - identical capabilities with higher output speed at premium 6x pricing.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode",
-      "expiration_date": null,
-      "id": "anthropic/claude-opus-4.7-fast",
-      "name": "Anthropic: Claude Opus 4.7 (Fast)",
-      "pricing": {
-        "completion": "0.00015",
-        "image": null,
-        "input_cache_read": "0.000003",
-        "input_cache_write": "0.0000375",
-        "internal_reasoning": null,
-        "prompt": "0.00003",
-        "request": null,
-        "web_search": "0.01"
-      },
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "tool_choice",
-        "tools",
-        "verbosity"
-      ],
-      "top_provider": {
-        "context_length": 1000000,
-        "is_moderated": true,
-        "max_completion_tokens": 128000
-      }
-    },
     "anthropic/claude-opus-4.7:batch": {
       "architecture": {
         "input_modalities": [
@@ -1355,15 +1298,8 @@
       "canonical_slug": "anthropic/claude-4.8-opus-fast-20260528",
       "context_length": 1000000,
       "created": 1779913703,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "Fast-mode variant of [Opus 4.8](/anthropic/claude-opus-4.8) - identical capabilities with higher output speed at 2x pricing relative to regular Opus 4.8.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode",
+      "default_parameters": {},
+      "description": "Fast-mode variant of [Opus 4.8](/anthropic/claude-opus-4.8) - identical capabilities with higher output speed at 2x pricing relative to regular Opus 4.8. Learn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode Note: As of September...",
       "expiration_date": null,
       "id": "anthropic/claude-opus-4.8-fast",
       "name": "Anthropic: Claude Opus 4.8 (Fast)",
