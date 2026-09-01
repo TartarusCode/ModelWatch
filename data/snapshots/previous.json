@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T05:03:14.249829Z",
+  "generated_at": "2026-09-01T05:33:18.188583Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -7097,12 +7097,12 @@
       "id": "meta-llama/llama-4-scout",
       "name": "Meta: Llama 4 Scout",
       "pricing": {
-        "completion": "0.00000034",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.000000055",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000011",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -7124,9 +7124,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 327680,
         "is_moderated": false,
-        "max_completion_tokens": 8192
+        "max_completion_tokens": 16384
       }
     },
     "meta-llama/llama-guard-4-12b": {
