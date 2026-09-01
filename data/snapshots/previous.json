@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T14:01:39.195341Z",
+  "generated_at": "2026-09-01T14:31:24.553420Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3135,12 +3135,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000015876",
+        "completion": "0.00000015568",
         "image": null,
-        "input_cache_read": "0.000000015876",
+        "input_cache_read": "0.000000015568",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000007938",
+        "prompt": "0.00000007784",
         "request": null,
         "web_search": null
       },
@@ -6191,6 +6191,54 @@
         "context_length": 128000,
         "is_moderated": false,
         "max_completion_tokens": 50000
+      }
+    },
+    "inception/mercury-2.5-preview": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "inception/mercury-2.5-preview-20260831",
+      "context_length": 260000,
+      "created": 1788209864,
+      "default_parameters": {},
+      "description": "Mercury 2.5 is the fastest reasoning LLM, and the latest diffusion LLM (dLLM) from Inception. Instead of generating tokens sequentially, Mercury 2.5 produces and refines multiple tokens in parallel, achieving...",
+      "expiration_date": null,
+      "id": "inception/mercury-2.5-preview",
+      "name": "Inception: Mercury 2.5 Preview",
+      "pricing": {
+        "completion": "0.00000015",
+        "image": null,
+        "input_cache_read": "0.000000004",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000004",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools"
+      ],
+      "top_provider": {
+        "context_length": 260000,
+        "is_moderated": false,
+        "max_completion_tokens": 65536
       }
     },
     "inclusionai/ling-3.0-flash": {
