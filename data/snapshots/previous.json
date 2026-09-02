@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T19:31:15.036726Z",
+  "generated_at": "2026-09-02T20:01:35.779652Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -7527,6 +7527,114 @@
       "expiration_date": null,
       "id": "meta/muse-spark-1.2-contributor",
       "name": "Meta: Muse Spark 1.2 Contributor",
+      "pricing": {
+        "completion": "0.0000002",
+        "image": null,
+        "input_cache_read": "0.000000002",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000001",
+        "request": null,
+        "web_search": "0.0025"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": true,
+        "max_completion_tokens": 943718
+      }
+    },
+    "meta/muse-spark-1.3": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file+audio+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "meta/muse-spark-1.3-20260902",
+      "context_length": 1048576,
+      "created": 1788378359,
+      "default_parameters": {},
+      "description": "Muse Spark 1.3 is a multimodal reasoning model from Meta for long-running agentic, multi-agent, and coding workflows. It is designed to keep track of information across extended tasks, work through...",
+      "expiration_date": null,
+      "id": "meta/muse-spark-1.3",
+      "name": "Meta: Muse Spark 1.3",
+      "pricing": {
+        "completion": "0.00000425",
+        "image": null,
+        "input_cache_read": "0.00000015",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000125",
+        "request": null,
+        "web_search": "0.0025"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": true,
+        "max_completion_tokens": 943718
+      }
+    },
+    "meta/muse-spark-1.3-contributor": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file+audio+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "meta/muse-spark-1.3-contributor-20260902",
+      "context_length": 1048576,
+      "created": 1788360486,
+      "default_parameters": {},
+      "description": "Muse Spark 1.3 Contributor is the cost-efficient contributor tier of Meta’s multimodal reasoning model for experimentation, learning, and early-stage agentic, multi-agent, and coding workflows. It is designed to track information...",
+      "expiration_date": null,
+      "id": "meta/muse-spark-1.3-contributor",
+      "name": "Meta: Muse Spark 1.3 Contributor",
       "pricing": {
         "completion": "0.0000002",
         "image": null,
