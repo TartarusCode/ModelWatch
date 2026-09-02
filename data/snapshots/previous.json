@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T00:01:27.236625Z",
+  "generated_at": "2026-09-02T00:31:13.075364Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -2774,12 +2774,12 @@
       "id": "deepseek/deepseek-chat-v3.1",
       "name": "DeepSeek: DeepSeek V3.1",
       "pricing": {
-        "completion": "0.00000165",
+        "completion": "0.00000095",
         "image": null,
-        "input_cache_read": "0.00000055",
+        "input_cache_read": "0.00000013",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000055",
+        "prompt": "0.00000025",
         "request": null,
         "web_search": null
       },
@@ -2805,9 +2805,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 161000,
+        "context_length": 163840,
         "is_moderated": false,
-        "max_completion_tokens": 144900
+        "max_completion_tokens": 32768
       }
     },
     "deepseek/deepseek-r1": {
@@ -3483,12 +3483,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000198",
+        "completion": "0.0000033462",
         "image": null,
-        "input_cache_read": "0.000000022",
+        "input_cache_read": "0.00000003718",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000066",
+        "prompt": "0.0000011154",
         "request": null,
         "web_search": null
       },
@@ -3515,7 +3515,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1024000,
         "is_moderated": false,
         "max_completion_tokens": 384000
       }
@@ -10391,12 +10391,12 @@
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
       "name": "NVIDIA: Nemotron 3 Ultra",
       "pricing": {
-        "completion": "0.0000022",
+        "completion": "0.000003125",
         "image": null,
-        "input_cache_read": "0.0000001",
+        "input_cache_read": "0.0000001875",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005",
+        "prompt": "0.000000625",
         "request": null,
         "web_search": null
       },
@@ -10421,9 +10421,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 256000,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 32768
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b:batch": {
@@ -20200,12 +20200,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -21466,7 +21466,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -21480,7 +21479,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -22167,12 +22165,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.00000374",
+        "completion": "0.000003036",
         "image": null,
-        "input_cache_read": "0.000000221",
+        "input_cache_read": "0.0000001932",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000119",
+        "prompt": "0.000000966",
         "request": null,
         "web_search": null
       },
@@ -22202,7 +22200,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-5.2:free": {
