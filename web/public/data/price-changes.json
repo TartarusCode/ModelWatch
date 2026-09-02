@@ -705,22 +705,6 @@
       "status": "active"
     },
     {
-      "delta_per_million_usd": "-0.198000",
-      "detected_at": "2026-08-26T17:35:29.814296Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.528000",
-      "field": "completion",
-      "model_id": "tencent/hy3",
-      "new_per_million_usd": "0.330000",
-      "old_per_million_usd": "0.528000",
-      "pct_change": -0.375,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "delta_per_million_usd": "-0.450000",
       "detected_at": "2026-08-27T02:09:04.041064Z",
       "direction": "cut",
@@ -6446,9 +6430,9 @@
       "pct_change": -0.375,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-02T18:01:20.202296Z",
+      "settled_per_million_usd": "0.330000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "-0.150000",
@@ -7331,7 +7315,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-02T17:31:15.442527Z",
+  "generated_at": "2026-09-02T18:01:32.725332Z",
   "recovered_changes": [],
   "settled_changes": [
     {
@@ -7412,6 +7396,22 @@
       "recovered_per_million_usd": null,
       "settled_at": "2026-09-02T16:01:22.801138Z",
       "settled_per_million_usd": "3.600000",
+      "status": "settled"
+    },
+    {
+      "delta_per_million_usd": "-0.198000",
+      "detected_at": "2026-08-26T17:35:29.814296Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.528000",
+      "field": "completion",
+      "model_id": "tencent/hy3",
+      "new_per_million_usd": "0.330000",
+      "old_per_million_usd": "0.528000",
+      "pct_change": -0.375,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-09-02T18:01:20.202296Z",
+      "settled_per_million_usd": "0.330000",
       "status": "settled"
     }
   ],
