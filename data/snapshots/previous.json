@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T15:01:23.098133Z",
+  "generated_at": "2026-09-02T15:31:24.209506Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3471,12 +3471,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000002071992",
+        "completion": "0.000002068512",
         "image": null,
-        "input_cache_read": "0.000000086333",
+        "input_cache_read": "0.000000086188",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000001035996",
+        "prompt": "0.000001034256",
         "request": null,
         "web_search": null
       },
@@ -5385,6 +5385,60 @@
         "structured_outputs",
         "tool_choice",
         "tools"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 65536
+      }
+    },
+    "google/gemini-3.8-flash": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file+audio+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Gemini"
+      },
+      "canonical_slug": "google/gemini-3.8-flash-20260902",
+      "context_length": 1048576,
+      "created": 1788362056,
+      "default_parameters": {},
+      "description": "Gemini 3.8 Flash is Google's most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows.",
+      "expiration_date": null,
+      "id": "google/gemini-3.8-flash",
+      "name": "Google: Gemini 3.8 Flash",
+      "pricing": {
+        "completion": "0.0000075",
+        "image": "0.0000015",
+        "input_cache_read": "0.00000015",
+        "input_cache_write": "0.0000000833333333333333",
+        "internal_reasoning": "0.0000075",
+        "prompt": "0.0000015",
+        "request": null,
+        "web_search": "0.014"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
       ],
       "top_provider": {
         "context_length": 1048576,
