@@ -6689,7 +6689,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-03T13:01:35.889029Z",
+  "generated_at": "2026-09-03T13:31:28.326538Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -9346,7 +9346,7 @@
     },
     "deepseek/deepseek-v4-flash": {
       "completion": {
-        "anchor": "0.177212000000",
+        "anchor": "0.17416000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -9357,7 +9357,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.0177212000000",
+        "anchor": "0.017416000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -9368,7 +9368,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.088606000000",
+        "anchor": "0.08708000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -20746,12 +20746,12 @@
         "anchor": "0.9000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.9000000",
+        "pending_builds": 1,
+        "pending_price": "0.7000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.05000000",
@@ -20768,12 +20768,12 @@
         "anchor": "0.1000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.1000000",
+        "pending_builds": 1,
+        "pending_price": "0.05000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "qwen/qwen3.6-flash": {
