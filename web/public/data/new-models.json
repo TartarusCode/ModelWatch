@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T05:32:00.595376Z",
+  "generated_at": "2026-09-03T06:01:24.604578Z",
   "models": [
     {
       "canonical_slug": "meta/muse-spark-1.3-20260902",
@@ -28,13 +28,6 @@
       "detected_at": "2026-09-02T15:31:12.392998Z",
       "model_id": "google/gemini-3.8-flash",
       "name": "Google: Gemini 3.8 Flash"
-    },
-    {
-      "canonical_slug": "anthropic/claude-fable-5.1-20260831",
-      "created": 1788285838,
-      "detected_at": "2026-09-02T06:01:03.970258Z",
-      "model_id": "anthropic/claude-fable-5.1:batch",
-      "name": "Anthropic: Claude Fable 5.1 (batch)"
     }
   ],
   "window_hours": 24
