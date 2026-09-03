@@ -625,6 +625,38 @@
       "status": "active"
     },
     {
+      "delta_per_million_usd": "0.250000",
+      "detected_at": "2026-09-03T13:01:23.706675Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.750000",
+      "field": "completion",
+      "model_id": "qwen/qwen2.5-vl-72b-instruct",
+      "new_per_million_usd": "1.000000",
+      "old_per_million_usd": "0.750000",
+      "pct_change": 0.3333333333333333,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "delta_per_million_usd": "0.550000",
+      "detected_at": "2026-09-03T13:01:23.706675Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.250000",
+      "field": "prompt",
+      "model_id": "qwen/qwen2.5-vl-72b-instruct",
+      "new_per_million_usd": "0.800000",
+      "old_per_million_usd": "0.250000",
+      "pct_change": 2.2,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
       "delta_per_million_usd": "0.670000",
       "detected_at": "2026-09-03T01:01:06.247987Z",
       "direction": "hike",
@@ -7537,9 +7569,41 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "delta_per_million_usd": "0.550000",
+      "detected_at": "2026-09-03T13:01:23.706675Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.250000",
+      "field": "prompt",
+      "model_id": "qwen/qwen2.5-vl-72b-instruct",
+      "new_per_million_usd": "0.800000",
+      "old_per_million_usd": "0.250000",
+      "pct_change": 2.2,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "delta_per_million_usd": "0.250000",
+      "detected_at": "2026-09-03T13:01:23.706675Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.750000",
+      "field": "completion",
+      "model_id": "qwen/qwen2.5-vl-72b-instruct",
+      "new_per_million_usd": "1.000000",
+      "old_per_million_usd": "0.750000",
+      "pct_change": 0.3333333333333333,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-09-03T12:31:34.697700Z",
+  "generated_at": "2026-09-03T13:01:35.889029Z",
   "recovered_changes": [],
   "settled_changes": [
     {
