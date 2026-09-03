@@ -833,6 +833,22 @@
       "status": "active"
     },
     {
+      "delta_per_million_usd": "0.450000",
+      "detected_at": "2026-09-03T18:01:50.380193Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "2.550000",
+      "field": "completion",
+      "model_id": "qwen/qwen3.8-27b",
+      "new_per_million_usd": "3.000000",
+      "old_per_million_usd": "2.550000",
+      "pct_change": 0.17647058823529413,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
       "delta_per_million_usd": "0.198000",
       "detected_at": "2026-09-03T01:01:06.247987Z",
       "direction": "hike",
@@ -7665,27 +7681,27 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
-    }
-  ],
-  "generated_at": "2026-09-03T17:31:29.806788Z",
-  "recovered_changes": [],
-  "settled_changes": [
+    },
     {
-      "delta_per_million_usd": "-0.198000",
-      "detected_at": "2026-08-26T17:35:29.814296Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.528000",
+      "delta_per_million_usd": "0.450000",
+      "detected_at": "2026-09-03T18:01:50.380193Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "2.550000",
       "field": "completion",
-      "model_id": "tencent/hy3",
-      "new_per_million_usd": "0.330000",
-      "old_per_million_usd": "0.528000",
-      "pct_change": -0.375,
+      "model_id": "qwen/qwen3.8-27b",
+      "new_per_million_usd": "3.000000",
+      "old_per_million_usd": "2.550000",
+      "pct_change": 0.17647058823529413,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": "2026-09-02T18:01:20.202296Z",
-      "settled_per_million_usd": "0.330000",
-      "status": "settled"
-    },
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    }
+  ],
+  "generated_at": "2026-09-03T18:02:14.467026Z",
+  "recovered_changes": [],
+  "settled_changes": [
     {
       "delta_per_million_usd": "-0.150000",
       "detected_at": "2026-08-26T18:03:05.024926Z",
