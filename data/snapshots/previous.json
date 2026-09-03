@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T00:31:30.192011Z",
+  "generated_at": "2026-09-03T01:01:21.868064Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -10688,68 +10688,6 @@
         "context_length": 256000,
         "is_moderated": false,
         "max_completion_tokens": 32768
-      }
-    },
-    "nvidia/nemotron-3-ultra-550b-a55b:batch": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-      "context_length": 512288,
-      "created": 1780551208,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": 1,
-        "top_k": null,
-        "top_p": 0.95
-      },
-      "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it...",
-      "expiration_date": null,
-      "id": "nvidia/nemotron-3-ultra-550b-a55b:batch",
-      "name": "NVIDIA: Nemotron 3 Ultra (batch)",
-      "pricing": {
-        "completion": "0.0000036",
-        "image": null,
-        "input_cache_read": "0.0000002",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000006",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "reasoning_effort",
-        "repetition_penalty",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 512288,
-        "is_moderated": false,
-        "max_completion_tokens": 461059
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b:free": {
