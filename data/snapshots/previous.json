@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T22:35:06.814055Z",
+  "generated_at": "2026-09-03T23:06:24.081039Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -9007,7 +9007,7 @@
         "tokenizer": "Mistral"
       },
       "canonical_slug": "mistralai/mistral-medium-3.5-20260430",
-      "context_length": 262144,
+      "context_length": 32768,
       "created": 1777570439,
       "default_parameters": {
         "frequency_penalty": null,
@@ -9048,9 +9048,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 32768,
         "is_moderated": false,
-        "max_completion_tokens": 209715
+        "max_completion_tokens": 26214
       }
     },
     "mistralai/mistral-medium-3.1": {
@@ -22178,7 +22178,7 @@
         "top_p": 0.95
       },
       "description": "As a 30B-class SOTA model, GLM-4.7-Flash offers a new option that balances performance and efficiency. It is further optimized for agentic coding use cases, strengthening coding capabilities, long-horizon task planning,...",
-      "expiration_date": null,
+      "expiration_date": "2026-09-10",
       "id": "z-ai/glm-4.7-flash",
       "name": "Z.ai: GLM 4.7 Flash",
       "pricing": {

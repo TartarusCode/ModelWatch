@@ -561,54 +561,6 @@
       "status": "active"
     },
     {
-      "delta_per_million_usd": "-1.400000",
-      "detected_at": "2026-08-27T23:01:28.370170Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "3.600000",
-      "field": "completion",
-      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
-      "new_per_million_usd": "2.200000",
-      "old_per_million_usd": "3.600000",
-      "pct_change": -0.3888888888888889,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
-      "delta_per_million_usd": "-0.100000",
-      "detected_at": "2026-08-27T23:01:28.370170Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.200000",
-      "field": "input_cache_read",
-      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
-      "new_per_million_usd": "0.100000",
-      "old_per_million_usd": "0.200000",
-      "pct_change": -0.5,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
-      "delta_per_million_usd": "-0.100000",
-      "detected_at": "2026-08-27T23:01:28.370170Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.600000",
-      "field": "prompt",
-      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
-      "new_per_million_usd": "0.500000",
-      "old_per_million_usd": "0.600000",
-      "pct_change": -0.16666666666666666,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "delta_per_million_usd": "0.050000",
       "detected_at": "2026-08-28T01:01:07.639556Z",
       "direction": "hike",
@@ -6718,9 +6670,9 @@
       "pct_change": -0.16666666666666666,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-03T23:06:09.575720Z",
+      "settled_per_million_usd": "0.600000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "-1.400000",
@@ -6734,9 +6686,9 @@
       "pct_change": -0.3888888888888889,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-03T23:06:09.575720Z",
+      "settled_per_million_usd": "2.400000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "-0.100000",
@@ -6750,9 +6702,9 @@
       "pct_change": -0.5,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-03T23:06:09.575720Z",
+      "settled_per_million_usd": "0.120000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "-0.462000",
@@ -7699,7 +7651,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-03T22:35:06.814055Z",
+  "generated_at": "2026-09-03T23:06:24.081039Z",
   "recovered_changes": [],
   "settled_changes": [
     {
@@ -7764,6 +7716,54 @@
       "recovered_per_million_usd": null,
       "settled_at": "2026-09-03T10:31:10.365166Z",
       "settled_per_million_usd": "0.900000",
+      "status": "settled"
+    },
+    {
+      "delta_per_million_usd": "-0.100000",
+      "detected_at": "2026-08-27T23:01:28.370170Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.600000",
+      "field": "prompt",
+      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "new_per_million_usd": "0.500000",
+      "old_per_million_usd": "0.600000",
+      "pct_change": -0.16666666666666666,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-09-03T23:06:09.575720Z",
+      "settled_per_million_usd": "0.600000",
+      "status": "settled"
+    },
+    {
+      "delta_per_million_usd": "-1.400000",
+      "detected_at": "2026-08-27T23:01:28.370170Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "3.600000",
+      "field": "completion",
+      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "new_per_million_usd": "2.200000",
+      "old_per_million_usd": "3.600000",
+      "pct_change": -0.3888888888888889,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-09-03T23:06:09.575720Z",
+      "settled_per_million_usd": "2.400000",
+      "status": "settled"
+    },
+    {
+      "delta_per_million_usd": "-0.100000",
+      "detected_at": "2026-08-27T23:01:28.370170Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.200000",
+      "field": "input_cache_read",
+      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "new_per_million_usd": "0.100000",
+      "old_per_million_usd": "0.200000",
+      "pct_change": -0.5,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-09-03T23:06:09.575720Z",
+      "settled_per_million_usd": "0.120000",
       "status": "settled"
     }
   ],
