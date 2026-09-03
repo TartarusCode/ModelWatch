@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T15:01:24.890727Z",
+  "generated_at": "2026-09-03T15:31:20.417613Z",
   "models": [
     {
       "canonical_slug": "meta/muse-spark-1.3-20260902",
@@ -21,13 +21,6 @@
       "detected_at": "2026-09-02T16:01:22.801138Z",
       "model_id": "google/gemini-3.8-flash:batch",
       "name": "Google: Gemini 3.8 Flash (batch)"
-    },
-    {
-      "canonical_slug": "google/gemini-3.8-flash-20260902",
-      "created": 1788362056,
-      "detected_at": "2026-09-02T15:31:12.392998Z",
-      "model_id": "google/gemini-3.8-flash",
-      "name": "Google: Gemini 3.8 Flash"
     }
   ],
   "window_hours": 24
