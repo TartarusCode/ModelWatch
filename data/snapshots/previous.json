@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T01:01:21.868064Z",
+  "generated_at": "2026-09-03T01:31:21.273608Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3411,12 +3411,12 @@
       "id": "deepseek/deepseek-v4-flash-vision-exp",
       "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
       "pricing": {
-        "completion": "0.00000066",
+        "completion": "0.00000132",
         "image": null,
-        "input_cache_read": "0.000000007",
+        "input_cache_read": "0.000000014",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000022",
+        "prompt": "0.00000044",
         "request": null,
         "web_search": null
       },
@@ -10655,12 +10655,12 @@
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
       "name": "NVIDIA: Nemotron 3 Ultra",
       "pricing": {
-        "completion": "0.000003125",
+        "completion": "0.0000024",
         "image": null,
-        "input_cache_read": "0.0000001875",
+        "input_cache_read": "0.00000012",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000625",
+        "prompt": "0.0000006",
         "request": null,
         "web_search": null
       },
@@ -10685,9 +10685,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 256000,
+        "context_length": 202800,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 182520
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b:free": {
