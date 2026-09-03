@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T16:31:13.350898Z",
+  "generated_at": "2026-09-03T17:01:22.756025Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6506,6 +6506,61 @@
         "context_length": 262144,
         "is_moderated": false,
         "max_completion_tokens": 32768
+      }
+    },
+    "inclusionai/ling-3.0-flash-fin": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "inclusionai/ling-3.0-flash-fin-20260827",
+      "context_length": 262144,
+      "created": 1787846290,
+      "default_parameters": {},
+      "description": "Ling 3.0 Flash Fin is a finance-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for real-world investment...",
+      "expiration_date": null,
+      "id": "inclusionai/ling-3.0-flash-fin",
+      "name": "Ling 3.0 Flash Fin",
+      "pricing": {
+        "completion": "0.00000018",
+        "image": null,
+        "input_cache_read": "0.000000012",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000006",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 235929
       }
     },
     "inclusionai/ling-3.0-flash-fin:free": {
