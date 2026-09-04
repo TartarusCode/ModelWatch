@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T20:31:30.605581Z",
+  "generated_at": "2026-09-04T21:01:20.632321Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -14874,7 +14874,7 @@
       "context_length": 1050000,
       "created": 1788552838,
       "default_parameters": {},
-      "description": "GPT-6 Astra is a frontier reasoning model from OpenAI, suited for complex reasoning, coding, and agentic workflows.",
+      "description": "GPT-6 Astra is OpenAI's flagship model for demanding end-to-end work. It is suited for advanced analysis, software engineering, deep research, scientific work, and document creation, with particular strengths in long-horizon...",
       "expiration_date": null,
       "id": "openai/gpt-6-astra",
       "name": "OpenAI: GPT-6 Astra",
@@ -14890,6 +14890,7 @@
       },
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "reasoning_effort",
@@ -14939,6 +14940,7 @@
       },
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "reasoning_effort",
