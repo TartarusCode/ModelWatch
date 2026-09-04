@@ -6735,9 +6735,57 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "delta_per_million_usd": "0.725000",
+      "detected_at": "2026-09-04T01:01:04.548649Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "2.400000",
+      "field": "completion",
+      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "new_per_million_usd": "3.125000",
+      "old_per_million_usd": "2.400000",
+      "pct_change": 0.3020833333333333,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "delta_per_million_usd": "0.067500",
+      "detected_at": "2026-09-04T01:01:04.548649Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.120000",
+      "field": "input_cache_read",
+      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "new_per_million_usd": "0.187500",
+      "old_per_million_usd": "0.120000",
+      "pct_change": 0.5625,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "delta_per_million_usd": "-0.100000",
+      "detected_at": "2026-09-04T01:01:04.548649Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.450000",
+      "field": "prompt",
+      "model_id": "undi95/remm-slerp-l2-13b",
+      "new_per_million_usd": "0.350000",
+      "old_per_million_usd": "0.450000",
+      "pct_change": -0.2222222222222222,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-09-04T00:33:37.498120Z",
+  "generated_at": "2026-09-04T01:01:16.247862Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -9637,7 +9685,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.022000000",
+        "anchor": "0.03718000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -15038,26 +15086,26 @@
     },
     "nvidia/nemotron-3-ultra-550b-a55b": {
       "completion": {
-        "anchor": "2.4000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "3.125000000",
+        "confirmed_at": "2026-09-04T01:01:04.548649Z",
+        "confirmed_price": "3.125000000",
         "direction": "hike",
         "episode_start_price": "2.4000000",
-        "pending_builds": 1,
-        "pending_price": "3.125000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.12000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.1875000000",
+        "confirmed_at": "2026-09-04T01:01:04.548649Z",
+        "confirmed_price": "0.1875000000",
         "direction": "hike",
         "episode_start_price": "0.12000000",
-        "pending_builds": 1,
-        "pending_price": "0.1875000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "prompt": {
         "anchor": "0.625000000",
@@ -22285,15 +22333,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.45000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.35000000",
+        "confirmed_at": "2026-09-04T01:01:04.548649Z",
+        "confirmed_price": "0.35000000",
         "direction": "cut",
         "episode_start_price": "0.45000000",
-        "pending_builds": 1,
-        "pending_price": "0.35000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "upstage/solar-pro-3": {
