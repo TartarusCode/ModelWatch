@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T00:04:27.578982Z",
+  "generated_at": "2026-09-04T00:33:37.498120Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -10713,12 +10713,12 @@
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
       "name": "NVIDIA: Nemotron 3 Ultra",
       "pricing": {
-        "completion": "0.0000024",
+        "completion": "0.000003125",
         "image": null,
-        "input_cache_read": "0.00000012",
+        "input_cache_read": "0.0000001875",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000006",
+        "prompt": "0.000000625",
         "request": null,
         "web_search": null
       },
@@ -10743,9 +10743,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 202800,
+        "context_length": 256000,
         "is_moderated": false,
-        "max_completion_tokens": 182520
+        "max_completion_tokens": 32768
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b:free": {
@@ -20520,12 +20520,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -21218,7 +21218,7 @@
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000045",
+        "prompt": "0.00000035",
         "request": null,
         "web_search": null
       },
@@ -21243,7 +21243,7 @@
       "top_provider": {
         "context_length": 6144,
         "is_moderated": false,
-        "max_completion_tokens": 4096
+        "max_completion_tokens": 5529
       }
     },
     "upstage/solar-pro-3": {
