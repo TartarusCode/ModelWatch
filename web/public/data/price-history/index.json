@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-04T20:31:30.605581Z",
-  "model_count": 527,
+  "generated_at": "2026-09-04T21:31:25.260257Z",
+  "model_count": 529,
   "models": [
     "ai21/jamba-large-1.7",
     "aion-labs/aion-1.0",
@@ -357,6 +357,8 @@
     "openai/gpt-5:batch",
     "openai/gpt-6-astra",
     "openai/gpt-6-astra-pro",
+    "openai/gpt-6-astra-pro:batch",
+    "openai/gpt-6-astra:batch",
     "openai/gpt-audio",
     "openai/gpt-audio-mini",
     "openai/gpt-oss-120b",
