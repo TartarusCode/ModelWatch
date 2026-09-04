@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T23:31:19.910685Z",
+  "generated_at": "2026-09-04T00:04:27.578982Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3235,12 +3235,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000015568",
+        "completion": "0.000000177212",
         "image": null,
-        "input_cache_read": "0.000000015568",
+        "input_cache_read": "0.0000000177212",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000007784",
+        "prompt": "0.000000088606",
         "request": null,
         "web_search": null
       },
@@ -3472,12 +3472,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000002044848",
+        "completion": "0.00000208452",
         "image": null,
-        "input_cache_read": "0.000000085202",
+        "input_cache_read": "0.000000086855",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000001022424",
+        "prompt": "0.00000104226",
         "request": null,
         "web_search": null
       },
@@ -10800,6 +10800,66 @@
         "context_length": 1000000,
         "is_moderated": false,
         "max_completion_tokens": 65536
+      }
+    },
+    "nvidia/nemotron-3.5-content-safety": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "nvidia/nemotron-3.5-content-safety-20260604",
+      "context_length": 131072,
+      "created": 1780581864,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "NVIDIA Nemotron 3.5 Content Safety is a compact 4B-parameter multimodal guardrail model from NVIDIA, fine-tuned from Google Gemma-3-4B. It moderates both inputs to and responses from LLMs and VLMs, accepting...",
+      "expiration_date": null,
+      "id": "nvidia/nemotron-3.5-content-safety",
+      "name": "NVIDIA: Nemotron 3.5 Content Safety",
+      "pricing": {
+        "completion": "0.0000002",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000002",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 131072,
+        "is_moderated": false,
+        "max_completion_tokens": 117964
       }
     },
     "nvidia/nemotron-3.5-content-safety:free": {
