@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T08:36:20.511993Z",
+  "generated_at": "2026-09-04T09:06:09.451564Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -21287,6 +21287,7 @@
         "frequency_penalty",
         "include_reasoning",
         "max_tokens",
+        "parallel_tool_calls",
         "presence_penalty",
         "reasoning",
         "response_format",
@@ -21336,6 +21337,7 @@
         "frequency_penalty",
         "include_reasoning",
         "max_tokens",
+        "parallel_tool_calls",
         "presence_penalty",
         "reasoning",
         "response_format",
