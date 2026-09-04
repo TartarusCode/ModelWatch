@@ -6785,7 +6785,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-04T06:06:35.796927Z",
+  "generated_at": "2026-09-04T06:35:11.700434Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -7269,6 +7269,63 @@
       },
       "prompt": {
         "anchor": "10.00000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "web_search": {
+        "anchor": "10000.00",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      }
+    },
+    "anthropic/claude-fable-5.1:batch": {
+      "completion": {
+        "anchor": "25.000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_read": {
+        "anchor": "0.125000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_write": {
+        "anchor": "6.25000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt": {
+        "anchor": "5.000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -9615,7 +9672,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.007000000",
+        "anchor": "0.014000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
