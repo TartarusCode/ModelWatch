@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T16:01:23.148317Z",
+  "generated_at": "2026-09-04T16:31:20.822355Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3472,12 +3472,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.0000020445",
+        "completion": "0.000002023968",
         "image": null,
-        "input_cache_read": "0.0000000851875",
+        "input_cache_read": "0.000000084332",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000102225",
+        "prompt": "0.000001011984",
         "request": null,
         "web_search": null
       },
@@ -6228,66 +6228,6 @@
         "max_completion_tokens": 117900
       }
     },
-    "ibm-granite/granite-4.1-8b": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "ibm-granite/granite-4.1-8b-20260429",
-      "context_length": 131072,
-      "created": 1777577071,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "Granite 4.1 8B is a dense, decoder-only 8-billion-parameter language model from IBM, part of the Granite 4.1 family. It supports a 131K-token context window and is designed for enterprise tasks...",
-      "expiration_date": null,
-      "id": "ibm-granite/granite-4.1-8b",
-      "name": "IBM: Granite 4.1 8B",
-      "pricing": {
-        "completion": "0.0000001",
-        "image": null,
-        "input_cache_read": "0.00000005",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000005",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 117964
-      }
-    },
     "ibm-granite/granite-4.2-8b": {
       "architecture": {
         "input_modalities": [
@@ -6936,7 +6876,6 @@
       "supported_parameters": [
         "frequency_penalty",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -6949,7 +6888,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -18543,12 +18481,12 @@
       "id": "qwen/qwen3.5-35b-a3b",
       "name": "Qwen: Qwen3.5-35B-A3B",
       "pricing": {
-        "completion": "0.00000125",
+        "completion": "0.00000075",
         "image": null,
-        "input_cache_read": "0.00000025",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000025",
+        "prompt": "0.00000008",
         "request": null,
         "web_search": null
       },
@@ -18576,7 +18514,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 16384
       }
     },
     "qwen/qwen3.5-397b-a17b": {
@@ -18978,12 +18916,12 @@
       "id": "qwen/qwen3.6-27b",
       "name": "Qwen: Qwen3.6 27B",
       "pricing": {
-        "completion": "0.0000036",
+        "completion": "0.000002",
         "image": null,
-        "input_cache_read": "0.00000012",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000006",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -19011,7 +18949,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 65536
       }
     },
     "qwen/qwen3.6-35b-a3b": {
@@ -20520,12 +20458,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.000000528",
+        "completion": "0.00000033",
         "image": null,
-        "input_cache_read": "0.000000033",
+        "input_cache_read": "0.000000020625",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000132",
+        "prompt": "0.0000000825",
         "request": null,
         "web_search": null
       },
