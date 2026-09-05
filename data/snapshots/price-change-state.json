@@ -6874,11 +6874,11 @@
       "new_per_million_usd": "0.080000",
       "old_per_million_usd": "0.250000",
       "pct_change": -0.68,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-09-05T19:01:13.625964Z",
+      "recovered_per_million_usd": "0.312500",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     },
     {
       "delta_per_million_usd": "-0.500000",
@@ -6911,9 +6911,25 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "delta_per_million_usd": "-0.093750",
+      "detected_at": "2026-09-05T19:01:13.625964Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.250000",
+      "field": "input_cache_read",
+      "model_id": "qwen/qwen3.5-35b-a3b",
+      "new_per_million_usd": "0.156250",
+      "old_per_million_usd": "0.250000",
+      "pct_change": -0.375,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-09-05T18:31:19.866321Z",
+  "generated_at": "2026-09-05T19:01:23.274598Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -21176,26 +21192,26 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.25000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
-        "direction": "cut",
-        "episode_start_price": "0.25000000",
-        "pending_builds": 1,
-        "pending_price": "0.15625000000",
-        "recovery_builds": 0,
-        "status": "pending"
-      },
-      "prompt": {
-        "anchor": "0.08000000",
-        "confirmed_at": "2026-09-04T17:01:14.165998Z",
-        "confirmed_price": "0.08000000",
+        "anchor": "0.15625000000",
+        "confirmed_at": "2026-09-05T19:01:13.625964Z",
+        "confirmed_price": "0.15625000000",
         "direction": "cut",
         "episode_start_price": "0.25000000",
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
+        "recovery_builds": 0,
         "status": "confirmed"
+      },
+      "prompt": {
+        "anchor": "0.3125000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
       }
     },
     "qwen/qwen3.5-397b-a17b": {
