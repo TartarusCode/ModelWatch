@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T00:01:13.351653Z",
+  "generated_at": "2026-09-05T00:31:13.392741Z",
   "models": [
     {
       "canonical_slug": "openai/gpt-6-astra-pro-20260903",
@@ -42,13 +42,6 @@
       "detected_at": "2026-09-04T01:34:05.174028Z",
       "model_id": "x-ai/grok-4.3:batch",
       "name": "SpaceXAI: Grok 4.3 (batch)"
-    },
-    {
-      "canonical_slug": "nvidia/nemotron-3.5-content-safety-20260604",
-      "created": 1780581864,
-      "detected_at": "2026-09-04T00:04:14.761274Z",
-      "model_id": "nvidia/nemotron-3.5-content-safety",
-      "name": "NVIDIA: Nemotron 3.5 Content Safety"
     }
   ],
   "window_hours": 24
