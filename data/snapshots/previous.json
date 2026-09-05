@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T04:31:10.541532Z",
+  "generated_at": "2026-09-05T05:01:21.271085Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -19857,7 +19857,7 @@
         "max_completion_tokens": 131072
       }
     },
-    "qwen/qwen3.8-max": {
+    "qwen/qwen3.8-max-0902": {
       "architecture": {
         "input_modalities": [
           "text",
@@ -19871,14 +19871,14 @@
         ],
         "tokenizer": "Qwen"
       },
-      "canonical_slug": "qwen/qwen3.8-max-20260803",
+      "canonical_slug": "qwen/qwen3.8-max-20260902",
       "context_length": 1000000,
-      "created": 1785731612,
+      "created": 1788469704,
       "default_parameters": {},
-      "description": "Qwen3.8 Max (0803) is the August 3, 2026 checkpoint of Qwen3.8 Max, the flagship model in Alibaba's Qwen3.8 series and the general-availability successor to the Qwen3.8 Max Preview. It is...",
+      "description": "Qwen3.8 Max 0902 is an updated snapshot of Qwen3.8 Max from Alibaba's Qwen team. It is a 2.4-trillion-parameter mixture-of-experts model that accepts text, image, and video input and returns text,...",
       "expiration_date": null,
-      "id": "qwen/qwen3.8-max",
-      "name": "Qwen: Qwen3.8 Max (0803)",
+      "id": "qwen/qwen3.8-max-0902",
+      "name": "Qwen: Qwen3.8 Max (0902)",
       "pricing": {
         "completion": "0.000006",
         "image": null,
