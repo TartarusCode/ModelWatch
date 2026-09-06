@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T18:01:13.606494Z",
+  "generated_at": "2026-09-06T18:31:17.354592Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3235,12 +3235,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000016044",
+        "completion": "0.00000015988",
         "image": null,
-        "input_cache_read": "0.000000016044",
+        "input_cache_read": "0.000000015988",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008022",
+        "prompt": "0.00000007994",
         "request": null,
         "web_search": null
       },
@@ -3472,12 +3472,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001314396",
+        "completion": "0.000001294212",
         "image": null,
-        "input_cache_read": "0.0000000547665",
+        "input_cache_read": "0.0000000539255",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000657198",
+        "prompt": "0.000000647106",
         "request": null,
         "web_search": null
       },
@@ -18798,12 +18798,12 @@
       "id": "qwen/qwen3.5-397b-a17b",
       "name": "Qwen: Qwen3.5 397B A17B",
       "pricing": {
-        "completion": "0.0000035",
+        "completion": "0.00000234",
         "image": null,
-        "input_cache_read": "0.000000225",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000055",
+        "prompt": "0.00000039",
         "request": null,
         "web_search": null
       },
@@ -18831,7 +18831,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 65536
       }
     },
     "qwen/qwen3.5-9b": {
