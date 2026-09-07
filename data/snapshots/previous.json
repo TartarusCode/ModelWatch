@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T20:01:27.927100Z",
+  "generated_at": "2026-09-07T20:31:30.261890Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -2769,12 +2769,12 @@
       "id": "deepseek/deepseek-chat-v3-0324",
       "name": "DeepSeek: DeepSeek V3 0324",
       "pricing": {
-        "completion": "0.000001",
+        "completion": "0.00000114",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000011",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000025",
+        "prompt": "0.00000029",
         "request": null,
         "web_search": null
       },
