@@ -34,7 +34,7 @@ describe("pricing", () => {
     expect(formatPerMillion("0.01", "web_search")).toBe("$0.010/search");
     expect(formatPerMillionUsd(14000, "web_search")).toBe("$0.014/search");
     expect(formatSignedPerMillionUsd(-4000, "web_search")).toBe(
-      "−$0.004/search",
+      "−$0.0040/search",
     );
   });
 
