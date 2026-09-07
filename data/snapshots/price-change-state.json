@@ -6156,9 +6156,9 @@
       "pct_change": 1.0,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-07T02:01:08.083182Z",
+      "settled_per_million_usd": "0.440000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "0.660000",
@@ -6172,9 +6172,9 @@
       "pct_change": 1.0,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-07T02:01:08.083182Z",
+      "settled_per_million_usd": "1.320000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "-0.500000",
@@ -6993,7 +6993,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-07T01:31:20.129062Z",
+  "generated_at": "2026-09-07T02:01:22.477651Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -9870,14 +9870,14 @@
     "deepseek/deepseek-v4-flash-vision-exp": {
       "completion": {
         "anchor": "1.32000000",
-        "confirmed_at": "2026-08-31T02:01:00.953116Z",
-        "confirmed_price": "1.32000000",
-        "direction": "hike",
-        "episode_start_price": "0.66000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.014000000",
@@ -9892,14 +9892,14 @@
       },
       "prompt": {
         "anchor": "0.44000000",
-        "confirmed_at": "2026-08-31T02:01:00.953116Z",
-        "confirmed_price": "0.44000000",
-        "direction": "hike",
-        "episode_start_price": "0.22000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "deepseek/deepseek-v4-pro": {
