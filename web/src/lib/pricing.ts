@@ -26,17 +26,39 @@ export function perMillionFromTokenString(perToken: string): number | null {
   return null;
 }
 
-function formatPerMillionValue(perMillion: number): string {
-  if (perMillion < 0.01) {
-    return `$${perMillion.toFixed(4)}/M`;
+/** Above this $/M, web_search is shown as $/search (catalog unit). */
+export const WEB_SEARCH_PER_SEARCH_THRESHOLD_PER_MILLION = 1;
+
+function formatUsdAmount(amount: number): string {
+  if (amount < 0.01) {
+    return `$${amount.toFixed(4)}`;
   }
-  if (perMillion < 1) {
-    return `$${perMillion.toFixed(3)}/M`;
+  if (amount < 1) {
+    return `$${amount.toFixed(3)}`;
   }
-  return `$${perMillion.toFixed(2)}/M`;
+  return `$${amount.toFixed(2)}`;
 }
 
-export function formatPerMillion(perToken: string): string {
+function formatPerMillionValue(perMillion: number): string {
+  return `${formatUsdAmount(perMillion)}/M`;
+}
+
+function formatPerSearchValue(perSearch: number): string {
+  return `${formatUsdAmount(perSearch)}/search`;
+}
+
+export function usesWebSearchPerSearchDisplay(perMillion: number): boolean {
+  return perMillion >= WEB_SEARCH_PER_SEARCH_THRESHOLD_PER_MILLION;
+}
+
+function formatPriceValue(perMillion: number, field?: string): string {
+  if (field === "web_search" && usesWebSearchPerSearchDisplay(perMillion)) {
+    return formatPerSearchValue(perMillion / 1_000_000);
+  }
+  return formatPerMillionValue(perMillion);
+}
+
+export function formatPerMillion(perToken: string, field?: string): string {
   const parsed = parseTokenPrice(perToken);
   if (parsed.kind === "free") {
     return "Free";
@@ -44,11 +66,12 @@ export function formatPerMillion(perToken: string): string {
   if (parsed.kind === "variable") {
     return "Varies";
   }
-  return formatPerMillionValue(parsed.perMillion);
+  return formatPriceValue(parsed.perMillion, field);
 }
 
 export function formatPerMillionUsd(
   value: string | number | null | undefined,
+  field?: string,
 ): string {
   const num =
     typeof value === "number" ? value : Number.parseFloat(String(value ?? ""));
@@ -58,7 +81,7 @@ export function formatPerMillionUsd(
   if (num === 0) {
     return "Free";
   }
-  return formatPerMillionValue(num);
+  return formatPriceValue(num, field);
 }
 
 export function compareTokenPrices(a: string, b: string): number {
@@ -93,13 +116,14 @@ export function formatSignedPct(pct: number): string {
 
 export function formatSignedPerMillionUsd(
   value: string | number | null | undefined,
+  field?: string,
 ): string {
   const num =
     typeof value === "number" ? value : Number.parseFloat(String(value ?? ""));
   if (!Number.isFinite(num)) {
     return "Varies";
   }
-  const formatted = formatPerMillionUsd(Math.abs(num));
+  const formatted = formatPerMillionUsd(Math.abs(num), field);
   if (num > 0) {
     return `+${formatted}`;
   }

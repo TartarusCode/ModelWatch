@@ -269,7 +269,7 @@ export function PriceHistoryChart({ points, fields }: PriceHistoryChartProps) {
                       />
                       <span>{s.label}</span>
                       <span className="tabular-nums">
-                        {formatHistoryUsd(String(value))}/M
+                        {formatHistoryUsd(String(value), s.key)}
                       </span>
                     </div>
                   );

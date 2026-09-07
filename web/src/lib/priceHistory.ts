@@ -1,5 +1,5 @@
 import type { PriceChangeEventRecord, PriceHistoryOutput, PriceHistoryPoint } from "../types";
-import { pricingFieldLabel } from "./pricing";
+import { formatPerMillionUsd, pricingFieldLabel } from "./pricing";
 
 export const PRICE_HISTORY_FIELDS = [
   "prompt",
@@ -89,7 +89,10 @@ export function eventsForModel(
     );
 }
 
-export function formatHistoryUsd(value: string | null | undefined): string {
+export function formatHistoryUsd(
+  value: string | null | undefined,
+  field?: string,
+): string {
   if (value === null || value === undefined) {
     return "—";
   }
@@ -97,11 +100,5 @@ export function formatHistoryUsd(value: string | null | undefined): string {
   if (Number.isNaN(num) || num === 0) {
     return "Free";
   }
-  if (num < 0.01) {
-    return `$${num.toFixed(4)}`;
-  }
-  if (num < 1) {
-    return `$${num.toFixed(3)}`;
-  }
-  return `$${num.toFixed(2)}`;
+  return formatPerMillionUsd(num, field);
 }

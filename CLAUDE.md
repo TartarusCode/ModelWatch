@@ -67,6 +67,7 @@ Implemented in `modelwatch/new_models.py`:
 - OpenRouter uses per-token price `-1` for routers/variable pricing (e.g. `openrouter/auto`). Treat as "Varies", never multiply by 1M.
 - Price history in `web/public/data/price-history/` — per-model JSON under `models/` (**Git LFS**); `index.json` is small and not LFS. Append on price change only; **24h heartbeat** when unchanged (keeps MA window). Up to 500 points per model. UI lazy-loads one model file on the detail page. Build job CI checkout uses `lfs: true`; test-and-lint does not.
 - Detail page **Free tier** badge (`web/src/lib/pricing.ts` `isFreeTierModel`) is display-only — uses current pricing, not history; Python `is_free_tier_model` is authoritative for the build pipeline.
+- **Web search display:** OpenRouter stores `web_search` in the same per-unit string as tokens; ×1M yields useless figures (e.g. `$14000/M`). UI shows `$/search` when `web_search` ≥ `$1/M` (`WEB_SEARCH_PER_SEARCH_THRESHOLD_PER_MILLION` in `web/src/lib/pricing.ts`). Storage/history remain per-million.
 - First build has no price history → no price changes until enough history points accumulate (≥3 within 7 days).
 - Most models return empty benchmark payloads; UI must handle `empty` status.
 - **Latest aliases** (`~provider/model-latest` and `*/gpt-chat-latest`) are excluded at build time — they duplicate versioned models and skew price/benchmark stats. Historical alias rows are stripped by `uv run python -m modelwatch.data_repair`; drop/new-model windows filter them at read time.

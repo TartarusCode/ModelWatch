@@ -88,12 +88,15 @@ function ChangeTable({
               </td>
               <td>
                 <span className="price-cell price-cell--muted">
-                  {formatPerMillionUsd(change.episode_start_per_million_usd)}
+                  {formatPerMillionUsd(
+                    change.episode_start_per_million_usd,
+                    change.field,
+                  )}
                 </span>
               </td>
               <td>
                 <span className="price-cell">
-                  {formatPerMillionUsd(change.new_per_million_usd)}
+                  {formatPerMillionUsd(change.new_per_million_usd, change.field)}
                 </span>
               </td>
               <td>
@@ -109,7 +112,10 @@ function ChangeTable({
                     change.direction === "cut" ? " price-cell--free" : ""
                   }`}
                 >
-                  {formatSignedPerMillionUsd(change.delta_per_million_usd)}
+                  {formatSignedPerMillionUsd(
+                    change.delta_per_million_usd,
+                    change.field,
+                  )}
                 </span>
               </td>
               {showStatus ? (
@@ -222,17 +228,26 @@ export function ChangesPage({ priceChanges, enriched }: ChangesPageProps) {
             <span>
               {pricingFieldLabel(topChange.field)}:{" "}
               <s>
-                {formatPerMillionUsd(topChange.episode_start_per_million_usd)}
+                {formatPerMillionUsd(
+                  topChange.episode_start_per_million_usd,
+                  topChange.field,
+                )}
               </s>
             </span>
             <span className="highlight-card__arrow">→</span>
             <span className="highlight-card__new">
-              {formatPerMillionUsd(topChange.new_per_million_usd)}
+              {formatPerMillionUsd(
+                topChange.new_per_million_usd,
+                topChange.field,
+              )}
             </span>
             <span
               className={`highlight-card__delta highlight-card__delta--${topChange.direction}`}
             >
-              {formatSignedPerMillionUsd(topChange.delta_per_million_usd)}
+              {formatSignedPerMillionUsd(
+                topChange.delta_per_million_usd,
+                topChange.field,
+              )}
             </span>
           </div>
         </div>

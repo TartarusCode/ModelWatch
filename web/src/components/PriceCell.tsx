@@ -2,9 +2,10 @@ import { formatPerMillion, parseTokenPrice } from "../lib/pricing";
 
 interface PriceCellProps {
   perToken: string;
+  field?: string;
 }
 
-export function PriceCell({ perToken }: PriceCellProps) {
+export function PriceCell({ perToken, field }: PriceCellProps) {
   const parsed = parseTokenPrice(perToken);
   const className =
     parsed.kind === "free"
@@ -12,5 +13,7 @@ export function PriceCell({ perToken }: PriceCellProps) {
       : parsed.kind === "variable"
         ? "price-cell price-cell--varies"
         : "price-cell";
-  return <span className={className}>{formatPerMillion(perToken)}</span>;
+  return (
+    <span className={className}>{formatPerMillion(perToken, field)}</span>
+  );
 }

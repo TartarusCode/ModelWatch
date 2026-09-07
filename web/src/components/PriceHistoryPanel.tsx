@@ -54,7 +54,10 @@ export function PriceHistoryPanel({
   return (
     <section className="card card--wide">
       <h2 className="card__title">Price history</h2>
-      <p className="card__subtitle">USD per 1M tokens · recorded on each build</p>
+      <p className="card__subtitle">
+        USD per 1M tokens · web search as $/search when ≥ $1/M · recorded on each
+        build
+      </p>
 
       {chartPoints.length > 0 && historyFields.length > 0 ? (
         <PriceHistoryChart points={chartPoints} fields={historyFields} />
@@ -85,7 +88,7 @@ export function PriceHistoryPanel({
                   {historyFields.map((field) => (
                     <td key={field}>
                       <span className="price-cell">
-                        {formatHistoryUsd(point[historyPerMillionKey(field)])}
+                        {formatHistoryUsd(point[historyPerMillionKey(field)], field)}
                       </span>
                     </td>
                   ))}
@@ -133,10 +136,16 @@ export function PriceHistoryPanel({
                       </span>
                     </td>
                     <td className="price-cell price-cell--muted">
-                      {formatPerMillionUsd(episode.episode_start_per_million_usd)}
+                      {formatPerMillionUsd(
+                        episode.episode_start_per_million_usd,
+                        episode.field,
+                      )}
                     </td>
                     <td className="price-cell">
-                      {formatPerMillionUsd(episode.new_per_million_usd)}
+                      {formatPerMillionUsd(
+                        episode.new_per_million_usd,
+                        episode.field,
+                      )}
                     </td>
                     <td>
                       <span
@@ -150,14 +159,14 @@ export function PriceHistoryPanel({
                         <span className="status-pill status-pill--warn">
                           Recovered
                           {episode.recovered_per_million_usd
-                            ? ` → ${formatPerMillionUsd(episode.recovered_per_million_usd)}`
+                            ? ` → ${formatPerMillionUsd(episode.recovered_per_million_usd, episode.field)}`
                             : ""}
                         </span>
                       ) : episode.status === "settled" ? (
                         <span className="status-pill status-pill--muted">
                           Settled
                           {episode.settled_per_million_usd
-                            ? ` @ ${formatPerMillionUsd(episode.settled_per_million_usd)}`
+                            ? ` @ ${formatPerMillionUsd(episode.settled_per_million_usd, episode.field)}`
                             : ""}
                         </span>
                       ) : (

@@ -153,12 +153,14 @@ export function ModelDetailPage({
       <div className="detail-grid">
         <section className="card">
           <h2 className="card__title">Current pricing</h2>
-          <p className="card__subtitle">USD per 1M tokens</p>
+          <p className="card__subtitle">
+            USD per 1M tokens · web search as $/search when ≥ $1/M
+          </p>
           <div className="kv-list">
             {pricingEntries(model.pricing).map(([field, value]) => (
               <div className="kv-row" key={field}>
                 <span>{pricingFieldLabel(field)}</span>
-                <PriceCell perToken={value} />
+                <PriceCell perToken={value} field={field} />
               </div>
             ))}
           </div>
