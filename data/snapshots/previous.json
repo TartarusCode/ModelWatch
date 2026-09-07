@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T12:01:41.557783Z",
+  "generated_at": "2026-09-07T12:31:11.217081Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -8998,7 +8998,7 @@
         "tokenizer": "Mistral"
       },
       "canonical_slug": "mistralai/mistral-medium-3.5-20260430",
-      "context_length": 32768,
+      "context_length": 262144,
       "created": 1777570439,
       "default_parameters": {
         "frequency_penalty": null,
@@ -9039,9 +9039,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 32768,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 26214
+        "max_completion_tokens": 209715
       }
     },
     "mistralai/mistral-medium-3.1": {
