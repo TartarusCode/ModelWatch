@@ -1,22 +1,6 @@
 {
   "active_changes": [
     {
-      "delta_per_million_usd": "-0.500000",
-      "detected_at": "2026-09-01T03:30:58.163982Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "3.000000",
-      "field": "prompt",
-      "model_id": "anthracite-org/magnum-v4-72b",
-      "new_per_million_usd": "2.500000",
-      "old_per_million_usd": "3.000000",
-      "pct_change": -0.16666666666666666,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "delta_per_million_usd": "-0.138700",
       "detected_at": "2026-09-03T11:01:09.452653Z",
       "direction": "cut",
@@ -250,22 +234,6 @@
       "new_per_million_usd": "0.375000",
       "old_per_million_usd": "0.187500",
       "pct_change": 1.0,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
-      "delta_per_million_usd": "-0.100000",
-      "detected_at": "2026-09-01T03:30:58.163982Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.500000",
-      "field": "prompt",
-      "model_id": "mancer/weaver",
-      "new_per_million_usd": "0.400000",
-      "old_per_million_usd": "0.500000",
-      "pct_change": -0.2,
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "settled_at": null,
@@ -7038,9 +7006,9 @@
       "pct_change": -0.16666666666666666,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-08T03:31:04.502322Z",
+      "settled_per_million_usd": "2.500000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "-0.100000",
@@ -7054,9 +7022,9 @@
       "pct_change": -0.2,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-08T03:31:04.502322Z",
+      "settled_per_million_usd": "0.400000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "-0.224000",
@@ -7795,7 +7763,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-08T03:01:22.108894Z",
+  "generated_at": "2026-09-08T03:31:13.422332Z",
   "recovered_changes": [],
   "settled_changes": [
     {
@@ -7924,6 +7892,38 @@
       "recovered_per_million_usd": null,
       "settled_at": "2026-09-08T01:01:10.332882Z",
       "settled_per_million_usd": "0.060000",
+      "status": "settled"
+    },
+    {
+      "delta_per_million_usd": "-0.500000",
+      "detected_at": "2026-09-01T03:30:58.163982Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "3.000000",
+      "field": "prompt",
+      "model_id": "anthracite-org/magnum-v4-72b",
+      "new_per_million_usd": "2.500000",
+      "old_per_million_usd": "3.000000",
+      "pct_change": -0.16666666666666666,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-09-08T03:31:04.502322Z",
+      "settled_per_million_usd": "2.500000",
+      "status": "settled"
+    },
+    {
+      "delta_per_million_usd": "-0.100000",
+      "detected_at": "2026-09-01T03:30:58.163982Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.500000",
+      "field": "prompt",
+      "model_id": "mancer/weaver",
+      "new_per_million_usd": "0.400000",
+      "old_per_million_usd": "0.500000",
+      "pct_change": -0.2,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-09-08T03:31:04.502322Z",
+      "settled_per_million_usd": "0.400000",
       "status": "settled"
     }
   ],
