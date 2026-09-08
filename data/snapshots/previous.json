@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T18:31:25.942160Z",
+  "generated_at": "2026-09-08T19:01:24.874788Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3531,12 +3531,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001906344",
+        "completion": "0.000001899384",
         "image": null,
-        "input_cache_read": "0.000000079431",
+        "input_cache_read": "0.000000079141",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000953172",
+        "prompt": "0.000000949692",
         "request": null,
         "web_search": null
       },
@@ -6405,7 +6405,7 @@
         "max_completion_tokens": 50000
       }
     },
-    "inception/mercury-2.5-preview": {
+    "inception/mercury-2.5": {
       "architecture": {
         "input_modalities": [
           "text"
@@ -6417,14 +6417,14 @@
         ],
         "tokenizer": "Other"
       },
-      "canonical_slug": "inception/mercury-2.5-preview-20260831",
+      "canonical_slug": "inception/mercury-2.5-20260908",
       "context_length": 260000,
-      "created": 1788209864,
+      "created": 1788892137,
       "default_parameters": {},
       "description": "Mercury 2.5 is the fastest reasoning LLM, and the latest diffusion LLM (dLLM) from Inception. Instead of generating tokens sequentially, Mercury 2.5 produces and refines multiple tokens in parallel, achieving...",
       "expiration_date": null,
-      "id": "inception/mercury-2.5-preview",
-      "name": "Inception: Mercury 2.5 Preview",
+      "id": "inception/mercury-2.5",
+      "name": "Inception: Mercury 2.5",
       "pricing": {
         "completion": "0.00000075",
         "image": null,
@@ -10076,6 +10076,117 @@
         "context_length": 262144,
         "is_moderated": false,
         "max_completion_tokens": 131072
+      }
+    },
+    "nex-agi/nex-n2.5-mini:free": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen3"
+      },
+      "canonical_slug": "nex-agi/nex-n2.5-mini-20260908",
+      "context_length": 262144,
+      "created": 1788890061,
+      "default_parameters": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.95
+      },
+      "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
+      "expiration_date": null,
+      "id": "nex-agi/nex-n2.5-mini:free",
+      "name": "Nex AGI: Nex-N2.5-Mini (free)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 235929
+      }
+    },
+    "nex-agi/nex-n2.5-pro:free": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen3"
+      },
+      "canonical_slug": "nex-agi/nex-n2.5-pro-20260907",
+      "context_length": 262144,
+      "created": 1788890050,
+      "default_parameters": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.95
+      },
+      "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
+      "expiration_date": null,
+      "id": "nex-agi/nex-n2.5-pro:free",
+      "name": "Nex AGI: Nex-N2.5-Pro (free)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 235929
       }
     },
     "nousresearch/hermes-3-llama-3.1-405b": {
