@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T17:01:31.958996Z",
+  "generated_at": "2026-09-08T17:31:09.293264Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3235,12 +3235,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000017416",
+        "completion": "0.00000017108",
         "image": null,
-        "input_cache_read": "0.000000017416",
+        "input_cache_read": "0.000000017108",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008708",
+        "prompt": "0.00000008554",
         "request": null,
         "web_search": null
       },
@@ -3531,12 +3531,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.00000191052",
+        "completion": "0.000001906344",
         "image": null,
-        "input_cache_read": "0.000000079605",
+        "input_cache_read": "0.000000079431",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000095526",
+        "prompt": "0.000000953172",
         "request": null,
         "web_search": null
       },
@@ -7471,12 +7471,12 @@
       "id": "meta/muse-glimmer-30b:batch",
       "name": "Meta: Muse Glimmer 30B (batch)",
       "pricing": {
-        "completion": "0.0000015",
+        "completion": "0.00000075",
         "image": null,
-        "input_cache_read": "0.00000004",
+        "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000035",
+        "prompt": "0.000000175",
         "request": null,
         "web_search": null
       },
@@ -7484,6 +7484,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -7497,6 +7498,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -22760,16 +22762,16 @@
         "top_p": 0.95
       },
       "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while...",
-      "expiration_date": "2098-12-31",
+      "expiration_date": null,
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.00000025",
+        "completion": "0.0000002375",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.00000001425",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.00000007125",
         "request": null,
         "web_search": null
       },
@@ -22816,7 +22818,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-5.3-flash-20260826",
-      "context_length": 1048575,
+      "context_length": 1048576,
       "created": 1787752741,
       "default_parameters": {
         "temperature": 1,
@@ -22827,12 +22829,12 @@
       "id": "z-ai/glm-5.3-flash:batch",
       "name": "Z.ai: GLM 5.3 Flash (batch)",
       "pricing": {
-        "completion": "0.0000005",
+        "completion": "0.00000025",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.000000075",
         "request": null,
         "web_search": null
       },
@@ -22858,9 +22860,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048575,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943717
+        "max_completion_tokens": 943718
       }
     },
     "z-ai/glm-5.3:batch": {
