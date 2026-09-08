@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T19:01:24.874788Z",
+  "generated_at": "2026-09-08T19:31:25.457244Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3235,12 +3235,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000017108",
+        "completion": "0.000000168",
         "image": null,
-        "input_cache_read": "0.000000017108",
+        "input_cache_read": "0.0000000168",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008554",
+        "prompt": "0.000000084",
         "request": null,
         "web_search": null
       },
@@ -3531,12 +3531,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001899384",
+        "completion": "0.000001896252",
         "image": null,
-        "input_cache_read": "0.000000079141",
+        "input_cache_read": "0.0000000790105",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000949692",
+        "prompt": "0.000000948126",
         "request": null,
         "web_search": null
       },
@@ -6426,12 +6426,12 @@
       "id": "inception/mercury-2.5",
       "name": "Inception: Mercury 2.5",
       "pricing": {
-        "completion": "0.00000075",
+        "completion": "0.00000015",
         "image": null,
-        "input_cache_read": "0.00000002",
+        "input_cache_read": "0.000000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000002",
+        "prompt": "0.00000004",
         "request": null,
         "web_search": null
       },
@@ -7952,7 +7952,7 @@
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000055",
+        "prompt": "0.0000004",
         "request": null,
         "web_search": null
       },
@@ -9624,7 +9624,7 @@
       "pricing": {
         "completion": "0.0000025",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000015",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000006",
@@ -9653,7 +9653,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 100352
       }
     },
     "moonshotai/kimi-k2.5": {
