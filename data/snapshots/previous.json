@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T00:01:21.520060Z",
+  "generated_at": "2026-09-08T00:31:18.206896Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -2769,12 +2769,12 @@
       "id": "deepseek/deepseek-chat-v3-0324",
       "name": "DeepSeek: DeepSeek V3 0324",
       "pricing": {
-        "completion": "0.000001",
+        "completion": "0.00000114",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000011",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000025",
+        "prompt": "0.00000029",
         "request": null,
         "web_search": null
       },
@@ -2824,12 +2824,12 @@
       "id": "deepseek/deepseek-chat-v3.1",
       "name": "DeepSeek: DeepSeek V3.1",
       "pricing": {
-        "completion": "0.00000165",
+        "completion": "0.00000095",
         "image": null,
-        "input_cache_read": "0.00000055",
+        "input_cache_read": "0.00000013",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000055",
+        "prompt": "0.00000025",
         "request": null,
         "web_search": null
       },
@@ -2855,9 +2855,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 161000,
+        "context_length": 163840,
         "is_moderated": false,
-        "max_completion_tokens": 144900
+        "max_completion_tokens": 32768
       }
     },
     "deepseek/deepseek-r1": {
@@ -9561,7 +9561,7 @@
       "pricing": {
         "completion": "0.0000025",
         "image": null,
-        "input_cache_read": "0.00000015",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000006",
@@ -9590,7 +9590,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 100352
+        "max_completion_tokens": 235929
       }
     },
     "moonshotai/kimi-k2.5": {
@@ -9753,12 +9753,12 @@
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
       "pricing": {
-        "completion": "0.0000034",
+        "completion": "0.0000035",
         "image": null,
-        "input_cache_read": "0.00000018",
+        "input_cache_read": "0.00000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000066",
+        "prompt": "0.00000071",
         "request": null,
         "web_search": null
       },
@@ -11768,7 +11768,7 @@
       ],
       "top_provider": {
         "context_length": 128000,
-        "is_moderated": false,
+        "is_moderated": true,
         "max_completion_tokens": 4096
       }
     },
@@ -20598,12 +20598,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22202,12 +22202,12 @@
       "id": "z-ai/glm-4.6",
       "name": "Z.ai: GLM 4.6",
       "pricing": {
-        "completion": "0.00000175",
+        "completion": "0.0000022",
         "image": null,
-        "input_cache_read": "0.00000008",
+        "input_cache_read": "0.00000011",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000043",
+        "prompt": "0.00000055",
         "request": null,
         "web_search": null
       },
@@ -22231,9 +22231,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 198000,
+        "context_length": 204800,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-4.6v": {
@@ -22378,16 +22378,16 @@
         "top_p": 0.95
       },
       "description": "As a 30B-class SOTA model, GLM-4.7-Flash offers a new option that balances performance and efficiency. It is further optimized for agentic coding use cases, strengthening coding capabilities, long-horizon task planning,...",
-      "expiration_date": "2026-09-10",
+      "expiration_date": null,
       "id": "z-ai/glm-4.7-flash",
       "name": "Z.ai: GLM 4.7 Flash",
       "pricing": {
         "completion": "0.0000004",
         "image": null,
-        "input_cache_read": "0.00000001",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006",
+        "prompt": "0.0000000605",
         "request": null,
         "web_search": null
       },
@@ -22413,9 +22413,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 202752,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 117964
       }
     },
     "z-ai/glm-5": {
