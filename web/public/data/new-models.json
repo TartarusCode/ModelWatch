@@ -1,5 +1,27 @@
 {
-  "generated_at": "2026-09-08T15:31:27.096547Z",
-  "models": [],
+  "generated_at": "2026-09-08T16:01:34.999574Z",
+  "models": [
+    {
+      "canonical_slug": "deepseek/deepseek-v4-flash-vision-exp-20260821",
+      "created": 1787311563,
+      "detected_at": "2026-09-08T16:01:21.626062Z",
+      "model_id": "deepseek/deepseek-v4-flash-vision-exp:batch",
+      "name": "DeepSeek: DeepSeek V4 Flash Vision Exp (batch)"
+    },
+    {
+      "canonical_slug": "z-ai/glm-5.2-20260616",
+      "created": 1781631930,
+      "detected_at": "2026-09-08T16:01:21.626062Z",
+      "model_id": "z-ai/glm-5.2:batch",
+      "name": "Z.ai: GLM 5.2 (batch)"
+    },
+    {
+      "canonical_slug": "z-ai/glm-5.3-20260816",
+      "created": 1787086655,
+      "detected_at": "2026-09-08T16:01:21.626062Z",
+      "model_id": "z-ai/glm-5.3:batch",
+      "name": "Z.ai: GLM 5.3 (batch)"
+    }
+  ],
   "window_hours": 24
 }

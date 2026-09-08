@@ -7089,7 +7089,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-08T15:31:27.096547Z",
+  "generated_at": "2026-09-08T16:01:34.999574Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -9933,15 +9933,15 @@
         "anchor": "0.28000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.28000000",
+        "pending_builds": 1,
+        "pending_price": "0.33000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.03000000",
+        "anchor": "0.0035000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -9952,7 +9952,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.14000000",
+        "anchor": "0.11000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -10046,7 +10046,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.022000000",
+        "anchor": "0.057948000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -10073,34 +10073,34 @@
         "anchor": "3.96000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "3.96000000",
+        "pending_builds": 1,
+        "pending_price": "1.98000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.13000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.13000000",
+        "pending_builds": 1,
+        "pending_price": "0.022000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "prompt": {
         "anchor": "1.32000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "1.32000000",
+        "pending_builds": 1,
+        "pending_price": "0.66000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "google/gemini-2.5-flash": {

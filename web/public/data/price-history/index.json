@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-08T15:31:27.096547Z",
-  "model_count": 530,
+  "generated_at": "2026-09-08T16:01:34.999574Z",
+  "model_count": 532,
   "models": [
     "ai21/jamba-large-1.7",
     "aion-labs/aion-1.0",
@@ -89,6 +89,7 @@
     "deepseek/deepseek-v4-flash-0731",
     "deepseek/deepseek-v4-flash-0731:batch",
     "deepseek/deepseek-v4-flash-vision-exp",
+    "deepseek/deepseek-v4-flash-vision-exp:batch",
     "deepseek/deepseek-v4-flash:free",
     "deepseek/deepseek-v4-pro",
     "deepseek/deepseek-v4-pro-0813",
@@ -531,6 +532,7 @@
     "z-ai/glm-5.3",
     "z-ai/glm-5.3-flash",
     "z-ai/glm-5.3-flash:batch",
+    "z-ai/glm-5.3:batch",
     "z-ai/glm-5v-turbo"
   ]
 }
