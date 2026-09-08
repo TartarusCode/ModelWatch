@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T11:01:19.163697Z",
+  "generated_at": "2026-09-08T11:31:10.418647Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -18688,12 +18688,12 @@
       "id": "qwen/qwen3.5-397b-a17b",
       "name": "Qwen: Qwen3.5 397B A17B",
       "pricing": {
-        "completion": "0.00000234",
+        "completion": "0.0000035",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.000000225",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000039",
+        "prompt": "0.00000055",
         "request": null,
         "web_search": null
       },
@@ -18721,7 +18721,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3.5-9b": {
@@ -21135,6 +21135,7 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logprobs",
         "max_tokens",
         "presence_penalty",
         "reasoning",
@@ -21143,6 +21144,7 @@
         "stop",
         "temperature",
         "tools",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
