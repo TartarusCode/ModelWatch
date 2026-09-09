@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T15:01:32.855678Z",
+  "generated_at": "2026-09-09T15:31:34.959543Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -10318,54 +10318,6 @@
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.000001",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 117964
-      }
-    },
-    "nousresearch/hermes-4-70b": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Llama3"
-      },
-      "canonical_slug": "nousresearch/hermes-4-70b",
-      "context_length": 131072,
-      "created": 1756236182,
-      "default_parameters": {},
-      "description": "Hermes 4 70B is a hybrid reasoning model from Nous Research, built on Meta-Llama-3.1-70B. It introduces the same hybrid mode as the larger 405B release, allowing the model to either...",
-      "expiration_date": null,
-      "id": "nousresearch/hermes-4-70b",
-      "name": "Nous: Hermes 4 70B",
-      "pricing": {
-        "completion": "0.0000004",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000013",
         "request": null,
         "web_search": null
       },
