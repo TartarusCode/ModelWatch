@@ -6444,9 +6444,9 @@
       "pct_change": 1.0,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-09T17:01:12.717262Z",
+      "settled_per_million_usd": "0.375000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "0.937500",
@@ -6460,9 +6460,9 @@
       "pct_change": 1.0,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-09T17:01:12.717262Z",
+      "settled_per_million_usd": "1.875000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "0.187500",
@@ -6476,9 +6476,9 @@
       "pct_change": 1.0,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-09T17:01:12.717262Z",
+      "settled_per_million_usd": "0.375000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "0.937500",
@@ -6492,9 +6492,9 @@
       "pct_change": 1.0,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-09T17:01:12.717262Z",
+      "settled_per_million_usd": "1.875000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "0.198000",
@@ -7329,7 +7329,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-09T16:31:17.022964Z",
+  "generated_at": "2026-09-09T17:01:23.935012Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -12474,25 +12474,25 @@
     "google/gemini-3.7-flash:batch": {
       "completion": {
         "anchor": "1.875000000",
-        "confirmed_at": "2026-09-02T16:31:08.061473Z",
-        "confirmed_price": "1.875000000",
-        "direction": "hike",
-        "episode_start_price": "0.9375000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "image": {
         "anchor": "0.375000000",
-        "confirmed_at": "2026-09-02T16:31:08.061473Z",
-        "confirmed_price": "0.375000000",
-        "direction": "hike",
-        "episode_start_price": "0.1875000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.0375000000",
@@ -12518,25 +12518,25 @@
       },
       "internal_reasoning": {
         "anchor": "1.875000000",
-        "confirmed_at": "2026-09-02T16:31:08.061473Z",
-        "confirmed_price": "1.875000000",
-        "direction": "hike",
-        "episode_start_price": "0.9375000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "prompt": {
         "anchor": "0.375000000",
-        "confirmed_at": "2026-09-02T16:31:08.061473Z",
-        "confirmed_price": "0.375000000",
-        "direction": "hike",
-        "episode_start_price": "0.1875000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "web_search": {
         "anchor": "14000.000",
