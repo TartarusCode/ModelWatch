@@ -305,6 +305,22 @@
       "status": "active"
     },
     {
+      "delta_per_million_usd": "0.100000",
+      "detected_at": "2026-09-09T01:01:08.644628Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.150000",
+      "field": "completion",
+      "model_id": "ibm-granite/granite-4.2-8b",
+      "new_per_million_usd": "0.250000",
+      "old_per_million_usd": "0.150000",
+      "pct_change": 0.6666666666666666,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
       "delta_per_million_usd": "-0.390000",
       "detected_at": "2026-09-03T01:01:06.247987Z",
       "direction": "cut",
@@ -8017,43 +8033,27 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "delta_per_million_usd": "0.100000",
+      "detected_at": "2026-09-09T01:01:08.644628Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.150000",
+      "field": "completion",
+      "model_id": "ibm-granite/granite-4.2-8b",
+      "new_per_million_usd": "0.250000",
+      "old_per_million_usd": "0.150000",
+      "pct_change": 0.6666666666666666,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-09-09T00:31:04.152402Z",
+  "generated_at": "2026-09-09T01:01:21.040031Z",
   "recovered_changes": [],
   "settled_changes": [
-    {
-      "delta_per_million_usd": "0.340000",
-      "detected_at": "2026-09-01T01:01:02.040149Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.060000",
-      "field": "prompt",
-      "model_id": "gryphe/mythomax-l2-13b",
-      "new_per_million_usd": "0.400000",
-      "old_per_million_usd": "0.060000",
-      "pct_change": 5.666666666666667,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-09-08T01:01:10.332882Z",
-      "settled_per_million_usd": "0.060000",
-      "status": "settled"
-    },
-    {
-      "delta_per_million_usd": "0.540000",
-      "detected_at": "2026-09-01T01:01:02.040149Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.060000",
-      "field": "completion",
-      "model_id": "gryphe/mythomax-l2-13b",
-      "new_per_million_usd": "0.600000",
-      "old_per_million_usd": "0.060000",
-      "pct_change": 9.0,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-09-08T01:01:10.332882Z",
-      "settled_per_million_usd": "0.060000",
-      "status": "settled"
-    },
     {
       "delta_per_million_usd": "-0.500000",
       "detected_at": "2026-09-01T03:30:58.163982Z",
