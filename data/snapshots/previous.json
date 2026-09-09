@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T00:01:46.905787Z",
+  "generated_at": "2026-09-09T00:31:04.152402Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -960,7 +960,7 @@
       ],
       "top_provider": {
         "context_length": 200000,
-        "is_moderated": true,
+        "is_moderated": false,
         "max_completion_tokens": 32000
       }
     },
@@ -3235,12 +3235,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000016184",
+        "completion": "0.000000177212",
         "image": null,
-        "input_cache_read": "0.000000016184",
+        "input_cache_read": "0.0000000177212",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008092",
+        "prompt": "0.000000088606",
         "request": null,
         "web_search": null
       },
@@ -3447,7 +3447,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 384000
+        "max_completion_tokens": 943718
       }
     },
     "deepseek/deepseek-v4-flash-vision-exp:batch": {
@@ -3531,12 +3531,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.0000018792",
+        "completion": "0.00000191052",
         "image": null,
-        "input_cache_read": "0.0000000783",
+        "input_cache_read": "0.000000079605",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000009396",
+        "prompt": "0.00000095526",
         "request": null,
         "web_search": null
       },
@@ -6313,12 +6313,12 @@
       "id": "ibm-granite/granite-4.2-8b",
       "name": "IBM: Granite 4.2 8B",
       "pricing": {
-        "completion": "0.00000015",
+        "completion": "0.00000025",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.00000006",
         "request": null,
         "web_search": null
       },
@@ -9624,7 +9624,7 @@
       "pricing": {
         "completion": "0.0000025",
         "image": null,
-        "input_cache_read": "0.00000015",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000006",
@@ -9653,7 +9653,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 100352
+        "max_completion_tokens": 235929
       }
     },
     "moonshotai/kimi-k2.5": {
@@ -18001,10 +18001,10 @@
       "pricing": {
         "completion": "0.0000011",
         "image": null,
-        "input_cache_read": "0.00000007",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
@@ -18030,7 +18030,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 16384
       }
     },
     "qwen/qwen3-next-80b-a3b-thinking": {
@@ -19620,7 +19620,7 @@
       "top_provider": {
         "context_length": 1000000,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 131072
       }
     },
     "qwen/qwen3.8-2.4t-a95b:batch": {
@@ -20656,12 +20656,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22199,7 +22199,7 @@
         "top_p": null
       },
       "description": "GLM-4.5V is a vision-language foundation model for multimodal agent applications. Built on a Mixture-of-Experts (MoE) architecture with 106B parameters and 12B activated parameters, it achieves state-of-the-art results in video understanding,...",
-      "expiration_date": "2026-12-31",
+      "expiration_date": null,
       "id": "z-ai/glm-4.5v",
       "name": "Z.ai: GLM 4.5V",
       "pricing": {
@@ -22262,12 +22262,12 @@
       "id": "z-ai/glm-4.6",
       "name": "Z.ai: GLM 4.6",
       "pricing": {
-        "completion": "0.0000022",
+        "completion": "0.00000175",
         "image": null,
-        "input_cache_read": "0.00000011",
+        "input_cache_read": "0.00000008",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000055",
+        "prompt": "0.00000043",
         "request": null,
         "web_search": null
       },
@@ -22291,9 +22291,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 204800,
+        "context_length": 198000,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 16384
       }
     },
     "z-ai/glm-4.6v": {
