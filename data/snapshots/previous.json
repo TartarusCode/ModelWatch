@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T13:01:25.450498Z",
+  "generated_at": "2026-09-10T13:31:32.783370Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -22721,7 +22721,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-4.7-flash-20260119",
-      "context_length": 202752,
+      "context_length": 200000,
       "created": 1768833913,
       "default_parameters": {
         "frequency_penalty": null,
@@ -22806,10 +22806,8 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
         "logprobs",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
