@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T12:01:23.961678Z",
+  "generated_at": "2026-09-10T12:31:34.423188Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3767,7 +3767,7 @@
       "created": 1786680361,
       "default_parameters": {},
       "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
-      "expiration_date": "2026-09-30",
+      "expiration_date": null,
       "id": "dots-studio/dots-3-note-preview:free",
       "name": "Dots Studio: Dots3-Note Preview (free)",
       "pricing": {
@@ -17677,12 +17677,12 @@
       "id": "qwen/qwen3-30b-a3b-instruct-2507",
       "name": "Qwen: Qwen3 30B A3B Instruct 2507",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.00000019305",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.00000004815",
         "request": null,
         "web_search": null
       },
@@ -17705,9 +17705,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 32000
       }
     },
     "qwen/qwen3-30b-a3b-thinking-2507": {
@@ -22383,7 +22383,7 @@
         "top_p": null
       },
       "description": "GLM-4.5 is our latest flagship foundation model, purpose-built for agent-based applications. It leverages a Mixture-of-Experts (MoE) architecture and supports a context length of up to 128k tokens. GLM-4.5 delivers significantly...",
-      "expiration_date": "2026-12-31",
+      "expiration_date": null,
       "id": "z-ai/glm-4.5",
       "name": "Z.ai: GLM 4.5",
       "pricing": {
@@ -22854,7 +22854,7 @@
         "top_p": 0.95
       },
       "description": "GLM-5 Turbo is a new model from Z.ai designed for fast inference and strong performance in agent-driven environments such as OpenClaw scenarios. It is deeply optimized for real-world agent workflows...",
-      "expiration_date": "2098-12-31",
+      "expiration_date": null,
       "id": "z-ai/glm-5-turbo",
       "name": "Z.ai: GLM 5 Turbo",
       "pricing": {
@@ -23161,7 +23161,7 @@
         "top_p": 0.95
       },
       "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while...",
-      "expiration_date": "2098-12-31",
+      "expiration_date": null,
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
@@ -23349,7 +23349,7 @@
         "top_p": 0.95
       },
       "description": "GLM-5V-Turbo is Z.ai’s first native multimodal agent foundation model, built for vision-based coding and agent-driven tasks. It natively handles image, video, and text inputs, excels at long-horizon planning, complex coding,...",
-      "expiration_date": "2098-12-31",
+      "expiration_date": null,
       "id": "z-ai/glm-5v-turbo",
       "name": "Z.ai: GLM 5V Turbo",
       "pricing": {
