@@ -625,22 +625,6 @@
       "status": "active"
     },
     {
-      "delta_per_million_usd": "-0.120000",
-      "detected_at": "2026-09-03T09:01:30.921294Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.260000",
-      "field": "input_cache_read",
-      "model_id": "z-ai/glm-5.3",
-      "new_per_million_usd": "0.140000",
-      "old_per_million_usd": "0.260000",
-      "pct_change": -0.46153846153846156,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "delta_per_million_usd": "-0.250000",
       "detected_at": "2026-09-08T18:01:17.389299Z",
       "direction": "cut",
@@ -7294,9 +7278,9 @@
       "pct_change": -0.46153846153846156,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-10T09:30:59.930453Z",
+      "settled_per_million_usd": "0.260000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "0.062600",
@@ -8035,7 +8019,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-10T09:01:10.286198Z",
+  "generated_at": "2026-09-10T09:31:08.581466Z",
   "recovered_changes": [],
   "settled_changes": [
     {
@@ -8212,6 +8196,22 @@
       "recovered_per_million_usd": null,
       "settled_at": "2026-09-10T01:31:05.036828Z",
       "settled_per_million_usd": "0.320000",
+      "status": "settled"
+    },
+    {
+      "delta_per_million_usd": "-0.120000",
+      "detected_at": "2026-09-03T09:01:30.921294Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.260000",
+      "field": "input_cache_read",
+      "model_id": "z-ai/glm-5.3",
+      "new_per_million_usd": "0.140000",
+      "old_per_million_usd": "0.260000",
+      "pct_change": -0.46153846153846156,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-09-10T09:30:59.930453Z",
+      "settled_per_million_usd": "0.260000",
       "status": "settled"
     }
   ],
