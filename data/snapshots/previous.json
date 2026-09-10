@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T15:01:56.512452Z",
+  "generated_at": "2026-09-10T15:31:25.674852Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3235,12 +3235,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.000000177212",
+        "completion": "0.00000017416",
         "image": null,
-        "input_cache_read": "0.0000000177212",
+        "input_cache_read": "0.000000017416",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000088606",
+        "prompt": "0.00000008708",
         "request": null,
         "web_search": null
       },
@@ -3707,7 +3707,7 @@
       "context_length": 1048576,
       "created": 1789021285,
       "default_parameters": {},
-      "description": "DeepSeek V4.1 Flash is a sparse mixture-of-experts model from DeepSeek, and the cost-efficient tier of the V4.1 family. DeepSeek reports that it exceeds V4 Pro on performance, speed, and task...",
+      "description": "DeepSeek V4.1 Flash is a sparse mixture-of-experts model from DeepSeek, and the first built on the company's Causal Encoder-Decoder (CED) architecture. It activates 8B parameters on input and 16B on...",
       "expiration_date": null,
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
@@ -12112,7 +12112,7 @@
       ],
       "top_provider": {
         "context_length": 128000,
-        "is_moderated": false,
+        "is_moderated": true,
         "max_completion_tokens": 4096
       }
     },
