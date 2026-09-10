@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T16:01:28.816269Z",
+  "generated_at": "2026-09-10T16:31:30.648455Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3531,12 +3531,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.00000191052",
+        "completion": "0.00000174",
         "image": null,
-        "input_cache_read": "0.000000079605",
+        "input_cache_read": "0.0000000725",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000095526",
+        "prompt": "0.00000087",
         "request": null,
         "web_search": null
       },
@@ -5860,12 +5860,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.00000034",
+        "completion": "0.00000022",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000007",
+        "prompt": "0.000000042",
         "request": null,
         "web_search": null
       },
@@ -5891,9 +5891,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 32768
       }
     },
     "google/gemma-4-26b-a4b-it:free": {
@@ -19464,12 +19464,12 @@
       "id": "qwen/qwen3.6-35b-a3b",
       "name": "Qwen: Qwen3.6 35B A3B",
       "pricing": {
-        "completion": "0.0000009",
+        "completion": "0.0000007",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.00000005",
         "request": null,
         "web_search": null
       },
@@ -19497,7 +19497,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 32768
       }
     },
     "qwen/qwen3.6-flash": {
@@ -20947,12 +20947,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.000000528",
+        "completion": "0.00000033",
         "image": null,
-        "input_cache_read": "0.000000033",
+        "input_cache_read": "0.000000020625",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000132",
+        "prompt": "0.0000000825",
         "request": null,
         "web_search": null
       },
