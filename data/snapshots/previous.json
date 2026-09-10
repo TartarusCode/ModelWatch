@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T03:31:17.759526Z",
+  "generated_at": "2026-09-10T04:01:34.530641Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -19927,7 +19927,7 @@
         "tokenizer": "Qwen"
       },
       "canonical_slug": "qwen/qwen3.8-27b-20260814",
-      "context_length": 1000000,
+      "context_length": 1048576,
       "created": 1786722910,
       "default_parameters": {
         "temperature": 1,
@@ -19966,6 +19966,7 @@
         "temperature",
         "tool_choice",
         "tools",
+        "top_a",
         "top_k",
         "top_logprobs",
         "top_p"
@@ -22949,7 +22950,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1000000,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
