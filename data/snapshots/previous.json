@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T16:31:30.648455Z",
+  "generated_at": "2026-09-10T17:01:17.046303Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6696,6 +6696,61 @@
       "expiration_date": null,
       "id": "inclusionai/ling-3.0-flash-sante:free",
       "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 32768
+      }
+    },
+    "inclusionai/ling-3.0-flash-vl:free": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "inclusionai/ling-3.0-flash-vl-20260910",
+      "context_length": 262144,
+      "created": 1789056114,
+      "default_parameters": {},
+      "description": "Ling 3.0 Flash VL builds on Ling 3.0 Flash (124B total / 5.5B active MoE from InclusionAI), further strengthening its language capabilities while adding native visual perception and advanced visual...",
+      "expiration_date": null,
+      "id": "inclusionai/ling-3.0-flash-vl:free",
+      "name": "inclusionAI: Ling 3.0 Flash VL (free)",
       "pricing": {
         "completion": "0",
         "image": null,
