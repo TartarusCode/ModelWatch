@@ -6508,9 +6508,9 @@
       "pct_change": 0.6,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-10T01:31:05.036828Z",
+      "settled_per_million_usd": "0.528000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "0.160000",
@@ -6524,9 +6524,9 @@
       "pct_change": 0.41025641025641024,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-10T01:31:05.036828Z",
+      "settled_per_million_usd": "0.550000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "1.160000",
@@ -6540,9 +6540,9 @@
       "pct_change": 0.49572649572649574,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-10T01:31:05.036828Z",
+      "settled_per_million_usd": "3.500000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "0.107500",
@@ -6556,9 +6556,9 @@
       "pct_change": 0.8958333333333334,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-10T01:31:05.036828Z",
+      "settled_per_million_usd": "0.227500",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "0.670000",
@@ -6572,9 +6572,9 @@
       "pct_change": 2.7916666666666665,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-10T01:31:05.036828Z",
+      "settled_per_million_usd": "0.910000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "-0.610000",
@@ -6588,9 +6588,9 @@
       "pct_change": -0.8591549295774648,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-10T01:31:05.036828Z",
+      "settled_per_million_usd": "0.100000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "-0.390000",
@@ -6604,9 +6604,9 @@
       "pct_change": -0.5492957746478874,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-10T01:31:05.036828Z",
+      "settled_per_million_usd": "0.320000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "-0.120000",
@@ -7361,7 +7361,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-10T01:01:16.666569Z",
+  "generated_at": "2026-09-10T01:31:21.153816Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -13757,14 +13757,14 @@
     "meta-llama/llama-3.3-70b-instruct": {
       "completion": {
         "anchor": "0.32000000",
-        "confirmed_at": "2026-09-03T01:01:06.247987Z",
-        "confirmed_price": "0.32000000",
-        "direction": "cut",
-        "episode_start_price": "0.71000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.71000000",
@@ -13779,14 +13779,14 @@
       },
       "prompt": {
         "anchor": "0.1000000",
-        "confirmed_at": "2026-09-03T01:01:06.247987Z",
-        "confirmed_price": "0.1000000",
-        "direction": "cut",
-        "episode_start_price": "0.71000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "meta-llama/llama-4-maverick": {
@@ -21132,25 +21132,25 @@
     "qwen/qwen3-14b": {
       "completion": {
         "anchor": "0.91000000",
-        "confirmed_at": "2026-09-03T01:01:06.247987Z",
-        "confirmed_price": "0.91000000",
-        "direction": "hike",
-        "episode_start_price": "0.24000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "prompt": {
         "anchor": "0.2275000000",
-        "confirmed_at": "2026-09-03T01:01:06.247987Z",
-        "confirmed_price": "0.2275000000",
-        "direction": "hike",
-        "episode_start_price": "0.12000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "qwen/qwen3-235b-a22b": {
@@ -21936,14 +21936,14 @@
     "qwen/qwen3.5-397b-a17b": {
       "completion": {
         "anchor": "3.5000000",
-        "confirmed_at": "2026-09-03T01:01:06.247987Z",
-        "confirmed_price": "3.5000000",
-        "direction": "hike",
-        "episode_start_price": "2.34000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.225000000",
@@ -21958,14 +21958,14 @@
       },
       "prompt": {
         "anchor": "0.55000000",
-        "confirmed_at": "2026-09-03T01:01:06.247987Z",
-        "confirmed_price": "0.55000000",
-        "direction": "hike",
-        "episode_start_price": "0.39000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "qwen/qwen3.5-9b": {
@@ -23132,14 +23132,14 @@
     "tencent/hy3": {
       "completion": {
         "anchor": "0.528000000",
-        "confirmed_at": "2026-09-03T01:01:06.247987Z",
-        "confirmed_price": "0.528000000",
-        "direction": "hike",
-        "episode_start_price": "0.33000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.033000000",
