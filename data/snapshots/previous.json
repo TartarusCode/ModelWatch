@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T12:31:16.313766Z",
+  "generated_at": "2026-09-11T13:01:28.795513Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3235,12 +3235,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.000000177212",
+        "completion": "0.00000017416",
         "image": null,
-        "input_cache_read": "0.0000000177212",
+        "input_cache_read": "0.000000017416",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000088606",
+        "prompt": "0.00000008708",
         "request": null,
         "web_search": null
       },
@@ -3531,12 +3531,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.00000191052",
+        "completion": "0.000001909476",
         "image": null,
-        "input_cache_read": "0.000000079605",
+        "input_cache_read": "0.0000000795615",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000095526",
+        "prompt": "0.000000954738",
         "request": null,
         "web_search": null
       },
@@ -6725,6 +6725,63 @@
       ],
       "top_provider": {
         "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 32768
+      }
+    },
+    "inclusionai/ling-3.0-flash-vl": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "inclusionai/ling-3.0-flash-vl-20260910",
+      "context_length": 131072,
+      "created": 1789056114,
+      "default_parameters": {},
+      "description": "Ling 3.0 Flash VL builds on Ling 3.0 Flash (124B total / 5.5B active MoE from InclusionAI), further strengthening its language capabilities while adding native visual perception and advanced visual...",
+      "expiration_date": null,
+      "id": "inclusionai/ling-3.0-flash-vl",
+      "name": "inclusionAI: Ling 3.0 Flash VL",
+      "pricing": {
+        "completion": "0.00000018",
+        "image": null,
+        "input_cache_read": "0.000000012",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000006",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 131072,
         "is_moderated": false,
         "max_completion_tokens": 32768
       }
