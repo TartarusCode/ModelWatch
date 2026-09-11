@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T21:01:27.931758Z",
+  "generated_at": "2026-09-11T21:31:11.432423Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -9789,7 +9789,7 @@
         "tokenizer": "Mistral"
       },
       "canonical_slug": "mistralai/mistral-small-3.2-24b-instruct-2506",
-      "context_length": 131072,
+      "context_length": 256000,
       "created": 1750443016,
       "default_parameters": {
         "temperature": 0.3
@@ -10329,12 +10329,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.00000948",
+        "completion": "0.000009006",
         "image": null,
-        "input_cache_read": "0.000000216",
+        "input_cache_read": "0.0000002052",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000189",
+        "prompt": "0.0000017955",
         "request": null,
         "web_search": null
       },
