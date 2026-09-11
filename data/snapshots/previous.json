@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T14:01:26.105943Z",
+  "generated_at": "2026-09-11T14:31:25.261320Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3235,12 +3235,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000017108",
+        "completion": "0.0000001736",
         "image": null,
-        "input_cache_read": "0.000000017108",
+        "input_cache_read": "0.00000001736",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008554",
+        "prompt": "0.0000000868",
         "request": null,
         "web_search": null
       },
@@ -3531,12 +3531,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001909476",
+        "completion": "0.000001895556",
         "image": null,
-        "input_cache_read": "0.0000000795615",
+        "input_cache_read": "0.0000000789815",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000954738",
+        "prompt": "0.000000947778",
         "request": null,
         "web_search": null
       },
@@ -3593,12 +3593,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000197604",
+        "completion": "0.00000173844",
         "image": null,
-        "input_cache_read": "0.000000020958",
+        "input_cache_read": "0.000000019316",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000065868",
+        "prompt": "0.00000057948",
         "request": null,
         "web_search": null
       },
@@ -3625,9 +3625,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1024000,
         "is_moderated": false,
-        "max_completion_tokens": 393216
+        "max_completion_tokens": 384000
       }
     },
     "deepseek/deepseek-v4-pro-0813:batch": {
@@ -8336,12 +8336,12 @@
       "id": "minimax/minimax-m2.5",
       "name": "MiniMax: MiniMax M2.5",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.00000108",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.000000027",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.00000027",
         "request": null,
         "web_search": null
       },
@@ -8367,9 +8367,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 204800,
+        "context_length": 200000,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 128000
       }
     },
     "minimax/minimax-m2.7": {
