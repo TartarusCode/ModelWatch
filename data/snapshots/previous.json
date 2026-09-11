@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T03:01:32.716187Z",
+  "generated_at": "2026-09-11T03:31:19.955859Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -5848,7 +5848,7 @@
         "tokenizer": "Gemma"
       },
       "canonical_slug": "google/gemma-4-26b-a4b-it-20260403",
-      "context_length": 262144,
+      "context_length": 1000000,
       "created": 1775227989,
       "default_parameters": {
         "temperature": 1,
@@ -10272,12 +10272,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.0000117",
+        "completion": "0.00001053",
         "image": null,
-        "input_cache_read": "0.000000261",
+        "input_cache_read": "0.000000235",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000234",
+        "prompt": "0.0000021",
         "request": null,
         "web_search": null
       },

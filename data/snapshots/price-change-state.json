@@ -7562,11 +7562,11 @@
       "new_per_million_usd": "2.340000",
       "old_per_million_usd": "2.600000",
       "pct_change": -0.1,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-09-11T03:31:19.955859Z",
+      "recovered_per_million_usd": "2.100000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     },
     {
       "delta_per_million_usd": "-1.300000",
@@ -7578,14 +7578,14 @@
       "new_per_million_usd": "11.700000",
       "old_per_million_usd": "13.000000",
       "pct_change": -0.1,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-09-11T03:31:19.955859Z",
+      "recovered_per_million_usd": "10.530000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     }
   ],
-  "generated_at": "2026-09-11T03:01:32.716187Z",
+  "generated_at": "2026-09-11T03:31:19.955859Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -15880,14 +15880,14 @@
         "confirmed_at": "2026-09-11T03:01:19.555183Z",
         "confirmed_price": "11.7000000",
         "direction": "cut",
-        "episode_start_price": "13.000000",
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "11.7000000",
+        "pending_builds": 1,
+        "pending_price": "10.53000000",
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.261000000",
+        "anchor": "0.235000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -15902,11 +15902,11 @@
         "confirmed_at": "2026-09-11T03:01:19.555183Z",
         "confirmed_price": "2.34000000",
         "direction": "cut",
-        "episode_start_price": "2.6000000",
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "2.34000000",
+        "pending_builds": 1,
+        "pending_price": "2.1000000",
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "pending"
       }
     },
     "moonshotai/kimi-k3:batch": {
