@@ -7594,11 +7594,11 @@
       "new_per_million_usd": "2.100000",
       "old_per_million_usd": "2.340000",
       "pct_change": -0.10256410256410256,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-09-11T04:31:34.358311Z",
+      "recovered_per_million_usd": "1.890000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     },
     {
       "delta_per_million_usd": "-1.170000",
@@ -7617,7 +7617,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-11T04:01:32.325984Z",
+  "generated_at": "2026-09-11T04:31:34.358311Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -10671,15 +10671,15 @@
         "anchor": "1.2000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "1.2000000",
+        "pending_builds": 1,
+        "pending_price": "0.6000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.006000000",
+        "anchor": "0.003000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -10693,12 +10693,12 @@
         "anchor": "0.3000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.3000000",
+        "pending_builds": 1,
+        "pending_price": "0.15000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "google/gemini-2.5-flash": {
@@ -15919,7 +15919,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.235000000",
+        "anchor": "0.216000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -15934,11 +15934,11 @@
         "confirmed_at": "2026-09-11T04:01:14.860790Z",
         "confirmed_price": "2.1000000",
         "direction": "cut",
-        "episode_start_price": "2.34000000",
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "2.1000000",
+        "pending_builds": 1,
+        "pending_price": "1.89000000",
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "pending"
       }
     },
     "moonshotai/kimi-k3:batch": {
