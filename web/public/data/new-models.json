@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T02:01:18.254334Z",
+  "generated_at": "2026-09-11T02:31:56.879342Z",
   "models": [
     {
       "canonical_slug": "inclusionai/ling-3.0-flash-vl-20260910",
@@ -14,41 +14,6 @@
       "detected_at": "2026-09-10T07:01:31.065811Z",
       "model_id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash"
-    },
-    {
-      "canonical_slug": "mistralai/codestral-2508",
-      "created": 1754079630,
-      "detected_at": "2026-09-10T02:01:20.666969Z",
-      "model_id": "mistralai/codestral-2508:batch",
-      "name": "Mistral: Codestral 2508 (batch)"
-    },
-    {
-      "canonical_slug": "mistralai/ministral-8b-2512",
-      "created": 1764681654,
-      "detected_at": "2026-09-10T02:01:20.666969Z",
-      "model_id": "mistralai/ministral-8b-2512:batch",
-      "name": "Mistral: Ministral 3 8B 2512 (batch)"
-    },
-    {
-      "canonical_slug": "mistralai/mistral-large-2512",
-      "created": 1764624472,
-      "detected_at": "2026-09-10T02:01:20.666969Z",
-      "model_id": "mistralai/mistral-large-2512:batch",
-      "name": "Mistral: Mistral Large 3 2512 (batch)"
-    },
-    {
-      "canonical_slug": "mistralai/mistral-medium-3.1",
-      "created": 1755095639,
-      "detected_at": "2026-09-10T02:01:20.666969Z",
-      "model_id": "mistralai/mistral-medium-3.1:batch",
-      "name": "Mistral: Mistral Medium 3.1 (batch)"
-    },
-    {
-      "canonical_slug": "mistralai/mistral-small-2603",
-      "created": 1773695685,
-      "detected_at": "2026-09-10T02:01:20.666969Z",
-      "model_id": "mistralai/mistral-small-2603:batch",
-      "name": "Mistral: Mistral Small 4 (batch)"
     }
   ],
   "window_hours": 24
