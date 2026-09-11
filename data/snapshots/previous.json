@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T07:31:10.340043Z",
+  "generated_at": "2026-09-11T08:01:24.979846Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -5848,7 +5848,7 @@
         "tokenizer": "Gemma"
       },
       "canonical_slug": "google/gemma-4-26b-a4b-it-20260403",
-      "context_length": 1000000,
+      "context_length": 262144,
       "created": 1775227989,
       "default_parameters": {
         "temperature": 1,
