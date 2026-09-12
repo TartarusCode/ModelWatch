@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T10:01:12.675548Z",
+  "generated_at": "2026-09-12T10:31:10.652241Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -8436,12 +8436,12 @@
       "id": "minimax/minimax-m2.5",
       "name": "MiniMax: MiniMax M2.5",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.00000108",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.000000027",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.00000027",
         "request": null,
         "web_search": null
       },
@@ -8467,9 +8467,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 204800,
+        "context_length": 200000,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 128000
       }
     },
     "minimax/minimax-m2.7": {
