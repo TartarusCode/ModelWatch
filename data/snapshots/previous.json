@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T22:01:17.673916Z",
+  "generated_at": "2026-09-12T22:31:08.247876Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -10170,7 +10170,7 @@
       "pricing": {
         "completion": "0.0000025",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000015",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000006",
@@ -10199,7 +10199,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 100352
       }
     },
     "moonshotai/kimi-k2.5": {
