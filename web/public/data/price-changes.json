@@ -8595,7 +8595,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-12T20:31:04.386147Z",
+  "generated_at": "2026-09-12T21:01:21.263870Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "0.090020",
@@ -8673,22 +8673,6 @@
       "pct_change": 0.10218535006070417,
       "recovered_at": "2026-09-12T07:31:11.471812Z",
       "recovered_per_million_usd": "1.618548",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered"
-    },
-    {
-      "delta_per_million_usd": "-0.240000",
-      "detected_at": "2026-09-11T20:01:12.878982Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "2.340000",
-      "field": "prompt",
-      "model_id": "moonshotai/kimi-k3",
-      "new_per_million_usd": "2.100000",
-      "old_per_million_usd": "2.340000",
-      "pct_change": -0.10256410256410256,
-      "recovered_at": "2026-09-11T20:31:17.849858Z",
-      "recovered_per_million_usd": "1.890000",
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "recovered"
