@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T00:01:22.762205Z",
+  "generated_at": "2026-09-12T00:31:10.704753Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -960,7 +960,7 @@
       ],
       "top_provider": {
         "context_length": 200000,
-        "is_moderated": false,
+        "is_moderated": true,
         "max_completion_tokens": 32000
       }
     },
@@ -3593,12 +3593,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000173844",
+        "completion": "0.00000173448",
         "image": null,
-        "input_cache_read": "0.000000019316",
+        "input_cache_read": "0.000000018396",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000057948",
+        "prompt": "0.00000057816",
         "request": null,
         "web_search": null
       },
@@ -3625,9 +3625,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1024000,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 384000
+        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4-pro-0813:batch": {
@@ -7149,12 +7149,12 @@
       "id": "meta-llama/llama-3.1-70b-instruct",
       "name": "Meta: Llama 3.1 70B Instruct",
       "pricing": {
-        "completion": "0.0000004",
+        "completion": "0.00000072",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000004",
+        "prompt": "0.00000072",
         "request": null,
         "web_search": null
       },
@@ -7177,8 +7177,8 @@
       ],
       "top_provider": {
         "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 16384
+        "is_moderated": true,
+        "max_completion_tokens": 8192
       }
     },
     "meta-llama/llama-3.1-8b-instruct": {
@@ -8336,12 +8336,12 @@
       "id": "minimax/minimax-m2.5",
       "name": "MiniMax: MiniMax M2.5",
       "pricing": {
-        "completion": "0.00000108",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000027",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000027",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -8367,9 +8367,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 200000,
+        "context_length": 204800,
         "is_moderated": false,
-        "max_completion_tokens": 128000
+        "max_completion_tokens": 131072
       }
     },
     "minimax/minimax-m2.7": {
@@ -10329,12 +10329,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.0000081054",
+        "completion": "0.00000770013",
         "image": null,
-        "input_cache_read": "0.00000018468",
+        "input_cache_read": "0.000000175446",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000161595",
+        "prompt": "0.0000015351525",
         "request": null,
         "web_search": null
       },
@@ -15300,7 +15300,7 @@
       ],
       "top_provider": {
         "context_length": 1050000,
-        "is_moderated": true,
+        "is_moderated": false,
         "max_completion_tokens": 128000
       }
     },
@@ -17620,12 +17620,12 @@
       "id": "qwen/qwen3-235b-a22b-2507",
       "name": "Qwen: Qwen3 235B A22B Instruct 2507",
       "pricing": {
-        "completion": "0.00000088",
+        "completion": "0.00000035",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.0000000175",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000022",
+        "prompt": "0.0000000875",
         "request": null,
         "web_search": null
       },
@@ -17651,7 +17651,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3-235b-a22b-thinking-2507": {
@@ -20113,12 +20113,12 @@
       "id": "qwen/qwen3.8-27b",
       "name": "Qwen: Qwen3.8 27B",
       "pricing": {
-        "completion": "0.000003",
+        "completion": "0.00000255",
         "image": null,
-        "input_cache_read": "0.000000085",
+        "input_cache_read": "0.00000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000042",
+        "prompt": "0.000000214",
         "request": null,
         "web_search": null
       },
@@ -20146,7 +20146,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1000000,
+        "context_length": 262144,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
@@ -21170,12 +21170,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
