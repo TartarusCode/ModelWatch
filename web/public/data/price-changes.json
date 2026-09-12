@@ -417,22 +417,6 @@
       "status": "active"
     },
     {
-      "delta_per_million_usd": "-0.093750",
-      "detected_at": "2026-09-05T19:01:13.625964Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.250000",
-      "field": "input_cache_read",
-      "model_id": "qwen/qwen3.5-35b-a3b",
-      "new_per_million_usd": "0.156250",
-      "old_per_million_usd": "0.250000",
-      "pct_change": -0.375,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "delta_per_million_usd": "-0.200000",
       "detected_at": "2026-09-10T17:01:07.800820Z",
       "direction": "cut",
@@ -7630,9 +7614,9 @@
       "pct_change": -0.375,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-12T19:31:01.812942Z",
+      "settled_per_million_usd": "0.156250",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "0.050000",
@@ -8611,7 +8595,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-12T19:01:09.040174Z",
+  "generated_at": "2026-09-12T19:31:13.190870Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "0.090020",
@@ -8758,7 +8742,24 @@
       "status": "recovered"
     }
   ],
-  "settled_changes": [],
+  "settled_changes": [
+    {
+      "delta_per_million_usd": "-0.093750",
+      "detected_at": "2026-09-05T19:01:13.625964Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.250000",
+      "field": "input_cache_read",
+      "model_id": "qwen/qwen3.5-35b-a3b",
+      "new_per_million_usd": "0.156250",
+      "old_per_million_usd": "0.250000",
+      "pct_change": -0.375,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-09-12T19:31:01.812942Z",
+      "settled_per_million_usd": "0.156250",
+      "status": "settled"
+    }
+  ],
   "thresholds": {
     "min_delta_per_million_usd": 0.05,
     "min_pct": 0.1
