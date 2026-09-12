@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T18:01:20.317651Z",
+  "generated_at": "2026-09-12T18:31:07.745497Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -7249,12 +7249,12 @@
       "id": "meta-llama/llama-3.1-70b-instruct",
       "name": "Meta: Llama 3.1 70B Instruct",
       "pricing": {
-        "completion": "0.00000072",
+        "completion": "0.0000004",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000072",
+        "prompt": "0.0000004",
         "request": null,
         "web_search": null
       },
@@ -7277,8 +7277,8 @@
       ],
       "top_provider": {
         "context_length": 131072,
-        "is_moderated": true,
-        "max_completion_tokens": 8192
+        "is_moderated": false,
+        "max_completion_tokens": 16384
       }
     },
     "meta-llama/llama-3.1-8b-instruct": {
