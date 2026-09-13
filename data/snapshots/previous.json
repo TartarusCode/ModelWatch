@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T18:01:50.359422Z",
+  "generated_at": "2026-09-13T18:31:31.269094Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6863,7 +6863,7 @@
       "pricing": {
         "completion": "0.00000023",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.00000005",
@@ -6913,7 +6913,7 @@
       "pricing": {
         "completion": "0.00000015",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.00000003",
@@ -23478,16 +23478,16 @@
         "top_p": 0.95
       },
       "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while...",
-      "expiration_date": null,
+      "expiration_date": "2098-12-31",
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.00000025",
+        "completion": "0.0000005",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
