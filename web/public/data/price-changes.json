@@ -8595,7 +8595,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-12T23:31:08.102015Z",
+  "generated_at": "2026-09-13T00:01:24.272190Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "0.090020",
@@ -8630,22 +8630,6 @@
       "status": "recovered"
     },
     {
-      "delta_per_million_usd": "-1.170000",
-      "detected_at": "2026-09-11T04:01:14.860790Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "11.700000",
-      "field": "completion",
-      "model_id": "moonshotai/kimi-k3",
-      "new_per_million_usd": "10.530000",
-      "old_per_million_usd": "11.700000",
-      "pct_change": -0.1,
-      "recovered_at": "2026-09-11T23:31:15.251051Z",
-      "recovered_per_million_usd": "8.105400",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered"
-    },
-    {
       "delta_per_million_usd": "0.087870",
       "detected_at": "2026-09-11T18:31:06.671665Z",
       "direction": "hike",
@@ -8673,22 +8657,6 @@
       "pct_change": 0.10218535006070417,
       "recovered_at": "2026-09-12T07:31:11.471812Z",
       "recovered_per_million_usd": "1.618548",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered"
-    },
-    {
-      "delta_per_million_usd": "-0.210000",
-      "detected_at": "2026-09-11T21:01:09.093538Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "2.100000",
-      "field": "prompt",
-      "model_id": "moonshotai/kimi-k3",
-      "new_per_million_usd": "1.890000",
-      "old_per_million_usd": "2.100000",
-      "pct_change": -0.1,
-      "recovered_at": "2026-09-11T23:31:15.251051Z",
-      "recovered_per_million_usd": "1.615950",
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "recovered"
