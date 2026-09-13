@@ -7985,7 +7985,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-13T06:31:21.741348Z",
+  "generated_at": "2026-09-13T07:01:14.357601Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -10756,7 +10756,7 @@
     },
     "deepseek/deepseek-v4-flash": {
       "completion": {
-        "anchor": "0.09968000000",
+        "anchor": "0.09912000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -10767,7 +10767,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.009968000000",
+        "anchor": "0.009912000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -10778,7 +10778,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.04984000000",
+        "anchor": "0.04956000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23456,7 +23456,99 @@
         "status": "idle"
       }
     },
+    "sakana/fugu-max": {
+      "completion": {
+        "anchor": "6.000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_read": {
+        "anchor": "0.25000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt": {
+        "anchor": "2.000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "web_search": {
+        "anchor": "10000.00",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      }
+    },
     "sakana/fugu-ultra": {
+      "completion": {
+        "anchor": "30.00000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_read": {
+        "anchor": "0.5000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt": {
+        "anchor": "5.000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "web_search": {
+        "anchor": "10000.00",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      }
+    },
+    "sakana/fugu-ultra-v2": {
       "completion": {
         "anchor": "30.00000",
         "confirmed_at": null,
