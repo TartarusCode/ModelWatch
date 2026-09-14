@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T00:01:25.082299Z",
+  "generated_at": "2026-09-14T00:31:22.086628Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3294,12 +3294,12 @@
       "id": "deepseek/deepseek-v4-flash-0731",
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "pricing": {
-        "completion": "0.00000008",
+        "completion": "0.00000018",
         "image": null,
-        "input_cache_read": "0.000000008",
+        "input_cache_read": "0.000000016",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004",
+        "prompt": "0.000000065",
         "request": null,
         "web_search": null
       },
@@ -3592,12 +3592,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000173844",
+        "completion": "0.00000316404",
         "image": null,
-        "input_cache_read": "0.000000019316",
+        "input_cache_read": "0.000000035156",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000057948",
+        "prompt": "0.00000105468",
         "request": null,
         "web_search": null
       },
@@ -11150,12 +11150,12 @@
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
       "name": "NVIDIA: Nemotron 3 Ultra",
       "pricing": {
-        "completion": "0.000003125",
+        "completion": "0.0000024",
         "image": null,
-        "input_cache_read": "0.0000001875",
+        "input_cache_read": "0.00000012",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000625",
+        "prompt": "0.0000006",
         "request": null,
         "web_search": null
       },
@@ -11180,9 +11180,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 256000,
+        "context_length": 202800,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 182520
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b:free": {
@@ -17610,12 +17610,12 @@
       "id": "qwen/qwen3-14b",
       "name": "Qwen: Qwen3 14B",
       "pricing": {
-        "completion": "0.00000091",
+        "completion": "0.00000024",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000002275",
+        "prompt": "0.00000012",
         "request": null,
         "web_search": null
       },
@@ -17641,9 +17641,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 40960,
         "is_moderated": false,
-        "max_completion_tokens": 8192
+        "max_completion_tokens": 16384
       }
     },
     "qwen/qwen3-235b-a22b": {
@@ -21268,12 +21268,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -23293,12 +23293,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.000003036",
+        "completion": "0.0000021472",
         "image": null,
-        "input_cache_read": "0.0000001932",
+        "input_cache_read": "0.00000012688",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000966",
+        "prompt": "0.0000006832",
         "request": null,
         "web_search": null
       },
@@ -23326,7 +23326,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1000000,
+        "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
@@ -23418,12 +23418,12 @@
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "pricing": {
-        "completion": "0.000003432",
+        "completion": "0.0000044",
         "image": null,
-        "input_cache_read": "0.0000002028",
+        "input_cache_read": "0.00000026",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000001092",
+        "prompt": "0.0000014",
         "request": null,
         "web_search": null
       },
@@ -23451,9 +23451,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1048575,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 943717
       }
     },
     "z-ai/glm-5.3-flash": {
