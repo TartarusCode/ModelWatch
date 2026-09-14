@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T21:01:56.746960Z",
+  "generated_at": "2026-09-14T21:31:19.706381Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -4190,63 +4190,6 @@
         "max_completion_tokens": 65536
       }
     },
-    "google/gemini-2.5-pro-preview-05-06": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "file",
-          "audio",
-          "video"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+file+audio+video->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Gemini"
-      },
-      "canonical_slug": "google/gemini-2.5-pro-preview-03-25",
-      "context_length": 1048576,
-      "created": 1746578513,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": null
-      },
-      "description": "Gemini 2.5 Pro is Google’s state-of-the-art AI model designed for advanced reasoning, coding, mathematics, and scientific tasks. It employs “thinking” capabilities, enabling it to reason through responses with enhanced accuracy...",
-      "expiration_date": null,
-      "id": "google/gemini-2.5-pro-preview-05-06",
-      "name": "Google: Gemini 2.5 Pro Preview 05-06",
-      "pricing": {
-        "completion": "0.00001",
-        "image": "0.00000125",
-        "input_cache_read": "0.000000125",
-        "input_cache_write": "0.000000375",
-        "internal_reasoning": "0.00001",
-        "prompt": "0.00000125",
-        "request": null,
-        "web_search": "0.014"
-      },
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 1048576,
-        "is_moderated": false,
-        "max_completion_tokens": 65535
-      }
-    },
     "google/gemini-2.5-pro:batch": {
       "architecture": {
         "input_modalities": [
@@ -7638,7 +7581,6 @@
         "min_p",
         "presence_penalty",
         "repetition_penalty",
-        "response_format",
         "seed",
         "stop",
         "temperature",
@@ -11286,7 +11228,6 @@
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
-        "response_format",
         "seed",
         "stop",
         "temperature",
@@ -11787,58 +11728,6 @@
       "expiration_date": null,
       "id": "openai/gpt-4-turbo",
       "name": "OpenAI: GPT-4 Turbo",
-      "pricing": {
-        "completion": "0.00003",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00001",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 128000,
-        "is_moderated": true,
-        "max_completion_tokens": 4096
-      }
-    },
-    "openai/gpt-4-turbo-preview": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT"
-      },
-      "canonical_slug": "openai/gpt-4-turbo-preview",
-      "context_length": 128000,
-      "created": 1706140800,
-      "default_parameters": {},
-      "description": "The preview GPT-4 model with improved instruction following, JSON mode, reproducible outputs, parallel function calling, and more. Training data: up to Dec 2023. **Note:** heavily rate limited by OpenAI while...",
-      "expiration_date": null,
-      "id": "openai/gpt-4-turbo-preview",
-      "name": "OpenAI: GPT-4 Turbo Preview",
       "pricing": {
         "completion": "0.00003",
         "image": null,
