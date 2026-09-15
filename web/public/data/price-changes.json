@@ -8755,7 +8755,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-15T20:32:31.676314Z",
+  "generated_at": "2026-09-15T21:08:44.973591Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "-0.686000",
@@ -8791,22 +8791,6 @@
     }
   ],
   "settled_changes": [
-    {
-      "delta_per_million_usd": "0.140000",
-      "detected_at": "2026-09-07T21:01:13.907210Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "1.000000",
-      "field": "completion",
-      "model_id": "deepseek/deepseek-chat-v3-0324",
-      "new_per_million_usd": "1.140000",
-      "old_per_million_usd": "1.000000",
-      "pct_change": 0.14,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-09-14T21:01:28.619312Z",
-      "settled_per_million_usd": "1.000000",
-      "status": "settled"
-    },
     {
       "delta_per_million_usd": "0.120000",
       "detected_at": "2026-09-08T01:01:10.332882Z",
