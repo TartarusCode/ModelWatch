@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T20:01:28.637625Z",
+  "generated_at": "2026-09-15T20:32:31.676314Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -1452,7 +1452,7 @@
       "description": "Claude Opus 5 is Anthropic’s flagship model for demanding reasoning, coding, and long-horizon agentic work. It is particularly strong at end-to-end software tasks, code review and bug finding, visual analysis...",
       "expiration_date": null,
       "id": "anthropic/claude-opus-5",
-      "name": "Claude Opus 5",
+      "name": "Anthropic: Claude Opus 5",
       "pricing": {
         "completion": "0.000025",
         "image": null,
@@ -1504,7 +1504,7 @@
       "description": "Claude Opus 5 is Anthropic’s flagship model for demanding reasoning, coding, and long-horizon agentic work. It is particularly strong at end-to-end software tasks, code review and bug finding, visual analysis...",
       "expiration_date": null,
       "id": "anthropic/claude-opus-5:batch",
-      "name": "Claude Opus 5 (batch)",
+      "name": "Anthropic: Claude Opus 5 (batch)",
       "pricing": {
         "completion": "0.0000125",
         "image": null,
@@ -3234,12 +3234,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000016184",
+        "completion": "0.00000015876",
         "image": null,
-        "input_cache_read": "0.000000016184",
+        "input_cache_read": "0.000000015876",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008092",
+        "prompt": "0.00000007938",
         "request": null,
         "web_search": null
       },
