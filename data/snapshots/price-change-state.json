@@ -7228,9 +7228,9 @@
       "pct_change": 0.6666666666666666,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-16T02:27:22.427812Z",
+      "settled_per_million_usd": "0.250000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "0.130000",
@@ -8111,9 +8111,41 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "delta_per_million_usd": "0.050000",
+      "detected_at": "2026-09-16T02:27:22.427812Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.200000",
+      "field": "completion",
+      "model_id": "mistralai/mistral-small-3.2-24b-instruct",
+      "new_per_million_usd": "0.250000",
+      "old_per_million_usd": "0.200000",
+      "pct_change": 0.25,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "delta_per_million_usd": "-0.150000",
+      "detected_at": "2026-09-16T02:27:22.427812Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.550000",
+      "field": "prompt",
+      "model_id": "minimax/minimax-m1",
+      "new_per_million_usd": "0.400000",
+      "old_per_million_usd": "0.550000",
+      "pct_change": -0.2727272727272727,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-09-16T00:06:34.899475Z",
+  "generated_at": "2026-09-16T02:27:51.732208Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -11105,7 +11137,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.022000000",
+        "anchor": "0.03278000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -11175,7 +11207,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.003000000",
+        "anchor": "0.006000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -13873,14 +13905,14 @@
     "ibm-granite/granite-4.2-8b": {
       "completion": {
         "anchor": "0.25000000",
-        "confirmed_at": "2026-09-09T01:01:08.644628Z",
-        "confirmed_price": "0.25000000",
-        "direction": "hike",
-        "episode_start_price": "0.15000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.015000000",
@@ -15184,15 +15216,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.55000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.4000000",
+        "confirmed_at": "2026-09-16T02:27:22.427812Z",
+        "confirmed_price": "0.4000000",
         "direction": "cut",
         "episode_start_price": "0.55000000",
-        "pending_builds": 1,
-        "pending_price": "0.4000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "minimax/minimax-m2": {
@@ -16181,15 +16213,15 @@
     },
     "mistralai/mistral-small-3.2-24b-instruct": {
       "completion": {
-        "anchor": "0.2000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.25000000",
+        "confirmed_at": "2026-09-16T02:27:22.427812Z",
+        "confirmed_price": "0.25000000",
         "direction": "hike",
         "episode_start_price": "0.2000000",
-        "pending_builds": 1,
-        "pending_price": "0.25000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.01000000",
