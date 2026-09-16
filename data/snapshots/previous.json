@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T23:51:09.728240Z",
+  "generated_at": "2026-09-16T00:06:34.899475Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -8099,7 +8099,7 @@
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000055",
+        "prompt": "0.0000004",
         "request": null,
         "web_search": null
       },
@@ -9775,12 +9775,12 @@
       "id": "mistralai/mistral-small-3.2-24b-instruct",
       "name": "Mistral: Mistral Small 3.2 24B",
       "pricing": {
-        "completion": "0.0000002",
+        "completion": "0.00000025",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.00000009375",
         "request": null,
         "web_search": null
       },
@@ -9804,7 +9804,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 128000,
+        "context_length": 256000,
         "is_moderated": false,
         "max_completion_tokens": 16384
       }
@@ -10238,12 +10238,12 @@
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
       "pricing": {
-        "completion": "0.0000035",
+        "completion": "0.00000321",
         "image": null,
-        "input_cache_read": "0.00000015",
+        "input_cache_read": "0.00000018",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000071",
+        "prompt": "0.0000007062",
         "request": null,
         "web_search": null
       },
@@ -11027,12 +11027,12 @@
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
       "name": "NVIDIA: Nemotron 3 Ultra",
       "pricing": {
-        "completion": "0.0000024",
+        "completion": "0.000003125",
         "image": null,
-        "input_cache_read": "0.00000012",
+        "input_cache_read": "0.0000001875",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000006",
+        "prompt": "0.000000625",
         "request": null,
         "web_search": null
       },
@@ -11057,9 +11057,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 202800,
+        "context_length": 256000,
         "is_moderated": false,
-        "max_completion_tokens": 182520
+        "max_completion_tokens": 32768
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b:free": {
@@ -21031,12 +21031,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -23238,12 +23238,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.00000025",
+        "completion": "0.0000003333",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
