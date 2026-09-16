@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T14:13:05.326690Z",
+  "generated_at": "2026-09-16T14:53:11.864031Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -20703,6 +20703,51 @@
         "context_length": 131072,
         "is_moderated": false,
         "max_completion_tokens": 16384
+      }
+    },
+    "stealth/union-alpha": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "stealth/union-alpha",
+      "context_length": 262144,
+      "created": 1789569723,
+      "default_parameters": {},
+      "description": "Union Alpha is a multimodal model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks. Union Alpha is a stealth model....",
+      "expiration_date": "2098-12-31",
+      "id": "stealth/union-alpha",
+      "name": "Union Alpha",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "max_tokens",
+        "response_format",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
       }
     },
     "stepfun/step-3.5-flash": {
