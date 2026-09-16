@@ -8143,9 +8143,25 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "delta_per_million_usd": "-0.080000",
+      "detected_at": "2026-09-16T04:34:27.714530Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.600000",
+      "field": "completion",
+      "model_id": "qwen/qwen3-vl-30b-a3b-instruct",
+      "new_per_million_usd": "0.520000",
+      "old_per_million_usd": "0.600000",
+      "pct_change": -0.13333333333333333,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-09-16T04:16:02.006512Z",
+  "generated_at": "2026-09-16T04:34:36.411709Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -22691,15 +22707,15 @@
     },
     "qwen/qwen3-vl-30b-a3b-instruct": {
       "completion": {
-        "anchor": "0.6000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.52000000",
+        "confirmed_at": "2026-09-16T04:34:27.714530Z",
+        "confirmed_price": "0.52000000",
         "direction": "cut",
         "episode_start_price": "0.6000000",
-        "pending_builds": 1,
-        "pending_price": "0.52000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "prompt": {
         "anchor": "0.13000000",
