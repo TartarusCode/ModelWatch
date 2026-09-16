@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T06:38:07.770902Z",
+  "generated_at": "2026-09-16T07:36:42.554463Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -18511,12 +18511,12 @@
       "id": "qwen/qwen3-vl-30b-a3b-instruct",
       "name": "Qwen: Qwen3 VL 30B A3B Instruct",
       "pricing": {
-        "completion": "0.00000052",
+        "completion": "0.0000006",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000013",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -18540,9 +18540,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 16384
       }
     },
     "qwen/qwen3-vl-30b-a3b-thinking": {
