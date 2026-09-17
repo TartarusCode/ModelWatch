@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T22:26:47.080865Z",
+  "generated_at": "2026-09-17T01:31:40.781435Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3234,12 +3234,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000015568",
+        "completion": "0.000000177212",
         "image": null,
-        "input_cache_read": "0.000000015568",
+        "input_cache_read": "0.0000000177212",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000007784",
+        "prompt": "0.000000088606",
         "request": null,
         "web_search": null
       },
@@ -3592,12 +3592,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000173844",
+        "completion": "0.00000396",
         "image": null,
-        "input_cache_read": "0.000000018438",
+        "input_cache_read": "0.000000044",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000057948",
+        "prompt": "0.00000132",
         "request": null,
         "web_search": null
       },
@@ -3626,7 +3626,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 393216
+        "max_completion_tokens": 384000
       }
     },
     "deepseek/deepseek-v4-pro-0813:batch": {
@@ -3711,12 +3711,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -10786,12 +10786,12 @@
       "id": "nvidia/nemotron-3-nano-30b-a3b",
       "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
       "pricing": {
-        "completion": "0.0000002",
+        "completion": "0.00000024",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000005",
+        "prompt": "0.00000006",
         "request": null,
         "web_search": null
       },
@@ -11027,12 +11027,12 @@
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
       "name": "NVIDIA: Nemotron 3 Ultra",
       "pricing": {
-        "completion": "0.0000024",
+        "completion": "0.000003125",
         "image": null,
-        "input_cache_read": "0.00000012",
+        "input_cache_read": "0.0000001875",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000006",
+        "prompt": "0.000000625",
         "request": null,
         "web_search": null
       },
@@ -11057,9 +11057,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 202800,
+        "context_length": 256000,
         "is_moderated": false,
-        "max_completion_tokens": 182520
+        "max_completion_tokens": 32768
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b:free": {
@@ -11483,7 +11483,7 @@
       ],
       "top_provider": {
         "context_length": 16385,
-        "is_moderated": true,
+        "is_moderated": false,
         "max_completion_tokens": 4096
       }
     },
@@ -21076,12 +21076,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
