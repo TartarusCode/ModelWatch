@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T23:01:37.149798Z",
+  "generated_at": "2026-09-17T23:31:16.621745Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -21690,6 +21690,51 @@
         "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 262144
+      }
+    },
+    "unbiased/pareto": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "unbiased/pareto-20260917",
+      "context_length": 262144,
+      "created": 1789686178,
+      "default_parameters": {},
+      "description": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks.",
+      "expiration_date": null,
+      "id": "unbiased/pareto",
+      "name": "Pareto",
+      "pricing": {
+        "completion": "0.0000075",
+        "image": null,
+        "input_cache_read": "0.00000025",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000025",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "max_tokens",
+        "response_format",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
       }
     },
     "undi95/remm-slerp-l2-13b": {
