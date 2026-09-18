@@ -8337,7 +8337,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-18T00:02:00.126668Z",
+  "generated_at": "2026-09-18T00:31:17.662399Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -11213,7 +11213,7 @@
     },
     "deepseek/deepseek-v4-flash-vision-exp": {
       "completion": {
-        "anchor": "0.66000000",
+        "anchor": "0.6468000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -11224,7 +11224,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.007000000",
+        "anchor": "0.00686000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -11235,7 +11235,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.22000000",
+        "anchor": "0.2156000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -11329,7 +11329,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.05808000000",
+        "anchor": "0.022000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -16740,11 +16740,11 @@
         "episode_start_price": "13.28272425000000",
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 0,
+        "recovery_builds": 1,
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.3000000",
+        "anchor": "0.23000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -16762,7 +16762,7 @@
         "episode_start_price": "2.648138063000000",
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 0,
+        "recovery_builds": 1,
         "status": "confirmed"
       }
     },
@@ -20786,12 +20786,12 @@
         "anchor": "0.17000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.17000000",
+        "pending_builds": 1,
+        "pending_price": "0.6000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.03000000",
@@ -20808,12 +20808,12 @@
         "anchor": "0.037000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.037000000",
+        "pending_builds": 1,
+        "pending_price": "0.15000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "openai/gpt-oss-120b:batch": {
@@ -24377,15 +24377,15 @@
         "anchor": "0.33000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.33000000",
+        "pending_builds": 1,
+        "pending_price": "0.528000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.020625000000",
+        "anchor": "0.033000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -24396,7 +24396,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.0825000000",
+        "anchor": "0.132000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -25363,7 +25363,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.08000000",
+        "anchor": "0.1000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,

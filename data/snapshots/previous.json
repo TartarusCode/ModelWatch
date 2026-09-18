@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T00:02:00.126668Z",
+  "generated_at": "2026-09-18T00:31:17.662399Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -1275,7 +1275,7 @@
       ],
       "top_provider": {
         "context_length": 1000000,
-        "is_moderated": false,
+        "is_moderated": true,
         "max_completion_tokens": 128000
       }
     },
@@ -3412,12 +3412,12 @@
       "id": "deepseek/deepseek-v4-flash-vision-exp",
       "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
       "pricing": {
-        "completion": "0.00000066",
+        "completion": "0.0000006468",
         "image": null,
-        "input_cache_read": "0.000000007",
+        "input_cache_read": "0.00000000686",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000022",
+        "prompt": "0.0000002156",
         "request": null,
         "web_search": null
       },
@@ -3446,7 +3446,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 262144
       }
     },
     "deepseek/deepseek-v4-flash-vision-exp:batch": {
@@ -3592,12 +3592,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.0000017424",
+        "completion": "0.00000198",
         "image": null,
-        "input_cache_read": "0.00000005808",
+        "input_cache_read": "0.000000022",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005808",
+        "prompt": "0.00000066",
         "request": null,
         "web_search": null
       },
@@ -3624,9 +3624,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1000000,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 393216
+        "max_completion_tokens": 384000
       }
     },
     "deepseek/deepseek-v4-pro-0813:batch": {
@@ -9628,7 +9628,6 @@
         "temperature",
         "tool_choice",
         "tools",
-        "top_k",
         "top_p"
       ],
       "top_provider": {
@@ -10305,12 +10304,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.000015",
+        "completion": "0.00001095",
         "image": null,
-        "input_cache_read": "0.0000003",
+        "input_cache_read": "0.00000023",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000003",
+        "prompt": "0.0000021",
         "request": null,
         "web_search": null
       },
@@ -15468,12 +15467,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.00000017",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000037",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -15503,7 +15502,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 117964
+        "max_completion_tokens": 65536
       }
     },
     "openai/gpt-oss-120b:batch": {
@@ -21088,12 +21087,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22668,12 +22667,12 @@
       "id": "z-ai/glm-4.6",
       "name": "Z.ai: GLM 4.6",
       "pricing": {
-        "completion": "0.00000175",
+        "completion": "0.000002",
         "image": null,
-        "input_cache_read": "0.00000008",
+        "input_cache_read": "0.0000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000043",
+        "prompt": "0.0000005",
         "request": null,
         "web_search": null
       },
@@ -22697,9 +22696,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 198000,
+        "context_length": 202752,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-4.6v": {
