@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T13:01:19.581717Z",
+  "generated_at": "2026-09-18T13:31:30.406490Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3880,7 +3880,7 @@
         "top_p": null
       },
       "description": "Gemini 2.5 Flash is Google's state-of-the-art workhorse model, specifically designed for advanced reasoning, coding, mathematics, and scientific tasks. It includes built-in \"thinking\" capabilities, enabling it to provide responses with greater...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-20",
       "id": "google/gemini-2.5-flash",
       "name": "Google: Gemini 2.5 Flash",
       "pricing": {
@@ -3935,7 +3935,7 @@
         "top_p": null
       },
       "description": "Gemini 2.5 Flash Image, a.k.a. \"Nano Banana,\" is now generally available. It is a state of the art image generation model with contextual understanding. It is capable of image generation,...",
-      "expiration_date": null,
+      "expiration_date": "2027-03-15",
       "id": "google/gemini-2.5-flash-image",
       "name": "Google: Nano Banana (Gemini 2.5 Flash Image)",
       "pricing": {
@@ -3988,7 +3988,7 @@
         "top_p": null
       },
       "description": "Gemini 2.5 Flash-Lite is a lightweight reasoning model in the Gemini 2.5 family, optimized for ultra-low latency and cost efficiency. It offers improved throughput, faster token generation, and better performance...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-20",
       "id": "google/gemini-2.5-flash-lite",
       "name": "Google: Gemini 2.5 Flash Lite",
       "pricing": {
@@ -4105,7 +4105,7 @@
         "top_p": null
       },
       "description": "Gemini 2.5 Flash is Google's state-of-the-art workhorse model, specifically designed for advanced reasoning, coding, mathematics, and scientific tasks. It includes built-in \"thinking\" capabilities, enabling it to provide responses with greater...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-20",
       "id": "google/gemini-2.5-flash:batch",
       "name": "Google: Gemini 2.5 Flash (batch)",
       "pricing": {
@@ -4162,7 +4162,7 @@
         "top_p": null
       },
       "description": "Gemini 2.5 Pro is Google’s state-of-the-art AI model designed for advanced reasoning, coding, mathematics, and scientific tasks. It employs “thinking” capabilities, enabling it to reason through responses with enhanced accuracy...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-20",
       "id": "google/gemini-2.5-pro",
       "name": "Google: Gemini 2.5 Pro",
       "pricing": {
@@ -4271,7 +4271,7 @@
         "top_p": null
       },
       "description": "Gemini 2.5 Pro is Google’s state-of-the-art AI model designed for advanced reasoning, coding, mathematics, and scientific tasks. It employs “thinking” capabilities, enabling it to reason through responses with enhanced accuracy...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-20",
       "id": "google/gemini-2.5-pro:batch",
       "name": "Google: Gemini 2.5 Pro (batch)",
       "pricing": {
@@ -10305,12 +10305,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.00001095",
+        "completion": "0.0000115948",
         "image": null,
-        "input_cache_read": "0.00000023",
+        "input_cache_read": "0.000000240178",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000021",
+        "prompt": "0.0000020705",
         "request": null,
         "web_search": null
       },
