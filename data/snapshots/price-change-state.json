@@ -8481,7 +8481,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-18T06:01:22.099565Z",
+  "generated_at": "2026-09-18T06:31:22.257671Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -11473,7 +11473,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.022000000",
+        "anchor": "0.044000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -11535,15 +11535,15 @@
         "anchor": "0.6000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.6000000",
+        "pending_builds": 1,
+        "pending_price": "1.2000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.003000000",
+        "anchor": "0.006000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -11557,12 +11557,12 @@
         "anchor": "0.15000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.15000000",
+        "pending_builds": 1,
+        "pending_price": "0.3000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "google/gemini-2.5-flash": {
@@ -16877,7 +16877,7 @@
     },
     "moonshotai/kimi-k3": {
       "completion": {
-        "anchor": "10.95000000",
+        "anchor": "11.2000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -16888,7 +16888,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.23000000",
+        "anchor": "0.232000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -16899,7 +16899,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "2.1000000",
+        "anchor": "2.000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
