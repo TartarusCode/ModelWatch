@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T19:01:25.079178Z",
+  "generated_at": "2026-09-18T19:31:32.299278Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3234,12 +3234,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000009856",
+        "completion": "0.000000098",
         "image": null,
-        "input_cache_read": "0.000000009856",
+        "input_cache_read": "0.0000000098",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004928",
+        "prompt": "0.000000049",
         "request": null,
         "web_search": null
       },
@@ -10305,12 +10305,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.00001095",
+        "completion": "0.00001092",
         "image": null,
-        "input_cache_read": "0.00000023",
+        "input_cache_read": "0.0000002262",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000021",
+        "prompt": "0.00000195",
         "request": null,
         "web_search": null
       },
@@ -17024,6 +17024,67 @@
         "temperature",
         "tool_choice",
         "tools"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 32768
+      }
+    },
+    "prism-ml/ternary-bonsai-2-27b": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen"
+      },
+      "canonical_slug": "prism-ml/ternary-bonsai-2-27b-20260918",
+      "context_length": 262144,
+      "created": 1789754046,
+      "default_parameters": {
+        "temperature": 1,
+        "top_k": 20,
+        "top_p": 0.95
+      },
+      "description": "Bonsai 2 27B is a 27B-parameter reasoning model from PrismML derived from Qwen3.8-27B. It supports coding, mathematics, tool calling, and image understanding with a 262K-token context window. Ternary compression shrinks...",
+      "expiration_date": null,
+      "id": "prism-ml/ternary-bonsai-2-27b",
+      "name": "PrismML: Ternary Bonsai 2 27B",
+      "pricing": {
+        "completion": "0.0000005",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000000075",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
       ],
       "top_provider": {
         "context_length": 262144,
