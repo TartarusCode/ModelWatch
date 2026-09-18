@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T01:01:17.626665Z",
+  "generated_at": "2026-09-18T01:31:17.619417Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3390,6 +3390,62 @@
         "max_completion_tokens": 943718
       }
     },
+    "deepseek/deepseek-v4-flash-0731:free": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "DeepSeek"
+      },
+      "canonical_slug": "deepseek/deepseek-v4-flash-20260731",
+      "context_length": 1048576,
+      "created": 1785478908,
+      "default_parameters": {},
+      "description": "DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workflows....",
+      "expiration_date": null,
+      "id": "deepseek/deepseek-v4-flash-0731:free",
+      "name": "DeepSeek: DeepSeek V4 Flash 0731 (free)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 393216
+      }
+    },
     "deepseek/deepseek-v4-flash-vision-exp": {
       "architecture": {
         "input_modalities": [
@@ -3592,12 +3648,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000198",
+        "completion": "0.00000396",
         "image": null,
-        "input_cache_read": "0.000000022",
+        "input_cache_read": "0.000000044",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000066",
+        "prompt": "0.00000132",
         "request": null,
         "web_search": null
       },
@@ -3711,12 +3767,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -16451,6 +16507,7 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "logprobs",
         "max_completion_tokens",
         "max_tokens",
