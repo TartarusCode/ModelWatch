@@ -7820,9 +7820,9 @@
       "pct_change": -0.5555555555555556,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
+      "settled_at": "2026-09-19T06:01:08.829504Z",
+      "settled_per_million_usd": "0.180000",
+      "status": "settled"
     },
     {
       "delta_per_million_usd": "0.345409",
@@ -8593,7 +8593,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-19T05:31:23.294655Z",
+  "generated_at": "2026-09-19T06:01:17.208056Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -11399,15 +11399,15 @@
     },
     "deepseek/deepseek-v4-flash-0731": {
       "completion": {
-        "anchor": "0.08000000",
-        "confirmed_at": "2026-09-12T06:01:08.252636Z",
-        "confirmed_price": "0.08000000",
-        "direction": "cut",
-        "episode_start_price": "0.18000000",
+        "anchor": "0.18000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.016000000",
@@ -11539,7 +11539,7 @@
     },
     "deepseek/deepseek-v4-pro": {
       "completion": {
-        "anchor": "1.168932000000",
+        "anchor": "1.148748000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -11550,7 +11550,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.0487055000000",
+        "anchor": "0.0478645000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -11561,7 +11561,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.584466000000",
+        "anchor": "0.574374000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
