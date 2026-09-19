@@ -8591,9 +8591,25 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "delta_per_million_usd": "-2.000000",
+      "detected_at": "2026-09-19T08:01:10.976918Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "10.500000",
+      "field": "completion",
+      "model_id": "moonshotai/kimi-k3",
+      "new_per_million_usd": "8.500000",
+      "old_per_million_usd": "10.500000",
+      "pct_change": -0.19047619047619047,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-09-19T07:31:32.823662Z",
+  "generated_at": "2026-09-19T08:01:17.444878Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -11364,7 +11380,7 @@
     },
     "deepseek/deepseek-v4-flash": {
       "completion": {
-        "anchor": "0.09352000000",
+        "anchor": "0.09296000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -11375,7 +11391,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.009352000000",
+        "anchor": "0.009296000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -11386,7 +11402,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.04676000000",
+        "anchor": "0.04648000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -16989,15 +17005,15 @@
     },
     "moonshotai/kimi-k3": {
       "completion": {
-        "anchor": "10.5000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "8.5000000",
+        "confirmed_at": "2026-09-19T08:01:10.976918Z",
+        "confirmed_price": "8.5000000",
         "direction": "cut",
         "episode_start_price": "10.5000000",
-        "pending_builds": 1,
-        "pending_price": "8.5000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.17000000",
