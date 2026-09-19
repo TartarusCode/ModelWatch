@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T00:01:27.770793Z",
+  "generated_at": "2026-09-19T00:31:22.544985Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,12 +3586,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.0000032",
+        "completion": "0.000001371816",
         "image": null,
-        "input_cache_read": "0.000000135",
+        "input_cache_read": "0.000000057159",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000016",
+        "prompt": "0.000000685908",
         "request": null,
         "web_search": null
       },
@@ -3619,9 +3619,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1024000,
         "is_moderated": false,
-        "max_completion_tokens": 393216
+        "max_completion_tokens": 384000
       }
     },
     "deepseek/deepseek-v4-pro-0813": {
@@ -11027,12 +11027,12 @@
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
       "name": "NVIDIA: Nemotron 3 Ultra",
       "pricing": {
-        "completion": "0.000003125",
+        "completion": "0.0000024",
         "image": null,
-        "input_cache_read": "0.0000001875",
+        "input_cache_read": "0.00000012",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000625",
+        "prompt": "0.0000006",
         "request": null,
         "web_search": null
       },
@@ -11057,9 +11057,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 256000,
+        "context_length": 202800,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 182520
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b:free": {
@@ -11253,7 +11253,7 @@
         "input_cache_read": "0.00000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008",
+        "prompt": "0.00000007",
         "request": null,
         "web_search": null
       },
@@ -11281,7 +11281,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 235929
       }
     },
     "nvidia/nemotron-3.5-lightning:free": {
@@ -18566,12 +18566,12 @@
       "id": "qwen/qwen3-vl-30b-a3b-instruct",
       "name": "Qwen: Qwen3 VL 30B A3B Instruct",
       "pricing": {
-        "completion": "0.00000052",
+        "completion": "0.0000007",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000013",
+        "prompt": "0.0000002",
         "request": null,
         "web_search": null
       },
@@ -21143,12 +21143,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
