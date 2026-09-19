@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T03:01:28.552149Z",
+  "generated_at": "2026-09-19T03:31:06.671457Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,12 +3586,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001310916",
+        "completion": "0.000001290732",
         "image": null,
-        "input_cache_read": "0.0000000546215",
+        "input_cache_read": "0.0000000537805",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000655458",
+        "prompt": "0.000000645366",
         "request": null,
         "web_search": null
       },
@@ -23490,6 +23490,59 @@
         "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 943718
+      }
+    },
+    "z-ai/glm-5.3-flashx": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "z-ai/glm-5.3-flashx-20260918",
+      "context_length": 1048576,
+      "created": 1789744020,
+      "default_parameters": {
+        "temperature": 1,
+        "top_p": 0.95
+      },
+      "description": "GLM-5.3-FlashX is the high-speed variant of Z.ai's GLM-5.3-Flash, a native multimodal model delivering inference speeds of up to 200 tokens/s. Built on the same hybrid sparse and linear attention architecture...",
+      "expiration_date": null,
+      "id": "z-ai/glm-5.3-flashx",
+      "name": "Z.ai: GLM 5.3 FlashX",
+      "pricing": {
+        "completion": "0.00000125",
+        "image": null,
+        "input_cache_read": "0.000000075",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000037",
+        "request": null,
+        "web_search": null
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-5.3:batch": {
