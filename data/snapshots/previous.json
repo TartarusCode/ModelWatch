@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T04:01:13.486480Z",
+  "generated_at": "2026-09-20T04:31:10.061744Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3388,62 +3388,6 @@
         "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 943718
-      }
-    },
-    "deepseek/deepseek-v4-flash-0731:free": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "DeepSeek"
-      },
-      "canonical_slug": "deepseek/deepseek-v4-flash-20260731",
-      "context_length": 1048576,
-      "created": 1785478908,
-      "default_parameters": {},
-      "description": "DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workflows....",
-      "expiration_date": null,
-      "id": "deepseek/deepseek-v4-flash-0731:free",
-      "name": "DeepSeek: DeepSeek V4 Flash 0731 (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "reasoning_effort",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 1048576,
-        "is_moderated": false,
-        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4-flash-vision-exp": {
@@ -16445,7 +16389,6 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
         "logprobs",
         "max_completion_tokens",
         "max_tokens",
@@ -23146,12 +23089,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000017424",
+        "completion": "0.0000020416",
         "image": null,
-        "input_cache_read": "0.00000010296",
+        "input_cache_read": "0.00000012064",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005544",
+        "prompt": "0.0000006496",
         "request": null,
         "web_search": null
       },
