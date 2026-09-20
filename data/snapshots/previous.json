@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T02:31:16.139551Z",
+  "generated_at": "2026-09-20T03:01:30.585432Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -1984,7 +1984,7 @@
       "created": 1751300903,
       "default_parameters": {},
       "description": "ERNIE-4.5-VL-424B-A47B is a multimodal Mixture-of-Experts (MoE) model from Baidu’s ERNIE 4.5 series, featuring 424B total parameters with 47B active per token. It is trained jointly on text and image data...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-08",
       "id": "baidu/ernie-4.5-vl-424b-a47b",
       "name": "Baidu: ERNIE 4.5 VL 424B A47B ",
       "pricing": {
@@ -2997,7 +2997,7 @@
       "created": 1737663169,
       "default_parameters": {},
       "description": "DeepSeek R1 Distill Llama 70B is a distilled large language model based on [Llama-3.3-70B-Instruct](/meta-llama/llama-3.3-70b-instruct), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). The model combines advanced distillation techniques to achieve high performance across...",
-      "expiration_date": null,
+      "expiration_date": "2026-09-28",
       "id": "deepseek/deepseek-r1-distill-llama-70b",
       "name": "DeepSeek: R1 Distill Llama 70B",
       "pricing": {
@@ -3050,7 +3050,7 @@
         "top_p": null
       },
       "description": "DeepSeek-V3.1 Terminus is an update to [DeepSeek V3.1](/deepseek/deepseek-chat-v3.1) that maintains the model's original capabilities while addressing issues reported by users, including language consistency and agent capabilities, further optimizing the model's...",
-      "expiration_date": null,
+      "expiration_date": "2026-09-28",
       "id": "deepseek/deepseek-v3.1-terminus",
       "name": "DeepSeek: DeepSeek V3.1 Terminus",
       "pricing": {
@@ -3112,7 +3112,7 @@
         "top_p": 0.95
       },
       "description": "DeepSeek-V3.2 is a large language model designed to harmonize high computational efficiency with strong reasoning and agentic tool-use performance. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism...",
-      "expiration_date": null,
+      "expiration_date": "2026-09-28",
       "id": "deepseek/deepseek-v3.2",
       "name": "DeepSeek: DeepSeek V3.2",
       "pricing": {
@@ -3173,7 +3173,7 @@
         "top_p": 0.95
       },
       "description": "DeepSeek-V3.2-Exp is an experimental large language model released by DeepSeek as an intermediate step between V3.1 and future architectures. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism...",
-      "expiration_date": null,
+      "expiration_date": "2026-09-28",
       "id": "deepseek/deepseek-v3.2-exp",
       "name": "DeepSeek: DeepSeek V3.2 Exp",
       "pricing": {
@@ -3234,12 +3234,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000007448",
+        "completion": "0.00000007392",
         "image": null,
-        "input_cache_read": "0.000000007448",
+        "input_cache_read": "0.000000007392",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000003724",
+        "prompt": "0.00000003696",
         "request": null,
         "web_search": null
       },
@@ -8305,7 +8305,7 @@
         "top_p": 0.9
       },
       "description": "MiniMax-M2.1 is a lightweight, state-of-the-art large language model optimized for coding, agentic workflows, and modern application development. With only 10 billion activated parameters, it delivers a major jump in real-world...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-08",
       "id": "minimax/minimax-m2.1",
       "name": "MiniMax: MiniMax M2.1",
       "pricing": {
