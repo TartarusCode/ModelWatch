@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T15:01:20.265073Z",
+  "generated_at": "2026-09-20T15:31:15.832722Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3592,12 +3592,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000164736",
+        "completion": "0.0000016434",
         "image": null,
-        "input_cache_read": "0.000000017472",
+        "input_cache_read": "0.00000001826",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000054912",
+        "prompt": "0.0000005478",
         "request": null,
         "web_search": null
       },
@@ -3624,9 +3624,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1024000,
         "is_moderated": false,
-        "max_completion_tokens": 393216
+        "max_completion_tokens": 384000
       }
     },
     "deepseek/deepseek-v4-pro-0813:batch": {
@@ -23274,12 +23274,12 @@
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "pricing": {
-        "completion": "0.000002728",
+        "completion": "0.00000286",
         "image": null,
-        "input_cache_read": "0.0000001612",
+        "input_cache_read": "0.000000169",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000868",
+        "prompt": "0.00000091",
         "request": null,
         "web_search": null
       },
