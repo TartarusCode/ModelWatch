@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T16:01:19.402093Z",
+  "generated_at": "2026-09-20T16:31:22.694833Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3592,12 +3592,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000163548",
+        "completion": "0.00000162756",
         "image": null,
-        "input_cache_read": "0.000000018172",
+        "input_cache_read": "0.000000018084",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000054516",
+        "prompt": "0.00000054252",
         "request": null,
         "web_search": null
       },
@@ -18511,12 +18511,12 @@
       "id": "qwen/qwen3-vl-30b-a3b-instruct",
       "name": "Qwen: Qwen3 VL 30B A3B Instruct",
       "pricing": {
-        "completion": "0.0000007",
+        "completion": "0.00000052",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000002",
+        "prompt": "0.00000013",
         "request": null,
         "web_search": null
       },
@@ -21088,12 +21088,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.000000528",
+        "completion": "0.00000033",
         "image": null,
-        "input_cache_read": "0.000000033",
+        "input_cache_read": "0.000000020625",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000132",
+        "prompt": "0.0000000825",
         "request": null,
         "web_search": null
       },
