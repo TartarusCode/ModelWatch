@@ -8618,11 +8618,11 @@
       "new_per_million_usd": "0.420000",
       "old_per_million_usd": "0.214000",
       "pct_change": 0.9626168224299065,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-09-20T14:01:17.679004Z",
+      "recovered_per_million_usd": "0.200000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     },
     {
       "delta_per_million_usd": "0.450000",
@@ -8689,7 +8689,7 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-20T13:31:27.802565Z",
+  "generated_at": "2026-09-20T14:01:30.036910Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -11460,7 +11460,7 @@
     },
     "deepseek/deepseek-v4-flash": {
       "completion": {
-        "anchor": "0.07224000000",
+        "anchor": "0.07168000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -11471,7 +11471,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.007224000000",
+        "anchor": "0.007168000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -11482,7 +11482,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.03612000000",
+        "anchor": "0.03584000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -24020,15 +24020,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.42000000",
-        "confirmed_at": "2026-09-20T01:01:05.865927Z",
-        "confirmed_price": "0.42000000",
-        "direction": "hike",
-        "episode_start_price": "0.214000000",
+        "anchor": "0.2000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
-        "status": "confirmed"
+        "recovery_builds": 0,
+        "status": "idle"
       }
     },
     "qwen/qwen3.8-flash": {

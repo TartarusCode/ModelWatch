@@ -385,22 +385,6 @@
       "status": "active"
     },
     {
-      "delta_per_million_usd": "0.206000",
-      "detected_at": "2026-09-20T01:01:05.865927Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.214000",
-      "field": "prompt",
-      "model_id": "qwen/qwen3.8-27b",
-      "new_per_million_usd": "0.420000",
-      "old_per_million_usd": "0.214000",
-      "pct_change": 0.9626168224299065,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active"
-    },
-    {
       "delta_per_million_usd": "0.198000",
       "detected_at": "2026-09-18T01:01:03.319076Z",
       "direction": "hike",
@@ -9148,11 +9132,11 @@
       "new_per_million_usd": "0.420000",
       "old_per_million_usd": "0.214000",
       "pct_change": 0.9626168224299065,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-09-20T14:01:17.679004Z",
+      "recovered_per_million_usd": "0.200000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active"
+      "status": "recovered"
     },
     {
       "delta_per_million_usd": "0.450000",
@@ -9219,8 +9203,25 @@
       "status": "active"
     }
   ],
-  "generated_at": "2026-09-20T13:31:27.802565Z",
-  "recovered_changes": [],
+  "generated_at": "2026-09-20T14:01:30.036910Z",
+  "recovered_changes": [
+    {
+      "delta_per_million_usd": "0.206000",
+      "detected_at": "2026-09-20T01:01:05.865927Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.214000",
+      "field": "prompt",
+      "model_id": "qwen/qwen3.8-27b",
+      "new_per_million_usd": "0.420000",
+      "old_per_million_usd": "0.214000",
+      "pct_change": 0.9626168224299065,
+      "recovered_at": "2026-09-20T14:01:17.679004Z",
+      "recovered_per_million_usd": "0.200000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "recovered"
+    }
+  ],
   "settled_changes": [
     {
       "delta_per_million_usd": "0.050000",
