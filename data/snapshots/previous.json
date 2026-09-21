@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T15:31:41.174655Z",
+  "generated_at": "2026-09-21T16:01:30.875793Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -854,61 +854,6 @@
         "max_completion_tokens": 64000
       }
     },
-    "anthropic/claude-opus-4": {
-      "architecture": {
-        "input_modalities": [
-          "image",
-          "text",
-          "file"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+file->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Claude"
-      },
-      "canonical_slug": "anthropic/claude-4-opus-20250522",
-      "context_length": 200000,
-      "created": 1747931245,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "Claude Opus 4 is benchmarked as the world’s best coding model, at time of release, bringing sustained performance on complex, long-running tasks and agent workflows. It sets new benchmarks in...",
-      "expiration_date": null,
-      "id": "anthropic/claude-opus-4",
-      "name": "Anthropic: Claude Opus 4",
-      "pricing": {
-        "completion": "0.000075",
-        "image": null,
-        "input_cache_read": "0.0000015",
-        "input_cache_write": "0.00001875",
-        "internal_reasoning": null,
-        "prompt": "0.000015",
-        "request": null,
-        "web_search": "0.01"
-      },
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 200000,
-        "is_moderated": false,
-        "max_completion_tokens": 32000
-      }
-    },
     "anthropic/claude-opus-4.1": {
       "architecture": {
         "input_modalities": [
@@ -1549,7 +1494,7 @@
         "tokenizer": "Claude"
       },
       "canonical_slug": "anthropic/claude-4-sonnet-20250522",
-      "context_length": 1000000,
+      "context_length": 200000,
       "created": 1747930371,
       "default_parameters": {
         "frequency_penalty": null,
@@ -3531,12 +3476,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001885812",
+        "completion": "0.0000018792",
         "image": null,
-        "input_cache_read": "0.0000000785755",
+        "input_cache_read": "0.0000000783",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000942906",
+        "prompt": "0.0000009396",
         "request": null,
         "web_search": null
       },
@@ -3593,12 +3538,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000173052",
+        "completion": "0.00000172656",
         "image": null,
-        "input_cache_read": "0.000000018354",
+        "input_cache_read": "0.000000019184",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000057684",
+        "prompt": "0.00000057552",
         "request": null,
         "web_search": null
       },
@@ -3625,9 +3570,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1024000,
         "is_moderated": false,
-        "max_completion_tokens": 393216
+        "max_completion_tokens": 384000
       }
     },
     "deepseek/deepseek-v4-pro-0813:batch": {
