@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T17:02:01.044356Z",
+  "generated_at": "2026-09-21T17:31:22.505226Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3315,7 +3315,6 @@
         "logit_bias",
         "logprobs",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
@@ -3476,12 +3475,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001869108",
+        "completion": "0.000001855536",
         "image": null,
-        "input_cache_read": "0.0000000778795",
+        "input_cache_read": "0.000000077314",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000934554",
+        "prompt": "0.000000927768",
         "request": null,
         "web_search": null
       },
@@ -3538,12 +3537,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000171468",
+        "completion": "0.00000171072",
         "image": null,
-        "input_cache_read": "0.000000018186",
+        "input_cache_read": "0.000000019008",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000057156",
+        "prompt": "0.00000057024",
         "request": null,
         "web_search": null
       },
@@ -3570,9 +3569,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1024000,
         "is_moderated": false,
-        "max_completion_tokens": 393216
+        "max_completion_tokens": 384000
       }
     },
     "deepseek/deepseek-v4-pro-0813:batch": {
@@ -3614,7 +3613,6 @@
         "logit_bias",
         "logprobs",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
@@ -6197,12 +6195,12 @@
       "id": "ibm-granite/granite-4.2-8b",
       "name": "IBM: Granite 4.2 8B",
       "pricing": {
-        "completion": "0.00000015",
+        "completion": "0.00000025",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.00000006",
         "request": null,
         "web_search": null
       },
@@ -7579,7 +7577,6 @@
         "logit_bias",
         "logprobs",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
@@ -8422,69 +8419,6 @@
         "context_length": 524288,
         "is_moderated": false,
         "max_completion_tokens": 512000
-      }
-    },
-    "minimax/minimax-m3:batch": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "video"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+video->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "minimax/minimax-m3-20260531",
-      "context_length": 524288,
-      "created": 1780245374,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": 1,
-        "top_k": null,
-        "top_p": 0.95
-      },
-      "description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,...",
-      "expiration_date": null,
-      "id": "minimax/minimax-m3:batch",
-      "name": "MiniMax: MiniMax M3 (batch)",
-      "pricing": {
-        "completion": "0.0000012",
-        "image": null,
-        "input_cache_read": "0.00000006",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000003",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 524288,
-        "is_moderated": false,
-        "max_completion_tokens": 471859
       }
     },
     "mistralai/codestral-2508": {
@@ -10197,12 +10131,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.0000085",
+        "completion": "0.000015",
         "image": null,
-        "input_cache_read": "0.00000017",
+        "input_cache_read": "0.0000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000017",
+        "prompt": "0.000003",
         "request": null,
         "web_search": null
       },
@@ -10226,70 +10160,6 @@
         "tools",
         "top_k",
         "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 1048576,
-        "is_moderated": false,
-        "max_completion_tokens": 943718
-      }
-    },
-    "moonshotai/kimi-k3:batch": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "video"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+video->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "moonshotai/kimi-k3-20260715",
-      "context_length": 1048576,
-      "created": 1784215858,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": 0.95
-      },
-      "description": "Kimi K3 is a 2.8T parameter open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at...",
-      "expiration_date": null,
-      "id": "moonshotai/kimi-k3:batch",
-      "name": "MoonshotAI: Kimi K3 (batch)",
-      "pricing": {
-        "completion": "0.000015",
-        "image": null,
-        "input_cache_read": "0.0000003",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.000003",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "reasoning_effort",
-        "repetition_penalty",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
         "top_p"
       ],
       "top_provider": {
@@ -15398,65 +15268,6 @@
         "max_completion_tokens": 65536
       }
     },
-    "openai/gpt-oss-120b:batch": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT"
-      },
-      "canonical_slug": "openai/gpt-oss-120b",
-      "context_length": 131072,
-      "created": 1754414231,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": null
-      },
-      "description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B parameters per forward pass and is optimized...",
-      "expiration_date": null,
-      "id": "openai/gpt-oss-120b:batch",
-      "name": "OpenAI: gpt-oss-120b (batch)",
-      "pricing": {
-        "completion": "0.0000006",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000015",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "reasoning_effort",
-        "repetition_penalty",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 117964
-      }
-    },
     "openai/gpt-oss-20b": {
       "architecture": {
         "input_modalities": [
@@ -19061,69 +18872,6 @@
         "max_completion_tokens": 32768
       }
     },
-    "qwen/qwen3.5-9b:batch": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "video"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+video->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Qwen3"
-      },
-      "canonical_slug": "qwen/qwen3.5-9b-20260310",
-      "context_length": 262144,
-      "created": 1773152396,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, designed to deliver strong reasoning, coding, and visual understanding in an efficient 9B-parameter architecture. It uses a unified vision-language design...",
-      "expiration_date": null,
-      "id": "qwen/qwen3.5-9b:batch",
-      "name": "Qwen: Qwen3.5-9B (batch)",
-      "pricing": {
-        "completion": "0.00000025",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000017",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 235929
-      }
-    },
     "qwen/qwen3.5-flash-02-23": {
       "architecture": {
         "input_modalities": [
@@ -19837,67 +19585,6 @@
         "max_completion_tokens": 131072
       }
     },
-    "qwen/qwen3.8-2.4t-a95b:batch": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Qwen"
-      },
-      "canonical_slug": "qwen/qwen3.8-2.4t-a95b-20260812",
-      "context_length": 1010000,
-      "created": 1786551702,
-      "default_parameters": {
-        "temperature": 1,
-        "top_k": 20,
-        "top_p": 0.95
-      },
-      "description": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of [Qwen3.8 Max](/qwen/qwen3.8-max), with 95 billion active parameters out of 2.4 trillion total. It is...",
-      "expiration_date": null,
-      "id": "qwen/qwen3.8-2.4t-a95b:batch",
-      "name": "Qwen: Qwen3.8 2.4T A95B (batch)",
-      "pricing": {
-        "completion": "0.000006",
-        "image": null,
-        "input_cache_read": "0.00000025",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.000002",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logit_bias",
-        "logprobs",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "reasoning_effort",
-        "repetition_penalty",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 1010000,
-        "is_moderated": false,
-        "max_completion_tokens": 909000
-      }
-    },
     "qwen/qwen3.8-27b": {
       "architecture": {
         "input_modalities": [
@@ -19925,12 +19612,12 @@
       "id": "qwen/qwen3.8-27b",
       "name": "Qwen: Qwen3.8 27B",
       "pricing": {
-        "completion": "0.0000025",
+        "completion": "0.000003",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.000000085",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000002",
+        "prompt": "0.00000042",
         "request": null,
         "web_search": null
       },
@@ -19958,7 +19645,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 1000000,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
@@ -21517,68 +21204,6 @@
         "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 262144
-      }
-    },
-    "thinkingmachines/inkling:batch": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "audio"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+audio->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "thinkingmachines/inkling-20260715",
-      "context_length": 524288,
-      "created": 1784325956,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "Inkling is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 41B active parameters out of 975B total. It is designed for general-purpose reasoning, coding, agentic and tool-use systems,...",
-      "expiration_date": null,
-      "id": "thinkingmachines/inkling:batch",
-      "name": "Thinking Machines: Inkling (batch)",
-      "pricing": {
-        "completion": "0.00000405",
-        "image": null,
-        "input_cache_read": "0.00000017",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.000001",
-        "request": null,
-        "web_search": null
-      },
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "reasoning_effort",
-        "repetition_penalty",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 524288,
-        "is_moderated": false,
-        "max_completion_tokens": 471859
       }
     },
     "thinkingmachines/inkling:free": {
@@ -23420,7 +23045,6 @@
         "logit_bias",
         "logprobs",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
