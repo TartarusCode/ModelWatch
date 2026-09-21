@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T18:01:29.179418Z",
+  "generated_at": "2026-09-21T18:31:23.152551Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3240,7 +3240,7 @@
       "id": "deepseek/deepseek-v4-flash-0731",
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "pricing": {
-        "completion": "0.00000016",
+        "completion": "0.00000032",
         "image": null,
         "input_cache_read": "0.000000016",
         "input_cache_write": null,
@@ -3475,12 +3475,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001855536",
+        "completion": "0.000001848924",
         "image": null,
-        "input_cache_read": "0.000000077314",
+        "input_cache_read": "0.0000000770385",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000927768",
+        "prompt": "0.000000924462",
         "request": null,
         "web_search": null
       },
@@ -3537,12 +3537,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000170676",
+        "completion": "0.00000169884",
         "image": null,
-        "input_cache_read": "0.000000018102",
+        "input_cache_read": "0.000000018018",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000056892",
+        "prompt": "0.00000056628",
         "request": null,
         "web_search": null
       },
@@ -10548,12 +10548,12 @@
       "id": "nvidia/nemotron-3-nano-30b-a3b",
       "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
       "pricing": {
-        "completion": "0.00000024",
+        "completion": "0.0000002",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006",
+        "prompt": "0.00000005",
         "request": null,
         "web_search": null
       },
