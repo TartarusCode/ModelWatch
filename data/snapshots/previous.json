@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T16:01:30.875793Z",
+  "generated_at": "2026-09-21T16:31:36.641041Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3476,12 +3476,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.0000018792",
+        "completion": "0.000001872588",
         "image": null,
-        "input_cache_read": "0.0000000783",
+        "input_cache_read": "0.0000000780245",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000009396",
+        "prompt": "0.000000936294",
         "request": null,
         "web_search": null
       },
@@ -3538,12 +3538,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000172656",
+        "completion": "0.00000171864",
         "image": null,
-        "input_cache_read": "0.000000019184",
+        "input_cache_read": "0.000000019096",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000057552",
+        "prompt": "0.00000057288",
         "request": null,
         "web_search": null
       },
@@ -21035,12 +21035,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.000000528",
+        "completion": "0.00000033",
         "image": null,
-        "input_cache_read": "0.000000033",
+        "input_cache_read": "0.000000020625",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000132",
+        "prompt": "0.0000000825",
         "request": null,
         "web_search": null
       },
@@ -22229,6 +22229,62 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 500000,
+        "is_moderated": false,
+        "max_completion_tokens": 450000
+      }
+    },
+    "x-ai/grok-4.7": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Grok"
+      },
+      "canonical_slug": "x-ai/grok-4.7-20260916",
+      "context_length": 500000,
+      "created": 1790007541,
+      "default_parameters": {
+        "temperature": 0.7,
+        "top_p": 0.95
+      },
+      "description": "Grok 4.7 is SpaceXAI's smartest model with frontier performance on coding, knowledge work, and STEM.",
+      "expiration_date": null,
+      "id": "x-ai/grok-4.7",
+      "name": "SpaceXAI: Grok 4.7",
+      "pricing": {
+        "completion": "0.0000048",
+        "image": null,
+        "input_cache_read": "0.0000004",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000016",
+        "request": null,
+        "web_search": "0.005"
+      },
+      "supported_parameters": [
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
         "top_logprobs",
         "top_p"
       ],
