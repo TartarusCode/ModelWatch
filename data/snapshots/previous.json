@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T00:01:22.080115Z",
+  "generated_at": "2026-09-21T00:31:27.949908Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3593,12 +3593,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000198",
+        "completion": "0.00000173844",
         "image": null,
-        "input_cache_read": "0.000000022",
+        "input_cache_read": "0.000000019316",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000066",
+        "prompt": "0.00000057948",
         "request": null,
         "web_search": null
       },
@@ -3625,7 +3625,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1024000,
         "is_moderated": false,
         "max_completion_tokens": 384000
       }
@@ -6252,12 +6252,12 @@
       "id": "ibm-granite/granite-4.2-8b",
       "name": "IBM: Granite 4.2 8B",
       "pricing": {
-        "completion": "0.00000025",
+        "completion": "0.00000015",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -7127,12 +7127,12 @@
       "id": "meta-llama/llama-3.1-70b-instruct",
       "name": "Meta: Llama 3.1 70B Instruct",
       "pricing": {
-        "completion": "0.0000004",
+        "completion": "0.00000072",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000004",
+        "prompt": "0.00000072",
         "request": null,
         "web_search": null
       },
@@ -7155,8 +7155,8 @@
       ],
       "top_provider": {
         "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 16384
+        "is_moderated": true,
+        "max_completion_tokens": 8192
       }
     },
     "meta-llama/llama-3.1-8b-instruct": {
@@ -7392,12 +7392,12 @@
       "id": "meta-llama/llama-4-maverick",
       "name": "Meta: Llama 4 Maverick",
       "pricing": {
-        "completion": "0.0000006525",
+        "completion": "0.0000008",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001875",
+        "prompt": "0.0000002",
         "request": null,
         "web_search": null
       },
@@ -7421,7 +7421,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 128000,
+        "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 16384
       }
@@ -21090,12 +21090,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
