@@ -23,13 +23,19 @@ from modelwatch.price_changes import (
     CHANGE_LOOKBACK_HOURS,
     build_price_changes_output,
     episodes_to_event_records,
+    filter_schedule_explained_events,
     filter_spurious_zero_change_events,
+    is_schedule_explained_event,
     load_price_change_events,
     migrate_legacy_change_event_dict,
 )
 from modelwatch.pricing import DEFAULT_THRESHOLDS, TIER_OFFPEAK, track_key
 from modelwatch.pricing_glitch import is_paid_zero_glitch_point
-from modelwatch.pricing_schedule import discount_per_million, standard_per_million
+from modelwatch.pricing_schedule import (
+    discount_per_million,
+    per_million_or_none,
+    standard_per_million,
+)
 from modelwatch.schemas import (
     ModelsOutput,
     NewModelEventRecord,
@@ -53,11 +59,39 @@ LEGACY_STATE_PATH = ROOT / "data" / "snapshots" / "price-drop-state.json"
 
 def filter_price_change_events(
     events: list[PriceChangeEventRecord],
+    *,
+    schedule_tiers: dict[str, dict[str, set[Decimal]]] | None = None,
 ) -> list[PriceChangeEventRecord]:
     filtered = [
         event for event in events if not is_latest_alias_model_id(event.model_id)
     ]
+    filtered = filter_schedule_explained_events(filtered, schedule_tiers)
     return filter_spurious_zero_change_events(filtered)
+
+
+def schedule_tiers_by_model() -> dict[str, dict[str, set[Decimal]]]:
+    """Rates each model publishes in its time-of-day schedule, USD per 1M.
+
+    Used to tell historical window flips (both levels are tiers the model
+    itself publishes) apart from genuine rate-card changes.
+    """
+    if not MODELS_PATH.exists():
+        return {}
+    models_output = ModelsOutput.model_validate_json(
+        MODELS_PATH.read_text(encoding="utf-8"),
+    )
+    result: dict[str, dict[str, set[Decimal]]] = {}
+    for enriched in models_output.models:
+        schedule = enriched.model.pricing_schedule
+        if schedule is None:
+            continue
+        per_field: dict[str, set[Decimal]] = {}
+        for field, rates in schedule.rates.items():
+            values = {per_million_or_none(rate) for rate in rates}
+            per_field[field] = {value for value in values if value is not None}
+        if per_field:
+            result[enriched.model.id] = per_field
+    return result
 
 
 def filter_new_model_events(
@@ -110,7 +144,10 @@ def _resolve_events_path(path: Path | None = None) -> Path:
 def clean_price_change_events_file(path: Path | None = None) -> int:
     target = _resolve_events_path(path)
     events = load_price_change_events(target)
-    filtered = filter_price_change_events(events)
+    filtered = filter_price_change_events(
+        events,
+        schedule_tiers=schedule_tiers_by_model(),
+    )
     migrated = migrate_legacy_price_events(filtered)
     current = _current_per_million_by_model()
     existing = load_price_change_state() if STATE_PATH.exists() else None
@@ -176,6 +213,35 @@ def remove_legacy_baseline_file() -> bool:
     return True
 
 
+def drop_schedule_explained_episodes() -> int:
+    """Drop historical time-of-day window flips from the episode log.
+
+    Both price levels of such an episode are rates the model itself publishes in
+    its schedule, so it records a price change that never happened. Operates on
+    the state file's full episode history — the events jsonl is only a 500-line
+    tail — and refreshes the derived artifacts so the UI matches.
+    """
+    if not STATE_PATH.exists():
+        return 0
+    store = load_price_change_state()
+    tiers = schedule_tiers_by_model()
+    kept = [
+        episode
+        for episode in store.episodes
+        if not is_schedule_explained_event(episode, tiers)
+    ]
+    removed = len(store.episodes) - len(kept)
+    if not removed:
+        return 0
+    save_price_change_state(store.model_copy(update={"episodes": kept}))
+    write_jsonl_events(
+        EVENTS_PATH,
+        [dump_model_line(event) for event in episodes_to_event_records(kept)],
+    )
+    rebuild_price_changes_output()
+    return removed
+
+
 def migrate_legacy_state_file() -> bool:
     if STATE_PATH.exists() or not LEGACY_STATE_PATH.exists():
         return False
@@ -231,7 +297,12 @@ def rebuild_price_change_state_from_events(
     existing = load_price_change_state() if STATE_PATH.exists() else None
     models = existing.models if existing is not None else {}
     episodes = close_orphaned_active_changes(
-        migrate_legacy_price_events(filter_price_change_events(events)),
+        migrate_legacy_price_events(
+            filter_price_change_events(
+                events,
+                schedule_tiers=schedule_tiers_by_model(),
+            ),
+        ),
         models,
         now=finished,
         current_per_million_by_model=current,
@@ -254,8 +325,9 @@ def rebuild_price_change_state_from_events(
 def rebuild_price_changes_output(
     *,
     now: datetime | None = None,
-    path: Path = PRICE_CHANGES_PATH,
+    path: Path | None = None,
 ) -> PriceChangesOutput:
+    target = path or PRICE_CHANGES_PATH
     finished = now or datetime.now(UTC)
     store = load_price_change_state() if STATE_PATH.exists() else None
     if store is None:
@@ -283,8 +355,8 @@ def rebuild_price_changes_output(
         settled_changes=settled,
         episodes=display_episodes,
     )
-    write_model_json(path, output)
-    if LEGACY_PRICE_DROPS_PATH.exists() and path == PRICE_CHANGES_PATH:
+    write_model_json(target, output)
+    if LEGACY_PRICE_DROPS_PATH.exists() and target == PRICE_CHANGES_PATH:
         LEGACY_PRICE_DROPS_PATH.unlink()
     return output
 

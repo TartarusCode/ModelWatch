@@ -9,6 +9,7 @@ from modelwatch.data_repair import (
     clean_new_model_events_file,
     clean_price_change_events_file,
     clean_price_history,
+    drop_schedule_explained_episodes,
     filter_new_model_events,
     filter_price_change_events,
     rebuild_price_change_state_from_events,
@@ -25,12 +26,17 @@ from modelwatch.json_output import dump_model_line
 from modelwatch.price_change_state import (
     FieldChangeState,
     PriceChangeStateStore,
+    load_price_change_state,
     save_price_change_state,
 )
-from modelwatch.price_changes import load_price_change_events
+from modelwatch.price_changes import (
+    is_schedule_explained_event,
+    load_price_change_events,
+)
 from modelwatch.schemas import (
     NewModelEventRecord,
     PriceChangeEventRecord,
+    PriceChangeRecord,
 )
 
 
@@ -83,6 +89,85 @@ def test_filter_price_change_events_removes_latest_aliases() -> None:
     assert [event.model_id for event in filtered] == ["moonshotai/kimi-k2.6"]
 
 
+def test_drop_schedule_explained_episodes_filters_state_history(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    state_path = tmp_path / "price-change-state.json"
+    events_path = tmp_path / "price-change-events.jsonl"
+    changes_path = tmp_path / "price-changes.json"
+    monkeypatch.setattr("modelwatch.data_repair.STATE_PATH", state_path)
+    monkeypatch.setattr("modelwatch.price_change_state.STATE_PATH", state_path)
+    monkeypatch.setattr("modelwatch.data_repair.EVENTS_PATH", events_path)
+    monkeypatch.setattr("modelwatch.data_repair.PRICE_CHANGES_PATH", changes_path)
+    monkeypatch.setattr(
+        "modelwatch.data_repair.schedule_tiers_by_model",
+        lambda: {
+            "deepseek/deepseek-v4.1-flash": {
+                "prompt": {Decimal("0.15"), Decimal("0.3")},
+            },
+        },
+    )
+
+    def episode(new: str, model_id: str = "deepseek/deepseek-v4.1-flash"):
+        return PriceChangeRecord(
+            detected_at=datetime(2026, 9, 11, 5, 1, tzinfo=UTC),
+            model_id=model_id,
+            field="prompt",
+            direction="cut",
+            episode_start_per_million_usd="0.300000",
+            old_per_million_usd="0.300000",
+            new_per_million_usd=new,
+            pct_change=-0.5,
+            delta_per_million_usd="-0.150000",
+            status="settled",
+        )
+
+    store = PriceChangeStateStore(
+        generated_at=datetime(2026, 9, 21, 20, 0, tzinfo=UTC),
+        models={},
+        episodes=[
+            episode("0.150000"),  # window flip -> dropped
+            episode("0.120000"),  # genuine cut -> kept
+            episode("0.500000", model_id="acme/other"),  # unscheduled -> kept
+        ],
+    )
+    save_price_change_state(store)
+
+    removed = drop_schedule_explained_episodes()
+
+    assert removed == 1
+    reloaded = load_price_change_state()
+    assert [e.new_per_million_usd for e in reloaded.episodes] == [
+        "0.120000",
+        "0.500000",
+    ]
+    assert events_path.exists()
+    assert changes_path.exists()
+
+
+def test_drop_schedule_explained_episodes_is_a_no_op_without_matches(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    state_path = tmp_path / "price-change-state.json"
+    monkeypatch.setattr("modelwatch.data_repair.STATE_PATH", state_path)
+    monkeypatch.setattr("modelwatch.price_change_state.STATE_PATH", state_path)
+    monkeypatch.setattr(
+        "modelwatch.data_repair.schedule_tiers_by_model",
+        lambda: {},
+    )
+    save_price_change_state(
+        PriceChangeStateStore(
+            generated_at=datetime(2026, 9, 21, 20, 0, tzinfo=UTC),
+            models={},
+            episodes=[],
+        ),
+    )
+
+    assert drop_schedule_explained_episodes() == 0
+
+
 def test_filter_new_model_events_removes_latest_aliases() -> None:
     events = [
         _new_model_event("anthropic/claude-fable-5"),
@@ -103,6 +188,71 @@ def test_filter_price_change_events_removes_spurious_zero_drops() -> None:
         "moonshotai/kimi-k2.6",
         "cohere/north-mini-code:free",
     ]
+
+
+def _scheduled_price_event(
+    model_id: str,
+    *,
+    old: str,
+    new: str,
+) -> PriceChangeEventRecord:
+    return PriceChangeEventRecord(
+        detected_at=datetime(2026, 9, 21, 19, 0, tzinfo=UTC),
+        model_id=model_id,
+        field="prompt",
+        direction="cut",
+        episode_start_per_million_usd=old,
+        old_per_million_usd=old,
+        new_per_million_usd=new,
+        pct_change=-0.5,
+        delta_per_million_usd="-0.15",
+        status="settled",
+    )
+
+
+def test_filter_price_change_events_drops_schedule_explained_flips() -> None:
+    tiers = {
+        "deepseek/deepseek-v4.1-flash": {"prompt": {Decimal("0.15"), Decimal("0.3")}}
+    }
+    events = [
+        # a window flip: both levels are the model's own published tiers
+        _scheduled_price_event(
+            "deepseek/deepseek-v4.1-flash", old="0.300000", new="0.150000"
+        ),
+        # a genuine rate-card cut below every published tier
+        _scheduled_price_event(
+            "deepseek/deepseek-v4.1-flash", old="0.150000", new="0.120000"
+        ),
+        # unscheduled model: untouched even without tiers
+        _scheduled_price_event("acme/other", old="1.000000", new="0.500000"),
+    ]
+
+    filtered = filter_price_change_events(events, schedule_tiers=tiers)
+
+    assert [event.new_per_million_usd for event in filtered] == [
+        "0.120000",
+        "0.500000",
+    ]
+
+
+def test_filter_price_change_events_without_tiers_keeps_everything() -> None:
+    events = [
+        _scheduled_price_event(
+            "deepseek/deepseek-v4.1-flash", old="0.300000", new="0.150000"
+        ),
+    ]
+
+    assert filter_price_change_events(events) == events
+
+
+def test_is_schedule_explained_event_handles_unparsable_prices() -> None:
+    event = _scheduled_price_event(
+        "deepseek/deepseek-v4.1-flash", old="0.300000", new="0.150000"
+    ).model_copy(update={"new_per_million_usd": "not-a-price"})
+    tiers = {"deepseek/deepseek-v4.1-flash": {"prompt": {Decimal("0.3")}}}
+
+    assert is_schedule_explained_event(event, tiers) is False
+    assert is_schedule_explained_event(event, None) is False
 
 
 def test_clean_price_change_events_file_removes_aliases_and_rewrites(

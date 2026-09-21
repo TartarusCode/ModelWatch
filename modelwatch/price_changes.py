@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+from decimal import Decimal, InvalidOperation
 from pathlib import Path
 
 from modelwatch.model_filters import is_latest_alias_model_id
@@ -92,6 +93,42 @@ def filter_spurious_zero_change_events(
         event
         for event in events
         if not is_spurious_zero_drop_event(event.model_id, event.new_per_million_usd)
+    ]
+
+
+def is_schedule_explained_event(
+    event: PriceChangeRecord | PriceChangeEventRecord,
+    schedule_tiers: dict[str, dict[str, set[Decimal]]] | None,
+) -> bool:
+    """True when both price levels are rates the model publishes in its schedule.
+
+    Time-of-day pricing makes the reported price move between the same two (or
+    three) levels every day. Episodes recorded from those moves describe a
+    price change that never happened, so historical clean-ups drop them. Only
+    events whose *both* levels are published tiers qualify — anything else is a
+    real price move that merely happened to be seen from a window.
+    """
+    if not schedule_tiers:
+        return False
+    tiers = schedule_tiers.get(event.model_id, {}).get(event.field)
+    if not tiers:
+        return False
+    try:
+        old = Decimal(event.old_per_million_usd)
+        new = Decimal(event.new_per_million_usd)
+    except (InvalidOperation, TypeError, ValueError):
+        return False
+    return old in tiers and new in tiers
+
+
+def filter_schedule_explained_events(
+    events: list[PriceChangeEventRecord],
+    schedule_tiers: dict[str, dict[str, set[Decimal]]] | None,
+) -> list[PriceChangeEventRecord]:
+    return [
+        event
+        for event in events
+        if not is_schedule_explained_event(event, schedule_tiers)
     ]
 
 
