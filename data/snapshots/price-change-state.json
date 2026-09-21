@@ -8767,9 +8767,73 @@
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "active"
+    },
+    {
+      "delta_per_million_usd": "-0.100000",
+      "detected_at": "2026-09-21T01:01:04.818810Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.250000",
+      "field": "completion",
+      "model_id": "ibm-granite/granite-4.2-8b",
+      "new_per_million_usd": "0.150000",
+      "old_per_million_usd": "0.250000",
+      "pct_change": -0.4,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "delta_per_million_usd": "0.147500",
+      "detected_at": "2026-09-21T01:01:04.818810Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.652500",
+      "field": "completion",
+      "model_id": "meta-llama/llama-4-maverick",
+      "new_per_million_usd": "0.800000",
+      "old_per_million_usd": "0.652500",
+      "pct_change": 0.2260536398467433,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "delta_per_million_usd": "0.320000",
+      "detected_at": "2026-09-21T01:01:04.818810Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.400000",
+      "field": "prompt",
+      "model_id": "meta-llama/llama-3.1-70b-instruct",
+      "new_per_million_usd": "0.720000",
+      "old_per_million_usd": "0.400000",
+      "pct_change": 0.8,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
+    },
+    {
+      "delta_per_million_usd": "0.320000",
+      "detected_at": "2026-09-21T01:01:04.818810Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.400000",
+      "field": "completion",
+      "model_id": "meta-llama/llama-3.1-70b-instruct",
+      "new_per_million_usd": "0.720000",
+      "old_per_million_usd": "0.400000",
+      "pct_change": 0.8,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active"
     }
   ],
-  "generated_at": "2026-09-21T00:31:27.949908Z",
+  "generated_at": "2026-09-21T01:01:23.865727Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -11753,15 +11817,15 @@
         "anchor": "1.98000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": "cut",
-        "episode_start_price": "1.98000000",
-        "pending_builds": 1,
-        "pending_price": "1.73844000000",
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.019316000000",
+        "anchor": "0.022000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -11775,12 +11839,12 @@
         "anchor": "0.66000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": "cut",
-        "episode_start_price": "0.66000000",
-        "pending_builds": 1,
-        "pending_price": "0.57948000000",
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "idle"
       }
     },
     "deepseek/deepseek-v4-pro-0813:batch": {
@@ -14528,15 +14592,15 @@
     },
     "ibm-granite/granite-4.2-8b": {
       "completion": {
-        "anchor": "0.25000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.15000000",
+        "confirmed_at": "2026-09-21T01:01:04.818810Z",
+        "confirmed_price": "0.15000000",
         "direction": "cut",
         "episode_start_price": "0.25000000",
-        "pending_builds": 1,
-        "pending_price": "0.15000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.05000000",
@@ -15208,26 +15272,26 @@
     },
     "meta-llama/llama-3.1-70b-instruct": {
       "completion": {
-        "anchor": "0.4000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.72000000",
+        "confirmed_at": "2026-09-21T01:01:04.818810Z",
+        "confirmed_price": "0.72000000",
         "direction": "hike",
         "episode_start_price": "0.4000000",
-        "pending_builds": 1,
-        "pending_price": "0.72000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "prompt": {
-        "anchor": "0.4000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.72000000",
+        "confirmed_at": "2026-09-21T01:01:04.818810Z",
+        "confirmed_price": "0.72000000",
         "direction": "hike",
         "episode_start_price": "0.4000000",
-        "pending_builds": 1,
-        "pending_price": "0.72000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "meta-llama/llama-3.1-8b-instruct": {
@@ -15374,15 +15438,15 @@
     },
     "meta-llama/llama-4-maverick": {
       "completion": {
-        "anchor": "0.6525000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.8000000",
+        "confirmed_at": "2026-09-21T01:01:04.818810Z",
+        "confirmed_price": "0.8000000",
         "direction": "hike",
         "episode_start_price": "0.6525000000",
-        "pending_builds": 1,
-        "pending_price": "0.8000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "prompt": {
         "anchor": "0.2000000",
