@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T22:01:40.963744Z",
+  "generated_at": "2026-09-21T22:31:31.786463Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -2023,7 +2023,7 @@
         "top_p": null
       },
       "description": "Seed 1.6 is a general-purpose model released by the ByteDance Seed team. It incorporates multimodal capabilities and adaptive deep thinking with a 256K context window.",
-      "expiration_date": null,
+      "expiration_date": "2026-11-11",
       "id": "bytedance-seed/seed-1.6",
       "name": "ByteDance Seed: Seed 1.6",
       "pricing": {
@@ -2079,7 +2079,7 @@
         "top_p": null
       },
       "description": "Seed 1.6 Flash is an ultra-fast multimodal deep thinking model by ByteDance Seed, supporting both text and visual understanding. It features a 256k context window and can generate outputs of...",
-      "expiration_date": null,
+      "expiration_date": "2026-11-11",
       "id": "bytedance-seed/seed-1.6-flash",
       "name": "ByteDance Seed: Seed 1.6 Flash",
       "pricing": {
@@ -2183,7 +2183,7 @@
       "created": 1786550701,
       "default_parameters": {},
       "description": "Seed 2.0 Code is a model from ByteDance Seed optimized for agentic coding. It is suited for frontend development, multilingual programming tasks, and coding-agent workflows in tools such as Claude...",
-      "expiration_date": null,
+      "expiration_date": "2026-11-11",
       "id": "bytedance-seed/seed-2.0-code",
       "name": "ByteDance Seed: Seed-2.0-Code",
       "pricing": {
@@ -3540,12 +3540,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001791156",
+        "completion": "0.000001784544",
         "image": null,
-        "input_cache_read": "0.0000000746315",
+        "input_cache_read": "0.000000074356",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000895578",
+        "prompt": "0.000000892272",
         "request": null,
         "web_search": null
       },
@@ -23857,12 +23857,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.00000025",
+        "completion": "0.0000005",
         "image": null,
-        "input_cache_read": "0.00000002",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -23893,7 +23893,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 102400
+        "max_completion_tokens": 943718
       }
     },
     "z-ai/glm-5.3-flash:batch": {
