@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T16:31:36.641041Z",
+  "generated_at": "2026-09-21T17:02:01.044356Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3476,12 +3476,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001872588",
+        "completion": "0.000001869108",
         "image": null,
-        "input_cache_read": "0.0000000780245",
+        "input_cache_read": "0.0000000778795",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000936294",
+        "prompt": "0.000000934554",
         "request": null,
         "web_search": null
       },
@@ -3538,12 +3538,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000171864",
+        "completion": "0.00000171468",
         "image": null,
-        "input_cache_read": "0.000000019096",
+        "input_cache_read": "0.000000018186",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000057288",
+        "prompt": "0.00000057156",
         "request": null,
         "web_search": null
       },
@@ -3570,9 +3570,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1024000,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 384000
+        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4-pro-0813:batch": {
@@ -22201,7 +22201,7 @@
       "context_length": 500000,
       "created": 1786548957,
       "default_parameters": {},
-      "description": "Grok 4.6 is SpaceXAI's smartest model with frontier performance on coding, knowledge work, and STEM.",
+      "description": "Grok 4.6 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7).",
       "expiration_date": null,
       "id": "x-ai/grok-4.6",
       "name": "SpaceXAI: Grok 4.6",
@@ -22259,7 +22259,7 @@
         "temperature": 0.7,
         "top_p": 0.95
       },
-      "description": "Grok 4.7 is SpaceXAI's smartest model with frontier performance on coding, knowledge work, and STEM.",
+      "description": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and...",
       "expiration_date": null,
       "id": "x-ai/grok-4.7",
       "name": "SpaceXAI: Grok 4.7",
