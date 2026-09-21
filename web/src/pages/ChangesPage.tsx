@@ -58,7 +58,7 @@ function ChangeTable({
         </thead>
         <tbody>
           {rows.map((change) => (
-            <tr key={`${change.detected_at}-${change.model_id}-${change.field}`}>
+            <tr key={`${change.detected_at}-${change.model_id}-${change.field}-${change.tier ?? "standard"}`}>
               <td className="tabular-nums muted">
                 {new Date(change.detected_at).toLocaleString(undefined, {
                   month: "short",

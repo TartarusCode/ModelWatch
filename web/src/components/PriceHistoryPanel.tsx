@@ -132,7 +132,7 @@ export function PriceHistoryPanel({
               </thead>
               <tbody>
                 {modelEpisodes.map((episode) => (
-                  <tr key={`${episode.detected_at}-${episode.field}`}>
+                  <tr key={`${episode.detected_at}-${episode.field}-${episode.tier ?? "standard"}`}>
                     <td className="tabular-nums muted">
                       {new Date(episode.detected_at).toLocaleString()}
                     </td>
