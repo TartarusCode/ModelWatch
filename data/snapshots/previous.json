@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T20:01:15.773386Z",
+  "generated_at": "2026-09-21T20:31:29.883425Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3540,12 +3540,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001831872",
+        "completion": "0.00000182178",
         "image": null,
-        "input_cache_read": "0.000000076328",
+        "input_cache_read": "0.0000000759075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000915936",
+        "prompt": "0.00000091089",
         "request": null,
         "web_search": null
       },
@@ -22802,6 +22802,180 @@
         "tools",
         "top_k",
         "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
+      }
+    },
+    "xiaomi/mimo-v2.6-flash": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+audio+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "xiaomi/mimo-v2.6-flash-20260921",
+      "context_length": 1048576,
+      "created": 1790021264,
+      "default_parameters": {
+        "frequency_penalty": 0,
+        "temperature": 1,
+        "top_p": 0.95
+      },
+      "description": "MiMo-V2.6-Flash is an open-source foundation model developed by Xiaomi. Built on a Mixture-of-Experts architecture with 309B total parameters and 15B activated per token, it employs a hybrid attention mechanism for...",
+      "expiration_date": null,
+      "id": "xiaomi/mimo-v2.6-flash",
+      "name": "Xiaomi: MiMo-V2.6-Flash",
+      "pricing": {
+        "completion": "0.00000028",
+        "image": null,
+        "input_cache_read": "0.0000000028",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000014",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
+      }
+    },
+    "xiaomi/mimo-v2.6-pro": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+audio+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "xiaomi/mimo-v2.6-pro-20260921",
+      "context_length": 1048576,
+      "created": 1790021259,
+      "default_parameters": {
+        "frequency_penalty": 0,
+        "temperature": 1,
+        "top_p": 0.95
+      },
+      "description": "MiMo-V2.6-Pro is the flagship foundation model developed by Xiaomi. Built at a scale of over 1T parameters, it is designed to push the ceiling of capability for the most demanding...",
+      "expiration_date": null,
+      "id": "xiaomi/mimo-v2.6-pro",
+      "name": "Xiaomi: MiMo-V2.6-Pro",
+      "pricing": {
+        "completion": "0.00000087",
+        "image": null,
+        "input_cache_read": "0.0000000036",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000000435",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
+      }
+    },
+    "xiaomi/mimo-v2.6-pro-ultraspeed": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video",
+          "audio"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+audio+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "xiaomi/mimo-v2.6-pro-ultraspeed-20260921",
+      "context_length": 1048576,
+      "created": 1790021267,
+      "default_parameters": {
+        "frequency_penalty": 0,
+        "temperature": 1,
+        "top_p": 0.95
+      },
+      "description": "MiMo-V2.6-Pro-UltraSpeed is the fast speed edition of Xiaomi's flagship foundation model, MiMo-V2.6-Pro. Built from the same 1T MiMo-V2.6-Pro checkpoint, it matches the original model in quality while delivering roughly 10x...",
+      "expiration_date": null,
+      "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
+      "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
+      "pricing": {
+        "completion": "0.0000087",
+        "image": null,
+        "input_cache_read": "0.000000036",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000435",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
         "top_p"
       ],
       "top_provider": {
