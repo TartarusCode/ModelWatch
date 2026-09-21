@@ -23,10 +23,15 @@ from modelwatch.new_models import (
     load_new_model_events,
     models_in_last_hours,
 )
-from modelwatch.price_baselines import compute_moving_average_per_field
+from modelwatch.price_baselines import (
+    canonicalize_points_for_standard,
+    compute_moving_average_per_field,
+)
 from modelwatch.price_change_state import (
+    PriceTrack,
     close_orphaned_active_changes,
     load_price_change_state,
+    rebase_model_field_change_states,
     save_price_change_state,
     update_model_field_change_states,
 )
@@ -35,7 +40,13 @@ from modelwatch.price_changes import (
     build_price_changes_output,
     episodes_to_event_records,
 )
-from modelwatch.pricing import DEFAULT_THRESHOLDS, per_million_usd
+from modelwatch.pricing import DEFAULT_THRESHOLDS, TIER_OFFPEAK, track_key
+from modelwatch.pricing_schedule import (
+    discount_per_million,
+    pricing_schedule_from_raw,
+    standard_per_million,
+    standard_pricing,
+)
 from modelwatch.provider_stats import build_benchmark_scores, build_provider_stats
 from modelwatch.schemas import (
     BenchmarkFetchStatus,
@@ -79,16 +90,15 @@ def _parse_model(raw: dict[str, object]) -> ModelSnapshot | None:
     if isinstance(description, str):
         trimmed["description"] = _trim_description(description)
     try:
-        return ModelSnapshot.model_validate(trimmed)
+        snapshot = ModelSnapshot.model_validate(trimmed)
     except ValidationError as exc:
         model_id = trimmed.get("id", "<unknown>")
         logger.warning("Skipping invalid model %s: %s", model_id, exc)
         return None
-
-
-def _pricing_dict(pricing: ModelSnapshot) -> dict[str, str]:
-    raw = pricing.pricing.model_dump(exclude_none=True)
-    return {key: str(value) for key, value in raw.items()}
+    schedule = pricing_schedule_from_raw(trimmed.get("pricing"))
+    if schedule is None:
+        return snapshot
+    return snapshot.model_copy(update={"pricing_schedule": schedule})
 
 
 def _previous_per_million(
@@ -100,23 +110,81 @@ def _previous_per_million(
     snapshot = previous.models.get(model_id)
     if snapshot is None:
         return None
-    result: dict[str, Decimal] = {}
-    for field, value in _pricing_dict(snapshot).items():
-        try:
-            result[field] = per_million_usd(value)
-        except ValueError:
-            continue
+    result = standard_per_million(snapshot)
     return result or None
 
 
 def _current_per_million(model: ModelSnapshot) -> dict[str, Decimal]:
-    result: dict[str, Decimal] = {}
-    for field, value in _pricing_dict(model).items():
-        try:
-            result[field] = per_million_usd(value)
-        except ValueError:
-            continue
-    return result
+    return standard_per_million(model)
+
+
+def _previous_discount_per_million(
+    previous: PreviousSnapshot | None,
+    model_id: str,
+) -> dict[str, Decimal] | None:
+    if previous is None:
+        return None
+    snapshot = previous.models.get(model_id)
+    if snapshot is None:
+        return None
+    result = discount_per_million(snapshot)
+    return result or None
+
+
+def _price_tracks(
+    *,
+    current: dict[str, Decimal],
+    previous: dict[str, Decimal] | None,
+    reference: dict[str, Decimal],
+    discount: dict[str, Decimal],
+    previous_discount: dict[str, Decimal] | None,
+) -> list[PriceTrack]:
+    """Price tracks to watch: the standard rate per field (gated by the 7-day
+    moving average) plus the off-peak rate where a discount exists.
+
+    Off-peak tracks have no history of their own, so they run without the MA
+    gate — the two-build settlement is what filters noise there.
+    """
+    tracks = [
+        PriceTrack(
+            field=field,
+            current=value,
+            previous=previous.get(field) if previous else None,
+            reference=reference[field],
+        )
+        for field, value in current.items()
+        if field in reference
+    ]
+    tracks.extend(
+        PriceTrack(
+            field=field,
+            current=value,
+            previous=previous_discount.get(field) if previous_discount else None,
+            reference=None,
+            tier=TIER_OFFPEAK,
+        )
+        for field, value in discount.items()
+    )
+    return tracks
+
+
+def _comparison_basis_changed(
+    previous: PreviousSnapshot | None,
+    model: ModelSnapshot,
+) -> bool:
+    """True when the model's price basis differs from the last snapshot.
+
+    Snapshots taken before time-of-day schedules were recorded have no
+    ``pricing_schedule``, so their price is a window price rather than the
+    standard rate. Comparing the two directly would report a price change that
+    never happened, so such models are re-anchored instead.
+    """
+    if previous is None:
+        return False
+    previous_model = previous.models.get(model.id)
+    if previous_model is None:
+        return False
+    return (previous_model.pricing_schedule is None) != (model.pricing_schedule is None)
 
 
 def _load_previous() -> PreviousSnapshot | None:
@@ -337,21 +405,52 @@ async def run_build() -> None:
     for model in snapshots:
         if is_latest_alias_model_id(model.id):
             continue
-        history_points = history.models.get(model.id, [])
+        current_per_million = _current_per_million(model)
+        if not current_per_million:
+            continue
+        discount_per_million_now = discount_per_million(model)
+        current_per_million_by_model[model.id] = {
+            **current_per_million,
+            **{
+                track_key(field, TIER_OFFPEAK): value
+                for field, value in discount_per_million_now.items()
+            },
+        }
+
+        if _comparison_basis_changed(previous, model):
+            logger.info(
+                "Re-anchoring %s: time-of-day pricing schedule changed the "
+                "comparison basis",
+                model.id,
+            )
+            change_state = rebase_model_field_change_states(
+                change_state,
+                model_id=model.id,
+                current_per_million=current_per_million,
+                now=started,
+            )
+            continue
+
+        history_points = canonicalize_points_for_standard(
+            history.models.get(model.id, []),
+            model.pricing_schedule,
+        )
         moving_average = compute_moving_average_per_field(
             history_points,
             now=started,
         )
         if not moving_average:
             continue
-        current_per_million = _current_per_million(model)
-        current_per_million_by_model[model.id] = current_per_million
         change_state, _, _, _ = update_model_field_change_states(
             change_state,
             model_id=model.id,
-            current_per_million=current_per_million,
-            previous_per_million=_previous_per_million(previous, model.id),
-            reference_per_million=moving_average,
+            tracks=_price_tracks(
+                current=current_per_million,
+                previous=_previous_per_million(previous, model.id),
+                reference=moving_average,
+                discount=discount_per_million_now,
+                previous_discount=_previous_discount_per_million(previous, model.id),
+            ),
             thresholds=DEFAULT_THRESHOLDS,
             now=started,
         )
@@ -432,7 +531,7 @@ async def run_build() -> None:
     write_model_json(SNAPSHOT_PATH, previous_output)
 
     merge_build_into_history(
-        [(model.id, model.pricing) for model in snapshots],
+        [(model.id, standard_pricing(model)) for model in snapshots],
         recorded_at=finished,
     )
 

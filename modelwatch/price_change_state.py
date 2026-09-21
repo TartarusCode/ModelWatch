@@ -9,7 +9,11 @@ from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field
 
 from modelwatch.json_output import write_model_json
-from modelwatch.pricing import PriceChangeThresholds
+from modelwatch.pricing import (
+    PriceChangeThresholds,
+    split_track_key,
+    track_key,
+)
 from modelwatch.schemas import ChangeDirection, PriceChangeRecord
 
 SETTLEMENT_BUILDS = 2
@@ -65,6 +69,26 @@ class FieldUpdateResult:
     settled: PriceChangeRecord | None = None
 
 
+@dataclass(frozen=True)
+class PriceTrack:
+    """One price level to watch for a model field.
+
+    ``tier`` is None for the standard rate and ``"offpeak"`` for the cheapest
+    scheduled rate. ``reference`` is the 7-day moving average used to gate
+    alerts, or None for tracks that have no history of their own.
+    """
+
+    field: str
+    current: Decimal
+    previous: Decimal | None = None
+    reference: Decimal | None = None
+    tier: str | None = None
+
+    @property
+    def key(self) -> str:
+        return track_key(self.field, self.tier)
+
+
 def load_price_change_state() -> PriceChangeStateStore:
     if not STATE_PATH.exists():
         now = datetime.now(UTC)
@@ -84,19 +108,31 @@ def _prices_match(left: Decimal, right: Decimal) -> bool:
     return abs(left - right) <= PRICE_TOLERANCE
 
 
-def _effective_prior_for_cut(reference: Decimal, previous: Decimal | None) -> Decimal:
+def _effective_prior_for_cut(
+    reference: Decimal | None,
+    previous: Decimal | None,
+) -> Decimal | None:
+    base = reference if reference is not None else previous
+    if base is None:
+        return None
     if previous is None:
-        return reference
-    if previous > reference * SPIKE_TOLERANCE:
-        return reference
+        return base
+    if previous > base * SPIKE_TOLERANCE:
+        return base
     return previous
 
 
-def _effective_prior_for_hike(reference: Decimal, previous: Decimal | None) -> Decimal:
+def _effective_prior_for_hike(
+    reference: Decimal | None,
+    previous: Decimal | None,
+) -> Decimal | None:
+    base = reference if reference is not None else previous
+    if base is None:
+        return None
     if previous is None:
-        return reference
-    if previous < reference * DIP_TOLERANCE:
-        return reference
+        return base
+    if previous < base * DIP_TOLERANCE:
+        return base
     return previous
 
 
@@ -130,6 +166,7 @@ def _episode_from_confirmation(
     episode_start: Decimal,
     confirmed_price: Decimal,
     detected_at: datetime,
+    tier: str | None = None,
 ) -> PriceChangeRecord:
     delta = confirmed_price - episode_start
     pct_change = float(delta / episode_start) if episode_start > 0 else 0.0
@@ -144,6 +181,7 @@ def _episode_from_confirmation(
         pct_change=pct_change,
         delta_per_million_usd=f"{delta:.6f}",
         status="active",
+        tier=tier,
     )
 
 
@@ -182,14 +220,16 @@ def _pending_cut_triggered(
     current: Decimal,
     previous: Decimal | None,
     anchor: Decimal,
-    reference: Decimal,
+    reference: Decimal | None,
     thresholds: PriceChangeThresholds,
 ) -> bool:
     if current >= anchor:
         return False
-    if current >= reference:
+    if reference is not None and current >= reference:
         return False
     prior = _effective_prior_for_cut(reference, previous)
+    if prior is None:
+        return False
     return _meets_change_thresholds(
         prior=prior,
         current=current,
@@ -203,14 +243,16 @@ def _pending_hike_triggered(
     current: Decimal,
     previous: Decimal | None,
     anchor: Decimal,
-    reference: Decimal,
+    reference: Decimal | None,
     thresholds: PriceChangeThresholds,
 ) -> bool:
     if current <= anchor:
         return False
-    if current <= reference:
+    if reference is not None and current <= reference:
         return False
     prior = _effective_prior_for_hike(reference, previous)
+    if prior is None:
+        return False
     return _meets_change_thresholds(
         prior=prior,
         current=current,
@@ -224,7 +266,7 @@ def update_field_change_state(
     *,
     current: Decimal,
     previous: Decimal | None,
-    reference: Decimal,
+    reference: Decimal | None,
     thresholds: PriceChangeThresholds,
     now: datetime,
 ) -> tuple[
@@ -249,7 +291,7 @@ def _update_field_change_state(
     *,
     current: Decimal,
     previous: Decimal | None,
-    reference: Decimal,
+    reference: Decimal | None,
     thresholds: PriceChangeThresholds,
     now: datetime,
 ) -> FieldUpdateResult:
@@ -286,7 +328,7 @@ def _update_idle_state(
     *,
     current: Decimal,
     previous: Decimal | None,
-    reference: Decimal,
+    reference: Decimal | None,
     thresholds: PriceChangeThresholds,
     now: datetime,
 ) -> FieldUpdateResult:
@@ -346,7 +388,7 @@ def _update_pending_state(
     *,
     current: Decimal,
     previous: Decimal | None,
-    reference: Decimal,
+    reference: Decimal | None,
     thresholds: PriceChangeThresholds,
     now: datetime,
 ) -> FieldUpdateResult:
@@ -464,7 +506,7 @@ def _update_confirmed_state(
     *,
     current: Decimal,
     previous: Decimal | None,
-    reference: Decimal,
+    reference: Decimal | None,
     thresholds: PriceChangeThresholds,
     now: datetime,
 ) -> FieldUpdateResult:
@@ -596,9 +638,7 @@ def update_model_field_change_states(
     store: PriceChangeStateStore,
     *,
     model_id: str,
-    current_per_million: dict[str, Decimal],
-    previous_per_million: dict[str, Decimal] | None,
-    reference_per_million: dict[str, Decimal],
+    tracks: list[PriceTrack],
     thresholds: PriceChangeThresholds,
     now: datetime,
 ) -> tuple[
@@ -613,29 +653,34 @@ def update_model_field_change_states(
     recovered_episodes: list[PriceChangeRecord] = []
     settled_episodes: list[PriceChangeRecord] = []
 
-    for field, reference in reference_per_million.items():
-        current = current_per_million.get(field)
-        if current is None or current <= 0:
+    present_keys: set[str] = set()
+    for track in tracks:
+        if track.current <= 0:
             continue
 
-        previous = previous_per_million.get(field) if previous_per_million else None
-        field_state = model_states.get(field)
+        key = track.key
+        present_keys.add(key)
+        field_state = model_states.get(key)
         if field_state is None:
-            field_state = FieldChangeState.idle(current)
+            field_state = FieldChangeState.idle(track.current)
 
         new_state, confirmed, recovered, settled = update_field_change_state(
             field_state,
-            current=current,
-            previous=previous,
-            reference=reference,
+            current=track.current,
+            previous=track.previous,
+            reference=track.reference,
             thresholds=thresholds,
             now=now,
         )
-        model_states[field] = new_state
+        model_states[key] = new_state
 
         if confirmed is not None:
             confirmed_episode = confirmed.model_copy(
-                update={"model_id": model_id, "field": field},
+                update={
+                    "model_id": model_id,
+                    "field": track.field,
+                    "tier": track.tier,
+                },
             )
             episodes.append(confirmed_episode)
             confirmed_episodes.append(confirmed_episode)
@@ -644,7 +689,8 @@ def update_model_field_change_states(
             recovered_episode = _mark_latest_episode_recovered(
                 episodes,
                 model_id=model_id,
-                field=field,
+                field=track.field,
+                tier=track.tier,
                 recovered_price=Decimal(recovered.recovered_per_million_usd or "0"),
                 recovered_at=now,
             )
@@ -655,12 +701,21 @@ def update_model_field_change_states(
             settled_episode = _mark_latest_episode_settled(
                 episodes,
                 model_id=model_id,
-                field=field,
+                field=track.field,
+                tier=track.tier,
                 settled_price=Decimal(settled.settled_per_million_usd or "0"),
                 settled_at=now,
             )
             if settled_episode is not None:
                 settled_episodes.append(settled_episode)
+
+    # A discount track disappears when a model stops publishing one.
+    for key in [
+        key
+        for key in model_states
+        if split_track_key(key)[1] is not None and key not in present_keys
+    ]:
+        del model_states[key]
 
     updated_models = dict(store.models)
     if model_states:
@@ -682,17 +737,57 @@ def update_model_field_change_states(
     )
 
 
+def rebase_model_field_change_states(
+    store: PriceChangeStateStore,
+    *,
+    model_id: str,
+    current_per_million: dict[str, Decimal],
+    now: datetime,
+) -> PriceChangeStateStore:
+    """Re-anchor a model's fields without emitting episodes.
+
+    Used when the comparison basis for a model changes — currently, when a
+    time-of-day schedule becomes known (or stops being published). Without this
+    the first build on the new basis would compare an old window price against
+    the standard rate and report a price change that never happened. Any
+    in-flight pending/confirmed state is dropped; an active episode left with
+    no confirmed field state is healed to ``recovered`` by
+    :func:`close_orphaned_active_changes`.
+    """
+    model_states = dict(store.models.get(model_id, {}))
+    for field, price in current_per_million.items():
+        if price <= 0:
+            continue
+        model_states[field] = FieldChangeState.idle(price)
+
+    updated_models = dict(store.models)
+    if model_states:
+        updated_models[model_id] = model_states
+
+    return store.model_copy(
+        update={
+            "generated_at": now,
+            "models": updated_models,
+        },
+    )
+
+
 def _mark_latest_episode_recovered(
     episodes: list[PriceChangeRecord],
     *,
     model_id: str,
     field: str,
+    tier: str | None,
     recovered_price: Decimal,
     recovered_at: datetime,
 ) -> PriceChangeRecord | None:
     for index in range(len(episodes) - 1, -1, -1):
         episode = episodes[index]
-        if episode.model_id != model_id or episode.field != field:
+        if (
+            episode.model_id != model_id
+            or episode.field != field
+            or episode.tier != tier
+        ):
             continue
         if episode.status != "active":
             continue
@@ -711,12 +806,17 @@ def _mark_latest_episode_settled(
     *,
     model_id: str,
     field: str,
+    tier: str | None,
     settled_price: Decimal,
     settled_at: datetime,
 ) -> PriceChangeRecord | None:
     for index in range(len(episodes) - 1, -1, -1):
         episode = episodes[index]
-        if episode.model_id != model_id or episode.field != field:
+        if (
+            episode.model_id != model_id
+            or episode.field != field
+            or episode.tier != tier
+        ):
             continue
         if episode.status != "active":
             continue
@@ -733,7 +833,7 @@ def _mark_latest_episode_settled(
 def active_changes_from_state(store: PriceChangeStateStore) -> list[PriceChangeRecord]:
     active: list[PriceChangeRecord] = []
     for model_id, fields in store.models.items():
-        for field, field_state in fields.items():
+        for key, field_state in fields.items():
             if field_state.status != "confirmed":
                 continue
             if (
@@ -742,6 +842,7 @@ def active_changes_from_state(store: PriceChangeStateStore) -> list[PriceChangeR
                 or field_state.direction is None
             ):
                 continue
+            field, tier = split_track_key(key)
             active.append(
                 _episode_from_confirmation(
                     model_id=model_id,
@@ -750,6 +851,7 @@ def active_changes_from_state(store: PriceChangeStateStore) -> list[PriceChangeR
                     episode_start=field_state.episode_start_price,
                     confirmed_price=field_state.confirmed_price,
                     detected_at=field_state.confirmed_at or store.generated_at,
+                    tier=tier,
                 ),
             )
     return active
@@ -767,14 +869,15 @@ def close_orphaned_active_changes(
         if episode.status != "active":
             healed.append(episode)
             continue
-        field_state = models.get(episode.model_id, {}).get(episode.field)
+        key = track_key(episode.field, episode.tier)
+        field_state = models.get(episode.model_id, {}).get(key)
         if field_state is not None and field_state.status == "confirmed":
             healed.append(episode)
             continue
         current: Decimal | None = None
         if current_per_million_by_model is not None:
             current = current_per_million_by_model.get(episode.model_id, {}).get(
-                episode.field,
+                key,
             )
         healed.append(
             episode.model_copy(

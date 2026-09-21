@@ -3,9 +3,52 @@ from decimal import Decimal
 
 from modelwatch.history import PriceHistoryPoint
 from modelwatch.pricing import PRICING_FIELDS, per_million_field_name
+from modelwatch.pricing_schedule import (
+    per_million_or_none,
+    scheduled_rates_per_million,
+)
+from modelwatch.schemas import PricingSchedule
 
 MA_WINDOW_DAYS = 7
 MIN_MA_POINTS = 3
+
+
+def canonicalize_points_for_standard(
+    points: list[PriceHistoryPoint],
+    schedule: PricingSchedule | None,
+) -> list[PriceHistoryPoint]:
+    """Map scheduled rates onto the standard rate.
+
+    Points recorded while a model was inside a peak or off-peak window hold
+    that window's rate. Left alone they drag the moving average between the two
+    levels, which is what made scheduled models look like they were flapping.
+    A point whose value is one of the schedule's rates is rewritten to the
+    standard rate; anything else (a genuine historical price) is kept.
+    """
+    if schedule is None:
+        return points
+
+    rates_by_field = scheduled_rates_per_million(schedule)
+    standard_by_field = {
+        field: per_million_or_none(rate) for field, rate in schedule.standard.items()
+    }
+
+    canonicalized: list[PriceHistoryPoint] = []
+    for point in points:
+        updates: dict[str, Decimal] = {}
+        for field, standard in standard_by_field.items():
+            if standard is None:
+                continue
+            attr = per_million_field_name(field)
+            value = getattr(point, attr)
+            if value is None or value == standard:
+                continue
+            if value in rates_by_field.get(field, ()):
+                updates[attr] = standard
+        canonicalized.append(
+            point.model_copy(update=updates) if updates else point,
+        )
+    return canonicalized
 
 
 def compute_moving_average_per_field(

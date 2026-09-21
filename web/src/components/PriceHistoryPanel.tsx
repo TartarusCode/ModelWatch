@@ -7,23 +7,25 @@ import {
 } from "../lib/priceHistory";
 import { episodesForModel } from "../lib/priceChanges";
 import {
+  changeFieldLabel,
   formatPerMillionUsd,
   formatSignedPct,
-  pricingFieldLabel,
 } from "../lib/pricing";
-import type { PriceChangeRecord, PriceHistoryPoint } from "../types";
+import type { PriceChangeRecord, PriceHistoryPoint, PricingSchedule } from "../types";
 import { PriceHistoryChart } from "./PriceHistoryChart";
 
 interface PriceHistoryPanelProps {
   modelId: string;
   points: PriceHistoryPoint[] | null;
   episodes: PriceChangeRecord[];
+  schedule?: PricingSchedule | null;
 }
 
 export function PriceHistoryPanel({
   modelId,
   points,
   episodes,
+  schedule = null,
 }: PriceHistoryPanelProps) {
   const resolvedPoints = points ?? [];
   const historyFields = activeHistoryFields(resolvedPoints);
@@ -58,6 +60,13 @@ export function PriceHistoryPanel({
         USD per 1M tokens · web search as $/search when ≥ $1/M · recorded on each
         build
       </p>
+
+      {schedule ? (
+        <p className="muted">
+          This model has time-of-day pricing. The chart tracks its standard rate
+          — moving between peak and off-peak windows is not a price change.
+        </p>
+      ) : null}
 
       {chartPoints.length > 0 && historyFields.length > 0 ? (
         <PriceHistoryChart points={chartPoints} fields={historyFields} />
@@ -127,7 +136,7 @@ export function PriceHistoryPanel({
                     <td className="tabular-nums muted">
                       {new Date(episode.detected_at).toLocaleString()}
                     </td>
-                    <td>{pricingFieldLabel(episode.field)}</td>
+                    <td>{changeFieldLabel(episode.field, episode.tier)}</td>
                     <td>
                       <span
                         className={`change-badge change-badge--${episode.direction}`}

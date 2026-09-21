@@ -23,6 +23,8 @@ import {
   compareTokenPrices,
   isFreeTierModel,
   providerFromModelId,
+  scheduleTooltip,
+  standardPricePerToken,
 } from "../lib/pricing";
 import {
   loadColumnVisibility,
@@ -177,22 +179,57 @@ export function ModelTable({ models }: ModelTableProps) {
       columnHelper.accessor((row) => row.model.pricing.prompt, {
         id: "prompt",
         header: "Prompt",
+        // Sort on the standard rate so ordering does not move with the clock.
         sortingFn: (a, b) =>
           compareTokenPrices(
-            a.original.model.pricing.prompt,
-            b.original.model.pricing.prompt,
+            standardPricePerToken(
+              a.original.model.pricing,
+              a.original.model.pricing_schedule,
+              "prompt",
+            ),
+            standardPricePerToken(
+              b.original.model.pricing,
+              b.original.model.pricing_schedule,
+              "prompt",
+            ),
           ),
-        cell: (info) => <PriceCell perToken={info.getValue()} />,
+        cell: (info) => (
+          <PriceCell
+            perToken={info.getValue()}
+            field="prompt"
+            schedule={info.row.original.model.pricing_schedule}
+            scheduleNote={scheduleTooltip(
+              info.row.original.model.pricing_schedule,
+            )}
+          />
+        ),
       }),
       columnHelper.accessor((row) => row.model.pricing.completion, {
         id: "completion",
         header: "Completion",
         sortingFn: (a, b) =>
           compareTokenPrices(
-            a.original.model.pricing.completion,
-            b.original.model.pricing.completion,
+            standardPricePerToken(
+              a.original.model.pricing,
+              a.original.model.pricing_schedule,
+              "completion",
+            ),
+            standardPricePerToken(
+              b.original.model.pricing,
+              b.original.model.pricing_schedule,
+              "completion",
+            ),
           ),
-        cell: (info) => <PriceCell perToken={info.getValue()} />,
+        cell: (info) => (
+          <PriceCell
+            perToken={info.getValue()}
+            field="completion"
+            schedule={info.row.original.model.pricing_schedule}
+            scheduleNote={scheduleTooltip(
+              info.row.original.model.pricing_schedule,
+            )}
+          />
+        ),
       }),
       columnHelper.accessor((row) => row.model.context_length ?? 0, {
         id: "context",

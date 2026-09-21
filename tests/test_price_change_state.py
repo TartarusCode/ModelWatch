@@ -5,8 +5,10 @@ from modelwatch.price_change_state import (
     SETTLEMENT_BUILDS,
     FieldChangeState,
     PriceChangeStateStore,
+    PriceTrack,
     active_changes_from_state,
     close_orphaned_active_changes,
+    rebase_model_field_change_states,
     update_field_change_state,
     update_model_field_change_states,
 )
@@ -281,9 +283,14 @@ def test_confirmed_cut_settles_after_seven_days() -> None:
     store, _, _, settled = update_model_field_change_states(
         store,
         model_id="acme/model",
-        current_per_million={"prompt": Decimal("0.840000")},
-        previous_per_million={"prompt": Decimal("0.840000")},
-        reference_per_million={"prompt": Decimal("0.900000")},
+        tracks=[
+            PriceTrack(
+                field="prompt",
+                current=Decimal("0.840000"),
+                previous=Decimal("0.840000"),
+                reference=Decimal("0.900000"),
+            ),
+        ],
         thresholds=_thresholds(),
         now=now,
     )
@@ -330,9 +337,14 @@ def test_confirmed_hike_settles_after_seven_days() -> None:
     store, _, _, settled = update_model_field_change_states(
         store,
         model_id="acme/model",
-        current_per_million={"prompt": Decimal("1.200000")},
-        previous_per_million={"prompt": Decimal("1.200000")},
-        reference_per_million={"prompt": Decimal("1.000000")},
+        tracks=[
+            PriceTrack(
+                field="prompt",
+                current=Decimal("1.200000"),
+                previous=Decimal("1.200000"),
+                reference=Decimal("1.000000"),
+            ),
+        ],
         thresholds=_thresholds(),
         now=now,
     )
@@ -498,6 +510,242 @@ def test_close_orphaned_active_changes_recovers_unmatched_active_rows() -> None:
     assert healed[0].status == "recovered"
     assert healed[0].recovered_at == now
     assert healed[0].recovered_per_million_usd == "0.930000"
+
+
+def test_rebase_reanchors_without_emitting_episodes() -> None:
+    now = datetime(2026, 9, 21, 12, 0, tzinfo=UTC)
+    store = PriceChangeStateStore(
+        generated_at=now,
+        models={
+            "deepseek/deepseek-v4.1-flash": {
+                "prompt": _idle("0.150000"),
+                "completion": _idle("0.600000"),
+            },
+        },
+        episodes=[],
+    )
+
+    rebased = rebase_model_field_change_states(
+        store,
+        model_id="deepseek/deepseek-v4.1-flash",
+        current_per_million={
+            "prompt": Decimal("0.300000"),
+            "completion": Decimal("1.200000"),
+        },
+        now=now,
+    )
+
+    prompt_state = rebased.models["deepseek/deepseek-v4.1-flash"]["prompt"]
+    assert prompt_state.anchor == Decimal("0.300000")
+    assert prompt_state.status == "idle"
+    assert prompt_state.pending_price is None
+    assert rebased.episodes == []
+
+
+def test_rebase_drops_in_flight_pending_state() -> None:
+    now = datetime(2026, 9, 21, 12, 0, tzinfo=UTC)
+    pending = FieldChangeState(
+        anchor=Decimal("0.150000"),
+        status="pending",
+        direction="hike",
+        pending_price=Decimal("0.300000"),
+        pending_builds=1,
+        episode_start_price=Decimal("0.150000"),
+    )
+    store = PriceChangeStateStore(
+        generated_at=now,
+        models={"acme/model": {"prompt": pending}},
+        episodes=[],
+    )
+
+    rebased = rebase_model_field_change_states(
+        store,
+        model_id="acme/model",
+        current_per_million={"prompt": Decimal("0.300000")},
+        now=now,
+    )
+
+    state = rebased.models["acme/model"]["prompt"]
+    assert state.status == "idle"
+    assert state.anchor == Decimal("0.300000")
+
+
+def test_rebase_keeps_untouched_fields_and_other_models() -> None:
+    now = datetime(2026, 9, 21, 12, 0, tzinfo=UTC)
+    store = PriceChangeStateStore(
+        generated_at=now,
+        models={
+            "acme/model": {"prompt": _idle("1.000000")},
+            "other/model": {"prompt": _idle("2.000000")},
+        },
+        episodes=[],
+    )
+
+    rebased = rebase_model_field_change_states(
+        store,
+        model_id="acme/model",
+        current_per_million={"completion": Decimal("3.000000")},
+        now=now,
+    )
+
+    assert rebased.models["acme/model"]["prompt"].anchor == Decimal("1.000000")
+    assert rebased.models["acme/model"]["completion"].anchor == Decimal("3.000000")
+    assert rebased.models["other/model"]["prompt"].anchor == Decimal("2.000000")
+
+
+def test_rebase_ignores_non_positive_prices() -> None:
+    now = datetime(2026, 9, 21, 12, 0, tzinfo=UTC)
+    store = PriceChangeStateStore(
+        generated_at=now,
+        models={"acme/model": {"prompt": _idle("1.000000")}},
+        episodes=[],
+    )
+
+    rebased = rebase_model_field_change_states(
+        store,
+        model_id="acme/model",
+        current_per_million={"prompt": Decimal("0")},
+        now=now,
+    )
+
+    assert rebased.models["acme/model"]["prompt"].anchor == Decimal("1.000000")
+
+
+def test_off_peak_track_alerts_without_a_moving_average() -> None:
+    """Discount tracks have no history, so they run without the MA gate."""
+    at = datetime(2026, 9, 21, 12, 0, tzinfo=UTC)
+    state = _idle("0.150000")
+
+    state, confirmed, _, _ = update_field_change_state(
+        state,
+        current=Decimal("0.100000"),
+        previous=Decimal("0.150000"),
+        reference=None,
+        thresholds=_thresholds(),
+        now=at,
+    )
+    assert confirmed is None
+    assert state.status == "pending"
+
+    state, confirmed, _, _ = update_field_change_state(
+        state,
+        current=Decimal("0.100000"),
+        previous=Decimal("0.150000"),
+        reference=None,
+        thresholds=_thresholds(),
+        now=at + timedelta(hours=1),
+    )
+    assert confirmed is not None
+    assert confirmed.direction == "cut"
+    assert confirmed.episode_start_per_million_usd == "0.150000"
+    assert confirmed.new_per_million_usd == "0.100000"
+
+
+def test_active_changes_carry_the_track_tier() -> None:
+    now = datetime(2026, 9, 21, 12, 0, tzinfo=UTC)
+
+    def confirmed_cut(start: str, current: str) -> FieldChangeState:
+        return FieldChangeState(
+            anchor=Decimal(current),
+            status="confirmed",
+            direction="cut",
+            episode_start_price=Decimal(start),
+            confirmed_price=Decimal(current),
+            confirmed_at=now,
+        )
+
+    store = PriceChangeStateStore(
+        generated_at=now,
+        models={
+            "deepseek/deepseek-v4.1-flash": {
+                "prompt": confirmed_cut("0.300000", "0.240000"),
+                "prompt_offpeak": confirmed_cut("0.150000", "0.100000"),
+            },
+        },
+        episodes=[],
+    )
+
+    active = active_changes_from_state(store)
+
+    assert {(change.field, change.tier) for change in active} == {
+        ("prompt", None),
+        ("prompt", "offpeak"),
+    }
+
+
+def test_orphaned_off_peak_episode_heals_against_its_own_track() -> None:
+    now = datetime(2026, 9, 21, 12, 0, tzinfo=UTC)
+    episode = PriceChangeRecord(
+        detected_at=now,
+        model_id="acme/model",
+        field="prompt",
+        direction="cut",
+        episode_start_per_million_usd="0.150000",
+        old_per_million_usd="0.150000",
+        new_per_million_usd="0.100000",
+        pct_change=-0.333333,
+        delta_per_million_usd="-0.050000",
+        status="active",
+        tier="offpeak",
+    )
+    models = {
+        "acme/model": {
+            "prompt": FieldChangeState(
+                anchor=Decimal("0.300000"),
+                status="confirmed",
+                direction="cut",
+                episode_start_price=Decimal("0.300000"),
+                confirmed_price=Decimal("0.240000"),
+                confirmed_at=now,
+            ),
+        },
+    }
+
+    healed = close_orphaned_active_changes(
+        [episode],
+        models,
+        now=now,
+        current_per_million_by_model={
+            "acme/model": {
+                "prompt": Decimal("0.300000"),
+                "prompt_offpeak": Decimal("0.100000"),
+            },
+        },
+    )
+
+    assert healed[0].status == "recovered"
+    assert healed[0].recovered_per_million_usd == "0.100000"
+
+
+def test_discount_track_is_dropped_when_the_discount_disappears() -> None:
+    now = datetime(2026, 9, 21, 12, 0, tzinfo=UTC)
+    store = PriceChangeStateStore(
+        generated_at=now,
+        models={
+            "acme/model": {
+                "prompt": _idle("0.300000"),
+                "prompt_offpeak": _idle("0.150000"),
+            },
+        },
+        episodes=[],
+    )
+
+    updated, _, _, _ = update_model_field_change_states(
+        store,
+        model_id="acme/model",
+        tracks=[
+            PriceTrack(
+                field="prompt",
+                current=Decimal("0.300000"),
+                reference=Decimal("0.300000"),
+            ),
+        ],
+        thresholds=_thresholds(),
+        now=now,
+    )
+
+    assert "prompt" in updated.models["acme/model"]
+    assert "prompt_offpeak" not in updated.models["acme/model"]
 
 
 def test_store_round_trip() -> None:

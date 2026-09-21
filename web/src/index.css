@@ -979,6 +979,60 @@ a:hover {
   text-decoration: line-through;
 }
 
+/* Time-of-day pricing: a price that moves with the clock is a range */
+.price-cell--scheduled {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.375rem;
+}
+
+.tier-chip {
+  font-family: var(--font-sans);
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 0.0625rem 0.3125rem;
+  border-radius: 999px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-tertiary);
+  white-space: nowrap;
+}
+
+.schedule-tiers {
+  margin-top: 1rem;
+}
+
+.schedule-tiers__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  font-size: 0.8125rem;
+}
+
+.schedule-tiers__list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.schedule-tiers__rate {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.schedule-tiers__label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+}
+
 /* Status pills */
 .status-pill {
   display: inline-block;

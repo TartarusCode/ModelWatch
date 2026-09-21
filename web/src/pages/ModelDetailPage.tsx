@@ -9,9 +9,23 @@ import { PriceHistoryPanel } from "../components/PriceHistoryPanel";
 import { ProviderBadge } from "../components/ProviderBadge";
 import { ProviderPricingPanel } from "../components/ProviderPricingPanel";
 import { fetchModelPriceHistory } from "../lib/data";
-import { isFreeTierModel, pricingFieldLabel, providerFromModelId } from "../lib/pricing";
+import {
+  formatPerMillionUsd,
+  isDiscountedNow,
+  isFreeTierModel,
+  pricingFieldLabel,
+  providerFromModelId,
+  scheduleTierGroups,
+  scheduleTooltip,
+} from "../lib/pricing";
 import { useDocumentTitle } from "../lib/useDocumentTitle";
-import type { EnrichedModel, ModelPricing, PriceChangeRecord, PriceHistoryPoint } from "../types";
+import type {
+  EnrichedModel,
+  ModelPricing,
+  PriceChangeRecord,
+  PriceHistoryPoint,
+  PricingSchedule,
+} from "../types";
 
 const ModelDescription = lazy(() =>
   import("../components/ModelDescription").then((module) => ({
@@ -27,7 +41,42 @@ interface ModelDetailPageProps {
 function pricingEntries(pricing: ModelPricing): [string, string][] {
   return Object.entries(pricing).filter(
     (entry): entry is [string, string] =>
-      entry[1] !== undefined && entry[1] !== null,
+      typeof entry[1] === "string" && entry[1].length > 0,
+  );
+}
+
+/**
+ * Schedule widget: the rate card's tiers grouped by rate, with the windows
+ * they apply to in the viewer's local time. Models with time-of-day pricing
+ * report whichever window is active right now, so the tiers have to be on
+ * screen together — otherwise the price looks like it keeps changing.
+ */
+function ScheduleTiers({ schedule }: { schedule: PricingSchedule | null }) {
+  const groups = scheduleTierGroups(schedule);
+  if (groups.length === 0) {
+    return null;
+  }
+  const standard = groups[groups.length - 1].prompt;
+  return (
+    <div className="schedule-tiers">
+      <p className="card__subtitle" style={{ marginBottom: "0.5rem" }}>
+        Time-of-day pricing · local time · alerts track the standard rate
+      </p>
+      <ul className="schedule-tiers__list">
+        {groups.map((group) => (
+          <li key={`${group.prompt}-${group.completion}`}>
+            <span className="schedule-tiers__rate">
+              {formatPerMillionUsd(group.prompt)}/M in ·{" "}
+              {formatPerMillionUsd(group.completion)}/M out
+            </span>
+            <span className="schedule-tiers__label">
+              {group.prompt === standard ? "standard" : "off-peak"}
+            </span>
+            <span className="muted">{group.windows.join(" · ")}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
@@ -93,6 +142,9 @@ export function ModelDetailPage({
       <header className="model-hero">
         <div className="model-hero__top">
           <ProviderBadge provider={provider} />
+          {isDiscountedNow(model.pricing_schedule, "prompt") ? (
+            <span className="status-pill status-pill--ok">Off-peak now</span>
+          ) : null}
           {isFreeTierModel(model.id, model.pricing) ? (
             <span className="status-pill status-pill--ok">Free tier</span>
           ) : null}
@@ -126,13 +178,23 @@ export function ModelDetailPage({
           <div className="hero-stat">
             <span className="hero-stat__label">Prompt</span>
             <span className="hero-stat__value">
-              <PriceCell perToken={model.pricing.prompt} />
+              <PriceCell
+                perToken={model.pricing.prompt}
+                field="prompt"
+                schedule={model.pricing_schedule}
+                scheduleNote={scheduleTooltip(model.pricing_schedule)}
+              />
             </span>
           </div>
           <div className="hero-stat">
             <span className="hero-stat__label">Completion</span>
             <span className="hero-stat__value">
-              <PriceCell perToken={model.pricing.completion} />
+              <PriceCell
+                perToken={model.pricing.completion}
+                field="completion"
+                schedule={model.pricing_schedule}
+                scheduleNote={scheduleTooltip(model.pricing_schedule)}
+              />
             </span>
           </div>
           <div className="hero-stat">
@@ -148,6 +210,7 @@ export function ModelDetailPage({
         modelId={model.id}
         points={historyPoints}
         episodes={episodes}
+        schedule={model.pricing_schedule}
       />
 
       <div className="detail-grid">
@@ -160,10 +223,16 @@ export function ModelDetailPage({
             {pricingEntries(model.pricing).map(([field, value]) => (
               <div className="kv-row" key={field}>
                 <span>{pricingFieldLabel(field)}</span>
-                <PriceCell perToken={value} field={field} />
+                <PriceCell
+                  perToken={value}
+                  field={field}
+                  schedule={model.pricing_schedule}
+                  scheduleNote={scheduleTooltip(model.pricing_schedule)}
+                />
               </div>
             ))}
           </div>
+          <ScheduleTiers schedule={model.pricing_schedule} />
         </section>
 
         <section className="card">

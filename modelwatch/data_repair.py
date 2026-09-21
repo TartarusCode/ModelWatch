@@ -27,8 +27,9 @@ from modelwatch.price_changes import (
     load_price_change_events,
     migrate_legacy_change_event_dict,
 )
-from modelwatch.pricing import DEFAULT_THRESHOLDS, per_million_usd
+from modelwatch.pricing import DEFAULT_THRESHOLDS, TIER_OFFPEAK, track_key
 from modelwatch.pricing_glitch import is_paid_zero_glitch_point
+from modelwatch.pricing_schedule import discount_per_million, standard_per_million
 from modelwatch.schemas import (
     ModelsOutput,
     NewModelEventRecord,
@@ -88,13 +89,9 @@ def _current_per_million_by_model() -> dict[str, dict[str, Decimal]]:
     result: dict[str, dict[str, Decimal]] = {}
     for enriched in models_output.models:
         model_id = enriched.model.id
-        fields: dict[str, Decimal] = {}
-        pricing = enriched.model.pricing.model_dump(exclude_none=True)
-        for field, value in pricing.items():
-            try:
-                fields[field] = per_million_usd(str(value))
-            except ValueError:
-                continue
+        fields = standard_per_million(enriched.model)
+        for field, value in discount_per_million(enriched.model).items():
+            fields[track_key(field, TIER_OFFPEAK)] = value
         if fields:
             result[model_id] = fields
     return result

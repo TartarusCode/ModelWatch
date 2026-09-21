@@ -35,6 +35,42 @@ class ModelPricing(BaseModel):
     web_search: str | None = None
 
 
+class PricingScheduleWindow(BaseModel):
+    """One time-of-day pricing window from OpenRouter's ``pricing.overrides``.
+
+    ``utc_start``/``utc_end`` are HHMM clock values (``100`` = 01:00 UTC,
+    ``1630`` = 16:30 UTC); a window whose end is not greater than its start
+    wraps past midnight (OpenRouter sends ``0`` for "end of day", i.e. 24:00).
+    """
+
+    model_config = ConfigDict(frozen=True)
+
+    label: str
+    utc_days: list[str] | None = None
+    utc_start: int | None = None
+    utc_end: int | None = None
+    rates: dict[str, str] = Field(default_factory=dict)
+
+
+class PricingSchedule(BaseModel):
+    """Derived view of a model's time-of-day pricing schedule.
+
+    ``rates`` lists every distinct rate the field can be charged at (the
+    model's own top-level price plus every window). ``standard`` is the highest
+    of those (the rate card's headline rate, excluding discounts) and
+    ``minimum`` the cheapest. Change detection compares ``standard`` so that a
+    model flipping between its peak and off-peak window is not reported as a
+    price change.
+    """
+
+    model_config = ConfigDict(frozen=True)
+
+    standard: dict[str, str] = Field(default_factory=dict)
+    minimum: dict[str, str] = Field(default_factory=dict)
+    rates: dict[str, list[str]] = Field(default_factory=dict)
+    windows: list[PricingScheduleWindow] = Field(default_factory=list)
+
+
 class ModelSnapshot(BaseModel):
     model_config = ConfigDict(frozen=True)
 
@@ -46,6 +82,7 @@ class ModelSnapshot(BaseModel):
     context_length: int | None = None
     architecture: ModelArchitecture
     pricing: ModelPricing
+    pricing_schedule: PricingSchedule | None = None
     top_provider: TopProviderInfo
     supported_parameters: list[str]
     default_parameters: dict[str, float | int | None] | None = None
@@ -173,6 +210,8 @@ class PriceChangeRecord(BaseModel):
     pct_change: float
     delta_per_million_usd: str
     status: ChangeStatus = "active"
+    # None = the standard rate; "offpeak" = the cheapest scheduled rate.
+    tier: str | None = None
     recovered_at: datetime | None = None
     recovered_per_million_usd: str | None = None
     settled_at: datetime | None = None
@@ -211,6 +250,8 @@ class PriceChangeEventRecord(BaseModel):
     pct_change: float
     delta_per_million_usd: str
     status: ChangeStatus = "active"
+    # None = the standard rate; "offpeak" = the cheapest scheduled rate.
+    tier: str | None = None
     recovered_at: datetime | None = None
     recovered_per_million_usd: str | None = None
     settled_at: datetime | None = None

@@ -23,6 +23,31 @@ export interface ModelPricing {
   web_search?: string;
 }
 
+/**
+ * One window of a model's time-of-day pricing schedule (OpenRouter
+ * `pricing.overrides`). `utc_start`/`utc_end` are HHMM clock values (100 =
+ * 01:00 UTC); a window ending at 0 runs to 24:00.
+ */
+export interface PricingScheduleWindow {
+  label: string;
+  utc_days: string[] | null;
+  utc_start: number | null;
+  utc_end: number | null;
+  rates: Record<string, string>;
+}
+
+/**
+ * Derived view of the schedule. `standard` is the rate charged outside any
+ * discount window and is what ModelWatch tracks for price changes; `minimum`
+ * is the cheapest scheduled rate.
+ */
+export interface PricingSchedule {
+  standard: Record<string, string>;
+  minimum: Record<string, string>;
+  rates: Record<string, string[]>;
+  windows: PricingScheduleWindow[];
+}
+
 export interface ModelSnapshot {
   id: string;
   canonical_slug: string;
@@ -32,6 +57,7 @@ export interface ModelSnapshot {
   context_length: number | null;
   architecture: ModelArchitecture;
   pricing: ModelPricing;
+  pricing_schedule: PricingSchedule | null;
   top_provider: TopProviderInfo;
   supported_parameters: string[];
   default_parameters: Record<string, number | null> | null;
@@ -191,6 +217,8 @@ export interface PriceChangeRecord {
   pct_change: number;
   delta_per_million_usd: string;
   status: "active" | "recovered" | "settled";
+  /** null = the standard rate; "offpeak" = the cheapest scheduled rate. */
+  tier?: string | null;
   recovered_at?: string | null;
   recovered_per_million_usd?: string | null;
   settled_at?: string | null;
@@ -229,6 +257,8 @@ export interface PriceChangeEventRecord {
   pct_change: number;
   delta_per_million_usd: string;
   status: "active" | "recovered" | "settled";
+  /** null = the standard rate; "offpeak" = the cheapest scheduled rate. */
+  tier?: string | null;
   recovered_at?: string | null;
   recovered_per_million_usd?: string | null;
   settled_at?: string | null;

@@ -13,10 +13,10 @@ import {
   type ChangeDirectionFilter,
 } from "../lib/priceChanges";
 import {
+  changeFieldLabel,
   formatPerMillionUsd,
   formatSignedPct,
   formatSignedPerMillionUsd,
-  pricingFieldLabel,
 } from "../lib/pricing";
 import { useDocumentTitle } from "../lib/useDocumentTitle";
 import type {
@@ -78,7 +78,7 @@ function ChangeTable({
                   {modelDisplayName(change.model_id, enriched)}
                 </Link>
               </td>
-              <td>{pricingFieldLabel(change.field)}</td>
+              <td>{changeFieldLabel(change.field, change.tier)}</td>
               <td>
                 <span
                   className={`change-badge change-badge--${change.direction}`}
@@ -226,7 +226,7 @@ export function ChangesPage({ priceChanges, enriched }: ChangesPageProps) {
           </div>
           <div className="highlight-card__prices">
             <span>
-              {pricingFieldLabel(topChange.field)}:{" "}
+              {changeFieldLabel(topChange.field, topChange.tier)}:{" "}
               <s>
                 {formatPerMillionUsd(
                   topChange.episode_start_per_million_usd,
