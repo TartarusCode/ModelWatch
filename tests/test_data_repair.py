@@ -109,7 +109,10 @@ def test_drop_schedule_explained_episodes_filters_state_history(
         },
     )
 
-    def episode(new: str, model_id: str = "deepseek/deepseek-v4.1-flash"):
+    def episode(
+        new: str,
+        model_id: str = "deepseek/deepseek-v4.1-flash",
+    ) -> PriceChangeRecord:
         return PriceChangeRecord(
             detected_at=datetime(2026, 9, 11, 5, 1, tzinfo=UTC),
             model_id=model_id,
