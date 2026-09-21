@@ -9504,7 +9504,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-09-21T19:36:23.323813Z",
+  "generated_at": "2026-09-21T20:01:15.773386Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -12461,7 +12461,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.0766035000000",
+        "anchor": "0.076328000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -12495,6 +12495,17 @@
         "recovery_builds": 0,
         "status": "idle"
       },
+      "completion_offpeak": {
+        "anchor": "1.98000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
       "input_cache_read": {
         "anchor": "0.044000000",
         "confirmed_at": null,
@@ -12506,8 +12517,30 @@
         "recovery_builds": 0,
         "status": "idle"
       },
+      "input_cache_read_offpeak": {
+        "anchor": "0.022000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
       "prompt": {
         "anchor": "1.32000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt_offpeak": {
+        "anchor": "0.66000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -12565,6 +12598,17 @@
         "recovery_builds": 0,
         "status": "idle"
       },
+      "completion_offpeak": {
+        "anchor": "0.6000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
       "input_cache_read": {
         "anchor": "0.006000000",
         "confirmed_at": null,
@@ -12576,8 +12620,30 @@
         "recovery_builds": 0,
         "status": "idle"
       },
+      "input_cache_read_offpeak": {
+        "anchor": "0.003000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
       "prompt": {
         "anchor": "0.3000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt_offpeak": {
+        "anchor": "0.15000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -25575,6 +25641,17 @@
         "recovery_builds": 0,
         "status": "idle"
       },
+      "completion_offpeak": {
+        "anchor": "0.33000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
       "input_cache_read": {
         "anchor": "0.033000000",
         "confirmed_at": null,
@@ -25586,8 +25663,30 @@
         "recovery_builds": 0,
         "status": "idle"
       },
+      "input_cache_read_offpeak": {
+        "anchor": "0.020625000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
       "prompt": {
         "anchor": "0.132000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt_offpeak": {
+        "anchor": "0.0825000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
