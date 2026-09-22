@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-09-22T16:32:42.020432Z",
+  "generated_at": "2026-09-22T17:03:06.002515Z",
   "models": [
+    {
+      "canonical_slug": "anthropic/claude-opus-5.5-20260921",
+      "created": 1790094732,
+      "detected_at": "2026-09-22T17:01:16.781816Z",
+      "model_id": "anthropic/claude-opus-5.5",
+      "name": "Anthropic: Claude Opus 5.5"
+    },
+    {
+      "canonical_slug": "anthropic/claude-opus-5.5-20260921",
+      "created": 1790094732,
+      "detected_at": "2026-09-22T17:01:16.781816Z",
+      "model_id": "anthropic/claude-opus-5.5:batch",
+      "name": "Anthropic: Claude Opus 5.5 (batch)"
+    },
     {
       "canonical_slug": "deepseek/deepseek-v4.1-flash-20260910",
       "created": 1789021285,
