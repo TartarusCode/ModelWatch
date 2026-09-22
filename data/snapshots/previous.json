@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T14:33:19.025401Z",
+  "generated_at": "2026-09-22T15:05:04.249123Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -14,7 +14,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "aion-labs/aion-2.0-20260223",
-      "context_length": 131072,
+      "context_length": 1048576,
       "created": 1771881306,
       "default_parameters": {
         "frequency_penalty": null,
@@ -47,7 +47,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 32768
       }
@@ -65,7 +65,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "aion-labs/aion-3.0-20260707",
-      "context_length": 131072,
+      "context_length": 1048576,
       "created": 1783443095,
       "default_parameters": {},
       "description": "Aion-3.0 is a multi-model roleplaying and storytelling system from AionLabs, built on the GLM family of models. It uses a collaborative generation process in which multiple specialized models each contribute...",
@@ -94,7 +94,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 32768
       }
@@ -112,7 +112,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "aion-labs/aion-3.0-mini-20260707",
-      "context_length": 131072,
+      "context_length": 1048576,
       "created": 1783443096,
       "default_parameters": {},
       "description": "Aion-3.0 Mini is a multi-model roleplaying and storytelling system from AionLabs, built on the DeepSeek family of models. It uses a collaborative generation process in which multiple specialized models each...",
@@ -141,7 +141,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 32768
       }
@@ -3540,12 +3540,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001892772",
+        "completion": "0.0000018792",
         "image": null,
-        "input_cache_read": "0.0000000788655",
+        "input_cache_read": "0.0000000783",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000946386",
+        "prompt": "0.0000009396",
         "request": null,
         "web_search": null
       },
@@ -4011,6 +4011,64 @@
         "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 384000
+      }
+    },
+    "deepseek/deepseek-v4.1-flash:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "DeepSeek"
+      },
+      "canonical_slug": "deepseek/deepseek-v4.1-flash-20260910",
+      "context_length": 1048576,
+      "created": 1789021285,
+      "default_parameters": {},
+      "description": "DeepSeek V4.1 Flash is a sparse mixture-of-experts model from DeepSeek, and the first built on the company's Causal Encoder-Decoder (CED) architecture. It activates 8B parameters on input and 16B on...",
+      "expiration_date": null,
+      "id": "deepseek/deepseek-v4.1-flash:batch",
+      "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
+      "pricing": {
+        "completion": "0.000000336",
+        "image": null,
+        "input_cache_read": "0.00000000336",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000000112",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
       }
     },
     "dots-studio/dots-3-note-preview:free": {
@@ -10506,12 +10564,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.000015",
+        "completion": "0.0000075",
         "image": null,
-        "input_cache_read": "0.0000003",
+        "input_cache_read": "0.00000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000003",
+        "prompt": "0.0000015",
         "request": null,
         "web_search": null
       },
@@ -10542,6 +10600,72 @@
         "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 943718
+      }
+    },
+    "moonshotai/kimi-k3:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "moonshotai/kimi-k3-20260715",
+      "context_length": 1048576,
+      "created": 1784215858,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": 0.95
+      },
+      "description": "Kimi K3 is a 2.8T parameter open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at...",
+      "expiration_date": null,
+      "id": "moonshotai/kimi-k3:batch",
+      "name": "MoonshotAI: Kimi K3 (batch)",
+      "pricing": {
+        "completion": "0.0000114",
+        "image": null,
+        "input_cache_read": "0.000000228",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000228",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 16384
       }
     },
     "morph/morph-v3-fast": {
@@ -15872,12 +15996,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.00000013",
+        "completion": "0.00000009",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000003",
+        "prompt": "0.000000018",
         "request": null,
         "web_search": null
       },
@@ -15902,6 +16026,67 @@
         "tools",
         "top_k",
         "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 131072,
+        "is_moderated": false,
+        "max_completion_tokens": 32768
+      }
+    },
+    "openai/gpt-oss-20b:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT"
+      },
+      "canonical_slug": "openai/gpt-oss-20b",
+      "context_length": 131072,
+      "created": 1754414229,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "temperature": null,
+        "top_p": null
+      },
+      "description": "gpt-oss-20b is an open-weight 21B parameter model released by OpenAI under the Apache 2.0 license. It uses a Mixture-of-Experts (MoE) architecture with 3.6B active parameters per forward pass, optimized for...",
+      "expiration_date": null,
+      "id": "openai/gpt-oss-20b:batch",
+      "name": "OpenAI: gpt-oss-20b (batch)",
+      "pricing": {
+        "completion": "0.000000112",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000000024",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
         "top_p"
       ],
       "top_provider": {
@@ -23971,12 +24156,12 @@
       "id": "z-ai/glm-5.3-flash:batch",
       "name": "Z.ai: GLM 5.3 Flash (batch)",
       "pricing": {
-        "completion": "0.00000025",
+        "completion": "0.0000002",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.000000012",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.00000006",
         "request": null,
         "web_search": null
       },
@@ -23987,11 +24172,13 @@
         "logit_bias",
         "logprobs",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
         "repetition_penalty",
         "response_format",
+        "seed",
         "stop",
         "structured_outputs",
         "temperature",
@@ -24004,7 +24191,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-5.3-flashx": {
@@ -24101,11 +24288,13 @@
         "logit_bias",
         "logprobs",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
         "repetition_penalty",
         "response_format",
+        "seed",
         "stop",
         "structured_outputs",
         "temperature",
