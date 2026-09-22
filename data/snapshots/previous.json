@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T14:12:56.918678Z",
+  "generated_at": "2026-09-22T14:33:19.025401Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3240,12 +3240,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000017416",
+        "completion": "0.000000098",
         "image": null,
-        "input_cache_read": "0.000000017416",
+        "input_cache_read": "0.0000000098",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008708",
+        "prompt": "0.000000049",
         "request": null,
         "web_search": null
       },
@@ -3540,12 +3540,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001896252",
+        "completion": "0.000001892772",
         "image": null,
-        "input_cache_read": "0.0000000790105",
+        "input_cache_read": "0.0000000788655",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000948126",
+        "prompt": "0.000000946386",
         "request": null,
         "web_search": null
       },
@@ -3603,62 +3603,139 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.0000017424",
+        "completion": "0.00000198",
         "image": null,
-        "input_cache_read": "0.00000005808",
+        "input_cache_read": "0.000000022",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005808",
+        "prompt": "0.00000066",
         "request": null,
         "web_search": null
       },
       "pricing_schedule": {
         "minimum": {
-          "completion": "0.0000017424",
-          "input_cache_read": "0.00000005808",
-          "prompt": "0.0000005808"
+          "completion": "0.00000198",
+          "input_cache_read": "0.000000022",
+          "prompt": "0.00000066"
         },
         "rates": {
           "completion": [
-            "0.0000017424",
-            "0.000003366"
+            "0.00000198",
+            "0.00000396"
           ],
           "input_cache_read": [
-            "0.00000005808",
-            "0.0000001122"
+            "0.000000022",
+            "0.000000044"
           ],
           "prompt": [
-            "0.0000005808",
-            "0.000001122"
+            "0.00000066",
+            "0.00000132"
           ]
         },
         "standard": {
-          "completion": "0.000003366",
-          "input_cache_read": "0.0000001122",
-          "prompt": "0.000001122"
+          "completion": "0.00000396",
+          "input_cache_read": "0.000000044",
+          "prompt": "0.00000132"
         },
         "windows": [
           {
-            "label": "Every day 00:00–14:00 UTC",
+            "label": "Sat–Sun all day UTC",
             "rates": {
-              "completion": "0.000003366",
-              "input_cache_read": "0.0000001122",
-              "prompt": "0.000001122"
+              "completion": "0.00000198",
+              "input_cache_read": "0.000000022",
+              "prompt": "0.00000066"
             },
-            "utc_days": null,
-            "utc_end": 1400,
+            "utc_days": [
+              "saturday",
+              "sunday"
+            ],
+            "utc_end": null,
+            "utc_start": null
+          },
+          {
+            "label": "Mon–Fri 00:00–01:00 UTC",
+            "rates": {
+              "completion": "0.00000198",
+              "input_cache_read": "0.000000022",
+              "prompt": "0.00000066"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 100,
             "utc_start": 0
           },
           {
-            "label": "Every day 14:00–24:00 UTC",
+            "label": "Mon–Fri 01:00–04:00 UTC",
             "rates": {
-              "completion": "0.0000017424",
-              "input_cache_read": "0.00000005808",
-              "prompt": "0.0000005808"
+              "completion": "0.00000396",
+              "input_cache_read": "0.000000044",
+              "prompt": "0.00000132"
             },
-            "utc_days": null,
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 400,
+            "utc_start": 100
+          },
+          {
+            "label": "Mon–Fri 04:00–06:00 UTC",
+            "rates": {
+              "completion": "0.00000198",
+              "input_cache_read": "0.000000022",
+              "prompt": "0.00000066"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 600,
+            "utc_start": 400
+          },
+          {
+            "label": "Mon–Fri 06:00–10:00 UTC",
+            "rates": {
+              "completion": "0.00000396",
+              "input_cache_read": "0.000000044",
+              "prompt": "0.00000132"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 1000,
+            "utc_start": 600
+          },
+          {
+            "label": "Mon–Fri 10:00–24:00 UTC",
+            "rates": {
+              "completion": "0.00000198",
+              "input_cache_read": "0.000000022",
+              "prompt": "0.00000066"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
             "utc_end": 0,
-            "utc_start": 1400
+            "utc_start": 1000
           }
         ]
       },
@@ -3685,9 +3762,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1000000,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 393216
+        "max_completion_tokens": 384000
       }
     },
     "deepseek/deepseek-v4-pro-0813:batch": {
@@ -3954,7 +4031,7 @@
       "created": 1786680361,
       "default_parameters": {},
       "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
-      "expiration_date": "2026-09-30",
+      "expiration_date": "2026-12-31",
       "id": "dots-studio/dots-3-note-preview:free",
       "name": "Dots Studio: Dots3-Note Preview (free)",
       "pricing": {
