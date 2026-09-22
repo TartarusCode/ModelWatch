@@ -1,6 +1,9 @@
 import asyncio
+from datetime import UTC, datetime, timedelta
+from email.utils import format_datetime
 
 import httpx
+import pytest
 
 from modelwatch import fetch
 
@@ -101,3 +104,145 @@ def test_fetch_provider_endpoints_parses_endpoints() -> None:
         assert len(endpoints) == 1
 
     asyncio.run(run())
+
+
+def test_throttled_response_is_retried_even_without_a_retry_budget() -> None:
+    calls: list[int] = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(1)
+        if len(calls) == 1:
+            return httpx.Response(429, headers={"Retry-After": "0"})
+        return httpx.Response(200, json={"data": {"ok": True}})
+
+    transport = httpx.MockTransport(handler)
+
+    async def run() -> None:
+        async with httpx.AsyncClient(transport=transport) as client:
+            payload = await fetch._fetch_json_with_retries(
+                client,
+                "https://openrouter.ai/api/frontend/v1/private/x",
+                retries=0,
+            )
+        assert payload == {"data": {"ok": True}}
+
+    asyncio.run(run())
+    assert len(calls) == 2
+
+
+def test_non_retryable_status_is_not_retried() -> None:
+    calls: list[int] = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append(1)
+        return httpx.Response(404, json={"error": "missing"})
+
+    transport = httpx.MockTransport(handler)
+
+    async def run() -> None:
+        async with httpx.AsyncClient(transport=transport) as client:
+            with pytest.raises(httpx.HTTPStatusError):
+                await fetch._fetch_json_with_retries(
+                    client,
+                    "https://openrouter.ai/api/frontend/v1/private/x",
+                    retries=2,
+                )
+
+    asyncio.run(run())
+    assert len(calls) == 1
+
+
+def test_retry_delay_prefers_retry_after_header() -> None:
+    response = httpx.Response(429, headers={"Retry-After": "3"})
+    assert fetch._retry_delay_seconds(response, attempt=0) == 3.0
+
+    capped = httpx.Response(429, headers={"Retry-After": "999"})
+    assert (
+        fetch._retry_delay_seconds(capped, attempt=0) == fetch.MAX_RETRY_DELAY_SECONDS
+    )
+
+    when = datetime.now(UTC) + timedelta(seconds=4)
+    dated = httpx.Response(429, headers={"Retry-After": format_datetime(when)})
+    delay = fetch._retry_delay_seconds(dated, attempt=0)
+    assert 2.0 < delay <= 4.0
+
+
+def test_retry_delay_falls_back_to_backoff_with_jitter() -> None:
+    for attempt in range(4):
+        delay = fetch._retry_delay_seconds(None, attempt)
+        base = min(2.0**attempt, 8.0)
+        assert base <= delay < base * 1.5
+
+
+def test_refetch_benchmark_failures_recovers_errored_sources() -> None:
+    seen: list[str] = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        seen.append(str(request.url))
+        if "artificial-analysis" in str(request.url):
+            return httpx.Response(200, json={"data": [{"eval": "x"}]})
+        return httpx.Response(200, json={"data": {"ok": True}})
+
+    transport = httpx.MockTransport(handler)
+    records: list[dict[str, object]] = [
+        {
+            "canonical_slug": "deepseek/deepseek-v4.1-flash",
+            "design_arena": None,
+            "design_arena_error": "429 Too Many Requests",
+            "artificial_analysis": None,
+            "artificial_analysis_error": "429 Too Many Requests",
+            "benchmark_scores": {"scores": []},
+            "benchmark_scores_error": None,
+            "effective_pricing": {"ok": True},
+            "effective_pricing_error": None,
+        }
+    ]
+
+    async def run() -> int:
+        async with httpx.AsyncClient(transport=transport) as client:
+            return await fetch._refetch_benchmark_failures(
+                client,
+                records,
+                retries=0,
+            )
+
+    recovered = asyncio.run(run())
+
+    assert recovered == 2
+    assert records[0]["design_arena"] == {"ok": True}
+    assert records[0]["design_arena_error"] is None
+    assert records[0]["artificial_analysis"] == [{"eval": "x"}]
+    assert records[0]["artificial_analysis_error"] is None
+    # only the failed sources were fetched again
+    assert len(seen) == 2
+    assert all("benchmark-scores" not in url for url in seen)
+
+
+def test_refetch_benchmark_failures_is_a_no_op_without_failures() -> None:
+    def handler(request: httpx.Request) -> httpx.Response:  # pragma: no cover
+        raise AssertionError("no request expected")
+
+    transport = httpx.MockTransport(handler)
+    records: list[dict[str, object]] = [
+        {
+            "canonical_slug": "deepseek/deepseek-v4.1-flash",
+            "design_arena": {"ok": True},
+            "design_arena_error": None,
+            "artificial_analysis": [],
+            "artificial_analysis_error": None,
+            "benchmark_scores": {"scores": []},
+            "benchmark_scores_error": None,
+            "effective_pricing": {"ok": True},
+            "effective_pricing_error": None,
+        }
+    ]
+
+    async def run() -> int:
+        async with httpx.AsyncClient(transport=transport) as client:
+            return await fetch._refetch_benchmark_failures(
+                client,
+                records,
+                retries=0,
+            )
+
+    assert asyncio.run(run()) == 0

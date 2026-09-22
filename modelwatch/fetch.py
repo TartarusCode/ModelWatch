@@ -1,5 +1,9 @@
 import asyncio
 import os
+import random
+from collections.abc import Awaitable, Callable
+from datetime import UTC, datetime
+from email.utils import parsedate_to_datetime
 from typing import TypedDict
 from urllib.parse import quote
 
@@ -20,6 +24,22 @@ EFFECTIVE_PRICING_URL = "https://openrouter.ai/api/frontend/v1/stats/effective-p
 DEFAULT_CONCURRENCY = 12
 DEFAULT_TIMEOUT_SECONDS = 15.0
 DEFAULT_RETRIES = 2
+# Throttled responses (429/503) are retried harder than other failures, and the
+# whole benchmark pass gets a slow second attempt for anything that still failed
+# — the private frontend endpoints rate limit a 400-model crawl otherwise.
+THROTTLE_RETRIES = 4
+RETRYABLE_STATUS_CODES = frozenset({408, 425, 429, 500, 502, 503, 504})
+THROTTLE_STATUS_CODES = frozenset({429, 503})
+MAX_RETRY_DELAY_SECONDS = 10.0
+RETRY_PASS_CONCURRENCY = 2
+RETRY_PASS_SPACING_SECONDS = 0.35
+
+BENCHMARK_SOURCES = (
+    "design_arena",
+    "artificial_analysis",
+    "benchmark_scores",
+    "effective_pricing",
+)
 
 
 class FetchOptions(TypedDict, total=False):
@@ -39,13 +59,46 @@ async def fetch_models(client: httpx.AsyncClient) -> list[dict[str, object]]:
     return [item for item in data if isinstance(item, dict)]
 
 
+def _parse_retry_after(value: str) -> float | None:
+    """Seconds to wait per a Retry-After header (delta-seconds or HTTP-date)."""
+    stripped = value.strip()
+    if not stripped:
+        return None
+    try:
+        return max(0.0, float(stripped))
+    except ValueError:
+        pass
+    try:
+        when = parsedate_to_datetime(stripped)
+    except (TypeError, ValueError):
+        return None
+    if when is None:
+        return None
+    if when.tzinfo is None:
+        when = when.replace(tzinfo=UTC)
+    return max(0.0, (when - datetime.now(UTC)).total_seconds())
+
+
+def _retry_delay_seconds(response: httpx.Response | None, attempt: int) -> float:
+    """Honour Retry-After when the response carries one, else back off."""
+    if response is not None:
+        header = response.headers.get("Retry-After")
+        if header is not None:
+            parsed = _parse_retry_after(header)
+            if parsed is not None:
+                return min(parsed, MAX_RETRY_DELAY_SECONDS)
+    base = min(2.0**attempt, 8.0)
+    return base + random.uniform(0.0, base / 2.0)
+
+
 async def _fetch_json_with_retries(
     client: httpx.AsyncClient,
     url: str,
     retries: int,
 ) -> dict[str, object]:
     last_error: Exception | None = None
-    for attempt in range(retries + 1):
+    attempt = 0
+    while True:
         try:
             response = await client.get(url)
             response.raise_for_status()
@@ -53,10 +106,22 @@ async def _fetch_json_with_retries(
             if isinstance(payload, dict):
                 return payload
             raise ValueError("response is not an object")
+        except httpx.HTTPStatusError as exc:
+            last_error = exc
+            status = exc.response.status_code
+            # Throttled upstreams get more patience than the caller asked for;
+            # other retryable statuses keep the usual budget, and statuses that
+            # will never succeed (404, 403) fail immediately.
+            allowed = THROTTLE_RETRIES if status in THROTTLE_STATUS_CODES else retries
+            if status not in RETRYABLE_STATUS_CODES or attempt >= allowed:
+                break
+            await asyncio.sleep(_retry_delay_seconds(exc.response, attempt))
         except Exception as exc:
             last_error = exc
-            if attempt < retries:
-                await asyncio.sleep(0.5 * (attempt + 1))
+            if attempt >= retries:
+                break
+            await asyncio.sleep(_retry_delay_seconds(None, attempt))
+        attempt += 1
     raise last_error or RuntimeError("fetch failed")
 
 
@@ -239,6 +304,63 @@ async def _fetch_model_benchmarks(
     }
 
 
+BenchmarkFetcher = Callable[
+    [httpx.AsyncClient, str, int],
+    Awaitable[tuple[object, str | None]],
+]
+
+_BENCHMARK_FETCHERS: dict[str, BenchmarkFetcher] = {
+    "design_arena": fetch_design_arena,
+    "artificial_analysis": fetch_artificial_analysis,
+    "benchmark_scores": fetch_benchmark_scores,
+    "effective_pricing": fetch_effective_pricing,
+}
+
+
+async def _refetch_benchmark_failures(
+    client: httpx.AsyncClient,
+    records: list[dict[str, object]],
+    retries: int,
+) -> int:
+    """Slow second attempt at benchmark sources that failed the first pass.
+
+    The private frontend endpoints throttle a full-catalog crawl, so retrying
+    the failures gently (low concurrency, spaced out) recovers most of what the
+    first pass lost to 429s.
+    """
+    pending: list[tuple[dict[str, object], str, str]] = []
+    for record in records:
+        slug = record.get("canonical_slug")
+        if not isinstance(slug, str):
+            continue
+        for source in BENCHMARK_SOURCES:
+            if record.get(f"{source}_error") is not None:
+                pending.append((record, slug, source))
+    if not pending:
+        return 0
+    semaphore = asyncio.Semaphore(RETRY_PASS_CONCURRENCY)
+
+    async def retry(
+        record: dict[str, object],
+        slug: str,
+        source: str,
+    ) -> tuple[dict[str, object], str, object, str | None]:
+        async with semaphore:
+            await asyncio.sleep(RETRY_PASS_SPACING_SECONDS)
+            data, error = await _BENCHMARK_FETCHERS[source](client, slug, retries)
+        return record, source, data, error
+
+    recovered = 0
+    for record, source, data, error in await asyncio.gather(
+        *(retry(record, slug, source) for record, slug, source in pending)
+    ):
+        if error is None:
+            record[source] = data
+            record[f"{source}_error"] = None
+            recovered += 1
+    return recovered
+
+
 async def fetch_all_benchmarks(
     canonical_slugs: list[str],
     options: FetchOptions | None = None,
@@ -256,7 +378,9 @@ async def fetch_all_benchmarks(
             _fetch_model_benchmarks(client, canonical_slug, retries, semaphore)
             for canonical_slug in canonical_slugs
         ]
-        return await asyncio.gather(*tasks)
+        results = list(await asyncio.gather(*tasks))
+        await _refetch_benchmark_failures(client, results, retries)
+        return results
 
 
 async def fetch_models_async(
