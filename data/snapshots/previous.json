@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T04:31:31.082648Z",
+  "generated_at": "2026-09-22T05:01:12.637685Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -10739,11 +10739,14 @@
       "pricing_schedule": null,
       "supported_parameters": [
         "include_reasoning",
+        "logprobs",
         "max_tokens",
         "reasoning",
         "reasoning_effort",
+        "structured_outputs",
         "temperature",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -10847,11 +10850,16 @@
       "pricing_schedule": null,
       "supported_parameters": [
         "include_reasoning",
+        "logprobs",
         "max_tokens",
         "reasoning",
         "reasoning_effort",
+        "structured_outputs",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
