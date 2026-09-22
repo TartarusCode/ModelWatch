@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T04:01:30.538641Z",
+  "generated_at": "2026-09-22T04:31:31.082648Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3603,12 +3603,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000396",
+        "completion": "0.00000198",
         "image": null,
-        "input_cache_read": "0.000000044",
+        "input_cache_read": "0.000000022",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000132",
+        "prompt": "0.00000066",
         "request": null,
         "web_search": null
       },
@@ -3849,12 +3849,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.000000006",
+        "input_cache_read": "0.000000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -10701,6 +10701,57 @@
         "max_completion_tokens": 131072
       }
     },
+    "nex-agi/nex-n2.5-mini": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen3"
+      },
+      "canonical_slug": "nex-agi/nex-n2.5-mini-20260908",
+      "context_length": 262144,
+      "created": 1788890061,
+      "default_parameters": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.95
+      },
+      "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
+      "expiration_date": null,
+      "id": "nex-agi/nex-n2.5-mini",
+      "name": "Nex AGI: Nex-N2.5-Mini",
+      "pricing": {
+        "completion": "0.0000001",
+        "image": null,
+        "input_cache_read": "0.0000000025",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000000025",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 235929
+      }
+    },
     "nex-agi/nex-n2.5-mini:free": {
       "architecture": {
         "input_modalities": [
@@ -10750,6 +10801,57 @@
         "tools",
         "top_k",
         "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 235929
+      }
+    },
+    "nex-agi/nex-n2.5-pro": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen3"
+      },
+      "canonical_slug": "nex-agi/nex-n2.5-pro-20260907",
+      "context_length": 262144,
+      "created": 1788890050,
+      "default_parameters": {
+        "temperature": 0.7,
+        "top_k": 40,
+        "top_p": 0.95
+      },
+      "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
+      "expiration_date": null,
+      "id": "nex-agi/nex-n2.5-pro",
+      "name": "Nex AGI: Nex-N2.5-Pro",
+      "pricing": {
+        "completion": "0.00000025",
+        "image": null,
+        "input_cache_read": "0.000000015",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000000075",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "temperature",
+        "top_k",
         "top_p"
       ],
       "top_provider": {
