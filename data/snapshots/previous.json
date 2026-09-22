@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T14:01:43.578655Z",
+  "generated_at": "2026-09-22T14:12:56.918678Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3240,12 +3240,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.000000177212",
+        "completion": "0.00000017416",
         "image": null,
-        "input_cache_read": "0.0000000177212",
+        "input_cache_read": "0.000000017416",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000088606",
+        "prompt": "0.00000008708",
         "request": null,
         "web_search": null
       },
@@ -3540,12 +3540,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.00000191052",
+        "completion": "0.000001896252",
         "image": null,
-        "input_cache_read": "0.000000079605",
+        "input_cache_read": "0.0000000790105",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000095526",
+        "prompt": "0.000000948126",
         "request": null,
         "web_search": null
       },
@@ -3603,16 +3603,65 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000288",
+        "completion": "0.0000017424",
         "image": null,
-        "input_cache_read": "0.000000088",
+        "input_cache_read": "0.00000005808",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000624",
+        "prompt": "0.0000005808",
         "request": null,
         "web_search": null
       },
-      "pricing_schedule": null,
+      "pricing_schedule": {
+        "minimum": {
+          "completion": "0.0000017424",
+          "input_cache_read": "0.00000005808",
+          "prompt": "0.0000005808"
+        },
+        "rates": {
+          "completion": [
+            "0.0000017424",
+            "0.000003366"
+          ],
+          "input_cache_read": [
+            "0.00000005808",
+            "0.0000001122"
+          ],
+          "prompt": [
+            "0.0000005808",
+            "0.000001122"
+          ]
+        },
+        "standard": {
+          "completion": "0.000003366",
+          "input_cache_read": "0.0000001122",
+          "prompt": "0.000001122"
+        },
+        "windows": [
+          {
+            "label": "Every day 00:00–14:00 UTC",
+            "rates": {
+              "completion": "0.000003366",
+              "input_cache_read": "0.0000001122",
+              "prompt": "0.000001122"
+            },
+            "utc_days": null,
+            "utc_end": 1400,
+            "utc_start": 0
+          },
+          {
+            "label": "Every day 14:00–24:00 UTC",
+            "rates": {
+              "completion": "0.0000017424",
+              "input_cache_read": "0.00000005808",
+              "prompt": "0.0000005808"
+            },
+            "utc_days": null,
+            "utc_end": 0,
+            "utc_start": 1400
+          }
+        ]
+      },
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -3636,9 +3685,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1000000,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4-pro-0813:batch": {
@@ -23715,12 +23764,12 @@
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "pricing": {
-        "completion": "0.00000264",
+        "completion": "0.0000020548",
         "image": null,
-        "input_cache_read": "0.000000156",
+        "input_cache_read": "0.00000012142",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000084",
+        "prompt": "0.0000006538",
         "request": null,
         "web_search": null
       },
