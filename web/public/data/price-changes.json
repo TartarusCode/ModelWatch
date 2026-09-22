@@ -9914,7 +9914,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-09-22T13:02:11.953650Z",
+  "generated_at": "2026-09-22T13:32:14.409568Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "-0.182000",
@@ -10071,23 +10071,6 @@
     }
   ],
   "settled_changes": [
-    {
-      "delta_per_million_usd": "0.050000",
-      "detected_at": "2026-09-14T13:01:24.089299Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.400000",
-      "field": "completion",
-      "model_id": "nvidia/nemotron-3-super-120b-a12b",
-      "new_per_million_usd": "0.450000",
-      "old_per_million_usd": "0.400000",
-      "pct_change": 0.125,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-09-21T13:31:13.033419Z",
-      "settled_per_million_usd": "0.450000",
-      "status": "settled",
-      "tier": null
-    },
     {
       "delta_per_million_usd": "-0.150000",
       "detected_at": "2026-09-15T01:01:02.115638Z",
