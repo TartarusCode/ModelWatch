@@ -9880,7 +9880,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-09-22T01:01:15.012449Z",
+  "generated_at": "2026-09-22T01:31:26.135036Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "-2.000000",
@@ -9935,74 +9935,6 @@
     }
   ],
   "settled_changes": [
-    {
-      "delta_per_million_usd": "-0.725000",
-      "detected_at": "2026-09-14T01:01:11.486660Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "3.125000",
-      "field": "completion",
-      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
-      "new_per_million_usd": "2.400000",
-      "old_per_million_usd": "3.125000",
-      "pct_change": -0.232,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-09-21T01:30:58.269263Z",
-      "settled_per_million_usd": "2.400000",
-      "status": "settled",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "-0.067500",
-      "detected_at": "2026-09-14T01:01:11.486660Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.187500",
-      "field": "input_cache_read",
-      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
-      "new_per_million_usd": "0.120000",
-      "old_per_million_usd": "0.187500",
-      "pct_change": -0.36,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-09-21T01:30:58.269263Z",
-      "settled_per_million_usd": "0.120000",
-      "status": "settled",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "-0.107500",
-      "detected_at": "2026-09-14T01:01:11.486660Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.227500",
-      "field": "prompt",
-      "model_id": "qwen/qwen3-14b",
-      "new_per_million_usd": "0.120000",
-      "old_per_million_usd": "0.227500",
-      "pct_change": -0.4725274725274725,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-09-21T01:30:58.269263Z",
-      "settled_per_million_usd": "0.120000",
-      "status": "settled",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "-0.670000",
-      "detected_at": "2026-09-14T01:01:11.486660Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.910000",
-      "field": "completion",
-      "model_id": "qwen/qwen3-14b",
-      "new_per_million_usd": "0.240000",
-      "old_per_million_usd": "0.910000",
-      "pct_change": -0.7362637362637363,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-09-21T01:30:58.269263Z",
-      "settled_per_million_usd": "0.240000",
-      "status": "settled",
-      "tier": null
-    },
     {
       "delta_per_million_usd": "0.050000",
       "detected_at": "2026-09-14T13:01:24.089299Z",
