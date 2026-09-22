@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T00:01:31.515256Z",
+  "generated_at": "2026-09-22T00:31:19.721590Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3603,16 +3603,142 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.000001675872",
+        "completion": "0.00000198",
         "image": null,
-        "input_cache_read": "0.0000000186208",
+        "input_cache_read": "0.000000022",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000558624",
+        "prompt": "0.00000066",
         "request": null,
         "web_search": null
       },
-      "pricing_schedule": null,
+      "pricing_schedule": {
+        "minimum": {
+          "completion": "0.00000198",
+          "input_cache_read": "0.000000022",
+          "prompt": "0.00000066"
+        },
+        "rates": {
+          "completion": [
+            "0.00000198",
+            "0.00000396"
+          ],
+          "input_cache_read": [
+            "0.000000022",
+            "0.000000044"
+          ],
+          "prompt": [
+            "0.00000066",
+            "0.00000132"
+          ]
+        },
+        "standard": {
+          "completion": "0.00000396",
+          "input_cache_read": "0.000000044",
+          "prompt": "0.00000132"
+        },
+        "windows": [
+          {
+            "label": "Sat–Sun all day UTC",
+            "rates": {
+              "completion": "0.00000198",
+              "input_cache_read": "0.000000022",
+              "prompt": "0.00000066"
+            },
+            "utc_days": [
+              "saturday",
+              "sunday"
+            ],
+            "utc_end": null,
+            "utc_start": null
+          },
+          {
+            "label": "Mon–Fri 00:00–01:00 UTC",
+            "rates": {
+              "completion": "0.00000198",
+              "input_cache_read": "0.000000022",
+              "prompt": "0.00000066"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 100,
+            "utc_start": 0
+          },
+          {
+            "label": "Mon–Fri 01:00–04:00 UTC",
+            "rates": {
+              "completion": "0.00000396",
+              "input_cache_read": "0.000000044",
+              "prompt": "0.00000132"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 400,
+            "utc_start": 100
+          },
+          {
+            "label": "Mon–Fri 04:00–06:00 UTC",
+            "rates": {
+              "completion": "0.00000198",
+              "input_cache_read": "0.000000022",
+              "prompt": "0.00000066"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 600,
+            "utc_start": 400
+          },
+          {
+            "label": "Mon–Fri 06:00–10:00 UTC",
+            "rates": {
+              "completion": "0.00000396",
+              "input_cache_read": "0.000000044",
+              "prompt": "0.00000132"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 1000,
+            "utc_start": 600
+          },
+          {
+            "label": "Mon–Fri 10:00–24:00 UTC",
+            "rates": {
+              "completion": "0.00000198",
+              "input_cache_read": "0.000000022",
+              "prompt": "0.00000066"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 0,
+            "utc_start": 1000
+          }
+        ]
+      },
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -3636,7 +3762,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1024000,
+        "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 384000
       }
@@ -21225,12 +21351,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -23666,12 +23792,12 @@
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "pricing": {
-        "completion": "0.00000286",
+        "completion": "0.00000264",
         "image": null,
-        "input_cache_read": "0.000000169",
+        "input_cache_read": "0.000000156",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000091",
+        "prompt": "0.00000084",
         "request": null,
         "web_search": null
       },
