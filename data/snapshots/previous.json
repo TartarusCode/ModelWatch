@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T22:32:36.789539Z",
+  "generated_at": "2026-09-22T23:02:22.573415Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -2587,6 +2587,59 @@
         "max_completion_tokens": 8192
       }
     },
+    "cohere/command-a-plus": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Cohere"
+      },
+      "canonical_slug": "cohere/command-a-plus-05-2026",
+      "context_length": 192000,
+      "created": 1790102896,
+      "default_parameters": {},
+      "description": "Command A+ is Cohere's flagship model for enterprise agentic workflows. It accepts text and image inputs with a 192K context window, supports native tool calling with strict tool schemas, structured...",
+      "expiration_date": null,
+      "id": "cohere/command-a-plus",
+      "name": "Cohere: Command A+",
+      "pricing": {
+        "completion": "0.0000015",
+        "image": null,
+        "input_cache_read": "0.00000015",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000003",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 192000,
+        "is_moderated": true,
+        "max_completion_tokens": 64000
+      }
+    },
     "cohere/command-r-08-2024": {
       "architecture": {
         "input_modalities": [
@@ -3529,12 +3582,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001730604",
+        "completion": "0.000001720164",
         "image": null,
-        "input_cache_read": "0.0000000721085",
+        "input_cache_read": "0.0000000716735",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000865302",
+        "prompt": "0.000000860082",
         "request": null,
         "web_search": null
       },
