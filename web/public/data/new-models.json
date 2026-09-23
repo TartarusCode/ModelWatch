@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T15:02:24.299776Z",
+  "generated_at": "2026-09-23T15:32:23.243190Z",
   "models": [
     {
       "canonical_slug": "stealth/space-bunny-alpha",
@@ -112,27 +112,6 @@
       "detected_at": "2026-09-22T17:01:16.781816Z",
       "model_id": "anthropic/claude-opus-5.5:batch",
       "name": "Anthropic: Claude Opus 5.5 (batch)"
-    },
-    {
-      "canonical_slug": "deepseek/deepseek-v4.1-flash-20260910",
-      "created": 1789021285,
-      "detected_at": "2026-09-22T15:03:03.088226Z",
-      "model_id": "deepseek/deepseek-v4.1-flash:batch",
-      "name": "DeepSeek: DeepSeek V4.1 Flash (batch)"
-    },
-    {
-      "canonical_slug": "moonshotai/kimi-k3-20260715",
-      "created": 1784215858,
-      "detected_at": "2026-09-22T15:03:03.088226Z",
-      "model_id": "moonshotai/kimi-k3:batch",
-      "name": "MoonshotAI: Kimi K3 (batch)"
-    },
-    {
-      "canonical_slug": "openai/gpt-oss-20b",
-      "created": 1754414229,
-      "detected_at": "2026-09-22T15:03:03.088226Z",
-      "model_id": "openai/gpt-oss-20b:batch",
-      "name": "OpenAI: gpt-oss-20b (batch)"
     }
   ],
   "window_hours": 24

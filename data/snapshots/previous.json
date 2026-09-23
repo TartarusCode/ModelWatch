@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T15:02:24.299776Z",
+  "generated_at": "2026-09-23T15:32:23.243190Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3493,12 +3493,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.000000168",
+        "completion": "0.00000016492",
         "image": null,
-        "input_cache_read": "0.0000000168",
+        "input_cache_read": "0.000000016492",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000084",
+        "prompt": "0.00000008246",
         "request": null,
         "web_search": null
       },
@@ -21536,56 +21536,6 @@
         "max_completion_tokens": 16384
       }
     },
-    "stealth/space-bunny-alpha": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "video"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+video->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "stealth/space-bunny-alpha",
-      "context_length": 1000000,
-      "created": 1790174884,
-      "default_parameters": {},
-      "description": "Space Bunny Alpha is an anonymous large model with blazing-fast inference, strong coding capabilities and native multimodal input support. It delivers adjustable reasoning effort, and a 1M-token context window. Space...",
-      "expiration_date": "2098-12-31",
-      "id": "stealth/space-bunny-alpha",
-      "name": "Space Bunny Alpha",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 1000000,
-        "is_moderated": false,
-        "max_completion_tokens": 524288
-      }
-    },
     "stepfun/step-3.5-flash": {
       "architecture": {
         "input_modalities": [
@@ -24361,12 +24311,12 @@
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "pricing": {
-        "completion": "0.0000017644",
+        "completion": "0.00000264",
         "image": null,
-        "input_cache_read": "0.00000010426",
+        "input_cache_read": "0.000000156",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005614",
+        "prompt": "0.00000084",
         "request": null,
         "web_search": null
       },
@@ -24605,12 +24555,12 @@
       "id": "z-ai/glm-5.3:batch",
       "name": "Z.ai: GLM 5.3 (batch)",
       "pricing": {
-        "completion": "0.0000024",
+        "completion": "0.000002",
         "image": null,
-        "input_cache_read": "0.00000012",
+        "input_cache_read": "0.0000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000072",
+        "prompt": "0.00000045",
         "request": null,
         "web_search": null
       },
