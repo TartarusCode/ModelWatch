@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T16:02:28.163117Z",
+  "generated_at": "2026-09-23T16:32:25.125133Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3678,12 +3678,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001906344",
+        "completion": "0.000001902864",
         "image": null,
-        "input_cache_read": "0.000000079431",
+        "input_cache_read": "0.000000079286",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000953172",
+        "prompt": "0.000000951432",
         "request": null,
         "web_search": null
       },
@@ -6822,7 +6822,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "inclusionai/ling-3.0-flash-vl-20260910",
-      "context_length": 131072,
+      "context_length": 262144,
       "created": 1789056114,
       "default_parameters": {},
       "description": "Ling 3.0 Flash VL builds on Ling 3.0 Flash (124B total / 5.5B active MoE from InclusionAI), further strengthening its language capabilities while adding native visual perception and advanced visual...",
@@ -6844,6 +6844,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -6857,66 +6858,11 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 32768
-      }
-    },
-    "inclusionai/ling-3.0-flash-vl:free": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "video"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+video->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "inclusionai/ling-3.0-flash-vl-20260910",
-      "context_length": 262144,
-      "created": 1789056114,
-      "default_parameters": {},
-      "description": "Ling 3.0 Flash VL builds on Ling 3.0 Flash (124B total / 5.5B active MoE from InclusionAI), further strengthening its language capabilities while adding native visual perception and advanced visual...",
-      "expiration_date": null,
-      "id": "inclusionai/ling-3.0-flash-vl:free",
-      "name": "inclusionAI: Ling 3.0 Flash VL (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
         "top_logprobs",
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 131072,
         "is_moderated": false,
         "max_completion_tokens": 32768
       }
@@ -21813,12 +21759,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.000000528",
+        "completion": "0.00000033",
         "image": null,
-        "input_cache_read": "0.000000033",
+        "input_cache_read": "0.000000020625",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000132",
+        "prompt": "0.0000000825",
         "request": null,
         "web_search": null
       },
@@ -24444,13 +24390,13 @@
         "top_p": 0.95
       },
       "description": "GLM-5.3-FlashX is the high-speed variant of Z.ai's GLM-5.3-Flash, a native multimodal model delivering inference speeds of up to 200 tokens/s. Built on the same hybrid sparse and linear attention architecture...",
-      "expiration_date": null,
+      "expiration_date": "2098-12-31",
       "id": "z-ai/glm-5.3-flashx",
       "name": "Z.ai: GLM 5.3 FlashX",
       "pricing": {
         "completion": "0.00000125",
         "image": null,
-        "input_cache_read": "0.000000075",
+        "input_cache_read": "0.00000009",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.00000037",
