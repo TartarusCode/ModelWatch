@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T13:32:24.742255Z",
+  "generated_at": "2026-09-23T14:02:22.879712Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -142,6 +142,54 @@
       ],
       "top_provider": {
         "context_length": 131072,
+        "is_moderated": false,
+        "max_completion_tokens": 32768
+      }
+    },
+    "aion-labs/aion-3.5": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "aion-labs/aion-3.5-20260923",
+      "context_length": 262144,
+      "created": 1790170961,
+      "default_parameters": {},
+      "description": "Aion 3.5 is a multi-model roleplaying and storytelling system from AionLabs, built on the GLM family of models. It uses a collaborative generation process in which multiple specialized models each...",
+      "expiration_date": null,
+      "id": "aion-labs/aion-3.5",
+      "name": "AionLabs: Aion 3.5",
+      "pricing": {
+        "completion": "0.000006",
+        "image": null,
+        "input_cache_read": "0.00000075",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000003",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
         "is_moderated": false,
         "max_completion_tokens": 32768
       }
@@ -3705,142 +3753,16 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000005",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.00000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
-      "pricing_schedule": {
-        "minimum": {
-          "completion": "0.0000006",
-          "input_cache_read": "0.000000003",
-          "prompt": "0.00000015"
-        },
-        "rates": {
-          "completion": [
-            "0.0000006",
-            "0.0000012"
-          ],
-          "input_cache_read": [
-            "0.000000003",
-            "0.000000006"
-          ],
-          "prompt": [
-            "0.00000015",
-            "0.0000003"
-          ]
-        },
-        "standard": {
-          "completion": "0.0000012",
-          "input_cache_read": "0.000000006",
-          "prompt": "0.0000003"
-        },
-        "windows": [
-          {
-            "label": "Sat–Sun all day UTC",
-            "rates": {
-              "completion": "0.0000006",
-              "input_cache_read": "0.000000003",
-              "prompt": "0.00000015"
-            },
-            "utc_days": [
-              "saturday",
-              "sunday"
-            ],
-            "utc_end": null,
-            "utc_start": null
-          },
-          {
-            "label": "Mon–Fri 00:00–01:00 UTC",
-            "rates": {
-              "completion": "0.0000006",
-              "input_cache_read": "0.000000003",
-              "prompt": "0.00000015"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 100,
-            "utc_start": 0
-          },
-          {
-            "label": "Mon–Fri 01:00–04:00 UTC",
-            "rates": {
-              "completion": "0.0000012",
-              "input_cache_read": "0.000000006",
-              "prompt": "0.0000003"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 400,
-            "utc_start": 100
-          },
-          {
-            "label": "Mon–Fri 04:00–06:00 UTC",
-            "rates": {
-              "completion": "0.0000006",
-              "input_cache_read": "0.000000003",
-              "prompt": "0.00000015"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 600,
-            "utc_start": 400
-          },
-          {
-            "label": "Mon–Fri 06:00–10:00 UTC",
-            "rates": {
-              "completion": "0.0000012",
-              "input_cache_read": "0.000000006",
-              "prompt": "0.0000003"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 1000,
-            "utc_start": 600
-          },
-          {
-            "label": "Mon–Fri 10:00–24:00 UTC",
-            "rates": {
-              "completion": "0.0000006",
-              "input_cache_read": "0.000000003",
-              "prompt": "0.00000015"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 0,
-            "utc_start": 1000
-          }
-        ]
-      },
+      "pricing_schedule": null,
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -3866,7 +3788,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 384000
+        "max_completion_tokens": 943718
       }
     },
     "deepseek/deepseek-v4.1-flash:batch": {
