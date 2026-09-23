@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T22:02:31.078533Z",
+  "generated_at": "2026-09-23T22:32:23.952485Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3493,12 +3493,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000014952",
+        "completion": "0.00000014336",
         "image": null,
-        "input_cache_read": "0.000000014952",
+        "input_cache_read": "0.000000014336",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000007476",
+        "prompt": "0.00000007168",
         "request": null,
         "web_search": null
       },
@@ -24652,6 +24652,64 @@
       ],
       "top_provider": {
         "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
+      }
+    },
+    "z-ai/glm-5.3-prime": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "z-ai/glm-5.3-prime-20260921",
+      "context_length": 1000000,
+      "created": 1790199651,
+      "default_parameters": {
+        "temperature": 1,
+        "top_p": 0.95
+      },
+      "description": "GLM-5.3-Prime is the high-speed variant of Z.ai's GLM-5.3, inheriting its full capabilities while delivering 1.5–2× the output throughput through inference acceleration. It supports text input and output with a 1M-token...",
+      "expiration_date": null,
+      "id": "z-ai/glm-5.3-prime",
+      "name": "Z.ai: GLM 5.3 Prime",
+      "pricing": {
+        "completion": "0.0000088",
+        "image": null,
+        "input_cache_read": "0.00000056",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000028",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
