@@ -9674,7 +9674,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-09-23T23:02:27.509111Z",
+  "generated_at": "2026-09-23T23:32:25.073395Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -12456,7 +12456,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.01372000000",
+        "anchor": "0.013104000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -12467,7 +12467,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.0686000000",
+        "anchor": "0.06552000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -12631,7 +12631,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.0788655000000",
+        "anchor": "0.0785755000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -22191,23 +22191,23 @@
         "anchor": "0.6000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.6000000",
+        "pending_builds": 1,
+        "pending_price": "0.136000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "prompt": {
         "anchor": "0.15000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.15000000",
+        "pending_builds": 1,
+        "pending_price": "0.0296000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "openai/gpt-oss-20b": {
