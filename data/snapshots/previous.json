@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T10:02:23.589855Z",
+  "generated_at": "2026-09-23T10:32:26.816416Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3645,142 +3645,16 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000396",
+        "completion": "0.000001496088",
         "image": null,
-        "input_cache_read": "0.000000044",
+        "input_cache_read": "0.0000000166232",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000132",
+        "prompt": "0.000000498696",
         "request": null,
         "web_search": null
       },
-      "pricing_schedule": {
-        "minimum": {
-          "completion": "0.00000198",
-          "input_cache_read": "0.000000022",
-          "prompt": "0.00000066"
-        },
-        "rates": {
-          "completion": [
-            "0.00000198",
-            "0.00000396"
-          ],
-          "input_cache_read": [
-            "0.000000022",
-            "0.000000044"
-          ],
-          "prompt": [
-            "0.00000066",
-            "0.00000132"
-          ]
-        },
-        "standard": {
-          "completion": "0.00000396",
-          "input_cache_read": "0.000000044",
-          "prompt": "0.00000132"
-        },
-        "windows": [
-          {
-            "label": "Sat–Sun all day UTC",
-            "rates": {
-              "completion": "0.00000198",
-              "input_cache_read": "0.000000022",
-              "prompt": "0.00000066"
-            },
-            "utc_days": [
-              "saturday",
-              "sunday"
-            ],
-            "utc_end": null,
-            "utc_start": null
-          },
-          {
-            "label": "Mon–Fri 00:00–01:00 UTC",
-            "rates": {
-              "completion": "0.00000198",
-              "input_cache_read": "0.000000022",
-              "prompt": "0.00000066"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 100,
-            "utc_start": 0
-          },
-          {
-            "label": "Mon–Fri 01:00–04:00 UTC",
-            "rates": {
-              "completion": "0.00000396",
-              "input_cache_read": "0.000000044",
-              "prompt": "0.00000132"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 400,
-            "utc_start": 100
-          },
-          {
-            "label": "Mon–Fri 04:00–06:00 UTC",
-            "rates": {
-              "completion": "0.00000198",
-              "input_cache_read": "0.000000022",
-              "prompt": "0.00000066"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 600,
-            "utc_start": 400
-          },
-          {
-            "label": "Mon–Fri 06:00–10:00 UTC",
-            "rates": {
-              "completion": "0.00000396",
-              "input_cache_read": "0.000000044",
-              "prompt": "0.00000132"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 1000,
-            "utc_start": 600
-          },
-          {
-            "label": "Mon–Fri 10:00–24:00 UTC",
-            "rates": {
-              "completion": "0.00000198",
-              "input_cache_read": "0.000000022",
-              "prompt": "0.00000066"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 0,
-            "utc_start": 1000
-          }
-        ]
-      },
+      "pricing_schedule": null,
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -3804,7 +3678,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1024000,
         "is_moderated": false,
         "max_completion_tokens": 384000
       }
@@ -3831,12 +3705,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.000000006",
+        "input_cache_read": "0.000000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
