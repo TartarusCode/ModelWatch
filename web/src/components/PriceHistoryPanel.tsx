@@ -1,4 +1,8 @@
 import {
+  CHANGE_STATUS_DEFINITIONS,
+  changeStatusDefinition,
+} from "../lib/changeStatus";
+import {
   activeHistoryFields,
   formatHistoryUsd,
   historyColumnLabel,
@@ -115,7 +119,9 @@ export function PriceHistoryPanel({
           </h3>
           <p className="muted" style={{ marginBottom: "0.75rem" }}>
             Confirmed episodes only; prices must hold for two builds before
-            alerting.
+            alerting. <strong>Recovered</strong>:{" "}
+            {CHANGE_STATUS_DEFINITIONS.recovered} <strong>Settled</strong>:{" "}
+            {CHANGE_STATUS_DEFINITIONS.settled}
           </p>
           <div className="data-table-wrap">
             <table className="data-table">
@@ -165,21 +171,32 @@ export function PriceHistoryPanel({
                     </td>
                     <td>
                       {episode.status === "recovered" ? (
-                        <span className="status-pill status-pill--warn">
+                        <span
+                          className="status-pill status-pill--warn"
+                          title={changeStatusDefinition(episode.status)}
+                        >
                           Recovered
                           {episode.recovered_per_million_usd
                             ? ` → ${formatPerMillionUsd(episode.recovered_per_million_usd, episode.field)}`
                             : ""}
                         </span>
                       ) : episode.status === "settled" ? (
-                        <span className="status-pill status-pill--muted">
+                        <span
+                          className="status-pill status-pill--muted"
+                          title={changeStatusDefinition(episode.status)}
+                        >
                           Settled
                           {episode.settled_per_million_usd
                             ? ` @ ${formatPerMillionUsd(episode.settled_per_million_usd, episode.field)}`
                             : ""}
                         </span>
                       ) : (
-                        <span className="muted">Active</span>
+                        <span
+                          className="muted"
+                          title={changeStatusDefinition(episode.status)}
+                        >
+                          Active
+                        </span>
                       )}
                     </td>
                   </tr>

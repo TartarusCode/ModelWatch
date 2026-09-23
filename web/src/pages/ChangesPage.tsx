@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { PageHeader } from "../components/PageHeader";
+import {
+  CHANGE_STATUS_DEFINITIONS,
+  changeStatusDefinition,
+} from "../lib/changeStatus";
 import { modelDisplayName } from "../lib/modelNames";
 import {
   CHANGE_LOOKBACK_HOURS,
@@ -121,15 +125,26 @@ function ChangeTable({
               {showStatus ? (
                 <td>
                   {change.status === "recovered" ? (
-                    <span className="status-pill status-pill--warn">
+                    <span
+                      className="status-pill status-pill--warn"
+                      title={changeStatusDefinition(change.status)}
+                    >
                       Recovered
                     </span>
                   ) : change.status === "settled" ? (
-                    <span className="status-pill status-pill--muted">
+                    <span
+                      className="status-pill status-pill--muted"
+                      title={changeStatusDefinition(change.status)}
+                    >
                       Settled
                     </span>
                   ) : (
-                    <span className="muted">Active</span>
+                    <span
+                      className="muted"
+                      title={changeStatusDefinition(change.status)}
+                    >
+                      Active
+                    </span>
                   )}
                 </td>
               ) : null}
@@ -262,6 +277,7 @@ export function ChangesPage({ priceChanges, enriched }: ChangesPageProps) {
 
       <section className="table-panel">
         <h2 className="section-title">Still active</h2>
+        <p className="section-note">{CHANGE_STATUS_DEFINITIONS.active}</p>
         {older.length === 0 && fresh.length === 0 ? (
           <p className="muted">
             No models currently hold a confirmed price change
@@ -280,6 +296,7 @@ export function ChangesPage({ priceChanges, enriched }: ChangesPageProps) {
         <h2 className="section-title">
           Recently recovered ({CHANGE_LOOKBACK_HOURS}h)
         </h2>
+        <p className="section-note">{CHANGE_STATUS_DEFINITIONS.recovered}</p>
         {recovered.length === 0 ? (
           <p className="muted">
             No recoveries in the last {CHANGE_LOOKBACK_HOURS} hours.
@@ -294,12 +311,17 @@ export function ChangesPage({ priceChanges, enriched }: ChangesPageProps) {
           <h2 className="section-title">
             Recently settled ({CHANGE_LOOKBACK_HOURS}h)
           </h2>
+          <p className="section-note">{CHANGE_STATUS_DEFINITIONS.settled}</p>
           <ChangeTable rows={settled} enriched={enriched} />
         </section>
       ) : null}
 
       <section className="table-panel">
         <h2 className="section-title">Change history</h2>
+        <p className="section-note">
+          Every confirmed episode with its current status — recovered changes
+          reverted, settled ones became the new baseline.
+        </p>
         {history.length === 0 ? (
           <p className="muted">No recorded price-change episodes.</p>
         ) : (

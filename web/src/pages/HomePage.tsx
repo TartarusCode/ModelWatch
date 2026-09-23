@@ -4,6 +4,7 @@ import { PriceChangeBanner } from "../components/PriceChangeBanner";
 import { ModelTable } from "../components/ModelTable";
 import { PageHeader } from "../components/PageHeader";
 import { StatCard } from "../components/StatCard";
+import { CHANGE_STATUS_DEFINITIONS } from "../lib/changeStatus";
 import { hasBenchmarkData } from "../lib/data";
 import { useDocumentTitle } from "../lib/useDocumentTitle";
 import type { EnrichedModel } from "../types";
@@ -85,7 +86,10 @@ export function HomePage({
       />
       {recoveredCount > 0 ? (
         <p className="muted" style={{ marginBottom: "1rem" }}>
-          <Link to="/changes#recovered">
+          <Link
+            to="/changes#recovered"
+            title={CHANGE_STATUS_DEFINITIONS.recovered}
+          >
             {recoveredCount} model{recoveredCount === 1 ? "" : "s"} recovered pricing
             in the last 24 hours
           </Link>

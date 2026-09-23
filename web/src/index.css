@@ -1196,6 +1196,14 @@ a:hover {
   padding-top: 1rem;
 }
 
+.section-note {
+  margin: 0;
+  padding: 0 1rem 0.75rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--text-tertiary);
+}
+
 .table-panel .section-title:first-child {
   padding-top: 1rem;
 }
