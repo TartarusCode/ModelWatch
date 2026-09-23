@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T16:32:25.125133Z",
+  "generated_at": "2026-09-23T17:02:28.641451Z",
   "models": [
     {
       "canonical_slug": "stealth/space-bunny-alpha",
@@ -98,20 +98,6 @@
       "detected_at": "2026-09-22T18:31:08.490087Z",
       "model_id": "openai/gpt-6-sol:batch",
       "name": "OpenAI: GPT-6 Sol (batch)"
-    },
-    {
-      "canonical_slug": "anthropic/claude-opus-5.5-20260921",
-      "created": 1790094732,
-      "detected_at": "2026-09-22T17:01:16.781816Z",
-      "model_id": "anthropic/claude-opus-5.5",
-      "name": "Anthropic: Claude Opus 5.5"
-    },
-    {
-      "canonical_slug": "anthropic/claude-opus-5.5-20260921",
-      "created": 1790094732,
-      "detected_at": "2026-09-22T17:01:16.781816Z",
-      "model_id": "anthropic/claude-opus-5.5:batch",
-      "name": "Anthropic: Claude Opus 5.5 (batch)"
     }
   ],
   "window_hours": 24
