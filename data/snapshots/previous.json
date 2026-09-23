@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T14:02:22.879712Z",
+  "generated_at": "2026-09-23T14:32:21.783423Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -173,6 +173,54 @@
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.000003",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 32768
+      }
+    },
+    "aion-labs/aion-3.5-mini": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "aion-labs/aion-3.5-mini-20260923",
+      "context_length": 262144,
+      "created": 1790170962,
+      "default_parameters": {},
+      "description": "Aion 3.5 Mini is a multi-model roleplaying and storytelling system from AionLabs, built on the GLM family of models. It is the smaller, lower-cost sibling of Aion 3.5 and uses...",
+      "expiration_date": null,
+      "id": "aion-labs/aion-3.5-mini",
+      "name": "AionLabs: Aion 3.5 Mini",
+      "pricing": {
+        "completion": "0.0000014",
+        "image": null,
+        "input_cache_read": "0.00000018",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000007",
         "request": null,
         "web_search": null
       },
