@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T12:02:25.278486Z",
+  "generated_at": "2026-09-23T12:32:24.667574Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -22075,9 +22075,12 @@
         "include_reasoning",
         "max_completion_tokens",
         "max_tokens",
+        "presence_penalty",
         "reasoning",
         "reasoning_effort",
+        "repetition_penalty",
         "response_format",
+        "seed",
         "stop",
         "structured_outputs",
         "temperature",
