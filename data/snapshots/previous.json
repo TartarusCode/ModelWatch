@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T17:32:23.122655Z",
+  "generated_at": "2026-09-23T18:02:32.133109Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -21425,6 +21425,56 @@
         "context_length": 131072,
         "is_moderated": false,
         "max_completion_tokens": 16384
+      }
+    },
+    "stealth/space-bunny-alpha": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "stealth/space-bunny-alpha",
+      "context_length": 1000000,
+      "created": 1790174884,
+      "default_parameters": {},
+      "description": "Space Bunny Alpha is an anonymous large model with blazing-fast inference, strong coding capabilities and native multimodal input support. It delivers adjustable reasoning effort, and a 1M-token context window. Space...",
+      "expiration_date": "2098-12-31",
+      "id": "stealth/space-bunny-alpha",
+      "name": "Space Bunny Alpha",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": false,
+        "max_completion_tokens": 524288
       }
     },
     "stepfun/step-3.5-flash": {
