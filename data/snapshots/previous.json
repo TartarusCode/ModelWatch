@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T06:02:24.533152Z",
+  "generated_at": "2026-09-24T06:32:31.539352Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -18345,12 +18345,12 @@
       "id": "qwen/qwen3-30b-a3b-instruct-2507",
       "name": "Qwen: Qwen3 30B A3B Instruct 2507",
       "pricing": {
-        "completion": "0.00000019305",
+        "completion": "0.0000003",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004815",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -18374,9 +18374,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 128000,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 32000
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3-30b-a3b-thinking-2507": {

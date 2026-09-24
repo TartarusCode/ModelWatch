@@ -9725,7 +9725,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-09-24T06:02:24.533152Z",
+  "generated_at": "2026-09-24T06:32:31.539352Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -23828,23 +23828,23 @@
         "anchor": "0.19305000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.19305000000",
+        "pending_builds": 1,
+        "pending_price": "0.3000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "prompt": {
         "anchor": "0.04815000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.04815000000",
+        "pending_builds": 1,
+        "pending_price": "0.1000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "qwen/qwen3-30b-a3b-thinking-2507": {
