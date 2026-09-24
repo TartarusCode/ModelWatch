@@ -9564,11 +9564,11 @@
       "new_per_million_usd": "0.955260",
       "old_per_million_usd": "0.948300",
       "pct_change": 0.007339449541284404,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-09-24T18:01:17.741970Z",
+      "recovered_per_million_usd": "0.895578",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     },
     {
@@ -9581,11 +9581,11 @@
       "new_per_million_usd": "1.910520",
       "old_per_million_usd": "1.896600",
       "pct_change": 0.007339449541284404,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-09-24T18:01:17.741970Z",
+      "recovered_per_million_usd": "1.791156",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     },
     {
@@ -9759,7 +9759,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-09-24T17:32:30.170683Z",
+  "generated_at": "2026-09-24T18:02:23.759949Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -11347,6 +11347,120 @@
         "status": "idle"
       }
     },
+    "anthropic/claude-opus-5.5": {
+      "completion": {
+        "anchor": "20.00000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_read": {
+        "anchor": "0.2000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_write": {
+        "anchor": "5.000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt": {
+        "anchor": "4.000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "web_search": {
+        "anchor": "10000.00",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      }
+    },
+    "anthropic/claude-opus-5.5:batch": {
+      "completion": {
+        "anchor": "10.00000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_read": {
+        "anchor": "0.1000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_write": {
+        "anchor": "2.5000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt": {
+        "anchor": "2.000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "web_search": {
+        "anchor": "10000.00",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      }
+    },
     "anthropic/claude-opus-5:batch": {
       "completion": {
         "anchor": "12.5000000",
@@ -12541,7 +12655,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.015876000000",
+        "anchor": "0.015568000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -12552,7 +12666,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.07938000000",
+        "anchor": "0.07784000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -12705,18 +12819,18 @@
     },
     "deepseek/deepseek-v4-pro": {
       "completion": {
-        "anchor": "1.91052000000",
-        "confirmed_at": "2026-09-23T00:31:03.917458Z",
-        "confirmed_price": "1.91052000000",
-        "direction": "hike",
-        "episode_start_price": "1.8966000000",
+        "anchor": "1.791156000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
-        "status": "confirmed"
+        "recovery_builds": 0,
+        "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.0749215000000",
+        "anchor": "0.0746315000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -12727,15 +12841,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.95526000000",
-        "confirmed_at": "2026-09-23T00:31:03.917458Z",
-        "confirmed_price": "0.95526000000",
-        "direction": "hike",
-        "episode_start_price": "0.9483000000",
+        "anchor": "0.895578000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
-        "status": "confirmed"
+        "recovery_builds": 0,
+        "status": "idle"
       }
     },
     "deepseek/deepseek-v4-pro-0813": {
