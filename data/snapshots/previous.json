@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T21:02:25.032284Z",
+  "generated_at": "2026-09-24T21:32:24.625823Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3493,12 +3493,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000013412",
+        "completion": "0.00000013104",
         "image": null,
-        "input_cache_read": "0.000000013412",
+        "input_cache_read": "0.000000013104",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006706",
+        "prompt": "0.00000006552",
         "request": null,
         "web_search": null
       },
@@ -3678,12 +3678,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001737216",
+        "completion": "0.000001727124",
         "image": null,
-        "input_cache_read": "0.000000072384",
+        "input_cache_read": "0.0000000719635",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000868608",
+        "prompt": "0.000000863562",
         "request": null,
         "web_search": null
       },
@@ -8827,6 +8827,61 @@
         "max_completion_tokens": 204800
       }
     },
+    "mistralai/devstral-2512": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Mistral"
+      },
+      "canonical_slug": "mistralai/devstral-2512",
+      "context_length": 262144,
+      "created": 1765285419,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "temperature": 0.3,
+        "top_p": null
+      },
+      "description": "Devstral 2 is a state-of-the-art open-source model by Mistral AI specializing in agentic coding. It is a 123B-parameter dense transformer model supporting a 256K context window. Devstral 2 supports exploring...",
+      "expiration_date": null,
+      "id": "mistralai/devstral-2512",
+      "name": "Mistral: Devstral 2 2512",
+      "pricing": {
+        "completion": "0.000002",
+        "image": null,
+        "input_cache_read": "0.00000004",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000004",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "presence_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 209715
+      }
+    },
     "mistralai/ministral-14b-2512": {
       "architecture": {
         "input_modalities": [
@@ -9151,6 +9206,62 @@
         "context_length": 131072,
         "is_moderated": false,
         "max_completion_tokens": 104857
+      }
+    },
+    "mistralai/mistral-large-2512": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Mistral"
+      },
+      "canonical_slug": "mistralai/mistral-large-2512",
+      "context_length": 262144,
+      "created": 1764624472,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "temperature": 0.0645,
+        "top_p": null
+      },
+      "description": "Mistral Large 3 2512 is Mistral’s most capable model to date, featuring a sparse mixture-of-experts architecture with 41B active parameters (675B total), and released under the Apache 2.0 license.",
+      "expiration_date": null,
+      "id": "mistralai/mistral-large-2512",
+      "name": "Mistral: Mistral Large 3 2512",
+      "pricing": {
+        "completion": "0.0000015",
+        "image": null,
+        "input_cache_read": "0.00000005",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000005",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "presence_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 209715
       }
     },
     "mistralai/mistral-large-2512:batch": {
