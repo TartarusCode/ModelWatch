@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T07:32:24.714734Z",
+  "generated_at": "2026-09-24T08:02:27.066273Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -21771,7 +21771,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "tencent/hy-mt2-30b-a3b-20260521",
-      "context_length": 32768,
+      "context_length": 8192,
       "created": 1787231561,
       "default_parameters": {},
       "description": "Hy-MT2-30B-A3B is Tencent's flagship translation model in the Hy-MT2 family. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and...",
@@ -21790,19 +21790,12 @@
       },
       "pricing_schedule": null,
       "supported_parameters": [
-        "frequency_penalty",
-        "logprobs",
         "max_completion_tokens",
         "max_tokens",
-        "presence_penalty",
         "response_format",
-        "seed",
         "stop",
         "structured_outputs",
-        "temperature",
-        "top_k",
-        "top_logprobs",
-        "top_p"
+        "temperature"
       ],
       "top_provider": {
         "context_length": 8192,
