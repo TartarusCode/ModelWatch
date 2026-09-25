@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T12:02:31.683619Z",
+  "generated_at": "2026-09-25T12:32:26.203509Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -11468,7 +11468,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "nvidia/nemotron-3.5-lightning-20260807",
-      "context_length": 262144,
+      "context_length": 1000000,
       "created": 1786452751,
       "default_parameters": {},
       "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
@@ -11481,7 +11481,7 @@
         "input_cache_read": "0.00000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008",
+        "prompt": "0.00000007",
         "request": null,
         "web_search": null
       },
@@ -11510,7 +11510,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 235929
       }
     },
     "nvidia/nemotron-3.5-lightning:free": {
