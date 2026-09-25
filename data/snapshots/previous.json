@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T01:02:24.519344Z",
+  "generated_at": "2026-09-25T01:32:29.130629Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3678,12 +3678,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001672836",
+        "completion": "0.000001666224",
         "image": null,
-        "input_cache_read": "0.0000000697015",
+        "input_cache_read": "0.000000069426",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000836418",
+        "prompt": "0.000000833112",
         "request": null,
         "web_search": null
       },
@@ -3801,12 +3801,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -24128,12 +24128,12 @@
       "id": "z-ai/glm-4.7",
       "name": "Z.ai: GLM 4.7",
       "pricing": {
-        "completion": "0.00000175",
+        "completion": "0.0000022",
         "image": null,
-        "input_cache_read": "0.00000008",
+        "input_cache_read": "0.00000011",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000004",
+        "prompt": "0.0000006",
         "request": null,
         "web_search": null
       },
@@ -24369,12 +24369,12 @@
       "id": "z-ai/glm-5.1",
       "name": "Z.ai: GLM 5.1",
       "pricing": {
-        "completion": "0.000003036",
+        "completion": "0.0000030316",
         "image": null,
-        "input_cache_read": "0.0000001794",
+        "input_cache_read": "0.00000017914",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000966",
+        "prompt": "0.0000009646",
         "request": null,
         "web_search": null
       },
@@ -24401,9 +24401,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 200000,
+        "context_length": 202752,
         "is_moderated": false,
-        "max_completion_tokens": 128000
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-5.2": {
