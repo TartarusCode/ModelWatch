@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T13:02:29.156581Z",
+  "generated_at": "2026-09-25T13:32:26.377036Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -10715,120 +10715,6 @@
         "max_completion_tokens": 131072
       }
     },
-    "nex-agi/nex-n2.5-mini:free": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "instruct_type": null,
-        "modality": "text+image->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Qwen3"
-      },
-      "canonical_slug": "nex-agi/nex-n2.5-mini-20260908",
-      "context_length": 262144,
-      "created": 1788890061,
-      "default_parameters": {
-        "temperature": 0.7,
-        "top_k": 40,
-        "top_p": 0.95
-      },
-      "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
-      "expiration_date": "2026-09-25",
-      "id": "nex-agi/nex-n2.5-mini:free",
-      "name": "Nex AGI: Nex-N2.5-Mini (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "logprobs",
-        "max_tokens",
-        "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 235929
-      }
-    },
-    "nex-agi/nex-n2.5-pro:free": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "instruct_type": null,
-        "modality": "text+image->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Qwen3"
-      },
-      "canonical_slug": "nex-agi/nex-n2.5-pro-20260907",
-      "context_length": 262144,
-      "created": 1788890050,
-      "default_parameters": {
-        "temperature": 0.7,
-        "top_k": 40,
-        "top_p": 0.95
-      },
-      "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
-      "expiration_date": "2026-09-25",
-      "id": "nex-agi/nex-n2.5-pro:free",
-      "name": "Nex AGI: Nex-N2.5-Pro (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "logprobs",
-        "max_tokens",
-        "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 235929
-      }
-    },
     "nousresearch/hermes-3-llama-3.1-405b": {
       "architecture": {
         "input_modalities": [
@@ -18186,7 +18072,7 @@
         "top_p": null
       },
       "description": "Qwen Plus 0728, based on the Qwen3 foundation model, is a 1 million context hybrid reasoning model with a balanced performance, speed, and cost combination.",
-      "expiration_date": null,
+      "expiration_date": "2026-10-09",
       "id": "qwen/qwen-plus-2025-07-28",
       "name": "Qwen: Qwen Plus 0728",
       "pricing": {
@@ -18351,7 +18237,7 @@
       "created": 1745875757,
       "default_parameters": {},
       "description": "Qwen3-235B-A22B is a 235B parameter mixture-of-experts (MoE) model developed by Qwen, activating 22B parameters per forward pass. It supports seamless switching between a \"thinking\" mode for complex reasoning, math, and...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-09",
       "id": "qwen/qwen3-235b-a22b",
       "name": "Qwen: Qwen3 235B A22B",
       "pricing": {
@@ -18463,7 +18349,7 @@
         "top_p": null
       },
       "description": "Qwen3-235B-A22B-Thinking-2507 is a high-performance, open-weight Mixture-of-Experts (MoE) language model optimized for complex reasoning tasks. It activates 22B of its 235B parameters per forward pass and natively supports up to 262,144...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-09",
       "id": "qwen/qwen3-235b-a22b-thinking-2507",
       "name": "Qwen: Qwen3 235B A22B Thinking 2507",
       "pricing": {
@@ -18633,7 +18519,7 @@
       "created": 1756399192,
       "default_parameters": {},
       "description": "Qwen3-30B-A3B-Thinking-2507 is a 30B parameter Mixture-of-Experts reasoning model optimized for complex tasks requiring extended multi-step thinking. The model is designed specifically for “thinking mode,” where internal reasoning traces are separated...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-09",
       "id": "qwen/qwen3-30b-a3b-thinking-2507",
       "name": "Qwen: Qwen3 30B A3B Thinking 2507",
       "pricing": {
@@ -18748,7 +18634,7 @@
         "top_p": 0.95
       },
       "description": "Qwen3-8B is a dense 8.2B parameter causal language model from the Qwen3 series, designed for both reasoning-heavy tasks and efficient dialogue. It supports seamless switching between \"thinking\" mode for math,...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-09",
       "id": "qwen/qwen3-8b",
       "name": "Qwen: Qwen3 8B",
       "pricing": {
@@ -19029,7 +18915,7 @@
         "top_p": null
       },
       "description": "Qwen3 Coder Plus is Alibaba's proprietary version of the Open Source Qwen3 Coder 480B A35B. It is a powerful coding agent model specializing in autonomous programming via tool calling and...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-09",
       "id": "qwen/qwen3-coder-plus",
       "name": "Qwen: Qwen3 Coder Plus",
       "pricing": {
@@ -19086,7 +18972,7 @@
         "top_p": 1
       },
       "description": "Qwen3-Max is an updated release built on the Qwen3 series, offering major improvements in reasoning, instruction following, multilingual support, and long-tail knowledge coverage compared to the January 2025 version. It...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-09",
       "id": "qwen/qwen3-max",
       "name": "Qwen: Qwen3 Max",
       "pricing": {
@@ -19143,7 +19029,7 @@
         "top_p": null
       },
       "description": "Qwen3-Max-Thinking is the flagship reasoning model in the Qwen3 series, designed for high-stakes cognitive tasks that require deep, multi-step reasoning. By significantly scaling model capacity and reinforcement learning compute, it...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-09",
       "id": "qwen/qwen3-max-thinking",
       "name": "Qwen: Qwen3 Max Thinking",
       "pricing": {
@@ -19383,7 +19269,7 @@
         "top_p": 0.95
       },
       "description": "Qwen3-VL-235B-A22B Thinking is a multimodal model that unifies strong text generation with visual understanding across images and video. The Thinking model is optimized for multimodal reasoning in STEM and math....",
-      "expiration_date": null,
+      "expiration_date": "2026-10-09",
       "id": "qwen/qwen3-vl-235b-a22b-thinking",
       "name": "Qwen: Qwen3 VL 235B A22B Thinking",
       "pricing": {
@@ -19511,7 +19397,7 @@
         "top_p": 0.95
       },
       "description": "Qwen3-VL-30B-A3B-Thinking is a multimodal model that unifies strong text generation with visual understanding for images and videos. Its Thinking variant enhances reasoning in STEM, math, and complex tasks. It excels...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-09",
       "id": "qwen/qwen3-vl-30b-a3b-thinking",
       "name": "Qwen: Qwen3 VL 30B A3B Thinking",
       "pricing": {
@@ -19574,7 +19460,7 @@
         "top_p": 0.8
       },
       "description": "Qwen3-VL-32B-Instruct is a large-scale multimodal vision-language model designed for high-precision understanding and reasoning across text, images, and video. With 32 billion parameters, it combines deep visual perception with advanced text...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-09",
       "id": "qwen/qwen3-vl-32b-instruct",
       "name": "Qwen: Qwen3 VL 32B Instruct",
       "pricing": {
@@ -19632,7 +19518,7 @@
         "top_p": 0.8
       },
       "description": "Qwen3-VL-8B-Instruct is a multimodal vision-language model from the Qwen3-VL series, built for high-fidelity understanding and reasoning across text, images, and video. It features improved multimodal fusion with Interleaved-MRoPE for long-horizon...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-09",
       "id": "qwen/qwen3-vl-8b-instruct",
       "name": "Qwen: Qwen3 VL 8B Instruct",
       "pricing": {
@@ -19691,7 +19577,7 @@
         "top_p": 0.95
       },
       "description": "Qwen3-VL-8B-Thinking is the reasoning-optimized variant of the Qwen3-VL-8B multimodal model, designed for advanced visual and textual reasoning across complex scenes, documents, and temporal sequences. It integrates enhanced multimodal alignment and...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-09",
       "id": "qwen/qwen3-vl-8b-thinking",
       "name": "Qwen: Qwen3 VL 8B Thinking",
       "pricing": {
@@ -20446,7 +20332,7 @@
       "created": 1777260242,
       "default_parameters": {},
       "description": "Qwen3.6-Max-Preview is a proprietary frontier model from Alibaba Cloud built on a sparse mixture-of-experts architecture with approximately 1 trillion total parameters. It is optimized for agentic coding, tool use, and...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-09",
       "id": "qwen/qwen3.6-max-preview",
       "name": "Qwen: Qwen3.6 Max Preview",
       "pricing": {
