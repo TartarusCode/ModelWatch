@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T14:02:29.704635Z",
+  "generated_at": "2026-09-25T14:32:25.560626Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3493,12 +3493,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.000000098",
+        "completion": "0.00000009744",
         "image": null,
-        "input_cache_read": "0.0000000098",
+        "input_cache_read": "0.000000009744",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000049",
+        "prompt": "0.00000004872",
         "request": null,
         "web_search": null
       },
@@ -3678,12 +3678,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001566",
+        "completion": "0.000001547556",
         "image": null,
-        "input_cache_read": "0.00000006525",
+        "input_cache_read": "0.0000000644815",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000783",
+        "prompt": "0.000000773778",
         "request": null,
         "web_search": null
       },
@@ -3741,12 +3741,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.000001386",
+        "completion": "0.00000104544",
         "image": null,
-        "input_cache_read": "0.0000000154",
+        "input_cache_read": "0.000000011616",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000462",
+        "prompt": "0.00000034848",
         "request": null,
         "web_search": null
       },
@@ -6171,12 +6171,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.000000225",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.0000000375",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.0000000675",
         "request": null,
         "web_search": null
       },
@@ -7014,12 +7014,12 @@
       "id": "inclusionai/ling-3.0-flash-vl",
       "name": "inclusionAI: Ling 3.0 Flash VL",
       "pricing": {
-        "completion": "0.00000018",
+        "completion": "0.0000000616",
         "image": null,
-        "input_cache_read": "0.000000012",
+        "input_cache_read": "0.0000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006",
+        "prompt": "0.000000021",
         "request": null,
         "web_search": null
       },
@@ -7046,7 +7046,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 262144,
         "is_moderated": false,
         "max_completion_tokens": 32768
       }
