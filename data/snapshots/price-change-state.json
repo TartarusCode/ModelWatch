@@ -8716,9 +8716,9 @@
       "pct_change": 3.054054054054054,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-09-25T01:01:14.638729Z",
+      "settled_per_million_usd": "0.150000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -8733,9 +8733,9 @@
       "pct_change": 2.5294117647058822,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-09-25T01:01:14.638729Z",
+      "settled_per_million_usd": "0.600000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -9173,11 +9173,11 @@
       "new_per_million_usd": "3.000000",
       "old_per_million_usd": "1.700000",
       "pct_change": 0.7647058823529411,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-09-25T01:01:14.638729Z",
+      "recovered_per_million_usd": "0.884500",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     },
     {
@@ -9776,7 +9776,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-09-25T00:32:27.550335Z",
+  "generated_at": "2026-09-25T01:02:24.519344Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -12871,7 +12871,7 @@
     },
     "deepseek/deepseek-v4-pro": {
       "completion": {
-        "anchor": "1.683276000000",
+        "anchor": "1.672836000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -12882,7 +12882,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.0701365000000",
+        "anchor": "0.0697015000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -12893,7 +12893,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.841638000000",
+        "anchor": "0.836418000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -18411,15 +18411,15 @@
         "status": "confirmed"
       },
       "prompt": {
-        "anchor": "3.000000",
-        "confirmed_at": "2026-09-21T18:01:12.038877Z",
-        "confirmed_price": "3.000000",
-        "direction": "hike",
-        "episode_start_price": "1.7000000",
+        "anchor": "0.8845000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
-        "status": "confirmed"
+        "recovery_builds": 0,
+        "status": "idle"
       }
     },
     "moonshotai/kimi-k3:batch": {
@@ -22896,14 +22896,14 @@
     "openai/gpt-oss-120b": {
       "completion": {
         "anchor": "0.6000000",
-        "confirmed_at": "2026-09-18T01:01:03.319076Z",
-        "confirmed_price": "0.6000000",
-        "direction": "hike",
-        "episode_start_price": "0.17000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.075000000",
@@ -22918,14 +22918,14 @@
       },
       "prompt": {
         "anchor": "0.15000000",
-        "confirmed_at": "2026-09-18T01:01:03.319076Z",
-        "confirmed_price": "0.15000000",
-        "direction": "hike",
-        "episode_start_price": "0.037000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "openai/gpt-oss-120b:batch": {
