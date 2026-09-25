@@ -9842,9 +9842,77 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.118400",
+      "detected_at": "2026-09-25T15:01:12.098329Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.180000",
+      "field": "completion",
+      "model_id": "inclusionai/ling-3.0-flash-vl",
+      "new_per_million_usd": "0.061600",
+      "old_per_million_usd": "0.180000",
+      "pct_change": -0.6577777777777778,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.113520",
+      "detected_at": "2026-09-25T15:01:12.098329Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.462000",
+      "field": "prompt",
+      "model_id": "deepseek/deepseek-v4-pro-0813",
+      "new_per_million_usd": "0.348480",
+      "old_per_million_usd": "0.462000",
+      "pct_change": -0.24571428571428572,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.340560",
+      "detected_at": "2026-09-25T15:01:12.098329Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "1.386000",
+      "field": "completion",
+      "model_id": "deepseek/deepseek-v4-pro-0813",
+      "new_per_million_usd": "1.045440",
+      "old_per_million_usd": "1.386000",
+      "pct_change": -0.24571428571428572,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.075000",
+      "detected_at": "2026-09-25T15:01:12.098329Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.300000",
+      "field": "completion",
+      "model_id": "google/gemma-4-26b-a4b-it",
+      "new_per_million_usd": "0.225000",
+      "old_per_million_usd": "0.300000",
+      "pct_change": -0.25,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-09-25T14:32:25.560626Z",
+  "generated_at": "2026-09-25T15:02:23.131846Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -12974,7 +13042,7 @@
     },
     "deepseek/deepseek-v4-pro": {
       "completion": {
-        "anchor": "1.547556000000",
+        "anchor": "1.527372000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -12985,7 +13053,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.0644815000000",
+        "anchor": "0.0636405000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -12996,7 +13064,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.773778000000",
+        "anchor": "0.763686000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -13009,15 +13077,15 @@
     },
     "deepseek/deepseek-v4-pro-0813": {
       "completion": {
-        "anchor": "1.386000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "1.04544000000",
+        "confirmed_at": "2026-09-25T15:01:12.098329Z",
+        "confirmed_price": "1.04544000000",
         "direction": "cut",
         "episode_start_price": "1.386000000",
-        "pending_builds": 1,
-        "pending_price": "1.04544000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.011616000000",
@@ -13031,15 +13099,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.462000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.34848000000",
+        "confirmed_at": "2026-09-25T15:01:12.098329Z",
+        "confirmed_price": "0.34848000000",
         "direction": "cut",
         "episode_start_price": "0.462000000",
-        "pending_builds": 1,
-        "pending_price": "0.34848000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "deepseek/deepseek-v4-pro-0813:batch": {
@@ -15678,15 +15746,15 @@
     },
     "google/gemma-4-26b-a4b-it": {
       "completion": {
-        "anchor": "0.3000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.225000000",
+        "confirmed_at": "2026-09-25T15:01:12.098329Z",
+        "confirmed_price": "0.225000000",
         "direction": "cut",
         "episode_start_price": "0.3000000",
-        "pending_builds": 1,
-        "pending_price": "0.225000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.0375000000",
@@ -16135,15 +16203,15 @@
     },
     "inclusionai/ling-3.0-flash-vl": {
       "completion": {
-        "anchor": "0.18000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.0616000000",
+        "confirmed_at": "2026-09-25T15:01:12.098329Z",
+        "confirmed_price": "0.0616000000",
         "direction": "cut",
         "episode_start_price": "0.18000000",
-        "pending_builds": 1,
-        "pending_price": "0.0616000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.0042000000",
