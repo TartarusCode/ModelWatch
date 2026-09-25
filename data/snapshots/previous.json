@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T00:02:25.421812Z",
+  "generated_at": "2026-09-25T00:32:27.550335Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -1445,7 +1445,7 @@
       ],
       "top_provider": {
         "context_length": 1000000,
-        "is_moderated": false,
+        "is_moderated": true,
         "max_completion_tokens": 128000
       }
     },
@@ -3678,12 +3678,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001689888",
+        "completion": "0.000001683276",
         "image": null,
-        "input_cache_read": "0.000000070412",
+        "input_cache_read": "0.0000000701365",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000844944",
+        "prompt": "0.000000841638",
         "request": null,
         "web_search": null
       },
@@ -10515,12 +10515,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.000015",
+        "completion": "0.0000105346",
         "image": null,
         "input_cache_read": "0.0000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000003",
+        "prompt": "0.0000008845",
         "request": null,
         "web_search": null
       },
@@ -19451,12 +19451,12 @@
       "id": "qwen/qwen3-vl-30b-a3b-instruct",
       "name": "Qwen: Qwen3 VL 30B A3B Instruct",
       "pricing": {
-        "completion": "0.00000052",
+        "completion": "0.0000006",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000013",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -19481,9 +19481,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 16384
       }
     },
     "qwen/qwen3-vl-30b-a3b-thinking": {
@@ -22113,12 +22113,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
