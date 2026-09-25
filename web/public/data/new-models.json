@@ -1,26 +1,19 @@
 {
-  "generated_at": "2026-09-25T21:02:26.338349Z",
+  "generated_at": "2026-09-25T21:32:29.831569Z",
   "models": [
+    {
+      "canonical_slug": "typesafe/jev-router",
+      "created": 1790363560,
+      "detected_at": "2026-09-25T21:31:14.808228Z",
+      "model_id": "typesafe/jev-router",
+      "name": "TypeSafe: Jev Router"
+    },
     {
       "canonical_slug": "perceptron/perceptron-mk1.5-20260925",
       "created": 1790352661,
       "detected_at": "2026-09-25T18:01:21.275111Z",
       "model_id": "perceptron/perceptron-mk1.5",
       "name": "Perceptron: Perceptron Mk1.5"
-    },
-    {
-      "canonical_slug": "mistralai/devstral-2512",
-      "created": 1765285419,
-      "detected_at": "2026-09-24T21:31:24.565471Z",
-      "model_id": "mistralai/devstral-2512",
-      "name": "Mistral: Devstral 2 2512"
-    },
-    {
-      "canonical_slug": "mistralai/mistral-large-2512",
-      "created": 1764624472,
-      "detected_at": "2026-09-24T21:31:24.565471Z",
-      "model_id": "mistralai/mistral-large-2512",
-      "name": "Mistral: Mistral Large 3 2512"
     }
   ],
   "window_hours": 24
