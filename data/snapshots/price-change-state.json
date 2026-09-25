@@ -9810,7 +9810,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-09-25T06:32:26.432512Z",
+  "generated_at": "2026-09-25T07:02:27.924153Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -12905,7 +12905,7 @@
     },
     "deepseek/deepseek-v4-pro": {
       "completion": {
-        "anchor": "1.575048000000",
+        "anchor": "1.566000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -12916,7 +12916,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.065627000000",
+        "anchor": "0.06525000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -12927,7 +12927,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.787524000000",
+        "anchor": "0.783000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -18426,12 +18426,12 @@
         "anchor": "10.5346000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "10.5346000000",
+        "pending_builds": 1,
+        "pending_price": "15.000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.3000000",
@@ -18448,12 +18448,12 @@
         "anchor": "0.8845000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.8845000000",
+        "pending_builds": 1,
+        "pending_price": "3.000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "moonshotai/kimi-k3:batch": {
@@ -28133,11 +28133,11 @@
         "episode_start_price": "0.5000000",
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 0,
+        "recovery_builds": 1,
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.0285000000",
+        "anchor": "0.01000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
