@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T16:02:26.145407Z",
+  "generated_at": "2026-09-25T16:32:28.645104Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3493,12 +3493,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000009744",
+        "completion": "0.00000009632",
         "image": null,
-        "input_cache_read": "0.000000009744",
+        "input_cache_read": "0.000000009632",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004872",
+        "prompt": "0.00000004816",
         "request": null,
         "web_search": null
       },
@@ -3678,12 +3678,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001486656",
+        "completion": "0.000001446288",
         "image": null,
-        "input_cache_read": "0.000000061944",
+        "input_cache_read": "0.000000060262",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000743328",
+        "prompt": "0.000000723144",
         "request": null,
         "web_search": null
       },
@@ -3801,142 +3801,16 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.0000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.000000075",
         "request": null,
         "web_search": null
       },
-      "pricing_schedule": {
-        "minimum": {
-          "completion": "0.0000006",
-          "input_cache_read": "0.000000003",
-          "prompt": "0.00000015"
-        },
-        "rates": {
-          "completion": [
-            "0.0000006",
-            "0.0000012"
-          ],
-          "input_cache_read": [
-            "0.000000003",
-            "0.000000006"
-          ],
-          "prompt": [
-            "0.00000015",
-            "0.0000003"
-          ]
-        },
-        "standard": {
-          "completion": "0.0000012",
-          "input_cache_read": "0.000000006",
-          "prompt": "0.0000003"
-        },
-        "windows": [
-          {
-            "label": "Sat–Sun all day UTC",
-            "rates": {
-              "completion": "0.0000006",
-              "input_cache_read": "0.000000003",
-              "prompt": "0.00000015"
-            },
-            "utc_days": [
-              "saturday",
-              "sunday"
-            ],
-            "utc_end": null,
-            "utc_start": null
-          },
-          {
-            "label": "Mon–Fri 00:00–01:00 UTC",
-            "rates": {
-              "completion": "0.0000006",
-              "input_cache_read": "0.000000003",
-              "prompt": "0.00000015"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 100,
-            "utc_start": 0
-          },
-          {
-            "label": "Mon–Fri 01:00–04:00 UTC",
-            "rates": {
-              "completion": "0.0000012",
-              "input_cache_read": "0.000000006",
-              "prompt": "0.0000003"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 400,
-            "utc_start": 100
-          },
-          {
-            "label": "Mon–Fri 04:00–06:00 UTC",
-            "rates": {
-              "completion": "0.0000006",
-              "input_cache_read": "0.000000003",
-              "prompt": "0.00000015"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 600,
-            "utc_start": 400
-          },
-          {
-            "label": "Mon–Fri 06:00–10:00 UTC",
-            "rates": {
-              "completion": "0.0000012",
-              "input_cache_read": "0.000000006",
-              "prompt": "0.0000003"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 1000,
-            "utc_start": 600
-          },
-          {
-            "label": "Mon–Fri 10:00–24:00 UTC",
-            "rates": {
-              "completion": "0.0000006",
-              "input_cache_read": "0.000000003",
-              "prompt": "0.00000015"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 0,
-            "utc_start": 1000
-          }
-        ]
-      },
+      "pricing_schedule": null,
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -3962,7 +3836,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 393216
+        "max_completion_tokens": 943718
       }
     },
     "deepseek/deepseek-v4.1-flash:batch": {
@@ -21999,12 +21873,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.000000528",
+        "completion": "0.00000033",
         "image": null,
-        "input_cache_read": "0.000000033",
+        "input_cache_read": "0.000000020625",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000132",
+        "prompt": "0.0000000825",
         "request": null,
         "web_search": null
       },
@@ -24372,7 +24246,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-5.2-20260616",
-      "context_length": 32768,
+      "context_length": 131072,
       "created": 1781631930,
       "default_parameters": {
         "frequency_penalty": null,
@@ -24413,9 +24287,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 32768,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 29491
+        "max_completion_tokens": 117964
       }
     },
     "z-ai/glm-5.3": {
