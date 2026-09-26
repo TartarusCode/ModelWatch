@@ -8869,9 +8869,9 @@
       "pct_change": 0.5384615384615384,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-09-26T01:01:13.348319Z",
+      "settled_per_million_usd": "0.150000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -9963,7 +9963,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-09-26T00:32:23.787720Z",
+  "generated_at": "2026-09-26T01:02:28.433756Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -13128,7 +13128,7 @@
     },
     "deepseek/deepseek-v4-pro": {
       "completion": {
-        "anchor": "0.878352000000",
+        "anchor": "0.858168000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -13139,7 +13139,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.036598000000",
+        "anchor": "0.035757000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -13150,7 +13150,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.439176000000",
+        "anchor": "0.429084000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -13243,17 +13243,6 @@
         "recovery_builds": 0,
         "status": "idle"
       },
-      "completion_offpeak": {
-        "anchor": "0.6000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
-        "recovery_builds": 0,
-        "status": "idle"
-      },
       "input_cache_read": {
         "anchor": "0.0042000000",
         "confirmed_at": null,
@@ -13265,30 +13254,8 @@
         "recovery_builds": 0,
         "status": "idle"
       },
-      "input_cache_read_offpeak": {
-        "anchor": "0.003000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
-        "recovery_builds": 0,
-        "status": "idle"
-      },
       "prompt": {
         "anchor": "0.14000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
-        "recovery_builds": 0,
-        "status": "idle"
-      },
-      "prompt_offpeak": {
-        "anchor": "0.15000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -25287,15 +25254,15 @@
         "status": "confirmed"
       },
       "prompt": {
-        "anchor": "0.2000000",
-        "confirmed_at": "2026-09-19T01:01:11.176205Z",
-        "confirmed_price": "0.2000000",
-        "direction": "hike",
-        "episode_start_price": "0.13000000",
+        "anchor": "0.15000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "qwen/qwen3-vl-30b-a3b-thinking": {
