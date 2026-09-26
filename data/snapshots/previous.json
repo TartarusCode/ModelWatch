@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T01:02:28.433756Z",
+  "generated_at": "2026-09-26T01:32:25.713034Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -578,53 +578,6 @@
       "top_provider": {
         "context_length": 32768,
         "is_moderated": false,
-        "max_completion_tokens": 4096
-      }
-    },
-    "anthropic/claude-3-haiku": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "instruct_type": null,
-        "modality": "text+image->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Claude"
-      },
-      "canonical_slug": "anthropic/claude-3-haiku",
-      "context_length": 200000,
-      "created": 1710288000,
-      "default_parameters": {},
-      "description": "Claude 3 Haiku is Anthropic's fastest and most compact model for\nnear-instant responsiveness. Quick and accurate targeted performance.\n\nSee the launch announcement and benchmark results [here](https://www.anthropic.com/news/claude-3-haiku)\n\n#multimodal",
-      "expiration_date": null,
-      "id": "anthropic/claude-3-haiku",
-      "name": "Anthropic: Claude 3 Haiku",
-      "pricing": {
-        "completion": "0.00000125",
-        "image": null,
-        "input_cache_read": "0.00000003",
-        "input_cache_write": "0.0000003",
-        "internal_reasoning": null,
-        "prompt": "0.00000025",
-        "request": null,
-        "web_search": "0.01"
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "max_tokens",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 200000,
-        "is_moderated": true,
         "max_completion_tokens": 4096
       }
     },
@@ -3678,12 +3631,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000000858168",
+        "completion": "0.000000837636",
         "image": null,
-        "input_cache_read": "0.000000035757",
+        "input_cache_read": "0.0000000349015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000429084",
+        "prompt": "0.000000418818",
         "request": null,
         "web_search": null
       },
@@ -24418,12 +24371,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.00000014",
+        "completion": "0.0000005",
         "image": null,
-        "input_cache_read": "0.00000001",
+        "input_cache_read": "0.000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000045",
+        "prompt": "0.00000004",
         "request": null,
         "web_search": null
       },
@@ -24454,7 +24407,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 128000
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-5.3-flash:batch": {
