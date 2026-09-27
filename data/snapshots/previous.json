@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T02:02:25.249464Z",
+  "generated_at": "2026-09-27T02:32:25.788532Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3569,12 +3569,12 @@
       "id": "deepseek/deepseek-v4-flash-vision-exp",
       "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
       "pricing": {
-        "completion": "0.00000066",
+        "completion": "0.0000006468",
         "image": null,
-        "input_cache_read": "0.000000007",
+        "input_cache_read": "0.00000000686",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000022",
+        "prompt": "0.0000002156",
         "request": null,
         "web_search": null
       },
@@ -3604,7 +3604,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 262144
       }
     },
     "deepseek/deepseek-v4-pro": {
@@ -3696,10 +3696,10 @@
       "pricing": {
         "completion": "0.0000035",
         "image": null,
-        "input_cache_read": "0.00000024584",
+        "input_cache_read": "0.00000024452",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000024634",
+        "prompt": "0.00000024502",
         "request": null,
         "web_search": null
       },
@@ -18289,16 +18289,16 @@
         "top_p": null
       },
       "description": "Qwen3, the latest generation in the Qwen large language model series, features both dense and mixture-of-experts (MoE) architectures to excel in reasoning, multilingual support, and advanced agent tasks. Its unique...",
-      "expiration_date": "2026-10-09",
+      "expiration_date": null,
       "id": "qwen/qwen3-30b-a3b",
       "name": "Qwen: Qwen3 30B A3B",
       "pricing": {
-        "completion": "0.00000052",
+        "completion": "0.0000005",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000013",
+        "prompt": "0.00000012",
         "request": null,
         "web_search": null
       },
@@ -18323,9 +18323,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 40960,
         "is_moderated": false,
-        "max_completion_tokens": 8192
+        "max_completion_tokens": 16384
       }
     },
     "qwen/qwen3-30b-a3b-instruct-2507": {
