@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T00:02:28.542088Z",
+  "generated_at": "2026-09-27T00:32:27.787464Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3694,12 +3694,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.000000792",
+        "completion": "0.0000035",
         "image": null,
-        "input_cache_read": "0.0000000088",
+        "input_cache_read": "0.0000002475",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000264",
+        "prompt": "0.0000002476",
         "request": null,
         "web_search": null
       },
@@ -3727,9 +3727,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1024000,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 384000
+        "max_completion_tokens": 943718
       }
     },
     "deepseek/deepseek-v4.1-flash": {
@@ -8211,12 +8211,12 @@
       "id": "minimax/minimax-m2",
       "name": "MiniMax: MiniMax M2",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.00000102",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.000000255",
         "request": null,
         "web_search": null
       },
@@ -8241,9 +8241,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 196608,
+        "context_length": 204800,
         "is_moderated": false,
-        "max_completion_tokens": 176947
+        "max_completion_tokens": 131072
       }
     },
     "minimax/minimax-m2-her": {
@@ -8442,12 +8442,12 @@
       "id": "minimax/minimax-m2.7",
       "name": "MiniMax: MiniMax M2.7",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.00000084",
         "image": null,
-        "input_cache_read": "0.00000006",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.00000021",
         "request": null,
         "web_search": null
       },
@@ -8474,9 +8474,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 204800,
+        "context_length": 196608,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 176947
       }
     },
     "minimax/minimax-m3": {
@@ -18289,16 +18289,16 @@
         "top_p": null
       },
       "description": "Qwen3, the latest generation in the Qwen large language model series, features both dense and mixture-of-experts (MoE) architectures to excel in reasoning, multilingual support, and advanced agent tasks. Its unique...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-09",
       "id": "qwen/qwen3-30b-a3b",
       "name": "Qwen: Qwen3 30B A3B",
       "pricing": {
-        "completion": "0.0000005",
+        "completion": "0.00000052",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000012",
+        "prompt": "0.00000013",
         "request": null,
         "web_search": null
       },
@@ -18323,9 +18323,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 40960,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 8192
       }
     },
     "qwen/qwen3-30b-a3b-instruct-2507": {
@@ -21880,12 +21880,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
