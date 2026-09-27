@@ -10182,9 +10182,43 @@
       "settled_per_million_usd": null,
       "status": "recovered",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.104300",
+      "detected_at": "2026-09-27T06:31:46.251349Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.378000",
+      "field": "prompt",
+      "model_id": "z-ai/glm-5.3",
+      "new_per_million_usd": "0.273700",
+      "old_per_million_usd": "0.378000",
+      "pct_change": -0.2759259259259259,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.327800",
+      "detected_at": "2026-09-27T06:31:46.251349Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "1.188000",
+      "field": "completion",
+      "model_id": "z-ai/glm-5.3",
+      "new_per_million_usd": "0.860200",
+      "old_per_million_usd": "1.188000",
+      "pct_change": -0.2759259259259259,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-09-27T06:02:27.130420Z",
+  "generated_at": "2026-09-27T06:32:31.312156Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -28607,15 +28641,15 @@
     },
     "z-ai/glm-5.3": {
       "completion": {
-        "anchor": "1.188000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.8602000000",
+        "confirmed_at": "2026-09-27T06:31:46.251349Z",
+        "confirmed_price": "0.8602000000",
         "direction": "cut",
         "episode_start_price": "1.188000000",
-        "pending_builds": 1,
-        "pending_price": "0.8602000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.0391000000",
@@ -28629,15 +28663,15 @@
         "status": "confirmed"
       },
       "prompt": {
-        "anchor": "0.378000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.2737000000",
+        "confirmed_at": "2026-09-27T06:31:46.251349Z",
+        "confirmed_price": "0.2737000000",
         "direction": "cut",
         "episode_start_price": "0.378000000",
-        "pending_builds": 1,
-        "pending_price": "0.2737000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "z-ai/glm-5.3-flash": {
