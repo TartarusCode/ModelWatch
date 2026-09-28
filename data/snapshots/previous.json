@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T02:02:27.858315Z",
+  "generated_at": "2026-09-28T02:32:28.620317Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3631,12 +3631,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.0000018966",
+        "completion": "0.00000191052",
         "image": null,
-        "input_cache_read": "0.000000079025",
+        "input_cache_read": "0.000000079605",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000009483",
+        "prompt": "0.00000095526",
         "request": null,
         "web_search": null
       },
@@ -8211,12 +8211,12 @@
       "id": "minimax/minimax-m2",
       "name": "MiniMax: MiniMax M2",
       "pricing": {
-        "completion": "0.00000102",
+        "completion": "0.0000012",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000255",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -8241,9 +8241,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 204800,
+        "context_length": 196608,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 176947
       }
     },
     "minimax/minimax-m2-her": {
@@ -18060,16 +18060,16 @@
       "created": 1745876478,
       "default_parameters": {},
       "description": "Qwen3-14B is a dense 14.8B parameter causal language model from the Qwen3 series, designed for both complex reasoning and efficient dialogue. It supports seamless switching between a \"thinking\" mode for...",
-      "expiration_date": "2026-10-09",
+      "expiration_date": null,
       "id": "qwen/qwen3-14b",
       "name": "Qwen: Qwen3 14B",
       "pricing": {
-        "completion": "0.00000091",
+        "completion": "0.00000024",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000002275",
+        "prompt": "0.00000012",
         "request": null,
         "web_search": null
       },
@@ -18096,9 +18096,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 40960,
         "is_moderated": false,
-        "max_completion_tokens": 8192
+        "max_completion_tokens": 16384
       }
     },
     "qwen/qwen3-235b-a22b": {
@@ -18289,16 +18289,16 @@
         "top_p": null
       },
       "description": "Qwen3, the latest generation in the Qwen large language model series, features both dense and mixture-of-experts (MoE) architectures to excel in reasoning, multilingual support, and advanced agent tasks. Its unique...",
-      "expiration_date": "2026-10-09",
+      "expiration_date": null,
       "id": "qwen/qwen3-30b-a3b",
       "name": "Qwen: Qwen3 30B A3B",
       "pricing": {
-        "completion": "0.00000052",
+        "completion": "0.0000005",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000013",
+        "prompt": "0.00000012",
         "request": null,
         "web_search": null
       },
@@ -18323,9 +18323,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 40960,
         "is_moderated": false,
-        "max_completion_tokens": 8192
+        "max_completion_tokens": 16384
       }
     },
     "qwen/qwen3-30b-a3b-instruct-2507": {
