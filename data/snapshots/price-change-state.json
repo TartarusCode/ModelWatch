@@ -10420,9 +10420,43 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.600300",
+      "detected_at": "2026-09-28T00:31:09.460923Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.348000",
+      "field": "prompt",
+      "model_id": "deepseek/deepseek-v4-pro",
+      "new_per_million_usd": "0.948300",
+      "old_per_million_usd": "0.348000",
+      "pct_change": 1.725,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "1.200600",
+      "detected_at": "2026-09-28T00:31:09.460923Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.696000",
+      "field": "completion",
+      "model_id": "deepseek/deepseek-v4-pro",
+      "new_per_million_usd": "1.896600",
+      "old_per_million_usd": "0.696000",
+      "pct_change": 1.725,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-09-28T00:02:27.673156Z",
+  "generated_at": "2026-09-28T00:32:32.026346Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -13168,12 +13202,12 @@
         "anchor": "1.000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "1.000000",
+        "pending_builds": 1,
+        "pending_price": "1.14000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.11000000",
@@ -13187,7 +13221,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.25000000",
+        "anchor": "0.29000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -13353,7 +13387,7 @@
     },
     "deepseek/deepseek-v3.2": {
       "completion": {
-        "anchor": "0.4000000",
+        "anchor": "0.42000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -13367,15 +13401,15 @@
         "anchor": "0.1345000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.1345000000",
+        "pending_builds": 1,
+        "pending_price": "0.028000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "prompt": {
-        "anchor": "0.269000000",
+        "anchor": "0.28000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -13520,15 +13554,15 @@
         "anchor": "0.6468000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.6468000000",
+        "pending_builds": 1,
+        "pending_price": "1.32000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.00686000000",
+        "anchor": "0.014000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -13542,12 +13576,12 @@
         "anchor": "0.2156000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.2156000000",
+        "pending_builds": 1,
+        "pending_price": "0.44000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "deepseek/deepseek-v4-flash-vision-exp:batch": {
@@ -13587,15 +13621,15 @@
     },
     "deepseek/deepseek-v4-pro": {
       "completion": {
-        "anchor": "0.696000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "1.8966000000",
+        "confirmed_at": "2026-09-28T00:31:09.460923Z",
+        "confirmed_price": "1.8966000000",
         "direction": "hike",
         "episode_start_price": "0.696000000",
-        "pending_builds": 1,
-        "pending_price": "1.8966000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.079025000000",
@@ -13609,15 +13643,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.348000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.9483000000",
+        "confirmed_at": "2026-09-28T00:31:09.460923Z",
+        "confirmed_price": "0.9483000000",
         "direction": "hike",
         "episode_start_price": "0.348000000",
-        "pending_builds": 1,
-        "pending_price": "0.9483000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "deepseek/deepseek-v4-pro-0813": {
@@ -13636,12 +13670,12 @@
         "anchor": "0.172000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.172000000",
+        "pending_builds": 1,
+        "pending_price": "0.2518000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "prompt": {
         "anchor": "0.24298000000",
@@ -13703,7 +13737,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.03135000000",
+        "anchor": "0.02678000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -13714,7 +13748,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.03483000000",
+        "anchor": "0.02975000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -17817,7 +17851,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.3000000",
+        "anchor": "0.255000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -17946,7 +17980,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.042000000",
+        "anchor": "0.06000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -25163,23 +25197,23 @@
         "anchor": "0.24000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.24000000",
+        "pending_builds": 1,
+        "pending_price": "0.91000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "prompt": {
         "anchor": "0.12000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.12000000",
+        "pending_builds": 1,
+        "pending_price": "0.2275000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "qwen/qwen3-235b-a22b": {
@@ -25267,7 +25301,7 @@
     },
     "qwen/qwen3-30b-a3b": {
       "completion": {
-        "anchor": "0.5000000",
+        "anchor": "0.52000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -25278,7 +25312,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.12000000",
+        "anchor": "0.13000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -25929,7 +25963,7 @@
     },
     "qwen/qwen3.5-35b-a3b": {
       "completion": {
-        "anchor": "1.25000000",
+        "anchor": "1.3000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -25954,12 +25988,12 @@
         "anchor": "0.3125000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.3125000000",
+        "pending_builds": 1,
+        "pending_price": "0.1625000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "qwen/qwen3.5-397b-a17b": {
@@ -28915,7 +28949,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.01000000",
+        "anchor": "0.03000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -28929,12 +28963,12 @@
         "anchor": "0.045000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.045000000",
+        "pending_builds": 1,
+        "pending_price": "0.15000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "z-ai/glm-5.3-flash:batch": {
