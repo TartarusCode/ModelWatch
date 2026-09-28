@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T18:02:22.962803Z",
+  "generated_at": "2026-09-28T18:32:27.563432Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -1997,6 +1997,57 @@
         "max_completion_tokens": 128000
       }
     },
+    "anthropic/claude-sonnet-5.5": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude"
+      },
+      "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+      "context_length": 1000000,
+      "created": 1790618686,
+      "default_parameters": {},
+      "description": "Claude Sonnet 5.5 is Anthropic's Sonnet-class model for well-scoped everyday work, succeeding Claude Sonnet 5 as a direct upgrade. It is especially strong at building features, fixing bugs, and producing...",
+      "expiration_date": null,
+      "id": "anthropic/claude-sonnet-5.5",
+      "name": "Anthropic: Claude Sonnet 5.5",
+      "pricing": {
+        "completion": "0.00001",
+        "image": null,
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.0000025",
+        "internal_reasoning": null,
+        "prompt": "0.000002",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": true,
+        "max_completion_tokens": 128000
+      }
+    },
     "anthropic/claude-sonnet-5:batch": {
       "architecture": {
         "input_modalities": [
@@ -3396,12 +3447,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000013384",
+        "completion": "0.00000012768",
         "image": null,
-        "input_cache_read": "0.000000013384",
+        "input_cache_read": "0.000000012768",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006692",
+        "prompt": "0.00000006384",
         "request": null,
         "web_search": null
       },
@@ -14710,12 +14761,12 @@
       "id": "openai/gpt-5.6-sol-pro",
       "name": "OpenAI: GPT-5.6 Sol Pro",
       "pricing": {
-        "completion": "0.00001",
+        "completion": "0.00002",
         "image": null,
-        "input_cache_read": "0.0000002",
-        "input_cache_write": "0.0000025",
+        "input_cache_read": "0.0000004",
+        "input_cache_write": "0.000005",
         "internal_reasoning": null,
-        "prompt": "0.000002",
+        "prompt": "0.000004",
         "request": null,
         "web_search": "0.01"
       },
@@ -14734,7 +14785,7 @@
       ],
       "top_provider": {
         "context_length": 1050000,
-        "is_moderated": true,
+        "is_moderated": false,
         "max_completion_tokens": 128000
       }
     },
@@ -24309,12 +24360,12 @@
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "pricing": {
-        "completion": "0.0000044",
+        "completion": "0.000002805",
         "image": null,
-        "input_cache_read": "0.00000026",
+        "input_cache_read": "0.000000146625",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000014",
+        "prompt": "0.0000001785",
         "request": null,
         "web_search": null
       },
@@ -24343,9 +24394,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048575,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943717
+        "max_completion_tokens": 943718
       }
     },
     "z-ai/glm-5.3-flash": {
