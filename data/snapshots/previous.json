@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T18:32:27.563432Z",
+  "generated_at": "2026-09-28T19:02:27.696959Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -2032,6 +2032,59 @@
       "pricing_schedule": null,
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": false,
+        "max_completion_tokens": 128000
+      }
+    },
+    "anthropic/claude-sonnet-5.5:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude"
+      },
+      "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+      "context_length": 1000000,
+      "created": 1790618686,
+      "default_parameters": {},
+      "description": "Claude Sonnet 5.5 is Anthropic's Sonnet-class model for well-scoped everyday work, succeeding Claude Sonnet 5 as a direct upgrade. It is especially strong at building features, fixing bugs, and producing...",
+      "expiration_date": null,
+      "id": "anthropic/claude-sonnet-5.5:batch",
+      "name": "Anthropic: Claude Sonnet 5.5 (batch)",
+      "pricing": {
+        "completion": "0.000005",
+        "image": null,
+        "input_cache_read": "0.0000001",
+        "input_cache_write": "0.00000125",
+        "internal_reasoning": null,
+        "prompt": "0.000001",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
         "max_tokens",
         "reasoning",
         "reasoning_effort",
@@ -3447,12 +3500,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000012768",
+        "completion": "0.0000001246",
         "image": null,
-        "input_cache_read": "0.000000012768",
+        "input_cache_read": "0.00000001246",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006384",
+        "prompt": "0.0000000623",
         "request": null,
         "web_search": null
       },
@@ -3697,7 +3750,7 @@
       "pricing": {
         "completion": "0.0000042",
         "image": null,
-        "input_cache_read": "0.000000399",
+        "input_cache_read": "0.0000003196",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000003995",
