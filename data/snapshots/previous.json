@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T16:02:27.412495Z",
+  "generated_at": "2026-09-28T16:32:25.216882Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3188,56 +3188,6 @@
         "max_completion_tokens": 32768
       }
     },
-    "deepseek/deepseek-r1-distill-llama-70b": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": "deepseek-r1",
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Llama3"
-      },
-      "canonical_slug": "deepseek/deepseek-r1-distill-llama-70b",
-      "context_length": 8192,
-      "created": 1737663169,
-      "default_parameters": {},
-      "description": "DeepSeek R1 Distill Llama 70B is a distilled large language model based on [Llama-3.3-70B-Instruct](/meta-llama/llama-3.3-70b-instruct), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). The model combines advanced distillation techniques to achieve high performance across...",
-      "expiration_date": "2026-09-28",
-      "id": "deepseek/deepseek-r1-distill-llama-70b",
-      "name": "DeepSeek: R1 Distill Llama 70B",
-      "pricing": {
-        "completion": "0.0000008",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000008",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 8192,
-        "is_moderated": false,
-        "max_completion_tokens": 7372
-      }
-    },
     "deepseek/deepseek-v3.1-terminus": {
       "architecture": {
         "input_modalities": [
@@ -3259,13 +3209,13 @@
         "top_p": null
       },
       "description": "DeepSeek-V3.1 Terminus is an update to [DeepSeek V3.1](/deepseek/deepseek-chat-v3.1) that maintains the model's original capabilities while addressing issues reported by users, including language consistency and agent capabilities, further optimizing the model's...",
-      "expiration_date": "2026-09-28",
+      "expiration_date": null,
       "id": "deepseek/deepseek-v3.1-terminus",
       "name": "DeepSeek: DeepSeek V3.1 Terminus",
       "pricing": {
         "completion": "0.000001",
         "image": null,
-        "input_cache_read": "0.000000135",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.00000027",
@@ -3293,9 +3243,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 163840,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 147456
       }
     },
     "deepseek/deepseek-v3.2": {
@@ -3384,7 +3334,7 @@
         "top_p": 0.95
       },
       "description": "DeepSeek-V3.2-Exp is an experimental large language model released by DeepSeek as an intermediate step between V3.1 and future architectures. It introduces DeepSeek Sparse Attention (DSA), a fine-grained sparse attention mechanism...",
-      "expiration_date": "2026-09-28",
+      "expiration_date": null,
       "id": "deepseek/deepseek-v3.2-exp",
       "name": "DeepSeek: DeepSeek V3.2 Exp",
       "pricing": {
@@ -3422,7 +3372,7 @@
       "top_provider": {
         "context_length": 163840,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 147456
       }
     },
     "deepseek/deepseek-v4-flash": {
@@ -3446,12 +3396,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000014924",
+        "completion": "0.00000014616",
         "image": null,
-        "input_cache_read": "0.000000014924",
+        "input_cache_read": "0.000000014616",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000007462",
+        "prompt": "0.00000007308",
         "request": null,
         "web_search": null
       },
@@ -6690,6 +6640,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -6702,66 +6653,13 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 235929
-      }
-    },
-    "inclusionai/ling-3.0-flash-fin:free": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "inclusionai/ling-3.0-flash-fin-20260827",
-      "context_length": 262144,
-      "created": 1787846290,
-      "default_parameters": {},
-      "description": "Ling 3.0 Flash Fin is a finance-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for real-world investment...",
-      "expiration_date": null,
-      "id": "inclusionai/ling-3.0-flash-fin:free",
-      "name": "inclusionAI: Ling 3.0 Flash Fin (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
         "top_logprobs",
         "top_p"
       ],
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 235929
       }
     },
     "inclusionai/ling-3.0-flash-sante:free": {
@@ -21983,12 +21881,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.000000528",
+        "completion": "0.00000033",
         "image": null,
-        "input_cache_read": "0.000000033",
+        "input_cache_read": "0.000000020625",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000132",
+        "prompt": "0.0000000825",
         "request": null,
         "web_search": null
       },
