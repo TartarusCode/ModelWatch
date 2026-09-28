@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T07:32:25.230541Z",
+  "generated_at": "2026-09-28T08:02:25.711361Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3696,10 +3696,10 @@
       "pricing": {
         "completion": "0.0000042",
         "image": null,
-        "input_cache_read": "0.0000002261",
+        "input_cache_read": "0.0000002518",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000002266",
+        "prompt": "0.0000002523",
         "request": null,
         "web_search": null
       },
@@ -7711,11 +7711,10 @@
           "text",
           "image",
           "video",
-          "file",
-          "audio"
+          "file"
         ],
         "instruct_type": null,
-        "modality": "text+image+file+audio+video->text",
+        "modality": "text+image+file+video->text",
         "output_modalities": [
           "text"
         ],
@@ -7725,7 +7724,7 @@
       "context_length": 1048576,
       "created": 1784215741,
       "default_parameters": {},
-      "description": "Muse Spark 1.1 is a multimodal reasoning model from Meta, built for agentic tasks. It accepts text, images, video, audio, and PDF documents and returns text, with a 1M-token context...",
+      "description": "Muse Spark 1.1 is a multimodal reasoning model from Meta, built for agentic tasks. It accepts text, images, video, and PDF documents and returns text, with a 1M-token context window....",
       "expiration_date": null,
       "id": "meta/muse-spark-1.1",
       "name": "Meta: Muse Spark 1.1",
@@ -7766,11 +7765,10 @@
           "text",
           "image",
           "video",
-          "file",
-          "audio"
+          "file"
         ],
         "instruct_type": null,
-        "modality": "text+image+file+audio+video->text",
+        "modality": "text+image+file+video->text",
         "output_modalities": [
           "text"
         ],
@@ -7780,7 +7778,7 @@
       "context_length": 1048576,
       "created": 1785959287,
       "default_parameters": {},
-      "description": "Muse Spark 1.2 is a reasoning model from Meta, designed for complex agentic tasks. It accepts text, images, video, audio, and PDF documents, returns text, and offers a 1M-token context...",
+      "description": "Muse Spark 1.2 is a reasoning model from Meta, designed for complex agentic tasks. It accepts text, images, video, and PDF documents, returns text, and offers a 1M-token context window....",
       "expiration_date": null,
       "id": "meta/muse-spark-1.2",
       "name": "Meta: Muse Spark 1.2",
@@ -7821,11 +7819,10 @@
           "text",
           "image",
           "video",
-          "file",
-          "audio"
+          "file"
         ],
         "instruct_type": null,
-        "modality": "text+image+file+audio+video->text",
+        "modality": "text+image+file+video->text",
         "output_modalities": [
           "text"
         ],
@@ -7876,11 +7873,10 @@
           "text",
           "image",
           "video",
-          "file",
-          "audio"
+          "file"
         ],
         "instruct_type": null,
-        "modality": "text+image+file+audio+video->text",
+        "modality": "text+image+file+video->text",
         "output_modalities": [
           "text"
         ],
@@ -7931,11 +7927,10 @@
           "text",
           "image",
           "video",
-          "file",
-          "audio"
+          "file"
         ],
         "instruct_type": null,
-        "modality": "text+image+file+audio+video->text",
+        "modality": "text+image+file+video->text",
         "output_modalities": [
           "text"
         ],
