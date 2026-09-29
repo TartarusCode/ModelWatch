@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T14:02:28.852661Z",
+  "generated_at": "2026-09-29T14:32:28.613081Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3495,12 +3495,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000015876",
+        "completion": "0.0000001526",
         "image": null,
-        "input_cache_read": "0.000000015876",
+        "input_cache_read": "0.00000001526",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000007938",
+        "prompt": "0.0000000763",
         "request": null,
         "web_search": null
       },
@@ -3680,12 +3680,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001885812",
+        "completion": "0.000001872588",
         "image": null,
-        "input_cache_read": "0.0000000785755",
+        "input_cache_read": "0.0000000780245",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000942906",
+        "prompt": "0.000000936294",
         "request": null,
         "web_search": null
       },
@@ -3745,10 +3745,10 @@
       "pricing": {
         "completion": "0.0000042",
         "image": null,
-        "input_cache_read": "0.000000384",
+        "input_cache_read": "0.0000003799",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000048",
+        "prompt": "0.0000004749",
         "request": null,
         "web_search": null
       },
@@ -20685,10 +20685,10 @@
       "pricing": {
         "completion": "0.0000044",
         "image": null,
-        "input_cache_read": "0.0000000262",
+        "input_cache_read": "0.0000000246",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000328",
+        "prompt": "0.0000000307",
         "request": null,
         "web_search": null
       },
@@ -24343,10 +24343,10 @@
       "pricing": {
         "completion": "0.0000044",
         "image": null,
-        "input_cache_read": "0.0000001559",
+        "input_cache_read": "0.0000001871",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001949",
+        "prompt": "0.0000002339",
         "request": null,
         "web_search": null
       },
