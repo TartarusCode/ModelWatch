@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T18:02:24.582158Z",
+  "generated_at": "2026-09-29T18:32:25.551157Z",
   "models": [
     {
       "canonical_slug": "openai/gpt-6.1-sol-20260929",
@@ -35,13 +35,6 @@
       "detected_at": "2026-09-28T19:01:11.004768Z",
       "model_id": "anthropic/claude-sonnet-5.5:batch",
       "name": "Anthropic: Claude Sonnet 5.5 (batch)"
-    },
-    {
-      "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
-      "created": 1790618686,
-      "detected_at": "2026-09-28T18:31:10.745822Z",
-      "model_id": "anthropic/claude-sonnet-5.5",
-      "name": "Anthropic: Claude Sonnet 5.5"
     }
   ],
   "window_hours": 24
