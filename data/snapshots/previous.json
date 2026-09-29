@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T08:02:30.966187Z",
+  "generated_at": "2026-09-29T08:32:27.776403Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3750,10 +3750,10 @@
       "pricing": {
         "completion": "0.0000042",
         "image": null,
-        "input_cache_read": "0.00000032",
+        "input_cache_read": "0.000000384",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000004",
+        "prompt": "0.00000048",
         "request": null,
         "web_search": null
       },
@@ -16051,12 +16051,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.00000017",
         "image": null,
-        "input_cache_read": "0.000000075",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.000000037",
         "request": null,
         "web_search": null
       },
@@ -16087,7 +16087,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 117964
       }
     },
     "openai/gpt-oss-120b:batch": {
@@ -20690,10 +20690,10 @@
       "pricing": {
         "completion": "0.0000044",
         "image": null,
-        "input_cache_read": "0.0000000599",
+        "input_cache_read": "0.0000000501",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000749",
+        "prompt": "0.0000000626",
         "request": null,
         "web_search": null
       },
@@ -24355,7 +24355,7 @@
         "input_cache_read": "0.0000002599",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003249",
+        "prompt": "0.00000039",
         "request": null,
         "web_search": null
       },
