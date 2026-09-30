@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dbae273483f62ad27a94e2ce5e1954607cc665a5863ee017681e71e73502a7a5
-size 446
+{
+  "model_id": "kwaipilot/kat-coder-air-v2.5:free",
+  "points": [
+    {
+      "completion_per_million": "0",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0",
+      "recorded_at": "2026-07-20T21:31:21.122579Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:396bc92ef9108904a5a1f112455cbd8ed4fe1316ab8459fb1b11457c1db834a4
-size 467
+{
+  "model_id": "google/gemini-omni-flash-preview",
+  "points": [
+    {
+      "completion_per_million": "9.000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "1.5000000",
+      "recorded_at": "2026-07-24T15:31:10.989927Z",
+      "request_per_million": null,
+      "web_search_per_million": "14000.000"
+    }
+  ]
+}

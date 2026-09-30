@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ddddcffc9dc723b2eaab494c81bc5b279d1906c3ca6d5b4dc0e21a26c13ae26d
-size 807
+{
+  "model_id": "stealth/union-alpha",
+  "points": [
+    {
+      "completion_per_million": "0",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0",
+      "recorded_at": "2026-09-16T14:53:11.864031Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0",
+      "recorded_at": "2026-09-17T15:02:56.355569Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b531dc26c1faa58d152138e21beacf80e22485ec4c36921f0068083c6a2ffd10
-size 453
+{
+  "model_id": "minimax/minimax-m2.5:free",
+  "points": [
+    {
+      "completion_per_million": "0",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0",
+      "recorded_at": "2026-05-29T13:08:46.623582Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

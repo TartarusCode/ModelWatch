@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b58016b328748477bcaa51d43521d1bdc1531e1abd6d94f325bbae23b00c752a
-size 483
+{
+  "model_id": "deepseek/deepseek-r1-distill-qwen-32b",
+  "points": [
+    {
+      "completion_per_million": "0.29000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.29000000",
+      "recorded_at": "2026-05-29T13:08:46.623582Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

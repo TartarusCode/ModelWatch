@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca7bc29fdf899c0dda3bed44b001607dcc6ea29eb654415992256498189fd32a
-size 474
+{
+  "model_id": "nex-agi/deepseek-v3.1-nex-n1",
+  "points": [
+    {
+      "completion_per_million": "0.5000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.135000000",
+      "recorded_at": "2026-05-29T13:08:46.623582Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

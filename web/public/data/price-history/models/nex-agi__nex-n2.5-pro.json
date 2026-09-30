@@ -1,3 +1,60 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:19a174d686251becbb2cc79392554ccb218f294d38bc0a7f20820858537c5dff
-size 2073
+{
+  "model_id": "nex-agi/nex-n2.5-pro",
+  "points": [
+    {
+      "completion_per_million": "0.25000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.015000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.075000000",
+      "recorded_at": "2026-09-22T04:31:31.082648Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.25000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.015000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.075000000",
+      "recorded_at": "2026-09-23T04:32:24.077331Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.25000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.015000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.075000000",
+      "recorded_at": "2026-09-24T04:32:25.688394Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.25000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.015000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.075000000",
+      "recorded_at": "2026-09-28T16:02:27.412495Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.25000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.015000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.075000000",
+      "recorded_at": "2026-09-29T16:32:28.165454Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

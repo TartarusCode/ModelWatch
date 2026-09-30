@@ -69,7 +69,7 @@ Implemented in `modelwatch/new_models.py`:
 ## Gotchas
 
 - OpenRouter uses per-token price `-1` for routers/variable pricing (e.g. `openrouter/auto`). Treat as "Varies", never multiply by 1M.
-- Price history in `web/public/data/price-history/` — per-model JSON under `models/` (**Git LFS**); `index.json` is small and not LFS. Append on price change only; **24h heartbeat** when unchanged (keeps MA window). Up to 500 points per model. UI lazy-loads one model file on the detail page. Build job CI checkout uses `lfs: true`; test-and-lint does not.
+- Price history in `web/public/data/price-history/` — per-model JSON under `models/` (plain git; LFS was dropped once history was split per model — 581 small append-only files cost more in LFS round trips than in pack deltas); `index.json` sits alongside them. Append on price change only; **24h heartbeat** when unchanged (keeps MA window). Up to 500 points per model. UI lazy-loads one model file on the detail page.
 - Detail page **Free tier** badge (`web/src/lib/pricing.ts` `isFreeTierModel`) is display-only — uses current pricing, not history; Python `is_free_tier_model` is authoritative for the build pipeline.
 - **Web search display:** OpenRouter stores `web_search` in the same per-unit string as tokens; ×1M yields useless figures (e.g. `$14000/M`). UI shows `$/search` when `web_search` ≥ `$1/M` (`WEB_SEARCH_PER_SEARCH_THRESHOLD_PER_MILLION` in `web/src/lib/pricing.ts`). Storage/history remain per-million.
 - First build has no price history → no price changes until enough history points accumulate (≥3 within 7 days).

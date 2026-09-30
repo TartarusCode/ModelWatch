@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f4d46ef9e51900e6f22c128f38a98f1b8d5af147efc3696d9e91cecdc1f5a903
-size 873
+{
+  "model_id": "openai/gpt-4-1106-preview",
+  "points": [
+    {
+      "completion_per_million": "30.00000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "10.00000",
+      "recorded_at": "2026-05-29T13:08:46.623582Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "30.00000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "10.00000",
+      "recorded_at": "2026-05-29T22:56:00.366697Z",
+      "request_per_million": null,
+      "web_search_per_million": "10000.00"
+    }
+  ]
+}

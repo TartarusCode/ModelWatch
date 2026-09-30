@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:150e35e406e6a88948b0788cf6a552edcabfe1fd401a902642c4144e2fc529b3
-size 474
+{
+  "model_id": "meta-llama/llama-guard-3-8b",
+  "points": [
+    {
+      "completion_per_million": "0.03000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.484000000",
+      "recorded_at": "2026-05-29T13:08:46.623582Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

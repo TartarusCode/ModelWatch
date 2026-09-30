@@ -1,3 +1,93 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e74cdc6aec38367e43b160fc243ab60ce1d45c485a461befe730ae45a1d0fa1c
-size 3204
+{
+  "model_id": "mistralai/ministral-8b",
+  "points": [
+    {
+      "completion_per_million": "0.11000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.11000000",
+      "recorded_at": "2026-08-20T00:42:52.726066Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.11000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.11000000",
+      "recorded_at": "2026-08-21T00:47:00.656938Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.11000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.11000000",
+      "recorded_at": "2026-08-22T01:13:56.715228Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.11000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.11000000",
+      "recorded_at": "2026-08-23T01:19:02.444874Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.11000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.11000000",
+      "recorded_at": "2026-08-24T01:31:25.729914Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.11000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.11000000",
+      "recorded_at": "2026-08-25T01:44:32.448012Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.11000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.11000000",
+      "recorded_at": "2026-08-26T01:47:19.411342Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.11000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.11000000",
+      "recorded_at": "2026-08-27T02:09:34.121398Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

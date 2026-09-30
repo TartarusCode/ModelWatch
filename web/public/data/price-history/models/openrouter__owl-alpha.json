@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6bde4fd39a96ad9c80c7aca0671f3311b7fc42534f4bebb0fb24591391e5f437
-size 448
+{
+  "model_id": "openrouter/owl-alpha",
+  "points": [
+    {
+      "completion_per_million": "0",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0",
+      "recorded_at": "2026-06-02T13:02:24.977783Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

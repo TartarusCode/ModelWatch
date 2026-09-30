@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5c25b94a480dbc75c7538bf29c709a88165d2b966a4be1cd7b951c617ad7679f
-size 451
+{
+  "model_id": "nex-agi/nex-n2-pro:free",
+  "points": [
+    {
+      "completion_per_million": "0",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0",
+      "recorded_at": "2026-06-08T19:09:42.093165Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

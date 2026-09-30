@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c230241becb59058c48649be34406e7cda7a172e1db26348fab3790c6670c45c
-size 467
+{
+  "model_id": "aion-labs/aion-1.0-mini",
+  "points": [
+    {
+      "completion_per_million": "1.4000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.7000000",
+      "recorded_at": "2026-06-27T04:00:56.100966Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:374879a1f8e84489100684d6516f2d4d6e44b638c41be4689d032b262ba5042a
-size 877
+{
+  "model_id": "mistralai/devstral-medium",
+  "points": [
+    {
+      "completion_per_million": "2.000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.4000000",
+      "recorded_at": "2026-05-29T13:08:46.623582Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.04000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.4000000",
+      "recorded_at": "2026-05-29T22:56:00.366697Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

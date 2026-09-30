@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8eb8d40d3fde4d919c396ef7316903f32c2ea6e52363f8ac9221b49818512a20
-size 469
+{
+  "model_id": "openai/gpt-6.1-sol-pro",
+  "points": [
+    {
+      "completion_per_million": "10.00000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.1000000",
+      "input_cache_write_per_million": "2.5000000",
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "2.000000",
+      "recorded_at": "2026-09-29T18:02:24.582158Z",
+      "request_per_million": null,
+      "web_search_per_million": "10000.00"
+    }
+  ]
+}

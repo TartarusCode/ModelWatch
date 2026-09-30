@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3eefcd67e18217cbe6f4a76cd9e11fc575c948646ff8b91cad39ea83497b6a8e
-size 1411
+{
+  "model_id": "google/gemini-2.5-flash-lite-preview-09-2025",
+  "points": [
+    {
+      "completion_per_million": "0.4000000",
+      "image_per_million": "0.1000000",
+      "input_cache_read_per_million": "0.01000000",
+      "input_cache_write_per_million": "0.08333333333333334000000",
+      "internal_reasoning_per_million": "0.4000000",
+      "prompt_per_million": "0.1000000",
+      "recorded_at": "2026-06-27T10:01:07.502716Z",
+      "request_per_million": null,
+      "web_search_per_million": "14000.000"
+    },
+    {
+      "completion_per_million": "0.4000000",
+      "image_per_million": "0.1000000",
+      "input_cache_read_per_million": "0.01000000",
+      "input_cache_write_per_million": "0.08333333333333334000000",
+      "internal_reasoning_per_million": "0.4000000",
+      "prompt_per_million": "0.1000000",
+      "recorded_at": "2026-07-07T19:40:35.557605Z",
+      "request_per_million": null,
+      "web_search_per_million": "14000.000"
+    },
+    {
+      "completion_per_million": "0.4000000",
+      "image_per_million": "0.1000000",
+      "input_cache_read_per_million": "0.01000000",
+      "input_cache_write_per_million": "0.08333333333333334000000",
+      "internal_reasoning_per_million": "0.4000000",
+      "prompt_per_million": "0.1000000",
+      "recorded_at": "2026-07-08T20:01:37.536436Z",
+      "request_per_million": null,
+      "web_search_per_million": "14000.000"
+    }
+  ]
+}

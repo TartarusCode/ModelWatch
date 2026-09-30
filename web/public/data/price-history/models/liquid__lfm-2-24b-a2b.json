@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ace96176900ea060f136c95a5bab4acd72620b8fa89ebdaa7a46de3663f6054b
-size 1237
+{
+  "model_id": "liquid/lfm-2-24b-a2b",
+  "points": [
+    {
+      "completion_per_million": "0.12000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.03000000",
+      "recorded_at": "2026-06-27T10:01:07.502716Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.12000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.03000000",
+      "recorded_at": "2026-07-07T19:40:35.557605Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.12000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.03000000",
+      "recorded_at": "2026-07-08T20:01:37.536436Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

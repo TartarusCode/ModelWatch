@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6c0fc502b9d946d9f4ba79fc2c58e5819b6d2858d4964ac390969cf5f28b0f91
-size 445
+{
+  "model_id": "openrouter/auto",
+  "points": [
+    {
+      "completion_per_million": null,
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": null,
+      "recorded_at": "2026-05-29T13:08:46.623582Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

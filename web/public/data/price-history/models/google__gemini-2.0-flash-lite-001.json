@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5bbc14d1a4947364de2db590b2c530459796ccbb58952643f7f25aa3dd756978
-size 914
+{
+  "model_id": "google/gemini-2.0-flash-lite-001",
+  "points": [
+    {
+      "completion_per_million": "0.3000000",
+      "image_per_million": "0.075000000",
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.075000000",
+      "recorded_at": "2026-05-29T13:08:46.623582Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.3000000",
+      "image_per_million": "0.075000000",
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": "0.3000000",
+      "prompt_per_million": "0.075000000",
+      "recorded_at": "2026-05-29T22:56:00.366697Z",
+      "request_per_million": null,
+      "web_search_per_million": "14000.000"
+    }
+  ]
+}

@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1f3f8af16c3a1019bbbc6f2c427de37f7d739bdd3434e0644ae50c254db75f74
-size 1255
+{
+  "model_id": "poolside/laguna-xs.2",
+  "points": [
+    {
+      "completion_per_million": "0.2000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.05000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.1000000",
+      "recorded_at": "2026-06-27T10:01:07.502716Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.2000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.05000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.1000000",
+      "recorded_at": "2026-07-07T19:40:35.557605Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.2000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.05000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.1000000",
+      "recorded_at": "2026-07-08T20:01:37.536436Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

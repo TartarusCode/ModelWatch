@@ -1,3 +1,60 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5ea7607f21cacaac7bee467f387b7d9015fdd814c218d1e7d17e53d5c3275c02
-size 2033
+{
+  "model_id": "meta-llama/llama-3-8b-instruct",
+  "points": [
+    {
+      "completion_per_million": "0.14000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.14000000",
+      "recorded_at": "2026-06-27T10:01:07.502716Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.14000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.14000000",
+      "recorded_at": "2026-07-07T19:40:35.557605Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.14000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.14000000",
+      "recorded_at": "2026-07-08T20:01:37.536436Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.14000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.14000000",
+      "recorded_at": "2026-07-09T20:31:20.609742Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0.14000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.14000000",
+      "recorded_at": "2026-07-10T20:31:38.836527Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

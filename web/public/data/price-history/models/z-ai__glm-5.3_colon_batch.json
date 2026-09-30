@@ -1,3 +1,247 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bf50862571e4db362915f7faad52649b4398c309e33f086367b09051305e1de3
-size 8828
+{
+  "model_id": "z-ai/glm-5.3:batch",
+  "points": [
+    {
+      "completion_per_million": "2.2000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.13000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.7000000",
+      "recorded_at": "2026-09-08T16:01:34.999574Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.2000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.13000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.7000000",
+      "recorded_at": "2026-09-09T16:31:17.022964Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.2000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.13000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.7000000",
+      "recorded_at": "2026-09-10T16:31:30.648455Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.2000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.13000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.7000000",
+      "recorded_at": "2026-09-11T17:01:59.262799Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.2000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.13000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.7000000",
+      "recorded_at": "2026-09-12T17:31:15.435786Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.2000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.13000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.7000000",
+      "recorded_at": "2026-09-13T18:01:50.359422Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.2000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.13000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.7000000",
+      "recorded_at": "2026-09-14T18:01:51.063668Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.2000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.13000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.7000000",
+      "recorded_at": "2026-09-15T18:31:09.606565Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.2000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.13000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.7000000",
+      "recorded_at": "2026-09-16T18:37:48.560791Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.2000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.13000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.7000000",
+      "recorded_at": "2026-09-17T18:44:20.960668Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.2000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.13000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.7000000",
+      "recorded_at": "2026-09-18T19:01:25.079178Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.2000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.13000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.7000000",
+      "recorded_at": "2026-09-19T19:31:16.531201Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.2000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.13000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.7000000",
+      "recorded_at": "2026-09-20T20:01:15.857367Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.2000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.13000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.7000000",
+      "recorded_at": "2026-09-21T20:31:29.883425Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.4000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.12000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.72000000",
+      "recorded_at": "2026-09-22T15:32:21.822771Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.1000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.45000000",
+      "recorded_at": "2026-09-23T15:32:23.243190Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.1000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.45000000",
+      "recorded_at": "2026-09-24T15:32:25.261337Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.1000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.45000000",
+      "recorded_at": "2026-09-25T15:32:30.475347Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.1000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.45000000",
+      "recorded_at": "2026-09-26T16:02:31.362415Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.1000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.45000000",
+      "recorded_at": "2026-09-27T16:32:24.671177Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.1000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.45000000",
+      "recorded_at": "2026-09-28T16:32:25.216882Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "2.000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.1000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.45000000",
+      "recorded_at": "2026-09-29T16:32:28.165454Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

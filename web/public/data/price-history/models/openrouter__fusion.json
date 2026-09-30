@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a576846c19b2bfa51846d4a3252f8a21e5ed5074cc0e892387b6a80d771f3e9f
-size 447
+{
+  "model_id": "openrouter/fusion",
+  "points": [
+    {
+      "completion_per_million": null,
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": null,
+      "recorded_at": "2026-06-02T21:24:46.692302Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

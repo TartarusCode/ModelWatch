@@ -1,3 +1,93 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cc20d84d3e2664bd277549ef464a269d53c3530bdbce30cd6012b0fe6fe84450
-size 3327
+{
+  "model_id": "anthropic/claude-opus-5.5",
+  "points": [
+    {
+      "completion_per_million": "20.00000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.2000000",
+      "input_cache_write_per_million": "5.000000",
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "4.000000",
+      "recorded_at": "2026-09-22T17:03:06.002515Z",
+      "request_per_million": null,
+      "web_search_per_million": "10000.00"
+    },
+    {
+      "completion_per_million": "20.00000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.2000000",
+      "input_cache_write_per_million": "5.000000",
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "4.000000",
+      "recorded_at": "2026-09-23T17:32:23.122655Z",
+      "request_per_million": null,
+      "web_search_per_million": "10000.00"
+    },
+    {
+      "completion_per_million": "20.00000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.2000000",
+      "input_cache_write_per_million": "5.000000",
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "4.000000",
+      "recorded_at": "2026-09-24T17:32:30.170683Z",
+      "request_per_million": null,
+      "web_search_per_million": "10000.00"
+    },
+    {
+      "completion_per_million": "20.00000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.2000000",
+      "input_cache_write_per_million": "5.000000",
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "4.000000",
+      "recorded_at": "2026-09-25T18:02:25.426488Z",
+      "request_per_million": null,
+      "web_search_per_million": "10000.00"
+    },
+    {
+      "completion_per_million": "20.00000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.2000000",
+      "input_cache_write_per_million": "5.000000",
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "4.000000",
+      "recorded_at": "2026-09-26T18:02:25.631689Z",
+      "request_per_million": null,
+      "web_search_per_million": "10000.00"
+    },
+    {
+      "completion_per_million": "20.00000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.2000000",
+      "input_cache_write_per_million": "5.000000",
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "4.000000",
+      "recorded_at": "2026-09-27T18:02:31.331594Z",
+      "request_per_million": null,
+      "web_search_per_million": "10000.00"
+    },
+    {
+      "completion_per_million": "20.00000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.2000000",
+      "input_cache_write_per_million": "5.000000",
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "4.000000",
+      "recorded_at": "2026-09-28T18:32:27.563432Z",
+      "request_per_million": null,
+      "web_search_per_million": "10000.00"
+    },
+    {
+      "completion_per_million": "20.00000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.2000000",
+      "input_cache_write_per_million": "5.000000",
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "4.000000",
+      "recorded_at": "2026-09-29T19:02:22.952185Z",
+      "request_per_million": null,
+      "web_search_per_million": "10000.00"
+    }
+  ]
+}

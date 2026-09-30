@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0d5bb27f1b8e54725a04900df496e73f0d4b8bbf09be9ffcd41ac249fd8127e5
-size 473
+{
+  "model_id": "openai/gpt-6.1-sol:batch",
+  "points": [
+    {
+      "completion_per_million": "5.000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.05000000",
+      "input_cache_write_per_million": "1.25000000",
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "1.000000",
+      "recorded_at": "2026-09-29T18:02:24.582158Z",
+      "request_per_million": null,
+      "web_search_per_million": "10000.00"
+    }
+  ]
+}

@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0970c29f1eea3227db39cd6032de8f64da1a74c62c12efa09430fd3b3168e694
-size 883
+{
+  "model_id": "anthropic/claude-sonnet-5.5",
+  "points": [
+    {
+      "completion_per_million": "10.00000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.2000000",
+      "input_cache_write_per_million": "2.5000000",
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "2.000000",
+      "recorded_at": "2026-09-28T18:32:27.563432Z",
+      "request_per_million": null,
+      "web_search_per_million": "10000.00"
+    },
+    {
+      "completion_per_million": "10.00000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.2000000",
+      "input_cache_write_per_million": "2.5000000",
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "2.000000",
+      "recorded_at": "2026-09-29T19:02:22.952185Z",
+      "request_per_million": null,
+      "web_search_per_million": "10000.00"
+    }
+  ]
+}

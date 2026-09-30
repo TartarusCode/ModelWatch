@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:27ec05994e7d3c36406602513f8dad98784271a10d59af4af0ce53db755e42b7
-size 1199
+{
+  "model_id": "deepseek/deepseek-v4-flash-0731:free",
+  "points": [
+    {
+      "completion_per_million": "0",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0",
+      "recorded_at": "2026-09-18T01:31:17.619417Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0",
+      "recorded_at": "2026-09-19T01:31:20.674714Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "0",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0",
+      "recorded_at": "2026-09-20T02:01:30.558440Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

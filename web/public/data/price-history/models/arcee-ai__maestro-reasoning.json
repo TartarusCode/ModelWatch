@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e22fccf255e45b23b04388d2ffd2fa81add082fffd1bbed4bbe3e4a75318f814
-size 470
+{
+  "model_id": "arcee-ai/maestro-reasoning",
+  "points": [
+    {
+      "completion_per_million": "3.3000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.9000000",
+      "recorded_at": "2026-05-29T13:08:46.623582Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}

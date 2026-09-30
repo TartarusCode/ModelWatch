@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1198af2ece0bb26fbcb7eda87f987fc34a1f3398d14f9338d73f69db5aaa714e
-size 470
+{
+  "model_id": "baidu/ernie-4.5-300b-a47b",
+  "points": [
+    {
+      "completion_per_million": "1.1000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": null,
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.28000000",
+      "recorded_at": "2026-05-29T13:08:46.623582Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    }
+  ]
+}
