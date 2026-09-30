@@ -11170,7 +11170,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-09-30T17:01:03.490250Z",
+  "generated_at": "2026-09-30T17:31:06.457097Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -29708,12 +29708,12 @@
         "anchor": "0.3000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.3000000",
+        "pending_builds": 1,
+        "pending_price": "0.36000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "z-ai/glm-5.2:batch": {
