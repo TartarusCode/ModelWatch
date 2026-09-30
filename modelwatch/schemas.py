@@ -194,6 +194,9 @@ class EnrichedModel(BaseModel):
     model: ModelSnapshot
     benchmarks: ModelBenchmarks
     provider_stats: ModelProviderStats
+    # When the benchmark payloads above were fetched; they are reused across
+    # builds until they age past the refresh window.
+    benchmarks_fetched_at: datetime | None = None
 
 
 ChangeDirection = Literal["cut", "hike"]

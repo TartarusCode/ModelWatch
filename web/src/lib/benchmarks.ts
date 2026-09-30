@@ -240,3 +240,30 @@ export function formatMetricValue(key: string, value: number | null | undefined)
   }
   return `${(value * 100).toFixed(1)}%`;
 }
+
+/**
+ * "3h ago" for benchmark payloads, which the build refreshes daily rather than
+ * on every run. Returns null when there is no usable timestamp.
+ */
+export function benchmarkFreshnessLabel(
+  fetchedAt: string | null | undefined,
+  now: Date = new Date(),
+): string | null {
+  if (!fetchedAt) {
+    return null;
+  }
+  const fetched = new Date(fetchedAt);
+  const ms = now.getTime() - fetched.getTime();
+  if (!Number.isFinite(ms) || ms < 0) {
+    return null;
+  }
+  const minutes = Math.floor(ms / 60_000);
+  if (minutes < 60) {
+    return `${minutes}m ago`;
+  }
+  const hours = Math.floor(minutes / 60);
+  if (hours < 24) {
+    return `${hours}h ago`;
+  }
+  return `${Math.floor(hours / 24)}d ago`;
+}

@@ -1,7 +1,8 @@
 import asyncio
 import json
 import logging
-from datetime import UTC, datetime
+import os
+from datetime import UTC, datetime, timedelta
 from decimal import Decimal
 from pathlib import Path
 
@@ -10,6 +11,7 @@ from pydantic import ValidationError
 from modelwatch.aa_scores import summarize_artificial_analysis
 from modelwatch.fetch import (
     fetch_all_benchmarks,
+    fetch_all_effective_pricing,
     fetch_all_provider_endpoints,
     fetch_models_async,
 )
@@ -73,6 +75,8 @@ EVENTS_PATH = DATA_DIR / "price-change-events.jsonl"
 NEW_MODEL_EVENTS_PATH = DATA_DIR / "new-model-events.jsonl"
 MAX_EVENTS = 500
 DESCRIPTION_MAX_LEN = 500
+DEFAULT_BENCHMARK_REFRESH_HOURS = 24.0
+BENCHMARK_REFRESH_HOURS_ENV = "MODELWATCH_BENCHMARK_REFRESH_HOURS"
 logger = logging.getLogger(__name__)
 
 
@@ -192,6 +196,76 @@ def _load_previous() -> PreviousSnapshot | None:
         return None
     payload = json.loads(SNAPSHOT_PATH.read_text(encoding="utf-8"))
     return PreviousSnapshot.model_validate(payload)
+
+
+def _benchmark_refresh_hours() -> float:
+    """How long fetched benchmark payloads stay valid before refetching.
+
+    Benchmark data (Artificial Analysis, Design Arena, routing scores) changes
+    far more slowly than prices, and the crawl that fetches it is the most
+    expensive part of a build, so it refreshes at most once a day by default.
+    Set ``MODELWATCH_BENCHMARK_REFRESH_HOURS=0`` to refresh on every build.
+    """
+    raw = os.environ.get(BENCHMARK_REFRESH_HOURS_ENV)
+    if raw is None:
+        return DEFAULT_BENCHMARK_REFRESH_HOURS
+    try:
+        return float(raw)
+    except ValueError:
+        logger.warning("Ignoring invalid %s=%r", BENCHMARK_REFRESH_HOURS_ENV, raw)
+        return DEFAULT_BENCHMARK_REFRESH_HOURS
+
+
+def _benchmarks_have_errors(benchmarks: dict[str, object]) -> bool:
+    for key in (
+        "design_arena_status",
+        "artificial_analysis_status",
+        "benchmark_scores_status",
+    ):
+        status = benchmarks.get(key)
+        if isinstance(status, dict) and status.get("status") == "error":
+            return True
+    return False
+
+
+def _load_cached_benchmarks() -> dict[str, tuple[ModelBenchmarks, datetime]]:
+    """Reusable benchmark payloads from the last build, keyed by canonical slug.
+
+    The previous ``models.json`` is the cache: it already carries every
+    enriched model, so nothing is stored twice. Entries that recorded a failed
+    fetch are skipped so the next build retries them.
+    """
+    path = DATA_DIR / "models.json"
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        logger.warning("Ignoring unreadable benchmark cache: %s", exc)
+        return {}
+    cached: dict[str, tuple[ModelBenchmarks, datetime]] = {}
+    for entry in payload.get("models", []):
+        if not isinstance(entry, dict):
+            continue
+        raw_benchmarks = entry.get("benchmarks")
+        raw_model = entry.get("model")
+        raw_fetched_at = entry.get("benchmarks_fetched_at")
+        if (
+            not isinstance(raw_benchmarks, dict)
+            or not isinstance(raw_model, dict)
+            or not isinstance(raw_fetched_at, str)
+        ):
+            continue
+        slug = raw_model.get("canonical_slug")
+        if not isinstance(slug, str) or _benchmarks_have_errors(raw_benchmarks):
+            continue
+        try:
+            fetched_at = datetime.fromisoformat(raw_fetched_at)
+            benchmarks = ModelBenchmarks.model_validate(raw_benchmarks)
+        except (ValidationError, ValueError):
+            continue
+        cached[slug] = (benchmarks, fetched_at)
+    return cached
 
 
 def _addition_to_event(
@@ -336,13 +410,33 @@ async def run_build() -> None:
 
     canonical_slugs = sorted({model.canonical_slug for model in snapshots})
     model_ids = [model.id for model in snapshots]
-    benchmark_raw, endpoints_raw = await asyncio.gather(
-        fetch_all_benchmarks(canonical_slugs),
+
+    refresh_hours = _benchmark_refresh_hours()
+    cached_benchmarks: dict[str, tuple[ModelBenchmarks, datetime]] = {}
+    refresh_slugs: list[str] = []
+    benchmark_cache = _load_cached_benchmarks()
+    for slug in canonical_slugs:
+        cached = benchmark_cache.get(slug)
+        if cached is not None and started - cached[1] < timedelta(hours=refresh_hours):
+            cached_benchmarks[slug] = cached
+        else:
+            refresh_slugs.append(slug)
+    logger.info(
+        "Benchmarks: %s of %s slugs refreshed (refresh window %sh), %s reused",
+        len(refresh_slugs),
+        len(canonical_slugs),
+        refresh_hours,
+        len(cached_benchmarks),
+    )
+
+    benchmark_raw, effective_pricing_records, endpoints_raw = await asyncio.gather(
+        fetch_all_benchmarks(refresh_slugs),
+        fetch_all_effective_pricing(sorted(cached_benchmarks)),
         fetch_all_provider_endpoints(model_ids),
     )
     benchmark_by_canonical = {
         str(item["canonical_slug"]): item
-        for item in benchmark_raw
+        for item in [*benchmark_raw, *effective_pricing_records]
         if isinstance(item.get("canonical_slug"), str)
     }
     endpoints_by_model = {
@@ -359,10 +453,15 @@ async def run_build() -> None:
         effective_pricing_raw = raw_bench.get("effective_pricing")
         endpoints_payload = endpoints_by_model.get(model.id, {})
         provider_endpoints_raw = endpoints_payload.get("endpoints")
-        benchmarks = _attach_aa_summary(
-            _build_benchmarks(raw_bench),
-            model_id=model.id,
-        )
+        reused = cached_benchmarks.get(model.canonical_slug)
+        if reused is None:
+            benchmarks = _attach_aa_summary(
+                _build_benchmarks(raw_bench),
+                model_id=model.id,
+            )
+            benchmarks_fetched_at = started
+        else:
+            benchmarks, benchmarks_fetched_at = reused
         provider_stats = build_provider_stats(
             effective_pricing_raw=effective_pricing_raw
             if isinstance(effective_pricing_raw, dict)
@@ -392,6 +491,7 @@ async def run_build() -> None:
                 model=model,
                 benchmarks=benchmarks,
                 provider_stats=provider_stats,
+                benchmarks_fetched_at=benchmarks_fetched_at,
             )
         )
 

@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  benchmarkFreshnessLabel,
   formatMetricValue,
   getAaSummaryScores,
   parseArtificialAnalysisRecords,
@@ -123,5 +124,21 @@ describe("formatMetricValue", () => {
     expect(formatMetricValue("artificial_analysis_intelligence_index", 39.5)).toBe("39.5");
     expect(formatMetricValue("hle", null)).toBe("—");
     expect(formatMetricValue("hle", undefined)).toBe("—");
+  });
+});
+
+describe("benchmarkFreshnessLabel", () => {
+  const now = new Date("2026-09-30T12:00:00Z");
+
+  it("reports the age of the benchmark payload", () => {
+    expect(benchmarkFreshnessLabel("2026-09-30T11:40:00Z", now)).toBe("20m ago");
+    expect(benchmarkFreshnessLabel("2026-09-30T09:00:00Z", now)).toBe("3h ago");
+    expect(benchmarkFreshnessLabel("2026-09-28T12:00:00Z", now)).toBe("2d ago");
+  });
+
+  it("returns null without a usable timestamp", () => {
+    expect(benchmarkFreshnessLabel(null, now)).toBeNull();
+    expect(benchmarkFreshnessLabel(undefined, now)).toBeNull();
+    expect(benchmarkFreshnessLabel("not-a-date", now)).toBeNull();
   });
 });

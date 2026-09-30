@@ -201,6 +201,11 @@ export interface EnrichedModel {
   model: ModelSnapshot;
   benchmarks: ModelBenchmarks;
   provider_stats: ModelProviderStats;
+  /**
+   * When the benchmark payloads were fetched. Benchmarks refresh at most once
+   * a day, so this is usually older than the model's prices.
+   */
+  benchmarks_fetched_at?: string | null;
 }
 
 export interface ModelsOutput {

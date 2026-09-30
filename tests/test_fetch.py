@@ -246,3 +246,29 @@ def test_refetch_benchmark_failures_is_a_no_op_without_failures() -> None:
             )
 
     assert asyncio.run(run()) == 0
+
+
+def test_fetch_all_effective_pricing_reports_each_slug(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    async def fake_fetch(
+        client: httpx.AsyncClient,
+        slug: str,
+        retries: int,
+    ) -> tuple[object, str | None]:
+        return {"provider_summaries": []}, None
+
+    monkeypatch.setattr(fetch, "fetch_effective_pricing", fake_fetch)
+
+    async def run() -> list[dict[str, object]]:
+        return await fetch.fetch_all_effective_pricing(["acme/demo", "acme/other"])
+
+    records = asyncio.run(run())
+    assert [record["canonical_slug"] for record in records] == [
+        "acme/demo",
+        "acme/other",
+    ]
+    assert all(record["effective_pricing_error"] is None for record in records)
+    assert all(
+        record["effective_pricing"] == {"provider_summaries": []} for record in records
+    )

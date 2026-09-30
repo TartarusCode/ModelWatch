@@ -278,6 +278,10 @@ def _run_build_once(raw_model: dict[str, object]) -> None:
             new=AsyncMock(return_value=benchmark_payload),
         ),
         patch(
+            "modelwatch.build.fetch_all_effective_pricing",
+            new=AsyncMock(return_value=[]),
+        ),
+        patch(
             "modelwatch.build.fetch_all_provider_endpoints",
             new=AsyncMock(return_value=endpoints_payload),
         ),
@@ -416,3 +420,123 @@ def test_off_peak_only_change_is_reported_as_an_off_peak_change(
     assert schedule is not None
     assert schedule.standard["prompt"] == "0.0000003"
     assert schedule.minimum["prompt"] == "0.0000001"
+
+
+def _benchmark_payload(slug: str, *, intelligence: float) -> list[dict[str, object]]:
+    return [
+        {
+            "canonical_slug": slug,
+            "artificial_analysis": [
+                {
+                    "slug": slug,
+                    "aa_name": "Demo",
+                    "benchmark_data": {
+                        "evaluations": {
+                            "artificial_analysis_intelligence_index": intelligence,
+                        }
+                    },
+                }
+            ],
+            "design_arena": {"records": []},
+            "benchmark_scores": None,
+        }
+    ]
+
+
+def _effective_pricing_payload(slug: str) -> list[dict[str, object]]:
+    return [
+        {
+            "canonical_slug": slug,
+            "effective_pricing": None,
+            "effective_pricing_error": None,
+        }
+    ]
+
+
+def _build_with(
+    raw_model: dict[str, object],
+    benchmarks: AsyncMock,
+    effective_pricing: AsyncMock,
+) -> None:
+    with (
+        patch(
+            "modelwatch.build.fetch_models_async",
+            new=AsyncMock(return_value=[raw_model]),
+        ),
+        patch("modelwatch.build.fetch_all_benchmarks", new=benchmarks),
+        patch(
+            "modelwatch.build.fetch_all_effective_pricing",
+            new=effective_pricing,
+        ),
+        patch(
+            "modelwatch.build.fetch_all_provider_endpoints",
+            new=AsyncMock(return_value=[]),
+        ),
+    ):
+        import asyncio
+
+        asyncio.run(run_build())
+
+
+def _intelligence_from_models_json(path: Path) -> object:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    evaluations = payload["models"][0]["benchmarks"]["artificial_analysis"][0][
+        "benchmark_data"
+    ]["evaluations"]
+    return evaluations["artificial_analysis_intelligence_index"]
+
+
+def test_benchmarks_are_reused_until_the_refresh_window_ends(
+    build_paths: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Benchmark payloads survive a build; effective pricing does not."""
+    raw_model = _raw_model(_minimal_snapshot())
+    slug = str(raw_model["canonical_slug"])
+
+    first = AsyncMock(return_value=_benchmark_payload(slug, intelligence=41.0))
+    _build_with(raw_model, first, AsyncMock(return_value=[]))
+    assert first.await_args is not None
+    assert first.await_args.args[0] == [slug]
+    models_output = ModelsOutput.model_validate_json(
+        (build_paths / "models.json").read_text(encoding="utf-8"),
+    )
+    fetched_at = models_output.models[0].benchmarks_fetched_at
+    assert fetched_at is not None
+
+    second = AsyncMock(return_value=_benchmark_payload(slug, intelligence=99.0))
+    effective_pricing = AsyncMock(return_value=_effective_pricing_payload(slug))
+    _build_with(raw_model, second, effective_pricing)
+
+    assert second.await_args is not None
+    assert second.await_args.args[0] == []
+    assert effective_pricing.await_args is not None
+    assert effective_pricing.await_args.args[0] == [slug]
+    models_output = ModelsOutput.model_validate_json(
+        (build_paths / "models.json").read_text(encoding="utf-8"),
+    )
+    assert models_output.models[0].benchmarks_fetched_at == fetched_at
+    assert _intelligence_from_models_json(build_paths / "models.json") == 41.0
+
+    monkeypatch.setenv("MODELWATCH_BENCHMARK_REFRESH_HOURS", "0")
+    third = AsyncMock(return_value=_benchmark_payload(slug, intelligence=52.5))
+    _build_with(raw_model, third, AsyncMock(return_value=[]))
+
+    assert third.await_args is not None
+    assert third.await_args.args[0] == [slug]
+    assert _intelligence_from_models_json(build_paths / "models.json") == 52.5
+
+
+def test_failed_benchmark_fetches_are_retried_on_the_next_build(
+    build_paths: Path,
+) -> None:
+    raw_model = _raw_model(_minimal_snapshot())
+    slug = str(raw_model["canonical_slug"])
+    _run_build_once(raw_model)
+
+    retry = AsyncMock(return_value=_benchmark_payload(slug, intelligence=41.0))
+    _build_with(raw_model, retry, AsyncMock(return_value=[]))
+
+    assert retry.await_args is not None
+    assert retry.await_args.args[0] == [slug]
+    assert _intelligence_from_models_json(build_paths / "models.json") == 41.0

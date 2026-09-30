@@ -383,6 +383,42 @@ async def fetch_all_benchmarks(
         return results
 
 
+async def fetch_all_effective_pricing(
+    canonical_slugs: list[str],
+    options: FetchOptions | None = None,
+) -> list[dict[str, object]]:
+    """Effective pricing for slugs whose benchmark payloads came from cache.
+
+    Effective pricing is observed, cache-aware pricing rather than a published
+    benchmark, so it stays on the per-build crawl while Artificial Analysis,
+    Design Arena and routing-score payloads are reused for up to a day.
+    """
+    opts = options or {}
+    api_key = opts.get("api_key") or os.environ.get("OPENROUTER_API_KEY")
+    concurrency = opts.get("concurrency", DEFAULT_CONCURRENCY)
+    timeout_seconds = opts.get("timeout_seconds", DEFAULT_TIMEOUT_SECONDS)
+    retries = opts.get("retries", DEFAULT_RETRIES)
+    semaphore = asyncio.Semaphore(concurrency)
+    headers = auth_headers(api_key)
+    timeout = httpx.Timeout(timeout_seconds)
+    async with httpx.AsyncClient(headers=headers, timeout=timeout) as client:
+
+        async def fetch_one(slug: str) -> dict[str, object]:
+            async with semaphore:
+                data, error = await fetch_effective_pricing(client, slug, retries)
+            return {
+                "canonical_slug": slug,
+                "effective_pricing": data,
+                "effective_pricing_error": error,
+            }
+
+        records = list(
+            await asyncio.gather(*(fetch_one(slug) for slug in canonical_slugs))
+        )
+        await _refetch_benchmark_failures(client, records, retries)
+        return records
+
+
 async def fetch_models_async(
     options: FetchOptions | None = None,
 ) -> list[dict[str, object]]:

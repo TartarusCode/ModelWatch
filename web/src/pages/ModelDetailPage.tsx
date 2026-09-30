@@ -8,6 +8,7 @@ import { PriceCell } from "../components/PriceCell";
 import { PriceHistoryPanel } from "../components/PriceHistoryPanel";
 import { ProviderBadge } from "../components/ProviderBadge";
 import { ProviderPricingPanel } from "../components/ProviderPricingPanel";
+import { benchmarkFreshnessLabel } from "../lib/benchmarks";
 import { fetchModelPriceHistory } from "../lib/data";
 import {
   formatPerMillionUsd,
@@ -123,6 +124,13 @@ export function ModelDetailPage({
   const benchmarkScoresStatus = benchmarks.benchmark_scores_status ?? {
     status: "empty" as const,
   };
+  const benchmarksRefreshedLabel = benchmarkFreshnessLabel(
+    enriched.benchmarks_fetched_at,
+  );
+  const hasBenchmarkData =
+    benchmarks.design_arena_status.status === "ok" ||
+    benchmarks.artificial_analysis_status.status === "ok" ||
+    benchmarkScoresStatus.status === "ok";
   const resolvedProviderStats = providerStats ?? {
     effective_pricing: null,
     effective_pricing_status: { status: "empty" as const },
@@ -280,6 +288,13 @@ export function ModelDetailPage({
       <ErrorBoundary label="Provider pricing">
         <ProviderPricingPanel providerStats={resolvedProviderStats} />
       </ErrorBoundary>
+
+      {hasBenchmarkData && benchmarksRefreshedLabel ? (
+        <p className="section-note">
+          Benchmark data (Artificial Analysis, Design Arena, routing scores)
+          refreshes daily — last updated {benchmarksRefreshedLabel}.
+        </p>
+      ) : null}
 
       {benchmarks.design_arena_status.status === "ok" &&
       benchmarks.design_arena ? (

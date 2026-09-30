@@ -100,6 +100,7 @@ def stabilize_enriched_model(model: EnrichedModel) -> EnrichedModel:
         model=stabilized_model,
         benchmarks=stabilized_benchmarks,
         provider_stats=stabilized_stats,
+        benchmarks_fetched_at=model.benchmarks_fetched_at,
     )
 
 
