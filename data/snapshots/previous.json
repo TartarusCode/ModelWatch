@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T20:01:21.432294Z",
+  "generated_at": "2026-09-30T20:31:09.740373Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -12726,7 +12726,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -12904,7 +12905,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -13019,7 +13021,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -13242,7 +13245,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -23007,7 +23011,32 @@
         "web_search": null
       },
       "pricing_schedule": null,
-      "supported_parameters": [],
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_completion_tokens",
+        "max_tokens",
+        "min_p",
+        "parallel_tool_calls",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_a",
+        "top_k",
+        "top_logprobs",
+        "top_p",
+        "verbosity"
+      ],
       "top_provider": {
         "context_length": null,
         "is_moderated": false,
@@ -24727,12 +24756,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.00000479",
+        "completion": "0.00000399",
         "image": null,
         "input_cache_read": "0.00000026",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000052",
+        "prompt": "0.000000624",
         "request": null,
         "web_search": null
       },
