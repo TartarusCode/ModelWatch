@@ -3,6 +3,7 @@ from modelwatch.aa_scores import (
     extract_aa_summary,
     pick_aa_record,
     pick_primary_aa_record,
+    summarize_artificial_analysis,
 )
 
 
@@ -169,3 +170,54 @@ def test_extract_aa_summary_returns_none_when_indices_missing() -> None:
     }
 
     assert extract_aa_summary(record) is None
+
+
+def test_extract_aa_summary_keeps_a_partial_index_set() -> None:
+    record: dict[str, object] = {
+        "aa_slug": "deepseek-v4-1-flash",
+        "aa_name": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+        "benchmark_data": {
+            "evaluations": {
+                "artificial_analysis_intelligence_index": 39.5,
+                "artificial_analysis_coding_index": None,
+                "artificial_analysis_agentic_index": None,
+                "gdpval_aa": 0.55,
+            }
+        },
+        "percentiles": {"intelligence_percentile": 79},
+    }
+
+    summary = extract_aa_summary(record)
+
+    assert summary is not None
+    assert summary.intelligence_index == 39.5
+    assert summary.intelligence_percentile == 79
+    assert summary.coding_index is None
+    assert summary.agentic_index is None
+    assert summary.variant_name == "DeepSeek V4.1 Flash (Reasoning, Max Effort)"
+
+
+def test_summarize_artificial_analysis_keeps_partial_indices() -> None:
+    records: list[dict[str, object]] = [
+        {
+            "aa_slug": "deepseek-v4-1-flash",
+            "aa_name": "DeepSeek V4.1 Flash (Reasoning, Max Effort)",
+            "openrouter_slug": None,
+            "heuristic_openrouter_slug": "deepseek/deepseek-v4.1-flash",
+            "benchmark_data": {
+                "evaluations": {
+                    "artificial_analysis_intelligence_index": 39.5,
+                    "artificial_analysis_coding_index": None,
+                    "artificial_analysis_agentic_index": None,
+                }
+            },
+        }
+    ]
+
+    summary = summarize_artificial_analysis(
+        records,
+        model_id="deepseek/deepseek-v4.1-flash",
+    )
+
+    assert summary is not None
+    assert summary.intelligence_index == 39.5

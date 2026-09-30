@@ -70,20 +70,22 @@ export interface BenchmarkFetchStatus {
 }
 
 export interface ArtificialAnalysisEvaluations {
-  artificial_analysis_intelligence_index?: number;
-  artificial_analysis_coding_index?: number;
-  artificial_analysis_agentic_index?: number;
-  gdpval_aa?: number;
-  aa_omniscience_accuracy?: number;
-  aa_omniscience_non_hallucination_rate?: number;
-  lcr?: number;
-  ifbench?: number;
-  gpqa?: number;
-  hle?: number;
-  scicode?: number;
-  terminalbench_hard?: number;
-  critpt?: number;
-  tau2?: number;
+  // OpenRouter sends explicit nulls for metrics Artificial Analysis has not
+  // published for a model, so every metric is nullable.
+  artificial_analysis_intelligence_index?: number | null;
+  artificial_analysis_coding_index?: number | null;
+  artificial_analysis_agentic_index?: number | null;
+  gdpval_aa?: number | null;
+  aa_omniscience_accuracy?: number | null;
+  aa_omniscience_non_hallucination_rate?: number | null;
+  lcr?: number | null;
+  ifbench?: number | null;
+  gpqa?: number | null;
+  hle?: number | null;
+  scicode?: number | null;
+  terminalbench_hard?: number | null;
+  critpt?: number | null;
+  tau2?: number | null;
 }
 
 export interface ArtificialAnalysisRecord {
@@ -99,9 +101,9 @@ export interface ArtificialAnalysisRecord {
   };
   last_updated_at?: number;
   percentiles?: {
-    intelligence_percentile?: number;
-    coding_percentile?: number;
-    agentic_percentile?: number;
+    intelligence_percentile?: number | null;
+    coding_percentile?: number | null;
+    agentic_percentile?: number | null;
   };
 }
 
@@ -132,9 +134,9 @@ export interface DesignArenaBenchmarks {
 }
 
 export interface ArtificialAnalysisSummary {
-  intelligence_index: number;
-  coding_index: number;
-  agentic_index: number;
+  intelligence_index: number | null;
+  coding_index: number | null;
+  agentic_index: number | null;
   intelligence_percentile?: number | null;
   coding_percentile?: number | null;
   agentic_percentile?: number | null;

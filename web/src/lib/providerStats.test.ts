@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { mergeProviderRows, normalizeProviderKey } from "./providerStats";
+import {
+  formatUptime,
+  mergeProviderRows,
+  normalizeProviderKey,
+} from "./providerStats";
 
 describe("normalizeProviderKey", () => {
   it("matches slug and spaced provider names", () => {
@@ -40,5 +44,19 @@ describe("mergeProviderRows", () => {
     expect(rows[0]?.providerName).toBe("Nex AGI");
     expect(rows[0]?.listPrompt).toBe("0.00000025");
     expect(rows[0]?.effectiveInputPrice).toBe(0.25);
+  });
+});
+
+describe("formatUptime", () => {
+  it("renders OpenRouter's percentage as-is", () => {
+    expect(formatUptime(99.37918640744977)).toBe("99.4%");
+    expect(formatUptime(100)).toBe("100.0%");
+    expect(formatUptime(0.4)).toBe("0.4%");
+  });
+
+  it("renders a dash when uptime is missing", () => {
+    expect(formatUptime(null)).toBe("—");
+    expect(formatUptime(undefined)).toBe("—");
+    expect(formatUptime(Number.NaN)).toBe("—");
   });
 });

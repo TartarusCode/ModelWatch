@@ -106,9 +106,12 @@ class DesignArenaBenchmarks(BaseModel):
 class ArtificialAnalysisSummary(BaseModel):
     model_config = ConfigDict(frozen=True)
 
-    intelligence_index: float
-    coding_index: float
-    agentic_index: float
+    # Artificial Analysis publishes a model with only some of the three indices
+    # (new or specialised models often carry just the intelligence index), so a
+    # summary exists whenever at least one index is available.
+    intelligence_index: float | None = None
+    coding_index: float | None = None
+    agentic_index: float | None = None
     intelligence_percentile: int | None = None
     coding_percentile: int | None = None
     agentic_percentile: int | None = None

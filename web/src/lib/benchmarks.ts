@@ -50,9 +50,9 @@ export function formatAaMetricLabel(key: string): string {
 }
 
 export interface AaSummaryScores {
-  intelligence: number;
-  coding: number;
-  agentic: number;
+  intelligence?: number;
+  coding?: number;
+  agentic?: number;
   intelligencePercentile?: number;
   codingPercentile?: number;
   agenticPercentile?: number;
@@ -78,13 +78,15 @@ function buildAaSummaryScores(
   agentic: unknown,
   extras: Omit<AaSummaryScores, "intelligence" | "coding" | "agentic">,
 ): AaSummaryScores | undefined {
-  if (!isAaIndex(intelligence) || !isAaIndex(coding) || !isAaIndex(agentic)) {
+  // Artificial Analysis only publishes all three indices for some models, so a
+  // summary exists as soon as one index does and the rest stay blank in the UI.
+  if (!isAaIndex(intelligence) && !isAaIndex(coding) && !isAaIndex(agentic)) {
     return undefined;
   }
   return {
-    intelligence,
-    coding,
-    agentic,
+    ...(isAaIndex(intelligence) ? { intelligence } : {}),
+    ...(isAaIndex(coding) ? { coding } : {}),
+    ...(isAaIndex(agentic) ? { agentic } : {}),
     ...extras,
   };
 }
@@ -133,9 +135,9 @@ export function getAaSummaryScores(
     evaluations?.artificial_analysis_coding_index,
     evaluations?.artificial_analysis_agentic_index,
     {
-      intelligencePercentile: percentiles?.intelligence_percentile,
-      codingPercentile: percentiles?.coding_percentile,
-      agenticPercentile: percentiles?.agentic_percentile,
+      intelligencePercentile: percentiles?.intelligence_percentile ?? undefined,
+      codingPercentile: percentiles?.coding_percentile ?? undefined,
+      agenticPercentile: percentiles?.agentic_percentile ?? undefined,
       variantName,
       variantShort: shortVariantLabel(variantName) ?? undefined,
     },
@@ -220,15 +222,21 @@ export function formatBenchmarkScore(score: number | null | undefined): string {
   return `${(score * 100).toFixed(1)}%`;
 }
 
+const AA_INDEX_METRICS = new Set([
+  "artificial_analysis_intelligence_index",
+  "artificial_analysis_coding_index",
+  "artificial_analysis_agentic_index",
+]);
+
 export function formatMetricValue(key: string, value: number | null | undefined): string {
   if (!isFiniteNumber(value)) {
     return "—";
   }
-  if (key.includes("rate") || key === "gdpval_aa") {
-    return `${(value * 100).toFixed(1)}%`;
+  // Artificial Analysis reports every non-index metric on a 0-1 scale, which
+  // reads as a percentage (HLE 39.2%, SciCode 51.9%, GDPval 55.0%); the indices
+  // are on a 0-100 scale and rendered as-is.
+  if (AA_INDEX_METRICS.has(key) || Math.abs(value) > 1) {
+    return Number.isInteger(value) ? value.toString() : value.toFixed(1);
   }
-  if (Number.isInteger(value)) {
-    return value.toString();
-  }
-  return value.toFixed(1);
+  return `${(value * 100).toFixed(1)}%`;
 }

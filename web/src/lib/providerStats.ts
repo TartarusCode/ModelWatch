@@ -82,10 +82,11 @@ export function formatCacheHitRate(value: number | null | undefined): string {
 }
 
 export function formatUptime(value: number | null | undefined): string {
+  // OpenRouter reports uptime_last_30m as a percentage (99.38), not a fraction.
   if (!isFiniteNumber(value)) {
     return "—";
   }
-  return `${(value * 100).toFixed(1)}%`;
+  return `${value.toFixed(1)}%`;
 }
 
 export function effectivePricingSubtitle(

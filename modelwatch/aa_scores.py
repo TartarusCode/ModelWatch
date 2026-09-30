@@ -120,7 +120,7 @@ def extract_aa_summary(record: dict[str, object]) -> ArtificialAnalysisSummary |
     )
     coding = _optional_float(evaluations.get("artificial_analysis_coding_index"))
     agentic = _optional_float(evaluations.get("artificial_analysis_agentic_index"))
-    if intelligence is None or coding is None or agentic is None:
+    if intelligence is None and coding is None and agentic is None:
         return None
 
     percentiles = record.get("percentiles")
