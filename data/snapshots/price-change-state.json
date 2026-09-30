@@ -9651,9 +9651,9 @@
       "pct_change": -0.375,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-09-30T16:18:51.891723Z",
+      "settled_per_million_usd": "0.450000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -9668,9 +9668,9 @@
       "pct_change": -0.16666666666666666,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-09-30T16:18:51.891723Z",
+      "settled_per_million_usd": "2.000000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -11170,7 +11170,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-09-30T15:59:29.166255Z",
+  "generated_at": "2026-09-30T16:19:29.812844Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -29929,14 +29929,14 @@
     "z-ai/glm-5.3:batch": {
       "completion": {
         "anchor": "2.000000",
-        "confirmed_at": "2026-09-23T16:01:27.489530Z",
-        "confirmed_price": "2.000000",
-        "direction": "cut",
-        "episode_start_price": "2.4000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.1000000",
@@ -29951,14 +29951,14 @@
       },
       "prompt": {
         "anchor": "0.45000000",
-        "confirmed_at": "2026-09-23T16:01:27.489530Z",
-        "confirmed_price": "0.45000000",
-        "direction": "cut",
-        "episode_start_price": "0.72000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "z-ai/glm-5v-turbo": {
