@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T10:02:26.246346Z",
+  "generated_at": "2026-09-30T10:32:29.320529Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3735,12 +3735,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000396",
+        "completion": "0.00000198",
         "image": null,
-        "input_cache_read": "0.000000044",
+        "input_cache_read": "0.000000022",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000132",
+        "prompt": "0.00000066",
         "request": null,
         "web_search": null
       },
@@ -21017,12 +21017,12 @@
       "id": "qwen/qwen3.8-27b",
       "name": "Qwen: Qwen3.8 27B",
       "pricing": {
-        "completion": "0.000003",
+        "completion": "0.00000435",
         "image": null,
-        "input_cache_read": "0.000000085",
+        "input_cache_read": "0.0000000199",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000042",
+        "prompt": "0.0000000249",
         "request": null,
         "web_search": null
       },
@@ -21051,9 +21051,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1000000,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3.8-27b:free": {
@@ -22485,7 +22485,56 @@
         "request": null,
         "web_search": null
       },
-      "pricing_schedule": null,
+      "pricing_schedule": {
+        "minimum": {
+          "completion": "0.0000022509",
+          "input_cache_read": "0.0000000378",
+          "prompt": "0.0000007506"
+        },
+        "rates": {
+          "completion": [
+            "0.0000022509",
+            "0.000002501"
+          ],
+          "input_cache_read": [
+            "0.0000000378",
+            "0.000000042"
+          ],
+          "prompt": [
+            "0.0000007506",
+            "0.000000834"
+          ]
+        },
+        "standard": {
+          "completion": "0.000002501",
+          "input_cache_read": "0.000000042",
+          "prompt": "0.000000834"
+        },
+        "windows": [
+          {
+            "label": "Every day 00:00–16:00 UTC",
+            "rates": {
+              "completion": "0.000002501",
+              "input_cache_read": "0.000000042",
+              "prompt": "0.000000834"
+            },
+            "utc_days": null,
+            "utc_end": 1600,
+            "utc_start": 0
+          },
+          {
+            "label": "Every day 16:00–24:00 UTC",
+            "rates": {
+              "completion": "0.0000022509",
+              "input_cache_read": "0.0000000378",
+              "prompt": "0.0000007506"
+            },
+            "utc_days": null,
+            "utc_end": 0,
+            "utc_start": 1600
+          }
+        ]
+      },
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
