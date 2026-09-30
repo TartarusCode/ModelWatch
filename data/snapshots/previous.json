@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T23:01:14.819539Z",
+  "generated_at": "2026-09-30T23:31:15.814943Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -10452,12 +10452,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.000015",
+        "completion": "0.00001",
         "image": null,
-        "input_cache_read": "0.0000003",
+        "input_cache_read": "0.00000027",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000003",
+        "prompt": "0.00000028",
         "request": null,
         "web_search": null
       },
@@ -12726,8 +12726,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -12905,8 +12904,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -13244,8 +13242,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -13301,8 +13298,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -13358,8 +13354,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -13415,8 +13410,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -13531,8 +13525,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -13583,8 +13576,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 128000,
@@ -13637,8 +13629,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -13861,8 +13852,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -13920,8 +13910,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 1050000,
@@ -14041,8 +14030,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -14157,8 +14145,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -14273,8 +14260,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 1050000,
@@ -14446,8 +14432,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 1050000,
@@ -14734,8 +14719,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 1050000,
@@ -14907,8 +14891,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 1050000,
@@ -14966,8 +14949,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 1050000,
@@ -15139,8 +15121,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 1050000,
@@ -15198,8 +15179,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 1050000,
@@ -15421,8 +15401,7 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "verbosity"
+        "tools"
       ],
       "top_provider": {
         "context_length": 1050000,
@@ -21976,7 +21955,7 @@
       "created": 1790174884,
       "default_parameters": {},
       "description": "Space Bunny Alpha is an anonymous large model with blazing-fast inference, strong coding capabilities and native multimodal input support. It delivers adjustable reasoning effort, and a 1M-token context window. Space...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-05",
       "id": "stealth/space-bunny-alpha",
       "name": "Space Bunny Alpha",
       "pricing": {
