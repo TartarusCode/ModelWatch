@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T16:40:32.055048Z",
+  "generated_at": "2026-09-30T17:01:03.490250Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -7030,6 +7030,7 @@
         "max_tokens",
         "min_p",
         "presence_penalty",
+        "repetition_penalty",
         "response_format",
         "seed",
         "stop",
@@ -7081,6 +7082,7 @@
         "max_tokens",
         "min_p",
         "presence_penalty",
+        "repetition_penalty",
         "response_format",
         "seed",
         "stop",
