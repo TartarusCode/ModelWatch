@@ -18,7 +18,7 @@ permissions:
 jobs:
   probe:
     if: inputs.job == 'probe'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
 
@@ -43,7 +43,10 @@ jobs:
 
   discover:
     if: inputs.job == 'discover'
-    runs-on: ubuntu-latest
+    # Pinned deliberately: the ubuntu-latest label migrates to Ubuntu 26.04
+    # between Oct 19 and Nov 19, 2026 (actions/runner-images#14748). The
+    # Playwright install below is the step to re-check before moving this job.
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
 

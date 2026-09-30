@@ -15,7 +15,11 @@ concurrency:
 
 jobs:
   test-and-lint:
-    runs-on: ubuntu-latest
+    # Pinned deliberately: the ubuntu-latest label migrates to Ubuntu 26.04
+    # between Oct 19 and Nov 19, 2026 (actions/runner-images#14748), so leaving
+    # it floating would swap the image under a running pipeline. Move to
+    # ubuntu-26.04 as an explicit, tested change.
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
 
@@ -66,7 +70,7 @@ jobs:
 
   build:
     needs: test-and-lint
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
 
@@ -126,7 +130,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
