@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T19:31:02.223971Z",
+  "generated_at": "2026-09-30T20:01:21.432294Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6165,12 +6165,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.000000255",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.0000000425",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.0000000765",
         "request": null,
         "web_search": null
       },
@@ -24727,7 +24727,7 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.00000399",
+        "completion": "0.00000479",
         "image": null,
         "input_cache_read": "0.00000026",
         "input_cache_write": null,
