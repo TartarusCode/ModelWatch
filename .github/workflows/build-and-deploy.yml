@@ -100,6 +100,9 @@ jobs:
           git add web/public/data/ data/snapshots/previous.json data/snapshots/price-change-state.json
           if ! git diff --staged --quiet; then
             git commit -m "chore: refresh OpenRouter snapshot"
+            # Rebase onto anything pushed while the build ran; a plain push
+            # is rejected as non-fast-forward.
+            git pull --rebase
             git push
           fi
 
