@@ -100,5 +100,6 @@ Fetched in `modelwatch/fetch.py`; stored on `EnrichedModel` in `models.json`:
 
 - **Effective pricing** is cache-aware observed $/M (not catalog list price). Chart time series (`inputChartData` / `outputChartData`) are not stored.
 - **Benchmark scores** are per-provider routing benchmarks (GPQA, tau-bench, etc.) — distinct from AA indices.
-- **List endpoints** supply catalog list prices and `uptime_last_30m`; detail page merges with effective pricing by provider name/slug.
+- **List endpoints** supply catalog list prices and `uptime_last_30m` (a **percentage**, e.g. 99.38 — unlike `effective_pricing` cache-hit rates, which are 0-1 fractions); detail page merges with effective pricing by provider name/slug.
+- **Partial AA coverage is normal:** Artificial Analysis publishes the intelligence / coding / agentic indices independently. `artificial_analysis_summary` exists as soon as **one** index does (missing ones are `null` and render as `—`); it is `None` only when a model has no indices at all. Non-index AA metrics (`hle`, `lcr`, `scicode`, `critpt`, `gdpval_aa`, …) are 0-1 fractions and render as percentages. OpenRouter's provider table also shows per-provider latency/throughput (Performance section) — not fetched by ModelWatch.
 - Build cost per run: **4 HTTP requests per unique `canonical_slug`** + **1 per `model.id`** for list endpoints (~600). Same concurrency cap as benchmarks (`DEFAULT_CONCURRENCY` in `fetch.py`).
