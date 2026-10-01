@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T06:01:12.288989Z",
+  "generated_at": "2026-10-01T06:31:05.410995Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3672,12 +3672,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000000510168",
+        "completion": "0.000000483372",
         "image": null,
-        "input_cache_read": "0.000000021257",
+        "input_cache_read": "0.0000000201405",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000255084",
+        "prompt": "0.000000241686",
         "request": null,
         "web_search": null
       },
@@ -3735,12 +3735,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000198",
+        "completion": "0.00000396",
         "image": null,
-        "input_cache_read": "0.000000022",
+        "input_cache_read": "0.000000044",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000066",
+        "prompt": "0.00000132",
         "request": null,
         "web_search": null
       },
@@ -3921,12 +3921,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.000000396",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.000000002851",
+        "input_cache_read": "0.000000027",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000015543",
+        "prompt": "0.000000027",
         "request": null,
         "web_search": null
       },
@@ -10454,10 +10454,10 @@
       "pricing": {
         "completion": "0.00001",
         "image": null,
-        "input_cache_read": "0.00000068",
+        "input_cache_read": "0.0000007249",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000068",
+        "prompt": "0.0000007249",
         "request": null,
         "web_search": null
       },
