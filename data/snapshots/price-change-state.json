@@ -11304,9 +11304,26 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.100000",
+      "detected_at": "2026-10-01T04:31:03.864023Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.280000",
+      "field": "input_cache_read",
+      "model_id": "moonshotai/kimi-k3",
+      "new_per_million_usd": "0.380000",
+      "old_per_million_usd": "0.280000",
+      "pct_change": 0.35714285714285715,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-10-01T04:01:11.423615Z",
+  "generated_at": "2026-10-01T04:31:16.507093Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -14456,7 +14473,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.0045000000",
+        "anchor": "0.0171000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -14467,7 +14484,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.0045000000",
+        "anchor": "0.0171000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -20149,15 +20166,15 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.28000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.38000000",
+        "confirmed_at": "2026-10-01T04:31:03.864023Z",
+        "confirmed_price": "0.38000000",
         "direction": "hike",
         "episode_start_price": "0.28000000",
-        "pending_builds": 1,
-        "pending_price": "0.38000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "prompt": {
         "anchor": "0.38000000",
