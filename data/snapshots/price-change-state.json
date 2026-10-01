@@ -9736,9 +9736,9 @@
       "pct_change": 1.0768431983385254,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-10-01T07:31:05.113989Z",
+      "settled_per_million_usd": "0.048150",
+      "status": "settled",
       "tier": null
     },
     {
@@ -9753,9 +9753,9 @@
       "pct_change": 0.554001554001554,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-10-01T07:31:05.113989Z",
+      "settled_per_million_usd": "0.193050",
+      "status": "settled",
       "tier": null
     },
     {
@@ -11323,7 +11323,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-01T07:01:10.735248Z",
+  "generated_at": "2026-10-01T07:31:11.120343Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -14613,7 +14613,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.0190095000000",
+        "anchor": "0.0180235000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -26420,26 +26420,26 @@
     },
     "qwen/qwen3-30b-a3b-instruct-2507": {
       "completion": {
-        "anchor": "0.3000000",
-        "confirmed_at": "2026-09-24T07:01:15.934224Z",
-        "confirmed_price": "0.3000000",
-        "direction": "hike",
-        "episode_start_price": "0.19305000000",
+        "anchor": "0.19305000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "prompt": {
-        "anchor": "0.1000000",
-        "confirmed_at": "2026-09-24T07:01:15.934224Z",
-        "confirmed_price": "0.1000000",
-        "direction": "hike",
-        "episode_start_price": "0.04815000000",
+        "anchor": "0.04815000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "qwen/qwen3-30b-a3b-thinking-2507": {
