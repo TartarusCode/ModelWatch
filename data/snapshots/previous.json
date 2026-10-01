@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T00:01:07.129542Z",
+  "generated_at": "2026-10-01T00:31:04.948583Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3550,10 +3550,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000089",
+        "input_cache_read": "0.0000000084",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000089",
+        "prompt": "0.0000000084",
         "request": null,
         "web_search": null
       },
@@ -8270,7 +8270,7 @@
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000004",
+        "prompt": "0.00000055",
         "request": null,
         "web_search": null
       },
@@ -10189,7 +10189,7 @@
       "pricing": {
         "completion": "0.0000025",
         "image": null,
-        "input_cache_read": "0.00000015",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000006",
@@ -10219,7 +10219,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 98304
+        "max_completion_tokens": 235929
       }
     },
     "moonshotai/kimi-k2.5": {
@@ -11409,12 +11409,12 @@
       "id": "nvidia/nemotron-3.5-lightning",
       "name": "NVIDIA: Nemotron 3.5 Lightning",
       "pricing": {
-        "completion": "0.00000016",
+        "completion": "0.00000017",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.00000002975",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006",
+        "prompt": "0.0000000595",
         "request": null,
         "web_search": null
       },
@@ -11443,7 +11443,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 131072
       }
     },
     "nvidia/nemotron-3.5-lightning:free": {
@@ -18725,16 +18725,16 @@
         "top_p": null
       },
       "description": "Qwen3, the latest generation in the Qwen large language model series, features both dense and mixture-of-experts (MoE) architectures to excel in reasoning, multilingual support, and advanced agent tasks. Its unique...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-09",
       "id": "qwen/qwen3-30b-a3b",
       "name": "Qwen: Qwen3 30B A3B",
       "pricing": {
-        "completion": "0.0000005",
+        "completion": "0.00000052",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000012",
+        "prompt": "0.00000013",
         "request": null,
         "web_search": null
       },
@@ -18759,9 +18759,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 40960,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 8192
       }
     },
     "qwen/qwen3-30b-a3b-instruct-2507": {
@@ -22316,12 +22316,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22478,12 +22478,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
@@ -24815,12 +24815,12 @@
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "pricing": {
-        "completion": "0.0000044",
+        "completion": "0.00000761",
         "image": null,
-        "input_cache_read": "0.00000026",
+        "input_cache_read": "0.0000002217",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000014",
+        "prompt": "0.0000002219",
         "request": null,
         "web_search": null
       },
@@ -24849,9 +24849,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048575,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943717
+        "max_completion_tokens": 943718
       }
     },
     "z-ai/glm-5.3-flash": {
