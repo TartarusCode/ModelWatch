@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T17:01:11.855991Z",
+  "generated_at": "2026-10-01T17:31:19.213916Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -2150,6 +2150,60 @@
         "context_length": 1000000,
         "is_moderated": true,
         "max_completion_tokens": 128000
+      }
+    },
+    "apodex/apodex-1.1-mini:free": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "apodex/apodex-1.1-mini-20261001",
+      "context_length": 262144,
+      "created": 1790875335,
+      "default_parameters": {},
+      "description": "Apodex 1.1 Mini is a reasoning-first model from Apodex, built for complex, long-horizon research and forecasting tasks. It works directly with files, data, code, and tools to produce verifiable results,...",
+      "expiration_date": null,
+      "id": "apodex/apodex-1.1-mini:free",
+      "name": "Apodex: Apodex 1.1 Mini (free)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 235929
       }
     },
     "arcee-ai/trinity-large-thinking": {
@@ -14736,7 +14790,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 1050000,
@@ -14793,7 +14848,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 1050000,
@@ -15474,7 +15530,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 1050000,
@@ -15524,7 +15581,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 1050000,
