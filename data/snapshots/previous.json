@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T17:31:19.213916Z",
+  "generated_at": "2026-10-01T18:01:20.388041Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -12960,7 +12960,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -13017,7 +13018,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -13300,7 +13302,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -13528,7 +13531,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -13586,7 +13590,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -13859,7 +13864,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 400000,
@@ -14501,7 +14507,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 1050000,
@@ -14674,7 +14681,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 1050000,
@@ -24837,10 +24845,10 @@
       "pricing": {
         "completion": "0.00000339",
         "image": null,
-        "input_cache_read": "0.0000001775",
+        "input_cache_read": "0.000000192",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000002219",
+        "prompt": "0.00000024",
         "request": null,
         "web_search": null
       },
