@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T22:01:00.773188Z",
+  "generated_at": "2026-10-01T22:31:10.733626Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3156,9 +3156,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 163840,
+        "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": 147456
+        "max_completion_tokens": 115200
       }
     },
     "deepseek/deepseek-chat-v3.1": {
@@ -24801,10 +24801,10 @@
       "pricing": {
         "completion": "0.00000399",
         "image": null,
-        "input_cache_read": "0.000000112",
+        "input_cache_read": "0.00000026",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000014",
+        "prompt": "0.00000041",
         "request": null,
         "web_search": null
       },
