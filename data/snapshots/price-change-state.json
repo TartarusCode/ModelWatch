@@ -11321,9 +11321,60 @@
       "settled_per_million_usd": null,
       "status": "recovered",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.215850",
+      "detected_at": "2026-10-01T10:01:10.011893Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.650000",
+      "field": "prompt",
+      "model_id": "moonshotai/kimi-k2.6",
+      "new_per_million_usd": "0.434150",
+      "old_per_million_usd": "0.650000",
+      "pct_change": -0.3320769230769231,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-1.582000",
+      "detected_at": "2026-10-01T10:01:10.011893Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "3.410000",
+      "field": "completion",
+      "model_id": "moonshotai/kimi-k2.6",
+      "new_per_million_usd": "1.828000",
+      "old_per_million_usd": "3.410000",
+      "pct_change": -0.46392961876832844,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.076880",
+      "detected_at": "2026-10-01T10:01:10.011893Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.150000",
+      "field": "input_cache_read",
+      "model_id": "moonshotai/kimi-k2.6",
+      "new_per_million_usd": "0.073120",
+      "old_per_million_usd": "0.150000",
+      "pct_change": -0.5125333333333333,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-10-01T09:31:04.514417Z",
+  "generated_at": "2026-10-01T10:01:17.888704Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -20050,37 +20101,37 @@
     },
     "moonshotai/kimi-k2.6": {
       "completion": {
-        "anchor": "3.41000000",
-        "confirmed_at": "2026-09-28T05:01:13.707435Z",
-        "confirmed_price": "3.41000000",
+        "anchor": "1.828000000",
+        "confirmed_at": "2026-10-01T10:01:10.011893Z",
+        "confirmed_price": "1.828000000",
         "direction": "cut",
         "episode_start_price": "3.41000000",
-        "pending_builds": 1,
-        "pending_price": "1.828000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.15000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.07312000000",
+        "confirmed_at": "2026-10-01T10:01:10.011893Z",
+        "confirmed_price": "0.07312000000",
         "direction": "cut",
         "episode_start_price": "0.15000000",
-        "pending_builds": 1,
-        "pending_price": "0.07312000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "prompt": {
-        "anchor": "0.65000000",
-        "confirmed_at": "2026-09-28T05:01:13.707435Z",
-        "confirmed_price": "0.65000000",
+        "anchor": "0.43415000000",
+        "confirmed_at": "2026-10-01T10:01:10.011893Z",
+        "confirmed_price": "0.43415000000",
         "direction": "cut",
         "episode_start_price": "0.65000000",
-        "pending_builds": 1,
-        "pending_price": "0.43415000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "moonshotai/kimi-k2.7-code": {
@@ -20166,7 +20217,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.6913000000",
+        "anchor": "0.7072000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -20177,7 +20228,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.6913000000",
+        "anchor": "0.7072000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -30034,12 +30085,12 @@
         "anchor": "4.4000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "4.4000000",
+        "pending_builds": 1,
+        "pending_price": "5.28000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.06604000000",
