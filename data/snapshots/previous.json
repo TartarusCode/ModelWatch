@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T20:31:06.706733Z",
+  "generated_at": "2026-10-01T21:01:08.651327Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -14980,7 +14980,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 1050000,
@@ -15154,7 +15155,8 @@
         "seed",
         "structured_outputs",
         "tool_choice",
-        "tools"
+        "tools",
+        "verbosity"
       ],
       "top_provider": {
         "context_length": 1050000,
