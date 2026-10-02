@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T14:01:12.565760Z",
+  "generated_at": "2026-10-02T14:31:03.704529Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3541,12 +3541,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.000000084",
+        "completion": "0.000000056",
         "image": null,
-        "input_cache_read": "0.0000000084",
+        "input_cache_read": "0.0000000056",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000042",
+        "prompt": "0.000000028",
         "request": null,
         "web_search": null
       },
@@ -3604,10 +3604,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000077",
+        "input_cache_read": "0.0000000051",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000077",
+        "prompt": "0.0000000051",
         "request": null,
         "web_search": null
       },
@@ -17920,7 +17920,7 @@
       "created": 1784652683,
       "default_parameters": {},
       "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-31",
       "id": "poolside/laguna-s-2.1",
       "name": "Poolside: Laguna S 2.1",
       "pricing": {
@@ -17965,7 +17965,7 @@
       "created": 1784652683,
       "default_parameters": {},
       "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-31",
       "id": "poolside/laguna-s-2.1:free",
       "name": "Poolside: Laguna S 2.1 (free)",
       "pricing": {
@@ -18010,7 +18010,7 @@
       "created": 1783002429,
       "default_parameters": {},
       "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-31",
       "id": "poolside/laguna-xs-2.1",
       "name": "Poolside: Laguna XS 2.1",
       "pricing": {
@@ -18055,7 +18055,7 @@
       "created": 1783002429,
       "default_parameters": {},
       "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-31",
       "id": "poolside/laguna-xs-2.1:free",
       "name": "Poolside: Laguna XS 2.1 (free)",
       "pricing": {
