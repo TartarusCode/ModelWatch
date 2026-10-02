@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T03:31:00.669955Z",
+  "generated_at": "2026-10-02T04:01:09.678199Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3604,10 +3604,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000171",
+        "input_cache_read": "0.0000000115",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000171",
+        "prompt": "0.0000000115",
         "request": null,
         "web_search": null
       },
@@ -3977,10 +3977,10 @@
       "pricing": {
         "completion": "0.00000075",
         "image": null,
-        "input_cache_read": "0.0000000189",
+        "input_cache_read": "0.0000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000189",
+        "prompt": "0.00000003",
         "request": null,
         "web_search": null
       },
@@ -10502,12 +10502,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.0000112",
+        "completion": "0.000013",
         "image": null,
-        "input_cache_read": "0.00000029",
+        "input_cache_read": "0.0000008",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000001125",
+        "prompt": "0.00000139",
         "request": null,
         "web_search": null
       },
