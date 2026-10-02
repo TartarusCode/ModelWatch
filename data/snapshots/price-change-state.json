@@ -11391,7 +11391,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-02T00:01:05.266102Z",
+  "generated_at": "2026-10-02T00:30:58.903307Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -14495,7 +14495,7 @@
     },
     "deepseek/deepseek-v4-flash": {
       "completion": {
-        "anchor": "0.08372000000",
+        "anchor": "0.084000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -14506,7 +14506,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.008372000000",
+        "anchor": "0.0084000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -14517,7 +14517,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.04186000000",
+        "anchor": "0.042000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -20234,7 +20234,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.54000000",
+        "anchor": "0.4255000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -20248,12 +20248,12 @@
         "anchor": "0.6824000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": "cut",
-        "episode_start_price": "0.6824000000",
-        "pending_builds": 1,
-        "pending_price": "0.4357000000",
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "idle"
       }
     },
     "moonshotai/kimi-k3:batch": {
@@ -20671,7 +20671,7 @@
     },
     "nvidia/nemotron-3-ultra-550b-a55b": {
       "completion": {
-        "anchor": "2.4000000",
+        "anchor": "2.2000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -20682,7 +20682,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.12000000",
+        "anchor": "0.1000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -20696,12 +20696,12 @@
         "anchor": "0.6000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.6000000",
+        "pending_builds": 1,
+        "pending_price": "0.5000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b:batch": {
@@ -20765,7 +20765,7 @@
     },
     "nvidia/nemotron-3.5-lightning": {
       "completion": {
-        "anchor": "0.17000000",
+        "anchor": "0.16000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -20776,7 +20776,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.02975000000",
+        "anchor": "0.03000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -20787,7 +20787,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.0595000000",
+        "anchor": "0.06000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -26602,7 +26602,7 @@
     },
     "qwen/qwen3-30b-a3b-instruct-2507": {
       "completion": {
-        "anchor": "0.19305000000",
+        "anchor": "0.3000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -26613,7 +26613,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.04815000000",
+        "anchor": "0.1000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -28933,7 +28933,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.17000000",
+        "anchor": "0.16000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -28944,7 +28944,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "1.000000",
+        "anchor": "0.95000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -30216,12 +30216,12 @@
         "anchor": "3.39000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "3.39000000",
+        "pending_builds": 1,
+        "pending_price": "4.4000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.06604000000",
