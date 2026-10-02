@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T21:31:08.321603Z",
+  "generated_at": "2026-10-02T22:01:14.520143Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -11595,6 +11595,44 @@
         "context_length": 1000000,
         "is_moderated": false,
         "max_completion_tokens": 65536
+      }
+    },
+    "nvidia/switchyard": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Router"
+      },
+      "canonical_slug": "nvidia/switchyard",
+      "context_length": 1000000,
+      "created": 1790025947,
+      "default_parameters": {},
+      "description": "Switchyard routes each request among the models you list in `models`, using a routing decision from NVIDIA's open-source Switchyard library running on OpenRouter's edge. Pass `model: nvidia/switchyard` plus two or...",
+      "expiration_date": null,
+      "id": "nvidia/switchyard",
+      "name": "NVIDIA: Switchyard",
+      "pricing": {
+        "completion": "-1",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "-1",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [],
+      "top_provider": {
+        "context_length": null,
+        "is_moderated": false,
+        "max_completion_tokens": null
       }
     },
     "openai/gpt-3.5-turbo": {
