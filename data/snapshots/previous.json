@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T07:01:01.958959Z",
+  "generated_at": "2026-10-02T07:31:07.640272Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3604,10 +3604,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000051",
+        "input_cache_read": "0.0000000171",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000051",
+        "prompt": "0.0000000171",
         "request": null,
         "web_search": null
       },
@@ -3975,7 +3975,7 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.00000075",
+        "completion": "0.0000012",
         "image": null,
         "input_cache_read": "0.000000002115",
         "input_cache_write": null,
@@ -6219,12 +6219,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000255",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.0000000425",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000765",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
