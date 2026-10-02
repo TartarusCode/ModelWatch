@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-10-02T14:31:03.704529Z",
+  "generated_at": "2026-10-02T15:01:11.255508Z",
   "models": [
+    {
+      "canonical_slug": "inclusionai/ling-3.1-flash-20261002",
+      "created": 1790950024,
+      "detected_at": "2026-10-02T15:01:05.814698Z",
+      "model_id": "inclusionai/ling-3.1-flash",
+      "name": "inclusionAI: Ling 3.1 Flash"
+    },
     {
       "canonical_slug": "apodex/apodex-1.1-mini-20261001",
       "created": 1790875335,
       "detected_at": "2026-10-01T17:31:06.935761Z",
       "model_id": "apodex/apodex-1.1-mini:free",
       "name": "Apodex: Apodex 1.1 Mini (free)"
-    },
-    {
-      "canonical_slug": "unbiased/pareto-26.10-preview-20260929",
-      "created": 1790863623,
-      "detected_at": "2026-10-01T14:31:04.805922Z",
-      "model_id": "unbiased/pareto-26.10-preview",
-      "name": "Pareto 26.10 Preview"
     }
   ],
   "window_hours": 24
