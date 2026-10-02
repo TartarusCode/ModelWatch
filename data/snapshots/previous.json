@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T08:01:10.071386Z",
+  "generated_at": "2026-10-02T08:31:00.782034Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3604,10 +3604,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000115",
+        "input_cache_read": "0.0000000077",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000115",
+        "prompt": "0.0000000077",
         "request": null,
         "web_search": null
       },
@@ -3975,9 +3975,9 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.000000002115",
+        "input_cache_read": "0.000000008",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.000000015",
