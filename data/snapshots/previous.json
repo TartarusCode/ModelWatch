@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T18:01:14.651405Z",
+  "generated_at": "2026-10-02T18:31:07.245659Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3368,10 +3368,10 @@
       "pricing": {
         "completion": "0.000001",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.000000135",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000027",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -3396,9 +3396,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 163840,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 147456
+        "max_completion_tokens": 65536
       }
     },
     "deepseek/deepseek-v3.2": {
@@ -3604,10 +3604,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000115",
+        "input_cache_read": "0.0000000077",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000115",
+        "prompt": "0.0000000077",
         "request": null,
         "web_search": null
       },
@@ -3975,9 +3975,9 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000005",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.000000006",
+        "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.00000002",
@@ -4008,9 +4008,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1040000,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 384000
+        "max_completion_tokens": 943718
       }
     },
     "deepseek/deepseek-v4.1-flash:batch": {
@@ -24971,12 +24971,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.0000009",
+        "completion": "0.0000005",
         "image": null,
-        "input_cache_read": "0.00000001125",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000002625",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -25005,9 +25005,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1048575,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 943717
       }
     },
     "z-ai/glm-5.3-flash:batch": {
