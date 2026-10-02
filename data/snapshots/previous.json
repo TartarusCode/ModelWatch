@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T23:30:57.287547Z",
+  "generated_at": "2026-10-02T00:01:05.266102Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -4089,7 +4089,7 @@
       "created": 1786680361,
       "default_parameters": {},
       "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
-      "expiration_date": null,
+      "expiration_date": "2026-12-31",
       "id": "dots-studio/dots-3-note-preview:free",
       "name": "Dots Studio: Dots3-Note Preview (free)",
       "pricing": {
@@ -10504,10 +10504,10 @@
       "pricing": {
         "completion": "0.00001",
         "image": null,
-        "input_cache_read": "0.0000006824",
+        "input_cache_read": "0.0000004357",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000006824",
+        "prompt": "0.0000004357",
         "request": null,
         "web_search": null
       },
@@ -24198,7 +24198,7 @@
         "top_p": null
       },
       "description": "GLM-4.5 is our latest flagship foundation model, purpose-built for agent-based applications. It leverages a Mixture-of-Experts (MoE) architecture and supports a context length of up to 128k tokens. GLM-4.5 delivers significantly...",
-      "expiration_date": null,
+      "expiration_date": "2026-12-31",
       "id": "z-ai/glm-4.5",
       "name": "Z.ai: GLM 4.5",
       "pricing": {
@@ -24489,7 +24489,7 @@
         "top_p": 0.95
       },
       "description": "GLM-4.7 is Z.ai’s latest flagship model, featuring upgrades in two key areas: enhanced programming capabilities and more stable multi-step reasoning/execution. It demonstrates significant improvements in executing complex agent tasks while...",
-      "expiration_date": null,
+      "expiration_date": "2026-12-31",
       "id": "z-ai/glm-4.7",
       "name": "Z.ai: GLM 4.7",
       "pricing": {
