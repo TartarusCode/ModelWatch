@@ -12447,7 +12447,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-03T04:31:01.072348Z",
+  "generated_at": "2026-10-03T05:01:05.699107Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "0.360000",
@@ -12546,23 +12546,6 @@
       "pct_change": -0.5125333333333333,
       "recovered_at": "2026-10-03T04:01:02.872903Z",
       "recovered_per_million_usd": "0.160000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "-0.063700",
-      "detected_at": "2026-10-02T03:30:58.167958Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.353700",
-      "field": "input_cache_read",
-      "model_id": "moonshotai/kimi-k3",
-      "new_per_million_usd": "0.290000",
-      "old_per_million_usd": "0.353700",
-      "pct_change": -0.18009612666101216,
-      "recovered_at": "2026-10-02T04:31:04.158995Z",
-      "recovered_per_million_usd": "0.270000",
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "recovered",
