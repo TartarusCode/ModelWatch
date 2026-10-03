@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T00:01:16.096725Z",
+  "generated_at": "2026-10-03T00:31:13.372880Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3604,10 +3604,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000077",
+        "input_cache_read": "0.0000000051",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000077",
+        "prompt": "0.0000000051",
         "request": null,
         "web_search": null
       },
@@ -11513,12 +11513,12 @@
       "id": "nvidia/nemotron-3.5-lightning",
       "name": "NVIDIA: Nemotron 3.5 Lightning",
       "pricing": {
-        "completion": "0.00000016",
+        "completion": "0.00000017",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.00000002975",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006",
+        "prompt": "0.0000000595",
         "request": null,
         "web_search": null
       },
@@ -11547,7 +11547,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 131072
       }
     },
     "nvidia/nemotron-3.5-lightning:free": {
@@ -18869,12 +18869,12 @@
       "id": "qwen/qwen3-30b-a3b-instruct-2507",
       "name": "Qwen: Qwen3 30B A3B Instruct 2507",
       "pricing": {
-        "completion": "0.00000019305",
+        "completion": "0.0000003",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004815",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -18898,9 +18898,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 128000,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 32000
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3-30b-a3b-thinking-2507": {
@@ -19545,7 +19545,7 @@
         "top_p": null
       },
       "description": "Qwen3-Next-80B-A3B-Thinking is a reasoning-first chat model in the Qwen3-Next line that outputs structured “thinking” traces by default. It’s designed for hard multi-step problems; math proofs, code synthesis/debugging, logic, and agentic...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-09",
       "id": "qwen/qwen3-next-80b-a3b-thinking",
       "name": "Qwen: Qwen3 Next 80B A3B Thinking",
       "pricing": {
@@ -19579,9 +19579,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 32768
       }
     },
     "qwen/qwen3-vl-235b-a22b-instruct": {
@@ -22398,12 +22398,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22560,12 +22560,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
@@ -24816,12 +24816,12 @@
       "id": "z-ai/glm-5.1",
       "name": "Z.ai: GLM 5.1",
       "pricing": {
-        "completion": "0.0000030316",
+        "completion": "0.0000044",
         "image": null,
-        "input_cache_read": "0.00000017914",
+        "input_cache_read": "0.00000026",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000009646",
+        "prompt": "0.0000014",
         "request": null,
         "web_search": null
       },
