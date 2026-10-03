@@ -11629,7 +11629,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-03T15:31:01.169474Z",
+  "generated_at": "2026-10-03T16:01:05.065475Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -29290,6 +29290,41 @@
       },
       "prompt": {
         "anchor": "2.5000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      }
+    },
+    "unbiased/pareto-26.10-preview": {
+      "completion": {
+        "anchor": "3.2000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_read": {
+        "anchor": "0.03000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt": {
+        "anchor": "0.8000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
