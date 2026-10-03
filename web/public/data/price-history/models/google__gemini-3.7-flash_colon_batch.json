@@ -583,6 +583,17 @@
       "recorded_at": "2026-10-02T02:01:20.273586Z",
       "request_per_million": null,
       "web_search_per_million": "14000.000"
+    },
+    {
+      "completion_per_million": "1.875000000",
+      "image_per_million": "0.375000000",
+      "input_cache_read_per_million": "0.0375000000",
+      "input_cache_write_per_million": "0.0416666666666667000000",
+      "internal_reasoning_per_million": "1.875000000",
+      "prompt_per_million": "0.375000000",
+      "recorded_at": "2026-10-03T02:31:02.053910Z",
+      "request_per_million": null,
+      "web_search_per_million": "14000.000"
     }
   ]
 }
