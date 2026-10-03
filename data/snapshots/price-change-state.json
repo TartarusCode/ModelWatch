@@ -11502,11 +11502,11 @@
       "new_per_million_usd": "2.700000",
       "old_per_million_usd": "1.125000",
       "pct_change": 1.4,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-10-03T14:01:01.985618Z",
+      "recovered_per_million_usd": "0.990000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     },
     {
@@ -11519,11 +11519,11 @@
       "new_per_million_usd": "0.270000",
       "old_per_million_usd": "0.290000",
       "pct_change": -0.06896551724137931,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-10-03T14:01:01.985618Z",
+      "recovered_per_million_usd": "0.800000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     },
     {
@@ -11629,7 +11629,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-03T13:31:01.423728Z",
+  "generated_at": "2026-10-03T14:01:04.901163Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -14953,17 +14953,6 @@
         "recovery_builds": 0,
         "status": "idle"
       },
-      "completion_offpeak": {
-        "anchor": "1.98000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
-        "recovery_builds": 0,
-        "status": "idle"
-      },
       "input_cache_read": {
         "anchor": "0.14000000",
         "confirmed_at": null,
@@ -14975,30 +14964,8 @@
         "recovery_builds": 0,
         "status": "idle"
       },
-      "input_cache_read_offpeak": {
-        "anchor": "0.022000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
-        "recovery_builds": 0,
-        "status": "idle"
-      },
       "prompt": {
         "anchor": "0.22000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
-        "recovery_builds": 0,
-        "status": "idle"
-      },
-      "prompt_offpeak": {
-        "anchor": "0.66000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -20472,26 +20439,26 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.27000000",
-        "confirmed_at": "2026-10-02T05:00:56.910350Z",
-        "confirmed_price": "0.27000000",
-        "direction": "cut",
-        "episode_start_price": "0.29000000",
+        "anchor": "0.8000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
-        "status": "confirmed"
+        "recovery_builds": 0,
+        "status": "idle"
       },
       "prompt": {
-        "anchor": "2.7000000",
-        "confirmed_at": "2026-10-02T05:00:56.910350Z",
-        "confirmed_price": "2.7000000",
-        "direction": "hike",
-        "episode_start_price": "1.125000000",
+        "anchor": "0.99000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
-        "status": "confirmed"
+        "recovery_builds": 0,
+        "status": "idle"
       }
     },
     "moonshotai/kimi-k3:batch": {
