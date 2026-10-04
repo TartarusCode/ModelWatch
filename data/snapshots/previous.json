@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T19:01:07.133334Z",
+  "generated_at": "2026-10-04T19:30:54.123330Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -18865,6 +18865,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -18877,7 +18878,9 @@
         "temperature",
         "tool_choice",
         "tools",
+        "top_a",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
