@@ -2,17 +2,6 @@
   "model_id": "z-ai/glm-5.2",
   "points": [
     {
-      "completion_per_million": "2.4948000000",
-      "image_per_million": null,
-      "input_cache_read_per_million": "0.14742000000",
-      "input_cache_write_per_million": null,
-      "internal_reasoning_per_million": null,
-      "prompt_per_million": "0.7938000000",
-      "recorded_at": "2026-07-22T10:01:08.086913Z",
-      "request_per_million": null,
-      "web_search_per_million": null
-    },
-    {
       "completion_per_million": "2.486000000",
       "image_per_million": null,
       "input_cache_read_per_million": "0.1469000000",
@@ -5498,6 +5487,17 @@
       "internal_reasoning_per_million": null,
       "prompt_per_million": "0.0504000000",
       "recorded_at": "2026-10-04T15:31:07.473956Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "8.000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.19000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.192000000",
+      "recorded_at": "2026-10-04T17:32:18.935341Z",
       "request_per_million": null,
       "web_search_per_million": null
     }
