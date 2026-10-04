@@ -11774,11 +11774,11 @@
       "new_per_million_usd": "0.170000",
       "old_per_million_usd": "0.220000",
       "pct_change": -0.22727272727272727,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-10-04T07:01:06.461059Z",
+      "recovered_per_million_usd": "0.330000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     },
     {
@@ -11816,7 +11816,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-04T06:31:03.667305Z",
+  "generated_at": "2026-10-04T07:01:09.858574Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -15152,15 +15152,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.17000000",
-        "confirmed_at": "2026-10-04T04:01:05.011451Z",
-        "confirmed_price": "0.17000000",
-        "direction": "cut",
-        "episode_start_price": "0.22000000",
+        "anchor": "0.33000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
-        "status": "confirmed"
+        "recovery_builds": 0,
+        "status": "idle"
       }
     },
     "deepseek/deepseek-v4-pro-0813:batch": {
