@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T16:01:12.445638Z",
+  "generated_at": "2026-10-05T16:31:14.905230Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -21896,56 +21896,6 @@
         "max_completion_tokens": 16384
       }
     },
-    "stealth/space-bunny-alpha": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "video"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+video->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "stealth/space-bunny-alpha",
-      "context_length": 1000000,
-      "created": 1790174884,
-      "default_parameters": {},
-      "description": "Space Bunny Alpha is an anonymous large model with blazing-fast inference, strong coding capabilities and native multimodal input support. It delivers adjustable reasoning effort, and a 1M-token context window. Space...",
-      "expiration_date": "2026-10-05",
-      "id": "stealth/space-bunny-alpha",
-      "name": "Space Bunny Alpha",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 1000000,
-        "is_moderated": false,
-        "max_completion_tokens": 524288
-      }
-    },
     "stepfun/step-3.5-flash": {
       "architecture": {
         "input_modalities": [
@@ -22276,12 +22226,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.000000528",
+        "completion": "0.00000033",
         "image": null,
-        "input_cache_read": "0.000000033",
+        "input_cache_read": "0.000000020625",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000132",
+        "prompt": "0.0000000825",
         "request": null,
         "web_search": null
       },
@@ -22438,12 +22388,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.000002501",
+        "completion": "0.0000022509",
         "image": null,
-        "input_cache_read": "0.000000042",
+        "input_cache_read": "0.0000000378",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000834",
+        "prompt": "0.0000007506",
         "request": null,
         "web_search": null
       },
