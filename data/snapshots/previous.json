@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T04:01:00.698757Z",
+  "generated_at": "2026-10-05T04:31:38.474961Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3543,10 +3543,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.000000025",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000025",
+        "prompt": "0.00000003",
         "request": null,
         "web_search": null
       },
