@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T00:01:16.439508Z",
+  "generated_at": "2026-10-06T00:31:12.182217Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3368,10 +3368,10 @@
       "pricing": {
         "completion": "0.000001",
         "image": null,
-        "input_cache_read": "0.000000135",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.00000027",
         "request": null,
         "web_search": null
       },
@@ -3379,14 +3379,9 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
         "max_tokens",
-        "min_p",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
         "response_format",
-        "seed",
         "stop",
         "structured_outputs",
         "temperature",
@@ -3396,9 +3391,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 163840,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 147456
       }
     },
     "deepseek/deepseek-v3.2": {
@@ -3431,10 +3426,10 @@
       "pricing": {
         "completion": "0.00000042",
         "image": null,
-        "input_cache_read": "0.000000135",
+        "input_cache_read": "0.000000028",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000259",
+        "prompt": "0.00000028",
         "request": null,
         "web_search": null
       },
@@ -3461,9 +3456,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 163840,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 147456
+        "max_completion_tokens": 65536
       }
     },
     "deepseek/deepseek-v3.2-exp": {
@@ -18695,12 +18690,12 @@
       "id": "qwen/qwen3-235b-a22b-2507",
       "name": "Qwen: Qwen3 235B A22B Instruct 2507",
       "pricing": {
-        "completion": "0.00000035",
+        "completion": "0.00000055",
         "image": null,
-        "input_cache_read": "0.0000000175",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000875",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
@@ -18727,7 +18722,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 16384
       }
     },
     "qwen/qwen3-235b-a22b-thinking-2507": {
@@ -18870,12 +18865,12 @@
       "id": "qwen/qwen3-30b-a3b-instruct-2507",
       "name": "Qwen: Qwen3 30B A3B Instruct 2507",
       "pricing": {
-        "completion": "0.00000019305",
+        "completion": "0.0000003",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004815",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -18899,9 +18894,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 128000,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 32000
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3-30b-a3b-thinking-2507": {
@@ -20251,12 +20246,12 @@
       "id": "qwen/qwen3.5-397b-a17b",
       "name": "Qwen: Qwen3.5 397B A17B",
       "pricing": {
-        "completion": "0.0000035",
+        "completion": "0.000003",
         "image": null,
-        "input_cache_read": "0.000000225",
+        "input_cache_read": "0.00000022",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000055",
+        "prompt": "0.00000045",
         "request": null,
         "web_search": null
       },
@@ -20285,7 +20280,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 81920
       }
     },
     "qwen/qwen3.5-9b": {
@@ -22294,12 +22289,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22456,12 +22451,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
@@ -24779,10 +24774,10 @@
       "pricing": {
         "completion": "0.000012",
         "image": null,
-        "input_cache_read": "0.000000052",
+        "input_cache_read": "0.000000048",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000052",
+        "prompt": "0.000000048",
         "request": null,
         "web_search": null
       },
