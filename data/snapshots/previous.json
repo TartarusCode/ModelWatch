@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T13:31:08.012177Z",
+  "generated_at": "2026-10-06T14:01:08.699079Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3538,10 +3538,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000082",
+        "input_cache_read": "0.0000000063",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000082",
+        "prompt": "0.0000000063",
         "request": null,
         "web_search": null
       },
@@ -3599,10 +3599,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000069",
+        "input_cache_read": "0.0000000046",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000069",
+        "prompt": "0.0000000046",
         "request": null,
         "web_search": null
       },
@@ -3975,7 +3975,7 @@
         "input_cache_read": "0.0000000165",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000495",
+        "prompt": "0.000000036795",
         "request": null,
         "web_search": null
       },
@@ -9356,6 +9356,59 @@
         "max_completion_tokens": 209715
       }
     },
+    "mistralai/mistral-large-4-0": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Mistral"
+      },
+      "canonical_slug": "mistralai/mistral-large-4-0-20261006",
+      "context_length": 524288,
+      "created": 1791294122,
+      "default_parameters": {},
+      "description": "Mistral Large 4 is a frontier multimodal (text and image input) model from Mistral AI built for reasoning, coding, and agentic workloads. It offers a 512K-token context window with up...",
+      "expiration_date": null,
+      "id": "mistralai/mistral-large-4-0",
+      "name": "Mistral: Mistral Large 4",
+      "pricing": {
+        "completion": "0.00000209",
+        "image": null,
+        "input_cache_read": "0.00000007",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000068",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 524288,
+        "is_moderated": false,
+        "max_completion_tokens": 262144
+      }
+    },
     "mistralai/mistral-medium-3": {
       "architecture": {
         "input_modalities": [
@@ -10554,10 +10607,10 @@
       "pricing": {
         "completion": "0.000014",
         "image": null,
-        "input_cache_read": "0.00000031",
+        "input_cache_read": "0.00000027",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000095",
+        "prompt": "0.00000083",
         "request": null,
         "web_search": null
       },
@@ -24774,10 +24827,10 @@
       "pricing": {
         "completion": "0.000012",
         "image": null,
-        "input_cache_read": "0.00000011",
+        "input_cache_read": "0.00000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000112",
+        "prompt": "0.000000152",
         "request": null,
         "web_search": null
       },
