@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T03:31:07.928635Z",
+  "generated_at": "2026-10-06T04:01:09.507118Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3538,10 +3538,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000179",
+        "input_cache_read": "0.0000000137",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000179",
+        "prompt": "0.0000000137",
         "request": null,
         "web_search": null
       },
@@ -3599,10 +3599,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.000000009",
+        "input_cache_read": "0.0000000069",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000009",
+        "prompt": "0.0000000069",
         "request": null,
         "web_search": null
       },
@@ -24902,10 +24902,10 @@
       "pricing": {
         "completion": "0.0000005",
         "image": null,
-        "input_cache_read": "0.0000000141",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000214",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -24934,9 +24934,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1048575,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 943717
       }
     },
     "z-ai/glm-5.3-flash:batch": {
