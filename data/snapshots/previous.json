@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T08:01:09.742284Z",
+  "generated_at": "2026-10-06T08:31:47.118174Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3538,10 +3538,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000023",
+        "input_cache_read": "0.0000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000023",
+        "prompt": "0.0000000015",
         "request": null,
         "web_search": null
       },
@@ -3599,10 +3599,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000046",
+        "input_cache_read": "0.0000000134",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000046",
+        "prompt": "0.0000000134",
         "request": null,
         "web_search": null
       },
@@ -3970,7 +3970,7 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.00000132",
+        "completion": "0.0000033",
         "image": null,
         "input_cache_read": "0.0000000033",
         "input_cache_write": null,
@@ -10289,7 +10289,7 @@
       "pricing": {
         "completion": "0.0000025",
         "image": null,
-        "input_cache_read": "0.00000015",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000006",
@@ -10319,7 +10319,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 98304
+        "max_completion_tokens": 235929
       }
     },
     "moonshotai/kimi-k2.5": {
@@ -20179,12 +20179,12 @@
       "id": "qwen/qwen3.5-35b-a3b",
       "name": "Qwen: Qwen3.5-35B-A3B",
       "pricing": {
-        "completion": "0.000001",
+        "completion": "0.00000075",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.00000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.00000008",
         "request": null,
         "web_search": null
       },
@@ -20213,7 +20213,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 32768
       }
     },
     "qwen/qwen3.5-397b-a17b": {
