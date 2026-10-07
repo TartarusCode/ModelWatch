@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T23:01:03.275974Z",
+  "generated_at": "2026-10-07T23:31:05.818690Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -969,7 +969,7 @@
       ],
       "top_provider": {
         "context_length": 1000000,
-        "is_moderated": false,
+        "is_moderated": true,
         "max_completion_tokens": 128000
       }
     },
@@ -10705,7 +10705,7 @@
       "pricing": {
         "completion": "0.000015",
         "image": null,
-        "input_cache_read": "0.00000045",
+        "input_cache_read": "0.00000043",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000005",
@@ -19016,12 +19016,12 @@
       "id": "qwen/qwen3-30b-a3b-instruct-2507",
       "name": "Qwen: Qwen3 30B A3B Instruct 2507",
       "pricing": {
-        "completion": "0.00000019305",
+        "completion": "0.0000003",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004815",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -19045,9 +19045,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 128000,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 32000
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3-30b-a3b-thinking-2507": {
@@ -24923,12 +24923,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.0000072",
+        "completion": "0.000012",
         "image": null,
-        "input_cache_read": "0.000000077",
+        "input_cache_read": "0.0000000795",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000855",
+        "prompt": "0.0000000883",
         "request": null,
         "web_search": null
       },
