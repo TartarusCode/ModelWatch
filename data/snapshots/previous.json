@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T06:31:09.674671Z",
+  "generated_at": "2026-10-07T07:01:11.684480Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3972,10 +3972,10 @@
       "pricing": {
         "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000006",
+        "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.00000005",
         "request": null,
         "web_search": null
       },
@@ -24819,12 +24819,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.000012",
+        "completion": "0.0000072",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.000000162",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000003",
+        "prompt": "0.000000171",
         "request": null,
         "web_search": null
       },
