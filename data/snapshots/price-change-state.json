@@ -12394,7 +12394,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-07T16:31:13.356752Z",
+  "generated_at": "2026-10-07T17:31:07.846480Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -15822,7 +15822,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.02000000",
+        "anchor": "0.006000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -21251,12 +21251,12 @@
         "anchor": "0.62000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.62000000",
+        "pending_builds": 1,
+        "pending_price": "0.5000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "moonshotai/kimi-k3:batch": {
