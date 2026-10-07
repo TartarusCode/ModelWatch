@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T18:32:28.493145Z",
+  "generated_at": "2026-10-07T19:01:09.989814Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -918,6 +918,57 @@
         "context_length": 200000,
         "is_moderated": true,
         "max_completion_tokens": 64000
+      }
+    },
+    "anthropic/claude-haiku-5.5": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude"
+      },
+      "canonical_slug": "anthropic/claude-haiku-5.5-20261007",
+      "context_length": 1000000,
+      "created": 1791397883,
+      "default_parameters": {},
+      "description": "Claude Haiku 5.5 is Anthropic's small, fast model for high-volume, cost-sensitive work such as summarization, subagents, and browser use. It succeeds Claude Haiku 4.5 with stronger coding, computer use, and...",
+      "expiration_date": null,
+      "id": "anthropic/claude-haiku-5.5",
+      "name": "Anthropic: Claude Haiku 5.5",
+      "pricing": {
+        "completion": "0.0000005",
+        "image": null,
+        "input_cache_read": "0.00000001",
+        "input_cache_write": "0.000000125",
+        "internal_reasoning": null,
+        "prompt": "0.0000001",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": true,
+        "max_completion_tokens": 128000
       }
     },
     "anthropic/claude-opus-4.1": {
@@ -2075,7 +2126,7 @@
       "pricing": {
         "completion": "0.000005",
         "image": null,
-        "input_cache_read": "0.0000001",
+        "input_cache_read": "0.00000005",
         "input_cache_write": "0.00000125",
         "internal_reasoning": null,
         "prompt": "0.000001",
@@ -20356,7 +20407,7 @@
         "top_p": null
       },
       "description": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, designed to deliver strong reasoning, coding, and visual understanding in an efficient 9B-parameter architecture. It uses a unified vision-language design...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-21",
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {

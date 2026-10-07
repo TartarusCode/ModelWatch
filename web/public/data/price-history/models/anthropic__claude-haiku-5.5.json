@@ -1,0 +1,16 @@
+{
+  "model_id": "anthropic/claude-haiku-5.5",
+  "points": [
+    {
+      "completion_per_million": "0.5000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.01000000",
+      "input_cache_write_per_million": "0.125000000",
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.1000000",
+      "recorded_at": "2026-10-07T19:01:09.989814Z",
+      "request_per_million": null,
+      "web_search_per_million": "10000.00"
+    }
+  ]
+}
