@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T19:01:09.989814Z",
+  "generated_at": "2026-10-07T19:31:00.665442Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -949,6 +949,59 @@
         "input_cache_write": "0.000000125",
         "internal_reasoning": null,
         "prompt": "0.0000001",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": true,
+        "max_completion_tokens": 128000
+      }
+    },
+    "anthropic/claude-haiku-5.5:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude"
+      },
+      "canonical_slug": "anthropic/claude-haiku-5.5-20261007",
+      "context_length": 1000000,
+      "created": 1791397883,
+      "default_parameters": {},
+      "description": "Claude Haiku 5.5 is Anthropic's small, fast model for high-volume, cost-sensitive work such as summarization, subagents, and browser use. It succeeds Claude Haiku 4.5 with stronger coding, computer use, and...",
+      "expiration_date": null,
+      "id": "anthropic/claude-haiku-5.5:batch",
+      "name": "Anthropic: Claude Haiku 5.5 (batch)",
+      "pricing": {
+        "completion": "0.00000025",
+        "image": null,
+        "input_cache_read": "0.000000005",
+        "input_cache_write": "0.0000000625",
+        "internal_reasoning": null,
+        "prompt": "0.00000005",
         "request": null,
         "web_search": "0.01"
       },
@@ -6317,12 +6370,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.000000255",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.0000000425",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.0000000765",
         "request": null,
         "web_search": null
       },
