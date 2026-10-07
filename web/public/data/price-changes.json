@@ -1,6 +1,23 @@
 {
   "active_changes": [
     {
+      "delta_per_million_usd": "-0.100000",
+      "detected_at": "2026-10-07T22:01:07.850533Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.200000",
+      "field": "input_cache_read",
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "new_per_million_usd": "0.100000",
+      "old_per_million_usd": "0.200000",
+      "pct_change": -0.5,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
       "delta_per_million_usd": "-0.050000",
       "detected_at": "2026-10-07T19:30:55.046297Z",
       "direction": "cut",
@@ -12921,9 +12938,26 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.100000",
+      "detected_at": "2026-10-07T22:01:07.850533Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.200000",
+      "field": "input_cache_read",
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "new_per_million_usd": "0.100000",
+      "old_per_million_usd": "0.200000",
+      "pct_change": -0.5,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-10-07T21:31:06.503298Z",
+  "generated_at": "2026-10-07T22:01:20.623775Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "-0.196000",

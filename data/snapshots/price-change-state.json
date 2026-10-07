@@ -12426,9 +12426,26 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.100000",
+      "detected_at": "2026-10-07T22:01:07.850533Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.200000",
+      "field": "input_cache_read",
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "new_per_million_usd": "0.100000",
+      "old_per_million_usd": "0.200000",
+      "pct_change": -0.5,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-10-07T21:31:06.503298Z",
+  "generated_at": "2026-10-07T22:01:20.623775Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -14612,15 +14629,15 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.2000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.1000000",
+        "confirmed_at": "2026-10-07T22:01:07.850533Z",
+        "confirmed_price": "0.1000000",
         "direction": "cut",
         "episode_start_price": "0.2000000",
-        "pending_builds": 1,
-        "pending_price": "0.1000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_write": {
         "anchor": "2.5000000",
@@ -21271,7 +21288,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.43000000",
+        "anchor": "0.45000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
