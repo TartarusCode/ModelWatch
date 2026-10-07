@@ -12114,11 +12114,11 @@
       "new_per_million_usd": "1.390000",
       "old_per_million_usd": "0.670000",
       "pct_change": 1.0746268656716418,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-10-07T06:31:06.379925Z",
+      "recovered_per_million_usd": "0.620000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     },
     {
@@ -12360,7 +12360,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-07T06:01:14.061260Z",
+  "generated_at": "2026-10-07T06:31:09.674671Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -18389,7 +18389,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.0425000000",
+        "anchor": "0.05000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -18400,7 +18400,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.0765000000",
+        "anchor": "0.09000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -21090,15 +21090,15 @@
         "anchor": "4.000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "4.000000",
+        "pending_builds": 1,
+        "pending_price": "2.45000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.16000000",
+        "anchor": "0.0975000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -21112,12 +21112,12 @@
         "anchor": "0.95000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.95000000",
+        "pending_builds": 1,
+        "pending_price": "0.465000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "moonshotai/kimi-k2.7-code": {
@@ -21214,15 +21214,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "1.39000000",
-        "confirmed_at": "2026-10-05T18:31:02.589464Z",
-        "confirmed_price": "1.39000000",
-        "direction": "hike",
-        "episode_start_price": "0.67000000",
+        "anchor": "0.62000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
-        "status": "confirmed"
+        "recovery_builds": 0,
+        "status": "idle"
       }
     },
     "moonshotai/kimi-k3:batch": {
@@ -31165,7 +31165,7 @@
         "episode_start_price": "0.064000000",
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
+        "recovery_builds": 0,
         "status": "confirmed"
       },
       "prompt": {
