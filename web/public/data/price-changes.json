@@ -13263,7 +13263,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-08T07:01:01.712537Z",
+  "generated_at": "2026-10-08T07:31:01.251169Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "-0.527916",
@@ -13300,23 +13300,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "8.000000",
-      "detected_at": "2026-10-05T03:00:55.720801Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "8.000000",
-      "field": "completion",
-      "model_id": "z-ai/glm-5.2",
-      "new_per_million_usd": "16.000000",
-      "old_per_million_usd": "8.000000",
-      "pct_change": 1.0,
-      "recovered_at": "2026-10-07T07:30:59.006315Z",
-      "recovered_per_million_usd": "7.200000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "2.600000",
       "detected_at": "2026-10-05T10:01:04.344656Z",
       "direction": "hike",
@@ -13328,40 +13311,6 @@
       "pct_change": 0.5909090909090909,
       "recovered_at": "2026-10-07T21:31:01.532118Z",
       "recovered_per_million_usd": "3.390000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "-0.042400",
-      "detected_at": "2026-10-07T05:01:08.981502Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.104000",
-      "field": "prompt",
-      "model_id": "z-ai/glm-5.2",
-      "new_per_million_usd": "0.061600",
-      "old_per_million_usd": "0.104000",
-      "pct_change": -0.4076923076923077,
-      "recovered_at": "2026-10-07T07:30:59.006315Z",
-      "recovered_per_million_usd": "0.171000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "-0.002400",
-      "detected_at": "2026-10-07T05:01:08.981502Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.064000",
-      "field": "input_cache_read",
-      "model_id": "z-ai/glm-5.2",
-      "new_per_million_usd": "0.061600",
-      "old_per_million_usd": "0.064000",
-      "pct_change": -0.0375,
-      "recovered_at": "2026-10-07T07:30:59.006315Z",
-      "recovered_per_million_usd": "0.162000",
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "recovered",
