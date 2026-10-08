@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T18:30:53.939025Z",
+  "generated_at": "2026-10-08T19:02:30.821164Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,10 +3586,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000131",
+        "input_cache_read": "0.0000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000131",
+        "prompt": "0.0000000075",
         "request": null,
         "web_search": null
       },
@@ -3647,10 +3647,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000046",
+        "input_cache_read": "0.0000000137",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000046",
+        "prompt": "0.0000000137",
         "request": null,
         "web_search": null
       },
@@ -10643,10 +10643,10 @@
       "pricing": {
         "completion": "0.000014",
         "image": null,
-        "input_cache_read": "0.00000066",
+        "input_cache_read": "0.00000072",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000099",
+        "prompt": "0.00000109",
         "request": null,
         "web_search": null
       },
@@ -24914,12 +24914,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.00001",
+        "completion": "0.0000043",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.00000007",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000003",
+        "prompt": "0.00000007",
         "request": null,
         "web_search": null
       },
