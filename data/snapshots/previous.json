@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T12:31:04.500035Z",
+  "generated_at": "2026-10-08T13:01:06.523707Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3637,10 +3637,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000099",
+        "input_cache_read": "0.0000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000099",
+        "prompt": "0.0000000075",
         "request": null,
         "web_search": null
       },
@@ -3698,10 +3698,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000079",
+        "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000079",
+        "prompt": "0.000000006",
         "request": null,
         "web_search": null
       },
@@ -3820,12 +3820,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.00000191052",
+        "completion": "0.00000058812",
         "image": null,
-        "input_cache_read": "0.000000079605",
+        "input_cache_read": "0.000000024505",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000095526",
+        "prompt": "0.00000029406",
         "request": null,
         "web_search": null
       },
@@ -10565,10 +10565,10 @@
       "pricing": {
         "completion": "0.00000245",
         "image": null,
-        "input_cache_read": "0.0000000975",
+        "input_cache_read": "0.000000125",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000465",
+        "prompt": "0.0000004485",
         "request": null,
         "web_search": null
       },
@@ -22221,6 +22221,67 @@
         "context_length": 256000,
         "is_moderated": false,
         "max_completion_tokens": 230400
+      }
+    },
+    "stepfun/step-5-preview": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "stepfun/step-5-preview-20261008",
+      "context_length": 1000000,
+      "created": 1791462849,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Step 5 Preview is StepFun's flagship model for agentic work, built on a sparse Mixture-of-Experts architecture (27B active / 600B total parameters). It performs strongly in software engineering and professional...",
+      "expiration_date": null,
+      "id": "stepfun/step-5-preview",
+      "name": "StepFun: Step 5 Preview",
+      "pricing": {
+        "completion": "0.0000027",
+        "image": null,
+        "input_cache_read": "0.00000005",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000001",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": false,
+        "max_completion_tokens": 64000
       }
     },
     "tencent/hunyuan-a13b-instruct": {
