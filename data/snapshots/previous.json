@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T16:31:13.422245Z",
+  "generated_at": "2026-10-08T17:01:06.663072Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,10 +3586,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000099",
+        "input_cache_read": "0.0000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000099",
+        "prompt": "0.0000000075",
         "request": null,
         "web_search": null
       },
@@ -3647,10 +3647,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000046",
+        "input_cache_read": "0.000000018",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000046",
+        "prompt": "0.000000018",
         "request": null,
         "web_search": null
       },
@@ -7028,7 +7028,7 @@
         "max_completion_tokens": 32768
       }
     },
-    "inclusionai/ling-3.0-flash-sante:free": {
+    "inclusionai/ling-3.0-flash-sante": {
       "architecture": {
         "input_modalities": [
           "text"
@@ -7046,15 +7046,15 @@
       "default_parameters": {},
       "description": "Ling 3.0 Flash Sante is a health and medicine-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for...",
       "expiration_date": null,
-      "id": "inclusionai/ling-3.0-flash-sante:free",
-      "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
+      "id": "inclusionai/ling-3.0-flash-sante",
+      "name": "inclusionAI: Ling 3.0 Flash Sante",
       "pricing": {
-        "completion": "0",
+        "completion": "0.0000001232",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.0000000084",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0",
+        "prompt": "0.000000042",
         "request": null,
         "web_search": null
       },
@@ -24979,7 +24979,7 @@
         "input_cache_read": "0.000000048",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.000000085",
         "request": null,
         "web_search": null
       },
