@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T19:31:02.172116Z",
+  "generated_at": "2026-10-08T20:01:01.131403Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,10 +3586,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000057",
+        "input_cache_read": "0.0000000173",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000057",
+        "prompt": "0.0000000173",
         "request": null,
         "web_search": null
       },
@@ -3647,10 +3647,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000104",
+        "input_cache_read": "0.0000000079",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000104",
+        "prompt": "0.0000000079",
         "request": null,
         "web_search": null
       },
@@ -9406,7 +9406,7 @@
       "context_length": 1048576,
       "created": 1791294122,
       "default_parameters": {},
-      "description": "Mistral Large 4 is a frontier multimodal (text and image input) model from Mistral AI built for reasoning, coding, and agentic workloads. It offers a 512K-token context window with up...",
+      "description": "Mistral Large 4 is a frontier multimodal (text and image input) model from Mistral AI built for reasoning, coding, and agentic workloads. It offers a 1M-token context window with up...",
       "expiration_date": null,
       "id": "mistralai/mistral-large-4-0",
       "name": "Mistral: Mistral Large 4",
@@ -10508,10 +10508,10 @@
       "pricing": {
         "completion": "0.00000245",
         "image": null,
-        "input_cache_read": "0.0000001205",
+        "input_cache_read": "0.0000001202",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000004357",
+        "prompt": "0.0000004348",
         "request": null,
         "web_search": null
       },
@@ -25091,7 +25091,7 @@
         "input_cache_read": "0.000000048",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.00000008",
         "request": null,
         "web_search": null
       },
