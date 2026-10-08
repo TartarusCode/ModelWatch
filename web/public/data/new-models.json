@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-10-08T19:02:30.821164Z",
+  "generated_at": "2026-10-08T19:31:02.172116Z",
   "models": [
+    {
+      "canonical_slug": "openai/gpt-6.1-sol-pro-20260929",
+      "created": 1790702886,
+      "detected_at": "2026-10-08T19:30:57.192948Z",
+      "model_id": "openai/gpt-6.1-sol-pro:batch",
+      "name": "OpenAI: GPT-6.1 Sol Pro (batch)"
+    },
+    {
+      "canonical_slug": "openai/gpt-6.1-sol-20260929",
+      "created": 1790702882,
+      "detected_at": "2026-10-08T19:30:57.192948Z",
+      "model_id": "openai/gpt-6.1-sol:batch",
+      "name": "OpenAI: GPT-6.1 Sol (batch)"
+    },
     {
       "canonical_slug": "inclusionai/ling-3.0-flash-sante-20260904",
       "created": 1788545946,
@@ -14,13 +28,6 @@
       "detected_at": "2026-10-08T13:01:02.816526Z",
       "model_id": "stepfun/step-5-preview",
       "name": "StepFun: Step 5 Preview"
-    },
-    {
-      "canonical_slug": "anthropic/claude-haiku-5.5-20261007",
-      "created": 1791397883,
-      "detected_at": "2026-10-07T19:30:55.046297Z",
-      "model_id": "anthropic/claude-haiku-5.5:batch",
-      "name": "Anthropic: Claude Haiku 5.5 (batch)"
     }
   ],
   "window_hours": 24
