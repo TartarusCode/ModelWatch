@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T15:01:05.192582Z",
+  "generated_at": "2026-10-09T15:31:12.383517Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,10 +3586,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000057",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000057",
+        "prompt": "0.00000003",
         "request": null,
         "web_search": null
       },
@@ -3647,10 +3647,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000104",
+        "input_cache_read": "0.0000000079",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000104",
+        "prompt": "0.0000000079",
         "request": null,
         "web_search": null
       },
@@ -10505,10 +10505,10 @@
       "pricing": {
         "completion": "0.00000245",
         "image": null,
-        "input_cache_read": "0.0000001205",
+        "input_cache_read": "0.0000001202",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000004357",
+        "prompt": "0.0000004348",
         "request": null,
         "web_search": null
       },
@@ -20744,12 +20744,12 @@
       "id": "qwen/qwen3.6-27b",
       "name": "Qwen: Qwen3.6 27B",
       "pricing": {
-        "completion": "0.0000027",
+        "completion": "0.0000032",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000045",
+        "prompt": "0.00000032",
         "request": null,
         "web_search": null
       },
@@ -20778,7 +20778,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 81920
       }
     },
     "qwen/qwen3.6-35b-a3b": {
@@ -25018,7 +25018,7 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.000006",
+        "completion": "0.0000042",
         "image": null,
         "input_cache_read": "0.000000059",
         "input_cache_write": null,
@@ -25081,7 +25081,7 @@
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "pricing": {
-        "completion": "0.0000036",
+        "completion": "0.000007",
         "image": null,
         "input_cache_read": "0.000000039",
         "input_cache_write": null,
