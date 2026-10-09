@@ -307,23 +307,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "-0.100000",
-      "detected_at": "2026-10-02T01:01:06.951691Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.600000",
-      "field": "prompt",
-      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
-      "new_per_million_usd": "0.500000",
-      "old_per_million_usd": "0.600000",
-      "pct_change": -0.16666666666666666,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "0.200000",
       "detected_at": "2026-10-06T01:01:08.230703Z",
       "direction": "hike",
@@ -12033,9 +12016,9 @@
       "pct_change": -0.16666666666666666,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-10-09T01:31:34.605085Z",
+      "settled_per_million_usd": "0.500000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -13399,7 +13382,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-09T01:01:01.137584Z",
+  "generated_at": "2026-10-09T01:31:41.585728Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "-0.527916",
@@ -13625,19 +13608,19 @@
   ],
   "settled_changes": [
     {
-      "delta_per_million_usd": "0.150000",
-      "detected_at": "2026-10-01T01:01:13.330886Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.400000",
+      "delta_per_million_usd": "-0.100000",
+      "detected_at": "2026-10-02T01:01:06.951691Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.600000",
       "field": "prompt",
-      "model_id": "minimax/minimax-m1",
-      "new_per_million_usd": "0.550000",
-      "old_per_million_usd": "0.400000",
-      "pct_change": 0.375,
+      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "new_per_million_usd": "0.500000",
+      "old_per_million_usd": "0.600000",
+      "pct_change": -0.16666666666666666,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": "2026-10-08T01:31:00.155825Z",
-      "settled_per_million_usd": "0.550000",
+      "settled_at": "2026-10-09T01:31:34.605085Z",
+      "settled_per_million_usd": "0.500000",
       "status": "settled",
       "tier": null
     }
