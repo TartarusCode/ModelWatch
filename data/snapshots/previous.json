@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T15:31:12.383517Z",
+  "generated_at": "2026-10-09T16:01:04.731254Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,10 +3586,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.0000000173",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000003",
+        "prompt": "0.0000000173",
         "request": null,
         "web_search": null
       },
@@ -3647,10 +3647,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000079",
+        "input_cache_read": "0.0000000046",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000079",
+        "prompt": "0.0000000046",
         "request": null,
         "web_search": null
       },
@@ -3769,12 +3769,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.0000005742",
+        "completion": "0.000000530004",
         "image": null,
-        "input_cache_read": "0.000000023925",
+        "input_cache_read": "0.0000000220835",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000002871",
+        "prompt": "0.000000265002",
         "request": null,
         "web_search": null
       },
@@ -10505,10 +10505,10 @@
       "pricing": {
         "completion": "0.00000245",
         "image": null,
-        "input_cache_read": "0.0000001202",
+        "input_cache_read": "0.00000012",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000004348",
+        "prompt": "0.0000004344",
         "request": null,
         "web_search": null
       },
@@ -19071,7 +19071,6 @@
         "logit_bias",
         "logprobs",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "repetition_penalty",
         "response_format",
@@ -19178,6 +19177,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -19190,7 +19190,9 @@
         "temperature",
         "tool_choice",
         "tools",
+        "top_a",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -25081,7 +25083,7 @@
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "pricing": {
-        "completion": "0.000007",
+        "completion": "0.0000048",
         "image": null,
         "input_cache_read": "0.000000039",
         "input_cache_write": null,
