@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T14:31:02.957320Z",
+  "generated_at": "2026-10-09T15:01:05.192582Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,10 +3586,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000099",
+        "input_cache_read": "0.0000000057",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000099",
+        "prompt": "0.0000000057",
         "request": null,
         "web_search": null
       },
@@ -3647,10 +3647,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.000000018",
+        "input_cache_read": "0.0000000104",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000018",
+        "prompt": "0.0000000104",
         "request": null,
         "web_search": null
       },
@@ -10640,7 +10640,7 @@
       "pricing": {
         "completion": "0.000012",
         "image": null,
-        "input_cache_read": "0.0000003",
+        "input_cache_read": "0.00000033",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000005",
@@ -19071,6 +19071,7 @@
         "logit_bias",
         "logprobs",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "repetition_penalty",
         "response_format",
