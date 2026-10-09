@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T21:01:05.498184Z",
+  "generated_at": "2026-10-09T21:31:02.763865Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,10 +3586,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000131",
+        "input_cache_read": "0.0000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000131",
+        "prompt": "0.0000000075",
         "request": null,
         "web_search": null
       },
@@ -3647,10 +3647,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000046",
+        "input_cache_read": "0.0000000062",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000046",
+        "prompt": "0.0000000062",
         "request": null,
         "web_search": null
       },
@@ -10638,12 +10638,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.000014",
+        "completion": "0.0000135",
         "image": null,
-        "input_cache_read": "0.0000006",
+        "input_cache_read": "0.0000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000009",
+        "prompt": "0.0000008",
         "request": null,
         "web_search": null
       },
@@ -20714,7 +20714,7 @@
         "completion": "0.00000047",
         "image": null,
         "input_cache_read": "0.000000016",
-        "input_cache_write": "0.0000002",
+        "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.00000015",
         "request": null,
@@ -20771,7 +20771,7 @@
         "completion": "0.000006",
         "image": null,
         "input_cache_read": "0.00000025",
-        "input_cache_write": "0.0000025",
+        "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.000002",
         "request": null,
@@ -24441,12 +24441,12 @@
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "pricing": {
-        "completion": "0.0000048",
+        "completion": "0.000006",
         "image": null,
-        "input_cache_read": "0.000000048",
+        "input_cache_read": "0.000000049",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000049",
+        "prompt": "0.00000005",
         "request": null,
         "web_search": null
       },
