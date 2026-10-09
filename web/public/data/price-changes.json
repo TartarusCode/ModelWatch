@@ -273,6 +273,23 @@
       "tier": null
     },
     {
+      "delta_per_million_usd": "0.066000",
+      "detected_at": "2026-10-09T23:01:03.434556Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.134000",
+      "field": "completion",
+      "model_id": "nvidia/nemotron-3.5-lightning",
+      "new_per_million_usd": "0.200000",
+      "old_per_million_usd": "0.134000",
+      "pct_change": 0.4925373134328358,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
       "delta_per_million_usd": "0.200000",
       "detected_at": "2026-10-06T01:01:08.230703Z",
       "direction": "hike",
@@ -13788,9 +13805,26 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.066000",
+      "detected_at": "2026-10-09T23:01:03.434556Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.134000",
+      "field": "completion",
+      "model_id": "nvidia/nemotron-3.5-lightning",
+      "new_per_million_usd": "0.200000",
+      "old_per_million_usd": "0.134000",
+      "pct_change": 0.4925373134328358,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-10-09T22:30:58.325166Z",
+  "generated_at": "2026-10-09T23:01:10.465723Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "-0.070000",
@@ -13838,23 +13872,6 @@
       "pct_change": -0.25925925925925924,
       "recovered_at": "2026-10-09T04:00:56.204581Z",
       "recovered_per_million_usd": "3.200000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "-0.047000",
-      "detected_at": "2026-10-08T05:31:05.238915Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.077000",
-      "field": "input_cache_read",
-      "model_id": "z-ai/glm-5.2",
-      "new_per_million_usd": "0.030000",
-      "old_per_million_usd": "0.077000",
-      "pct_change": -0.6103896103896104,
-      "recovered_at": "2026-10-08T23:00:57.204649Z",
-      "recovered_per_million_usd": "0.083000",
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "recovered",
