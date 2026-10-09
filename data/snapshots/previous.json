@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T12:30:54.064748Z",
+  "generated_at": "2026-10-09T13:00:55.179520Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,10 +3586,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000075",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000075",
+        "prompt": "0.00000003",
         "request": null,
         "web_search": null
       },
@@ -3647,10 +3647,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.000000018",
+        "input_cache_read": "0.0000000104",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000018",
+        "prompt": "0.0000000104",
         "request": null,
         "web_search": null
       },
@@ -3769,12 +3769,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.00000191052",
+        "completion": "0.00000058812",
         "image": null,
-        "input_cache_read": "0.000000079605",
+        "input_cache_read": "0.000000024505",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000095526",
+        "prompt": "0.00000029406",
         "request": null,
         "web_search": null
       },
@@ -10508,10 +10508,10 @@
       "pricing": {
         "completion": "0.00000245",
         "image": null,
-        "input_cache_read": "0.0000000975",
+        "input_cache_read": "0.000000125",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000465",
+        "prompt": "0.0000004485",
         "request": null,
         "web_search": null
       },
@@ -25083,7 +25083,7 @@
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "pricing": {
-        "completion": "0.0000048",
+        "completion": "0.0000036",
         "image": null,
         "input_cache_read": "0.000000039",
         "input_cache_write": null,
