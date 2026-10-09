@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T22:01:04.278792Z",
+  "generated_at": "2026-10-09T22:30:58.325166Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,10 +3586,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000057",
+        "input_cache_read": "0.0000000173",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000057",
+        "prompt": "0.0000000173",
         "request": null,
         "web_search": null
       },
@@ -3647,10 +3647,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.000000005",
+        "input_cache_read": "0.0000000055",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000005",
+        "prompt": "0.0000000055",
         "request": null,
         "web_search": null
       },
@@ -11594,12 +11594,12 @@
       "id": "nvidia/nemotron-3.5-lightning",
       "name": "NVIDIA: Nemotron 3.5 Lightning",
       "pricing": {
-        "completion": "0.000000134",
+        "completion": "0.0000002",
         "image": null,
-        "input_cache_read": "0.00000002345",
+        "input_cache_read": "0.00000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000469",
+        "prompt": "0.00000007",
         "request": null,
         "web_search": null
       },
@@ -11628,7 +11628,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 235929
       }
     },
     "nvidia/nemotron-3.5-lightning:free": {
@@ -23470,7 +23470,7 @@
         "top_p": 0.95
       },
       "description": "MiMo-V2.5 is a native omnimodal model by Xiaomi. It delivers Pro-level agentic performance at roughly half the inference cost, while surpassing MiMo-V2-Omni in multimodal perception across image and video understanding...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-21",
       "id": "xiaomi/mimo-v2.5",
       "name": "Xiaomi: MiMo-V2.5",
       "pricing": {
@@ -23531,7 +23531,7 @@
         "top_p": 0.95
       },
       "description": "MiMo-V2.5-Pro is Xiaomi’s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, with top rankings on benchmarks such as ClawEval, GDPVal, and SWE-bench Pro....",
-      "expiration_date": null,
+      "expiration_date": "2026-10-21",
       "id": "xiaomi/mimo-v2.5-pro",
       "name": "Xiaomi: MiMo-V2.5-Pro",
       "pricing": {
@@ -24443,10 +24443,10 @@
       "pricing": {
         "completion": "0.000006",
         "image": null,
-        "input_cache_read": "0.000000049",
+        "input_cache_read": "0.000000038",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000005",
+        "prompt": "0.000000039",
         "request": null,
         "web_search": null
       },
