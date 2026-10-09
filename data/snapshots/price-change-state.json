@@ -12802,7 +12802,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-09T03:01:09.731517Z",
+  "generated_at": "2026-10-09T03:31:08.267823Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -15917,7 +15917,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.0131000000",
+        "anchor": "0.0075000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -15928,7 +15928,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.0131000000",
+        "anchor": "0.0075000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -15952,7 +15952,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.0046000000",
+        "anchor": "0.0137000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -15963,7 +15963,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.0046000000",
+        "anchor": "0.0137000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -22257,7 +22257,7 @@
     },
     "nvidia/nemotron-3.5-lightning": {
       "completion": {
-        "anchor": "0.14000000",
+        "anchor": "0.134000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -22268,7 +22268,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.0245000000",
+        "anchor": "0.02345000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -22279,7 +22279,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.049000000",
+        "anchor": "0.0469000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -28940,7 +28940,7 @@
         "episode_start_price": "2.7000000",
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 0,
+        "recovery_builds": 1,
         "status": "confirmed"
       },
       "input_cache_read": {
