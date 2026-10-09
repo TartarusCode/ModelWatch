@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T05:01:01.406147Z",
+  "generated_at": "2026-10-09T05:31:07.535866Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,10 +3586,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000228",
+        "input_cache_read": "0.0000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000228",
+        "prompt": "0.0000000075",
         "request": null,
         "web_search": null
       },
@@ -3647,10 +3647,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000137",
+        "input_cache_read": "0.0000000104",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000137",
+        "prompt": "0.0000000104",
         "request": null,
         "web_search": null
       },
@@ -20371,12 +20371,12 @@
       "id": "qwen/qwen3.5-35b-a3b",
       "name": "Qwen: Qwen3.5-35B-A3B",
       "pricing": {
-        "completion": "0.0000013",
+        "completion": "0.00000075",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001625",
+        "prompt": "0.00000008",
         "request": null,
         "web_search": null
       },
@@ -20405,7 +20405,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 32768
       }
     },
     "qwen/qwen3.5-397b-a17b": {
