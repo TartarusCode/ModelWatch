@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T00:00:57.286387Z",
+  "generated_at": "2026-10-10T00:30:55.285447Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,10 +3586,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000131",
+        "input_cache_read": "0.0000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000131",
+        "prompt": "0.0000000075",
         "request": null,
         "web_search": null
       },
@@ -3647,10 +3647,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000137",
+        "input_cache_read": "0.0000000079",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000137",
+        "prompt": "0.0000000079",
         "request": null,
         "web_search": null
       },
@@ -11594,12 +11594,12 @@
       "id": "nvidia/nemotron-3.5-lightning",
       "name": "NVIDIA: Nemotron 3.5 Lightning",
       "pricing": {
-        "completion": "0.0000002",
+        "completion": "0.000000134",
         "image": null,
-        "input_cache_read": "0.00000004",
+        "input_cache_read": "0.00000002345",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000007",
+        "prompt": "0.0000000469",
         "request": null,
         "web_search": null
       },
@@ -11628,7 +11628,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 131072
       }
     },
     "nvidia/nemotron-3.5-lightning:free": {
@@ -18717,12 +18717,12 @@
       "id": "qwen/qwen3-14b",
       "name": "Qwen: Qwen3 14B",
       "pricing": {
-        "completion": "0.00000024",
+        "completion": "0.00000022",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000012",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -18751,7 +18751,7 @@
       "top_provider": {
         "context_length": 40960,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 36864
       }
     },
     "qwen/qwen3-235b-a22b-2507": {
@@ -21895,12 +21895,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22057,12 +22057,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
