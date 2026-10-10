@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T20:01:03.786382Z",
+  "generated_at": "2026-10-10T20:30:54.230955Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -20223,12 +20223,12 @@
       "id": "qwen/qwen3.6-35b-a3b",
       "name": "Qwen: Qwen3.6 35B A3B",
       "pricing": {
-        "completion": "0.000001",
+        "completion": "0.00000095",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.0000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -20257,7 +20257,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 65536
       }
     },
     "qwen/qwen3.6-flash": {
