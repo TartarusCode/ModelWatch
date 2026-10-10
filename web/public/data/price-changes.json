@@ -358,23 +358,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "-0.160000",
-      "detected_at": "2026-10-10T02:30:55.604800Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.800000",
-      "field": "prompt",
-      "model_id": "moonshotai/kimi-k3",
-      "new_per_million_usd": "0.640000",
-      "old_per_million_usd": "0.800000",
-      "pct_change": -0.2,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "-0.050000",
       "detected_at": "2026-10-08T01:00:59.100203Z",
       "direction": "cut",
@@ -13969,11 +13952,11 @@
       "new_per_million_usd": "0.640000",
       "old_per_million_usd": "0.800000",
       "pct_change": -0.2,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-10-10T13:31:02.496566Z",
+      "recovered_per_million_usd": "0.500000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     },
     {
@@ -14079,7 +14062,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-10T13:01:07.881932Z",
+  "generated_at": "2026-10-10T13:31:02.496566Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "0.667986",
@@ -14178,6 +14161,23 @@
       "pct_change": 0.1,
       "recovered_at": "2026-10-10T03:01:02.629189Z",
       "recovered_per_million_usd": "0.280000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "recovered",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.160000",
+      "detected_at": "2026-10-10T02:30:55.604800Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.800000",
+      "field": "prompt",
+      "model_id": "moonshotai/kimi-k3",
+      "new_per_million_usd": "0.640000",
+      "old_per_million_usd": "0.800000",
+      "pct_change": -0.2,
+      "recovered_at": "2026-10-10T13:31:02.496566Z",
+      "recovered_per_million_usd": "0.500000",
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "recovered",
