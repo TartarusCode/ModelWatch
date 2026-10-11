@@ -13412,9 +13412,26 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.100000",
+      "detected_at": "2026-10-11T09:01:01.223708Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.500000",
+      "field": "prompt",
+      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "new_per_million_usd": "0.600000",
+      "old_per_million_usd": "0.500000",
+      "pct_change": 0.2,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-10-11T08:30:51.436819Z",
+  "generated_at": "2026-10-11T09:01:05.781550Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -16678,7 +16695,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.0132000000",
+        "anchor": "0.0138000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -16689,7 +16706,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.0132000000",
+        "anchor": "0.0138000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -22946,15 +22963,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.5000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.6000000",
+        "confirmed_at": "2026-10-11T09:01:01.223708Z",
+        "confirmed_price": "0.6000000",
         "direction": "hike",
         "episode_start_price": "0.5000000",
-        "pending_builds": 1,
-        "pending_price": "0.6000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b:batch": {
