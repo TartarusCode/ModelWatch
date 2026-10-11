@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T08:01:08.403472Z",
+  "generated_at": "2026-10-11T08:30:51.436819Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3647,10 +3647,10 @@
       "pricing": {
         "completion": "0.00000064",
         "image": null,
-        "input_cache_read": "0.0000000162",
+        "input_cache_read": "0.0000000132",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000162",
+        "prompt": "0.0000000132",
         "request": null,
         "web_search": null
       },
@@ -11369,12 +11369,12 @@
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
       "name": "NVIDIA: Nemotron 3 Ultra",
       "pricing": {
-        "completion": "0.0000022",
+        "completion": "0.0000024",
         "image": null,
-        "input_cache_read": "0.0000001",
+        "input_cache_read": "0.00000012",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005",
+        "prompt": "0.0000006",
         "request": null,
         "web_search": null
       },
@@ -11400,9 +11400,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 202800,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 182520
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b:free": {
