@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T08:01:43.164356Z",
+  "generated_at": "2026-10-12T08:31:06.716891Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6314,12 +6314,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.00000022",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.000000021",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000042",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
@@ -6346,9 +6346,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 235929
       }
     },
     "google/gemma-4-26b-a4b-it:free": {
