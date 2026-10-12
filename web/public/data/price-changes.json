@@ -69,23 +69,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "0.140000",
-      "detected_at": "2026-10-05T03:00:55.720801Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "1.000000",
-      "field": "completion",
-      "model_id": "deepseek/deepseek-chat-v3-0324",
-      "new_per_million_usd": "1.140000",
-      "old_per_million_usd": "1.000000",
-      "pct_change": 0.14,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "0.380000",
       "detected_at": "2026-10-10T05:30:53.603160Z",
       "direction": "hike",
@@ -12883,9 +12866,9 @@
       "pct_change": 0.14,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-10-12T03:30:59.750871Z",
+      "settled_per_million_usd": "1.140000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -14317,25 +14300,8 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-12T03:00:57.592694Z",
+  "generated_at": "2026-10-12T03:31:03.016404Z",
   "recovered_changes": [
-    {
-      "delta_per_million_usd": "0.900000",
-      "detected_at": "2026-10-10T19:00:51.040724Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "14.000000",
-      "field": "completion",
-      "model_id": "moonshotai/kimi-k3",
-      "new_per_million_usd": "14.900000",
-      "old_per_million_usd": "14.000000",
-      "pct_change": 0.06428571428571428,
-      "recovered_at": "2026-10-11T03:31:00.591647Z",
-      "recovered_per_million_usd": "12.000000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered",
-      "tier": null
-    },
     {
       "delta_per_million_usd": "-2.000000",
       "detected_at": "2026-10-11T05:00:59.943060Z",
@@ -14369,6 +14335,23 @@
       "recovered_per_million_usd": null,
       "settled_at": "2026-10-11T04:30:52.329016Z",
       "settled_per_million_usd": "1.280000",
+      "status": "settled",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.140000",
+      "detected_at": "2026-10-05T03:00:55.720801Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "1.000000",
+      "field": "completion",
+      "model_id": "deepseek/deepseek-chat-v3-0324",
+      "new_per_million_usd": "1.140000",
+      "old_per_million_usd": "1.000000",
+      "pct_change": 0.14,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-10-12T03:30:59.750871Z",
+      "settled_per_million_usd": "1.140000",
       "status": "settled",
       "tier": null
     }
