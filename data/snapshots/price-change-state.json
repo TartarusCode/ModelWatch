@@ -13482,7 +13482,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-12T12:01:03.975092Z",
+  "generated_at": "2026-10-12T12:31:23.799025Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -20778,12 +20778,12 @@
         "anchor": "0.3000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.3000000",
+        "pending_builds": 1,
+        "pending_price": "0.59000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.055000000",
@@ -20800,12 +20800,12 @@
         "anchor": "0.1000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.1000000",
+        "pending_builds": 1,
+        "pending_price": "0.18000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "meta-llama/llama-guard-4-12b": {
@@ -32784,7 +32784,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.079000000",
+        "anchor": "0.089000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
