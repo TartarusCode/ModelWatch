@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T06:30:55.764884Z",
+  "generated_at": "2026-10-12T07:00:59.828249Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,10 +3586,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000075",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000075",
+        "prompt": "0.00000003",
         "request": null,
         "web_search": null
       },
@@ -7190,7 +7190,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 235929
       }
     },
     "inference-net/schematron-v2-small": {
