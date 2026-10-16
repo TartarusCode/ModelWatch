@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T18:01:17.374272Z",
+  "generated_at": "2026-10-16T20:52:24.319384Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -1761,63 +1761,6 @@
         "max_completion_tokens": 128000
       }
     },
-    "anthropic/claude-sonnet-4": {
-      "architecture": {
-        "input_modalities": [
-          "image",
-          "text",
-          "file"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+file->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Claude"
-      },
-      "canonical_slug": "anthropic/claude-4-sonnet-20250522",
-      "context_length": 200000,
-      "created": 1747930371,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "Claude Sonnet 4 significantly enhances the capabilities of its predecessor, Sonnet 3.7, excelling in both coding and reasoning tasks with improved precision and controllability. Achieving state-of-the-art performance on SWE-bench (72.7%),...",
-      "expiration_date": null,
-      "id": "anthropic/claude-sonnet-4",
-      "name": "Anthropic: Claude Sonnet 4",
-      "pricing": {
-        "completion": "0.000015",
-        "image": null,
-        "input_cache_read": "0.0000003",
-        "input_cache_write": "0.00000375",
-        "internal_reasoning": null,
-        "prompt": "0.000003",
-        "request": null,
-        "web_search": "0.01"
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 200000,
-        "is_moderated": true,
-        "max_completion_tokens": 64000
-      }
-    },
     "anthropic/claude-sonnet-4.5": {
       "architecture": {
         "input_modalities": [
@@ -2145,7 +2088,7 @@
       ],
       "top_provider": {
         "context_length": 1000000,
-        "is_moderated": true,
+        "is_moderated": false,
         "max_completion_tokens": 128000
       }
     },
@@ -2249,60 +2192,6 @@
         "context_length": 1000000,
         "is_moderated": true,
         "max_completion_tokens": 128000
-      }
-    },
-    "apodex/apodex-1.1-mini:free": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "apodex/apodex-1.1-mini-20261001",
-      "context_length": 262144,
-      "created": 1790875335,
-      "default_parameters": {},
-      "description": "Apodex 1.1 Mini is a reasoning-first model from Apodex, built for complex, long-horizon research and forecasting tasks. It works directly with files, data, code, and tools to produce verifiable results,...",
-      "expiration_date": null,
-      "id": "apodex/apodex-1.1-mini:free",
-      "name": "Apodex: Apodex 1.1 Mini (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 235929
       }
     },
     "arcee-ai/trinity-large-thinking": {
@@ -3584,12 +3473,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000128",
+        "completion": "0.000000182",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.0000000182",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000003",
+        "prompt": "0.000000091",
         "request": null,
         "web_search": null
       },
@@ -3619,9 +3508,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1048575,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 943717
       }
     },
     "deepseek/deepseek-v4-flash-0731": {
@@ -3645,12 +3534,12 @@
       "id": "deepseek/deepseek-v4-flash-0731",
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "pricing": {
-        "completion": "0.00000064",
+        "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.000000016",
+        "input_cache_read": "0.0000000111",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000016",
+        "prompt": "0.0000000111",
         "request": null,
         "web_search": null
       },
@@ -3769,12 +3658,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.00000082476",
+        "completion": "0.000000594384",
         "image": null,
-        "input_cache_read": "0.000000034365",
+        "input_cache_read": "0.000000024766",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000041238",
+        "prompt": "0.000000297192",
         "request": null,
         "web_search": null
       },
@@ -4018,142 +3907,16 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000006435",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.0000000054",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.000000036",
         "request": null,
         "web_search": null
       },
-      "pricing_schedule": {
-        "minimum": {
-          "completion": "0.0000006",
-          "input_cache_read": "0.000000003",
-          "prompt": "0.00000015"
-        },
-        "rates": {
-          "completion": [
-            "0.0000006",
-            "0.0000012"
-          ],
-          "input_cache_read": [
-            "0.000000003",
-            "0.000000006"
-          ],
-          "prompt": [
-            "0.00000015",
-            "0.0000003"
-          ]
-        },
-        "standard": {
-          "completion": "0.0000012",
-          "input_cache_read": "0.000000006",
-          "prompt": "0.0000003"
-        },
-        "windows": [
-          {
-            "label": "Sat–Sun all day UTC",
-            "rates": {
-              "completion": "0.0000006",
-              "input_cache_read": "0.000000003",
-              "prompt": "0.00000015"
-            },
-            "utc_days": [
-              "saturday",
-              "sunday"
-            ],
-            "utc_end": null,
-            "utc_start": null
-          },
-          {
-            "label": "Mon–Fri 00:00–01:00 UTC",
-            "rates": {
-              "completion": "0.0000006",
-              "input_cache_read": "0.000000003",
-              "prompt": "0.00000015"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 100,
-            "utc_start": 0
-          },
-          {
-            "label": "Mon–Fri 01:00–04:00 UTC",
-            "rates": {
-              "completion": "0.0000012",
-              "input_cache_read": "0.000000006",
-              "prompt": "0.0000003"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 400,
-            "utc_start": 100
-          },
-          {
-            "label": "Mon–Fri 04:00–06:00 UTC",
-            "rates": {
-              "completion": "0.0000006",
-              "input_cache_read": "0.000000003",
-              "prompt": "0.00000015"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 600,
-            "utc_start": 400
-          },
-          {
-            "label": "Mon–Fri 06:00–10:00 UTC",
-            "rates": {
-              "completion": "0.0000012",
-              "input_cache_read": "0.000000006",
-              "prompt": "0.0000003"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 1000,
-            "utc_start": 600
-          },
-          {
-            "label": "Mon–Fri 10:00–24:00 UTC",
-            "rates": {
-              "completion": "0.0000006",
-              "input_cache_read": "0.000000003",
-              "prompt": "0.00000015"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 0,
-            "utc_start": 1000
-          }
-        ]
-      },
+      "pricing_schedule": null,
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -4179,7 +3942,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 393216
+        "max_completion_tokens": 131072
       }
     },
     "deepseek/deepseek-v4.1-flash:batch": {
@@ -4204,12 +3967,12 @@
       "id": "deepseek/deepseek-v4.1-flash:batch",
       "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
       "pricing": {
-        "completion": "0.000000336",
+        "completion": "0.00000015",
         "image": null,
-        "input_cache_read": "0.00000000336",
+        "input_cache_read": "0.000000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000112",
+        "prompt": "0.00000005",
         "request": null,
         "web_search": null
       },
@@ -4218,6 +3981,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -4232,12 +3996,13 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 384000
       }
     },
     "dots-studio/dots-3-note-preview:free": {
@@ -6060,12 +5825,12 @@
       "id": "google/gemini-3.8-flash",
       "name": "Google: Gemini 3.8 Flash",
       "pricing": {
-        "completion": "0.00000375",
-        "image": "0.00000075",
-        "input_cache_read": "0.000000075",
+        "completion": "0.000004125",
+        "image": "0.000000825",
+        "input_cache_read": "0.0000000825",
         "input_cache_write": "0.0000000416666666666667",
-        "internal_reasoning": "0.00000375",
-        "prompt": "0.00000075",
+        "internal_reasoning": "0.000004125",
+        "prompt": "0.000000825",
         "request": null,
         "web_search": "0.014"
       },
@@ -6141,6 +5906,130 @@
         "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 65536
+      }
+    },
+    "google/gemini-4-argon": {
+      "architecture": {
+        "input_modalities": [
+          "audio",
+          "file",
+          "image",
+          "text",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file+audio+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Gemini"
+      },
+      "canonical_slug": "google/gemini-4-argon-20261013",
+      "context_length": 1048576,
+      "created": 1791907477,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Gemini 4 Argon is Google's flagship reasoning model, built for complex software engineering, deep mathematical and scientific problem solving, and autonomous multi-step agents. Google trained it to keep context across...",
+      "expiration_date": null,
+      "id": "google/gemini-4-argon",
+      "name": "Google: Gemini 4 Argon",
+      "pricing": {
+        "completion": "0.00001",
+        "image": "0.000002",
+        "input_cache_read": "0.0000001",
+        "input_cache_write": "0.0000001875",
+        "internal_reasoning": "0.00001",
+        "prompt": "0.000002",
+        "request": null,
+        "web_search": "0.014"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 65536
+      }
+    },
+    "google/gemini-4-argon:batch": {
+      "architecture": {
+        "input_modalities": [
+          "audio",
+          "file",
+          "image",
+          "text",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file+audio+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Gemini"
+      },
+      "canonical_slug": "google/gemini-4-argon-20261013",
+      "context_length": 1048576,
+      "created": 1791907477,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Gemini 4 Argon is Google's flagship reasoning model, built for complex software engineering, deep mathematical and scientific problem solving, and autonomous multi-step agents. Google trained it to keep context across...",
+      "expiration_date": null,
+      "id": "google/gemini-4-argon:batch",
+      "name": "Google: Gemini 4 Argon (batch)",
+      "pricing": {
+        "completion": "0.000005",
+        "image": "0.000001",
+        "input_cache_read": "0.00000005",
+        "input_cache_write": "0.0000001875",
+        "internal_reasoning": "0.000005",
+        "prompt": "0.000001",
+        "request": null,
+        "web_search": "0.014"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 943718
       }
     },
     "google/gemini-nano-banana-2.1": {
@@ -6395,6 +6284,7 @@
       "supported_parameters": [
         "frequency_penalty",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -6405,6 +6295,7 @@
         "structured_outputs",
         "temperature",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -6440,12 +6331,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.000000225",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.0000000375",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.0000000675",
         "request": null,
         "web_search": null
       },
@@ -6561,12 +6452,12 @@
       "id": "google/gemma-4-31b-it",
       "name": "Google: Gemma 4 31B",
       "pricing": {
-        "completion": "0.00000034",
+        "completion": "0.0000004",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.0000002",
         "request": null,
         "web_search": null
       },
@@ -7097,114 +6988,6 @@
         "max_completion_tokens": 32768
       }
     },
-    "inclusionai/ling-3.0-flash-fin": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "inclusionai/ling-3.0-flash-fin-20260827",
-      "context_length": 262144,
-      "created": 1787846290,
-      "default_parameters": {},
-      "description": "Ling 3.0 Flash Fin is a finance-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for real-world investment...",
-      "expiration_date": null,
-      "id": "inclusionai/ling-3.0-flash-fin",
-      "name": "inclusionAI: Ling 3.0 Flash Fin",
-      "pricing": {
-        "completion": "0.0000001232",
-        "image": null,
-        "input_cache_read": "0.0000000084",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.000000042",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 32768
-      }
-    },
-    "inclusionai/ling-3.0-flash-sante": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "inclusionai/ling-3.0-flash-sante-20260904",
-      "context_length": 262144,
-      "created": 1788545946,
-      "default_parameters": {},
-      "description": "Ling 3.0 Flash Sante is a health and medicine-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for...",
-      "expiration_date": null,
-      "id": "inclusionai/ling-3.0-flash-sante",
-      "name": "inclusionAI: Ling 3.0 Flash Sante",
-      "pricing": {
-        "completion": "0.0000001232",
-        "image": null,
-        "input_cache_read": "0.0000000084",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.000000042",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 32768
-      }
-    },
     "inclusionai/ling-3.0-flash-vl": {
       "architecture": {
         "input_modalities": [
@@ -7220,7 +7003,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "inclusionai/ling-3.0-flash-vl-20260910",
-      "context_length": 262144,
+      "context_length": 131072,
       "created": 1789056114,
       "default_parameters": {},
       "description": "Ling 3.0 Flash VL builds on Ling 3.0 Flash (124B total / 5.5B active MoE from InclusionAI), further strengthening its language capabilities while adding native visual perception and advanced visual...",
@@ -7228,12 +7011,12 @@
       "id": "inclusionai/ling-3.0-flash-vl",
       "name": "inclusionAI: Ling 3.0 Flash VL",
       "pricing": {
-        "completion": "0.0000000616",
+        "completion": "0.00000018",
         "image": null,
-        "input_cache_read": "0.0000000042",
+        "input_cache_read": "0.000000012",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000021",
+        "prompt": "0.00000006",
         "request": null,
         "web_search": null
       },
@@ -7242,7 +7025,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -7256,11 +7038,10 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 131072,
         "is_moderated": false,
         "max_completion_tokens": 32768
       }
@@ -7286,12 +7067,12 @@
       "id": "inclusionai/ling-3.1-flash",
       "name": "inclusionAI: Ling 3.1 Flash",
       "pricing": {
-        "completion": "0",
+        "completion": "0.000000225",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0",
+        "prompt": "0.000000075",
         "request": null,
         "web_search": null
       },
@@ -7299,13 +7080,17 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "logprobs",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
+        "response_format",
         "seed",
         "stop",
+        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
@@ -7476,11 +7261,71 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
-        "top_p"
+        "top_logprobs"
       ],
       "top_provider": {
         "context_length": 65536,
+        "is_moderated": false,
+        "max_completion_tokens": 8192
+      }
+    },
+    "liquid/lfm-2.5-24b-a2b": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "liquid/lfm-2.5-24b-a2b-20261012",
+      "context_length": 128000,
+      "created": 1791912025,
+      "default_parameters": {
+        "repetition_penalty": 1.05,
+        "temperature": 0.1,
+        "top_k": 50
+      },
+      "description": "LFM2.5-24B-A2B is a mixture-of-experts reasoning model from Liquid AI with 24B total and 2.45B active parameters. It always reasons before answering and is built for agents that call tools. Liquid...",
+      "expiration_date": null,
+      "id": "liquid/lfm-2.5-24b-a2b",
+      "name": "LiquidAI: LFM2.5-24B-A2B",
+      "pricing": {
+        "completion": "0.0000007",
+        "image": null,
+        "input_cache_read": "0.000000025",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000005",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_completion_tokens",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs"
+      ],
+      "top_provider": {
+        "context_length": 128000,
         "is_moderated": false,
         "max_completion_tokens": 8192
       }
@@ -7827,12 +7672,12 @@
       "id": "meta-llama/llama-3.3-70b-instruct",
       "name": "Meta: Llama 3.3 70B Instruct",
       "pricing": {
-        "completion": "0.0000005",
+        "completion": "0.00000032",
         "image": null,
-        "input_cache_read": "0.00000011",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000022",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -7940,12 +7785,12 @@
       "id": "meta-llama/llama-4-scout",
       "name": "Meta: Llama 4 Scout",
       "pricing": {
-        "completion": "0.00000059",
+        "completion": "0.0000003",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000018",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -7968,9 +7813,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 327680,
         "is_moderated": false,
-        "max_completion_tokens": 117964
+        "max_completion_tokens": 16384
       }
     },
     "meta-llama/llama-guard-4-12b": {
@@ -8356,6 +8201,69 @@
         "max_completion_tokens": 943718
       }
     },
+    "meta/muse-spark-open": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file+audio+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "meta/muse-spark-open-20261015",
+      "context_length": 1048576,
+      "created": 1792087069,
+      "default_parameters": {},
+      "description": "Muse Spark Open is a coding-optimized open-weight model. Trained specifically for agentic coding workflows, it delivers higher first-attempt accuracy, reliable tool calling, and deep codebase understanding across the repos developers...",
+      "expiration_date": null,
+      "id": "meta/muse-spark-open",
+      "name": "Meta: Muse Spark Open",
+      "pricing": {
+        "completion": "0.00000425",
+        "image": null,
+        "input_cache_read": "0.00000015",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000125",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 943718
+      }
+    },
     "meta/muse-wonder": {
       "architecture": {
         "input_modalities": [
@@ -8640,12 +8548,12 @@
       "id": "minimax/minimax-m2",
       "name": "MiniMax: MiniMax M2",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.00000102",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.000000255",
         "request": null,
         "web_search": null
       },
@@ -8670,9 +8578,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 196608,
+        "context_length": 204800,
         "is_moderated": false,
-        "max_completion_tokens": 176947
+        "max_completion_tokens": 131072
       }
     },
     "minimax/minimax-m2-her": {
@@ -8800,9 +8708,9 @@
       "id": "minimax/minimax-m2.5",
       "name": "MiniMax: MiniMax M2.5",
       "pricing": {
-        "completion": "0.00000108",
+        "completion": "0.00000095",
         "image": null,
-        "input_cache_read": "0.000000027",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.00000027",
@@ -8832,9 +8740,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 200000,
+        "context_length": 198000,
         "is_moderated": false,
-        "max_completion_tokens": 128000
+        "max_completion_tokens": 32768
       }
     },
     "minimax/minimax-m2.7": {
@@ -8865,12 +8773,12 @@
       "id": "minimax/minimax-m2.7",
       "name": "MiniMax: MiniMax M2.7",
       "pricing": {
-        "completion": "0.00000084",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000042",
+        "input_cache_read": "0.00000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000021",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -8894,9 +8802,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 196608,
+        "context_length": 204800,
         "is_moderated": false,
-        "max_completion_tokens": 176947
+        "max_completion_tokens": 131072
       }
     },
     "minimax/minimax-m3": {
@@ -10424,6 +10332,104 @@
         "max_completion_tokens": 26214
       }
     },
+    "moondream/moondream3-preview": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "moondream/moondream3-preview-20261013",
+      "context_length": 32000,
+      "created": 1792102385,
+      "default_parameters": {
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "description": "Moondream 3 Preview is a vision-language model from Moondream with 9B total parameters and 2B active (mixture-of-experts). It handles visual question answering, captioning, OCR, and visual reasoning over images, with...",
+      "expiration_date": null,
+      "id": "moondream/moondream3-preview",
+      "name": "Moondream: Moondream 3 Preview",
+      "pricing": {
+        "completion": "0.0000025",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000003",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "temperature",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 32000,
+        "is_moderated": false,
+        "max_completion_tokens": 4096
+      }
+    },
+    "moondream/moondream3.1-9b-a2b": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "moondream/moondream3.1-9b-a2b-20261013",
+      "context_length": 32000,
+      "created": 1792102373,
+      "default_parameters": {
+        "temperature": 0.2,
+        "top_p": 0.9
+      },
+      "description": "Moondream 3.1 is a vision-language model from Moondream, the successor to Moondream 3 Preview, with 9B total parameters and 2B active (mixture-of-experts). It handles visual question answering, captioning, OCR, and...",
+      "expiration_date": null,
+      "id": "moondream/moondream3.1-9b-a2b",
+      "name": "Moondream: Moondream 3.1",
+      "pricing": {
+        "completion": "0.0000025",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000003",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "temperature",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 32000,
+        "is_moderated": false,
+        "max_completion_tokens": 4096
+      }
+    },
     "moonshotai/kimi-k2": {
       "architecture": {
         "input_modalities": [
@@ -10819,12 +10825,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.00001",
+        "completion": "0.000011936",
         "image": null,
-        "input_cache_read": "0.00000055",
+        "input_cache_read": "0.00000021",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000073",
+        "prompt": "0.000000304",
         "request": null,
         "web_search": null
       },
@@ -11266,13 +11272,16 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logprobs",
         "max_tokens",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
         "response_format",
+        "structured_outputs",
         "temperature",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -11857,6 +11866,117 @@
         "context_length": 1000000,
         "is_moderated": false,
         "max_completion_tokens": 65536
+      }
+    },
+    "nvidia/nemotron-3.5-super-vl": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "nvidia/nemotron-3.5-super-vl-20261015",
+      "context_length": 1048576,
+      "created": 1792076662,
+      "default_parameters": {},
+      "description": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out of 120B total. It takes text, images, documents, GUI screenshots, and video...",
+      "expiration_date": null,
+      "id": "nvidia/nemotron-3.5-super-vl",
+      "name": "NVIDIA: Nemotron 3.5 Super VL",
+      "pricing": {
+        "completion": "0.0000005",
+        "image": null,
+        "input_cache_read": "0.00000002",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000015",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 235929
+      }
+    },
+    "nvidia/nemotron-3.5-super-vl:free": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "nvidia/nemotron-3.5-super-vl-20261015",
+      "context_length": 1000000,
+      "created": 1792076662,
+      "default_parameters": {},
+      "description": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out of 120B total. It takes text, images, documents, GUI screenshots, and video...",
+      "expiration_date": null,
+      "id": "nvidia/nemotron-3.5-super-vl:free",
+      "name": "NVIDIA: Nemotron 3.5 Super VL (free)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
       }
     },
     "nvidia/switchyard": {
@@ -15301,12 +15421,12 @@
       "id": "openai/gpt-5.6-sol",
       "name": "OpenAI: GPT-5.6 Sol",
       "pricing": {
-        "completion": "0.00001",
+        "completion": "0.00002",
         "image": null,
-        "input_cache_read": "0.0000002",
-        "input_cache_write": "0.0000025",
+        "input_cache_read": "0.0000004",
+        "input_cache_write": "0.000005",
         "internal_reasoning": null,
-        "prompt": "0.000002",
+        "prompt": "0.000004",
         "request": null,
         "web_search": "0.01"
       },
@@ -15360,12 +15480,12 @@
       "id": "openai/gpt-5.6-sol-pro",
       "name": "OpenAI: GPT-5.6 Sol Pro",
       "pricing": {
-        "completion": "0.00001",
+        "completion": "0.00002",
         "image": null,
-        "input_cache_read": "0.0000002",
-        "input_cache_write": "0.0000025",
+        "input_cache_read": "0.0000004",
+        "input_cache_write": "0.000005",
         "internal_reasoning": null,
-        "prompt": "0.000002",
+        "prompt": "0.000004",
         "request": null,
         "web_search": "0.01"
       },
@@ -15419,12 +15539,12 @@
       "id": "openai/gpt-5.6-sol-pro:batch",
       "name": "OpenAI: GPT-5.6 Sol Pro (batch)",
       "pricing": {
-        "completion": "0.000005",
+        "completion": "0.00001",
         "image": null,
-        "input_cache_read": "0.0000001",
-        "input_cache_write": "0.00000125",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.0000025",
         "internal_reasoning": null,
-        "prompt": "0.000001",
+        "prompt": "0.000002",
         "request": null,
         "web_search": "0.01"
       },
@@ -15477,12 +15597,12 @@
       "id": "openai/gpt-5.6-sol:batch",
       "name": "OpenAI: GPT-5.6 Sol (batch)",
       "pricing": {
-        "completion": "0.000005",
+        "completion": "0.00001",
         "image": null,
-        "input_cache_read": "0.0000001",
-        "input_cache_write": "0.00000125",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.0000025",
         "internal_reasoning": null,
-        "prompt": "0.000001",
+        "prompt": "0.000002",
         "request": null,
         "web_search": "0.01"
       },
@@ -16837,12 +16957,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.00000017",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000037",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -16873,7 +16993,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 117964
+        "max_completion_tokens": 65536
       }
     },
     "openai/gpt-oss-120b:batch": {
@@ -18003,7 +18123,32 @@
         "web_search": null
       },
       "pricing_schedule": null,
-      "supported_parameters": [],
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_completion_tokens",
+        "max_tokens",
+        "min_p",
+        "parallel_tool_calls",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_a",
+        "top_k",
+        "top_logprobs",
+        "top_p",
+        "verbosity"
+      ],
       "top_provider": {
         "context_length": null,
         "is_moderated": false,
@@ -19310,7 +19455,6 @@
         "frequency_penalty",
         "max_tokens",
         "response_format",
-        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
@@ -19462,10 +19606,10 @@
       "pricing": {
         "completion": "0.0000011",
         "image": null,
-        "input_cache_read": "0.00000007",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
@@ -19492,7 +19636,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 16384
       }
     },
     "qwen/qwen3-next-80b-a3b-thinking": {
@@ -19962,12 +20106,12 @@
       "id": "qwen/qwen3.5-35b-a3b",
       "name": "Qwen: Qwen3.5-35B-A3B",
       "pricing": {
-        "completion": "0.00000075",
+        "completion": "0.000001",
         "image": null,
-        "input_cache_read": "0.00000004",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -19994,9 +20138,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 256000,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 16384
       }
     },
     "qwen/qwen3.5-397b-a17b": {
@@ -20029,12 +20173,12 @@
       "id": "qwen/qwen3.5-397b-a17b",
       "name": "Qwen: Qwen3.5 397B A17B",
       "pricing": {
-        "completion": "0.0000035",
+        "completion": "0.0000036",
         "image": null,
-        "input_cache_read": "0.000000225",
+        "input_cache_read": "0.0000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000055",
+        "prompt": "0.0000005",
         "request": null,
         "web_search": null
       },
@@ -20340,76 +20484,12 @@
       "id": "qwen/qwen3.6-27b",
       "name": "Qwen: Qwen3.6 27B",
       "pricing": {
-        "completion": "0.0000032",
+        "completion": "0.000002",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.000000025",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000032",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logit_bias",
-        "logprobs",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 81920
-      }
-    },
-    "qwen/qwen3.6-35b-a3b": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "video"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+video->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Qwen"
-      },
-      "canonical_slug": "qwen/qwen3.6-35b-a3b-20260415",
-      "context_length": 262144,
-      "created": 1777260255,
-      "default_parameters": {
-        "temperature": 1,
-        "top_k": 20,
-        "top_p": 0.95
-      },
-      "description": "Qwen3.6-35B-A3B is an open-weight multimodal model from Alibaba Cloud with 35 billion total parameters and 3 billion active parameters per token. It uses a hybrid sparse mixture-of-experts architecture combining Gated...",
-      "expiration_date": null,
-      "id": "qwen/qwen3.6-35b-a3b",
-      "name": "Qwen: Qwen3.6 35B A3B",
-      "pricing": {
-        "completion": "0.00000095",
-        "image": null,
-        "input_cache_read": "0.0000001",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.00000025",
         "request": null,
         "web_search": null
       },
@@ -20439,6 +20519,70 @@
         "context_length": 262144,
         "is_moderated": false,
         "max_completion_tokens": 65536
+      }
+    },
+    "qwen/qwen3.6-35b-a3b": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen"
+      },
+      "canonical_slug": "qwen/qwen3.6-35b-a3b-20260415",
+      "context_length": 262144,
+      "created": 1777260255,
+      "default_parameters": {
+        "temperature": 1,
+        "top_k": 20,
+        "top_p": 0.95
+      },
+      "description": "Qwen3.6-35B-A3B is an open-weight multimodal model from Alibaba Cloud with 35 billion total parameters and 3 billion active parameters per token. It uses a hybrid sparse mixture-of-experts architecture combining Gated...",
+      "expiration_date": null,
+      "id": "qwen/qwen3.6-35b-a3b",
+      "name": "Qwen: Qwen3.6 35B A3B",
+      "pricing": {
+        "completion": "0.000001",
+        "image": null,
+        "input_cache_read": "0.00000005",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000015",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3.6-flash": {
@@ -20798,7 +20942,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1000000,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
@@ -20830,12 +20974,12 @@
       "id": "qwen/qwen3.8-27b",
       "name": "Qwen: Qwen3.8 27B",
       "pricing": {
-        "completion": "0.0000023",
+        "completion": "0.0000022",
         "image": null,
-        "input_cache_read": "0.0000000198",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004",
+        "prompt": "0.00000024",
         "request": null,
         "web_search": null
       },
@@ -21096,6 +21240,65 @@
       ],
       "top_provider": {
         "context_length": 1000000,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
+      }
+    },
+    "reflection/beam-1.0-501b-a23b": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "reflection/beam-1.0-501b-a23b-20261016",
+      "context_length": 1048576,
+      "created": 1792160499,
+      "default_parameters": {},
+      "description": "Beam 1.0 is Reflection's open-weight reasoning model for coding and long-horizon agentic workflows. It uses a sparse mixture-of-experts architecture with 501B total and 23B active parameters per token, and a...",
+      "expiration_date": null,
+      "id": "reflection/beam-1.0-501b-a23b",
+      "name": "Reflection: Beam 1.0 501B A23B",
+      "pricing": {
+        "completion": "0.000001",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000025",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
@@ -21685,6 +21888,90 @@
         "max_completion_tokens": 16384
       }
     },
+    "scaledown/extract": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "scaledown/extract-20260928",
+      "context_length": 1000000,
+      "created": 1791893351,
+      "default_parameters": {},
+      "description": "Extract is a description-driven entity extraction model from ScaleDown. Instead of a fixed set of entity types, callers describe the fields they want in plain English through `provider.options.scaledown.entities`, and the...",
+      "expiration_date": null,
+      "id": "scaledown/extract",
+      "name": "ScaleDown: Extract",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000004",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "max_tokens"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": false,
+        "max_completion_tokens": 900000
+      }
+    },
+    "scaledown/summarize": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "scaledown/summarize-20260928",
+      "context_length": 1000000,
+      "created": 1791893360,
+      "default_parameters": {},
+      "description": "Summarize is an abstractive summarization model from ScaleDown. It condenses long text and documents into a fluent, faithful rewrite rather than lifting sentences from the source, and is suited for...",
+      "expiration_date": null,
+      "id": "scaledown/summarize",
+      "name": "ScaleDown: Summarize",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000004",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "max_tokens"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": false,
+        "max_completion_tokens": 4000
+      }
+    },
     "stepfun/step-3.5-flash": {
       "architecture": {
         "input_modalities": [
@@ -21821,7 +22108,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "stepfun/step-5-preview-20261008",
-      "context_length": 1000000,
+      "context_length": 1048576,
       "created": 1791462849,
       "default_parameters": {
         "frequency_penalty": null,
@@ -21838,7 +22125,7 @@
       "pricing": {
         "completion": "0.0000027",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.0000001",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.000001",
@@ -21849,15 +22136,22 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "logprobs",
         "max_tokens",
+        "min_p",
+        "presence_penalty",
         "reasoning",
         "reasoning_effort",
+        "repetition_penalty",
         "response_format",
+        "seed",
         "stop",
         "structured_outputs",
         "temperature",
+        "tool_choice",
         "tools",
+        "top_k",
         "top_logprobs",
         "top_p"
       ],
@@ -22799,7 +23093,7 @@
         "max_completion_tokens": null
       }
     },
-    "unbiased/pareto": {
+    "unbiased/pareto-26.9": {
       "architecture": {
         "input_modalities": [
           "text",
@@ -22812,14 +23106,14 @@
         ],
         "tokenizer": "Other"
       },
-      "canonical_slug": "unbiased/pareto-20260917",
+      "canonical_slug": "unbiased/pareto-26.9-20260917",
       "context_length": 262144,
-      "created": 1789686178,
+      "created": 1791930537,
       "default_parameters": {},
       "description": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks.",
       "expiration_date": null,
-      "id": "unbiased/pareto",
-      "name": "Pareto",
+      "id": "unbiased/pareto-26.9",
+      "name": "Pareto 26.9",
       "pricing": {
         "completion": "0.0000075",
         "image": null,
@@ -22841,51 +23135,6 @@
       ],
       "top_provider": {
         "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 131072
-      }
-    },
-    "unbiased/pareto-26.10-preview": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "instruct_type": null,
-        "modality": "text+image->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "unbiased/pareto-26.10-preview-20260929",
-      "context_length": 1048576,
-      "created": 1790863623,
-      "default_parameters": {},
-      "description": "Pareto is a multimodal composite model built for research, coding, and agentic workflows, while delivering frontier-level performance across a broad range of general-purpose tasks. This is a preview of the...",
-      "expiration_date": null,
-      "id": "unbiased/pareto-26.10-preview",
-      "name": "Pareto 26.10 Preview",
-      "pricing": {
-        "completion": "0.0000032",
-        "image": null,
-        "input_cache_read": "0.00000003",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000008",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "max_tokens",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
@@ -23937,6 +24186,65 @@
         "max_completion_tokens": 131072
       }
     },
+    "xingchen-agi/xing4.0-29b-a4b:free": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "xingchen-agi/xing4.0-29b-a4b-20261015",
+      "context_length": 262144,
+      "created": 1792177496,
+      "default_parameters": {
+        "repetition_penalty": 1.05,
+        "temperature": 1,
+        "top_p": 0.95
+      },
+      "description": "Xing4.0-29B-A4B is an open-weight mixture-of-experts language model from China Telecom's AI team (TeleAI) and the successor to the TeleChat series. It has 29B total parameters with 4B active per token...",
+      "expiration_date": null,
+      "id": "xingchen-agi/xing4.0-29b-a4b:free",
+      "name": "XingChen: Xing4.0 29B A4B (free)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 235929
+      }
+    },
     "z-ai/glm-4.5": {
       "architecture": {
         "input_modalities": [
@@ -24376,12 +24684,12 @@
       "id": "z-ai/glm-5",
       "name": "Z.ai: GLM 5",
       "pricing": {
-        "completion": "0.00000192",
+        "completion": "0.0000032",
         "image": null,
-        "input_cache_read": "0.00000012",
+        "input_cache_read": "0.0000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000006",
+        "prompt": "0.000001",
         "request": null,
         "web_search": null
       },
@@ -24406,9 +24714,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 198000,
+        "context_length": 202752,
         "is_moderated": false,
-        "max_completion_tokens": 128000
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-5-turbo": {
@@ -24559,12 +24867,12 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.000007",
+        "completion": "0.00000242",
         "image": null,
-        "input_cache_read": "0.000000059",
+        "input_cache_read": "0.00000014",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006",
+        "prompt": "0.00000062",
         "request": null,
         "web_search": null
       },
@@ -24624,7 +24932,7 @@
       "pricing": {
         "completion": "0.0000048",
         "image": null,
-        "input_cache_read": "0.000000059",
+        "input_cache_read": "0.000000078",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.000000079",
@@ -24687,12 +24995,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.0000008216",
         "image": null,
-        "input_cache_read": "0.0000000232",
+        "input_cache_read": "0.0000000125",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000232",
+        "prompt": "0.0000000132",
         "request": null,
         "web_search": null
       },
@@ -24723,7 +25031,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-5.3-flash:batch": {
@@ -24752,12 +25060,12 @@
       "id": "z-ai/glm-5.3-flash:batch",
       "name": "Z.ai: GLM 5.3 Flash (batch)",
       "pricing": {
-        "completion": "0.0000002",
+        "completion": "0.00000018",
         "image": null,
-        "input_cache_read": "0.000000012",
+        "input_cache_read": "0.00000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006",
+        "prompt": "0.00000005",
         "request": null,
         "web_search": null
       },
@@ -24766,6 +25074,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -24780,6 +25089,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
