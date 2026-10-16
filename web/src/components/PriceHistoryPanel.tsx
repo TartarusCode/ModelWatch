@@ -9,6 +9,10 @@ import {
   historyPerMillionKey,
   historyToChartPoints,
 } from "../lib/priceHistory";
+import {
+  detectHistoryGaps,
+  formatGapDuration,
+} from "../lib/priceHistoryChart";
 import { episodesForModel } from "../lib/priceChanges";
 import {
   changeFieldLabel,
@@ -17,6 +21,15 @@ import {
 } from "../lib/pricing";
 import type { PriceChangeRecord, PriceHistoryPoint, PricingSchedule } from "../types";
 import { PriceHistoryChart } from "./PriceHistoryChart";
+
+function formatRecordedAt(time: number): string {
+  return new Date(time).toLocaleString(undefined, {
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+}
 
 interface PriceHistoryPanelProps {
   modelId: string;
@@ -35,6 +48,13 @@ export function PriceHistoryPanel({
   const historyFields = activeHistoryFields(resolvedPoints);
   const chartPoints = historyToChartPoints(resolvedPoints);
   const modelEpisodes = episodesForModel(episodes, modelId);
+  // Gap between the reading at `endIndex` and the one before it, keyed by the
+  // newer index so the table can flag where snapshots are missing.
+  const gapAtEndIndex = new Map(
+    detectHistoryGaps(
+      resolvedPoints.map((point) => new Date(point.recorded_at).getTime()),
+    ).map((gap) => [gap.endIndex, gap]),
+  );
 
   if (points === null) {
     return (
@@ -88,25 +108,42 @@ export function PriceHistoryPanel({
               </tr>
             </thead>
             <tbody>
-              {[...resolvedPoints].reverse().map((point) => (
-                <tr key={point.recorded_at}>
-                  <td className="tabular-nums muted">
-                    {new Date(point.recorded_at).toLocaleString(undefined, {
-                      month: "short",
-                      day: "numeric",
-                      hour: "2-digit",
-                      minute: "2-digit",
-                    })}
-                  </td>
-                  {historyFields.map((field) => (
-                    <td key={field}>
-                      <span className="price-cell">
-                        {formatHistoryUsd(point[historyPerMillionKey(field)], field)}
-                      </span>
-                    </td>
-                  ))}
-                </tr>
-              ))}
+              {resolvedPoints
+                .map((point, index) => ({ point, index }))
+                .reverse()
+                .flatMap(({ point, index }) => {
+                  const rows = [
+                    <tr key={point.recorded_at}>
+                      <td className="tabular-nums muted">
+                        {formatRecordedAt(new Date(point.recorded_at).getTime())}
+                      </td>
+                      {historyFields.map((field) => (
+                        <td key={field}>
+                          <span className="price-cell">
+                            {formatHistoryUsd(
+                              point[historyPerMillionKey(field)],
+                              field,
+                            )}
+                          </span>
+                        </td>
+                      ))}
+                    </tr>,
+                  ];
+                  const gap = gapAtEndIndex.get(index);
+                  if (gap) {
+                    rows.push(
+                      <tr key={`gap-${gap.endAt}`} className="data-table__gap-row">
+                        <td colSpan={historyFields.length + 1}>
+                          No snapshots collected for{" "}
+                          {formatGapDuration(gap.durationMs)} —{" "}
+                          {formatRecordedAt(gap.startAt)} →{" "}
+                          {formatRecordedAt(gap.endAt)}
+                        </td>
+                      </tr>,
+                    );
+                  }
+                  return rows;
+                })}
             </tbody>
           </table>
         </div>
