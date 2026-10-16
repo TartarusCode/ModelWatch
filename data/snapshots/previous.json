@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T21:01:07.066083Z",
+  "generated_at": "2026-10-16T21:30:53.141723Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3536,10 +3536,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000094",
+        "input_cache_read": "0.000000008",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000094",
+        "prompt": "0.000000008",
         "request": null,
         "web_search": null
       },
@@ -3942,7 +3942,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 943718
       }
     },
     "deepseek/deepseek-v4.1-flash:batch": {
@@ -19455,6 +19455,7 @@
         "frequency_penalty",
         "max_tokens",
         "response_format",
+        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
@@ -21265,12 +21266,12 @@
       "id": "reflection/beam-1.0-501b-a23b",
       "name": "Reflection: Beam 1.0 501B A23B",
       "pricing": {
-        "completion": "0.000001",
+        "completion": "0.000003",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.0000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000025",
+        "prompt": "0.000001",
         "request": null,
         "web_search": null
       },
@@ -21300,7 +21301,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 943718
       }
     },
     "rekaai/reka-edge": {
@@ -24995,12 +24996,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.00000073944",
+        "completion": "0.0000005528",
         "image": null,
-        "input_cache_read": "0.00000001125",
+        "input_cache_read": "0.0000000125",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000001188",
+        "prompt": "0.0000000356",
         "request": null,
         "web_search": null
       },
