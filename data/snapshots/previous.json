@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T08:00:58.910623Z",
+  "generated_at": "2026-10-17T08:30:53.727404Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3536,10 +3536,10 @@
       "pricing": {
         "completion": "0.0000002971",
         "image": null,
-        "input_cache_read": "0.0000000132",
+        "input_cache_read": "0.0000000119",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000132",
+        "prompt": "0.0000000119",
         "request": null,
         "web_search": null
       },
@@ -4062,6 +4062,186 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 393216
+      }
+    },
+    "deepseek/deepseek-v4.1-flash-1017": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "DeepSeek"
+      },
+      "canonical_slug": "deepseek/deepseek-v4.1-flash-20261017",
+      "context_length": 1048576,
+      "created": 1792225624,
+      "default_parameters": {},
+      "description": "DeepSeek V4.1 Flash 1017 is the October 17, 2026 snapshot of DeepSeek V4.1 Flash, served by DeepSeek under the `deepseek-flash` API model name. V4.1 Flash is a sparse mixture-of-experts model...",
+      "expiration_date": null,
+      "id": "deepseek/deepseek-v4.1-flash-1017",
+      "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+      "pricing": {
+        "completion": "0.0000006",
+        "image": null,
+        "input_cache_read": "0.000000003",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000015",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": {
+        "minimum": {
+          "completion": "0.0000006",
+          "input_cache_read": "0.000000003",
+          "prompt": "0.00000015"
+        },
+        "rates": {
+          "completion": [
+            "0.0000006",
+            "0.0000012"
+          ],
+          "input_cache_read": [
+            "0.000000003",
+            "0.000000006"
+          ],
+          "prompt": [
+            "0.00000015",
+            "0.0000003"
+          ]
+        },
+        "standard": {
+          "completion": "0.0000012",
+          "input_cache_read": "0.000000006",
+          "prompt": "0.0000003"
+        },
+        "windows": [
+          {
+            "label": "Sat–Sun all day UTC",
+            "rates": {
+              "completion": "0.0000006",
+              "input_cache_read": "0.000000003",
+              "prompt": "0.00000015"
+            },
+            "utc_days": [
+              "saturday",
+              "sunday"
+            ],
+            "utc_end": null,
+            "utc_start": null
+          },
+          {
+            "label": "Mon–Fri 00:00–01:00 UTC",
+            "rates": {
+              "completion": "0.0000006",
+              "input_cache_read": "0.000000003",
+              "prompt": "0.00000015"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 100,
+            "utc_start": 0
+          },
+          {
+            "label": "Mon–Fri 01:00–04:00 UTC",
+            "rates": {
+              "completion": "0.0000012",
+              "input_cache_read": "0.000000006",
+              "prompt": "0.0000003"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 400,
+            "utc_start": 100
+          },
+          {
+            "label": "Mon–Fri 04:00–06:00 UTC",
+            "rates": {
+              "completion": "0.0000006",
+              "input_cache_read": "0.000000003",
+              "prompt": "0.00000015"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 600,
+            "utc_start": 400
+          },
+          {
+            "label": "Mon–Fri 06:00–10:00 UTC",
+            "rates": {
+              "completion": "0.0000012",
+              "input_cache_read": "0.000000006",
+              "prompt": "0.0000003"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 1000,
+            "utc_start": 600
+          },
+          {
+            "label": "Mon–Fri 10:00–24:00 UTC",
+            "rates": {
+              "completion": "0.0000006",
+              "input_cache_read": "0.000000003",
+              "prompt": "0.00000015"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 0,
+            "utc_start": 1000
+          }
+        ]
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
         "top_logprobs",
         "top_p"
       ],
@@ -25239,10 +25419,10 @@
       "pricing": {
         "completion": "0.0000004182",
         "image": null,
-        "input_cache_read": "0.0000000121",
+        "input_cache_read": "0.0000000109",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000378",
+        "prompt": "0.0000000341",
         "request": null,
         "web_search": null
       },
