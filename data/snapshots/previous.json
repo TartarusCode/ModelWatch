@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T00:01:11.556679Z",
+  "generated_at": "2026-10-17T00:31:03.227042Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3536,10 +3536,10 @@
       "pricing": {
         "completion": "0.00000128",
         "image": null,
-        "input_cache_read": "0.0000000073",
+        "input_cache_read": "0.0000000199",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000073",
+        "prompt": "0.0000000199",
         "request": null,
         "web_search": null
       },
@@ -3658,12 +3658,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.0000005133",
+        "completion": "0.0000004524",
         "image": null,
-        "input_cache_read": "0.0000000213875",
+        "input_cache_read": "0.00000001885",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000025665",
+        "prompt": "0.0000002262",
         "request": null,
         "web_search": null
       },
@@ -3907,12 +3907,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.000000405",
+        "completion": "0.000000144",
         "image": null,
-        "input_cache_read": "0.0000000042",
+        "input_cache_read": "0.0000000016",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000028",
+        "prompt": "0.000000032",
         "request": null,
         "web_search": null
       },
@@ -12173,7 +12173,7 @@
       ],
       "top_provider": {
         "context_length": 16385,
-        "is_moderated": true,
+        "is_moderated": false,
         "max_completion_tokens": 4096
       }
     },
@@ -20885,6 +20885,62 @@
         "max_completion_tokens": 131072
       }
     },
+    "qwen/qwen3.7-plus:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen"
+      },
+      "canonical_slug": "qwen/qwen3.7-plus-20260602",
+      "context_length": 262144,
+      "created": 1780491783,
+      "default_parameters": {},
+      "description": "Qwen3.7-Plus is a cost-effective model in Alibaba's Qwen3.7 series. It supports text and image input with text output, building on the series' text capabilities with a comprehensive upgrade to its...",
+      "expiration_date": null,
+      "id": "qwen/qwen3.7-plus:batch",
+      "name": "Qwen: Qwen3.7 Plus (batch)",
+      "pricing": {
+        "completion": "0.00000092",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000023",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
+      }
+    },
     "qwen/qwen3.8-2.4t-a95b": {
       "architecture": {
         "input_modalities": [
@@ -22371,12 +22427,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22533,12 +22589,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
@@ -24996,12 +25052,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.0000004455",
+        "completion": "0.0000002",
         "image": null,
-        "input_cache_read": "0.00000000875",
+        "input_cache_read": "0.0000000096",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000001092",
+        "prompt": "0.00000003168",
         "request": null,
         "web_search": null
       },
