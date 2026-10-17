@@ -14341,11 +14341,11 @@
       "new_per_million_usd": "0.418200",
       "old_per_million_usd": "0.557800",
       "pct_change": -0.25026891358910003,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-10-17T23:00:55.057768Z",
+      "recovered_per_million_usd": "0.200000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     },
     {
@@ -14383,7 +14383,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-17T22:30:52.008534Z",
+  "generated_at": "2026-10-17T23:00:55.057768Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -17647,7 +17647,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.0132000000",
+        "anchor": "0.01000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -17658,7 +17658,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.0132000000",
+        "anchor": "0.01000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -17917,15 +17917,15 @@
         "anchor": "0.55000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.55000000",
+        "pending_builds": 1,
+        "pending_price": "0.144000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.005000000",
+        "anchor": "0.0016000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -17936,7 +17936,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.071000000",
+        "anchor": "0.0568000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -33774,14 +33774,14 @@
         "confirmed_at": "2026-10-17T08:00:54.303317Z",
         "confirmed_price": "0.4182000000",
         "direction": "cut",
-        "episode_start_price": "0.5578000000",
-        "pending_builds": 0,
-        "pending_price": null,
+        "episode_start_price": "0.4182000000",
+        "pending_builds": 1,
+        "pending_price": "0.2000000",
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.03000000",
+        "anchor": "0.006000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
