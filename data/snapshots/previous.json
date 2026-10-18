@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T00:01:05.681073Z",
+  "generated_at": "2026-10-18T00:31:27.333264Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3534,12 +3534,12 @@
       "id": "deepseek/deepseek-v4-flash-0731",
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "pricing": {
-        "completion": "0.00000128",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.0000000151",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000151",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -3730,133 +3730,7 @@
         "request": null,
         "web_search": null
       },
-      "pricing_schedule": {
-        "minimum": {
-          "completion": "0.00000198",
-          "input_cache_read": "0.000000022",
-          "prompt": "0.00000066"
-        },
-        "rates": {
-          "completion": [
-            "0.00000198",
-            "0.00000396"
-          ],
-          "input_cache_read": [
-            "0.000000022",
-            "0.000000044"
-          ],
-          "prompt": [
-            "0.00000066",
-            "0.00000132"
-          ]
-        },
-        "standard": {
-          "completion": "0.00000396",
-          "input_cache_read": "0.000000044",
-          "prompt": "0.00000132"
-        },
-        "windows": [
-          {
-            "label": "Sat–Sun all day UTC",
-            "rates": {
-              "completion": "0.00000198",
-              "input_cache_read": "0.000000022",
-              "prompt": "0.00000066"
-            },
-            "utc_days": [
-              "saturday",
-              "sunday"
-            ],
-            "utc_end": null,
-            "utc_start": null
-          },
-          {
-            "label": "Mon–Fri 00:00–01:00 UTC",
-            "rates": {
-              "completion": "0.00000198",
-              "input_cache_read": "0.000000022",
-              "prompt": "0.00000066"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 100,
-            "utc_start": 0
-          },
-          {
-            "label": "Mon–Fri 01:00–04:00 UTC",
-            "rates": {
-              "completion": "0.00000396",
-              "input_cache_read": "0.000000044",
-              "prompt": "0.00000132"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 400,
-            "utc_start": 100
-          },
-          {
-            "label": "Mon–Fri 04:00–06:00 UTC",
-            "rates": {
-              "completion": "0.00000198",
-              "input_cache_read": "0.000000022",
-              "prompt": "0.00000066"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 600,
-            "utc_start": 400
-          },
-          {
-            "label": "Mon–Fri 06:00–10:00 UTC",
-            "rates": {
-              "completion": "0.00000396",
-              "input_cache_read": "0.000000044",
-              "prompt": "0.00000132"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 1000,
-            "utc_start": 600
-          },
-          {
-            "label": "Mon–Fri 10:00–24:00 UTC",
-            "rates": {
-              "completion": "0.00000198",
-              "input_cache_read": "0.000000022",
-              "prompt": "0.00000066"
-            },
-            "utc_days": [
-              "monday",
-              "tuesday",
-              "wednesday",
-              "thursday",
-              "friday"
-            ],
-            "utc_end": 0,
-            "utc_start": 1000
-          }
-        ]
-      },
+      "pricing_schedule": null,
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -3880,9 +3754,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1024000,
         "is_moderated": false,
-        "max_completion_tokens": 393216
+        "max_completion_tokens": 384000
       }
     },
     "deepseek/deepseek-v4.1-flash": {
@@ -6459,7 +6333,7 @@
       "id": "google/gemma-3-27b-it",
       "name": "Google: Gemma 3 27B",
       "pricing": {
-        "completion": "0.00000045",
+        "completion": "0.00000035",
         "image": null,
         "input_cache_read": "0.00000004",
         "input_cache_write": null,
@@ -12136,12 +12010,12 @@
       "id": "nvidia/nemotron-3.5-super-vl",
       "name": "NVIDIA: Nemotron 3.5 Super VL",
       "pricing": {
-        "completion": "0.0000005",
+        "completion": "0.0000004",
         "image": null,
-        "input_cache_read": "0.00000002",
+        "input_cache_read": "0.00000008",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -19521,7 +19395,7 @@
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
@@ -22672,12 +22546,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22834,12 +22708,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
