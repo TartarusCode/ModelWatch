@@ -14517,9 +14517,26 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.700000",
+      "detected_at": "2026-10-18T09:00:57.577675Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "3.200000",
+      "field": "completion",
+      "model_id": "z-ai/glm-5.3",
+      "new_per_million_usd": "2.500000",
+      "old_per_million_usd": "3.200000",
+      "pct_change": -0.21875,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-10-18T08:31:05.392365Z",
+  "generated_at": "2026-10-18T09:01:04.082454Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -17783,7 +17800,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.0086000000",
+        "anchor": "0.0065000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -17794,7 +17811,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.0086000000",
+        "anchor": "0.0065000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -33838,15 +33855,15 @@
     },
     "z-ai/glm-5.3": {
       "completion": {
-        "anchor": "3.2000000",
-        "confirmed_at": "2026-10-18T00:00:59.895619Z",
-        "confirmed_price": "3.2000000",
+        "anchor": "2.5000000",
+        "confirmed_at": "2026-10-18T09:00:57.577675Z",
+        "confirmed_price": "2.5000000",
         "direction": "cut",
         "episode_start_price": "3.2000000",
-        "pending_builds": 1,
-        "pending_price": "2.5000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.078000000",
