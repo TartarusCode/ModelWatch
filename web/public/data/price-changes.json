@@ -375,23 +375,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "0.100000",
-      "detected_at": "2026-10-11T09:01:01.223708Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.500000",
-      "field": "prompt",
-      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
-      "new_per_million_usd": "0.600000",
-      "old_per_million_usd": "0.500000",
-      "pct_change": 0.2,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "-0.100000",
       "detected_at": "2026-10-18T01:00:58.524543Z",
       "direction": "cut",
@@ -14345,9 +14328,9 @@
       "pct_change": 0.2,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-10-18T09:30:58.676420Z",
+      "settled_per_million_usd": "0.600000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -15456,7 +15439,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-18T09:01:04.082454Z",
+  "generated_at": "2026-10-18T09:31:08.217632Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "0.063500",
@@ -15610,6 +15593,23 @@
       "recovered_per_million_usd": null,
       "settled_at": "2026-10-18T01:30:56.448786Z",
       "settled_per_million_usd": "0.050000",
+      "status": "settled",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.100000",
+      "detected_at": "2026-10-11T09:01:01.223708Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.500000",
+      "field": "prompt",
+      "model_id": "nvidia/nemotron-3-ultra-550b-a55b",
+      "new_per_million_usd": "0.600000",
+      "old_per_million_usd": "0.500000",
+      "pct_change": 0.2,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-10-18T09:30:58.676420Z",
+      "settled_per_million_usd": "0.600000",
       "status": "settled",
       "tier": null
     }
