@@ -14689,7 +14689,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-19T01:01:10.026446Z",
+  "generated_at": "2026-10-19T01:31:07.736146Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -18209,7 +18209,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.0624000000",
+        "anchor": "0.048000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -31754,6 +31754,30 @@
       },
       "prompt": {
         "anchor": "0.32000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      }
+    },
+    "qwen/qwen3.7-plus:batch": {
+      "completion": {
+        "anchor": "0.92000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt": {
+        "anchor": "0.23000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
