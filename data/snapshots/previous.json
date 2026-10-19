@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T09:00:59.020703Z",
+  "generated_at": "2026-10-19T09:31:17.445269Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3786,7 +3786,7 @@
         "input_cache_read": "0.0000000016",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000448",
+        "prompt": "0.000000044",
         "request": null,
         "web_search": null
       },
@@ -22011,57 +22011,6 @@
         "structured_outputs",
         "temperature",
         "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 16384
-      }
-    },
-    "sao10k/l3.3-euryale-70b": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": "llama3",
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Llama3"
-      },
-      "canonical_slug": "sao10k/l3.3-euryale-70b-v2.3",
-      "context_length": 131072,
-      "created": 1734535928,
-      "default_parameters": {},
-      "description": "Euryale L3.3 70B is a model focused on creative roleplay from [Sao10k](https://ko-fi.com/sao10k). It is the successor of [Euryale L3 70B v2.2](/models/sao10k/l3-euryale-70b).",
-      "expiration_date": null,
-      "id": "sao10k/l3.3-euryale-70b",
-      "name": "Sao10K: Llama 3.3 Euryale 70B",
-      "pricing": {
-        "completion": "0.00000075",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000065",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
