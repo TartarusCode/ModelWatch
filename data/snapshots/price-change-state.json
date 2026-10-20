@@ -15063,7 +15063,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-20T17:01:22.989311Z",
+  "generated_at": "2026-10-20T17:31:18.580601Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -18456,7 +18456,7 @@
     },
     "deepseek/deepseek-v4-pro": {
       "completion": {
-        "anchor": "0.797616000000",
+        "anchor": "0.790656000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -18467,7 +18467,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.033234000000",
+        "anchor": "0.032944000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -18478,7 +18478,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.398808000000",
+        "anchor": "0.395328000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23814,34 +23814,34 @@
         "anchor": "2.09000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "2.09000000",
+        "pending_builds": 1,
+        "pending_price": "4.18000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.07000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.07000000",
+        "pending_builds": 1,
+        "pending_price": "0.14000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "prompt": {
         "anchor": "0.68000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.68000000",
+        "pending_builds": 1,
+        "pending_price": "1.36000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "mistralai/mistral-medium-3": {
