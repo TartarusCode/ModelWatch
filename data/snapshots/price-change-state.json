@@ -15012,7 +15012,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-20T02:01:03.655263Z",
+  "generated_at": "2026-10-20T02:31:12.337910Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -34918,11 +34918,11 @@
         "episode_start_price": "0.4182000000",
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 0,
+        "recovery_builds": 1,
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.006000000",
+        "anchor": "0.03000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
