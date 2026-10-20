@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T13:01:18.752831Z",
+  "generated_at": "2026-10-20T13:31:11.491560Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3598,12 +3598,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000000892272",
+        "completion": "0.0000008787",
         "image": null,
-        "input_cache_read": "0.000000037178",
+        "input_cache_read": "0.0000000366125",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000446136",
+        "prompt": "0.00000043935",
         "request": null,
         "web_search": null
       },
@@ -3721,12 +3721,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000002232",
+        "completion": "0.00000012",
         "image": null,
-        "input_cache_read": "0.000000001116",
+        "input_cache_read": "0.00000000071",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000558",
+        "prompt": "0.00000003552",
         "request": null,
         "web_search": null
       },
@@ -3756,7 +3756,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 393216
+        "max_completion_tokens": 943718
       }
     },
     "deepseek/deepseek-v4.1-flash-1017": {
@@ -4201,7 +4201,7 @@
         "top_p": null
       },
       "description": "Gemini 2.5 Flash is Google's state-of-the-art workhorse model, specifically designed for advanced reasoning, coding, mathematics, and scientific tasks. It includes built-in \"thinking\" capabilities, enabling it to provide responses with greater...",
-      "expiration_date": "2026-10-20",
+      "expiration_date": null,
       "id": "google/gemini-2.5-flash",
       "name": "Google: Gemini 2.5 Flash",
       "pricing": {
@@ -4311,7 +4311,7 @@
         "top_p": null
       },
       "description": "Gemini 2.5 Flash-Lite is a lightweight reasoning model in the Gemini 2.5 family, optimized for ultra-low latency and cost efficiency. It offers improved throughput, faster token generation, and better performance...",
-      "expiration_date": "2026-10-20",
+      "expiration_date": null,
       "id": "google/gemini-2.5-flash-lite",
       "name": "Google: Gemini 2.5 Flash Lite",
       "pricing": {
@@ -4402,67 +4402,6 @@
         "max_completion_tokens": 65535
       }
     },
-    "google/gemini-2.5-flash:batch": {
-      "architecture": {
-        "input_modalities": [
-          "file",
-          "image",
-          "text",
-          "audio",
-          "video"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+file+audio+video->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Gemini"
-      },
-      "canonical_slug": "google/gemini-2.5-flash",
-      "context_length": 1048576,
-      "created": 1750172488,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "Gemini 2.5 Flash is Google's state-of-the-art workhorse model, specifically designed for advanced reasoning, coding, mathematics, and scientific tasks. It includes built-in \"thinking\" capabilities, enabling it to provide responses with greater...",
-      "expiration_date": "2026-10-20",
-      "id": "google/gemini-2.5-flash:batch",
-      "name": "Google: Gemini 2.5 Flash (batch)",
-      "pricing": {
-        "completion": "0.00000125",
-        "image": "0.00000015",
-        "input_cache_read": "0.00000003",
-        "input_cache_write": null,
-        "internal_reasoning": "0.00000125",
-        "prompt": "0.00000015",
-        "request": null,
-        "web_search": "0.014"
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 1048576,
-        "is_moderated": false,
-        "max_completion_tokens": 65535
-      }
-    },
     "google/gemini-2.5-pro": {
       "architecture": {
         "input_modalities": [
@@ -4488,7 +4427,7 @@
         "top_p": null
       },
       "description": "Gemini 2.5 Pro is Google’s state-of-the-art AI model designed for advanced reasoning, coding, mathematics, and scientific tasks. It employs “thinking” capabilities, enabling it to reason through responses with enhanced accuracy...",
-      "expiration_date": "2026-10-20",
+      "expiration_date": null,
       "id": "google/gemini-2.5-pro",
       "name": "Google: Gemini 2.5 Pro",
       "pricing": {
@@ -4508,7 +4447,6 @@
         "reasoning",
         "response_format",
         "seed",
-        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
@@ -4551,64 +4489,6 @@
         "input_cache_write": "0.000000375",
         "internal_reasoning": "0.00001",
         "prompt": "0.00000125",
-        "request": null,
-        "web_search": "0.014"
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 1048576,
-        "is_moderated": false,
-        "max_completion_tokens": 65536
-      }
-    },
-    "google/gemini-2.5-pro:batch": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "file",
-          "audio",
-          "video"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+file+audio+video->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Gemini"
-      },
-      "canonical_slug": "google/gemini-2.5-pro",
-      "context_length": 1048576,
-      "created": 1750169544,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": null
-      },
-      "description": "Gemini 2.5 Pro is Google’s state-of-the-art AI model designed for advanced reasoning, coding, mathematics, and scientific tasks. It employs “thinking” capabilities, enabling it to reason through responses with enhanced accuracy...",
-      "expiration_date": "2026-10-20",
-      "id": "google/gemini-2.5-pro:batch",
-      "name": "Google: Gemini 2.5 Pro (batch)",
-      "pricing": {
-        "completion": "0.000005",
-        "image": "0.000000625",
-        "input_cache_read": "0.000000125",
-        "input_cache_write": null,
-        "internal_reasoning": "0.000005",
-        "prompt": "0.000000625",
         "request": null,
         "web_search": "0.014"
       },
