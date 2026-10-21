@@ -15386,7 +15386,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-21T19:31:21.006300Z",
+  "generated_at": "2026-10-21T20:01:16.505003Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -18790,7 +18790,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.03422000000",
+        "anchor": "0.03393000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -35365,17 +35365,17 @@
     "z-ai/glm-5.3-flash": {
       "completion": {
         "anchor": "0.12000000",
-        "confirmed_at": "2026-10-21T14:01:06.043118Z",
-        "confirmed_price": "0.12000000",
-        "direction": "cut",
-        "episode_start_price": "0.12000000",
-        "pending_builds": 1,
-        "pending_price": "0.0718000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.0217000000",
+        "anchor": "0.00435000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -35393,7 +35393,7 @@
         "episode_start_price": "0.0215000000",
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 0,
+        "recovery_builds": 1,
         "status": "confirmed"
       }
     },
