@@ -154,23 +154,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "-0.132800",
-      "detected_at": "2026-10-19T22:30:57.437556Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.144000",
-      "field": "completion",
-      "model_id": "deepseek/deepseek-v4.1-flash",
-      "new_per_million_usd": "0.011200",
-      "old_per_million_usd": "0.144000",
-      "pct_change": -0.9222222222222223,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "0.375000",
       "detected_at": "2026-10-16T21:01:01.535801Z",
       "direction": "hike",
@@ -16145,11 +16128,11 @@
       "new_per_million_usd": "0.011200",
       "old_per_million_usd": "0.144000",
       "pct_change": -0.9222222222222223,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-10-21T02:30:50.715023Z",
+      "recovered_per_million_usd": "0.500000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     },
     {
@@ -16595,7 +16578,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-21T02:01:07.185093Z",
+  "generated_at": "2026-10-21T02:30:57.472266Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "-0.218200",
@@ -16608,6 +16591,23 @@
       "old_per_million_usd": "0.418200",
       "pct_change": -0.5217599234815877,
       "recovered_at": "2026-10-20T03:00:55.508184Z",
+      "recovered_per_million_usd": "0.500000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "recovered",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.132800",
+      "detected_at": "2026-10-19T22:30:57.437556Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.144000",
+      "field": "completion",
+      "model_id": "deepseek/deepseek-v4.1-flash",
+      "new_per_million_usd": "0.011200",
+      "old_per_million_usd": "0.144000",
+      "pct_change": -0.9222222222222223,
+      "recovered_at": "2026-10-21T02:30:50.715023Z",
       "recovered_per_million_usd": "0.500000",
       "settled_at": null,
       "settled_per_million_usd": null,
