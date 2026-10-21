@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T22:31:14.872676Z",
+  "generated_at": "2026-10-21T23:01:13.752659Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3598,12 +3598,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000000777432",
+        "completion": "0.000000766992",
         "image": null,
-        "input_cache_read": "0.000000032393",
+        "input_cache_read": "0.000000031958",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000388716",
+        "prompt": "0.000000383496",
         "request": null,
         "web_search": null
       },
@@ -21378,7 +21378,7 @@
       },
       "canonical_slug": "recursive/flint-v1.0-20261021",
       "context_length": 262144,
-      "created": 1792422073,
+      "created": 1792622765,
       "default_parameters": {},
       "description": "Flint is an open-weight mixture-of-experts model from Recursive, with about 2.5B active parameters out of 40B total, built by Recursive's autoresearch system Eureka Machine for coding agents. It is suited...",
       "expiration_date": null,
@@ -25096,12 +25096,12 @@
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "pricing": {
-        "completion": "0.0000014",
+        "completion": "0.0000022",
         "image": null,
-        "input_cache_read": "0.000000078",
+        "input_cache_read": "0.00000013",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000079",
+        "prompt": "0.0000007",
         "request": null,
         "web_search": null
       },
@@ -25132,7 +25132,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 262144
       }
     },
     "z-ai/glm-5.3-flash": {
