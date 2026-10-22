@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T16:01:17.143672Z",
+  "generated_at": "2026-10-22T16:31:09.798723Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -20036,12 +20036,12 @@
       "id": "qwen/qwen3.5-122b-a10b",
       "name": "Qwen: Qwen3.5-122B-A10B",
       "pricing": {
-        "completion": "0.0000032",
+        "completion": "0.00000208",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000004",
+        "prompt": "0.00000026",
         "request": null,
         "web_search": null
       },
@@ -22489,12 +22489,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.000000528",
+        "completion": "0.00000033",
         "image": null,
-        "input_cache_read": "0.000000033",
+        "input_cache_read": "0.000000020625",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000132",
+        "prompt": "0.0000000825",
         "request": null,
         "web_search": null
       },
@@ -22651,12 +22651,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.000002501",
+        "completion": "0.0000022509",
         "image": null,
-        "input_cache_read": "0.000000042",
+        "input_cache_read": "0.0000000378",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000834",
+        "prompt": "0.0000007506",
         "request": null,
         "web_search": null
       },
@@ -22714,9 +22714,11 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_completion_tokens",
         "max_tokens",
         "min_p",
+        "parallel_tool_calls",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
@@ -22729,6 +22731,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -24208,6 +24211,7 @@
         "logprobs",
         "max_tokens",
         "min_p",
+        "parallel_tool_calls",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
