@@ -15537,9 +15537,26 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.050000",
+      "detected_at": "2026-10-22T12:00:54.910165Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.300000",
+      "field": "prompt",
+      "model_id": "reflection/beam-1.0-501b-a23b",
+      "new_per_million_usd": "0.250000",
+      "old_per_million_usd": "0.300000",
+      "pct_change": -0.16666666666666666,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-10-22T11:31:14.950383Z",
+  "generated_at": "2026-10-22T12:01:09.523057Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -33179,15 +33196,15 @@
         "status": "confirmed"
       },
       "prompt": {
-        "anchor": "0.3000000",
-        "confirmed_at": "2026-10-19T20:30:54.325679Z",
-        "confirmed_price": "0.3000000",
+        "anchor": "0.25000000",
+        "confirmed_at": "2026-10-22T12:00:54.910165Z",
+        "confirmed_price": "0.25000000",
         "direction": "cut",
         "episode_start_price": "0.3000000",
-        "pending_builds": 1,
-        "pending_price": "0.25000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "rekaai/reka-edge": {
