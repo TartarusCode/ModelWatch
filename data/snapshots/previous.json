@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T17:31:05.518569Z",
+  "generated_at": "2026-10-22T18:01:23.022542Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -23212,7 +23212,7 @@
       "top_provider": {
         "context_length": null,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 65536
       }
     },
     "unbiased/pareto-26.10": {
