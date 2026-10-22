@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T17:01:26.308467Z",
+  "generated_at": "2026-10-22T17:31:05.518569Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -2218,7 +2218,7 @@
         "top_p": 0.8
       },
       "description": "Trinity Large Thinking is a powerful open source reasoning model from the team at Arcee AI. It shows strong performance in PinchBench, agentic workloads, and reasoning tasks. Launch video: https://youtu.be/Gc82AXLa0Rg?si=4RLn6WBz33qT--B7...",
-      "expiration_date": null,
+      "expiration_date": "2026-10-26",
       "id": "arcee-ai/trinity-large-thinking",
       "name": "Arcee AI: Trinity Large Thinking",
       "pricing": {
@@ -20037,12 +20037,12 @@
       "id": "qwen/qwen3.5-122b-a10b",
       "name": "Qwen: Qwen3.5-122B-A10B",
       "pricing": {
-        "completion": "0.00000208",
+        "completion": "0.0000032",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000026",
+        "prompt": "0.0000004",
         "request": null,
         "web_search": null
       },
