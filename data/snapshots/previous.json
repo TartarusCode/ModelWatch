@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T19:31:27.256136Z",
+  "generated_at": "2026-10-23T20:01:30.304735Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3598,12 +3598,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.00000156774",
+        "completion": "0.000001547556",
         "image": null,
-        "input_cache_read": "0.0000000653225",
+        "input_cache_read": "0.0000000644815",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000078387",
+        "prompt": "0.000000773778",
         "request": null,
         "web_search": null
       },
@@ -10828,12 +10828,12 @@
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
       "pricing": {
-        "completion": "0.00000335",
+        "completion": "0.0000031",
         "image": null,
         "input_cache_read": "0.00000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000006712",
+        "prompt": "0.0000006725",
         "request": null,
         "web_search": null
       },
