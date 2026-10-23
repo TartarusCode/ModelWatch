@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T00:01:19.525912Z",
+  "generated_at": "2026-10-23T00:31:15.426788Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3847,12 +3847,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.00000066",
         "image": null,
         "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.000000165",
         "request": null,
         "web_search": null
       },
@@ -10248,12 +10248,12 @@
       "id": "mistralai/mistral-small-3.2-24b-instruct",
       "name": "Mistral: Mistral Small 3.2 24B",
       "pricing": {
-        "completion": "0.00000025",
+        "completion": "0.0000002",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009375",
+        "prompt": "0.000000075",
         "request": null,
         "web_search": null
       },
@@ -10278,7 +10278,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 256000,
+        "context_length": 128000,
         "is_moderated": false,
         "max_completion_tokens": 16384
       }
@@ -10900,8 +10900,10 @@
         "include_reasoning",
         "logit_bias",
         "logprobs",
+        "max_completion_tokens",
         "max_tokens",
         "min_p",
+        "parallel_tool_calls",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
@@ -20037,12 +20039,12 @@
       "id": "qwen/qwen3.5-122b-a10b",
       "name": "Qwen: Qwen3.5-122B-A10B",
       "pricing": {
-        "completion": "0.00000208",
+        "completion": "0.0000032",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000026",
+        "prompt": "0.0000004",
         "request": null,
         "web_search": null
       },
@@ -22490,12 +22492,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22652,12 +22654,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
@@ -24087,7 +24089,6 @@
         "max_tokens",
         "presence_penalty",
         "reasoning",
-        "repetition_penalty",
         "response_format",
         "seed",
         "stop",
@@ -24143,21 +24144,16 @@
       },
       "pricing_schedule": null,
       "supported_parameters": [
-        "frequency_penalty",
         "include_reasoning",
         "logprobs",
         "max_tokens",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
         "response_format",
         "seed",
-        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
-        "top_k",
         "top_logprobs",
         "top_p"
       ],
@@ -25098,12 +25094,12 @@
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "pricing": {
-        "completion": "0.0000022",
+        "completion": "0.0000014",
         "image": null,
-        "input_cache_read": "0.00000013",
+        "input_cache_read": "0.000000078",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007",
+        "prompt": "0.000000079",
         "request": null,
         "web_search": null
       },
@@ -25134,7 +25130,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 262144
+        "max_completion_tokens": 943718
       }
     },
     "z-ai/glm-5.3-flash": {
