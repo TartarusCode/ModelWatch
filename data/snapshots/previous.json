@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T00:01:15.925402Z",
+  "generated_at": "2026-10-24T00:31:02.251691Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -22557,12 +22557,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22719,12 +22719,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
@@ -24732,7 +24732,7 @@
       "pricing": {
         "completion": "0.0000009",
         "image": null,
-        "input_cache_read": "0.000000055",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000003",
