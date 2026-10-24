@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T17:31:12.461148Z",
+  "generated_at": "2026-10-24T18:01:08.504950Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -12149,59 +12149,6 @@
         "max_completion_tokens": null
       }
     },
-    "openai/gpt-3.5-turbo": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT"
-      },
-      "canonical_slug": "openai/gpt-3.5-turbo",
-      "context_length": 16385,
-      "created": 1685232000,
-      "default_parameters": {},
-      "description": "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021.",
-      "expiration_date": null,
-      "id": "openai/gpt-3.5-turbo",
-      "name": "OpenAI: GPT-3.5 Turbo",
-      "pricing": {
-        "completion": "0.0000015",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000005",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 16385,
-        "is_moderated": true,
-        "max_completion_tokens": 4096
-      }
-    },
     "openai/gpt-3.5-turbo-0613": {
       "architecture": {
         "input_modalities": [
@@ -12306,110 +12253,6 @@
       "top_provider": {
         "context_length": 16385,
         "is_moderated": false,
-        "max_completion_tokens": 4096
-      }
-    },
-    "openai/gpt-3.5-turbo-instruct": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": "chatml",
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT"
-      },
-      "canonical_slug": "openai/gpt-3.5-turbo-instruct",
-      "context_length": 4095,
-      "created": 1695859200,
-      "default_parameters": {},
-      "description": "This model is a variant of GPT-3.5 Turbo tuned for instructional prompts and omitting chat-related optimizations. Training data: up to Sep 2021.",
-      "expiration_date": null,
-      "id": "openai/gpt-3.5-turbo-instruct",
-      "name": "OpenAI: GPT-3.5 Turbo Instruct",
-      "pricing": {
-        "completion": "0.000002",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000015",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 4095,
-        "is_moderated": true,
-        "max_completion_tokens": 3685
-      }
-    },
-    "openai/gpt-3.5-turbo:batch": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT"
-      },
-      "canonical_slug": "openai/gpt-3.5-turbo",
-      "context_length": 16385,
-      "created": 1685232000,
-      "default_parameters": {},
-      "description": "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021.",
-      "expiration_date": null,
-      "id": "openai/gpt-3.5-turbo:batch",
-      "name": "OpenAI: GPT-3.5 Turbo (batch)",
-      "pricing": {
-        "completion": "0.00000075",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000025",
-        "request": null,
-        "web_search": "0.01"
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 16385,
-        "is_moderated": true,
         "max_completion_tokens": 4096
       }
     },
@@ -25160,12 +25003,12 @@
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "pricing": {
-        "completion": "0.0000014",
+        "completion": "0.00000161",
         "image": null,
-        "input_cache_read": "0.000000078",
+        "input_cache_read": "0.0000000897",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000079",
+        "prompt": "0.0000000908",
         "request": null,
         "web_search": null
       },
