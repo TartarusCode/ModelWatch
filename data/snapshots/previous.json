@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T00:01:15.857077Z",
+  "generated_at": "2026-10-25T00:31:10.690801Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3474,12 +3474,12 @@
       "id": "deepseek/deepseek-v4-flash-0731",
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "pricing": {
-        "completion": "0.00000013332",
+        "completion": "0.0000001694",
         "image": null,
-        "input_cache_read": "0.000000001414",
+        "input_cache_read": "0.000000028",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004444",
+        "prompt": "0.0000000422",
         "request": null,
         "web_search": null
       },
@@ -3511,7 +3511,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 943718
       }
     },
     "deepseek/deepseek-v4-flash-vision-exp": {
@@ -7741,12 +7741,12 @@
       "id": "meta-llama/llama-3.2-3b-instruct",
       "name": "Meta: Llama 3.2 3B Instruct",
       "pricing": {
-        "completion": "0.000000335",
+        "completion": "0.00000033",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000509",
+        "prompt": "0.00000005",
         "request": null,
         "web_search": null
       },
@@ -7768,9 +7768,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 80000,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 72000
+        "max_completion_tokens": 117964
       }
     },
     "meta-llama/llama-3.3-70b-instruct": {
@@ -16002,7 +16002,7 @@
       ],
       "top_provider": {
         "context_length": 1050000,
-        "is_moderated": true,
+        "is_moderated": false,
         "max_completion_tokens": 128000
       }
     },
@@ -22463,12 +22463,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22625,12 +22625,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
@@ -24510,7 +24510,7 @@
         "top_p": null
       },
       "description": "GLM-4.5V is a vision-language foundation model for multimodal agent applications. Built on a Mixture-of-Experts (MoE) architecture with 106B parameters and 12B activated parameters, it achieves state-of-the-art results in video understanding,...",
-      "expiration_date": null,
+      "expiration_date": "2026-12-31",
       "id": "z-ai/glm-4.5v",
       "name": "Z.ai: GLM 4.5V",
       "pricing": {
@@ -24638,7 +24638,7 @@
       "pricing": {
         "completion": "0.0000009",
         "image": null,
-        "input_cache_read": "0.000000055",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000003",
