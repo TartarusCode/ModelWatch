@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T00:01:13.985632Z",
+  "generated_at": "2026-10-26T00:31:16.270851Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3413,12 +3413,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.000000182",
+        "completion": "0.00000045",
         "image": null,
-        "input_cache_read": "0.0000000182",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000091",
+        "prompt": "0.00000005",
         "request": null,
         "web_search": null
       },
@@ -3448,9 +3448,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048575,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943717
+        "max_completion_tokens": 943718
       }
     },
     "deepseek/deepseek-v4-flash-0731": {
@@ -6463,12 +6463,12 @@
       "id": "google/gemma-4-31b-it",
       "name": "Google: Gemma 4 31B",
       "pricing": {
-        "completion": "0.0000004",
+        "completion": "0.00000034",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.0000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000002",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -6497,7 +6497,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 235929
       }
     },
     "google/gemma-4-31b-it:free": {
@@ -10959,12 +10959,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.0000108",
+        "completion": "0.000016",
         "image": null,
-        "input_cache_read": "0.00000021",
+        "input_cache_read": "0.000000151",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000239",
+        "prompt": "0.000000161",
         "request": null,
         "web_search": null
       },
@@ -12654,7 +12654,7 @@
       "pricing": {
         "completion": "0.0000004",
         "image": null,
-        "input_cache_read": "0.000000025",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000001",
@@ -12675,8 +12675,8 @@
       ],
       "top_provider": {
         "context_length": 1047576,
-        "is_moderated": true,
-        "max_completion_tokens": 32768
+        "is_moderated": false,
+        "max_completion_tokens": 942818
       }
     },
     "openai/gpt-4.1-nano:batch": {
@@ -20010,12 +20010,12 @@
       "id": "qwen/qwen3.5-122b-a10b",
       "name": "Qwen: Qwen3.5-122B-A10B",
       "pricing": {
-        "completion": "0.0000032",
+        "completion": "0.00000208",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000004",
+        "prompt": "0.00000026",
         "request": null,
         "web_search": null
       },
@@ -22464,12 +22464,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22626,12 +22626,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
