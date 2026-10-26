@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T23:01:37.643904Z",
+  "generated_at": "2026-10-26T23:31:03.262147Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3544,12 +3544,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001419492",
+        "completion": "0.00000141288",
         "image": null,
-        "input_cache_read": "0.0000000591455",
+        "input_cache_read": "0.00000005887",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000709746",
+        "prompt": "0.00000070644",
         "request": null,
         "web_search": null
       },
@@ -6662,63 +6662,6 @@
         "context_length": 4096,
         "is_moderated": false,
         "max_completion_tokens": 3686
-      }
-    },
-    "ibm-granite/granite-4.0-h-micro": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "ibm-granite/granite-4.0-h-micro",
-      "context_length": 131000,
-      "created": 1760927695,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": null
-      },
-      "description": "Granite-4.0-H-Micro is a 3B parameter from the Granite 4 family of models. These models are the latest in a series of models released by IBM. They are fine-tuned for long...",
-      "expiration_date": null,
-      "id": "ibm-granite/granite-4.0-h-micro",
-      "name": "IBM: Granite 4.0 Micro",
-      "pricing": {
-        "completion": "0.000000112",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.000000017",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "logprobs",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131000,
-        "is_moderated": false,
-        "max_completion_tokens": 117900
       }
     },
     "ibm-granite/granite-4.2-8b": {
@@ -10627,10 +10570,10 @@
       "pricing": {
         "completion": "0.00002",
         "image": null,
-        "input_cache_read": "0.000000179",
+        "input_cache_read": "0.000000159",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000189",
+        "prompt": "0.000000169",
         "request": null,
         "web_search": null
       },

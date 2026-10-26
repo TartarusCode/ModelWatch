@@ -137,6 +137,23 @@
       "tier": null
     },
     {
+      "delta_per_million_usd": "0.252300",
+      "detected_at": "2026-10-26T23:30:51.377095Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.047700",
+      "field": "prompt",
+      "model_id": "deepseek/deepseek-v4.1-flash",
+      "new_per_million_usd": "0.300000",
+      "old_per_million_usd": "0.047700",
+      "pct_change": 5.289308176100629,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
       "delta_per_million_usd": "-0.050000",
       "detected_at": "2026-10-20T01:01:01.049798Z",
       "direction": "cut",
@@ -16610,9 +16627,26 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.252300",
+      "detected_at": "2026-10-26T23:30:51.377095Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.047700",
+      "field": "prompt",
+      "model_id": "deepseek/deepseek-v4.1-flash",
+      "new_per_million_usd": "0.300000",
+      "old_per_million_usd": "0.047700",
+      "pct_change": 5.289308176100629,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-10-26T23:01:37.643904Z",
+  "generated_at": "2026-10-26T23:31:03.262147Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "0.621000",
