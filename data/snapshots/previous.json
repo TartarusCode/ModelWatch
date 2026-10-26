@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T11:01:10.365464Z",
+  "generated_at": "2026-10-26T11:33:30.843648Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6463,12 +6463,12 @@
       "id": "google/gemma-4-31b-it",
       "name": "Google: Gemma 4 31B",
       "pricing": {
-        "completion": "0.00000034",
+        "completion": "0.0000004",
         "image": null,
-        "input_cache_read": "0.0000001",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.0000002",
         "request": null,
         "web_search": null
       },
@@ -6497,7 +6497,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 16384
       }
     },
     "google/gemma-4-31b-it:free": {
@@ -10961,10 +10961,10 @@
       "pricing": {
         "completion": "0.00002",
         "image": null,
-        "input_cache_read": "0.000000142",
+        "input_cache_read": "0.000000204",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000152",
+        "prompt": "0.000000214",
         "request": null,
         "web_search": null
       },
