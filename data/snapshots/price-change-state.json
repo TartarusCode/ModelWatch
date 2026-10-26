@@ -14768,9 +14768,9 @@
       "pct_change": -0.6666666666666666,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-10-26T20:31:03.332272Z",
+      "settled_per_million_usd": "1.000000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -14785,9 +14785,9 @@
       "pct_change": -0.6,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-10-26T20:31:03.332272Z",
+      "settled_per_million_usd": "0.050000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -15845,7 +15845,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-26T20:01:14.229953Z",
+  "generated_at": "2026-10-26T20:31:18.697805Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -25459,7 +25459,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.169000000",
+        "anchor": "0.149000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -25470,7 +25470,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.179000000",
+        "anchor": "0.159000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -33545,25 +33545,25 @@
     "reflection/beam-1.0-501b-a23b": {
       "completion": {
         "anchor": "1.000000",
-        "confirmed_at": "2026-10-19T20:30:54.325679Z",
-        "confirmed_price": "1.000000",
-        "direction": "cut",
-        "episode_start_price": "3.000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.04000000",
-        "confirmed_at": "2026-10-19T20:30:54.325679Z",
-        "confirmed_price": "0.04000000",
-        "direction": "cut",
-        "episode_start_price": "0.1000000",
+        "anchor": "0.05000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "prompt": {
         "anchor": "0.25000000",
