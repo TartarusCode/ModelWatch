@@ -14666,9 +14666,9 @@
       "pct_change": -0.25,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-10-26T01:01:04.311494Z",
+      "settled_per_million_usd": "0.270000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -14683,9 +14683,9 @@
       "pct_change": -0.4,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-10-26T01:01:04.311494Z",
+      "settled_per_million_usd": "2.160000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -15758,9 +15758,77 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "5.200000",
+      "detected_at": "2026-10-26T01:01:04.311494Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "10.800000",
+      "field": "completion",
+      "model_id": "moonshotai/kimi-k3",
+      "new_per_million_usd": "16.000000",
+      "old_per_million_usd": "10.800000",
+      "pct_change": 0.48148148148148145,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.268000",
+      "detected_at": "2026-10-26T01:01:04.311494Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.182000",
+      "field": "completion",
+      "model_id": "deepseek/deepseek-v4-flash",
+      "new_per_million_usd": "0.450000",
+      "old_per_million_usd": "0.182000",
+      "pct_change": 1.4725274725274726,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.100000",
+      "detected_at": "2026-10-26T01:01:04.311494Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.200000",
+      "field": "prompt",
+      "model_id": "google/gemma-4-31b-it",
+      "new_per_million_usd": "0.100000",
+      "old_per_million_usd": "0.200000",
+      "pct_change": -0.5,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.060000",
+      "detected_at": "2026-10-26T01:01:04.311494Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.400000",
+      "field": "completion",
+      "model_id": "google/gemma-4-31b-it",
+      "new_per_million_usd": "0.340000",
+      "old_per_million_usd": "0.400000",
+      "pct_change": -0.15,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-10-26T00:31:16.270851Z",
+  "generated_at": "2026-10-26T01:01:21.120295Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -18978,15 +19046,15 @@
     },
     "deepseek/deepseek-v4-flash": {
       "completion": {
-        "anchor": "0.182000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.45000000",
+        "confirmed_at": "2026-10-26T01:01:04.311494Z",
+        "confirmed_price": "0.45000000",
         "direction": "hike",
         "episode_start_price": "0.182000000",
-        "pending_builds": 1,
-        "pending_price": "0.45000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.05000000",
@@ -22234,15 +22302,15 @@
     },
     "google/gemma-4-31b-it": {
       "completion": {
-        "anchor": "0.4000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.34000000",
+        "confirmed_at": "2026-10-26T01:01:04.311494Z",
+        "confirmed_price": "0.34000000",
         "direction": "cut",
         "episode_start_price": "0.4000000",
-        "pending_builds": 1,
-        "pending_price": "0.34000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.05000000",
@@ -22256,15 +22324,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.2000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.1000000",
+        "confirmed_at": "2026-10-26T01:01:04.311494Z",
+        "confirmed_price": "0.1000000",
         "direction": "cut",
         "episode_start_price": "0.2000000",
-        "pending_builds": 1,
-        "pending_price": "0.1000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "google/gemma-4-31b-it:batch": {
@@ -25363,37 +25431,37 @@
     },
     "moonshotai/kimi-k3": {
       "completion": {
-        "anchor": "10.8000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "16.000000",
+        "confirmed_at": "2026-10-26T01:01:04.311494Z",
+        "confirmed_price": "16.000000",
         "direction": "hike",
         "episode_start_price": "10.8000000",
-        "pending_builds": 1,
-        "pending_price": "16.000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.21000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": "cut",
-        "episode_start_price": "0.21000000",
-        "pending_builds": 1,
-        "pending_price": "0.151000000",
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "idle"
       },
       "prompt": {
         "anchor": "0.239000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": "cut",
-        "episode_start_price": "0.239000000",
-        "pending_builds": 1,
-        "pending_price": "0.161000000",
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "idle"
       }
     },
     "moonshotai/kimi-k3.1-pro": {
@@ -32551,15 +32619,15 @@
     },
     "qwen/qwen3.5-27b": {
       "completion": {
-        "anchor": "1.56000000",
-        "confirmed_at": "2026-10-19T01:00:59.063783Z",
-        "confirmed_price": "1.56000000",
-        "direction": "cut",
-        "episode_start_price": "2.6000000",
+        "anchor": "2.16000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.27000000",
@@ -32573,15 +32641,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.195000000",
-        "confirmed_at": "2026-10-19T01:00:59.063783Z",
-        "confirmed_price": "0.195000000",
-        "direction": "cut",
-        "episode_start_price": "0.26000000",
+        "anchor": "0.27000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "qwen/qwen3.5-35b-a3b": {
