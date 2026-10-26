@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T18:31:13.841159Z",
+  "generated_at": "2026-10-26T19:01:18.888932Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3544,12 +3544,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001490484",
+        "completion": "0.000001480392",
         "image": null,
-        "input_cache_read": "0.0000000621035",
+        "input_cache_read": "0.000000061683",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000745242",
+        "prompt": "0.000000740196",
         "request": null,
         "web_search": null
       },
@@ -3793,12 +3793,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.000001",
+        "completion": "0.0000001908",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.000000000954",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000002",
+        "prompt": "0.0000000477",
         "request": null,
         "web_search": null
       },
@@ -3830,7 +3830,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4.1-flash-1017": {
@@ -10907,10 +10907,10 @@
       "pricing": {
         "completion": "0.00002",
         "image": null,
-        "input_cache_read": "0.000000159",
+        "input_cache_read": "0.00000014",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000169",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -16812,7 +16812,7 @@
       "context_length": 1050000,
       "created": 1793038409,
       "default_parameters": {},
-      "description": "GPT-6.1 Terra is the mid-tier model in OpenAI's GPT-6.1 series, built for fast, capable computer use at a lower price than GPT-6.1 Sol. It reads what is on screen, takes...",
+      "description": "GPT-6.1 Terra is the mid-tier model in OpenAI's GPT-6.1 series, priced below GPT-6.1 Sol. It is suited for everyday agentic, coding, and writing work, is particularly strong at understanding screenshots...",
       "expiration_date": null,
       "id": "openai/gpt-6.1-terra",
       "name": "OpenAI: GPT-6.1 Terra",
@@ -16863,7 +16863,7 @@
       "context_length": 1050000,
       "created": 1793038409,
       "default_parameters": {},
-      "description": "GPT-6.1 Terra is the mid-tier model in OpenAI's GPT-6.1 series, built for fast, capable computer use at a lower price than GPT-6.1 Sol. It reads what is on screen, takes...",
+      "description": "GPT-6.1 Terra is the mid-tier model in OpenAI's GPT-6.1 series, priced below GPT-6.1 Sol. It is suited for everyday agentic, coding, and writing work, is particularly strong at understanding screenshots...",
       "expiration_date": null,
       "id": "openai/gpt-6.1-terra:batch",
       "name": "OpenAI: GPT-6.1 Terra (batch)",
