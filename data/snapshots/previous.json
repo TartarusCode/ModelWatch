@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T06:01:05.929916Z",
+  "generated_at": "2026-10-27T06:31:00.214104Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3607,12 +3607,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000198",
+        "completion": "0.00000396",
         "image": null,
-        "input_cache_read": "0.000000022",
+        "input_cache_read": "0.000000044",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000066",
+        "prompt": "0.00000132",
         "request": null,
         "web_search": null
       },
@@ -3855,12 +3855,12 @@
       "id": "deepseek/deepseek-v4.1-flash-1017",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -6228,12 +6228,12 @@
       "id": "google/gemma-3-4b-it",
       "name": "Google: Gemma 3 4B",
       "pricing": {
-        "completion": "0.00000005",
+        "completion": "0.0000001",
         "image": null,
-        "input_cache_read": "0.00000002",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004",
+        "prompt": "0.00000005",
         "request": null,
         "web_search": null
       },
@@ -6258,7 +6258,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 117964
+        "max_completion_tokens": 16384
       }
     },
     "google/gemma-4-26b-a4b-it": {
@@ -6288,12 +6288,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000255",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.0000000425",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000765",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
@@ -10569,12 +10569,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.00002",
+        "completion": "0.0000115",
         "image": null,
-        "input_cache_read": "0.000000179",
+        "input_cache_read": "0.000000169",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000189",
+        "prompt": "0.000000179",
         "request": null,
         "web_search": null
       },
