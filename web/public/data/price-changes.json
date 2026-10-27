@@ -137,57 +137,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "2.090000",
-      "detected_at": "2026-10-20T18:00:57.773583Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "2.090000",
-      "field": "completion",
-      "model_id": "mistralai/mistral-large-4-0",
-      "new_per_million_usd": "4.180000",
-      "old_per_million_usd": "2.090000",
-      "pct_change": 1.0,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "0.070000",
-      "detected_at": "2026-10-20T18:00:57.773583Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.070000",
-      "field": "input_cache_read",
-      "model_id": "mistralai/mistral-large-4-0",
-      "new_per_million_usd": "0.140000",
-      "old_per_million_usd": "0.070000",
-      "pct_change": 1.0,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "0.680000",
-      "detected_at": "2026-10-20T18:00:57.773583Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.680000",
-      "field": "prompt",
-      "model_id": "mistralai/mistral-large-4-0",
-      "new_per_million_usd": "1.360000",
-      "old_per_million_usd": "0.680000",
-      "pct_change": 1.0,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "-0.050000",
       "detected_at": "2026-10-23T01:00:58.510167Z",
       "direction": "cut",
@@ -15705,9 +15654,9 @@
       "pct_change": 1.0,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-10-27T18:01:02.904599Z",
+      "settled_per_million_usd": "1.360000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -15722,9 +15671,9 @@
       "pct_change": 1.0,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-10-27T18:01:02.904599Z",
+      "settled_per_million_usd": "4.180000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -15739,9 +15688,9 @@
       "pct_change": 1.0,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-10-27T18:01:02.904599Z",
+      "settled_per_million_usd": "0.140000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -16697,7 +16646,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-27T17:31:20.972996Z",
+  "generated_at": "2026-10-27T18:01:16.857822Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "-0.200000",
@@ -17055,6 +17004,57 @@
       "recovered_per_million_usd": null,
       "settled_at": "2026-10-27T02:01:04.113727Z",
       "settled_per_million_usd": "0.100000",
+      "status": "settled",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.680000",
+      "detected_at": "2026-10-20T18:00:57.773583Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.680000",
+      "field": "prompt",
+      "model_id": "mistralai/mistral-large-4-0",
+      "new_per_million_usd": "1.360000",
+      "old_per_million_usd": "0.680000",
+      "pct_change": 1.0,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-10-27T18:01:02.904599Z",
+      "settled_per_million_usd": "1.360000",
+      "status": "settled",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "2.090000",
+      "detected_at": "2026-10-20T18:00:57.773583Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "2.090000",
+      "field": "completion",
+      "model_id": "mistralai/mistral-large-4-0",
+      "new_per_million_usd": "4.180000",
+      "old_per_million_usd": "2.090000",
+      "pct_change": 1.0,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-10-27T18:01:02.904599Z",
+      "settled_per_million_usd": "4.180000",
+      "status": "settled",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.070000",
+      "detected_at": "2026-10-20T18:00:57.773583Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.070000",
+      "field": "input_cache_read",
+      "model_id": "mistralai/mistral-large-4-0",
+      "new_per_million_usd": "0.140000",
+      "old_per_million_usd": "0.070000",
+      "pct_change": 1.0,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-10-27T18:01:02.904599Z",
+      "settled_per_million_usd": "0.140000",
       "status": "settled",
       "tier": null
     }
