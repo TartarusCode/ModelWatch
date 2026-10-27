@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T09:01:11.849473Z",
+  "generated_at": "2026-10-27T09:30:59.304610Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -10569,12 +10569,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.00002",
+        "completion": "0.0000115",
         "image": null,
-        "input_cache_read": "0.000000159",
+        "input_cache_read": "0.000000149",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000169",
+        "prompt": "0.000000159",
         "request": null,
         "web_search": null
       },
@@ -11272,63 +11272,6 @@
         "tools",
         "top_k",
         "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 235929
-      }
-    },
-    "nvidia/nemotron-3-super-120b-a12b:free": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "nvidia/nemotron-3-super-120b-a12b-20230311",
-      "context_length": 262144,
-      "created": 1773245239,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": 1,
-        "top_k": null,
-        "top_p": 0.95
-      },
-      "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer...",
-      "expiration_date": null,
-      "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "name": "NVIDIA: Nemotron 3 Super (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "seed",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
         "top_p"
       ],
       "top_provider": {
@@ -24341,7 +24284,7 @@
         "top_p": null
       },
       "description": "GLM-4.5V is a vision-language foundation model for multimodal agent applications. Built on a Mixture-of-Experts (MoE) architecture with 106B parameters and 12B activated parameters, it achieves state-of-the-art results in video understanding,...",
-      "expiration_date": null,
+      "expiration_date": "2026-12-31",
       "id": "z-ai/glm-4.5v",
       "name": "Z.ai: GLM 4.5V",
       "pricing": {
