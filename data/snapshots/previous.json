@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T01:01:16.645141Z",
+  "generated_at": "2026-10-27T01:31:01.302038Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3607,12 +3607,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000198",
+        "completion": "0.00000396",
         "image": null,
-        "input_cache_read": "0.000000022",
+        "input_cache_read": "0.000000044",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000066",
+        "prompt": "0.00000132",
         "request": null,
         "web_search": null
       },
@@ -3855,12 +3855,12 @@
       "id": "deepseek/deepseek-v4.1-flash-1017",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -10571,10 +10571,10 @@
       "pricing": {
         "completion": "0.00002",
         "image": null,
-        "input_cache_read": "0.000000179",
+        "input_cache_read": "0.000000159",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000189",
+        "prompt": "0.000000169",
         "request": null,
         "web_search": null
       },
@@ -16489,6 +16489,122 @@
         "input_cache_write": "0.00000125",
         "internal_reasoning": null,
         "prompt": "0.000001",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1050000,
+        "is_moderated": true,
+        "max_completion_tokens": 128000
+      }
+    },
+    "openai/gpt-6.1-terra-pro": {
+      "architecture": {
+        "input_modalities": [
+          "file",
+          "image",
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT"
+      },
+      "canonical_slug": "openai/gpt-6.1-terra-pro-20261026",
+      "context_length": 1050000,
+      "created": 1793038556,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "GPT-6.1 Terra Pro is the same underlying model as [GPT-6.1 Terra](https://openrouter.ai/openai/gpt-6.1-terra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+      "expiration_date": null,
+      "id": "openai/gpt-6.1-terra-pro",
+      "name": "OpenAI: GPT-6.1 Terra Pro",
+      "pricing": {
+        "completion": "0.000005",
+        "image": null,
+        "input_cache_read": "0.00000005",
+        "input_cache_write": "0.00000125",
+        "internal_reasoning": null,
+        "prompt": "0.000001",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1050000,
+        "is_moderated": true,
+        "max_completion_tokens": 128000
+      }
+    },
+    "openai/gpt-6.1-terra-pro:batch": {
+      "architecture": {
+        "input_modalities": [
+          "file",
+          "image",
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT"
+      },
+      "canonical_slug": "openai/gpt-6.1-terra-pro-20261026",
+      "context_length": 1050000,
+      "created": 1793038556,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "GPT-6.1 Terra Pro is the same underlying model as [GPT-6.1 Terra](https://openrouter.ai/openai/gpt-6.1-terra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+      "expiration_date": null,
+      "id": "openai/gpt-6.1-terra-pro:batch",
+      "name": "OpenAI: GPT-6.1 Terra Pro (batch)",
+      "pricing": {
+        "completion": "0.0000025",
+        "image": null,
+        "input_cache_read": "0.000000025",
+        "input_cache_write": "0.000000625",
+        "internal_reasoning": null,
+        "prompt": "0.0000005",
         "request": null,
         "web_search": "0.01"
       },
@@ -23819,12 +23935,12 @@
       "id": "xiaomi/mimo-v2.5-pro",
       "name": "Xiaomi: MiMo-V2.5-Pro",
       "pricing": {
-        "completion": "0.000000609",
+        "completion": "0.0000018",
         "image": null,
-        "input_cache_read": "0.0000000028",
+        "input_cache_read": "0.000000096",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003045",
+        "prompt": "0.00000048",
         "request": null,
         "web_search": null
       },
@@ -23844,9 +23960,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1050000,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 945000
+        "max_completion_tokens": 235929
       }
     },
     "xiaomi/mimo-v2.6-flash": {
@@ -24769,7 +24885,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-5.3-20260816",
-      "context_length": 1048576,
+      "context_length": 1050000,
       "created": 1787086655,
       "default_parameters": {
         "temperature": 1,
