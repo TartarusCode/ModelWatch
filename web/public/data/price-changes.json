@@ -16714,7 +16714,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-27T03:01:19.681491Z",
+  "generated_at": "2026-10-27T03:31:13.897761Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "-0.200000",
@@ -16768,40 +16768,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "0.621000",
-      "detected_at": "2026-10-21T23:31:03.324926Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.079000",
-      "field": "prompt",
-      "model_id": "z-ai/glm-5.3",
-      "new_per_million_usd": "0.700000",
-      "old_per_million_usd": "0.079000",
-      "pct_change": 7.860759493670886,
-      "recovered_at": "2026-10-26T03:30:55.765522Z",
-      "recovered_per_million_usd": "0.069900",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "0.052000",
-      "detected_at": "2026-10-21T23:31:03.324926Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.078000",
-      "field": "input_cache_read",
-      "model_id": "z-ai/glm-5.3",
-      "new_per_million_usd": "0.130000",
-      "old_per_million_usd": "0.078000",
-      "pct_change": 0.6666666666666666,
-      "recovered_at": "2026-10-26T03:30:55.765522Z",
-      "recovered_per_million_usd": "0.068900",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "0.072000",
       "detected_at": "2026-10-23T04:00:56.683842Z",
       "direction": "hike",
@@ -16847,23 +16813,6 @@
       "pct_change": 3.5416666666666665,
       "recovered_at": "2026-10-27T00:01:16.767587Z",
       "recovered_per_million_usd": "1.910520",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "5.200000",
-      "detected_at": "2026-10-26T01:01:04.311494Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "10.800000",
-      "field": "completion",
-      "model_id": "moonshotai/kimi-k3",
-      "new_per_million_usd": "16.000000",
-      "old_per_million_usd": "10.800000",
-      "pct_change": 0.48148148148148145,
-      "recovered_at": "2026-10-26T03:31:07.264283Z",
-      "recovered_per_million_usd": "20.000000",
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "recovered",
