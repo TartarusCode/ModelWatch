@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T23:31:03.262147Z",
+  "generated_at": "2026-10-27T00:01:16.767587Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3420,12 +3420,12 @@
       "id": "deepseek/deepseek-v4-flash-0731",
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "pricing": {
-        "completion": "0.00000013332",
+        "completion": "0.00000132",
         "image": null,
-        "input_cache_read": "0.000000001414",
+        "input_cache_read": "0.000000014",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004444",
+        "prompt": "0.00000044",
         "request": null,
         "web_search": null
       },
@@ -3544,12 +3544,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.00000141288",
+        "completion": "0.00000191052",
         "image": null,
-        "input_cache_read": "0.00000005887",
+        "input_cache_read": "0.000000079605",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000070644",
+        "prompt": "0.00000095526",
         "request": null,
         "web_search": null
       },
@@ -3793,12 +3793,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.00000001",
         "image": null,
-        "input_cache_read": "0.000000006",
+        "input_cache_read": "0.000000034002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.000000043156",
         "request": null,
         "web_search": null
       },
@@ -10570,10 +10570,10 @@
       "pricing": {
         "completion": "0.00002",
         "image": null,
-        "input_cache_read": "0.000000159",
+        "input_cache_read": "0.000000149",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000169",
+        "prompt": "0.000000159",
         "request": null,
         "web_search": null
       },
