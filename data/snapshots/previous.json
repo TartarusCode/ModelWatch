@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T16:01:39.355894Z",
+  "generated_at": "2026-10-27T16:31:13.851648Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3359,12 +3359,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.00000045",
+        "completion": "0.00000009464",
         "image": null,
-        "input_cache_read": "0.0000000449",
+        "input_cache_read": "0.000000009464",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000449",
+        "prompt": "0.00000004732",
         "request": null,
         "web_search": null
       },
@@ -3396,7 +3396,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 131072
       }
     },
     "deepseek/deepseek-v4-flash-0731": {
@@ -10571,10 +10571,10 @@
       "pricing": {
         "completion": "0.00002",
         "image": null,
-        "input_cache_read": "0.000000179",
+        "input_cache_read": "0.000000159",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000189",
+        "prompt": "0.000000169",
         "request": null,
         "web_search": null
       },
@@ -22239,12 +22239,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.000000528",
+        "completion": "0.00000033",
         "image": null,
-        "input_cache_read": "0.000000033",
+        "input_cache_read": "0.000000020625",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000132",
+        "prompt": "0.0000000825",
         "request": null,
         "web_search": null
       },
@@ -22401,12 +22401,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.000002501",
+        "completion": "0.0000022509",
         "image": null,
-        "input_cache_read": "0.000000042",
+        "input_cache_read": "0.0000000378",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000834",
+        "prompt": "0.0000007506",
         "request": null,
         "web_search": null
       },
