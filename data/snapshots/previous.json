@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T21:01:22.481350Z",
+  "generated_at": "2026-10-28T21:31:12.422333Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3793,12 +3793,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.00000042",
+        "completion": "0.0000005",
         "image": null,
-        "input_cache_read": "0.0000000042",
+        "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000014",
+        "prompt": "0.000000045",
         "request": null,
         "web_search": null
       },
@@ -3830,7 +3830,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 943718
       }
     },
     "deepseek/deepseek-v4.1-flash-1017": {
@@ -11215,7 +11215,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "nvidia/nemotron-3-super-120b-a12b-20230311",
-      "context_length": 262144,
+      "context_length": 1048576,
       "created": 1773245239,
       "default_parameters": {
         "frequency_penalty": null,
@@ -11263,9 +11263,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 262144
       }
     },
     "nvidia/nemotron-3-ultra-550b-a55b": {
