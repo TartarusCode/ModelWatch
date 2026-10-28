@@ -15397,9 +15397,9 @@
       "pct_change": 33.01360544217687,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-10-28T23:50:01.556307Z",
+      "settled_per_million_usd": "0.037900",
+      "status": "settled",
       "tier": null
     },
     {
@@ -16234,9 +16234,26 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.100000",
+      "detected_at": "2026-10-28T23:50:01.556307Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.250000",
+      "field": "completion",
+      "model_id": "ibm-granite/granite-4.2-8b",
+      "new_per_million_usd": "0.150000",
+      "old_per_million_usd": "0.250000",
+      "pct_change": -0.4,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-10-28T22:31:08.864611Z",
+  "generated_at": "2026-10-28T23:50:13.773105Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -19629,7 +19646,7 @@
     },
     "deepseek/deepseek-v4-pro": {
       "completion": {
-        "anchor": "1.777932000000",
+        "anchor": "1.91052000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -19640,7 +19657,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.0740805000000",
+        "anchor": "0.079605000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -19651,7 +19668,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.888966000000",
+        "anchor": "0.95526000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -22852,15 +22869,15 @@
     },
     "ibm-granite/granite-4.2-8b": {
       "completion": {
-        "anchor": "0.25000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.15000000",
+        "confirmed_at": "2026-10-28T23:50:01.556307Z",
+        "confirmed_price": "0.15000000",
         "direction": "cut",
         "episode_start_price": "0.25000000",
-        "pending_builds": 1,
-        "pending_price": "0.15000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.015000000",
@@ -36477,15 +36494,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.15000000",
-        "confirmed_at": "2026-10-21T23:00:57.570069Z",
-        "confirmed_price": "0.15000000",
-        "direction": "hike",
-        "episode_start_price": "0.00441000000",
+        "anchor": "0.0379000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "z-ai/glm-5.3-flash:batch": {
