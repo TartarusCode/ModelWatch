@@ -16765,7 +16765,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-28T17:31:08.108945Z",
+  "generated_at": "2026-10-28T18:01:36.260759Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "0.421200",
@@ -16803,57 +16803,6 @@
     }
   ],
   "settled_changes": [
-    {
-      "delta_per_million_usd": "0.680000",
-      "detected_at": "2026-10-20T18:00:57.773583Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.680000",
-      "field": "prompt",
-      "model_id": "mistralai/mistral-large-4-0",
-      "new_per_million_usd": "1.360000",
-      "old_per_million_usd": "0.680000",
-      "pct_change": 1.0,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-10-27T18:01:02.904599Z",
-      "settled_per_million_usd": "1.360000",
-      "status": "settled",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "2.090000",
-      "detected_at": "2026-10-20T18:00:57.773583Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "2.090000",
-      "field": "completion",
-      "model_id": "mistralai/mistral-large-4-0",
-      "new_per_million_usd": "4.180000",
-      "old_per_million_usd": "2.090000",
-      "pct_change": 1.0,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-10-27T18:01:02.904599Z",
-      "settled_per_million_usd": "4.180000",
-      "status": "settled",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "0.070000",
-      "detected_at": "2026-10-20T18:00:57.773583Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.070000",
-      "field": "input_cache_read",
-      "model_id": "mistralai/mistral-large-4-0",
-      "new_per_million_usd": "0.140000",
-      "old_per_million_usd": "0.070000",
-      "pct_change": 1.0,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-10-27T18:01:02.904599Z",
-      "settled_per_million_usd": "0.140000",
-      "status": "settled",
-      "tier": null
-    },
     {
       "delta_per_million_usd": "0.434000",
       "detected_at": "2026-10-21T01:00:58.844944Z",
