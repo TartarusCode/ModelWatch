@@ -16680,42 +16680,8 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-28T02:01:03.698113Z",
+  "generated_at": "2026-10-28T02:31:14.753375Z",
   "recovered_changes": [
-    {
-      "delta_per_million_usd": "-0.130500",
-      "detected_at": "2026-10-21T03:01:02.933944Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.435000",
-      "field": "prompt",
-      "model_id": "xiaomi/mimo-v2.5-pro",
-      "new_per_million_usd": "0.304500",
-      "old_per_million_usd": "0.435000",
-      "pct_change": -0.3,
-      "recovered_at": "2026-10-27T02:01:04.113727Z",
-      "recovered_per_million_usd": "0.480000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "-0.261000",
-      "detected_at": "2026-10-21T03:01:02.933944Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.870000",
-      "field": "completion",
-      "model_id": "xiaomi/mimo-v2.5-pro",
-      "new_per_million_usd": "0.609000",
-      "old_per_million_usd": "0.870000",
-      "pct_change": -0.3,
-      "recovered_at": "2026-10-27T02:01:04.113727Z",
-      "recovered_per_million_usd": "1.800000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered",
-      "tier": null
-    },
     {
       "delta_per_million_usd": "0.070000",
       "detected_at": "2026-10-25T17:01:01.312916Z",
@@ -16820,23 +16786,6 @@
     }
   ],
   "settled_changes": [
-    {
-      "delta_per_million_usd": "-0.050000",
-      "detected_at": "2026-10-20T02:00:52.384276Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.150000",
-      "field": "prompt",
-      "model_id": "qwen/qwen3.6-35b-a3b",
-      "new_per_million_usd": "0.100000",
-      "old_per_million_usd": "0.150000",
-      "pct_change": -0.3333333333333333,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-10-27T02:01:04.113727Z",
-      "settled_per_million_usd": "0.100000",
-      "status": "settled",
-      "tier": null
-    },
     {
       "delta_per_million_usd": "0.680000",
       "detected_at": "2026-10-20T18:00:57.773583Z",
