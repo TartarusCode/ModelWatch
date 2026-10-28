@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T22:01:12.431001Z",
+  "generated_at": "2026-10-28T22:31:08.864611Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6689,7 +6689,7 @@
       "id": "ibm-granite/granite-4.2-8b",
       "name": "IBM: Granite 4.2 8B",
       "pricing": {
-        "completion": "0.00000025",
+        "completion": "0.00000015",
         "image": null,
         "input_cache_read": "0.000000015",
         "input_cache_write": null,
@@ -20514,12 +20514,12 @@
       "id": "qwen/qwen3.8-27b",
       "name": "Qwen: Qwen3.8 27B",
       "pricing": {
-        "completion": "0.00000125",
+        "completion": "0.0000025",
         "image": null,
-        "input_cache_read": "0.0000000039",
+        "input_cache_read": "0.00000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000039",
+        "prompt": "0.0000002",
         "request": null,
         "web_search": null
       },
@@ -20550,7 +20550,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3.8-flash": {
@@ -24578,10 +24578,10 @@
       "pricing": {
         "completion": "0.0000000923",
         "image": null,
-        "input_cache_read": "0.0000000285",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000285",
+        "prompt": "0.0000000313",
         "request": null,
         "web_search": null
       },
