@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T15:01:30.758751Z",
+  "generated_at": "2026-10-28T15:31:18.984147Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -8522,22 +8522,12 @@
       },
       "pricing_schedule": null,
       "supported_parameters": [
-        "frequency_penalty",
         "include_reasoning",
-        "logprobs",
         "max_tokens",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
-        "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -10317,7 +10307,6 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logprobs",
         "max_tokens",
         "presence_penalty",
         "reasoning",
@@ -10330,7 +10319,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -10571,10 +10559,10 @@
       "pricing": {
         "completion": "0.00002",
         "image": null,
-        "input_cache_read": "0.000000142",
+        "input_cache_read": "0.000000181",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000152",
+        "prompt": "0.000000191",
         "request": null,
         "web_search": null
       },
@@ -11909,12 +11897,10 @@
         "logit_bias",
         "logprobs",
         "max_completion_tokens",
-        "max_tokens",
         "presence_penalty",
         "response_format",
         "seed",
         "stop",
-        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
@@ -12373,8 +12359,6 @@
         "logit_bias",
         "logprobs",
         "max_completion_tokens",
-        "max_tokens",
-        "prediction",
         "presence_penalty",
         "response_format",
         "seed",
@@ -16988,109 +16972,6 @@
         "max_completion_tokens": 65536
       }
     },
-    "openai/o1": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "file"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+file->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT"
-      },
-      "canonical_slug": "openai/o1-2024-12-17",
-      "context_length": 200000,
-      "created": 1734459999,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "The latest and strongest model family from OpenAI, o1 is designed to spend more time thinking before responding. The o1 model series is trained with large-scale reinforcement learning to reason...",
-      "expiration_date": null,
-      "id": "openai/o1",
-      "name": "OpenAI: o1",
-      "pricing": {
-        "completion": "0.00006",
-        "image": null,
-        "input_cache_read": "0.0000075",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.000015",
-        "request": null,
-        "web_search": "0.01"
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "seed",
-        "structured_outputs",
-        "tool_choice",
-        "tools"
-      ],
-      "top_provider": {
-        "context_length": 200000,
-        "is_moderated": true,
-        "max_completion_tokens": 100000
-      }
-    },
-    "openai/o1-pro": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "file"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+file->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT"
-      },
-      "canonical_slug": "openai/o1-pro",
-      "context_length": 200000,
-      "created": 1742423211,
-      "default_parameters": {},
-      "description": "The o1 series of models are trained with reinforcement learning to think before they answer and perform complex reasoning. The o1-pro model uses more compute to think harder and provide...",
-      "expiration_date": null,
-      "id": "openai/o1-pro",
-      "name": "OpenAI: o1-pro",
-      "pricing": {
-        "completion": "0.0006",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00015",
-        "request": null,
-        "web_search": "0.01"
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "seed",
-        "structured_outputs"
-      ],
-      "top_provider": {
-        "context_length": 200000,
-        "is_moderated": true,
-        "max_completion_tokens": 100000
-      }
-    },
     "openai/o3": {
       "architecture": {
         "input_modalities": [
@@ -17128,59 +17009,6 @@
         "include_reasoning",
         "max_tokens",
         "reasoning",
-        "response_format",
-        "seed",
-        "structured_outputs",
-        "tool_choice",
-        "tools"
-      ],
-      "top_provider": {
-        "context_length": 200000,
-        "is_moderated": true,
-        "max_completion_tokens": 100000
-      }
-    },
-    "openai/o3-mini-high": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "file"
-        ],
-        "instruct_type": null,
-        "modality": "text+file->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT"
-      },
-      "canonical_slug": "openai/o3-mini-high-2025-01-31",
-      "context_length": 200000,
-      "created": 1739372611,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": null
-      },
-      "description": "OpenAI o3-mini-high is the same model as [o3-mini](/openai/o3-mini) with reasoning_effort set to high. o3-mini is a cost-efficient language model optimized for STEM reasoning tasks, particularly excelling in science, mathematics, and...",
-      "expiration_date": null,
-      "id": "openai/o3-mini-high",
-      "name": "OpenAI: o3 Mini High",
-      "pricing": {
-        "completion": "0.0000044",
-        "image": null,
-        "input_cache_read": "0.00000055",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000011",
-        "request": null,
-        "web_search": "0.01"
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "reasoning_effort",
         "response_format",
         "seed",
         "structured_outputs",
@@ -17338,60 +17166,6 @@
         "include_reasoning",
         "max_tokens",
         "reasoning",
-        "response_format",
-        "seed",
-        "structured_outputs",
-        "tool_choice",
-        "tools"
-      ],
-      "top_provider": {
-        "context_length": 200000,
-        "is_moderated": true,
-        "max_completion_tokens": 100000
-      }
-    },
-    "openai/o4-mini-high": {
-      "architecture": {
-        "input_modalities": [
-          "image",
-          "text",
-          "file"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+file->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT"
-      },
-      "canonical_slug": "openai/o4-mini-high-2025-04-16",
-      "context_length": 200000,
-      "created": 1744824212,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": null
-      },
-      "description": "OpenAI o4-mini-high is the same model as [o4-mini](/openai/o4-mini) with reasoning_effort set to high. OpenAI o4-mini is a compact reasoning model in the o-series, optimized for fast, cost-efficient performance while retaining...",
-      "expiration_date": null,
-      "id": "openai/o4-mini-high",
-      "name": "OpenAI: o4 Mini High",
-      "pricing": {
-        "completion": "0.0000044",
-        "image": null,
-        "input_cache_read": "0.000000275",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000011",
-        "request": null,
-        "web_search": "0.01"
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "reasoning_effort",
         "response_format",
         "seed",
         "structured_outputs",
