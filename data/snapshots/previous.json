@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T14:31:16.955389Z",
+  "generated_at": "2026-10-28T15:01:30.758751Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -10571,10 +10571,10 @@
       "pricing": {
         "completion": "0.00002",
         "image": null,
-        "input_cache_read": "0.000000149",
+        "input_cache_read": "0.000000142",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000159",
+        "prompt": "0.000000152",
         "request": null,
         "web_search": null
       },
@@ -11927,60 +11927,6 @@
         "max_completion_tokens": 4096
       }
     },
-    "openai/gpt-4-turbo": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "instruct_type": null,
-        "modality": "text+image->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT"
-      },
-      "canonical_slug": "openai/gpt-4-turbo",
-      "context_length": 128000,
-      "created": 1712620800,
-      "default_parameters": {},
-      "description": "The latest GPT-4 Turbo model with vision capabilities. Vision requests can now use JSON mode and function calling.\n\nTraining data: up to December 2023.",
-      "expiration_date": null,
-      "id": "openai/gpt-4-turbo",
-      "name": "OpenAI: GPT-4 Turbo",
-      "pricing": {
-        "completion": "0.00003",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00001",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 128000,
-        "is_moderated": true,
-        "max_completion_tokens": 4096
-      }
-    },
     "openai/gpt-4-turbo:batch": {
       "architecture": {
         "input_modalities": [
@@ -12219,7 +12165,6 @@
       "pricing_schedule": null,
       "supported_parameters": [
         "max_completion_tokens",
-        "max_tokens",
         "response_format",
         "seed",
         "structured_outputs",
@@ -17195,61 +17140,6 @@
         "max_completion_tokens": 100000
       }
     },
-    "openai/o3-mini": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "file"
-        ],
-        "instruct_type": null,
-        "modality": "text+file->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT"
-      },
-      "canonical_slug": "openai/o3-mini-2025-01-31",
-      "context_length": 200000,
-      "created": 1738351721,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "OpenAI o3-mini is a cost-efficient language model optimized for STEM reasoning tasks, particularly excelling in science, mathematics, and coding. This model supports the `reasoning_effort` parameter, which can be set to...",
-      "expiration_date": null,
-      "id": "openai/o3-mini",
-      "name": "OpenAI: o3 Mini",
-      "pricing": {
-        "completion": "0.0000044",
-        "image": null,
-        "input_cache_read": "0.00000055",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000011",
-        "request": null,
-        "web_search": "0.01"
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "seed",
-        "structured_outputs",
-        "tool_choice",
-        "tools"
-      ],
-      "top_provider": {
-        "context_length": 200000,
-        "is_moderated": true,
-        "max_completion_tokens": 100000
-      }
-    },
     "openai/o3-mini-high": {
       "architecture": {
         "input_modalities": [
@@ -17440,55 +17330,6 @@
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.000001",
-        "request": null,
-        "web_search": "0.01"
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "seed",
-        "structured_outputs",
-        "tool_choice",
-        "tools"
-      ],
-      "top_provider": {
-        "context_length": 200000,
-        "is_moderated": true,
-        "max_completion_tokens": 100000
-      }
-    },
-    "openai/o4-mini": {
-      "architecture": {
-        "input_modalities": [
-          "image",
-          "text",
-          "file"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+file->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT"
-      },
-      "canonical_slug": "openai/o4-mini-2025-04-16",
-      "context_length": 200000,
-      "created": 1744820942,
-      "default_parameters": {},
-      "description": "OpenAI o4-mini is a compact reasoning model in the o-series, optimized for fast, cost-efficient performance while retaining strong multimodal and agentic capabilities. It supports tool use and demonstrates competitive reasoning...",
-      "expiration_date": null,
-      "id": "openai/o4-mini",
-      "name": "OpenAI: o4 Mini",
-      "pricing": {
-        "completion": "0.0000044",
-        "image": null,
-        "input_cache_read": "0.000000275",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000011",
         "request": null,
         "web_search": "0.01"
       },
@@ -19271,7 +19112,6 @@
       "supported_parameters": [
         "frequency_penalty",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -19284,7 +19124,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -19511,66 +19350,6 @@
         "context_length": 262144,
         "is_moderated": false,
         "max_completion_tokens": 16384
-      }
-    },
-    "qwen/qwen3-next-80b-a3b-thinking": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Qwen3"
-      },
-      "canonical_slug": "qwen/qwen3-next-80b-a3b-thinking-2509",
-      "context_length": 262144,
-      "created": 1757612284,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": null
-      },
-      "description": "Qwen3-Next-80B-A3B-Thinking is a reasoning-first chat model in the Qwen3-Next line that outputs structured “thinking” traces by default. It’s designed for hard multi-step problems; math proofs, code synthesis/debugging, logic, and agentic...",
-      "expiration_date": null,
-      "id": "qwen/qwen3-next-80b-a3b-thinking",
-      "name": "Qwen: Qwen3 Next 80B A3B Thinking",
-      "pricing": {
-        "completion": "0.0000012",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000015",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3-vl-235b-a22b-instruct": {
