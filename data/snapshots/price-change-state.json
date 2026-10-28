@@ -16134,7 +16134,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-28T03:31:13.884142Z",
+  "generated_at": "2026-10-28T04:01:21.737097Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -25786,23 +25786,23 @@
         "anchor": "0.19000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": "cut",
-        "episode_start_price": "0.19000000",
-        "pending_builds": 1,
-        "pending_price": "0.14000000",
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "idle"
       },
       "prompt": {
         "anchor": "0.2000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": "cut",
-        "episode_start_price": "0.2000000",
-        "pending_builds": 1,
-        "pending_price": "0.15000000",
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "idle"
       }
     },
     "moonshotai/kimi-k3.1-pro": {
@@ -36239,7 +36239,7 @@
     },
     "z-ai/glm-5.3-flash": {
       "completion": {
-        "anchor": "0.0745000000",
+        "anchor": "0.0737000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
