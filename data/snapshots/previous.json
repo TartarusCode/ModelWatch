@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T19:01:16.219669Z",
+  "generated_at": "2026-10-28T19:31:14.780564Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6288,12 +6288,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.000000255",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.0000000425",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.0000000765",
         "request": null,
         "web_search": null
       },
@@ -17582,6 +17582,65 @@
         "max_completion_tokens": null
       }
     },
+    "particle-ai/particle-1": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "particle-ai/particle-1-20261027",
+      "context_length": 1048576,
+      "created": 1793207893,
+      "default_parameters": {},
+      "description": "Particle-1 is a token-efficient agentic coding model from Particle AI, post-trained on DeepSeek V4.1 Flash. It is suited for software engineering work such as terminal workflows, codebase changes, and data...",
+      "expiration_date": null,
+      "id": "particle-ai/particle-1",
+      "name": "Particle AI: Particle-1",
+      "pricing": {
+        "completion": "0.000001",
+        "image": null,
+        "input_cache_read": "0.00000003",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000025",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
+      }
+    },
     "perceptron/perceptron-mk1": {
       "architecture": {
         "input_modalities": [
@@ -24391,10 +24450,10 @@
       "pricing": {
         "completion": "0.000007",
         "image": null,
-        "input_cache_read": "0.0000000076",
+        "input_cache_read": "0.0000000058",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000086",
+        "prompt": "0.0000000068",
         "request": null,
         "web_search": null
       },
@@ -24517,12 +24576,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.0000005",
+        "completion": "0.0000001042",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.0000000259",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000000259",
         "request": null,
         "web_search": null
       },
@@ -24551,9 +24610,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048575,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943717
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-5.3-flash:batch": {
