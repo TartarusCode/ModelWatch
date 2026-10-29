@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T16:31:17.991852Z",
+  "generated_at": "2026-10-29T17:01:18.072313Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3543,12 +3543,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001754268",
+        "completion": "0.000001750788",
         "image": null,
-        "input_cache_read": "0.0000000730945",
+        "input_cache_read": "0.0000000729495",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000877134",
+        "prompt": "0.000000875394",
         "request": null,
         "web_search": null
       },
@@ -22829,65 +22829,6 @@
         "context_length": 524288,
         "is_moderated": false,
         "max_completion_tokens": 131072
-      }
-    },
-    "upstage/solar-pro-3": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "upstage/solar-pro-3",
-      "context_length": 131072,
-      "created": 1769481200,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "Solar Pro 3 is Upstage's powerful Mixture-of-Experts (MoE) language model. With 102B total parameters and 12B active parameters per forward pass, it delivers exceptional performance while maintaining computational efficiency. Optimized...",
-      "expiration_date": "2026-10-30",
-      "id": "upstage/solar-pro-3",
-      "name": "Upstage: Solar Pro 3",
-      "pricing": {
-        "completion": "0.0000006",
-        "image": null,
-        "input_cache_read": "0.000000015",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000015",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "parallel_tool_calls",
-        "presence_penalty",
-        "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 117964
       }
     },
     "upstage/solar-pro4": {
