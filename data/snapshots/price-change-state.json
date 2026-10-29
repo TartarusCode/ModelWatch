@@ -16268,9 +16268,60 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.660000",
+      "detected_at": "2026-10-29T16:31:07.979391Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "1.360000",
+      "field": "prompt",
+      "model_id": "mistralai/mistral-large-4-0",
+      "new_per_million_usd": "0.700000",
+      "old_per_million_usd": "1.360000",
+      "pct_change": -0.4852941176470588,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-2.080000",
+      "detected_at": "2026-10-29T16:31:07.979391Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "4.180000",
+      "field": "completion",
+      "model_id": "mistralai/mistral-large-4-0",
+      "new_per_million_usd": "2.100000",
+      "old_per_million_usd": "4.180000",
+      "pct_change": -0.49760765550239233,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.070000",
+      "detected_at": "2026-10-29T16:31:07.979391Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.140000",
+      "field": "input_cache_read",
+      "model_id": "mistralai/mistral-large-4-0",
+      "new_per_million_usd": "0.070000",
+      "old_per_million_usd": "0.140000",
+      "pct_change": -0.5,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-10-29T16:01:08.831467Z",
+  "generated_at": "2026-10-29T16:31:17.991852Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -19663,7 +19714,7 @@
     },
     "deepseek/deepseek-v4-pro": {
       "completion": {
-        "anchor": "1.767492000000",
+        "anchor": "1.754268000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -19674,7 +19725,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.0736455000000",
+        "anchor": "0.0730945000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -19685,7 +19736,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.883746000000",
+        "anchor": "0.877134000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -25167,37 +25218,37 @@
     },
     "mistralai/mistral-large-4-0": {
       "completion": {
-        "anchor": "4.18000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "2.1000000",
+        "confirmed_at": "2026-10-29T16:31:07.979391Z",
+        "confirmed_price": "2.1000000",
         "direction": "cut",
         "episode_start_price": "4.18000000",
-        "pending_builds": 1,
-        "pending_price": "2.1000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.14000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.07000000",
+        "confirmed_at": "2026-10-29T16:31:07.979391Z",
+        "confirmed_price": "0.07000000",
         "direction": "cut",
         "episode_start_price": "0.14000000",
-        "pending_builds": 1,
-        "pending_price": "0.07000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "prompt": {
-        "anchor": "1.36000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.7000000",
+        "confirmed_at": "2026-10-29T16:31:07.979391Z",
+        "confirmed_price": "0.7000000",
         "direction": "cut",
         "episode_start_price": "1.36000000",
-        "pending_builds": 1,
-        "pending_price": "0.7000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "mistralai/mistral-medium-3": {

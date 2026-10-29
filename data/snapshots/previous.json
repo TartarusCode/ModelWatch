@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T16:01:08.831467Z",
+  "generated_at": "2026-10-29T16:31:17.991852Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3205,7 +3205,6 @@
         "max_tokens",
         "reasoning",
         "response_format",
-        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
@@ -3544,12 +3543,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001767492",
+        "completion": "0.000001754268",
         "image": null,
-        "input_cache_read": "0.0000000736455",
+        "input_cache_read": "0.0000000730945",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000883746",
+        "prompt": "0.000000877134",
         "request": null,
         "web_search": null
       },
@@ -17335,9 +17334,10 @@
         "include_reasoning",
         "logit_bias",
         "logprobs",
+        "max_completion_tokens",
         "max_tokens",
         "min_p",
-        "prediction",
+        "parallel_tool_calls",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
@@ -17353,12 +17353,12 @@
         "top_k",
         "top_logprobs",
         "top_p",
-        "web_search_options"
+        "verbosity"
       ],
       "top_provider": {
         "context_length": null,
         "is_moderated": false,
-        "max_completion_tokens": null
+        "max_completion_tokens": 65536
       }
     },
     "openrouter/bodybuilder": {
@@ -21647,7 +21647,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "stepfun/step-5-preview-20261008",
-      "context_length": 1000000,
+      "context_length": 1048576,
       "created": 1791462849,
       "default_parameters": {
         "frequency_penalty": null,
@@ -21908,12 +21908,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.000000528",
+        "completion": "0.00000033",
         "image": null,
-        "input_cache_read": "0.000000033",
+        "input_cache_read": "0.000000020625",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000132",
+        "prompt": "0.0000000825",
         "request": null,
         "web_search": null
       },
@@ -22070,12 +22070,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.000002501",
+        "completion": "0.0000022509",
         "image": null,
-        "input_cache_read": "0.000000042",
+        "input_cache_read": "0.0000000378",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000834",
+        "prompt": "0.0000007506",
         "request": null,
         "web_search": null
       },
@@ -22630,7 +22630,7 @@
       "top_provider": {
         "context_length": null,
         "is_moderated": false,
-        "max_completion_tokens": 64000
+        "max_completion_tokens": 65536
       }
     },
     "unbiased/pareto-26.10": {
