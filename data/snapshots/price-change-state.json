@@ -16270,7 +16270,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-29T14:31:13.724811Z",
+  "generated_at": "2026-10-29T15:01:12.706836Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -19663,7 +19663,7 @@
     },
     "deepseek/deepseek-v4-pro": {
       "completion": {
-        "anchor": "1.788024000000",
+        "anchor": "1.777932000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -19674,7 +19674,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.074501000000",
+        "anchor": "0.0740805000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -19685,7 +19685,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.894012000000",
+        "anchor": "0.888966000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -26259,6 +26259,17 @@
         "recovery_builds": 0,
         "status": "idle"
       },
+      "input_cache_read": {
+        "anchor": "0.2000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
       "prompt": {
         "anchor": "1.000000",
         "confirmed_at": null,
@@ -26332,7 +26343,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.03000000",
+        "anchor": "0.012000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -32700,6 +32711,17 @@
     "qwen/qwen3-30b-a3b-instruct-2507": {
       "completion": {
         "anchor": "0.3000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_read": {
+        "anchor": "0.1000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
