@@ -16251,9 +16251,26 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.700000",
+      "detected_at": "2026-10-29T10:01:07.576175Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "11.500000",
+      "field": "completion",
+      "model_id": "moonshotai/kimi-k3",
+      "new_per_million_usd": "10.800000",
+      "old_per_million_usd": "11.500000",
+      "pct_change": -0.06086956521739131,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-10-29T09:31:04.533227Z",
+  "generated_at": "2026-10-29T10:01:14.962612Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -25891,15 +25908,15 @@
     },
     "moonshotai/kimi-k3": {
       "completion": {
-        "anchor": "11.5000000",
-        "confirmed_at": "2026-10-27T10:01:06.888106Z",
-        "confirmed_price": "11.5000000",
+        "anchor": "10.8000000",
+        "confirmed_at": "2026-10-29T10:01:07.576175Z",
+        "confirmed_price": "10.8000000",
         "direction": "cut",
         "episode_start_price": "11.5000000",
-        "pending_builds": 1,
-        "pending_price": "10.8000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.221000000",
