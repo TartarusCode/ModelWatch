@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T19:01:11.582571Z",
+  "generated_at": "2026-10-29T19:31:15.628823Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3543,12 +3543,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001713552",
+        "completion": "0.0000032",
         "image": null,
-        "input_cache_read": "0.000000071398",
+        "input_cache_read": "0.000000135",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000856776",
+        "prompt": "0.0000016",
         "request": null,
         "web_search": null
       },
@@ -3577,9 +3577,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1024000,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 384000
+        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4-pro-0813": {
@@ -6287,12 +6287,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.000000255",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.0000000425",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.0000000765",
         "request": null,
         "web_search": null
       },
@@ -24388,7 +24388,7 @@
       "id": "z-ai/glm-5.2",
       "name": "Z.ai: GLM 5.2",
       "pricing": {
-        "completion": "0.000007",
+        "completion": "0.000008",
         "image": null,
         "input_cache_read": "0.000000005",
         "input_cache_write": null,
