@@ -137,6 +137,23 @@
       "tier": null
     },
     {
+      "delta_per_million_usd": "-0.075000",
+      "detected_at": "2026-10-30T20:01:07.280734Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.300000",
+      "field": "completion",
+      "model_id": "google/gemma-4-26b-a4b-it",
+      "new_per_million_usd": "0.225000",
+      "old_per_million_usd": "0.300000",
+      "pct_change": -0.25,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
       "delta_per_million_usd": "-0.060000",
       "detected_at": "2026-10-26T01:01:04.311494Z",
       "direction": "cut",
@@ -17035,9 +17052,26 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.075000",
+      "detected_at": "2026-10-30T20:01:07.280734Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.300000",
+      "field": "completion",
+      "model_id": "google/gemma-4-26b-a4b-it",
+      "new_per_million_usd": "0.225000",
+      "old_per_million_usd": "0.300000",
+      "pct_change": -0.25,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-10-30T19:31:11.211110Z",
+  "generated_at": "2026-10-30T20:01:17.280926Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "0.057000",
@@ -17068,23 +17102,6 @@
       "pct_change": 0.3475609756097561,
       "recovered_at": "2026-10-30T11:01:04.489217Z",
       "recovered_per_million_usd": "0.359000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "-1.600000",
-      "detected_at": "2026-10-28T22:30:54.121375Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "7.000000",
-      "field": "completion",
-      "model_id": "z-ai/glm-5.2",
-      "new_per_million_usd": "5.400000",
-      "old_per_million_usd": "7.000000",
-      "pct_change": -0.22857142857142856,
-      "recovered_at": "2026-10-29T20:01:03.069586Z",
-      "recovered_per_million_usd": "8.000000",
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "recovered",
