@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T00:01:10.152325Z",
+  "generated_at": "2026-10-31T00:31:39.845037Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -8660,12 +8660,12 @@
       "id": "minimax/minimax-m2.5",
       "name": "MiniMax: MiniMax M2.5",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.00000095",
         "image": null,
         "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.00000027",
         "request": null,
         "web_search": null
       },
@@ -8692,9 +8692,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 204800,
+        "context_length": 198000,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 32768
       }
     },
     "minimax/minimax-m2.7": {
@@ -20019,12 +20019,12 @@
       "id": "qwen/qwen3.6-27b",
       "name": "Qwen: Qwen3.6 27B",
       "pricing": {
-        "completion": "0.0000032",
+        "completion": "0.0000027",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000032",
+        "prompt": "0.00000045",
         "request": null,
         "web_search": null
       },
@@ -20053,7 +20053,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 81920
+        "max_completion_tokens": 65536
       }
     },
     "qwen/qwen3.6-35b-a3b": {
@@ -21959,12 +21959,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22121,12 +22121,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
@@ -24502,12 +24502,12 @@
       "id": "z-ai/glm-5.3",
       "name": "Z.ai: GLM 5.3",
       "pricing": {
-        "completion": "0.000003184",
+        "completion": "0.0000014",
         "image": null,
-        "input_cache_read": "0.000000076",
+        "input_cache_read": "0.0000000689",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008",
+        "prompt": "0.0000000699",
         "request": null,
         "web_search": null
       },
