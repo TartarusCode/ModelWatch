@@ -17054,26 +17054,8 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-10-31T15:31:44.027220Z",
-  "recovered_changes": [
-    {
-      "delta_per_million_usd": "-0.150000",
-      "detected_at": "2026-10-30T14:30:56.237196Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.250000",
-      "field": "prompt",
-      "model_id": "particle-ai/particle-1",
-      "new_per_million_usd": "0.100000",
-      "old_per_million_usd": "0.250000",
-      "pct_change": -0.6,
-      "recovered_at": "2026-10-30T16:01:21.900794Z",
-      "recovered_per_million_usd": "0.050000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered",
-      "tier": null
-    }
-  ],
+  "generated_at": "2026-10-31T16:01:38.955281Z",
+  "recovered_changes": [],
   "settled_changes": [
     {
       "delta_per_million_usd": "0.250000",
