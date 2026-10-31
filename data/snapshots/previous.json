@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T01:01:51.845195Z",
+  "generated_at": "2026-10-31T01:31:29.570170Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -8849,12 +8849,12 @@
       "id": "minimax/minimax-m3.1-flash",
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.0000000075",
+        "input_cache_read": "0.000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
