@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T15:01:36.127837Z",
+  "generated_at": "2026-11-01T15:31:29.476792Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -8723,12 +8723,12 @@
       "id": "minimax/minimax-m3.1-flash",
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.0000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.000000075",
         "request": null,
         "web_search": null
       },
@@ -16619,12 +16619,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000089",
+        "completion": "0.000000078",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000024",
+        "prompt": "0.000000021",
         "request": null,
         "web_search": null
       },
