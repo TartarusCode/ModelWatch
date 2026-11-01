@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T04:01:26.431958Z",
+  "generated_at": "2026-11-01T04:32:00.311442Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -16619,12 +16619,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.000000097",
         "image": null,
-        "input_cache_read": "0.000000075",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.000000026",
         "request": null,
         "web_search": null
       },
@@ -24261,12 +24261,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.0000001794",
+        "completion": "0.0000001584",
         "image": null,
-        "input_cache_read": "0.0000000147",
+        "input_cache_read": "0.0000000133",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000147",
+        "prompt": "0.0000000133",
         "request": null,
         "web_search": null
       },
