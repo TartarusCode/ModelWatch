@@ -16542,7 +16542,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-01T20:01:28.208926Z",
+  "generated_at": "2026-11-01T20:31:50.210116Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -31293,7 +31293,7 @@
     },
     "openai/gpt-oss-120b": {
       "completion": {
-        "anchor": "0.056000000",
+        "anchor": "0.062000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -31307,15 +31307,15 @@
         "anchor": "0.075000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": "cut",
-        "episode_start_price": "0.075000000",
-        "pending_builds": 1,
-        "pending_price": "0.014000000",
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "idle"
       },
       "prompt": {
-        "anchor": "0.015000000",
+        "anchor": "0.017000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
