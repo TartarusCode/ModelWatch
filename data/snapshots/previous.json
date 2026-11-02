@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T12:01:50.859953Z",
+  "generated_at": "2026-11-02T12:31:44.422764Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6161,12 +6161,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000225",
+        "completion": "0.000000187",
         "image": null,
-        "input_cache_read": "0.000000037",
+        "input_cache_read": "0.000000031",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.000000062",
         "request": null,
         "web_search": null
       },
