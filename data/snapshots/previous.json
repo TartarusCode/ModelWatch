@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T01:02:01.396049Z",
+  "generated_at": "2026-11-02T01:31:30.456591Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3728,12 +3728,12 @@
       "id": "deepseek/deepseek-v4.1-flash-1017",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -6161,12 +6161,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000059",
+        "completion": "0.00000007",
         "image": null,
-        "input_cache_read": "0.00000001",
+        "input_cache_read": "0.000000012",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000002",
+        "prompt": "0.000000023",
         "request": null,
         "web_search": null
       },
@@ -7505,12 +7505,12 @@
       "id": "meta-llama/llama-3.2-3b-instruct",
       "name": "Meta: Llama 3.2 3B Instruct",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000335",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000005",
+        "prompt": "0.0000000509",
         "request": null,
         "web_search": null
       },
@@ -7532,9 +7532,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 80000,
         "is_moderated": false,
-        "max_completion_tokens": 117964
+        "max_completion_tokens": 72000
       }
     },
     "meta-llama/llama-3.3-70b-instruct": {
@@ -8724,12 +8724,12 @@
       "id": "minimax/minimax-m3.1-flash",
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.0000000075",
+        "input_cache_read": "0.000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -16620,12 +16620,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.000000108",
         "image": null,
-        "input_cache_read": "0.000000075",
+        "input_cache_read": "0.000000026",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.000000029",
         "request": null,
         "web_search": null
       },
