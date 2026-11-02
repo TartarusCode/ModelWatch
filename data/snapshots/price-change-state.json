@@ -15720,9 +15720,9 @@
       "pct_change": 8.900990099009901,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-11-02T00:31:28.150793Z",
+      "settled_per_million_usd": "0.119000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -16574,9 +16574,43 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.080000",
+      "detected_at": "2026-11-02T00:31:28.150793Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.070000",
+      "field": "prompt",
+      "model_id": "qwen/qwen3-coder-30b-a3b-instruct",
+      "new_per_million_usd": "0.150000",
+      "old_per_million_usd": "0.070000",
+      "pct_change": 1.1428571428571428,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.320000",
+      "detected_at": "2026-11-02T00:31:28.150793Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.280000",
+      "field": "completion",
+      "model_id": "qwen/qwen3-coder-30b-a3b-instruct",
+      "new_per_million_usd": "0.600000",
+      "old_per_million_usd": "0.280000",
+      "pct_change": 1.1428571428571428,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-11-02T00:01:58.405319Z",
+  "generated_at": "2026-11-02T00:31:38.754515Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -19851,15 +19885,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.44000000",
-        "confirmed_at": "2026-10-26T00:31:00.714865Z",
-        "confirmed_price": "0.44000000",
-        "direction": "hike",
-        "episode_start_price": "0.04444000000",
+        "anchor": "0.119000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "deepseek/deepseek-v4-flash-0731:batch": {
@@ -22983,17 +23017,17 @@
     "google/gemma-4-26b-a4b-it": {
       "completion": {
         "anchor": "0.225000000",
-        "confirmed_at": "2026-10-30T20:01:07.280734Z",
-        "confirmed_price": "0.225000000",
-        "direction": "cut",
-        "episode_start_price": "0.225000000",
-        "pending_builds": 1,
-        "pending_price": "0.067000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.011000000",
+        "anchor": "0.01000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23004,7 +23038,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.022000000",
+        "anchor": "0.02000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -33228,26 +33262,26 @@
     },
     "qwen/qwen3-coder-30b-a3b-instruct": {
       "completion": {
-        "anchor": "0.28000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.6000000",
+        "confirmed_at": "2026-11-02T00:31:28.150793Z",
+        "confirmed_price": "0.6000000",
         "direction": "hike",
         "episode_start_price": "0.28000000",
-        "pending_builds": 1,
-        "pending_price": "0.6000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "prompt": {
-        "anchor": "0.07000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.15000000",
+        "confirmed_at": "2026-11-02T00:31:28.150793Z",
+        "confirmed_price": "0.15000000",
         "direction": "hike",
         "episode_start_price": "0.07000000",
-        "pending_builds": 1,
-        "pending_price": "0.15000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "qwen/qwen3-coder-flash": {
