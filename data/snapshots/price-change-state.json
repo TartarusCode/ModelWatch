@@ -15805,9 +15805,9 @@
       "pct_change": -0.5,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-11-02T01:01:41.838604Z",
+      "settled_per_million_usd": "0.200000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -15822,9 +15822,9 @@
       "pct_change": -0.15,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-11-02T01:01:41.838604Z",
+      "settled_per_million_usd": "0.400000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -16610,7 +16610,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-02T00:31:38.754515Z",
+  "generated_at": "2026-11-02T01:02:01.396049Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -23016,7 +23016,7 @@
     },
     "google/gemma-4-26b-a4b-it": {
       "completion": {
-        "anchor": "0.225000000",
+        "anchor": "0.059000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23051,15 +23051,15 @@
     },
     "google/gemma-4-31b-it": {
       "completion": {
-        "anchor": "0.34000000",
-        "confirmed_at": "2026-10-26T01:01:04.311494Z",
-        "confirmed_price": "0.34000000",
-        "direction": "cut",
-        "episode_start_price": "0.4000000",
+        "anchor": "0.4000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_read": {
         "anchor": "0.05000000",
@@ -23073,15 +23073,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.1000000",
-        "confirmed_at": "2026-10-26T01:01:04.311494Z",
-        "confirmed_price": "0.1000000",
-        "direction": "cut",
-        "episode_start_price": "0.2000000",
+        "anchor": "0.2000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "google/gemma-4-31b-it:batch": {
