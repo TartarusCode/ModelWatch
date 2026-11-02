@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T13:31:40.293879Z",
+  "generated_at": "2026-11-02T14:02:03.996251Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6161,12 +6161,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000188",
+        "completion": "0.000000278",
         "image": null,
-        "input_cache_read": "0.000000031",
+        "input_cache_read": "0.000000046",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000063",
+        "prompt": "0.000000093",
         "request": null,
         "web_search": null
       },
@@ -24304,6 +24304,61 @@
         "reasoning",
         "reasoning_effort",
         "response_format",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
+      }
+    },
+    "z-ai/glm-5.3-flashx-legal": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "z-ai/glm-5.3-flashx-legal-20261102",
+      "context_length": 1048576,
+      "created": 1793626154,
+      "default_parameters": {
+        "temperature": 1,
+        "top_p": 0.95
+      },
+      "description": "GLM-5.3-FlashX-Legal (GLM-Legal) is Z.ai's legal-domain variant of GLM-5.3-FlashX, a native multimodal model that accepts text, image, and video input and produces text. It adds legal-domain mid-training and post-training with reinforcement...",
+      "expiration_date": null,
+      "id": "z-ai/glm-5.3-flashx-legal",
+      "name": "Z.ai: GLM 5.3 FlashX Legal",
+      "pricing": {
+        "completion": "0.00000125",
+        "image": null,
+        "input_cache_read": "0.00000009",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000037",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
