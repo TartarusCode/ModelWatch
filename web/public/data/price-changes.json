@@ -154,23 +154,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "0.114000",
-      "detected_at": "2026-11-02T09:01:52.716023Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.186000",
-      "field": "completion",
-      "model_id": "google/gemma-4-26b-a4b-it",
-      "new_per_million_usd": "0.300000",
-      "old_per_million_usd": "0.186000",
-      "pct_change": 0.6129032258064516,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "-0.100000",
       "detected_at": "2026-10-28T23:50:01.556307Z",
       "direction": "cut",
@@ -452,23 +435,6 @@
       "new_per_million_usd": "0.039000",
       "old_per_million_usd": "0.200000",
       "pct_change": -0.805,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "0.093200",
-      "detected_at": "2026-10-27T02:01:04.113727Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.002800",
-      "field": "input_cache_read",
-      "model_id": "xiaomi/mimo-v2.5-pro",
-      "new_per_million_usd": "0.096000",
-      "old_per_million_usd": "0.002800",
-      "pct_change": 33.285714285714285,
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "settled_at": null,
@@ -16572,9 +16538,9 @@
       "pct_change": 33.285714285714285,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-11-03T02:01:20.418620Z",
+      "settled_per_million_usd": "0.096000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -17199,11 +17165,11 @@
       "new_per_million_usd": "0.300000",
       "old_per_million_usd": "0.186000",
       "pct_change": 0.6129032258064516,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-11-03T02:01:20.418620Z",
+      "recovered_per_million_usd": "0.109000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     },
     {
@@ -17275,7 +17241,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-03T01:31:58.477517Z",
+  "generated_at": "2026-11-03T02:01:28.716675Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "0.121000",
@@ -17306,6 +17272,23 @@
       "pct_change": 4.607476635514018,
       "recovered_at": "2026-11-02T06:01:51.340805Z",
       "recovered_per_million_usd": "0.090000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "recovered",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.114000",
+      "detected_at": "2026-11-02T09:01:52.716023Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.186000",
+      "field": "completion",
+      "model_id": "google/gemma-4-26b-a4b-it",
+      "new_per_million_usd": "0.300000",
+      "old_per_million_usd": "0.186000",
+      "pct_change": 0.6129032258064516,
+      "recovered_at": "2026-11-03T02:01:20.418620Z",
+      "recovered_per_million_usd": "0.109000",
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "recovered",
@@ -17412,6 +17395,23 @@
       "recovered_per_million_usd": null,
       "settled_at": "2026-11-03T01:01:42.852468Z",
       "settled_per_million_usd": "2.600000",
+      "status": "settled",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.093200",
+      "detected_at": "2026-10-27T02:01:04.113727Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.002800",
+      "field": "input_cache_read",
+      "model_id": "xiaomi/mimo-v2.5-pro",
+      "new_per_million_usd": "0.096000",
+      "old_per_million_usd": "0.002800",
+      "pct_change": 33.285714285714285,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-11-03T02:01:20.418620Z",
+      "settled_per_million_usd": "0.096000",
       "status": "settled",
       "tier": null
     }
