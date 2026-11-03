@@ -137,23 +137,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "0.050000",
-      "detected_at": "2026-10-27T07:00:56.235948Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.050000",
-      "field": "completion",
-      "model_id": "google/gemma-3-4b-it",
-      "new_per_million_usd": "0.100000",
-      "old_per_million_usd": "0.050000",
-      "pct_change": 1.0,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "-0.100000",
       "detected_at": "2026-10-28T23:50:01.556307Z",
       "direction": "cut",
@@ -16521,9 +16504,9 @@
       "pct_change": 1.0,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-11-03T07:01:37.186723Z",
+      "settled_per_million_usd": "0.100000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -17207,7 +17190,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-03T06:31:44.117216Z",
+  "generated_at": "2026-11-03T07:01:45.087458Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "0.122000",
@@ -17378,6 +17361,23 @@
       "recovered_per_million_usd": null,
       "settled_at": "2026-11-03T02:01:20.418620Z",
       "settled_per_million_usd": "0.096000",
+      "status": "settled",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.050000",
+      "detected_at": "2026-10-27T07:00:56.235948Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.050000",
+      "field": "completion",
+      "model_id": "google/gemma-3-4b-it",
+      "new_per_million_usd": "0.100000",
+      "old_per_million_usd": "0.050000",
+      "pct_change": 1.0,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-11-03T07:01:37.186723Z",
+      "settled_per_million_usd": "0.100000",
       "status": "settled",
       "tier": null
     }
