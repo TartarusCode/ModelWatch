@@ -17479,7 +17479,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-03T22:31:54.908215Z",
+  "generated_at": "2026-11-03T23:01:54.476752Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "0.122000",
@@ -17551,23 +17551,6 @@
     }
   ],
   "settled_changes": [
-    {
-      "delta_per_million_usd": "-0.111200",
-      "detected_at": "2026-10-26T23:01:12.961102Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.671200",
-      "field": "prompt",
-      "model_id": "moonshotai/kimi-k2.7-code",
-      "new_per_million_usd": "0.560000",
-      "old_per_million_usd": "0.671200",
-      "pct_change": -0.16567342073897498,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-11-02T23:01:49.265088Z",
-      "settled_per_million_usd": "0.600000",
-      "status": "settled",
-      "tier": null
-    },
     {
       "delta_per_million_usd": "-1.250000",
       "detected_at": "2026-10-27T01:01:02.282791Z",
