@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T09:31:47.517276Z",
+  "generated_at": "2026-11-03T10:01:53.066389Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6161,12 +6161,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.000000225",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.000000038",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.000000075",
         "request": null,
         "web_search": null
       },
@@ -16517,12 +16517,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000098",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.000000024",
+        "input_cache_read": "0.000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000026",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -24161,12 +24161,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.0000000923",
+        "completion": "0.000000086",
         "image": null,
-        "input_cache_read": "0.0000000285",
+        "input_cache_read": "0.0000000299",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000285",
+        "prompt": "0.0000000299",
         "request": null,
         "web_search": null
       },
