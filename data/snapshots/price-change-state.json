@@ -16831,7 +16831,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-03T16:31:51.883345Z",
+  "generated_at": "2026-11-03T17:01:47.403211Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -23237,7 +23237,7 @@
     },
     "google/gemma-4-26b-a4b-it": {
       "completion": {
-        "anchor": "0.236000000",
+        "anchor": "0.285000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23248,7 +23248,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.042000000",
+        "anchor": "0.047000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23259,7 +23259,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.084000000",
+        "anchor": "0.095000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -26472,34 +26472,34 @@
         "anchor": "15.000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "15.000000",
+        "pending_builds": 1,
+        "pending_price": "9.6000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.182000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.182000000",
+        "pending_builds": 1,
+        "pending_price": "0.13000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "prompt": {
         "anchor": "0.192000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.192000000",
+        "pending_builds": 1,
+        "pending_price": "0.276000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "moonshotai/kimi-k3.1-pro": {
