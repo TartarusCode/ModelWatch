@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T15:03:28.349433Z",
+  "generated_at": "2026-11-03T15:31:40.539844Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6161,12 +6161,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000292",
+        "completion": "0.000000236",
         "image": null,
-        "input_cache_read": "0.000000049",
+        "input_cache_read": "0.000000039",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000097",
+        "prompt": "0.000000079",
         "request": null,
         "web_search": null
       },
@@ -8714,12 +8714,12 @@
       "id": "minimax/minimax-m3.1-flash",
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.0000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.000000075",
         "request": null,
         "web_search": null
       },
