@@ -16619,11 +16619,11 @@
       "new_per_million_usd": "0.150000",
       "old_per_million_usd": "0.028000",
       "pct_change": 4.357142857142857,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-11-03T06:01:45.400980Z",
+      "recovered_per_million_usd": "0.022000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     },
     {
@@ -16636,11 +16636,11 @@
       "new_per_million_usd": "0.600000",
       "old_per_million_usd": "0.105000",
       "pct_change": 4.714285714285714,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-11-03T06:01:45.400980Z",
+      "recovered_per_million_usd": "0.083000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     },
     {
@@ -16729,7 +16729,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-03T05:32:02.220787Z",
+  "generated_at": "2026-11-03T06:01:59.522224Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -23135,7 +23135,7 @@
     },
     "google/gemma-4-26b-a4b-it": {
       "completion": {
-        "anchor": "0.161000000",
+        "anchor": "0.16000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23157,7 +23157,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.054000000",
+        "anchor": "0.053000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -31480,18 +31480,18 @@
     },
     "openai/gpt-oss-120b": {
       "completion": {
-        "anchor": "0.6000000",
-        "confirmed_at": "2026-11-02T08:31:20.740212Z",
-        "confirmed_price": "0.6000000",
-        "direction": "hike",
-        "episode_start_price": "0.105000000",
+        "anchor": "0.083000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
-        "status": "confirmed"
+        "recovery_builds": 0,
+        "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.023000000",
+        "anchor": "0.02000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -31502,15 +31502,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.15000000",
-        "confirmed_at": "2026-11-02T08:31:20.740212Z",
-        "confirmed_price": "0.15000000",
-        "direction": "hike",
-        "episode_start_price": "0.028000000",
+        "anchor": "0.022000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
-        "status": "confirmed"
+        "recovery_builds": 0,
+        "status": "idle"
       }
     },
     "openai/gpt-oss-120b:batch": {
