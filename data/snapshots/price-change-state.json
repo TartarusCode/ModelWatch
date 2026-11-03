@@ -16729,7 +16729,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-03T07:01:45.087458Z",
+  "generated_at": "2026-11-03T07:31:58.191426Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -23135,7 +23135,7 @@
     },
     "google/gemma-4-26b-a4b-it": {
       "completion": {
-        "anchor": "0.196000000",
+        "anchor": "0.209000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23146,7 +23146,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.033000000",
+        "anchor": "0.035000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23157,7 +23157,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.065000000",
+        "anchor": "0.07000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -31483,15 +31483,15 @@
         "anchor": "0.099000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.099000000",
+        "pending_builds": 1,
+        "pending_price": "0.6000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.024000000",
+        "anchor": "0.075000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -31505,12 +31505,12 @@
         "anchor": "0.027000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.027000000",
+        "pending_builds": 1,
+        "pending_price": "0.15000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "openai/gpt-oss-120b:batch": {
@@ -33159,12 +33159,12 @@
         "anchor": "0.55000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.55000000",
+        "pending_builds": 1,
+        "pending_price": "0.8000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.0175000000",
@@ -33181,12 +33181,12 @@
         "anchor": "0.09000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.09000000",
+        "pending_builds": 1,
+        "pending_price": "0.14000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "qwen/qwen3-235b-a22b-thinking-2507": {
