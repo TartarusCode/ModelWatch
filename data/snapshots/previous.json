@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T06:01:59.522224Z",
+  "generated_at": "2026-11-03T06:31:44.117216Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3668,7 +3668,7 @@
       "pricing": {
         "completion": "0.0000005",
         "image": null,
-        "input_cache_read": "0.000000006",
+        "input_cache_read": "0.000000012",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.000000045",
@@ -3728,12 +3728,12 @@
       "id": "deepseek/deepseek-v4.1-flash-1017",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -6161,12 +6161,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.00000016",
+        "completion": "0.000000187",
         "image": null,
-        "input_cache_read": "0.000000027",
+        "input_cache_read": "0.000000031",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000053",
+        "prompt": "0.000000062",
         "request": null,
         "web_search": null
       },
@@ -14845,7 +14845,7 @@
       ],
       "top_provider": {
         "context_length": 1050000,
-        "is_moderated": true,
+        "is_moderated": false,
         "max_completion_tokens": 128000
       }
     },
@@ -16517,12 +16517,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000083",
+        "completion": "0.000000093",
         "image": null,
-        "input_cache_read": "0.00000002",
+        "input_cache_read": "0.000000023",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000022",
+        "prompt": "0.000000025",
         "request": null,
         "web_search": null
       },
