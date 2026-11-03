@@ -16797,7 +16797,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-03T08:31:35.777570Z",
+  "generated_at": "2026-11-03T09:02:09.690783Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -23203,7 +23203,7 @@
     },
     "google/gemma-4-26b-a4b-it": {
       "completion": {
-        "anchor": "0.264000000",
+        "anchor": "0.3000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23214,7 +23214,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.044000000",
+        "anchor": "0.05000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23225,7 +23225,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.088000000",
+        "anchor": "0.1000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -31555,11 +31555,11 @@
         "episode_start_price": "0.099000000",
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
+        "recovery_builds": 0,
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.019000000",
+        "anchor": "0.075000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -31577,7 +31577,7 @@
         "episode_start_price": "0.027000000",
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
+        "recovery_builds": 0,
         "status": "confirmed"
       }
     },
