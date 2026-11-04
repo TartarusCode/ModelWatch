@@ -324,23 +324,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "1.950000",
-      "detected_at": "2026-10-28T07:01:04.217379Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.450000",
-      "field": "completion",
-      "model_id": "nvidia/nemotron-3-super-120b-a12b",
-      "new_per_million_usd": "2.400000",
-      "old_per_million_usd": "0.450000",
-      "pct_change": 4.333333333333333,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "0.537000",
       "detected_at": "2026-11-04T00:31:43.238047Z",
       "direction": "hike",
@@ -520,23 +503,6 @@
       "new_per_million_usd": "3.600000",
       "old_per_million_usd": "1.400000",
       "pct_change": 1.5714285714285714,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "0.426300",
-      "detected_at": "2026-10-28T07:01:04.217379Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.073700",
-      "field": "completion",
-      "model_id": "z-ai/glm-5.3-flash",
-      "new_per_million_usd": "0.500000",
-      "old_per_million_usd": "0.073700",
-      "pct_change": 5.784260515603799,
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "settled_at": null,
@@ -16691,9 +16657,9 @@
       "pct_change": 5.784260515603799,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-11-04T07:01:22.625549Z",
+      "settled_per_million_usd": "0.099600",
+      "status": "settled",
       "tier": null
     },
     {
@@ -16708,9 +16674,9 @@
       "pct_change": 4.333333333333333,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-11-04T07:01:22.625549Z",
+      "settled_per_million_usd": "2.400000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -17479,7 +17445,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-04T06:31:32.693346Z",
+  "generated_at": "2026-11-04T07:01:31.267286Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "0.123000",
@@ -17616,6 +17582,40 @@
       "recovered_per_million_usd": null,
       "settled_at": "2026-11-04T01:01:36.292668Z",
       "settled_per_million_usd": "0.450000",
+      "status": "settled",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.426300",
+      "detected_at": "2026-10-28T07:01:04.217379Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.073700",
+      "field": "completion",
+      "model_id": "z-ai/glm-5.3-flash",
+      "new_per_million_usd": "0.500000",
+      "old_per_million_usd": "0.073700",
+      "pct_change": 5.784260515603799,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-11-04T07:01:22.625549Z",
+      "settled_per_million_usd": "0.099600",
+      "status": "settled",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "1.950000",
+      "detected_at": "2026-10-28T07:01:04.217379Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.450000",
+      "field": "completion",
+      "model_id": "nvidia/nemotron-3-super-120b-a12b",
+      "new_per_million_usd": "2.400000",
+      "old_per_million_usd": "0.450000",
+      "pct_change": 4.333333333333333,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-11-04T07:01:22.625549Z",
+      "settled_per_million_usd": "2.400000",
       "status": "settled",
       "tier": null
     }
