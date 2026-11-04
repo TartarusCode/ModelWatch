@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T00:31:51.241355Z",
+  "generated_at": "2026-11-04T01:01:43.207991Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3668,7 +3668,7 @@
       "pricing": {
         "completion": "0.0000005",
         "image": null,
-        "input_cache_read": "0.000000012",
+        "input_cache_read": "0.000000018",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.000000045",
@@ -6161,12 +6161,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000192",
+        "completion": "0.00000023",
         "image": null,
-        "input_cache_read": "0.000000032",
+        "input_cache_read": "0.000000038",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000064",
+        "prompt": "0.000000077",
         "request": null,
         "web_search": null
       },
@@ -10472,12 +10472,12 @@
       "id": "moonshotai/kimi-k3",
       "name": "MoonshotAI: Kimi K3",
       "pricing": {
-        "completion": "0.0000096",
+        "completion": "0.000016",
         "image": null,
-        "input_cache_read": "0.00000013",
+        "input_cache_read": "0.000000182",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000276",
+        "prompt": "0.000000192",
         "request": null,
         "web_search": null
       },

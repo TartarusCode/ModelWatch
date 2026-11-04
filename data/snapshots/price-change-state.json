@@ -16094,9 +16094,9 @@
       "pct_change": -0.805,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-11-04T01:01:36.292668Z",
+      "settled_per_million_usd": "0.150000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -16111,9 +16111,9 @@
       "pct_change": -0.9566666666666667,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-11-04T01:01:36.292668Z",
+      "settled_per_million_usd": "0.037500",
+      "status": "settled",
       "tier": null
     },
     {
@@ -16128,9 +16128,9 @@
       "pct_change": 0.40625,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-11-04T01:01:36.292668Z",
+      "settled_per_million_usd": "0.450000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -16933,7 +16933,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-04T00:31:51.241355Z",
+  "generated_at": "2026-11-04T01:01:43.207991Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -20442,7 +20442,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.012000000",
+        "anchor": "0.018000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23339,7 +23339,7 @@
     },
     "google/gemma-4-26b-a4b-it": {
       "completion": {
-        "anchor": "0.192000000",
+        "anchor": "0.23000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23350,7 +23350,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.032000000",
+        "anchor": "0.038000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23361,7 +23361,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.064000000",
+        "anchor": "0.077000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -34349,14 +34349,14 @@
       },
       "prompt": {
         "anchor": "0.45000000",
-        "confirmed_at": "2026-10-28T01:01:07.953497Z",
-        "confirmed_price": "0.45000000",
-        "direction": "hike",
-        "episode_start_price": "0.32000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "qwen/qwen3.6-35b-a3b": {
@@ -34744,15 +34744,15 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.0039000000",
-        "confirmed_at": "2026-10-28T01:01:07.953497Z",
-        "confirmed_price": "0.0039000000",
-        "direction": "cut",
-        "episode_start_price": "0.09000000",
+        "anchor": "0.0375000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       },
       "input_cache_write": {
         "anchor": "0.53125000000",
@@ -34766,15 +34766,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.039000000",
-        "confirmed_at": "2026-10-28T01:01:07.953497Z",
-        "confirmed_price": "0.039000000",
-        "direction": "cut",
-        "episode_start_price": "0.2000000",
+        "anchor": "0.15000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "qwen/qwen3.8-flash": {
