@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T03:01:33.031532Z",
+  "generated_at": "2026-11-04T03:31:39.790857Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6161,12 +6161,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.00000022",
+        "completion": "0.000000202",
         "image": null,
-        "input_cache_read": "0.000000037",
+        "input_cache_read": "0.000000034",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000073",
+        "prompt": "0.000000067",
         "request": null,
         "web_search": null
       },
@@ -6625,7 +6625,7 @@
         "top_p": null
       },
       "description": "Mercury 2 is an extremely fast reasoning LLM, and the first reasoning diffusion LLM (dLLM). Instead of generating tokens sequentially, Mercury 2 produces and refines multiple tokens in parallel, achieving...",
-      "expiration_date": null,
+      "expiration_date": "2026-11-08",
       "id": "inception/mercury-2",
       "name": "Inception: Mercury 2",
       "pricing": {
@@ -6674,7 +6674,7 @@
       "created": 1788892137,
       "default_parameters": {},
       "description": "Mercury 2.5 is the fastest reasoning LLM, and the latest diffusion LLM (dLLM) from Inception. Instead of generating tokens sequentially, Mercury 2.5 produces and refines multiple tokens in parallel, achieving...",
-      "expiration_date": null,
+      "expiration_date": "2026-11-08",
       "id": "inception/mercury-2.5",
       "name": "Inception: Mercury 2.5",
       "pricing": {
@@ -6723,7 +6723,7 @@
       "created": 1792158337,
       "default_parameters": {},
       "description": "Mercury 3 is a diffusion-based language model from Inception, and the lab's most capable model to date. It is suited for agentic workflows and real-time applications where latency compounds, such...",
-      "expiration_date": null,
+      "expiration_date": "2026-11-08",
       "id": "inception/mercury-3",
       "name": "Inception: Mercury 3",
       "pricing": {
@@ -16512,12 +16512,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.000000109",
         "image": null,
-        "input_cache_read": "0.000000075",
+        "input_cache_read": "0.000000026",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.000000029",
         "request": null,
         "web_search": null
       },
