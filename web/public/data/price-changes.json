@@ -17479,7 +17479,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-04T01:31:48.633715Z",
+  "generated_at": "2026-11-04T02:01:52.163790Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "0.122000",
@@ -17510,23 +17510,6 @@
       "pct_change": 4.714285714285714,
       "recovered_at": "2026-11-03T06:01:45.400980Z",
       "recovered_per_million_usd": "0.083000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "0.114000",
-      "detected_at": "2026-11-02T09:01:52.716023Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.186000",
-      "field": "completion",
-      "model_id": "google/gemma-4-26b-a4b-it",
-      "new_per_million_usd": "0.300000",
-      "old_per_million_usd": "0.186000",
-      "pct_change": 0.6129032258064516,
-      "recovered_at": "2026-11-03T02:01:20.418620Z",
-      "recovered_per_million_usd": "0.109000",
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "recovered",
@@ -17585,23 +17568,6 @@
     }
   ],
   "settled_changes": [
-    {
-      "delta_per_million_usd": "0.093200",
-      "detected_at": "2026-10-27T02:01:04.113727Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.002800",
-      "field": "input_cache_read",
-      "model_id": "xiaomi/mimo-v2.5-pro",
-      "new_per_million_usd": "0.096000",
-      "old_per_million_usd": "0.002800",
-      "pct_change": 33.285714285714285,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-11-03T02:01:20.418620Z",
-      "settled_per_million_usd": "0.096000",
-      "status": "settled",
-      "tier": null
-    },
     {
       "delta_per_million_usd": "0.050000",
       "detected_at": "2026-10-27T07:00:56.235948Z",
