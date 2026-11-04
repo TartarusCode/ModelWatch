@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T19:01:54.519068Z",
+  "generated_at": "2026-11-04T19:31:51.664958Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3424,7 +3424,7 @@
         "input_cache_read": "0.000000035",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000527",
+        "prompt": "0.00000005",
         "request": null,
         "web_search": null
       },
@@ -6161,12 +6161,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000093",
+        "completion": "0.000000118",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000031",
+        "prompt": "0.000000039",
         "request": null,
         "web_search": null
       },
@@ -16517,12 +16517,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.00000009",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.000000022",
+        "input_cache_read": "0.000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000024",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -20751,6 +20751,54 @@
         "context_length": 256000,
         "is_moderated": false,
         "max_completion_tokens": 128000
+      }
+    },
+    "ricursiveai/ripple-65b-preview": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "ricursiveai/ripple-65b-preview-20261104",
+      "context_length": 16384,
+      "created": 1793818990,
+      "default_parameters": {},
+      "description": "Ripple-65B-Preview by ricursiveAI, a 65B model with native tool calling, served in BF16.",
+      "expiration_date": null,
+      "id": "ricursiveai/ripple-65b-preview",
+      "name": "ricursiveAI/Ripple-65B-Preview",
+      "pricing": {
+        "completion": "0.0000006",
+        "image": null,
+        "input_cache_read": "0.00000005",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000002",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "logprobs",
+        "max_tokens",
+        "response_format",
+        "seed",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 16384,
+        "is_moderated": false,
+        "max_completion_tokens": 14745
       }
     },
     "sakana/fugu-max": {
