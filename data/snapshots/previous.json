@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T12:01:47.758836Z",
+  "generated_at": "2026-11-04T12:31:47.396404Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6161,12 +6161,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000217",
+        "completion": "0.000000238",
         "image": null,
-        "input_cache_read": "0.000000036",
+        "input_cache_read": "0.00000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000072",
+        "prompt": "0.000000079",
         "request": null,
         "web_search": null
       },
@@ -16512,12 +16512,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.000000095",
         "image": null,
-        "input_cache_read": "0.000000075",
+        "input_cache_read": "0.000000023",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.000000026",
         "request": null,
         "web_search": null
       },
