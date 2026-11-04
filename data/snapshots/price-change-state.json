@@ -16933,7 +16933,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-04T18:31:59.483912Z",
+  "generated_at": "2026-11-04T19:01:54.519068Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -23342,15 +23342,15 @@
         "anchor": "0.3000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.3000000",
+        "pending_builds": 1,
+        "pending_price": "0.093000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.05000000",
+        "anchor": "0.015000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23361,7 +23361,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.1000000",
+        "anchor": "0.031000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -31695,7 +31695,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.075000000",
+        "anchor": "0.022000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -37361,15 +37361,15 @@
         "anchor": "0.0996000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.0996000000",
+        "pending_builds": 1,
+        "pending_price": "0.5000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.0269000000",
+        "anchor": "0.03000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -37383,12 +37383,12 @@
         "anchor": "0.0269000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.0269000000",
+        "pending_builds": 1,
+        "pending_price": "0.15000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "z-ai/glm-5.3-flash:batch": {
