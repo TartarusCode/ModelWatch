@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T04:31:30.890326Z",
+  "generated_at": "2026-11-04T05:01:40.573111Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3606,7 +3606,7 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.0000055",
+        "completion": "0.0000046",
         "image": null,
         "input_cache_read": "0.00000011",
         "input_cache_write": null,
@@ -6161,12 +6161,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000238",
+        "completion": "0.000000213",
         "image": null,
-        "input_cache_read": "0.00000004",
+        "input_cache_read": "0.000000036",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000079",
+        "prompt": "0.000000071",
         "request": null,
         "web_search": null
       },
@@ -16512,12 +16512,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000102",
+        "completion": "0.000000081",
         "image": null,
-        "input_cache_read": "0.000000025",
+        "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000027",
+        "prompt": "0.000000022",
         "request": null,
         "web_search": null
       },
