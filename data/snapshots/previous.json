@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T21:01:49.804200Z",
+  "generated_at": "2026-11-04T21:31:44.851132Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3424,7 +3424,7 @@
         "input_cache_read": "0.000000035",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000487",
+        "prompt": "0.0000000461",
         "request": null,
         "web_search": null
       },
@@ -6161,12 +6161,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000053",
+        "completion": "0.000000101",
         "image": null,
-        "input_cache_read": "0.000000009",
+        "input_cache_read": "0.000000017",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000018",
+        "prompt": "0.000000034",
         "request": null,
         "web_search": null
       },
@@ -16517,12 +16517,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.000000088",
         "image": null,
-        "input_cache_read": "0.000000075",
+        "input_cache_read": "0.000000021",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.000000024",
         "request": null,
         "web_search": null
       },
@@ -18288,12 +18288,12 @@
       "id": "qwen/qwen3-235b-a22b-2507",
       "name": "Qwen: Qwen3 235B A22B Instruct 2507",
       "pricing": {
-        "completion": "0.00000055",
+        "completion": "0.0000008",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.00000014",
         "request": null,
         "web_search": null
       },
@@ -18318,9 +18318,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 117964
       }
     },
     "qwen/qwen3-235b-a22b-thinking-2507": {
@@ -23417,6 +23417,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -23430,6 +23431,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
