@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T17:01:55.743005Z",
+  "generated_at": "2026-11-05T17:31:44.512822Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3424,7 +3424,7 @@
         "input_cache_read": "0.000000035",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000448",
+        "prompt": "0.0000000434",
         "request": null,
         "web_search": null
       },
@@ -5912,6 +5912,104 @@
         "max_completion_tokens": 58982
       }
     },
+    "google/gemini-omni-1.1-flash": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text+video",
+        "output_modalities": [
+          "text",
+          "video"
+        ],
+        "tokenizer": "Gemini"
+      },
+      "canonical_slug": "google/gemini-omni-1.1-flash-20260911",
+      "context_length": 131072,
+      "created": 1793825668,
+      "default_parameters": {},
+      "description": "Gemini Omni 1.1 Flash is Google's native multimodal video generation and editing model, the generally available successor to Gemini Omni Flash Preview. It is suited for text-to-video, image-to-video, first and...",
+      "expiration_date": null,
+      "id": "google/gemini-omni-1.1-flash",
+      "name": "Google: Gemini Omni 1.1 Flash",
+      "pricing": {
+        "completion": "0.000009",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000015",
+        "request": null,
+        "web_search": "0.014"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "seed",
+        "temperature",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 131072,
+        "is_moderated": false,
+        "max_completion_tokens": 65536
+      }
+    },
+    "google/gemini-omni-1.2-flash": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text+video",
+        "output_modalities": [
+          "text",
+          "video"
+        ],
+        "tokenizer": "Gemini"
+      },
+      "canonical_slug": "google/gemini-omni-1.2-flash-20261105",
+      "context_length": 131072,
+      "created": 1793898961,
+      "default_parameters": {},
+      "description": "Gemini Omni 1.2 Flash is Google's native multimodal video generation and editing model, the successor to Gemini Omni 1.1 Flash. It generates clips up to 15 seconds long with native...",
+      "expiration_date": null,
+      "id": "google/gemini-omni-1.2-flash",
+      "name": "Google: Gemini Omni 1.2 Flash",
+      "pricing": {
+        "completion": "0.000009",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000015",
+        "request": null,
+        "web_search": "0.014"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "seed",
+        "temperature",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 131072,
+        "is_moderated": false,
+        "max_completion_tokens": 65536
+      }
+    },
     "google/gemma-2-27b-it": {
       "architecture": {
         "input_modalities": [
@@ -6159,12 +6257,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000106",
+        "completion": "0.000000138",
         "image": null,
-        "input_cache_read": "0.000000018",
+        "input_cache_read": "0.000000023",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000035",
+        "prompt": "0.000000046",
         "request": null,
         "web_search": null
       },
@@ -16379,12 +16477,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.000000102",
         "image": null,
-        "input_cache_read": "0.000000075",
+        "input_cache_read": "0.000000025",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.000000028",
         "request": null,
         "web_search": null
       },
