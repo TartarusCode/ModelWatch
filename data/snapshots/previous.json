@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T13:01:26.878922Z",
+  "generated_at": "2026-11-05T13:31:45.338515Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3424,7 +3424,7 @@
         "input_cache_read": "0.000000035",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000059",
+        "prompt": "0.000000058",
         "request": null,
         "web_search": null
       },
@@ -6159,12 +6159,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000118",
+        "completion": "0.000000132",
         "image": null,
-        "input_cache_read": "0.00000002",
+        "input_cache_read": "0.000000022",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000039",
+        "prompt": "0.000000044",
         "request": null,
         "web_search": null
       },
@@ -8305,53 +8305,6 @@
         "max_completion_tokens": 14745
       }
     },
-    "minimax/minimax-01": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "instruct_type": null,
-        "modality": "text+image->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "minimax/minimax-01",
-      "context_length": 1000192,
-      "created": 1736915462,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": null
-      },
-      "description": "MiniMax-01 is a combines MiniMax-Text-01 for text generation and MiniMax-VL-01 for image understanding. It has 456 billion parameters, with 45.9 billion parameters activated per inference, and can handle a context...",
-      "expiration_date": "2026-11-05",
-      "id": "minimax/minimax-01",
-      "name": "MiniMax: MiniMax-01",
-      "pricing": {
-        "completion": "0.0000011",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000002",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "max_tokens",
-        "temperature",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 1000192,
-        "is_moderated": false,
-        "max_completion_tokens": 900172
-      }
-    },
     "minimax/minimax-m1": {
       "architecture": {
         "input_modalities": [
@@ -8406,153 +8359,6 @@
         "context_length": 1000000,
         "is_moderated": false,
         "max_completion_tokens": 40000
-      }
-    },
-    "minimax/minimax-m2": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "minimax/minimax-m2",
-      "context_length": 204800,
-      "created": 1761252093,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": 1,
-        "top_p": 0.95
-      },
-      "description": "MiniMax-M2 is a compact, high-efficiency large language model optimized for end-to-end coding and agentic workflows. With 10 billion activated parameters (230 billion total), it delivers near-frontier intelligence across general reasoning,...",
-      "expiration_date": "2026-11-05",
-      "id": "minimax/minimax-m2",
-      "name": "MiniMax: MiniMax M2",
-      "pricing": {
-        "completion": "0.00000102",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.000000255",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 204800,
-        "is_moderated": false,
-        "max_completion_tokens": 131072
-      }
-    },
-    "minimax/minimax-m2-her": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "minimax/minimax-m2-her-20260123",
-      "context_length": 65536,
-      "created": 1769177239,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": 1,
-        "top_p": 0.95
-      },
-      "description": "MiniMax M2-her is a dialogue-first large language model built for immersive roleplay, character-driven chat, and expressive multi-turn conversations. Designed to stay consistent in tone and personality, it supports rich message...",
-      "expiration_date": "2026-11-05",
-      "id": "minimax/minimax-m2-her",
-      "name": "MiniMax: MiniMax M2-her",
-      "pricing": {
-        "completion": "0.0000012",
-        "image": null,
-        "input_cache_read": "0.00000003",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000003",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "max_tokens",
-        "temperature",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 65536,
-        "is_moderated": false,
-        "max_completion_tokens": 2048
-      }
-    },
-    "minimax/minimax-m2.1": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "minimax/minimax-m2.1",
-      "context_length": 204800,
-      "created": 1766454997,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": 1,
-        "top_p": 0.9
-      },
-      "description": "MiniMax-M2.1 is a lightweight, state-of-the-art large language model optimized for coding, agentic workflows, and modern application development. With only 10 billion activated parameters, it delivers a major jump in real-world...",
-      "expiration_date": "2026-11-05",
-      "id": "minimax/minimax-m2.1",
-      "name": "MiniMax: MiniMax M2.1",
-      "pricing": {
-        "completion": "0.0000012",
-        "image": null,
-        "input_cache_read": "0.00000003",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000003",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 204800,
-        "is_moderated": false,
-        "max_completion_tokens": 131072
       }
     },
     "minimax/minimax-m2.5": {
@@ -8644,16 +8450,16 @@
         "top_p": 0.95
       },
       "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent...",
-      "expiration_date": "2026-11-05",
+      "expiration_date": null,
       "id": "minimax/minimax-m2.7",
       "name": "MiniMax: MiniMax M2.7",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.00000084",
         "image": null,
-        "input_cache_read": "0.00000006",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.00000021",
         "request": null,
         "web_search": null
       },
@@ -8677,9 +8483,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 204800,
+        "context_length": 196608,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 176947
       }
     },
     "minimax/minimax-m3": {
@@ -17194,6 +17000,74 @@
       "expiration_date": null,
       "id": "openrouter/auto-beta",
       "name": "Auto Router (Beta)",
+      "pricing": {
+        "completion": "-1",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "-1",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_completion_tokens",
+        "max_tokens",
+        "min_p",
+        "parallel_tool_calls",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_a",
+        "top_k",
+        "top_logprobs",
+        "top_p",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": null,
+        "is_moderated": false,
+        "max_completion_tokens": 65536
+      }
+    },
+    "openrouter/auto-code": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "audio",
+          "file",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file+audio+video->text+image",
+        "output_modalities": [
+          "text",
+          "image"
+        ],
+        "tokenizer": "Router"
+      },
+      "canonical_slug": "openrouter/auto-code",
+      "context_length": 2000000,
+      "created": 1793884321,
+      "default_parameters": {},
+      "description": "Auto Code is OpenRouter’s router built specifically for coding agents and harnesses. It uses the same routing engine as the [Auto Router](https://openrouter.ai/openrouter/auto), with every request treated as part of an...",
+      "expiration_date": null,
+      "id": "openrouter/auto-code",
+      "name": "Auto Code",
       "pricing": {
         "completion": "-1",
         "image": null,

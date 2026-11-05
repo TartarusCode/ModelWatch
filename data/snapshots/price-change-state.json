@@ -17086,7 +17086,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-05T13:01:26.878922Z",
+  "generated_at": "2026-11-05T13:31:45.338515Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -23492,7 +23492,7 @@
     },
     "google/gemma-4-26b-a4b-it": {
       "completion": {
-        "anchor": "0.118000000",
+        "anchor": "0.132000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23503,7 +23503,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.02000000",
+        "anchor": "0.022000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23514,7 +23514,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.039000000",
+        "anchor": "0.044000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -25404,15 +25404,15 @@
         "anchor": "1.2000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "1.2000000",
+        "pending_builds": 1,
+        "pending_price": "0.84000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.06000000",
+        "anchor": "0.042000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -25426,12 +25426,12 @@
         "anchor": "0.3000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.3000000",
+        "pending_builds": 1,
+        "pending_price": "0.21000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "minimax/minimax-m3": {
