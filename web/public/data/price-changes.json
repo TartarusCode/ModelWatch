@@ -103,23 +103,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "-0.100000",
-      "detected_at": "2026-10-28T23:50:01.556307Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.250000",
-      "field": "completion",
-      "model_id": "ibm-granite/granite-4.2-8b",
-      "new_per_million_usd": "0.150000",
-      "old_per_million_usd": "0.250000",
-      "pct_change": -0.4,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "0.320000",
       "detected_at": "2026-11-03T11:31:14.160281Z",
       "direction": "hike",
@@ -16776,9 +16759,9 @@
       "pct_change": -0.4,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-11-05T00:01:40.356102Z",
+      "settled_per_million_usd": "0.250000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -17496,43 +17479,8 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-04T23:31:47.248380Z",
-  "recovered_changes": [
-    {
-      "delta_per_million_usd": "0.123000",
-      "detected_at": "2026-11-03T08:01:41.183036Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.027000",
-      "field": "prompt",
-      "model_id": "openai/gpt-oss-120b",
-      "new_per_million_usd": "0.150000",
-      "old_per_million_usd": "0.027000",
-      "pct_change": 4.555555555555555,
-      "recovered_at": "2026-11-03T23:32:00.348704Z",
-      "recovered_per_million_usd": "0.017000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "0.501000",
-      "detected_at": "2026-11-03T08:01:41.183036Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.099000",
-      "field": "completion",
-      "model_id": "openai/gpt-oss-120b",
-      "new_per_million_usd": "0.600000",
-      "old_per_million_usd": "0.099000",
-      "pct_change": 5.0606060606060606,
-      "recovered_at": "2026-11-03T23:32:00.348704Z",
-      "recovered_per_million_usd": "0.063000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered",
-      "tier": null
-    }
-  ],
+  "generated_at": "2026-11-05T00:01:49.548913Z",
+  "recovered_changes": [],
   "settled_changes": [
     {
       "delta_per_million_usd": "0.092680",
@@ -17650,6 +17598,23 @@
       "recovered_per_million_usd": null,
       "settled_at": "2026-11-04T11:31:46.875296Z",
       "settled_per_million_usd": "0.182000",
+      "status": "settled",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.100000",
+      "detected_at": "2026-10-28T23:50:01.556307Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.250000",
+      "field": "completion",
+      "model_id": "ibm-granite/granite-4.2-8b",
+      "new_per_million_usd": "0.150000",
+      "old_per_million_usd": "0.250000",
+      "pct_change": -0.4,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-11-05T00:01:40.356102Z",
+      "settled_per_million_usd": "0.250000",
       "status": "settled",
       "tier": null
     }

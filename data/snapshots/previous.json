@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T23:31:47.248380Z",
+  "generated_at": "2026-11-05T00:01:49.548913Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3424,7 +3424,7 @@
         "input_cache_read": "0.000000035",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000434",
+        "prompt": "0.000000059",
         "request": null,
         "web_search": null
       },
@@ -6161,12 +6161,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000104",
+        "completion": "0.000000092",
         "image": null,
-        "input_cache_read": "0.000000017",
+        "input_cache_read": "0.000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000035",
+        "prompt": "0.000000031",
         "request": null,
         "web_search": null
       },
@@ -16517,12 +16517,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000066",
+        "completion": "0.000000083",
         "image": null,
-        "input_cache_read": "0.000000016",
+        "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000018",
+        "prompt": "0.000000023",
         "request": null,
         "web_search": null
       },
@@ -16642,12 +16642,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.00000009",
+        "completion": "0.00000013",
         "image": null,
-        "input_cache_read": "0.000000009",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000018",
+        "prompt": "0.00000003",
         "request": null,
         "web_search": null
       },
@@ -16677,7 +16677,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 117964
       }
     },
     "openai/gpt-oss-20b:batch": {
@@ -20766,7 +20766,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "ricursiveai/ripple-65b-preview-20261104",
-      "context_length": 16384,
+      "context_length": 1048576,
       "created": 1793818990,
       "default_parameters": {},
       "description": "Ripple-65B-Preview by ricursiveAI, a 65B model with native tool calling, served in BF16.",
@@ -20796,9 +20796,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 16384,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 14745
+        "max_completion_tokens": 131072
       }
     },
     "sakana/fugu-max": {
