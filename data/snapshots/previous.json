@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T02:01:47.332723Z",
+  "generated_at": "2026-11-05T02:31:47.472332Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6161,12 +6161,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000115",
+        "completion": "0.000000081",
         "image": null,
-        "input_cache_read": "0.000000019",
+        "input_cache_read": "0.000000013",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000038",
+        "prompt": "0.000000027",
         "request": null,
         "web_search": null
       },
@@ -16517,12 +16517,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.00000004",
+        "completion": "0.000000037",
         "image": null,
-        "input_cache_read": "0.00000001",
+        "input_cache_read": "0.000000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000011",
+        "prompt": "0.00000001",
         "request": null,
         "web_search": null
       },
@@ -23685,7 +23685,7 @@
         "top_p": null
       },
       "description": "GLM-4.5V is a vision-language foundation model for multimodal agent applications. Built on a Mixture-of-Experts (MoE) architecture with 106B parameters and 12B activated parameters, it achieves state-of-the-art results in video understanding,...",
-      "expiration_date": null,
+      "expiration_date": "2026-12-31",
       "id": "z-ai/glm-4.5v",
       "name": "Z.ai: GLM 4.5V",
       "pricing": {
