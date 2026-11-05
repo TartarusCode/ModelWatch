@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T13:31:45.338515Z",
+  "generated_at": "2026-11-05T14:01:51.071657Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3424,7 +3424,7 @@
         "input_cache_read": "0.000000035",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000058",
+        "prompt": "0.0000000553",
         "request": null,
         "web_search": null
       },
@@ -6159,12 +6159,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000132",
+        "completion": "0.000000076",
         "image": null,
-        "input_cache_read": "0.000000022",
+        "input_cache_read": "0.000000013",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000044",
+        "prompt": "0.000000025",
         "request": null,
         "web_search": null
       },
@@ -16927,7 +16927,7 @@
       },
       "canonical_slug": "openrouter/auto",
       "context_length": 2000000,
-      "created": 1699401600,
+      "created": 1793885889,
       "default_parameters": {},
       "description": "Auto is OpenRouter’s general-purpose router, now powered by [Jev Router](https://openrouter.ai/typesafe/jev-router). It replaces market-spend rankings with request-aware selection of both the model and reasoning effort, weighing task difficulty, measured benchmark results,...",
       "expiration_date": null,
