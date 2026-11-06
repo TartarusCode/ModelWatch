@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T10:31:20.673573Z",
+  "generated_at": "2026-11-06T11:01:47.676824Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -16424,12 +16424,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000081",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.00000002",
+        "input_cache_read": "0.000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000022",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
