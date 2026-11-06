@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T15:01:33.724949Z",
+  "generated_at": "2026-11-06T15:31:48.783568Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3424,7 +3424,7 @@
         "input_cache_read": "0.000000035",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000054",
+        "prompt": "0.0000000514",
         "request": null,
         "web_search": null
       },
@@ -8676,12 +8676,12 @@
       "id": "minimax/minimax-m3.1-flash",
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.0000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.000000075",
         "request": null,
         "web_search": null
       },
@@ -10227,16 +10227,16 @@
         "top_p": null
       },
       "description": "Kimi K2.5 is Moonshot AI's native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed...",
-      "expiration_date": "2026-11-18",
+      "expiration_date": null,
       "id": "moonshotai/kimi-k2.5",
       "name": "MoonshotAI: Kimi K2.5",
       "pricing": {
-        "completion": "0.000003325",
+        "completion": "0.0000025",
         "image": null,
-        "input_cache_read": "0.000000209",
+        "input_cache_read": "0.00000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000532",
+        "prompt": "0.0000005",
         "request": null,
         "web_search": null
       },
@@ -10263,9 +10263,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 256000,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 235929
       }
     },
     "moonshotai/kimi-k2.6": {
@@ -16424,12 +16424,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000095",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.000000023",
+        "input_cache_read": "0.000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000026",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
