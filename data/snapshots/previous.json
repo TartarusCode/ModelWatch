@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T19:01:41.883621Z",
+  "generated_at": "2026-11-06T19:31:24.634974Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3424,7 +3424,7 @@
         "input_cache_read": "0.000000035",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000448",
+        "prompt": "0.0000000434",
         "request": null,
         "web_search": null
       },
@@ -3457,6 +3457,63 @@
         "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 943718
+      }
+    },
+    "deepseek/deepseek-v4-flash-0731:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "DeepSeek"
+      },
+      "canonical_slug": "deepseek/deepseek-v4-flash-20260731",
+      "context_length": 1048576,
+      "created": 1785478908,
+      "default_parameters": {},
+      "description": "DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workflows....",
+      "expiration_date": null,
+      "id": "deepseek/deepseek-v4-flash-0731:batch",
+      "name": "DeepSeek: DeepSeek V4 Flash 0731 (batch)",
+      "pricing": {
+        "completion": "0.000000144",
+        "image": null,
+        "input_cache_read": "0.000000012",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000000048",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 384000
       }
     },
     "deepseek/deepseek-v4-flash-vision-exp": {
@@ -3543,12 +3600,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001581312",
+        "completion": "0.000001561128",
         "image": null,
-        "input_cache_read": "0.000000065888",
+        "input_cache_read": "0.000000065047",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000790656",
+        "prompt": "0.000000780564",
         "request": null,
         "web_search": null
       },
@@ -6257,12 +6314,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.000000225",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.0000000375",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.0000000675",
         "request": null,
         "web_search": null
       },
@@ -16550,12 +16607,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.00000007",
+        "completion": "0.000000075",
         "image": null,
-        "input_cache_read": "0.000000017",
+        "input_cache_read": "0.000000018",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000019",
+        "prompt": "0.00000002",
         "request": null,
         "web_search": null
       },
