@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T05:31:40.587156Z",
+  "generated_at": "2026-11-06T06:01:44.473246Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3606,12 +3606,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000411",
+        "completion": "0.00000444",
         "image": null,
-        "input_cache_read": "0.000000098",
+        "input_cache_read": "0.000000106",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000103",
+        "prompt": "0.000000111",
         "request": null,
         "web_search": null
       },
@@ -3666,12 +3666,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000005",
+        "completion": "0.00000054",
         "image": null,
         "input_cache_read": "0.000000018",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000045",
+        "prompt": "0.0000000486",
         "request": null,
         "web_search": null
       },
@@ -16477,12 +16477,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000082",
+        "completion": "0.000000064",
         "image": null,
-        "input_cache_read": "0.00000002",
+        "input_cache_read": "0.000000016",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000022",
+        "prompt": "0.000000017",
         "request": null,
         "web_search": null
       },
@@ -21852,17 +21852,25 @@
       },
       "pricing_schedule": null,
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "max_completion_tokens",
         "max_tokens",
+        "min_p",
+        "presence_penalty",
         "reasoning",
         "reasoning_effort",
+        "repetition_penalty",
         "response_format",
+        "seed",
         "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
-        "tools"
+        "tools",
+        "top_k",
+        "top_p"
       ],
       "top_provider": {
         "context_length": 1048576,
