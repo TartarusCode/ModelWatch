@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T17:31:53.165057Z",
+  "generated_at": "2026-11-06T18:01:32.472272Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3424,7 +3424,7 @@
         "input_cache_read": "0.000000035",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000461",
+        "prompt": "0.0000000448",
         "request": null,
         "web_search": null
       },
@@ -3543,12 +3543,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001662396",
+        "completion": "0.000001642212",
         "image": null,
-        "input_cache_read": "0.0000000692665",
+        "input_cache_read": "0.0000000684255",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000831198",
+        "prompt": "0.000000821106",
         "request": null,
         "web_search": null
       },
@@ -16424,12 +16424,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000084",
+        "completion": "0.000000096",
         "image": null,
-        "input_cache_read": "0.00000002",
+        "input_cache_read": "0.000000023",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000023",
+        "prompt": "0.000000026",
         "request": null,
         "web_search": null
       },
@@ -23390,7 +23390,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -23404,7 +23403,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
