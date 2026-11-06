@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T07:01:18.717657Z",
+  "generated_at": "2026-11-06T07:31:32.739756Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -2960,12 +2960,12 @@
       "id": "deepseek/deepseek-chat",
       "name": "DeepSeek: DeepSeek V3",
       "pricing": {
-        "completion": "0.0000010287",
+        "completion": "0.00000089",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000002574",
+        "prompt": "0.00000032",
         "request": null,
         "web_search": null
       },
@@ -2988,9 +2988,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 128000,
+        "context_length": 163840,
         "is_moderated": false,
-        "max_completion_tokens": 16000
+        "max_completion_tokens": 16384
       }
     },
     "deepseek/deepseek-chat-v3-0324": {
@@ -3543,12 +3543,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.00000191052",
+        "completion": "0.0000032",
         "image": null,
-        "input_cache_read": "0.000000079605",
+        "input_cache_read": "0.000000135",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000095526",
+        "prompt": "0.0000016",
         "request": null,
         "web_search": null
       },
@@ -3577,9 +3577,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1024000,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 384000
+        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4-pro-0813": {
@@ -3606,12 +3606,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.00000444",
+        "completion": "0.00000466",
         "image": null,
-        "input_cache_read": "0.000000106",
+        "input_cache_read": "0.000000111",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000111",
+        "prompt": "0.0000001165",
         "request": null,
         "web_search": null
       },
@@ -3666,12 +3666,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.00000054",
+        "completion": "0.000000567",
         "image": null,
         "input_cache_read": "0.000000018",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000486",
+        "prompt": "0.000000051",
         "request": null,
         "web_search": null
       },
@@ -16477,12 +16477,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000102",
+        "completion": "0.000000047",
         "image": null,
-        "input_cache_read": "0.000000025",
+        "input_cache_read": "0.000000011",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000027",
+        "prompt": "0.000000013",
         "request": null,
         "web_search": null
       },
