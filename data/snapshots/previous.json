@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T08:01:44.080086Z",
+  "generated_at": "2026-11-06T08:31:41.912233Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -11227,59 +11227,6 @@
         "max_completion_tokens": 117964
       }
     },
-    "nvidia/nemotron-3.5-content-safety:free": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "instruct_type": null,
-        "modality": "text+image->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "nvidia/nemotron-3.5-content-safety-20260604",
-      "context_length": 128000,
-      "created": 1780581864,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "NVIDIA Nemotron 3.5 Content Safety is a compact 4B-parameter multimodal guardrail model from NVIDIA, fine-tuned from Google Gemma-3-4B. It moderates both inputs to and responses from LLMs and VLMs, accepting...",
-      "expiration_date": null,
-      "id": "nvidia/nemotron-3.5-content-safety:free",
-      "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "seed",
-        "temperature",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 128000,
-        "is_moderated": false,
-        "max_completion_tokens": 8192
-      }
-    },
     "nvidia/nemotron-3.5-lightning": {
       "architecture": {
         "input_modalities": [
@@ -16477,12 +16424,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000044",
+        "completion": "0.000000038",
         "image": null,
-        "input_cache_read": "0.000000011",
+        "input_cache_read": "0.000000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000012",
+        "prompt": "0.00000001",
         "request": null,
         "web_search": null
       },
