@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T18:31:49.779728Z",
+  "generated_at": "2026-11-06T19:01:41.883621Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3543,12 +3543,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001601496",
+        "completion": "0.000001581312",
         "image": null,
-        "input_cache_read": "0.000000066729",
+        "input_cache_read": "0.000000065888",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000800748",
+        "prompt": "0.000000790656",
         "request": null,
         "web_search": null
       },
@@ -7963,6 +7963,68 @@
         "max_completion_tokens": 16384
       }
     },
+    "meta/muse-glimmer-30b:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "meta/muse-glimmer-30b-20260810",
+      "context_length": 131072,
+      "created": 1786302394,
+      "default_parameters": {
+        "temperature": 1,
+        "top_k": 64,
+        "top_p": 0.95
+      },
+      "description": "Muse Glimmer 30B is a dense, open-weight multimodal model from Meta Superintelligence Labs, distilled from Muse Spark and optimized for autonomous agents on consumer hardware. It is suited for long-horizon...",
+      "expiration_date": null,
+      "id": "meta/muse-glimmer-30b:batch",
+      "name": "Meta: Muse Glimmer 30B (batch)",
+      "pricing": {
+        "completion": "0.00000096",
+        "image": null,
+        "input_cache_read": "0.000000032",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000024",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 131072,
+        "is_moderated": false,
+        "max_completion_tokens": 16384
+      }
+    },
     "meta/muse-spark-1.1": {
       "architecture": {
         "input_modalities": [
@@ -8761,6 +8823,70 @@
         "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 524288
+      }
+    },
+    "minimax/minimax-m3:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "minimax/minimax-m3-20260531",
+      "context_length": 524288,
+      "created": 1780245374,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": 1,
+        "top_k": null,
+        "top_p": 0.95
+      },
+      "description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,...",
+      "expiration_date": null,
+      "id": "minimax/minimax-m3:batch",
+      "name": "MiniMax: MiniMax M3 (batch)",
+      "pricing": {
+        "completion": "0.00000088",
+        "image": null,
+        "input_cache_read": "0.0000000448",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000000224",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 524288,
+        "is_moderated": false,
+        "max_completion_tokens": 512000
       }
     },
     "mistralai/codestral-2508": {
@@ -16424,12 +16550,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000075",
+        "completion": "0.00000007",
         "image": null,
-        "input_cache_read": "0.000000018",
+        "input_cache_read": "0.000000017",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000002",
+        "prompt": "0.000000019",
         "request": null,
         "web_search": null
       },
@@ -20169,6 +20295,69 @@
         "max_completion_tokens": 235929
       }
     },
+    "qwen/qwen3.8-27b:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen"
+      },
+      "canonical_slug": "qwen/qwen3.8-27b-20260814",
+      "context_length": 262144,
+      "created": 1786722910,
+      "default_parameters": {
+        "temperature": 1,
+        "top_k": 20,
+        "top_p": 0.95
+      },
+      "description": "Qwen3.8 27B is an open-weight dense vision-language model from Qwen. It is suited for coding, professional workflows, research, multimodal interaction, and long-running agent tasks, with flexible thinking that can be...",
+      "expiration_date": null,
+      "id": "qwen/qwen3.8-27b:batch",
+      "name": "Qwen: Qwen3.8 27B (batch)",
+      "pricing": {
+        "completion": "0.000002",
+        "image": null,
+        "input_cache_read": "0.00000004",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000016",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 235929
+      }
+    },
     "qwen/qwen3.8-flash": {
       "architecture": {
         "input_modalities": [
@@ -22216,6 +22405,70 @@
         "max_completion_tokens": 262144
       }
     },
+    "thinkingmachines/inkling-small:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "audio"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+audio->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "thinkingmachines/inkling-small-20260730",
+      "context_length": 524288,
+      "created": 1785443117,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Inkling Small is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 12B active parameters out of 276B total. It is positioned as the smaller, more efficient member of...",
+      "expiration_date": null,
+      "id": "thinkingmachines/inkling-small:batch",
+      "name": "Thinking Machines: Inkling Small (batch)",
+      "pricing": {
+        "completion": "0.00000096",
+        "image": null,
+        "input_cache_read": "0.00000008",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000036",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 524288,
+        "is_moderated": false,
+        "max_completion_tokens": 262144
+      }
+    },
     "typesafe/jev-router": {
       "architecture": {
         "input_modalities": [
@@ -23390,6 +23643,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -23403,6 +23657,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
