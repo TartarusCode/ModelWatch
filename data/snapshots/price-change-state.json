@@ -17324,7 +17324,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-06T05:01:44.763470Z",
+  "generated_at": "2026-11-06T05:31:40.587156Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -32086,7 +32086,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.017000000",
+        "anchor": "0.02000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -36120,6 +36120,41 @@
       },
       "prompt": {
         "anchor": "0.18000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      }
+    },
+    "tencent/hy4": {
+      "completion": {
+        "anchor": "1.2505000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_read": {
+        "anchor": "0.021000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt": {
+        "anchor": "0.417000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
