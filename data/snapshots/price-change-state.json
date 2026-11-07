@@ -17460,7 +17460,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-07T00:01:44.486264Z",
+  "generated_at": "2026-11-07T00:31:47.648582Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -25743,15 +25743,15 @@
         "anchor": "0.95000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.95000000",
+        "pending_builds": 1,
+        "pending_price": "1.2000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.03000000",
+        "anchor": "0.06000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -25762,7 +25762,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.27000000",
+        "anchor": "0.3000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -32211,7 +32211,7 @@
     },
     "openai/gpt-oss-120b": {
       "completion": {
-        "anchor": "0.061000000",
+        "anchor": "0.037000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -32222,7 +32222,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.015000000",
+        "anchor": "0.009000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -32233,7 +32233,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.016000000",
+        "anchor": "0.01000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,

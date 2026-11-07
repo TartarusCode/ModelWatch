@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T00:01:44.486264Z",
+  "generated_at": "2026-11-07T00:31:47.648582Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3600,12 +3600,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001378428",
+        "completion": "0.0000032",
         "image": null,
-        "input_cache_read": "0.0000000574345",
+        "input_cache_read": "0.000000135",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000689214",
+        "prompt": "0.0000016",
         "request": null,
         "web_search": null
       },
@@ -3634,9 +3634,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1024000,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 384000
+        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4-pro-0813": {
@@ -7263,7 +7263,7 @@
         "top_k": 50
       },
       "description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or...",
-      "expiration_date": null,
+      "expiration_date": "2026-11-13",
       "id": "liquid/lfm-2.5-2.6b",
       "name": "LiquidAI: LFM2.5-2.6B",
       "pricing": {
@@ -7325,7 +7325,7 @@
         "top_k": 50
       },
       "description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or...",
-      "expiration_date": null,
+      "expiration_date": "2026-11-13",
       "id": "liquid/lfm-2.5-2.6b:free",
       "name": "LiquidAI: LFM2.5-2.6B (free)",
       "pricing": {
@@ -8605,12 +8605,12 @@
       "id": "minimax/minimax-m2.5",
       "name": "MiniMax: MiniMax M2.5",
       "pricing": {
-        "completion": "0.00000095",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.00000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000027",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -8637,9 +8637,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 198000,
+        "context_length": 65536,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 58982
       }
     },
     "minimax/minimax-m2.7": {
@@ -16606,12 +16606,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000061",
+        "completion": "0.000000037",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.000000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000016",
+        "prompt": "0.00000001",
         "request": null,
         "web_search": null
       },
@@ -21870,12 +21870,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22083,12 +22083,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
