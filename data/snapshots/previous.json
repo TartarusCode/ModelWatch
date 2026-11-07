@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T02:01:31.349523Z",
+  "generated_at": "2026-11-07T02:31:39.449341Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -549,7 +549,7 @@
       "pricing": {
         "completion": "0.000005",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.0000025",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000025",
@@ -3429,7 +3429,7 @@
         "input_cache_read": "0.000000035",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000434",
+        "prompt": "0.000000059",
         "request": null,
         "web_search": null
       },
@@ -3605,12 +3605,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.0000032",
+        "completion": "0.000001297344",
         "image": null,
-        "input_cache_read": "0.000000135",
+        "input_cache_read": "0.000000054056",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000016",
+        "prompt": "0.000000648672",
         "request": null,
         "web_search": null
       },
@@ -3639,9 +3639,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1024000,
         "is_moderated": false,
-        "max_completion_tokens": 393216
+        "max_completion_tokens": 384000
       }
     },
     "deepseek/deepseek-v4-pro-0813": {
@@ -7580,7 +7580,7 @@
       "pricing": {
         "completion": "0.00000075",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.0000004",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000004",
@@ -16735,12 +16735,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000046",
+        "completion": "0.000000037",
         "image": null,
-        "input_cache_read": "0.000000011",
+        "input_cache_read": "0.000000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000012",
+        "prompt": "0.00000001",
         "request": null,
         "web_search": null
       },
@@ -22835,7 +22835,7 @@
       "pricing": {
         "completion": "0.00000065",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000035",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.00000035",
