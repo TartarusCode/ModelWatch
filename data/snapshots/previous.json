@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T07:01:36.047995Z",
+  "generated_at": "2026-11-07T07:31:17.172677Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3605,12 +3605,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001679448",
+        "completion": "0.000001658916",
         "image": null,
-        "input_cache_read": "0.000000069977",
+        "input_cache_read": "0.0000000691215",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000839724",
+        "prompt": "0.000000829458",
         "request": null,
         "web_search": null
       },
@@ -16736,12 +16736,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000037",
+        "completion": "0.000000046",
         "image": null,
-        "input_cache_read": "0.000000009",
+        "input_cache_read": "0.000000011",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000001",
+        "prompt": "0.000000012",
         "request": null,
         "web_search": null
       },

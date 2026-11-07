@@ -17545,7 +17545,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-07T07:01:36.047995Z",
+  "generated_at": "2026-11-07T07:31:17.172677Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -24501,6 +24501,41 @@
       },
       "prompt": {
         "anchor": "0.06000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      }
+    },
+    "inclusionai/ling-3.0-tiny": {
+      "completion": {
+        "anchor": "0.045000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_read": {
+        "anchor": "0.003000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt": {
+        "anchor": "0.015000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -32296,7 +32331,7 @@
     },
     "openai/gpt-oss-120b": {
       "completion": {
-        "anchor": "0.037000000",
+        "anchor": "0.046000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -32307,7 +32342,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.009000000",
+        "anchor": "0.011000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -32318,7 +32353,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.01000000",
+        "anchor": "0.012000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
