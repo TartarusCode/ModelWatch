@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T16:01:45.667734Z",
+  "generated_at": "2026-11-07T16:31:46.080231Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3429,7 +3429,7 @@
         "input_cache_read": "0.000000035",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000448",
+        "prompt": "0.0000000434",
         "request": null,
         "web_search": null
       },
@@ -3605,12 +3605,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001294212",
+        "completion": "0.00000127368",
         "image": null,
-        "input_cache_read": "0.0000000539255",
+        "input_cache_read": "0.00000005307",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000647106",
+        "prompt": "0.00000063684",
         "request": null,
         "web_search": null
       },
@@ -16736,12 +16736,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000064",
+        "completion": "0.000000082",
         "image": null,
-        "input_cache_read": "0.000000016",
+        "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000017",
+        "prompt": "0.000000022",
         "request": null,
         "web_search": null
       },
@@ -22000,12 +22000,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.000000528",
+        "completion": "0.00000033",
         "image": null,
-        "input_cache_read": "0.000000033",
+        "input_cache_read": "0.000000020625",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000132",
+        "prompt": "0.0000000825",
         "request": null,
         "web_search": null
       },
@@ -22213,12 +22213,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.000002501",
+        "completion": "0.0000022509",
         "image": null,
-        "input_cache_read": "0.000000042",
+        "input_cache_read": "0.0000000378",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000834",
+        "prompt": "0.0000007506",
         "request": null,
         "web_search": null
       },
