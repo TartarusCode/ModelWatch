@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T20:01:44.792829Z",
+  "generated_at": "2026-11-07T20:31:32.681468Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3605,12 +3605,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001131696",
+        "completion": "0.000001111512",
         "image": null,
-        "input_cache_read": "0.000000047154",
+        "input_cache_read": "0.000000046313",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000565848",
+        "prompt": "0.000000555756",
         "request": null,
         "web_search": null
       },
@@ -10539,16 +10539,16 @@
         "top_p": null
       },
       "description": "Kimi K2.5 is Moonshot AI's native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed...",
-      "expiration_date": null,
+      "expiration_date": "2026-11-18",
       "id": "moonshotai/kimi-k2.5",
       "name": "MoonshotAI: Kimi K2.5",
       "pricing": {
-        "completion": "0.0000025",
+        "completion": "0.000003325",
         "image": null,
-        "input_cache_read": "0.00000015",
+        "input_cache_read": "0.000000209",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000005",
+        "prompt": "0.000000532",
         "request": null,
         "web_search": null
       },
@@ -10575,9 +10575,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 256000,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 65536
       }
     },
     "moonshotai/kimi-k2.6": {
@@ -16736,12 +16736,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000094",
+        "completion": "0.00000009",
         "image": null,
-        "input_cache_read": "0.000000023",
+        "input_cache_read": "0.000000022",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000025",
+        "prompt": "0.000000024",
         "request": null,
         "web_search": null
       },
