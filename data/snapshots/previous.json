@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T00:31:47.648582Z",
+  "generated_at": "2026-11-07T01:01:44.566437Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -2668,6 +2668,8 @@
         "stop",
         "structured_outputs",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_k",
         "top_p"
       ],
@@ -2720,6 +2722,7 @@
         "stop",
         "structured_outputs",
         "temperature",
+        "tool_choice",
         "tools",
         "top_k",
         "top_p"
@@ -2872,6 +2875,8 @@
         "stop",
         "structured_outputs",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_k",
         "top_p"
       ],
@@ -7424,6 +7429,130 @@
       ],
       "top_provider": {
         "context_length": 128000,
+        "is_moderated": false,
+        "max_completion_tokens": 8192
+      }
+    },
+    "liquid/lfm-3-1.7b": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "liquid/lfm-3-1.7b-20261106",
+      "context_length": 262144,
+      "created": 1794009477,
+      "default_parameters": {
+        "repetition_penalty": 1.1,
+        "temperature": 0.1,
+        "top_k": 50
+      },
+      "description": "A compact 1.7B-parameter text model with a 256K-token context, post-trained for agents, tool calling, and structured outputs. It reasons before it answers. Prompts and outputs may be retained and used...",
+      "expiration_date": null,
+      "id": "liquid/lfm-3-1.7b",
+      "name": "LiquidAI: LFM3-1.7B",
+      "pricing": {
+        "completion": "0.0000002",
+        "image": null,
+        "input_cache_read": "0.00000002",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000008",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_completion_tokens",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 8192
+      }
+    },
+    "liquid/lfm-3-1.7b:free": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "liquid/lfm-3-1.7b-20261106",
+      "context_length": 262144,
+      "created": 1794009477,
+      "default_parameters": {
+        "repetition_penalty": 1.1,
+        "temperature": 0.1,
+        "top_k": 50
+      },
+      "description": "A compact 1.7B-parameter text model with a 256K-token context, post-trained for agents, tool calling, and structured outputs. It reasons before it answers. Prompts and outputs may be retained and used...",
+      "expiration_date": null,
+      "id": "liquid/lfm-3-1.7b:free",
+      "name": "LiquidAI: LFM3-1.7B (free)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_completion_tokens",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
         "is_moderated": false,
         "max_completion_tokens": 8192
       }
@@ -16606,12 +16735,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000037",
+        "completion": "0.000000068",
         "image": null,
-        "input_cache_read": "0.000000009",
+        "input_cache_read": "0.000000016",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000001",
+        "prompt": "0.000000018",
         "request": null,
         "web_search": null
       },
