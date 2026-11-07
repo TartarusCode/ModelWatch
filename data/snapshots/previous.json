@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T01:01:44.566437Z",
+  "generated_at": "2026-11-07T01:31:20.010014Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -7106,12 +7106,12 @@
       "id": "inclusionai/ling-3.1-flash",
       "name": "inclusionAI: Ling 3.1 Flash",
       "pricing": {
-        "completion": "0.000000225",
+        "completion": "0.000000135",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.000000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.000000045",
         "request": null,
         "web_search": null
       },
@@ -8923,12 +8923,12 @@
       "id": "minimax/minimax-m3.1-flash",
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.0000000075",
+        "input_cache_read": "0.000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -16735,12 +16735,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000068",
+        "completion": "0.000000044",
         "image": null,
-        "input_cache_read": "0.000000016",
+        "input_cache_read": "0.000000011",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000018",
+        "prompt": "0.000000012",
         "request": null,
         "web_search": null
       },
