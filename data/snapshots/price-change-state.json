@@ -17664,7 +17664,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-08T14:31:42.383768Z",
+  "generated_at": "2026-11-08T15:01:25.366582Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -21057,7 +21057,7 @@
     },
     "deepseek/deepseek-v4-pro": {
       "completion": {
-        "anchor": "0.422124000000",
+        "anchor": "0.4176000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -21068,7 +21068,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.0175885000000",
+        "anchor": "0.0174000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -21079,7 +21079,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.211062000000",
+        "anchor": "0.2088000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -32490,15 +32490,15 @@
         "anchor": "0.094000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": "hike",
-        "episode_start_price": "0.094000000",
-        "pending_builds": 1,
-        "pending_price": "0.6000000",
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.075000000",
+        "anchor": "0.023000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -32512,12 +32512,12 @@
         "anchor": "0.025000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": "hike",
-        "episode_start_price": "0.025000000",
-        "pending_builds": 1,
-        "pending_price": "0.15000000",
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "idle"
       }
     },
     "openai/gpt-oss-120b:batch": {
