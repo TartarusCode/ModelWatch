@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T14:01:24.218015Z",
+  "generated_at": "2026-11-08T14:31:42.383768Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3605,12 +3605,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000000462492",
+        "completion": "0.000000422124",
         "image": null,
-        "input_cache_read": "0.0000000192705",
+        "input_cache_read": "0.0000000175885",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000231246",
+        "prompt": "0.000000211062",
         "request": null,
         "web_search": null
       },
@@ -7508,12 +7508,12 @@
       "id": "meta-llama/llama-3.1-8b-instruct",
       "name": "Meta: Llama 3.1 8B Instruct",
       "pricing": {
-        "completion": "0.00000008",
+        "completion": "0.00000004",
         "image": null,
-        "input_cache_read": "0.000000025",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000005",
+        "prompt": "0.00000002",
         "request": null,
         "web_search": null
       },
@@ -7540,7 +7540,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 117964
+        "max_completion_tokens": 16384
       }
     },
     "meta-llama/llama-3.2-1b-instruct": {
@@ -16613,12 +16613,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.000000094",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.000000023",
+        "input_cache_read": "0.000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000025",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
