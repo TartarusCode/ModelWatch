@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T11:01:36.807090Z",
+  "generated_at": "2026-11-09T11:31:24.117928Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -9884,12 +9884,12 @@
       "id": "mistralai/mistral-small-3.2-24b-instruct",
       "name": "Mistral: Mistral Small 3.2 24B",
       "pricing": {
-        "completion": "0.0000002",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -9914,9 +9914,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 128000,
+        "context_length": 32768,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 26214
       }
     },
     "mistralai/mixtral-8x22b-instruct": {
@@ -16736,12 +16736,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.00000013",
+        "completion": "0.00000009",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.000000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000003",
+        "prompt": "0.000000018",
         "request": null,
         "web_search": null
       },
@@ -16771,7 +16771,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 117964
+        "max_completion_tokens": 32768
       }
     },
     "openai/gpt-oss-20b:batch": {
