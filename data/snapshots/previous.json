@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T22:01:48.678915Z",
+  "generated_at": "2026-11-09T22:31:55.143145Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3708,12 +3708,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001767492",
+        "completion": "0.000001754268",
         "image": null,
-        "input_cache_read": "0.0000000736455",
+        "input_cache_read": "0.0000000730945",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000883746",
+        "prompt": "0.000000877134",
         "request": null,
         "web_search": null
       },
@@ -21589,59 +21589,6 @@
         "max_completion_tokens": 4000
       }
     },
-    "stealth/crouton-alpha": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "video",
-          "file",
-          "audio"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+file+audio+video->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "stealth/crouton-alpha",
-      "context_length": 1048576,
-      "created": 1793669930,
-      "default_parameters": {},
-      "description": "Crouton Alpha is a lightweight model built for scalable coding, agentic, and multimodal workflows. It's ideal for executing agentic sub-tasks, tool use, and document analysis in high-volume, repeated work. Developers...",
-      "expiration_date": "2026-11-09",
-      "id": "stealth/crouton-alpha",
-      "name": "Crouton Alpha",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 1048576,
-        "is_moderated": false,
-        "max_completion_tokens": 943718
-      }
-    },
     "stepfun/step-3.5-flash": {
       "architecture": {
         "input_modalities": [
@@ -22563,6 +22510,62 @@
         "context_length": 524288,
         "is_moderated": false,
         "max_completion_tokens": 471859
+      }
+    },
+    "thinkingmachines/inkling-2-small:free": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "thinkingmachines/inkling-2-small-20261107",
+      "context_length": 1048576,
+      "created": 1794261847,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Inkling 2 Small is a multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B active parameters out of 594B total. It is the first model in the second Inkling...",
+      "expiration_date": null,
+      "id": "thinkingmachines/inkling-2-small:free",
+      "name": "Thinking Machines: Inkling 2 Small (free)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "seed",
+        "stop",
+        "temperature",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
       }
     },
     "thinkingmachines/inkling-small": {
