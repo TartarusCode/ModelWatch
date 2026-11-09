@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T18:01:57.657577Z",
+  "generated_at": "2026-11-09T18:31:36.687306Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3909,12 +3909,12 @@
       "id": "deepseek/deepseek-v4.1-flash:batch",
       "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
       "pricing": {
-        "completion": "0.0000002",
+        "completion": "0.000000336",
         "image": null,
-        "input_cache_read": "0.000000002",
+        "input_cache_read": "0.00000000336",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000011",
+        "prompt": "0.000000112",
         "request": null,
         "web_search": null
       },
@@ -3942,7 +3942,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 131072
       }
     },
     "dots-studio/dots-3-note-preview:free": {
@@ -10594,12 +10594,12 @@
       "id": "moonshotai/kimi-k3:batch",
       "name": "MoonshotAI: Kimi K3 (batch)",
       "pricing": {
-        "completion": "0.000006",
+        "completion": "0.0000114",
         "image": null,
-        "input_cache_read": "0.000000218",
+        "input_cache_read": "0.000000228",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000883",
+        "prompt": "0.00000228",
         "request": null,
         "web_search": null
       },
@@ -10608,7 +10608,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -10623,13 +10622,12 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 16384
       }
     },
     "morph/morph-v3-fast": {
