@@ -171,6 +171,23 @@
       "tier": null
     },
     {
+      "delta_per_million_usd": "0.100000",
+      "detected_at": "2026-11-09T04:01:37.256662Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.350000",
+      "field": "completion",
+      "model_id": "google/gemma-3-27b-it",
+      "new_per_million_usd": "0.450000",
+      "old_per_million_usd": "0.350000",
+      "pct_change": 0.2857142857142857,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
       "delta_per_million_usd": "0.069000",
       "detected_at": "2026-11-05T20:01:26.216600Z",
       "direction": "hike",
@@ -18582,27 +18599,27 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
-    }
-  ],
-  "generated_at": "2026-11-09T03:31:23.125016Z",
-  "recovered_changes": [
+    },
     {
-      "delta_per_million_usd": "0.062000",
-      "detected_at": "2026-11-05T05:31:27.660921Z",
+      "delta_per_million_usd": "0.100000",
+      "detected_at": "2026-11-09T04:01:37.256662Z",
       "direction": "hike",
-      "episode_start_per_million_usd": "0.050000",
-      "field": "prompt",
-      "model_id": "deepseek/deepseek-v4.1-flash:batch",
-      "new_per_million_usd": "0.112000",
-      "old_per_million_usd": "0.050000",
-      "pct_change": 1.24,
-      "recovered_at": "2026-11-08T03:31:36.322050Z",
-      "recovered_per_million_usd": "0.011000",
+      "episode_start_per_million_usd": "0.350000",
+      "field": "completion",
+      "model_id": "google/gemma-3-27b-it",
+      "new_per_million_usd": "0.450000",
+      "old_per_million_usd": "0.350000",
+      "pct_change": 0.2857142857142857,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "recovered",
+      "status": "active",
       "tier": null
-    },
+    }
+  ],
+  "generated_at": "2026-11-09T04:01:45.158420Z",
+  "recovered_changes": [
     {
       "delta_per_million_usd": "-0.306588",
       "detected_at": "2026-11-07T03:01:26.828508Z",
