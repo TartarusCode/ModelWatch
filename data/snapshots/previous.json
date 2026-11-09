@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T19:31:40.452799Z",
+  "generated_at": "2026-11-09T20:01:58.125285Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -759,7 +759,7 @@
       },
       "canonical_slug": "anthropic/claude-fable-5.2-20261109",
       "context_length": 1000000,
-      "created": 1794015854,
+      "created": 1794253781,
       "default_parameters": {},
       "description": "Claude Fable 5.2 is Anthropic's most capable model for the most demanding technical work, with gains over Fable 5.1 in coding, reasoning, and vision. In prerelease testing it completed otherwise-infeasible...",
       "expiration_date": null,
@@ -772,6 +772,58 @@
         "input_cache_write": "0.00001",
         "internal_reasoning": null,
         "prompt": "0.000008",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": false,
+        "max_completion_tokens": 128000
+      }
+    },
+    "anthropic/claude-fable-5.2:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude"
+      },
+      "canonical_slug": "anthropic/claude-fable-5.2-20261109",
+      "context_length": 1000000,
+      "created": 1794253781,
+      "default_parameters": {},
+      "description": "Claude Fable 5.2 is Anthropic's most capable model for the most demanding technical work, with gains over Fable 5.1 in coding, reasoning, and vision. In prerelease testing it completed otherwise-infeasible...",
+      "expiration_date": null,
+      "id": "anthropic/claude-fable-5.2:batch",
+      "name": "Anthropic: Claude Fable 5.2 (batch)",
+      "pricing": {
+        "completion": "0.00002",
+        "image": null,
+        "input_cache_read": "0.0000001",
+        "input_cache_write": "0.000005",
+        "internal_reasoning": null,
+        "prompt": "0.000004",
         "request": null,
         "web_search": "0.01"
       },
@@ -16780,12 +16832,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.00000013",
+        "completion": "0.00000009",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.000000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000003",
+        "prompt": "0.000000018",
         "request": null,
         "web_search": null
       },
@@ -16815,7 +16867,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 117964
+        "max_completion_tokens": 32768
       }
     },
     "openai/gpt-oss-20b:batch": {
