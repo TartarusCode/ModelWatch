@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T15:01:49.796128Z",
+  "generated_at": "2026-11-09T15:31:39.404191Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -8428,62 +8428,6 @@
         "max_completion_tokens": 14745
       }
     },
-    "minimax/minimax-m1": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "minimax/minimax-m1",
-      "context_length": 1000000,
-      "created": 1750200414,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": null
-      },
-      "description": "MiniMax-M1 is a large-scale, open-weight reasoning model designed for extended context and high-efficiency inference. It leverages a hybrid Mixture-of-Experts (MoE) architecture paired with a custom \"lightning attention\" mechanism, allowing it...",
-      "expiration_date": null,
-      "id": "minimax/minimax-m1",
-      "name": "MiniMax: MiniMax M1",
-      "pricing": {
-        "completion": "0.0000022",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000055",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 1000000,
-        "is_moderated": false,
-        "max_completion_tokens": 40000
-      }
-    },
     "minimax/minimax-m2.5": {
       "architecture": {
         "input_modalities": [
@@ -8497,7 +8441,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "minimax/minimax-m2.5-20260211",
-      "context_length": 204800,
+      "context_length": 200000,
       "created": 1770908502,
       "default_parameters": {
         "frequency_penalty": null,
@@ -8562,7 +8506,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "minimax/minimax-m2.7-20260318",
-      "context_length": 204800,
+      "context_length": 196608,
       "created": 1773836697,
       "default_parameters": {
         "frequency_penalty": null,
@@ -8588,19 +8532,15 @@
       },
       "pricing_schedule": null,
       "supported_parameters": [
-        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
         "response_format",
         "seed",
         "stop",
         "temperature",
         "tool_choice",
         "tools",
-        "top_k",
         "top_p"
       ],
       "top_provider": {
@@ -8699,12 +8639,12 @@
       "id": "minimax/minimax-m3.1-flash",
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.0000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.000000075",
         "request": null,
         "web_search": null
       },
@@ -24529,7 +24469,7 @@
         "input_cache_read": "0.000000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000006",
+        "prompt": "0.0000000075",
         "request": null,
         "web_search": null
       },
