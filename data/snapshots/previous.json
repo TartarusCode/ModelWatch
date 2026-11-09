@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T20:31:35.726476Z",
+  "generated_at": "2026-11-09T21:01:49.140155Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -16832,12 +16832,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.00000013",
+        "completion": "0.00000009",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.000000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000003",
+        "prompt": "0.000000018",
         "request": null,
         "web_search": null
       },
@@ -16867,7 +16867,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 117964
+        "max_completion_tokens": 32768
       }
     },
     "openai/gpt-oss-20b:batch": {
@@ -21162,10 +21162,15 @@
       },
       "pricing_schedule": null,
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "logprobs",
         "max_tokens",
+        "min_p",
+        "presence_penalty",
         "reasoning",
+        "repetition_penalty",
         "response_format",
         "seed",
         "stop",
