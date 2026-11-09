@@ -17883,9 +17883,26 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.093000",
+      "detected_at": "2026-11-09T17:01:44.262451Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.180000",
+      "field": "completion",
+      "model_id": "z-ai/glm-5.3-flash:batch",
+      "new_per_million_usd": "0.087000",
+      "old_per_million_usd": "0.180000",
+      "pct_change": -0.5166666666666667,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-11-09T16:31:43.077584Z",
+  "generated_at": "2026-11-09T17:01:52.897801Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -38682,15 +38699,15 @@
     },
     "z-ai/glm-5.3-flash:batch": {
       "completion": {
-        "anchor": "0.18000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.087000000",
+        "confirmed_at": "2026-11-09T17:01:44.262451Z",
+        "confirmed_price": "0.087000000",
         "direction": "cut",
         "episode_start_price": "0.18000000",
-        "pending_builds": 1,
-        "pending_price": "0.087000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.018000000",
