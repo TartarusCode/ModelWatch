@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T14:31:53.108232Z",
+  "generated_at": "2026-11-09T15:01:49.796128Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -20530,6 +20530,64 @@
       ],
       "top_provider": {
         "context_length": 1000000,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
+      }
+    },
+    "qwen/qwen3.8-max-0902:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen"
+      },
+      "canonical_slug": "qwen/qwen3.8-max-20260902",
+      "context_length": 262144,
+      "created": 1788469704,
+      "default_parameters": {},
+      "description": "Qwen3.8 Max 0902 is an updated snapshot of Qwen3.8 Max from Alibaba's Qwen team. It is a 2.4-trillion-parameter mixture-of-experts model that accepts text, image, and video input and returns text,...",
+      "expiration_date": null,
+      "id": "qwen/qwen3.8-max-0902:batch",
+      "name": "Qwen: Qwen3.8 Max (0902) (batch)",
+      "pricing": {
+        "completion": "0.00000345",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000115",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
