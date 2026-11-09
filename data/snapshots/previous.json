@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T19:01:40.361052Z",
+  "generated_at": "2026-11-09T19:31:40.452799Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -721,6 +721,57 @@
         "input_cache_write": "0.00000625",
         "internal_reasoning": null,
         "prompt": "0.000005",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1000000,
+        "is_moderated": true,
+        "max_completion_tokens": 128000
+      }
+    },
+    "anthropic/claude-fable-5.2": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude"
+      },
+      "canonical_slug": "anthropic/claude-fable-5.2-20261109",
+      "context_length": 1000000,
+      "created": 1794015854,
+      "default_parameters": {},
+      "description": "Claude Fable 5.2 is Anthropic's most capable model for the most demanding technical work, with gains over Fable 5.1 in coding, reasoning, and vision. In prerelease testing it completed otherwise-infeasible...",
+      "expiration_date": null,
+      "id": "anthropic/claude-fable-5.2",
+      "name": "Anthropic: Claude Fable 5.2",
+      "pricing": {
+        "completion": "0.00004",
+        "image": null,
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.00001",
+        "internal_reasoning": null,
+        "prompt": "0.000008",
         "request": null,
         "web_search": "0.01"
       },
@@ -3605,12 +3656,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001788024",
+        "completion": "0.000001784544",
         "image": null,
-        "input_cache_read": "0.000000074501",
+        "input_cache_read": "0.000000074356",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000894012",
+        "prompt": "0.000000892272",
         "request": null,
         "web_search": null
       },
@@ -6250,12 +6301,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.000000255",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.0000000425",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.0000000765",
         "request": null,
         "web_search": null
       },
@@ -11535,7 +11586,7 @@
       "id": "nvidia/nemotron-3.5-super-vl",
       "name": "NVIDIA: Nemotron 3.5 Super VL",
       "pricing": {
-        "completion": "0.0000005",
+        "completion": "0.00000047",
         "image": null,
         "input_cache_read": "0.00000002",
         "input_cache_write": null,
@@ -16729,12 +16780,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.00000009",
+        "completion": "0.00000013",
         "image": null,
-        "input_cache_read": "0.000000009",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000018",
+        "prompt": "0.00000003",
         "request": null,
         "web_search": null
       },
@@ -16764,7 +16815,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 117964
       }
     },
     "openai/gpt-oss-20b:batch": {
