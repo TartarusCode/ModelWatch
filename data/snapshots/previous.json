@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T23:01:44.365671Z",
+  "generated_at": "2026-11-09T23:31:46.884717Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3708,12 +3708,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001750788",
+        "completion": "0.000001743828",
         "image": null,
-        "input_cache_read": "0.0000000729495",
+        "input_cache_read": "0.0000000726595",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000875394",
+        "prompt": "0.000000871914",
         "request": null,
         "web_search": null
       },
@@ -6236,7 +6236,7 @@
       "id": "google/gemma-3-27b-it",
       "name": "Google: Gemma 3 27B",
       "pricing": {
-        "completion": "0.00000045",
+        "completion": "0.00000035",
         "image": null,
         "input_cache_read": "0.00000004",
         "input_cache_write": null,
