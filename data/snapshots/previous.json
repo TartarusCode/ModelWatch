@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T00:01:45.604104Z",
+  "generated_at": "2026-11-10T00:31:40.771365Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6236,7 +6236,7 @@
       "id": "google/gemma-3-27b-it",
       "name": "Google: Gemma 3 27B",
       "pricing": {
-        "completion": "0.00000035",
+        "completion": "0.00000045",
         "image": null,
         "input_cache_read": "0.00000004",
         "input_cache_write": null,
@@ -6353,12 +6353,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000255",
+        "completion": "0.0000001",
         "image": null,
-        "input_cache_read": "0.0000000425",
+        "input_cache_read": "0.000000046",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000765",
+        "prompt": "0.00000008",
         "request": null,
         "web_search": null
       },
@@ -6386,9 +6386,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 256000,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 128000
       }
     },
     "google/gemma-4-26b-a4b-it:free": {
@@ -7770,12 +7770,12 @@
       "id": "meta-llama/llama-3.3-70b-instruct",
       "name": "Meta: Llama 3.3 70B Instruct",
       "pricing": {
-        "completion": "0.00000079",
+        "completion": "0.00000071",
         "image": null,
-        "input_cache_read": "0.000000295",
+        "input_cache_read": "0.00000071",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000059",
+        "prompt": "0.00000071",
         "request": null,
         "web_search": null
       },
@@ -7800,9 +7800,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": 32768
+        "max_completion_tokens": 115200
       }
     },
     "meta-llama/llama-4-maverick": {
@@ -18488,12 +18488,12 @@
       "id": "qwen/qwen3-14b",
       "name": "Qwen: Qwen3 14B",
       "pricing": {
-        "completion": "0.00000024",
+        "completion": "0.00000022",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000012",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -18522,7 +18522,7 @@
       "top_provider": {
         "context_length": 40960,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 36864
       }
     },
     "qwen/qwen3-235b-a22b-2507": {
@@ -21986,12 +21986,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22199,12 +22199,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
