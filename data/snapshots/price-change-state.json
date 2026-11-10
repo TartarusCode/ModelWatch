@@ -17951,9 +17951,111 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.100000",
+      "detected_at": "2026-11-10T22:01:38.190243Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.400000",
+      "field": "prompt",
+      "model_id": "mancer/weaver",
+      "new_per_million_usd": "0.300000",
+      "old_per_million_usd": "0.400000",
+      "pct_change": -0.25,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.250000",
+      "detected_at": "2026-11-10T22:01:38.190243Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.750000",
+      "field": "completion",
+      "model_id": "mancer/weaver",
+      "new_per_million_usd": "0.500000",
+      "old_per_million_usd": "0.750000",
+      "pct_change": -0.3333333333333333,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.100000",
+      "detected_at": "2026-11-10T22:01:38.190243Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.400000",
+      "field": "input_cache_read",
+      "model_id": "mancer/weaver",
+      "new_per_million_usd": "0.300000",
+      "old_per_million_usd": "0.400000",
+      "pct_change": -0.25,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.050000",
+      "detected_at": "2026-11-10T22:01:38.190243Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.350000",
+      "field": "prompt",
+      "model_id": "undi95/remm-slerp-l2-13b",
+      "new_per_million_usd": "0.300000",
+      "old_per_million_usd": "0.350000",
+      "pct_change": -0.14285714285714285,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.150000",
+      "detected_at": "2026-11-10T22:01:38.190243Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.650000",
+      "field": "completion",
+      "model_id": "undi95/remm-slerp-l2-13b",
+      "new_per_million_usd": "0.500000",
+      "old_per_million_usd": "0.650000",
+      "pct_change": -0.23076923076923078,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.150000",
+      "detected_at": "2026-11-10T22:01:38.190243Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.350000",
+      "field": "input_cache_read",
+      "model_id": "undi95/remm-slerp-l2-13b",
+      "new_per_million_usd": "0.200000",
+      "old_per_million_usd": "0.350000",
+      "pct_change": -0.42857142857142855,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-11-10T21:31:40.566088Z",
+  "generated_at": "2026-11-10T22:01:43.186883Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -21368,7 +21470,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.074501000000",
+        "anchor": "0.0740805000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -25461,37 +25563,37 @@
     },
     "mancer/weaver": {
       "completion": {
-        "anchor": "0.75000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.5000000",
+        "confirmed_at": "2026-11-10T22:01:38.190243Z",
+        "confirmed_price": "0.5000000",
         "direction": "cut",
         "episode_start_price": "0.75000000",
-        "pending_builds": 1,
-        "pending_price": "0.5000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.4000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.3000000",
+        "confirmed_at": "2026-11-10T22:01:38.190243Z",
+        "confirmed_price": "0.3000000",
         "direction": "cut",
         "episode_start_price": "0.4000000",
-        "pending_builds": 1,
-        "pending_price": "0.3000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "prompt": {
-        "anchor": "0.4000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.3000000",
+        "confirmed_at": "2026-11-10T22:01:38.190243Z",
+        "confirmed_price": "0.3000000",
         "direction": "cut",
         "episode_start_price": "0.4000000",
-        "pending_builds": 1,
-        "pending_price": "0.3000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "meituan/longcat-2.0": {
@@ -37544,37 +37646,37 @@
     },
     "undi95/remm-slerp-l2-13b": {
       "completion": {
-        "anchor": "0.65000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.5000000",
+        "confirmed_at": "2026-11-10T22:01:38.190243Z",
+        "confirmed_price": "0.5000000",
         "direction": "cut",
         "episode_start_price": "0.65000000",
-        "pending_builds": 1,
-        "pending_price": "0.5000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.35000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.2000000",
+        "confirmed_at": "2026-11-10T22:01:38.190243Z",
+        "confirmed_price": "0.2000000",
         "direction": "cut",
         "episode_start_price": "0.35000000",
-        "pending_builds": 1,
-        "pending_price": "0.2000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "prompt": {
-        "anchor": "0.35000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.3000000",
+        "confirmed_at": "2026-11-10T22:01:38.190243Z",
+        "confirmed_price": "0.3000000",
         "direction": "cut",
         "episode_start_price": "0.35000000",
-        "pending_builds": 1,
-        "pending_price": "0.3000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "upstage/solar-mini4": {
