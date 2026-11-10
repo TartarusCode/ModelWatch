@@ -1,0 +1,16 @@
+{
+  "model_id": "google/gemini-4-carbon:batch",
+  "points": [
+    {
+      "completion_per_million": "5.000000",
+      "image_per_million": "1.000000",
+      "input_cache_read_per_million": "0.05000000",
+      "input_cache_write_per_million": "0.1875000000",
+      "internal_reasoning_per_million": "5.000000",
+      "prompt_per_million": "1.000000",
+      "recorded_at": "2026-11-10T16:31:29.474684Z",
+      "request_per_million": null,
+      "web_search_per_million": "14000.000"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T16:01:51.237456Z",
+  "generated_at": "2026-11-10T16:31:29.474684Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -5925,6 +5925,130 @@
       "expiration_date": null,
       "id": "google/gemini-4-argon:batch",
       "name": "Google: Gemini 4 Argon (batch)",
+      "pricing": {
+        "completion": "0.000005",
+        "image": "0.000001",
+        "input_cache_read": "0.00000005",
+        "input_cache_write": "0.0000001875",
+        "internal_reasoning": "0.000005",
+        "prompt": "0.000001",
+        "request": null,
+        "web_search": "0.014"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 943718
+      }
+    },
+    "google/gemini-4-carbon": {
+      "architecture": {
+        "input_modalities": [
+          "audio",
+          "file",
+          "image",
+          "text",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file+audio+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Gemini"
+      },
+      "canonical_slug": "google/gemini-4-carbon-20261110",
+      "context_length": 1048576,
+      "created": 1794326871,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Gemini 4 Carbon is a frontier Gemini 4 model from Google for coding, agentic and complex reasoning work. It takes text, image, audio, video and file input, supports long decode...",
+      "expiration_date": null,
+      "id": "google/gemini-4-carbon",
+      "name": "Google: Gemini 4 Carbon",
+      "pricing": {
+        "completion": "0.00001",
+        "image": "0.000002",
+        "input_cache_read": "0.0000001",
+        "input_cache_write": "0.0000001875",
+        "internal_reasoning": "0.00001",
+        "prompt": "0.000002",
+        "request": null,
+        "web_search": "0.014"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 943718
+      }
+    },
+    "google/gemini-4-carbon:batch": {
+      "architecture": {
+        "input_modalities": [
+          "audio",
+          "file",
+          "image",
+          "text",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file+audio+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Gemini"
+      },
+      "canonical_slug": "google/gemini-4-carbon-20261110",
+      "context_length": 1048576,
+      "created": 1794326871,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Gemini 4 Carbon is a frontier Gemini 4 model from Google for coding, agentic and complex reasoning work. It takes text, image, audio, video and file input, supports long decode...",
+      "expiration_date": null,
+      "id": "google/gemini-4-carbon:batch",
+      "name": "Google: Gemini 4 Carbon (batch)",
       "pricing": {
         "completion": "0.000005",
         "image": "0.000001",
@@ -22043,12 +22167,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.000000528",
+        "completion": "0.00000033",
         "image": null,
-        "input_cache_read": "0.000000033",
+        "input_cache_read": "0.000000020625",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000132",
+        "prompt": "0.0000000825",
         "request": null,
         "web_search": null
       },
@@ -22256,12 +22380,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.000002501",
+        "completion": "0.0000022509",
         "image": null,
-        "input_cache_read": "0.000000042",
+        "input_cache_read": "0.0000000378",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000834",
+        "prompt": "0.0000007506",
         "request": null,
         "web_search": null
       },
@@ -24690,10 +24814,10 @@
       "pricing": {
         "completion": "0.0000068",
         "image": null,
-        "input_cache_read": "0.0000000051",
+        "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000061",
+        "prompt": "0.000000007",
         "request": null,
         "web_search": null
       },
