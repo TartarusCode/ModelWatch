@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T21:01:53.767800Z",
+  "generated_at": "2026-11-10T21:31:40.566088Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3806,12 +3806,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001794636",
+        "completion": "0.000001788024",
         "image": null,
-        "input_cache_read": "0.0000000747765",
+        "input_cache_read": "0.000000074501",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000897318",
+        "prompt": "0.000000894012",
         "request": null,
         "web_search": null
       },
@@ -7681,12 +7681,12 @@
       "id": "mancer/weaver",
       "name": "Mancer: Weaver (alpha)",
       "pricing": {
-        "completion": "0.00000075",
+        "completion": "0.0000005",
         "image": null,
-        "input_cache_read": "0.0000004",
+        "input_cache_read": "0.0000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000004",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -23157,12 +23157,12 @@
       "id": "undi95/remm-slerp-l2-13b",
       "name": "ReMM SLERP 13B",
       "pricing": {
-        "completion": "0.00000065",
+        "completion": "0.0000005",
         "image": null,
-        "input_cache_read": "0.00000035",
+        "input_cache_read": "0.0000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000035",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
