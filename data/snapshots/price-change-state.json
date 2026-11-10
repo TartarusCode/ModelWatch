@@ -17936,7 +17936,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-10T03:32:18.877271Z",
+  "generated_at": "2026-11-10T04:01:53.178235Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -21503,6 +21503,41 @@
       },
       "prompt": {
         "anchor": "0.006000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      }
+    },
+    "deepseek/deepseek-v4.1-flash-1017:batch": {
+      "completion": {
+        "anchor": "0.2000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_read": {
+        "anchor": "0.002000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt": {
+        "anchor": "0.011000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -27830,6 +27865,30 @@
         "status": "idle"
       }
     },
+    "morph/morph-v3-fast:batch": {
+      "completion": {
+        "anchor": "0.6000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt": {
+        "anchor": "0.4000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      }
+    },
     "morph/morph-v3-large": {
       "completion": {
         "anchor": "1.9000000",
@@ -27844,6 +27903,30 @@
       },
       "prompt": {
         "anchor": "0.9000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      }
+    },
+    "morph/morph-v3-large:batch": {
+      "completion": {
+        "anchor": "0.95000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt": {
+        "anchor": "0.45000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
