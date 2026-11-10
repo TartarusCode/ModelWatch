@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T19:01:26.003859Z",
+  "generated_at": "2026-11-10T19:31:50.246648Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -2295,6 +2295,104 @@
         "context_length": 1000000,
         "is_moderated": true,
         "max_completion_tokens": 128000
+      }
+    },
+    "baidu/ernie-5.5-flash-preview": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "baidu/ernie-5.5-flash-preview-20261110",
+      "context_length": 1024000,
+      "created": 1794333533,
+      "default_parameters": {},
+      "description": "ERNIE 5.5 Flash Preview is the latest foundation model in the ERNIE family, with comprehensive improvements in coding, agentic capabilities, knowledge work, and deep research. It has 280 billion total...",
+      "expiration_date": null,
+      "id": "baidu/ernie-5.5-flash-preview",
+      "name": "Baidu Qianfan: ERNIE-5.5-Flash-Preview",
+      "pricing": {
+        "completion": "0.00000113",
+        "image": null,
+        "input_cache_read": "0.000000028",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000028",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1024000,
+        "is_moderated": false,
+        "max_completion_tokens": 921600
+      }
+    },
+    "baidu/ernie-light-dt-1.0-intl": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "baidu/ernie-light-dt-1.0-intl-20261110",
+      "context_length": 1024000,
+      "created": 1794331260,
+      "default_parameters": {},
+      "description": "ERNIE-Light-DT-1.0 is based on open-source GLM models and includes research findings from Baidu Search's Lightning large model. It features Baidu Sparse Attention (BSA), a unique sparse attention mechanism developed by...",
+      "expiration_date": null,
+      "id": "baidu/ernie-light-dt-1.0-intl",
+      "name": "Baidu Qianfan: ERNIE-Light-DT-1.0",
+      "pricing": {
+        "completion": "0.00000394",
+        "image": null,
+        "input_cache_read": "0.000000113",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000113",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1024000,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
       }
     },
     "bytedance-seed/seed-1.6": {
@@ -25073,10 +25171,10 @@
       "pricing": {
         "completion": "0.000000061",
         "image": null,
-        "input_cache_read": "0.000000016",
+        "input_cache_read": "0.000000018",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000037",
+        "prompt": "0.000000042",
         "request": null,
         "web_search": null
       },

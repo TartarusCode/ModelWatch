@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-11-10T19:01:26.003859Z",
+  "generated_at": "2026-11-10T19:31:50.246648Z",
   "models": [
+    {
+      "canonical_slug": "baidu/ernie-5.5-flash-preview-20261110",
+      "created": 1794333533,
+      "detected_at": "2026-11-10T19:31:42.984108Z",
+      "model_id": "baidu/ernie-5.5-flash-preview",
+      "name": "Baidu Qianfan: ERNIE-5.5-Flash-Preview"
+    },
+    {
+      "canonical_slug": "baidu/ernie-light-dt-1.0-intl-20261110",
+      "created": 1794331260,
+      "detected_at": "2026-11-10T19:31:42.984108Z",
+      "model_id": "baidu/ernie-light-dt-1.0-intl",
+      "name": "Baidu Qianfan: ERNIE-Light-DT-1.0"
+    },
     {
       "canonical_slug": "google/gemini-4-carbon-20261110",
       "created": 1794326871,
@@ -35,20 +49,6 @@
       "detected_at": "2026-11-09T20:01:49.844061Z",
       "model_id": "anthropic/claude-fable-5.2:batch",
       "name": "Anthropic: Claude Fable 5.2 (batch)"
-    },
-    {
-      "canonical_slug": "anthropic/claude-fable-5.2-20261109",
-      "created": 1794015854,
-      "detected_at": "2026-11-09T19:31:31.048682Z",
-      "model_id": "anthropic/claude-fable-5.2",
-      "name": "Anthropic: Claude Fable 5.2"
-    },
-    {
-      "canonical_slug": "meta/muse-ember-20261109",
-      "created": 1794247648,
-      "detected_at": "2026-11-09T19:01:36.194282Z",
-      "model_id": "meta/muse-ember",
-      "name": "Meta: Muse Ember"
     }
   ],
   "window_hours": 24
