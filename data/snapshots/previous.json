@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T13:01:43.501467Z",
+  "generated_at": "2026-11-11T13:31:48.029724Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -2395,118 +2395,6 @@
         "max_completion_tokens": 131072
       }
     },
-    "bytedance-seed/seed-1.6": {
-      "architecture": {
-        "input_modalities": [
-          "image",
-          "text",
-          "video"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+video->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "bytedance-seed/seed-1.6-20250625",
-      "context_length": 262144,
-      "created": 1766504997,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": null
-      },
-      "description": "Seed 1.6 is a general-purpose model released by the ByteDance Seed team. It incorporates multimodal capabilities and adaptive deep thinking with a 256K context window.",
-      "expiration_date": "2026-11-11",
-      "id": "bytedance-seed/seed-1.6",
-      "name": "ByteDance Seed: Seed 1.6",
-      "pricing": {
-        "completion": "0.000002",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000025",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 32768
-      }
-    },
-    "bytedance-seed/seed-1.6-flash": {
-      "architecture": {
-        "input_modalities": [
-          "image",
-          "text",
-          "video"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+video->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "bytedance-seed/seed-1.6-flash-20250625",
-      "context_length": 262144,
-      "created": 1766505011,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "temperature": null,
-        "top_p": null
-      },
-      "description": "Seed 1.6 Flash is an ultra-fast multimodal deep thinking model by ByteDance Seed, supporting both text and visual understanding. It features a 256k context window and can generate outputs of...",
-      "expiration_date": "2026-11-11",
-      "id": "bytedance-seed/seed-1.6-flash",
-      "name": "ByteDance Seed: Seed 1.6 Flash",
-      "pricing": {
-        "completion": "0.0000003",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.000000075",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 32768
-      }
-    },
     "bytedance-seed/seed-2-1-turbo": {
       "architecture": {
         "input_modalities": [
@@ -2557,59 +2445,6 @@
         "context_length": 262144,
         "is_moderated": false,
         "max_completion_tokens": 235929
-      }
-    },
-    "bytedance-seed/seed-2.0-code": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "video"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+video->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "bytedance-seed/seed-2.0-code-20260730",
-      "context_length": 262144,
-      "created": 1786550701,
-      "default_parameters": {},
-      "description": "Seed 2.0 Code is a model from ByteDance Seed optimized for agentic coding. It is suited for frontend development, multilingual programming tasks, and coding-agent workflows in tools such as Claude...",
-      "expiration_date": "2026-11-11",
-      "id": "bytedance-seed/seed-2.0-code",
-      "name": "ByteDance Seed: Seed-2.0-Code",
-      "pricing": {
-        "completion": "0.000003",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000005",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "reasoning_effort",
-        "response_format",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 131072
       }
     },
     "bytedance-seed/seed-2.0-lite": {
@@ -3806,12 +3641,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.000001794636",
+        "completion": "0.000001788024",
         "image": null,
-        "input_cache_read": "0.0000000747765",
+        "input_cache_read": "0.000000074501",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000897318",
+        "prompt": "0.000000894012",
         "request": null,
         "web_search": null
       },
@@ -13144,7 +12979,7 @@
         "top_p": null
       },
       "description": "GPT-5 is OpenAI’s most advanced model, offering major improvements in reasoning, code quality, and user experience. It is optimized for complex tasks that require step-by-step reasoning, instruction following, and accuracy...",
-      "expiration_date": null,
+      "expiration_date": "2026-12-11",
       "id": "openai/gpt-5",
       "name": "OpenAI: GPT-5",
       "pricing": {
@@ -13201,7 +13036,7 @@
         "top_p": null
       },
       "description": "[GPT-5](https://openrouter.ai/openai/gpt-5) Image combines OpenAI's GPT-5 model with state-of-the-art image generation capabilities. It offers major improvements in reasoning, code quality, and user experience while incorporating GPT Image 1's superior instruction following,...",
-      "expiration_date": null,
+      "expiration_date": "2026-12-11",
       "id": "openai/gpt-5-image",
       "name": "OpenAI: GPT-5 Image",
       "pricing": {
@@ -13317,7 +13152,7 @@
         "top_p": null
       },
       "description": "GPT-5 Mini is a compact version of GPT-5, designed to handle lighter-weight reasoning tasks. It provides the same instruction-following and safety-tuning benefits as GPT-5, but with reduced latency and cost....",
-      "expiration_date": null,
+      "expiration_date": "2026-12-11",
       "id": "openai/gpt-5-mini",
       "name": "OpenAI: GPT-5 Mini",
       "pricing": {
@@ -13376,7 +13211,7 @@
         "top_p": null
       },
       "description": "GPT-5 Mini is a compact version of GPT-5, designed to handle lighter-weight reasoning tasks. It provides the same instruction-following and safety-tuning benefits as GPT-5, but with reduced latency and cost....",
-      "expiration_date": null,
+      "expiration_date": "2026-12-11",
       "id": "openai/gpt-5-mini:batch",
       "name": "OpenAI: GPT-5 Mini (batch)",
       "pricing": {
@@ -13434,7 +13269,7 @@
         "top_p": null
       },
       "description": "GPT-5-Nano is the smallest and fastest variant in the GPT-5 system, optimized for developer tools, rapid interactions, and ultra-low latency environments. While limited in reasoning depth compared to its larger...",
-      "expiration_date": null,
+      "expiration_date": "2026-12-11",
       "id": "openai/gpt-5-nano",
       "name": "OpenAI: GPT-5 Nano",
       "pricing": {
@@ -13493,7 +13328,7 @@
         "top_p": null
       },
       "description": "GPT-5-Nano is the smallest and fastest variant in the GPT-5 system, optimized for developer tools, rapid interactions, and ultra-low latency environments. While limited in reasoning depth compared to its larger...",
-      "expiration_date": null,
+      "expiration_date": "2026-12-11",
       "id": "openai/gpt-5-nano:batch",
       "name": "OpenAI: GPT-5 Nano (batch)",
       "pricing": {
@@ -13548,7 +13383,7 @@
         "top_p": null
       },
       "description": "GPT-5 Pro is OpenAI’s most advanced model, offering major improvements in reasoning, code quality, and user experience. It is optimized for complex tasks that require step-by-step reasoning, instruction following, and...",
-      "expiration_date": null,
+      "expiration_date": "2026-12-11",
       "id": "openai/gpt-5-pro",
       "name": "OpenAI: GPT-5 Pro",
       "pricing": {
@@ -13603,7 +13438,7 @@
         "top_p": null
       },
       "description": "GPT-5 Pro is OpenAI’s most advanced model, offering major improvements in reasoning, code quality, and user experience. It is optimized for complex tasks that require step-by-step reasoning, instruction following, and...",
-      "expiration_date": null,
+      "expiration_date": "2026-12-11",
       "id": "openai/gpt-5-pro:batch",
       "name": "OpenAI: GPT-5 Pro (batch)",
       "pricing": {
@@ -15803,7 +15638,7 @@
         "top_p": null
       },
       "description": "GPT-5 is OpenAI’s most advanced model, offering major improvements in reasoning, code quality, and user experience. It is optimized for complex tasks that require step-by-step reasoning, instruction following, and accuracy...",
-      "expiration_date": null,
+      "expiration_date": "2026-12-11",
       "id": "openai/gpt-5:batch",
       "name": "OpenAI: GPT-5 (batch)",
       "pricing": {
@@ -17388,7 +17223,7 @@
       "created": 1744823457,
       "default_parameters": {},
       "description": "o3 is a well-rounded and powerful model across domains. It sets a new standard for math, science, coding, and visual reasoning tasks. It also excels at technical writing and instruction-following....",
-      "expiration_date": null,
+      "expiration_date": "2026-12-11",
       "id": "openai/o3",
       "name": "OpenAI: o3",
       "pricing": {
@@ -17496,7 +17331,7 @@
         "top_p": null
       },
       "description": "The o-series of models are trained with reinforcement learning to think before they answer and perform complex reasoning. The o3-pro model uses more compute to think harder and provide consistently...",
-      "expiration_date": null,
+      "expiration_date": "2026-12-11",
       "id": "openai/o3-pro",
       "name": "OpenAI: o3 Pro",
       "pricing": {
@@ -17545,7 +17380,7 @@
       "created": 1744823457,
       "default_parameters": {},
       "description": "o3 is a well-rounded and powerful model across domains. It sets a new standard for math, science, coding, and visual reasoning tasks. It also excels at technical writing and instruction-following....",
-      "expiration_date": null,
+      "expiration_date": "2026-12-11",
       "id": "openai/o3:batch",
       "name": "OpenAI: o3 (batch)",
       "pricing": {
@@ -25025,7 +24860,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-5.3-20260816",
-      "context_length": 1050000,
+      "context_length": 1048576,
       "created": 1787086655,
       "default_parameters": {
         "temperature": 1,
