@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T07:31:46.624727Z",
+  "generated_at": "2026-11-11T08:01:39.993590Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -2297,7 +2297,7 @@
         "max_completion_tokens": 128000
       }
     },
-    "baidu/ernie-5.5-flash-preview": {
+    "baidu/ernie-5.5-flash-preview:free": {
       "architecture": {
         "input_modalities": [
           "text"
@@ -2315,15 +2315,15 @@
       "default_parameters": {},
       "description": "ERNIE 5.5 Flash Preview is the latest foundation model in the ERNIE family, with comprehensive improvements in coding, agentic capabilities, knowledge work, and deep research. It has 280 billion total...",
       "expiration_date": null,
-      "id": "baidu/ernie-5.5-flash-preview",
-      "name": "Baidu: ERNIE-5.5-Flash-Preview",
+      "id": "baidu/ernie-5.5-flash-preview:free",
+      "name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
       "pricing": {
-        "completion": "0.00000113",
+        "completion": "0",
         "image": null,
-        "input_cache_read": "0.000000028",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000028",
+        "prompt": "0",
         "request": null,
         "web_search": null
       },
@@ -25168,10 +25168,10 @@
       "pricing": {
         "completion": "0.000000061",
         "image": null,
-        "input_cache_read": "0.000000018",
+        "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000042",
+        "prompt": "0.000000047",
         "request": null,
         "web_search": null
       },
