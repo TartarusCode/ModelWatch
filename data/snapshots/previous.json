@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T00:01:43.194005Z",
+  "generated_at": "2026-11-11T00:31:40.508974Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -1603,7 +1603,7 @@
       ],
       "top_provider": {
         "context_length": 1000000,
-        "is_moderated": false,
+        "is_moderated": true,
         "max_completion_tokens": 128000
       }
     },
@@ -3564,12 +3564,12 @@
       "id": "deepseek/deepseek-v4-flash",
       "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "pricing": {
-        "completion": "0.000000182",
+        "completion": "0.00000018",
         "image": null,
-        "input_cache_read": "0.0000000182",
+        "input_cache_read": "0.000000018",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000091",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
@@ -3599,9 +3599,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048575,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943717
+        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4-flash-0731": {
@@ -3929,12 +3929,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.000000567",
         "image": null,
-        "input_cache_read": "0.000000006",
+        "input_cache_read": "0.000000018",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.000000051",
         "request": null,
         "web_search": null
       },
@@ -7350,6 +7350,58 @@
         "max_completion_tokens": 8192
       }
     },
+    "kt/midm-k-3.0-pro": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "kt/midm-k-3.0-pro",
+      "context_length": 261795,
+      "created": 1793897701,
+      "default_parameters": {},
+      "description": "Mi:dm K 3.0 Pro is a Mixture-of-Experts reasoning model from KT, with 120B total and 12B active parameters. It uses a hybrid architecture that mixes Mamba, MoE and attention layers.",
+      "expiration_date": null,
+      "id": "kt/midm-k-3.0-pro",
+      "name": "KT: Mi:dm K 3.0 Pro",
+      "pricing": {
+        "completion": "0.0000008",
+        "image": null,
+        "input_cache_read": "0.00000004",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000002",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 261795,
+        "is_moderated": false,
+        "max_completion_tokens": 235615
+      }
+    },
     "liquid/lfm-2.5-2.6b": {
       "architecture": {
         "input_modalities": [
@@ -8839,12 +8891,12 @@
       "id": "minimax/minimax-m2.5",
       "name": "MiniMax: MiniMax M2.5",
       "pricing": {
-        "completion": "0.00000108",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000027",
+        "input_cache_read": "0.00000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000027",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -8871,9 +8923,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 200000,
+        "context_length": 65536,
         "is_moderated": false,
-        "max_completion_tokens": 128000
+        "max_completion_tokens": 58982
       }
     },
     "minimax/minimax-m2.7": {
@@ -11209,6 +11261,58 @@
         "max_completion_tokens": 131072
       }
     },
+    "motif-technologies/motif-3": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "motif-technologies/motif-3",
+      "context_length": 262144,
+      "created": 1793655334,
+      "default_parameters": {},
+      "description": "Motif 3 is a Mixture-of-Experts language model from Motif Technologies, with 314B total and 13.2B active parameters. It is a general-purpose multilingual model for English and Korean, particularly strong at...",
+      "expiration_date": null,
+      "id": "motif-technologies/motif-3",
+      "name": "Motif Technologies: Motif 3",
+      "pricing": {
+        "completion": "0.0000012",
+        "image": null,
+        "input_cache_read": "0.00000006",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000003",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 235929
+      }
+    },
     "nex-agi/nex-n2.5-mini": {
       "architecture": {
         "input_modalities": [
@@ -11655,6 +11759,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -11669,6 +11774,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -15317,7 +15423,7 @@
       ],
       "top_provider": {
         "context_length": 1050000,
-        "is_moderated": false,
+        "is_moderated": true,
         "max_completion_tokens": 128000
       }
     },
@@ -22211,12 +22317,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22424,12 +22530,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
@@ -23220,16 +23326,20 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logprobs",
         "max_tokens",
         "parallel_tool_calls",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
+        "repetition_penalty",
         "response_format",
         "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -24732,12 +24842,12 @@
       "id": "z-ai/glm-5.1",
       "name": "Z.ai: GLM 5.1",
       "pricing": {
-        "completion": "0.0000044",
+        "completion": "0.00000418",
         "image": null,
-        "input_cache_read": "0.00000026",
+        "input_cache_read": "0.000000247",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000014",
+        "prompt": "0.00000133",
         "request": null,
         "web_search": null
       },
@@ -24764,7 +24874,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 202752,
+        "context_length": 202745,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
