@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T16:03:37.029339Z",
+  "generated_at": "2026-11-11T16:33:29.514698Z",
   "models": [
     {
       "canonical_slug": "baidu/ernie-5.5-flash-preview-20261110",
@@ -35,20 +35,6 @@
       "detected_at": "2026-11-10T19:31:42.984108Z",
       "model_id": "baidu/ernie-light-dt-1.0-intl",
       "name": "Baidu Qianfan: ERNIE-Light-DT-1.0"
-    },
-    {
-      "canonical_slug": "google/gemini-4-carbon-20261110",
-      "created": 1794326871,
-      "detected_at": "2026-11-10T16:31:26.696264Z",
-      "model_id": "google/gemini-4-carbon",
-      "name": "Google: Gemini 4 Carbon"
-    },
-    {
-      "canonical_slug": "google/gemini-4-carbon-20261110",
-      "created": 1794326871,
-      "detected_at": "2026-11-10T16:31:26.696264Z",
-      "model_id": "google/gemini-4-carbon:batch",
-      "name": "Google: Gemini 4 Carbon (batch)"
     }
   ],
   "window_hours": 24
