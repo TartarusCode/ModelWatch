@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T22:01:59.225899Z",
+  "generated_at": "2026-11-12T22:31:55.516571Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6707,12 +6707,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.00000028",
+        "completion": "0.000000255",
         "image": null,
-        "input_cache_read": "0.000000049",
+        "input_cache_read": "0.0000000425",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.0000000765",
         "request": null,
         "web_search": null
       },
@@ -6740,9 +6740,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 256000,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 128000
+        "max_completion_tokens": 235929
       }
     },
     "google/gemma-4-26b-a4b-it:free": {
@@ -11195,9 +11195,9 @@
       "id": "moonshotai/kimi-k3.1-pro",
       "name": "MoonshotAI: Kimi K3.1 Pro",
       "pricing": {
-        "completion": "0.0000087856",
+        "completion": "0.0000084114",
         "image": null,
-        "input_cache_read": "0.00000019",
+        "input_cache_read": "0.0000002",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000002375",
@@ -20301,12 +20301,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.00000014",
+        "completion": "0.000000181",
         "image": null,
-        "input_cache_read": "0.000000085",
+        "input_cache_read": "0.000000111",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000095",
+        "prompt": "0.000000123",
         "request": null,
         "web_search": null
       },
