@@ -137,23 +137,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "0.186000",
-      "detected_at": "2026-11-05T05:31:27.660921Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.150000",
-      "field": "completion",
-      "model_id": "deepseek/deepseek-v4.1-flash:batch",
-      "new_per_million_usd": "0.336000",
-      "old_per_million_usd": "0.150000",
-      "pct_change": 1.24,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "0.100000",
       "detected_at": "2026-11-09T04:01:37.256662Z",
       "direction": "hike",
@@ -17864,9 +17847,9 @@
       "pct_change": 1.24,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-11-12T05:31:33.214287Z",
+      "settled_per_million_usd": "0.336000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -19043,7 +19026,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-12T05:01:41.605025Z",
+  "generated_at": "2026-11-12T05:31:38.686035Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "-0.080000",
@@ -19197,6 +19180,23 @@
       "recovered_per_million_usd": null,
       "settled_at": "2026-11-12T01:01:49.204066Z",
       "settled_per_million_usd": "0.170000",
+      "status": "settled",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.186000",
+      "detected_at": "2026-11-05T05:31:27.660921Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.150000",
+      "field": "completion",
+      "model_id": "deepseek/deepseek-v4.1-flash:batch",
+      "new_per_million_usd": "0.336000",
+      "old_per_million_usd": "0.150000",
+      "pct_change": 1.24,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-11-12T05:31:33.214287Z",
+      "settled_per_million_usd": "0.336000",
       "status": "settled",
       "tier": null
     }
