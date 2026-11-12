@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T05:31:38.686035Z",
+  "generated_at": "2026-11-12T06:01:49.247312Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -10916,12 +10916,12 @@
       "id": "moonshotai/kimi-k3.1-pro",
       "name": "MoonshotAI: Kimi K3.1 Pro",
       "pricing": {
-        "completion": "0.00001",
+        "completion": "0.0000084085",
         "image": null,
         "input_cache_read": "0.0000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000002",
+        "prompt": "0.0000002375",
         "request": null,
         "web_search": null
       },
@@ -10947,6 +10947,59 @@
         "top_k",
         "top_logprobs",
         "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 943718
+      }
+    },
+    "moonshotai/kimi-k3.1-pro:batch": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "moonshotai/kimi-k3.1-pro-20261023",
+      "context_length": 1048576,
+      "created": 1792778188,
+      "default_parameters": {
+        "top_p": 0.95
+      },
+      "description": "Kimi K3.1 Pro is Moonshot AI's flagship open-weight multimodal reasoning model and a post-trained successor to Kimi K3, with a 1M-token context window. It is built for long-horizon coding, 3D...",
+      "expiration_date": null,
+      "id": "moonshotai/kimi-k3.1-pro:batch",
+      "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
+      "pricing": {
+        "completion": "0.000006",
+        "image": null,
+        "input_cache_read": "0.0000001",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000007",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "seed",
+        "stop",
+        "temperature",
+        "top_k"
       ],
       "top_provider": {
         "context_length": 1048576,
@@ -17175,12 +17228,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.00000013",
+        "completion": "0.00000009",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.000000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000003",
+        "prompt": "0.000000018",
         "request": null,
         "web_search": null
       },
@@ -19910,12 +19963,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000077",
+        "completion": "0.00000008",
         "image": null,
-        "input_cache_read": "0.000000047",
+        "input_cache_read": "0.000000049",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000052",
+        "prompt": "0.000000055",
         "request": null,
         "web_search": null
       },
