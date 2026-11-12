@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T18:31:29.764780Z",
+  "generated_at": "2026-11-12T19:02:02.050361Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -2295,6 +2295,59 @@
         "context_length": 1000000,
         "is_moderated": true,
         "max_completion_tokens": 128000
+      }
+    },
+    "apodex/apodex-1.1-mini:free": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "apodex/apodex-1.1-mini-20261001",
+      "context_length": 262144,
+      "created": 1790875335,
+      "default_parameters": {},
+      "description": "Apodex 1.1 Mini is a reasoning-first model from Apodex, built for complex, long-horizon research and forecasting tasks. It works directly with files, data, code, and tools to produce verifiable results,...",
+      "expiration_date": null,
+      "id": "apodex/apodex-1.1-mini:free",
+      "name": "Apodex: Apodex 1.1 Mini (free)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 235929
       }
     },
     "baidu/ernie-5.5-flash-preview:free": {
@@ -7136,6 +7189,114 @@
         "reasoning",
         "repetition_penalty",
         "response_format",
+        "seed",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 32768
+      }
+    },
+    "inclusionai/ling-3.0-flash-fin": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "inclusionai/ling-3.0-flash-fin-20260827",
+      "context_length": 262144,
+      "created": 1787846290,
+      "default_parameters": {},
+      "description": "Ling 3.0 Flash Fin is a finance-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for real-world investment...",
+      "expiration_date": null,
+      "id": "inclusionai/ling-3.0-flash-fin",
+      "name": "inclusionAI: Ling 3.0 Flash Fin",
+      "pricing": {
+        "completion": "0.0000001232",
+        "image": null,
+        "input_cache_read": "0.0000000084",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000000042",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 32768
+      }
+    },
+    "inclusionai/ling-3.0-flash-sante": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "inclusionai/ling-3.0-flash-sante-20260904",
+      "context_length": 262144,
+      "created": 1788545946,
+      "default_parameters": {},
+      "description": "Ling 3.0 Flash Sante is a health and medicine-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for...",
+      "expiration_date": null,
+      "id": "inclusionai/ling-3.0-flash-sante",
+      "name": "inclusionAI: Ling 3.0 Flash Sante",
+      "pricing": {
+        "completion": "0.0000001232",
+        "image": null,
+        "input_cache_read": "0.0000000084",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000000042",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
         "seed",
         "stop",
         "temperature",
@@ -20081,12 +20242,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000192",
+        "completion": "0.000000219",
         "image": null,
-        "input_cache_read": "0.000000118",
+        "input_cache_read": "0.000000134",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000131",
+        "prompt": "0.000000149",
         "request": null,
         "web_search": null
       },
