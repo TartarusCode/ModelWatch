@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T06:01:49.247312Z",
+  "generated_at": "2026-11-12T06:31:51.247364Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3826,12 +3826,12 @@
       "id": "deepseek/deepseek-v4.1-flash-1017",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -17228,12 +17228,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.00000009",
+        "completion": "0.00000013",
         "image": null,
-        "input_cache_read": "0.000000009",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000018",
+        "prompt": "0.00000003",
         "request": null,
         "web_search": null
       },
@@ -19963,12 +19963,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.00000008",
+        "completion": "0.000000072",
         "image": null,
-        "input_cache_read": "0.000000049",
+        "input_cache_read": "0.000000044",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000055",
+        "prompt": "0.000000049",
         "request": null,
         "web_search": null
       },
