@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T09:31:46.583911Z",
+  "generated_at": "2026-11-12T10:01:54.782041Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -17228,12 +17228,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.00000013",
+        "completion": "0.00000009",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.000000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000003",
+        "prompt": "0.000000018",
         "request": null,
         "web_search": null
       },
@@ -19963,12 +19963,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000074",
+        "completion": "0.00000006",
         "image": null,
-        "input_cache_read": "0.000000045",
+        "input_cache_read": "0.000000037",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000005",
+        "prompt": "0.000000041",
         "request": null,
         "web_search": null
       },
@@ -25028,12 +25028,12 @@
       "id": "z-ai/glm-5.2:batch",
       "name": "Z.ai: GLM 5.2 (batch)",
       "pricing": {
-        "completion": "0.000001075",
+        "completion": "0.000000989",
         "image": null,
-        "input_cache_read": "0.000000118",
+        "input_cache_read": "0.000000109",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000035",
+        "prompt": "0.000000322",
         "request": null,
         "web_search": null
       },
@@ -25449,12 +25449,12 @@
       "id": "z-ai/glm-5.3:batch",
       "name": "Z.ai: GLM 5.3 (batch)",
       "pricing": {
-        "completion": "0.000001075",
+        "completion": "0.000000989",
         "image": null,
-        "input_cache_read": "0.000000118",
+        "input_cache_read": "0.000000109",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000035",
+        "prompt": "0.000000322",
         "request": null,
         "web_search": null
       },
