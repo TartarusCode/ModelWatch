@@ -18310,7 +18310,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-12T20:01:55.722672Z",
+  "generated_at": "2026-11-12T20:31:39.997599Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -21012,6 +21012,41 @@
       },
       "prompt": {
         "anchor": "0.42000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      }
+    },
+    "baidu/ernie-light-dt-1.0-intl": {
+      "completion": {
+        "anchor": "3.94000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_read": {
+        "anchor": "0.113000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt": {
+        "anchor": "1.13000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -36181,7 +36216,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.12000000",
+        "anchor": "0.145000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -36192,7 +36227,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.133000000",
+        "anchor": "0.161000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
