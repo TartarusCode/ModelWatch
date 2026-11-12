@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T18:01:58.780316Z",
+  "generated_at": "2026-11-12T18:31:29.764780Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6109,6 +6109,130 @@
         "input_cache_write": "0.0000001875",
         "internal_reasoning": "0.000005",
         "prompt": "0.000001",
+        "request": null,
+        "web_search": "0.014"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 943718
+      }
+    },
+    "google/gemini-4-hydrogen": {
+      "architecture": {
+        "input_modalities": [
+          "audio",
+          "file",
+          "image",
+          "text",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file+audio+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Gemini"
+      },
+      "canonical_slug": "google/gemini-4-hydrogen-20261112",
+      "context_length": 1048576,
+      "created": 1794506460,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Gemini 4 Hydrogen is the high-efficiency workhorse model of the Gemini 4 family from Google, built for high-throughput agentic workflows, coding and multi-model routing at lower cost and latency than...",
+      "expiration_date": null,
+      "id": "google/gemini-4-hydrogen",
+      "name": "Google: Gemini 4 Hydrogen",
+      "pricing": {
+        "completion": "0.0000075",
+        "image": "0.0000015",
+        "input_cache_read": "0.000000075",
+        "input_cache_write": "0.0000000833333333333333",
+        "internal_reasoning": "0.0000075",
+        "prompt": "0.0000015",
+        "request": null,
+        "web_search": "0.014"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 943718
+      }
+    },
+    "google/gemini-4-hydrogen:batch": {
+      "architecture": {
+        "input_modalities": [
+          "audio",
+          "file",
+          "image",
+          "text",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file+audio+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Gemini"
+      },
+      "canonical_slug": "google/gemini-4-hydrogen-20261112",
+      "context_length": 1048576,
+      "created": 1794506460,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null,
+        "temperature": null,
+        "top_k": null,
+        "top_p": null
+      },
+      "description": "Gemini 4 Hydrogen is the high-efficiency workhorse model of the Gemini 4 family from Google, built for high-throughput agentic workflows, coding and multi-model routing at lower cost and latency than...",
+      "expiration_date": null,
+      "id": "google/gemini-4-hydrogen:batch",
+      "name": "Google: Gemini 4 Hydrogen (batch)",
+      "pricing": {
+        "completion": "0.00000375",
+        "image": "0.00000075",
+        "input_cache_read": "0.0000000375",
+        "input_cache_write": "0.0000000833333333333333",
+        "internal_reasoning": "0.00000375",
+        "prompt": "0.00000075",
         "request": null,
         "web_search": "0.014"
       },
@@ -19957,12 +20081,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000204",
+        "completion": "0.000000192",
         "image": null,
-        "input_cache_read": "0.000000125",
+        "input_cache_read": "0.000000118",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000139",
+        "prompt": "0.000000131",
         "request": null,
         "web_search": null
       },
@@ -25289,11 +25413,17 @@
       },
       "pricing_schedule": null,
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
+        "presence_penalty",
         "reasoning",
         "reasoning_effort",
+        "repetition_penalty",
         "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",

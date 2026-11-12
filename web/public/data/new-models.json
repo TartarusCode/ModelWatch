@@ -1,6 +1,20 @@
 {
-  "generated_at": "2026-11-12T18:01:58.780316Z",
+  "generated_at": "2026-11-12T18:31:29.764780Z",
   "models": [
+    {
+      "canonical_slug": "google/gemini-4-hydrogen-20261112",
+      "created": 1794506460,
+      "detected_at": "2026-11-12T18:31:23.519758Z",
+      "model_id": "google/gemini-4-hydrogen",
+      "name": "Google: Gemini 4 Hydrogen"
+    },
+    {
+      "canonical_slug": "google/gemini-4-hydrogen-20261112",
+      "created": 1794506460,
+      "detected_at": "2026-11-12T18:31:23.519758Z",
+      "model_id": "google/gemini-4-hydrogen:batch",
+      "name": "Google: Gemini 4 Hydrogen (batch)"
+    },
     {
       "canonical_slug": "moonshotai/kimi-k3.1-pro-20261023",
       "created": 1792778188,
