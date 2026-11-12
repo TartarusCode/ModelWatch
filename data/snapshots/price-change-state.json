@@ -17199,9 +17199,9 @@
       "pct_change": 0.2,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-11-12T21:01:54.725903Z",
+      "settled_per_million_usd": "0.300000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -18310,7 +18310,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-12T20:31:39.997599Z",
+  "generated_at": "2026-11-12T21:02:00.069345Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -36216,7 +36216,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.145000000",
+        "anchor": "0.153000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -36227,7 +36227,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.161000000",
+        "anchor": "0.17000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -37090,14 +37090,14 @@
       },
       "prompt": {
         "anchor": "0.3000000",
-        "confirmed_at": "2026-11-05T21:01:52.517024Z",
-        "confirmed_price": "0.3000000",
-        "direction": "hike",
-        "episode_start_price": "0.25000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
         "recovery_builds": 0,
-        "status": "confirmed"
+        "status": "idle"
       }
     },
     "rekaai/reka-edge": {
