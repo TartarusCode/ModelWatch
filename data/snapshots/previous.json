@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T14:01:54.238368Z",
+  "generated_at": "2026-11-12T14:31:29.134538Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3764,12 +3764,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000004",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000004",
+        "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000022",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -4014,12 +4014,12 @@
       "id": "deepseek/deepseek-v4.1-flash-1017:batch",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
       "pricing": {
-        "completion": "0.0000002",
+        "completion": "0.00000015",
         "image": null,
-        "input_cache_read": "0.000000002",
+        "input_cache_read": "0.000000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000011",
+        "prompt": "0.00000005",
         "request": null,
         "web_search": null
       },
@@ -4027,26 +4027,20 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
-        "repetition_penalty",
         "seed",
         "stop",
-        "structured_outputs",
         "temperature",
-        "tool_choice",
-        "tools",
         "top_k",
         "top_p"
       ],
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 384000
       }
     },
     "deepseek/deepseek-v4.1-flash:batch": {
@@ -19963,12 +19957,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000179",
+        "completion": "0.00000025",
         "image": null,
-        "input_cache_read": "0.00000011",
+        "input_cache_read": "0.000000153",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000122",
+        "prompt": "0.00000017",
         "request": null,
         "web_search": null
       },
@@ -25449,12 +25443,12 @@
       "id": "z-ai/glm-5.3:batch",
       "name": "Z.ai: GLM 5.3 (batch)",
       "pricing": {
-        "completion": "0.000000989",
+        "completion": "0.000002",
         "image": null,
-        "input_cache_read": "0.000000109",
+        "input_cache_read": "0.0000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000322",
+        "prompt": "0.00000045",
         "request": null,
         "web_search": null
       },
@@ -25463,7 +25457,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -25478,13 +25471,12 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-5v-turbo": {
