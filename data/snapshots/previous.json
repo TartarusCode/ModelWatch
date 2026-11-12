@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T21:31:53.181103Z",
+  "generated_at": "2026-11-12T22:01:59.225899Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -18394,6 +18394,65 @@
         "max_completion_tokens": 131072
       }
     },
+    "particle-ai/particle-1:free": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "particle-ai/particle-1-20261027",
+      "context_length": 1048576,
+      "created": 1793207893,
+      "default_parameters": {},
+      "description": "Particle-1 is a token-efficient agentic coding model from Particle AI, post-trained on DeepSeek V4.1 Flash. It is suited for software engineering work such as terminal workflows, codebase changes, and data...",
+      "expiration_date": null,
+      "id": "particle-ai/particle-1:free",
+      "name": "Particle AI: Particle-1 (free)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
+      }
+    },
     "perceptron/perceptron-mk1": {
       "architecture": {
         "input_modalities": [
@@ -20242,12 +20301,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000128",
+        "completion": "0.00000014",
         "image": null,
-        "input_cache_read": "0.000000078",
+        "input_cache_read": "0.000000085",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000087",
+        "prompt": "0.000000095",
         "request": null,
         "web_search": null
       },
@@ -23181,6 +23240,7 @@
         "reasoning_effort",
         "repetition_penalty",
         "response_format",
+        "seed",
         "stop",
         "structured_outputs",
         "temperature",
