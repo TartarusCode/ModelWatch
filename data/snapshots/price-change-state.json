@@ -18376,9 +18376,60 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.100000",
+      "detected_at": "2026-11-13T07:01:49.842322Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.200000",
+      "field": "prompt",
+      "model_id": "ricursiveai/ripple-65b-preview",
+      "new_per_million_usd": "0.100000",
+      "old_per_million_usd": "0.200000",
+      "pct_change": -0.5,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.300000",
+      "detected_at": "2026-11-13T07:01:49.842322Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.600000",
+      "field": "completion",
+      "model_id": "ricursiveai/ripple-65b-preview",
+      "new_per_million_usd": "0.300000",
+      "old_per_million_usd": "0.600000",
+      "pct_change": -0.5,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.170395",
+      "detected_at": "2026-11-13T07:01:49.842322Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.079605",
+      "field": "input_cache_read",
+      "model_id": "deepseek/deepseek-v4-pro",
+      "new_per_million_usd": "0.250000",
+      "old_per_million_usd": "0.079605",
+      "pct_change": 2.1405062496074367,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-11-13T06:31:55.086304Z",
+  "generated_at": "2026-11-13T07:01:56.239528Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -21942,15 +21993,15 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.079605000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.25000000",
+        "confirmed_at": "2026-11-13T07:01:49.842322Z",
+        "confirmed_price": "0.25000000",
         "direction": "hike",
         "episode_start_price": "0.079605000000",
-        "pending_builds": 1,
-        "pending_price": "0.25000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "prompt": {
         "anchor": "0.9483000000",
@@ -36343,7 +36394,7 @@
     },
     "qwen/qwen3.5-9b": {
       "completion": {
-        "anchor": "0.181000000",
+        "anchor": "0.149000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -36354,7 +36405,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.111000000",
+        "anchor": "0.091000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -36365,7 +36416,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.123000000",
+        "anchor": "0.101000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -37336,15 +37387,15 @@
     },
     "ricursiveai/ripple-65b-preview": {
       "completion": {
-        "anchor": "0.6000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.3000000",
+        "confirmed_at": "2026-11-13T07:01:49.842322Z",
+        "confirmed_price": "0.3000000",
         "direction": "cut",
         "episode_start_price": "0.6000000",
-        "pending_builds": 1,
-        "pending_price": "0.3000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.025000000",
@@ -37358,15 +37409,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.2000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.1000000",
+        "confirmed_at": "2026-11-13T07:01:49.842322Z",
+        "confirmed_price": "0.1000000",
         "direction": "cut",
         "episode_start_price": "0.2000000",
-        "pending_builds": 1,
-        "pending_price": "0.1000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "sakana/fugu-max": {
