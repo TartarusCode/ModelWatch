@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T22:02:00.070010Z",
+  "generated_at": "2026-11-13T22:31:28.471144Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3826,16 +3826,142 @@
       "id": "deepseek/deepseek-v4.1-flash-1017",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
       "pricing": {
-        "completion": "0.0000005",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.00000001",
+        "input_cache_read": "0.000000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000038",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
-      "pricing_schedule": null,
+      "pricing_schedule": {
+        "minimum": {
+          "completion": "0.0000006",
+          "input_cache_read": "0.000000003",
+          "prompt": "0.00000015"
+        },
+        "rates": {
+          "completion": [
+            "0.0000006",
+            "0.0000012"
+          ],
+          "input_cache_read": [
+            "0.000000003",
+            "0.000000006"
+          ],
+          "prompt": [
+            "0.00000015",
+            "0.0000003"
+          ]
+        },
+        "standard": {
+          "completion": "0.0000012",
+          "input_cache_read": "0.000000006",
+          "prompt": "0.0000003"
+        },
+        "windows": [
+          {
+            "label": "Sat–Sun all day UTC",
+            "rates": {
+              "completion": "0.0000006",
+              "input_cache_read": "0.000000003",
+              "prompt": "0.00000015"
+            },
+            "utc_days": [
+              "saturday",
+              "sunday"
+            ],
+            "utc_end": null,
+            "utc_start": null
+          },
+          {
+            "label": "Mon–Fri 00:00–01:00 UTC",
+            "rates": {
+              "completion": "0.0000006",
+              "input_cache_read": "0.000000003",
+              "prompt": "0.00000015"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 100,
+            "utc_start": 0
+          },
+          {
+            "label": "Mon–Fri 01:00–04:00 UTC",
+            "rates": {
+              "completion": "0.0000012",
+              "input_cache_read": "0.000000006",
+              "prompt": "0.0000003"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 400,
+            "utc_start": 100
+          },
+          {
+            "label": "Mon–Fri 04:00–06:00 UTC",
+            "rates": {
+              "completion": "0.0000006",
+              "input_cache_read": "0.000000003",
+              "prompt": "0.00000015"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 600,
+            "utc_start": 400
+          },
+          {
+            "label": "Mon–Fri 06:00–10:00 UTC",
+            "rates": {
+              "completion": "0.0000012",
+              "input_cache_read": "0.000000006",
+              "prompt": "0.0000003"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 1000,
+            "utc_start": 600
+          },
+          {
+            "label": "Mon–Fri 10:00–24:00 UTC",
+            "rates": {
+              "completion": "0.0000006",
+              "input_cache_read": "0.000000003",
+              "prompt": "0.00000015"
+            },
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 0,
+            "utc_start": 1000
+          }
+        ]
+      },
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -3863,7 +3989,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4.1-flash-1017:batch": {
@@ -19950,12 +20076,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000209",
+        "completion": "0.00000025",
         "image": null,
-        "input_cache_read": "0.000000128",
+        "input_cache_read": "0.000000153",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000142",
+        "prompt": "0.00000017",
         "request": null,
         "web_search": null
       },
@@ -25082,12 +25208,12 @@
       "id": "z-ai/glm-5.2:batch",
       "name": "Z.ai: GLM 5.2 (batch)",
       "pricing": {
-        "completion": "0.000001068",
+        "completion": "0.000000989",
         "image": null,
-        "input_cache_read": "0.000000117",
+        "input_cache_read": "0.000000109",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000347",
+        "prompt": "0.000000322",
         "request": null,
         "web_search": null
       },
