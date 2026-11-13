@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T05:01:47.269661Z",
+  "generated_at": "2026-11-13T05:31:30.189745Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -11197,12 +11197,12 @@
       "id": "moonshotai/kimi-k3.1-pro",
       "name": "MoonshotAI: Kimi K3.1 Pro",
       "pricing": {
-        "completion": "0.0000084114",
+        "completion": "0.00001",
         "image": null,
         "input_cache_read": "0.0000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000002375",
+        "prompt": "0.000002",
         "request": null,
         "web_search": null
       },
@@ -20303,12 +20303,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000124",
+        "completion": "0.00000013",
         "image": null,
-        "input_cache_read": "0.000000076",
+        "input_cache_read": "0.00000008",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000084",
+        "prompt": "0.000000089",
         "request": null,
         "web_search": null
       },
