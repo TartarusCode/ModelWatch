@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T07:31:49.268743Z",
+  "generated_at": "2026-11-13T08:01:57.544836Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -19914,7 +19914,7 @@
         "top_p": 0.95
       },
       "description": "Qwen3-VL-30B-A3B-Thinking is a multimodal model that unifies strong text generation with visual understanding for images and videos. Its Thinking variant enhances reasoning in STEM, math, and complex tasks. It excels...",
-      "expiration_date": null,
+      "expiration_date": "2026-11-15",
       "id": "qwen/qwen3-vl-30b-a3b-thinking",
       "name": "Qwen: Qwen3 VL 30B A3B Thinking",
       "pricing": {
@@ -20305,12 +20305,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000105",
+        "completion": "0.000000121",
         "image": null,
-        "input_cache_read": "0.000000065",
+        "input_cache_read": "0.000000074",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000072",
+        "prompt": "0.000000082",
         "request": null,
         "web_search": null
       },
@@ -22294,7 +22294,7 @@
         "top_p": null
       },
       "description": "Step 3.5 Flash is StepFun's most capable open-source foundation model. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token....",
-      "expiration_date": null,
+      "expiration_date": "2026-11-15",
       "id": "stepfun/step-3.5-flash",
       "name": "StepFun: Step 3.5 Flash",
       "pricing": {
@@ -22475,7 +22475,7 @@
       "created": 1751987664,
       "default_parameters": {},
       "description": "Hunyuan-A13B is a 13B active parameter Mixture-of-Experts (MoE) language model developed by Tencent, with a total parameter count of 80B and support for reasoning via Chain-of-Thought. It offers competitive benchmark...",
-      "expiration_date": null,
+      "expiration_date": "2026-11-15",
       "id": "tencent/hunyuan-a13b-instruct",
       "name": "Tencent: Hunyuan A13B Instruct",
       "pricing": {
