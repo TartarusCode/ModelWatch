@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T11:01:51.883750Z",
+  "generated_at": "2026-11-13T11:31:37.223232Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -17228,12 +17228,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.00000009",
+        "completion": "0.00000013",
         "image": null,
-        "input_cache_read": "0.000000009",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000018",
+        "prompt": "0.00000003",
         "request": null,
         "web_search": null
       },
@@ -20022,12 +20022,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000101",
+        "completion": "0.000000078",
         "image": null,
-        "input_cache_read": "0.000000062",
+        "input_cache_read": "0.000000048",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000069",
+        "prompt": "0.000000053",
         "request": null,
         "web_search": null
       },
@@ -25154,12 +25154,12 @@
       "id": "z-ai/glm-5.2:batch",
       "name": "Z.ai: GLM 5.2 (batch)",
       "pricing": {
-        "completion": "0.000000916",
+        "completion": "0.000000989",
         "image": null,
-        "input_cache_read": "0.000000101",
+        "input_cache_read": "0.000000109",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000298",
+        "prompt": "0.000000322",
         "request": null,
         "web_search": null
       },
