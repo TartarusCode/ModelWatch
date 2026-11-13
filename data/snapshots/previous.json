@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T13:02:12.591200Z",
+  "generated_at": "2026-11-13T13:31:31.210249Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3764,12 +3764,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.0000002028",
         "image": null,
-        "input_cache_read": "0.000000006",
+        "input_cache_read": "0.000000001014",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.0000000507",
         "request": null,
         "web_search": null
       },
@@ -3801,7 +3801,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4.1-flash-1017": {
@@ -7353,130 +7353,6 @@
         "max_completion_tokens": 235615
       }
     },
-    "liquid/lfm-2.5-2.6b": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "liquid/lfm-2.5-2.6b-20260811",
-      "context_length": 128000,
-      "created": 1786470519,
-      "default_parameters": {
-        "repetition_penalty": 1.1,
-        "temperature": 0.1,
-        "top_k": 50
-      },
-      "description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or...",
-      "expiration_date": "2026-11-13",
-      "id": "liquid/lfm-2.5-2.6b",
-      "name": "LiquidAI: LFM2.5-2.6B",
-      "pricing": {
-        "completion": "0.0000005",
-        "image": null,
-        "input_cache_read": "0.00000004",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000035",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_completion_tokens",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 128000,
-        "is_moderated": false,
-        "max_completion_tokens": 8192
-      }
-    },
-    "liquid/lfm-2.5-2.6b:free": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "liquid/lfm-2.5-2.6b-20260811",
-      "context_length": 65536,
-      "created": 1786470519,
-      "default_parameters": {
-        "repetition_penalty": 1.1,
-        "temperature": 0.1,
-        "top_k": 50
-      },
-      "description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or...",
-      "expiration_date": "2026-11-13",
-      "id": "liquid/lfm-2.5-2.6b:free",
-      "name": "LiquidAI: LFM2.5-2.6B (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_completion_tokens",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 65536,
-        "is_moderated": false,
-        "max_completion_tokens": 8192
-      }
-    },
     "liquid/lfm-2.5-24b-a2b": {
       "architecture": {
         "input_modalities": [
@@ -10851,10 +10727,10 @@
       "pricing": {
         "completion": "0.000016",
         "image": null,
-        "input_cache_read": "0.000000182",
+        "input_cache_read": "0.00000019",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000192",
+        "prompt": "0.0000002",
         "request": null,
         "web_search": null
       },
@@ -20022,12 +19898,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000036",
+        "completion": "0.000000035",
         "image": null,
         "input_cache_read": "0.000000022",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000025",
+        "prompt": "0.000000024",
         "request": null,
         "web_search": null
       },
