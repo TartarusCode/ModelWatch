@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T20:01:40.868739Z",
+  "generated_at": "2026-11-13T20:32:03.634025Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -19950,12 +19950,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000229",
+        "completion": "0.000000225",
         "image": null,
-        "input_cache_read": "0.00000014",
+        "input_cache_read": "0.000000138",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000156",
+        "prompt": "0.000000153",
         "request": null,
         "web_search": null
       },
@@ -25082,12 +25082,12 @@
       "id": "z-ai/glm-5.2:batch",
       "name": "Z.ai: GLM 5.2 (batch)",
       "pricing": {
-        "completion": "0.000000989",
+        "completion": "0.000001068",
         "image": null,
-        "input_cache_read": "0.000000109",
+        "input_cache_read": "0.000000117",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000322",
+        "prompt": "0.000000347",
         "request": null,
         "web_search": null
       },
