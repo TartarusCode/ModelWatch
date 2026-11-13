@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T14:03:12.990450Z",
+  "generated_at": "2026-11-13T14:31:39.315957Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3764,12 +3764,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000002028",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000001014",
+        "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000507",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -3801,7 +3801,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 393216
+        "max_completion_tokens": 943718
       }
     },
     "deepseek/deepseek-v4.1-flash-1017": {
@@ -19898,12 +19898,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000065",
+        "completion": "0.000000074",
         "image": null,
-        "input_cache_read": "0.00000004",
+        "input_cache_read": "0.000000046",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000044",
+        "prompt": "0.000000051",
         "request": null,
         "web_search": null
       },
@@ -25030,12 +25030,12 @@
       "id": "z-ai/glm-5.2:batch",
       "name": "Z.ai: GLM 5.2 (batch)",
       "pricing": {
-        "completion": "0.000000916",
+        "completion": "0.000000989",
         "image": null,
-        "input_cache_read": "0.000000101",
+        "input_cache_read": "0.000000109",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000298",
+        "prompt": "0.000000322",
         "request": null,
         "web_search": null
       },
