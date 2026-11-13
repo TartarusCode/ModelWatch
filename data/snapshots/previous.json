@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T19:01:59.928494Z",
+  "generated_at": "2026-11-13T19:31:39.004298Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3001,12 +3001,12 @@
       "id": "deepseek/deepseek-chat",
       "name": "DeepSeek: DeepSeek V3",
       "pricing": {
-        "completion": "0.00000089",
+        "completion": "0.0000010287",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000032",
+        "prompt": "0.0000002574",
         "request": null,
         "web_search": null
       },
@@ -3029,9 +3029,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 163840,
+        "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 16000
       }
     },
     "deepseek/deepseek-chat-v3-0324": {
@@ -6528,12 +6528,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.000000225",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.0000000375",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.0000000675",
         "request": null,
         "web_search": null
       },
@@ -7191,6 +7191,60 @@
       ],
       "top_provider": {
         "context_length": 1000000,
+        "is_moderated": false,
+        "max_completion_tokens": 262144
+      }
+    },
+    "inclusionai/ling-3.2-flash:free": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "inclusionai/ling-3.2-flash-20261113",
+      "context_length": 1048576,
+      "created": 1794591958,
+      "default_parameters": {},
+      "description": "Ling 3.2 Flash is a hybrid reasoning model from inclusionAI that accepts text and image input, with a 1M-token context window and up to 200 images per request. Thinking can...",
+      "expiration_date": null,
+      "id": "inclusionai/ling-3.2-flash:free",
+      "name": "inclusionAI: Ling 3.2 Flash (free)",
+      "pricing": {
+        "completion": "0",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
         "is_moderated": false,
         "max_completion_tokens": 262144
       }
@@ -19898,12 +19952,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000249",
+        "completion": "0.000000205",
         "image": null,
-        "input_cache_read": "0.000000153",
+        "input_cache_read": "0.000000126",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000017",
+        "prompt": "0.00000014",
         "request": null,
         "web_search": null
       },
