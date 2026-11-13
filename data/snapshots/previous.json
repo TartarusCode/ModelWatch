@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T08:01:57.544836Z",
+  "generated_at": "2026-11-13T08:31:17.215549Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -7109,7 +7109,7 @@
       "id": "ibm-granite/granite-4.2-8b",
       "name": "IBM: Granite 4.2 8B",
       "pricing": {
-        "completion": "0.00000015",
+        "completion": "0.00000025",
         "image": null,
         "input_cache_read": "0.000000015",
         "input_cache_write": null,
@@ -20305,12 +20305,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000121",
+        "completion": "0.000000095",
         "image": null,
-        "input_cache_read": "0.000000074",
+        "input_cache_read": "0.000000058",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000082",
+        "prompt": "0.000000065",
         "request": null,
         "web_search": null
       },
@@ -21832,12 +21832,12 @@
       "id": "ricursiveai/ripple-65b-preview",
       "name": "Ricursive: Ripple 65B Preview",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.000000025",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.0000002",
         "request": null,
         "web_search": null
       },
