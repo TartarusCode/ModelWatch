@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T06:01:33.295877Z",
+  "generated_at": "2026-11-13T06:31:55.086304Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3694,12 +3694,12 @@
       "id": "deepseek/deepseek-v4-pro",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "pricing": {
-        "completion": "0.00000191052",
+        "completion": "0.0000015",
         "image": null,
-        "input_cache_read": "0.000000079605",
+        "input_cache_read": "0.00000025",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000095526",
+        "prompt": "0.0000009",
         "request": null,
         "web_search": null
       },
@@ -3728,9 +3728,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1024000,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 384000
+        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4-pro-0813": {
@@ -3879,12 +3879,12 @@
       "id": "deepseek/deepseek-v4.1-flash-1017",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -6707,12 +6707,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.000000255",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.0000000425",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000765",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
@@ -20303,12 +20303,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000134",
+        "completion": "0.000000181",
         "image": null,
-        "input_cache_read": "0.000000082",
+        "input_cache_read": "0.000000111",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000091",
+        "prompt": "0.000000123",
         "request": null,
         "web_search": null
       },
@@ -21830,12 +21830,12 @@
       "id": "ricursiveai/ripple-65b-preview",
       "name": "Ricursive: Ripple 65B Preview",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.000000025",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000002",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -25435,12 +25435,12 @@
       "id": "z-ai/glm-5.2:batch",
       "name": "Z.ai: GLM 5.2 (batch)",
       "pricing": {
-        "completion": "0.000000916",
+        "completion": "0.000000989",
         "image": null,
-        "input_cache_read": "0.000000101",
+        "input_cache_read": "0.000000109",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000298",
+        "prompt": "0.000000322",
         "request": null,
         "web_search": null
       },
