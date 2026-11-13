@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T09:01:57.357854Z",
+  "generated_at": "2026-11-13T09:31:47.819904Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -7467,6 +7467,8 @@
         "response_format",
         "structured_outputs",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_k",
         "top_logprobs",
         "top_p"
@@ -11433,6 +11435,7 @@
         "response_format",
         "structured_outputs",
         "temperature",
+        "tools",
         "top_k",
         "top_logprobs",
         "top_p"
@@ -20144,12 +20147,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000119",
+        "completion": "0.000000131",
         "image": null,
-        "input_cache_read": "0.000000073",
+        "input_cache_read": "0.00000008",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000081",
+        "prompt": "0.000000089",
         "request": null,
         "web_search": null
       },
@@ -21671,12 +21674,12 @@
       "id": "ricursiveai/ripple-65b-preview",
       "name": "Ricursive: Ripple 65B Preview",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.000000025",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000002",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
