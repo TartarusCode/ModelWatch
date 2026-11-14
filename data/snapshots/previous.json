@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T06:01:42.684570Z",
+  "generated_at": "2026-11-14T06:31:18.359149Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3901,14 +3901,23 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
+        "logprobs",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
         "seed",
         "stop",
+        "structured_outputs",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -3953,6 +3962,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -3967,6 +3977,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -19952,12 +19963,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000219",
+        "completion": "0.000000105",
         "image": null,
-        "input_cache_read": "0.000000134",
+        "input_cache_read": "0.000000064",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000149",
+        "prompt": "0.000000071",
         "request": null,
         "web_search": null
       },
@@ -25084,12 +25095,12 @@
       "id": "z-ai/glm-5.2:batch",
       "name": "Z.ai: GLM 5.2 (batch)",
       "pricing": {
-        "completion": "0.000000989",
+        "completion": "0.000001068",
         "image": null,
-        "input_cache_read": "0.000000109",
+        "input_cache_read": "0.000000117",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000322",
+        "prompt": "0.000000347",
         "request": null,
         "web_search": null
       },
