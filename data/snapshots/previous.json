@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T01:01:57.718001Z",
+  "generated_at": "2026-11-14T01:31:40.458339Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -8959,12 +8959,12 @@
       "id": "minimax/minimax-m3.1-flash",
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.0000000075",
+        "input_cache_read": "0.000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -19952,7 +19952,7 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000249",
+        "completion": "0.00000025",
         "image": null,
         "input_cache_read": "0.000000153",
         "input_cache_write": null,
@@ -25084,12 +25084,12 @@
       "id": "z-ai/glm-5.2:batch",
       "name": "Z.ai: GLM 5.2 (batch)",
       "pricing": {
-        "completion": "0.000000916",
+        "completion": "0.000000989",
         "image": null,
-        "input_cache_read": "0.000000101",
+        "input_cache_read": "0.000000109",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000298",
+        "prompt": "0.000000322",
         "request": null,
         "web_search": null
       },
