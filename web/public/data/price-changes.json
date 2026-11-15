@@ -764,6 +764,40 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.198000",
+      "detected_at": "2026-11-15T13:31:25.939860Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "1.187000",
+      "field": "completion",
+      "model_id": "z-ai/glm-5.3:batch",
+      "new_per_million_usd": "0.989000",
+      "old_per_million_usd": "1.187000",
+      "pct_change": -0.16680707666385847,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.064000",
+      "detected_at": "2026-11-15T13:31:25.939860Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.386000",
+      "field": "prompt",
+      "model_id": "z-ai/glm-5.3:batch",
+      "new_per_million_usd": "0.322000",
+      "old_per_million_usd": "0.386000",
+      "pct_change": -0.16580310880829016,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
   "episodes": [
@@ -19517,9 +19551,43 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.064000",
+      "detected_at": "2026-11-15T13:31:25.939860Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.386000",
+      "field": "prompt",
+      "model_id": "z-ai/glm-5.3:batch",
+      "new_per_million_usd": "0.322000",
+      "old_per_million_usd": "0.386000",
+      "pct_change": -0.16580310880829016,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.198000",
+      "detected_at": "2026-11-15T13:31:25.939860Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "1.187000",
+      "field": "completion",
+      "model_id": "z-ai/glm-5.3:batch",
+      "new_per_million_usd": "0.989000",
+      "old_per_million_usd": "1.187000",
+      "pct_change": -0.16680707666385847,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-11-15T13:01:37.156367Z",
+  "generated_at": "2026-11-15T13:31:30.016650Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "-0.050000",

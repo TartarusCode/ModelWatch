@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T13:01:37.156367Z",
+  "generated_at": "2026-11-15T13:31:30.016650Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -4014,12 +4014,12 @@
       "id": "deepseek/deepseek-v4.1-flash-1017:batch",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
       "pricing": {
-        "completion": "0.000000333",
+        "completion": "0.000000318",
         "image": null,
-        "input_cache_read": "0.000000004",
+        "input_cache_read": "0.000000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000038",
+        "prompt": "0.000000036",
         "request": null,
         "web_search": null
       },
@@ -7067,7 +7067,7 @@
       "id": "ibm-granite/granite-4.2-8b",
       "name": "IBM: Granite 4.2 8B",
       "pricing": {
-        "completion": "0.00000025",
+        "completion": "0.00000015",
         "image": null,
         "input_cache_read": "0.000000015",
         "input_cache_write": null,
@@ -11044,12 +11044,12 @@
       "id": "moonshotai/kimi-k3.1-pro:batch",
       "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
       "pricing": {
-        "completion": "0.00000495",
+        "completion": "0.000004125",
         "image": null,
-        "input_cache_read": "0.000000105",
+        "input_cache_read": "0.000000088",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000033",
+        "prompt": "0.000000275",
         "request": null,
         "web_search": null
       },
@@ -19364,11 +19364,8 @@
       },
       "pricing_schedule": null,
       "supported_parameters": [
-        "frequency_penalty",
         "max_tokens",
-        "response_format",
         "stop",
-        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
@@ -19675,64 +19672,6 @@
         "context_length": 262144,
         "is_moderated": false,
         "max_completion_tokens": 16384
-      }
-    },
-    "qwen/qwen3-vl-30b-a3b-thinking": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "instruct_type": null,
-        "modality": "text+image->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Qwen3"
-      },
-      "canonical_slug": "qwen/qwen3-vl-30b-a3b-thinking",
-      "context_length": 262144,
-      "created": 1759794479,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": 1,
-        "temperature": 0.8,
-        "top_k": 20,
-        "top_p": 0.95
-      },
-      "description": "Qwen3-VL-30B-A3B-Thinking is a multimodal model that unifies strong text generation with visual understanding for images and videos. Its Thinking variant enhances reasoning in STEM, math, and complex tasks. It excels...",
-      "expiration_date": "2026-11-15",
-      "id": "qwen/qwen3-vl-30b-a3b-thinking",
-      "name": "Qwen: Qwen3 VL 30B A3B Thinking",
-      "pricing": {
-        "completion": "0.000001",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000029",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3-vl-8b-instruct": {
@@ -20093,12 +20032,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.00000003",
+        "completion": "0.000000033",
         "image": null,
-        "input_cache_read": "0.000000018",
+        "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000002",
+        "prompt": "0.000000023",
         "request": null,
         "web_search": null
       },
@@ -22058,61 +21997,6 @@
         "max_completion_tokens": 4000
       }
     },
-    "stepfun/step-3.5-flash": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "stepfun/step-3.5-flash",
-      "context_length": 262144,
-      "created": 1769728337,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "Step 3.5 Flash is StepFun's most capable open-source foundation model. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token....",
-      "expiration_date": "2026-11-15",
-      "id": "stepfun/step-3.5-flash",
-      "name": "StepFun: Step 3.5 Flash",
-      "pricing": {
-        "completion": "0.0000003",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000001",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 65536
-      }
-    },
     "stepfun/step-3.7-flash": {
       "architecture": {
         "input_modalities": [
@@ -22244,54 +22128,6 @@
         "context_length": 1000000,
         "is_moderated": false,
         "max_completion_tokens": 64000
-      }
-    },
-    "tencent/hunyuan-a13b-instruct": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "tencent/hunyuan-a13b-instruct",
-      "context_length": 131072,
-      "created": 1751987664,
-      "default_parameters": {},
-      "description": "Hunyuan-A13B is a 13B active parameter Mixture-of-Experts (MoE) language model developed by Tencent, with a total parameter count of 80B and support for reasoning via Chain-of-Thought. It offers competitive benchmark...",
-      "expiration_date": "2026-11-15",
-      "id": "tencent/hunyuan-a13b-instruct",
-      "name": "Tencent: Hunyuan A13B Instruct",
-      "pricing": {
-        "completion": "0.00000057",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000014",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "structured_outputs",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 117964
       }
     },
     "tencent/hy-mt2-1.8b": {
