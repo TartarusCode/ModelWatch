@@ -18803,7 +18803,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-15T16:01:53.455702Z",
+  "generated_at": "2026-11-15T16:31:21.205969Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -22542,7 +22542,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.003000000",
+        "anchor": "0.004000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -22553,7 +22553,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.036000000",
+        "anchor": "0.038000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -29232,7 +29232,7 @@
     },
     "moonshotai/kimi-k3.1-pro:batch": {
       "completion": {
-        "anchor": "6.061000000",
+        "anchor": "6.000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -29243,7 +29243,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.129000000",
+        "anchor": "0.1000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -29257,12 +29257,12 @@
         "anchor": "0.404000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.404000000",
+        "pending_builds": 1,
+        "pending_price": "0.7000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "moonshotai/kimi-k3:batch": {
@@ -36928,7 +36928,7 @@
     },
     "qwen/qwen3.5-9b": {
       "completion": {
-        "anchor": "0.129000000",
+        "anchor": "0.147000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -36939,7 +36939,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.079000000",
+        "anchor": "0.09000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -36950,7 +36950,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.088000000",
+        "anchor": "0.1000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
