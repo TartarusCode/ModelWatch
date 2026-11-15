@@ -154,23 +154,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "0.003000",
-      "detected_at": "2026-11-15T20:01:35.482730Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.333000",
-      "field": "completion",
-      "model_id": "deepseek/deepseek-v4.1-flash-1017:batch",
-      "new_per_million_usd": "0.336000",
-      "old_per_million_usd": "0.333000",
-      "pct_change": 0.009009009009009009,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "0.100000",
       "detected_at": "2026-11-09T04:01:37.256662Z",
       "direction": "hike",
@@ -19630,11 +19613,11 @@
       "new_per_million_usd": "0.336000",
       "old_per_million_usd": "0.333000",
       "pct_change": 0.009009009009009009,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-11-15T23:31:28.018633Z",
+      "recovered_per_million_usd": "0.253000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     },
     {
@@ -19672,7 +19655,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-15T23:01:50.005542Z",
+  "generated_at": "2026-11-15T23:31:33.768375Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "-0.050000",
@@ -19890,6 +19873,23 @@
       "pct_change": -0.16666666666666666,
       "recovered_at": "2026-11-15T15:31:40.644844Z",
       "recovered_per_million_usd": "5.778000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "recovered",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.003000",
+      "detected_at": "2026-11-15T20:01:35.482730Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.333000",
+      "field": "completion",
+      "model_id": "deepseek/deepseek-v4.1-flash-1017:batch",
+      "new_per_million_usd": "0.336000",
+      "old_per_million_usd": "0.333000",
+      "pct_change": 0.009009009009009009,
+      "recovered_at": "2026-11-15T23:31:28.018633Z",
+      "recovered_per_million_usd": "0.253000",
       "settled_at": null,
       "settled_per_million_usd": null,
       "status": "recovered",
