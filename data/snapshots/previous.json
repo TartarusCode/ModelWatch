@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T11:01:48.702052Z",
+  "generated_at": "2026-11-15T11:31:46.863590Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3460,12 +3460,12 @@
       "id": "deepseek/deepseek-v4-flash-0731",
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "pricing": {
-        "completion": "0.00000018",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.000000035",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006",
+        "prompt": "0.0000000434",
         "request": null,
         "web_search": null
       },
@@ -3497,7 +3497,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 384000
+        "max_completion_tokens": 943718
       }
     },
     "deepseek/deepseek-v4-flash-0731:batch": {
@@ -3888,12 +3888,12 @@
       "id": "deepseek/deepseek-v4.1-flash-1017:batch",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
       "pricing": {
-        "completion": "0.00000024",
+        "completion": "0.0000002",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.000000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000027",
+        "prompt": "0.000000023",
         "request": null,
         "web_search": null
       },
@@ -19967,12 +19967,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000045",
+        "completion": "0.000000039",
         "image": null,
-        "input_cache_read": "0.000000028",
+        "input_cache_read": "0.000000024",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000031",
+        "prompt": "0.000000027",
         "request": null,
         "web_search": null
       },
@@ -21220,10 +21220,10 @@
       "pricing": {
         "completion": "0.000001",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.00000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000025",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -21253,7 +21253,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 943718
       }
     },
     "rekaai/reka-edge": {
