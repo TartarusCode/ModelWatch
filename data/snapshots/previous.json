@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T21:01:44.888966Z",
+  "generated_at": "2026-11-15T21:31:41.613028Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -10729,7 +10729,7 @@
         "input_cache_read": "0.00000016",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007125",
+        "prompt": "0.0000006",
         "request": null,
         "web_search": null
       },
@@ -17171,12 +17171,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.00000013",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.0000000375",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000003",
+        "prompt": "0.000000075",
         "request": null,
         "web_search": null
       },
@@ -17206,7 +17206,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 117964
+        "max_completion_tokens": 65536
       }
     },
     "openai/gpt-oss-20b:batch": {
@@ -19904,12 +19904,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000066",
+        "completion": "0.000000103",
         "image": null,
-        "input_cache_read": "0.00000004",
+        "input_cache_read": "0.000000063",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000045",
+        "prompt": "0.00000007",
         "request": null,
         "web_search": null
       },
