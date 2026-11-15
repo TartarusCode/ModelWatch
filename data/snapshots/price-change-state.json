@@ -18852,9 +18852,26 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.170000",
+      "detected_at": "2026-11-15T22:01:20.640595Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.130000",
+      "field": "completion",
+      "model_id": "openai/gpt-oss-20b",
+      "new_per_million_usd": "0.300000",
+      "old_per_million_usd": "0.130000",
+      "pct_change": 1.3076923076923077,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-11-15T21:31:41.613028Z",
+  "generated_at": "2026-11-15T22:01:32.478974Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -22593,7 +22610,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.004000000",
+        "anchor": "0.003000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -22604,7 +22621,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.038000000",
+        "anchor": "0.036000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -34538,15 +34555,15 @@
     },
     "openai/gpt-oss-20b": {
       "completion": {
-        "anchor": "0.13000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.3000000",
+        "confirmed_at": "2026-11-15T22:01:20.640595Z",
+        "confirmed_price": "0.3000000",
         "direction": "hike",
         "episode_start_price": "0.13000000",
-        "pending_builds": 1,
-        "pending_price": "0.3000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.0375000000",
@@ -36979,7 +36996,7 @@
     },
     "qwen/qwen3.5-9b": {
       "completion": {
-        "anchor": "0.103000000",
+        "anchor": "0.128000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -36990,7 +37007,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.063000000",
+        "anchor": "0.078000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -37001,7 +37018,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.07000000",
+        "anchor": "0.087000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
