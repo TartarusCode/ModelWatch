@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T08:01:44.662270Z",
+  "generated_at": "2026-11-15T08:31:48.929997Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3168,12 +3168,12 @@
       "id": "deepseek/deepseek-r1-0528",
       "name": "DeepSeek: R1 0528",
       "pricing": {
-        "completion": "0.000002286",
+        "completion": "0.00000215",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000035",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000571",
+        "prompt": "0.0000005",
         "request": null,
         "web_search": null
       },
@@ -3200,9 +3200,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 128000,
+        "context_length": 163840,
         "is_moderated": false,
-        "max_completion_tokens": 32000
+        "max_completion_tokens": 32768
       }
     },
     "deepseek/deepseek-v3.1-terminus": {
@@ -10981,12 +10981,12 @@
       "id": "moonshotai/kimi-k3.1-pro",
       "name": "MoonshotAI: Kimi K3.1 Pro",
       "pricing": {
-        "completion": "0.0000088",
+        "completion": "0.0000084114",
         "image": null,
-        "input_cache_read": "0.00000018",
+        "input_cache_read": "0.0000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000235",
+        "prompt": "0.0000002232",
         "request": null,
         "web_search": null
       },
@@ -12105,7 +12105,7 @@
       "id": "nvidia/nemotron-3.5-super-vl",
       "name": "NVIDIA: Nemotron 3.5 Super VL",
       "pricing": {
-        "completion": "0.00000047",
+        "completion": "0.0000005",
         "image": null,
         "input_cache_read": "0.00000002",
         "input_cache_write": null,
@@ -12137,9 +12137,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 235929
       }
     },
     "nvidia/nemotron-3.5-super-vl:free": {
@@ -20093,12 +20093,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000186",
+        "completion": "0.000000132",
         "image": null,
-        "input_cache_read": "0.000000114",
+        "input_cache_read": "0.000000081",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000126",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
