@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T18:31:59.314228Z",
+  "generated_at": "2026-11-16T19:01:56.114865Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -20034,12 +20034,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000165",
+        "completion": "0.000000213",
         "image": null,
-        "input_cache_read": "0.000000101",
+        "input_cache_read": "0.00000013",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000112",
+        "prompt": "0.000000145",
         "request": null,
         "web_search": null
       },
@@ -21237,12 +21237,12 @@
       "id": "qwen/qwen4-max",
       "name": "Qwen: Qwen4 Max",
       "pricing": {
-        "completion": "0.0000045",
+        "completion": "0.000004275",
         "image": null,
-        "input_cache_read": "0.000000075",
-        "input_cache_write": "0.000001875",
+        "input_cache_read": "0.00000007125",
+        "input_cache_write": "0.00000178125",
         "internal_reasoning": null,
-        "prompt": "0.0000015",
+        "prompt": "0.000001425",
         "request": null,
         "web_search": null
       },
@@ -22563,12 +22563,12 @@
       "id": "tencent/hy4-flash",
       "name": "Tencent: Hy4 flash",
       "pricing": {
-        "completion": "0.0000001405",
+        "completion": "0.000000175625",
         "image": null,
-        "input_cache_read": "0.0000000015",
+        "input_cache_read": "0.000000001875",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000035",
+        "prompt": "0.00000004375",
         "request": null,
         "web_search": null
       },
