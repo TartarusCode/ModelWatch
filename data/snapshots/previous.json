@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T19:01:56.114865Z",
+  "generated_at": "2026-11-16T19:32:00.992642Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -688,7 +688,7 @@
       ],
       "top_provider": {
         "context_length": 1000000,
-        "is_moderated": false,
+        "is_moderated": true,
         "max_completion_tokens": 128000
       }
     },
@@ -6665,12 +6665,12 @@
       "id": "google/gemma-4-26b-a4b-it",
       "name": "Google: Gemma 4 26B A4B ",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.000000255",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.0000000425",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.0000000765",
         "request": null,
         "web_search": null
       },
@@ -20034,12 +20034,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000213",
+        "completion": "0.000000141",
         "image": null,
-        "input_cache_read": "0.00000013",
+        "input_cache_read": "0.000000086",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000145",
+        "prompt": "0.000000096",
         "request": null,
         "web_search": null
       },
@@ -22563,12 +22563,12 @@
       "id": "tencent/hy4-flash",
       "name": "Tencent: Hy4 flash",
       "pricing": {
-        "completion": "0.000000175625",
+        "completion": "0.0000001405",
         "image": null,
-        "input_cache_read": "0.000000001875",
+        "input_cache_read": "0.0000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004375",
+        "prompt": "0.000000035",
         "request": null,
         "web_search": null
       },

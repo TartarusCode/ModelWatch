@@ -19041,7 +19041,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-16T19:01:56.114865Z",
+  "generated_at": "2026-11-16T19:32:00.992642Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -26035,11 +26035,11 @@
         "episode_start_price": "0.28000000",
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 0,
+        "recovery_builds": 1,
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.05000000",
+        "anchor": "0.0425000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -26050,7 +26050,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.09000000",
+        "anchor": "0.0765000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -37199,7 +37199,7 @@
     },
     "qwen/qwen3.5-9b": {
       "completion": {
-        "anchor": "0.213000000",
+        "anchor": "0.141000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -37210,7 +37210,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.13000000",
+        "anchor": "0.086000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -37221,7 +37221,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.145000000",
+        "anchor": "0.096000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -38885,7 +38885,7 @@
     },
     "tencent/hy4-flash": {
       "completion": {
-        "anchor": "0.175625000000",
+        "anchor": "0.1405000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -38896,7 +38896,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.001875000000",
+        "anchor": "0.0015000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -38907,7 +38907,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.04375000000",
+        "anchor": "0.035000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
