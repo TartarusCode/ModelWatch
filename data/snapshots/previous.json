@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T10:32:04.502133Z",
+  "generated_at": "2026-11-16T11:01:51.560626Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -17297,12 +17297,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.00000009",
         "image": null,
-        "input_cache_read": "0.0000000375",
+        "input_cache_read": "0.000000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.000000018",
         "request": null,
         "web_search": null
       },
@@ -17332,7 +17332,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 117964
       }
     },
     "openai/gpt-oss-20b:batch": {
@@ -20030,12 +20030,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000233",
+        "completion": "0.000000249",
         "image": null,
-        "input_cache_read": "0.000000143",
+        "input_cache_read": "0.000000153",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000159",
+        "prompt": "0.00000017",
         "request": null,
         "web_search": null
       },
