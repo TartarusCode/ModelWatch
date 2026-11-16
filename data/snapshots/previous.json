@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T14:01:29.628766Z",
+  "generated_at": "2026-11-16T14:31:57.951946Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3764,12 +3764,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.00000042",
+        "completion": "0.0000002028",
         "image": null,
-        "input_cache_read": "0.0000000042",
+        "input_cache_read": "0.000000001014",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000014",
+        "prompt": "0.0000000507",
         "request": null,
         "web_search": null
       },
@@ -4014,12 +4014,12 @@
       "id": "deepseek/deepseek-v4.1-flash-1017:batch",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
       "pricing": {
-        "completion": "0.000000328",
+        "completion": "0.000000311",
         "image": null,
-        "input_cache_read": "0.000000004",
+        "input_cache_read": "0.000000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000037",
+        "prompt": "0.000000035",
         "request": null,
         "web_search": null
       },
@@ -17297,12 +17297,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.00000009",
         "image": null,
-        "input_cache_read": "0.0000000375",
+        "input_cache_read": "0.000000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.000000018",
         "request": null,
         "web_search": null
       },
@@ -17332,7 +17332,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 117964
       }
     },
     "openai/gpt-oss-20b:batch": {
@@ -20030,12 +20030,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000126",
+        "completion": "0.000000137",
         "image": null,
-        "input_cache_read": "0.000000077",
+        "input_cache_read": "0.000000084",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000086",
+        "prompt": "0.000000093",
         "request": null,
         "web_search": null
       },
@@ -21251,6 +21251,7 @@
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
+        "repetition_penalty",
         "response_format",
         "seed",
         "stop",
@@ -22514,6 +22515,57 @@
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.000000417",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 65536
+      }
+    },
+    "tencent/hy4-flash": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "tencent/hy4-flash-20261116",
+      "context_length": 1048576,
+      "created": 1794838706,
+      "default_parameters": {},
+      "description": "Hy4 flash is a cost-efficient variant of [Hy4](https://openrouter.ai/tencent/hy4) from Tencent, served with roughly a quarter of the flagship's parameter count for lower latency and cost. It targets code assistance, agent...",
+      "expiration_date": null,
+      "id": "tencent/hy4-flash",
+      "name": "Tencent: Hy4 flash",
+      "pricing": {
+        "completion": "0.000000175625",
+        "image": null,
+        "input_cache_read": "0.000000001875",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000004375",
         "request": null,
         "web_search": null
       },
