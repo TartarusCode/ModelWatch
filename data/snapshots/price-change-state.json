@@ -19041,7 +19041,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-16T15:31:52.718488Z",
+  "generated_at": "2026-11-16T16:01:56.728157Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -22813,7 +22813,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.003000000",
+        "anchor": "0.004000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -22824,7 +22824,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.035000000",
+        "anchor": "0.037000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -29503,7 +29503,7 @@
     },
     "moonshotai/kimi-k3.1-pro:batch": {
       "completion": {
-        "anchor": "6.000000",
+        "anchor": "5.713000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -29514,7 +29514,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.1000000",
+        "anchor": "0.121000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -29532,7 +29532,7 @@
         "episode_start_price": "0.404000000",
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 0,
+        "recovery_builds": 1,
         "status": "confirmed"
       }
     },
@@ -37199,7 +37199,7 @@
     },
     "qwen/qwen3.5-9b": {
       "completion": {
-        "anchor": "0.102000000",
+        "anchor": "0.169000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -37210,7 +37210,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.063000000",
+        "anchor": "0.104000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -37221,7 +37221,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.07000000",
+        "anchor": "0.115000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
