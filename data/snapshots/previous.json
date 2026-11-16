@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T17:31:39.604340Z",
+  "generated_at": "2026-11-16T18:01:55.949097Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -4014,12 +4014,12 @@
       "id": "deepseek/deepseek-v4.1-flash-1017:batch",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
       "pricing": {
-        "completion": "0.00000031",
+        "completion": "0.000000327",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.000000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000035",
+        "prompt": "0.000000037",
         "request": null,
         "web_search": null
       },
@@ -11046,12 +11046,12 @@
       "id": "moonshotai/kimi-k3.1-pro:batch",
       "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
       "pricing": {
-        "completion": "0.000005421",
+        "completion": "0.000005751",
         "image": null,
-        "input_cache_read": "0.000000115",
+        "input_cache_read": "0.000000122",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000362",
+        "prompt": "0.000000384",
         "request": null,
         "web_search": null
       },
@@ -20034,12 +20034,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000211",
+        "completion": "0.000000236",
         "image": null,
-        "input_cache_read": "0.000000129",
+        "input_cache_read": "0.000000145",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000143",
+        "prompt": "0.000000161",
         "request": null,
         "web_search": null
       },
@@ -22563,12 +22563,12 @@
       "id": "tencent/hy4-flash",
       "name": "Tencent: Hy4 flash",
       "pricing": {
-        "completion": "0.000000175625",
+        "completion": "0.0000001405",
         "image": null,
-        "input_cache_read": "0.000000001875",
+        "input_cache_read": "0.0000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004375",
+        "prompt": "0.000000035",
         "request": null,
         "web_search": null
       },
