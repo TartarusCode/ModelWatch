@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T19:32:00.992642Z",
+  "generated_at": "2026-11-16T20:01:46.705627Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -4014,12 +4014,12 @@
       "id": "deepseek/deepseek-v4.1-flash-1017:batch",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
       "pricing": {
-        "completion": "0.000000311",
+        "completion": "0.000000329",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.000000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000035",
+        "prompt": "0.000000037",
         "request": null,
         "web_search": null
       },
@@ -10933,10 +10933,8 @@
         "include_reasoning",
         "logit_bias",
         "logprobs",
-        "max_completion_tokens",
         "max_tokens",
         "min_p",
-        "parallel_tool_calls",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
@@ -11046,12 +11044,12 @@
       "id": "moonshotai/kimi-k3.1-pro:batch",
       "name": "MoonshotAI: Kimi K3.1 Pro (batch)",
       "pricing": {
-        "completion": "0.000005391",
+        "completion": "0.000005758",
         "image": null,
-        "input_cache_read": "0.000000115",
+        "input_cache_read": "0.000000122",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000036",
+        "prompt": "0.000000384",
         "request": null,
         "web_search": null
       },
@@ -20034,12 +20032,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000141",
+        "completion": "0.000000168",
         "image": null,
-        "input_cache_read": "0.000000086",
+        "input_cache_read": "0.000000103",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000096",
+        "prompt": "0.000000114",
         "request": null,
         "web_search": null
       },
