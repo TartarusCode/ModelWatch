@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T15:01:43.585666Z",
+  "generated_at": "2026-11-16T15:31:52.718488Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -688,7 +688,7 @@
       ],
       "top_provider": {
         "context_length": 1000000,
-        "is_moderated": true,
+        "is_moderated": false,
         "max_completion_tokens": 128000
       }
     },
@@ -3764,12 +3764,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000002028",
+        "completion": "0.00000042",
         "image": null,
-        "input_cache_read": "0.000000001014",
+        "input_cache_read": "0.0000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000507",
+        "prompt": "0.00000014",
         "request": null,
         "web_search": null
       },
@@ -9096,12 +9096,12 @@
       "id": "minimax/minimax-m3.1-flash",
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.0000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.000000075",
         "request": null,
         "web_search": null
       },
@@ -10855,7 +10855,7 @@
         "input_cache_read": "0.00000016",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000006",
+        "prompt": "0.0000007125",
         "request": null,
         "web_search": null
       },
@@ -17297,12 +17297,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.00000009",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.000000009",
+        "input_cache_read": "0.0000000375",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000018",
+        "prompt": "0.000000075",
         "request": null,
         "web_search": null
       },
@@ -17332,7 +17332,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 117964
+        "max_completion_tokens": 65536
       }
     },
     "openai/gpt-oss-20b:batch": {
@@ -20030,12 +20030,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000111",
+        "completion": "0.000000102",
         "image": null,
-        "input_cache_read": "0.000000068",
+        "input_cache_read": "0.000000063",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000076",
+        "prompt": "0.00000007",
         "request": null,
         "web_search": null
       },
@@ -21246,8 +21246,10 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "logprobs",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
@@ -22560,12 +22562,12 @@
       "id": "tencent/hy4-flash",
       "name": "Tencent: Hy4 flash",
       "pricing": {
-        "completion": "0.000000175625",
+        "completion": "0.0000001405",
         "image": null,
-        "input_cache_read": "0.000000001875",
+        "input_cache_read": "0.0000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000004375",
+        "prompt": "0.000000035",
         "request": null,
         "web_search": null
       },
