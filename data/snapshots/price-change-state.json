@@ -19041,7 +19041,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-16T20:01:46.705627Z",
+  "generated_at": "2026-11-16T20:31:43.281193Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -29503,7 +29503,7 @@
     },
     "moonshotai/kimi-k3.1-pro:batch": {
       "completion": {
-        "anchor": "5.758000000",
+        "anchor": "5.407000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -29514,7 +29514,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.122000000",
+        "anchor": "0.115000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -29525,7 +29525,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.384000000",
+        "anchor": "0.361000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -37202,15 +37202,15 @@
         "anchor": "0.168000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.168000000",
+        "pending_builds": 1,
+        "pending_price": "0.244000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.103000000",
+        "anchor": "0.149000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -37224,12 +37224,12 @@
         "anchor": "0.114000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.114000000",
+        "pending_builds": 1,
+        "pending_price": "0.166000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "qwen/qwen3.5-9b:batch": {
