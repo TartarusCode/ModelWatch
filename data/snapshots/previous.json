@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T18:01:55.695364Z",
+  "generated_at": "2026-11-17T18:31:46.678667Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -16918,9 +16918,9 @@
       },
       "canonical_slug": "openai/gpt-6.2-astra-20261117",
       "context_length": 1050000,
-      "created": 1794873824,
+      "created": 1794938423,
       "default_parameters": {},
-      "description": "",
+      "description": "GPT-6.2 Astra is the flagship model in the GPT-6.2 series from OpenAI, built for the hardest projects. It is suited for real-world engineering, professional work and scientific research, with stronger...",
       "expiration_date": null,
       "id": "openai/gpt-6.2-astra",
       "name": "OpenAI: GPT-6.2 Astra",
@@ -16931,6 +16931,159 @@
         "input_cache_write": "0.00001",
         "internal_reasoning": null,
         "prompt": "0.000008",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1050000,
+        "is_moderated": true,
+        "max_completion_tokens": 128000
+      }
+    },
+    "openai/gpt-6.2-astra-pro": {
+      "architecture": {
+        "input_modalities": [
+          "file",
+          "image",
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT"
+      },
+      "canonical_slug": "openai/gpt-6.2-astra-pro-20261117",
+      "context_length": 1050000,
+      "created": 1794938432,
+      "default_parameters": {},
+      "description": "GPT-6.2 Astra Pro is the same underlying model as [GPT-6.2 Astra](https://openrouter.ai/openai/gpt-6.2-astra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+      "expiration_date": null,
+      "id": "openai/gpt-6.2-astra-pro",
+      "name": "OpenAI: GPT-6.2 Astra Pro",
+      "pricing": {
+        "completion": "0.00004",
+        "image": null,
+        "input_cache_read": "0.0000004",
+        "input_cache_write": "0.00001",
+        "internal_reasoning": null,
+        "prompt": "0.000008",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1050000,
+        "is_moderated": true,
+        "max_completion_tokens": 128000
+      }
+    },
+    "openai/gpt-6.2-sol": {
+      "architecture": {
+        "input_modalities": [
+          "file",
+          "image",
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT"
+      },
+      "canonical_slug": "openai/gpt-6.2-sol-20261117",
+      "context_length": 1050000,
+      "created": 1794938371,
+      "default_parameters": {},
+      "description": "GPT-6.2 Sol is an upgrade to GPT-6.1 Sol from OpenAI, positioned below the flagship GPT-6.2 Astra in the GPT-6.2 series. It is an efficient, versatile model for everyday work, suited...",
+      "expiration_date": null,
+      "id": "openai/gpt-6.2-sol",
+      "name": "OpenAI: GPT-6.2 Sol",
+      "pricing": {
+        "completion": "0.00001",
+        "image": null,
+        "input_cache_read": "0.0000001",
+        "input_cache_write": "0.0000025",
+        "internal_reasoning": null,
+        "prompt": "0.000002",
+        "request": null,
+        "web_search": "0.01"
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "top_provider": {
+        "context_length": 1050000,
+        "is_moderated": true,
+        "max_completion_tokens": 128000
+      }
+    },
+    "openai/gpt-6.2-sol-pro": {
+      "architecture": {
+        "input_modalities": [
+          "file",
+          "image",
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+file->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT"
+      },
+      "canonical_slug": "openai/gpt-6.2-sol-pro-20261117",
+      "context_length": 1050000,
+      "created": 1794938409,
+      "default_parameters": {},
+      "description": "GPT-6.2 Sol Pro is the same underlying model as [GPT-6.2 Sol](https://openrouter.ai/openai/gpt-6.2-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+      "expiration_date": null,
+      "id": "openai/gpt-6.2-sol-pro",
+      "name": "OpenAI: GPT-6.2 Sol Pro",
+      "pricing": {
+        "completion": "0.00001",
+        "image": null,
+        "input_cache_read": "0.0000001",
+        "input_cache_write": "0.0000025",
+        "internal_reasoning": null,
+        "prompt": "0.000002",
         "request": null,
         "web_search": "0.01"
       },
