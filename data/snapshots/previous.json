@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T00:01:45.080168Z",
+  "generated_at": "2026-11-17T00:31:40.246681Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3764,12 +3764,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.000000567",
+        "completion": "0.00000042",
         "image": null,
-        "input_cache_read": "0.000000018",
+        "input_cache_read": "0.0000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000051",
+        "prompt": "0.00000014",
         "request": null,
         "web_search": null
       },
@@ -3801,7 +3801,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4.1-flash-1017": {
@@ -3888,12 +3888,12 @@
       "id": "deepseek/deepseek-v4.1-flash-1017:batch",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
       "pricing": {
-        "completion": "0.000000317",
+        "completion": "0.000000335",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.000000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000036",
+        "prompt": "0.000000038",
         "request": null,
         "web_search": null
       },
@@ -17173,12 +17173,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.00000013",
         "image": null,
-        "input_cache_read": "0.0000000375",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.00000003",
         "request": null,
         "web_search": null
       },
@@ -17208,7 +17208,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 117964
       }
     },
     "openai/gpt-oss-20b:batch": {
@@ -19839,12 +19839,12 @@
       "id": "qwen/qwen3.5-397b-a17b",
       "name": "Qwen: Qwen3.5 397B A17B",
       "pricing": {
-        "completion": "0.000003",
+        "completion": "0.0000036",
         "image": null,
-        "input_cache_read": "0.00000022",
+        "input_cache_read": "0.00000012",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000045",
+        "prompt": "0.0000006",
         "request": null,
         "web_search": null
       },
@@ -19871,9 +19871,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 256000,
         "is_moderated": false,
-        "max_completion_tokens": 81920
+        "max_completion_tokens": 64000
       }
     },
     "qwen/qwen3.5-9b": {
@@ -19906,12 +19906,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.00000022",
+        "completion": "0.000000239",
         "image": null,
-        "input_cache_read": "0.000000134",
+        "input_cache_read": "0.000000146",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000149",
+        "prompt": "0.000000162",
         "request": null,
         "web_search": null
       },
@@ -22223,12 +22223,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22484,12 +22484,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
@@ -25233,12 +25233,12 @@
       "id": "z-ai/glm-5.3-flash:batch",
       "name": "Z.ai: GLM 5.3 Flash (batch)",
       "pricing": {
-        "completion": "0.000000087",
+        "completion": "0.000000069",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.000000012",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000003",
+        "prompt": "0.000000024",
         "request": null,
         "web_search": null
       },
