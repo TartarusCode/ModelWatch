@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T11:31:45.725824Z",
+  "generated_at": "2026-11-17T12:01:37.091419Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -10724,12 +10724,12 @@
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
       "pricing": {
-        "completion": "0.0000035",
+        "completion": "0.00000375",
         "image": null,
         "input_cache_read": "0.00000016",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000006",
+        "prompt": "0.00000075",
         "request": null,
         "web_search": null
       },
@@ -19906,12 +19906,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.00000025",
+        "completion": "0.00000016",
         "image": null,
-        "input_cache_read": "0.000000153",
+        "input_cache_read": "0.000000098",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000017",
+        "prompt": "0.000000109",
         "request": null,
         "web_search": null
       },
@@ -25168,12 +25168,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.0000005",
+        "completion": "0.0000000784",
         "image": null,
         "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000000399",
         "request": null,
         "web_search": null
       },
@@ -25202,9 +25202,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048575,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943717
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-5.3-flash:batch": {
