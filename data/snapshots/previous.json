@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T13:01:23.408191Z",
+  "generated_at": "2026-11-17T13:31:36.058089Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -17173,12 +17173,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.00000013",
+        "completion": "0.00000009",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.000000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000003",
+        "prompt": "0.000000018",
         "request": null,
         "web_search": null
       },
@@ -19906,12 +19906,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000168",
+        "completion": "0.00000025",
         "image": null,
-        "input_cache_read": "0.000000103",
+        "input_cache_read": "0.000000153",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000114",
+        "prompt": "0.00000017",
         "request": null,
         "web_search": null
       },
