@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T22:01:57.781639Z",
+  "generated_at": "2026-11-17T22:31:41.435921Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -17381,12 +17381,12 @@
       "id": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
       "pricing": {
-        "completion": "0.00000013",
+        "completion": "0.00000009",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.000000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000003",
+        "prompt": "0.000000018",
         "request": null,
         "web_search": null
       },
@@ -20114,12 +20114,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000237",
+        "completion": "0.000000142",
         "image": null,
-        "input_cache_read": "0.000000145",
+        "input_cache_read": "0.000000087",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000161",
+        "prompt": "0.000000096",
         "request": null,
         "web_search": null
       },
@@ -23097,7 +23097,7 @@
         "top_p": null
       },
       "description": "Inkling 2 Small is an open-weight multimodal mixture-of-experts reasoning model from Thinking Machines Lab, with 17B active parameters out of 594B total. It is the first model in the second...",
-      "expiration_date": null,
+      "expiration_date": "2026-11-19",
       "id": "thinkingmachines/inkling-2-small:free",
       "name": "Thinking Machines: Inkling 2 Small (free)",
       "pricing": {
