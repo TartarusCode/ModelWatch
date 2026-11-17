@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T00:31:40.246681Z",
+  "generated_at": "2026-11-17T01:01:56.235951Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3888,12 +3888,12 @@
       "id": "deepseek/deepseek-v4.1-flash-1017:batch",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
       "pricing": {
-        "completion": "0.000000335",
+        "completion": "0.00000015",
         "image": null,
-        "input_cache_read": "0.000000004",
+        "input_cache_read": "0.000000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000038",
+        "prompt": "0.000000036",
         "request": null,
         "web_search": null
       },
@@ -10920,7 +10920,7 @@
       "pricing": {
         "completion": "0.000005583",
         "image": null,
-        "input_cache_read": "0.000000119",
+        "input_cache_read": "0.0000001",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.000000372",
@@ -19906,12 +19906,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000239",
+        "completion": "0.00000025",
         "image": null,
-        "input_cache_read": "0.000000146",
+        "input_cache_read": "0.000000153",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000162",
+        "prompt": "0.00000017",
         "request": null,
         "web_search": null
       },
@@ -25235,7 +25235,7 @@
       "pricing": {
         "completion": "0.000000069",
         "image": null,
-        "input_cache_read": "0.000000012",
+        "input_cache_read": "0.00000001",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.000000024",
@@ -25463,12 +25463,12 @@
       "id": "z-ai/glm-5.3:batch",
       "name": "Z.ai: GLM 5.3 (batch)",
       "pricing": {
-        "completion": "0.000002",
+        "completion": "0.00000125",
         "image": null,
-        "input_cache_read": "0.0000001",
+        "input_cache_read": "0.000000062",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000045",
+        "prompt": "0.000000281",
         "request": null,
         "web_search": null
       },
@@ -25498,7 +25498,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 943718
       }
     },
     "z-ai/glm-5v-turbo": {
