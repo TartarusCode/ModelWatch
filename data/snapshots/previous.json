@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T23:01:36.529094Z",
+  "generated_at": "2026-11-17T23:31:56.551463Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -18121,7 +18121,7 @@
       "top_provider": {
         "context_length": null,
         "is_moderated": false,
-        "max_completion_tokens": 64000
+        "max_completion_tokens": 128000
       }
     },
     "openrouter/auto-code": {
@@ -18189,7 +18189,7 @@
       "top_provider": {
         "context_length": null,
         "is_moderated": false,
-        "max_completion_tokens": 64000
+        "max_completion_tokens": 128000
       }
     },
     "openrouter/bodybuilder": {
@@ -20318,12 +20318,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000078",
+        "completion": "0.000000066",
         "image": null,
-        "input_cache_read": "0.000000048",
+        "input_cache_read": "0.00000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000053",
+        "prompt": "0.000000045",
         "request": null,
         "web_search": null
       },
@@ -23524,7 +23524,7 @@
       "top_provider": {
         "context_length": null,
         "is_moderated": false,
-        "max_completion_tokens": 64000
+        "max_completion_tokens": 128000
       }
     },
     "unbiased/pareto-26.10": {
