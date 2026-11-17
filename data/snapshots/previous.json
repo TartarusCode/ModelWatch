@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T16:31:50.736535Z",
+  "generated_at": "2026-11-17T17:02:04.508811Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -10155,12 +10155,12 @@
       "id": "mistralai/mistral-small-3.2-24b-instruct",
       "name": "Mistral: Mistral Small 3.2 24B",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.0000002",
         "image": null,
-        "input_cache_read": "0.00000001",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.000000075",
         "request": null,
         "web_search": null
       },
@@ -10185,9 +10185,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 32768,
+        "context_length": 128000,
         "is_moderated": false,
-        "max_completion_tokens": 26214
+        "max_completion_tokens": 16384
       }
     },
     "mistralai/mixtral-8x22b-instruct": {
