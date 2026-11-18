@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T18:02:11.553430Z",
+  "generated_at": "2026-11-18T18:32:04.385681Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -20321,12 +20321,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000191",
+        "completion": "0.00000025",
         "image": null,
-        "input_cache_read": "0.000000117",
+        "input_cache_read": "0.000000153",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000013",
+        "prompt": "0.00000017",
         "request": null,
         "web_search": null
       },
