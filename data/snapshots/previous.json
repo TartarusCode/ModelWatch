@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T00:01:34.828943Z",
+  "generated_at": "2026-11-18T00:31:42.506274Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6422,7 +6422,7 @@
       "id": "google/gemma-3-27b-it",
       "name": "Google: Gemma 3 27B",
       "pricing": {
-        "completion": "0.00000035",
+        "completion": "0.00000045",
         "image": null,
         "input_cache_read": "0.00000004",
         "input_cache_write": null,
@@ -10794,10 +10794,10 @@
       "pricing": {
         "completion": "0.000016",
         "image": null,
-        "input_cache_read": "0.000000182",
+        "input_cache_read": "0.00000019",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000192",
+        "prompt": "0.0000002",
         "request": null,
         "web_search": null
       },
@@ -19802,10 +19802,10 @@
       "pricing": {
         "completion": "0.0000011",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000007",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
@@ -19832,7 +19832,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3-vl-235b-a22b-instruct": {
@@ -20117,12 +20117,12 @@
       "id": "qwen/qwen3.5-27b",
       "name": "Qwen: Qwen3.5-27B",
       "pricing": {
-        "completion": "0.0000026",
+        "completion": "0.0000024",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000026",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -20151,7 +20151,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 81920
+        "max_completion_tokens": 65536
       }
     },
     "qwen/qwen3.5-35b-a3b": {
@@ -20318,12 +20318,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.00000022",
+        "completion": "0.000000069",
         "image": null,
-        "input_cache_read": "0.000000134",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000149",
+        "prompt": "0.000000047",
         "request": null,
         "web_search": null
       },
@@ -21107,12 +21107,12 @@
       "id": "qwen/qwen3.8-27b",
       "name": "Qwen: Qwen3.8 27B",
       "pricing": {
-        "completion": "0.000001875",
+        "completion": "0.0000022",
         "image": null,
-        "input_cache_read": "0.0000000375",
+        "input_cache_read": "0.000000059",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.00000006",
         "request": null,
         "web_search": null
       },
@@ -22635,12 +22635,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22896,12 +22896,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
@@ -25022,7 +25022,7 @@
       "pricing": {
         "completion": "0.0000009",
         "image": null,
-        "input_cache_read": "0.000000055",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000003",
