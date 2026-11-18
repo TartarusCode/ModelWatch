@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T05:01:54.962164Z",
+  "generated_at": "2026-11-18T05:31:52.405386Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -20321,12 +20321,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000211",
+        "completion": "0.00000025",
         "image": null,
-        "input_cache_read": "0.000000129",
+        "input_cache_read": "0.000000153",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000143",
+        "prompt": "0.00000017",
         "request": null,
         "web_search": null
       },
@@ -25583,12 +25583,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.0000000784",
+        "completion": "0.0000005",
         "image": null,
         "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000399",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -25617,9 +25617,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1048575,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 943717
       }
     },
     "z-ai/glm-5.3-flash:batch": {
