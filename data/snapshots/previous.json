@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T23:31:56.551463Z",
+  "generated_at": "2026-11-18T00:01:34.828943Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3764,12 +3764,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.000000567",
         "image": null,
-        "input_cache_read": "0.000000006",
+        "input_cache_read": "0.000000018",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.000000051",
         "request": null,
         "web_search": null
       },
@@ -18121,7 +18121,7 @@
       "top_provider": {
         "context_length": null,
         "is_moderated": false,
-        "max_completion_tokens": 128000
+        "max_completion_tokens": 64000
       }
     },
     "openrouter/auto-code": {
@@ -18189,7 +18189,7 @@
       "top_provider": {
         "context_length": null,
         "is_moderated": false,
-        "max_completion_tokens": 128000
+        "max_completion_tokens": 64000
       }
     },
     "openrouter/bodybuilder": {
@@ -20318,12 +20318,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000066",
+        "completion": "0.00000022",
         "image": null,
-        "input_cache_read": "0.00000004",
+        "input_cache_read": "0.000000134",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000045",
+        "prompt": "0.000000149",
         "request": null,
         "web_search": null
       },
@@ -23524,7 +23524,7 @@
       "top_provider": {
         "context_length": null,
         "is_moderated": false,
-        "max_completion_tokens": 128000
+        "max_completion_tokens": 64000
       }
     },
     "unbiased/pareto-26.10": {
@@ -25580,12 +25580,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.0000005",
+        "completion": "0.0000000784",
         "image": null,
         "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000000399",
         "request": null,
         "web_search": null
       },
@@ -25614,9 +25614,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048575,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943717
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-5.3-flash:batch": {
