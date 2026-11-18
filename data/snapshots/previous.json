@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T07:32:00.787093Z",
+  "generated_at": "2026-11-18T08:01:27.073658Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -24534,7 +24534,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "xiaomi/mimo-v2.5-pro-20260422",
-      "context_length": 1024000,
+      "context_length": 262144,
       "created": 1776874273,
       "default_parameters": {
         "frequency_penalty": null,
@@ -24549,12 +24549,12 @@
       "id": "xiaomi/mimo-v2.5-pro",
       "name": "Xiaomi: MiMo-V2.5-Pro",
       "pricing": {
-        "completion": "0.00000087",
+        "completion": "0.0000018",
         "image": null,
-        "input_cache_read": "0.0000000036",
+        "input_cache_read": "0.000000096",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000435",
+        "prompt": "0.00000048",
         "request": null,
         "web_search": null
       },
@@ -24573,9 +24573,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1024000,
+        "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 235929
       }
     },
     "xiaomi/mimo-v2.6-flash": {
@@ -25583,12 +25583,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.0000000784",
+        "completion": "0.0000005",
         "image": null,
         "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000399",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -25617,9 +25617,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1048575,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 943717
       }
     },
     "z-ai/glm-5.3-flash:batch": {
