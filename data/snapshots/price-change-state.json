@@ -19566,9 +19566,26 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.249300",
+      "detected_at": "2026-11-19T13:31:43.808416Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.300000",
+      "field": "prompt",
+      "model_id": "deepseek/deepseek-v4.1-flash",
+      "new_per_million_usd": "0.050700",
+      "old_per_million_usd": "0.300000",
+      "pct_change": -0.831,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-11-19T13:01:47.101948Z",
+  "generated_at": "2026-11-19T13:31:51.054989Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -23248,20 +23265,20 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.3000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.0507000000",
+        "confirmed_at": "2026-11-19T13:31:43.808416Z",
+        "confirmed_price": "0.0507000000",
         "direction": "cut",
         "episode_start_price": "0.3000000",
-        "pending_builds": 1,
-        "pending_price": "0.0507000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "deepseek/deepseek-v4.1-flash-1017": {
       "completion": {
-        "anchor": "1.2000000",
+        "anchor": "0.15000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23283,7 +23300,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.006000000",
+        "anchor": "0.0015000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23305,7 +23322,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.3000000",
+        "anchor": "0.035000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -37748,7 +37765,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.142000000",
+        "anchor": "0.17000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
