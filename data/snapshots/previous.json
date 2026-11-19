@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T03:01:46.169757Z",
+  "generated_at": "2026-11-19T03:31:45.625583Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -20557,12 +20557,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.00000025",
+        "completion": "0.000000226",
         "image": null,
-        "input_cache_read": "0.000000153",
+        "input_cache_read": "0.000000138",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000017",
+        "prompt": "0.000000154",
         "request": null,
         "web_search": null
       },
@@ -25560,12 +25560,12 @@
       "id": "z-ai/glm-5.1",
       "name": "Z.ai: GLM 5.1",
       "pricing": {
-        "completion": "0.0000044",
+        "completion": "0.00000374",
         "image": null,
-        "input_cache_read": "0.00000026",
+        "input_cache_read": "0.0000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000014",
+        "prompt": "0.00000119",
         "request": null,
         "web_search": null
       },
@@ -25592,7 +25592,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 202752,
+        "context_length": 204800,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
