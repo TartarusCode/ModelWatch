@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T17:01:54.605524Z",
+  "generated_at": "2026-11-19T17:31:40.672088Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -18357,7 +18357,7 @@
       "top_provider": {
         "context_length": null,
         "is_moderated": false,
-        "max_completion_tokens": 64000
+        "max_completion_tokens": 128000
       }
     },
     "openrouter/auto-code": {
@@ -18425,7 +18425,7 @@
       "top_provider": {
         "context_length": null,
         "is_moderated": false,
-        "max_completion_tokens": 64000
+        "max_completion_tokens": 128000
       }
     },
     "openrouter/bodybuilder": {
@@ -21868,10 +21868,10 @@
       "pricing": {
         "completion": "0.000001",
         "image": null,
-        "input_cache_read": "0.00000004",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.00000025",
         "request": null,
         "web_search": null
       },
@@ -21901,7 +21901,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 131072
       }
     },
     "rekaai/reka-edge": {
@@ -23707,7 +23707,7 @@
       "top_provider": {
         "context_length": null,
         "is_moderated": false,
-        "max_completion_tokens": 64000
+        "max_completion_tokens": 128000
       }
     },
     "unbiased/pareto-26.10": {
