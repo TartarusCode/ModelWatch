@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T01:01:55.921937Z",
+  "generated_at": "2026-11-20T01:31:48.064293Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -9080,12 +9080,12 @@
       "id": "minimax/minimax-m3.1-flash",
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.0000000075",
+        "input_cache_read": "0.000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -17112,7 +17112,7 @@
       ],
       "top_provider": {
         "context_length": 1050000,
-        "is_moderated": true,
+        "is_moderated": false,
         "max_completion_tokens": 128000
       }
     },
@@ -23967,10 +23967,10 @@
         "top_k": null,
         "top_p": null
       },
-      "description": "Grok 4.20 is a reasoning model from SpaceXAI with industry-leading speed and agentic tool calling capabilities. It combines the lowest hallucination rate on the market with strict prompt adherance, delivering...",
+      "description": "Grok 4.20 is a reasoning model from SpaceXSI with industry-leading speed and agentic tool calling capabilities. It combines the lowest hallucination rate on the market with strict prompt adherance, delivering...",
       "expiration_date": null,
       "id": "x-ai/grok-4.20",
-      "name": "SpaceXAI: Grok 4.20",
+      "name": "SpaceXSI: Grok 4.20",
       "pricing": {
         "completion": "0.0000025",
         "image": null,
@@ -24027,10 +24027,10 @@
         "top_k": null,
         "top_p": null
       },
-      "description": "Grok 4.20 Multi-Agent is a variant of SpaceXAI’s Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information...",
+      "description": "Grok 4.20 Multi-Agent is a variant of SpaceXSI’s Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information...",
       "expiration_date": null,
       "id": "x-ai/grok-4.20-multi-agent",
-      "name": "SpaceXAI: Grok 4.20 Multi-Agent",
+      "name": "SpaceXSI: Grok 4.20 Multi-Agent",
       "pricing": {
         "completion": "0.0000025",
         "image": null,
@@ -24086,10 +24086,10 @@
         "top_k": null,
         "top_p": null
       },
-      "description": "Grok 4.3 is a reasoning model from SpaceXAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual...",
+      "description": "Grok 4.3 is a reasoning model from SpaceXSI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual...",
       "expiration_date": null,
       "id": "x-ai/grok-4.3",
-      "name": "SpaceXAI: Grok 4.3",
+      "name": "SpaceXSI: Grok 4.3",
       "pricing": {
         "completion": "0.0000025",
         "image": null,
@@ -24147,10 +24147,10 @@
         "top_k": null,
         "top_p": null
       },
-      "description": "Grok 4.3 is a reasoning model from SpaceXAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual...",
+      "description": "Grok 4.3 is a reasoning model from SpaceXSI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual...",
       "expiration_date": null,
       "id": "x-ai/grok-4.3:batch",
-      "name": "SpaceXAI: Grok 4.3 (batch)",
+      "name": "SpaceXSI: Grok 4.3 (batch)",
       "pricing": {
         "completion": "0.000002",
         "image": null,
@@ -24201,7 +24201,7 @@
       "context_length": 500000,
       "created": 1783523154,
       "default_parameters": {},
-      "description": "Grok 4.5 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM.",
+      "description": "Grok 4.5 is a model from SpaceXSI with frontier performance on coding, knowledge work, and STEM.",
       "expiration_date": null,
       "id": "x-ai/grok-4.5",
       "name": "SpaceXSI: Grok 4.5",
@@ -24255,7 +24255,7 @@
       "context_length": 500000,
       "created": 1786548957,
       "default_parameters": {},
-      "description": "Grok 4.6 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7).",
+      "description": "Grok 4.6 is a model from SpaceXSI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7).",
       "expiration_date": null,
       "id": "x-ai/grok-4.6",
       "name": "SpaceXSI: Grok 4.6",
@@ -24311,7 +24311,7 @@
       "context_length": 500000,
       "created": 1786548957,
       "default_parameters": {},
-      "description": "Grok 4.6 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7).",
+      "description": "Grok 4.6 is a model from SpaceXSI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7).",
       "expiration_date": null,
       "id": "x-ai/grok-4.6:batch",
       "name": "SpaceXSI: Grok 4.6 (batch)",
@@ -24368,7 +24368,7 @@
         "temperature": 0.7,
         "top_p": 0.95
       },
-      "description": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and...",
+      "description": "Grok 4.7 is SpaceXSI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and...",
       "expiration_date": null,
       "id": "x-ai/grok-4.7",
       "name": "SpaceXSI: Grok 4.7",
@@ -24427,7 +24427,7 @@
         "temperature": 0.7,
         "top_p": 0.95
       },
-      "description": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and...",
+      "description": "Grok 4.7 is SpaceXSI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and...",
       "expiration_date": null,
       "id": "x-ai/grok-4.7:batch",
       "name": "SpaceXSI: Grok 4.7 (batch)",
@@ -25029,7 +25029,7 @@
       "pricing": {
         "completion": "0.0000009",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.000000055",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000003",
