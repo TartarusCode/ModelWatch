@@ -19832,15 +19832,15 @@
       "new_per_million_usd": "0.135000",
       "old_per_million_usd": "0.050000",
       "pct_change": 1.7,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-11-20T06:01:36.032401Z",
+      "recovered_per_million_usd": "0.035000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     }
   ],
-  "generated_at": "2026-11-20T05:31:47.257742Z",
+  "generated_at": "2026-11-20T06:01:38.808641Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -23264,15 +23264,15 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.135000000",
-        "confirmed_at": "2026-11-20T04:01:45.483647Z",
-        "confirmed_price": "0.135000000",
-        "direction": "hike",
-        "episode_start_price": "0.05000000",
+        "anchor": "0.035000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 1,
-        "status": "confirmed"
+        "recovery_builds": 0,
+        "status": "idle"
       },
       "prompt": {
         "anchor": "0.1000000",
