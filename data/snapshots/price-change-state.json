@@ -19670,7 +19670,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-20T00:01:52.397674Z",
+  "generated_at": "2026-11-20T00:31:45.662091Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -23339,7 +23339,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.018000000",
+        "anchor": "0.006000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -23373,17 +23373,6 @@
         "recovery_builds": 0,
         "status": "idle"
       },
-      "completion_offpeak": {
-        "anchor": "0.6000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
-        "recovery_builds": 0,
-        "status": "idle"
-      },
       "input_cache_read": {
         "anchor": "0.01000000",
         "confirmed_at": null,
@@ -23395,30 +23384,8 @@
         "recovery_builds": 0,
         "status": "idle"
       },
-      "input_cache_read_offpeak": {
-        "anchor": "0.003000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
-        "recovery_builds": 0,
-        "status": "idle"
-      },
       "prompt": {
         "anchor": "0.036000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
-        "recovery_builds": 0,
-        "status": "idle"
-      },
-      "prompt_offpeak": {
-        "anchor": "0.15000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -29995,15 +29962,15 @@
         "anchor": "3.5000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "3.5000000",
+        "pending_builds": 1,
+        "pending_price": "3.000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.16000000",
+        "anchor": "0.12000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -30014,7 +29981,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.65000000",
+        "anchor": "0.6000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -35787,12 +35754,12 @@
         "anchor": "0.6000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.6000000",
+        "pending_builds": 1,
+        "pending_price": "0.36000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
         "anchor": "0.075000000",
@@ -35809,12 +35776,12 @@
         "anchor": "0.15000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "cut",
+        "episode_start_price": "0.15000000",
+        "pending_builds": 1,
+        "pending_price": "0.09000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "openai/gpt-oss-120b:batch": {
@@ -38186,7 +38153,7 @@
         "episode_start_price": "2.4000000",
         "pending_builds": 0,
         "pending_price": null,
-        "recovery_builds": 0,
+        "recovery_builds": 1,
         "status": "confirmed"
       },
       "input_cache_read": {

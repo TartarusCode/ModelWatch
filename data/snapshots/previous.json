@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T00:01:52.397674Z",
+  "generated_at": "2026-11-20T00:31:45.662091Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3764,12 +3764,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.000000567",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000018",
+        "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000051",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -10834,12 +10834,12 @@
       "id": "moonshotai/kimi-k2.7-code",
       "name": "MoonshotAI: Kimi K2.7 Code",
       "pricing": {
-        "completion": "0.0000035",
+        "completion": "0.000003",
         "image": null,
-        "input_cache_read": "0.00000016",
+        "input_cache_read": "0.00000012",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000065",
+        "prompt": "0.0000006",
         "request": null,
         "web_search": null
       },
@@ -17318,7 +17318,7 @@
       ],
       "top_provider": {
         "context_length": 1050000,
-        "is_moderated": true,
+        "is_moderated": false,
         "max_completion_tokens": 128000
       }
     },
@@ -17570,12 +17570,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.00000036",
         "image": null,
-        "input_cache_read": "0.000000075",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
@@ -17606,7 +17606,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 117964
       }
     },
     "openai/gpt-oss-120b:batch": {
@@ -18232,7 +18232,7 @@
       "top_provider": {
         "context_length": null,
         "is_moderated": false,
-        "max_completion_tokens": 64000
+        "max_completion_tokens": 128000
       }
     },
     "openrouter/auto-code": {
@@ -20231,12 +20231,12 @@
       "id": "qwen/qwen3.5-27b",
       "name": "Qwen: Qwen3.5-27B",
       "pricing": {
-        "completion": "0.00000156",
+        "completion": "0.0000026",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000195",
+        "prompt": "0.00000026",
         "request": null,
         "web_search": null
       },
@@ -20265,7 +20265,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 81920
       }
     },
     "qwen/qwen3.5-35b-a3b": {
@@ -22749,12 +22749,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -23019,12 +23019,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
@@ -23591,7 +23591,7 @@
       "top_provider": {
         "context_length": null,
         "is_moderated": false,
-        "max_completion_tokens": 64000
+        "max_completion_tokens": 128000
       }
     },
     "unbiased/pareto-26.10": {
@@ -24461,66 +24461,6 @@
         "context_length": 500000,
         "is_moderated": false,
         "max_completion_tokens": 450000
-      }
-    },
-    "x-ai/grok-build-0.1": {
-      "architecture": {
-        "input_modalities": [
-          "text",
-          "image",
-          "file"
-        ],
-        "instruct_type": null,
-        "modality": "text+image+file->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Grok"
-      },
-      "canonical_slug": "x-ai/grok-build-0.1-20260520",
-      "context_length": 256000,
-      "created": 1779298123,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "Grok Build 0.1 is SpaceXAI’s fast coding model trained specifically for agentic software engineering workflows. It supports text and image inputs with text output, and is optimized for interactive coding...",
-      "expiration_date": null,
-      "id": "x-ai/grok-build-0.1",
-      "name": "SpaceXAI: Grok Build 0.1",
-      "pricing": {
-        "completion": "0.000002",
-        "image": null,
-        "input_cache_read": "0.0000002",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.000001",
-        "request": null,
-        "web_search": "0.005"
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "logprobs",
-        "max_tokens",
-        "reasoning",
-        "response_format",
-        "seed",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 256000,
-        "is_moderated": false,
-        "max_completion_tokens": 230400
       }
     },
     "xiaomi/mimo-v2.5": {
