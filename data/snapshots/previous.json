@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T17:01:53.554262Z",
+  "generated_at": "2026-11-20T17:31:31.122532Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6600,9 +6600,9 @@
       "id": "google/gemma-3-27b-it",
       "name": "Google: Gemma 3 27B",
       "pricing": {
-        "completion": "0.00000016",
+        "completion": "0.00000045",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000004",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.00000008",
@@ -6632,7 +6632,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 117964
       }
     },
     "google/gemma-3-4b-it": {
