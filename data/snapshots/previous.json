@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T02:01:45.113243Z",
+  "generated_at": "2026-11-20T02:31:26.467132Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3706,12 +3706,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000012",
+        "completion": "0.000000567",
         "image": null,
-        "input_cache_read": "0.000000006",
+        "input_cache_read": "0.000000018",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.000000051",
         "request": null,
         "web_search": null
       },
@@ -3890,12 +3890,12 @@
       "id": "deepseek/deepseek-v4.1-flash:batch",
       "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
       "pricing": {
-        "completion": "0.000000336",
+        "completion": "0.00000015",
         "image": null,
-        "input_cache_read": "0.00000000336",
+        "input_cache_read": "0.000000004",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000112",
+        "prompt": "0.00000005",
         "request": null,
         "web_search": null
       },
@@ -3925,7 +3925,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 384000
       }
     },
     "dots-studio/dots-3-note-preview:free": {
@@ -10293,6 +10293,51 @@
         "context_length": 65536,
         "is_moderated": false,
         "max_completion_tokens": 52428
+      }
+    },
+    "mistralai/pixtral-large-2502": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Mistral"
+      },
+      "canonical_slug": "mistralai/pixtral-large-2502",
+      "context_length": 128000,
+      "created": 1795135865,
+      "default_parameters": {},
+      "description": "Pixtral Large 2502 is the February 2025 version of Mistral AI's large multimodal model, following [Pixtral Large 2411](https://openrouter.ai/mistralai/pixtral-large-2411). It accepts text and image input, including documents, charts, and natural images,...",
+      "expiration_date": null,
+      "id": "mistralai/pixtral-large-2502",
+      "name": "Mistral: Pixtral Large 2502",
+      "pricing": {
+        "completion": "0.000006",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000002",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "max_tokens",
+        "stop",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 128000,
+        "is_moderated": true,
+        "max_completion_tokens": 102400
       }
     },
     "mistralai/voxtral-small-24b-2507": {
