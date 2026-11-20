@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T19:31:41.473487Z",
+  "generated_at": "2026-11-20T20:01:40.136421Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -2997,34 +2997,31 @@
       "id": "deepseek/deepseek-chat-v3-0324",
       "name": "DeepSeek: DeepSeek V3 0324",
       "pricing": {
-        "completion": "0.00000114",
+        "completion": "0.000001",
         "image": null,
-        "input_cache_read": "0.00000011",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000029",
+        "prompt": "0.00000025",
         "request": null,
         "web_search": null
       },
       "pricing_schedule": null,
       "supported_parameters": [
         "frequency_penalty",
-        "logprobs",
         "max_tokens",
         "response_format",
-        "seed",
         "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
-        "context_length": 128000,
+        "context_length": 163840,
         "is_moderated": false,
-        "max_completion_tokens": 115200
+        "max_completion_tokens": 147456
       }
     },
     "deepseek/deepseek-chat-v3.1": {
@@ -3521,12 +3518,12 @@
       "id": "deepseek/deepseek-v4-flash-vision-exp",
       "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
       "pricing": {
-        "completion": "0.00000132",
+        "completion": "0.0000006468",
         "image": null,
-        "input_cache_read": "0.000000014",
+        "input_cache_read": "0.00000000686",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000044",
+        "prompt": "0.0000002156",
         "request": null,
         "web_search": null
       },
@@ -3535,7 +3532,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -3550,13 +3546,12 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048575,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943717
+        "max_completion_tokens": 262144
       }
     },
     "deepseek/deepseek-v4-pro": {
@@ -8853,12 +8848,12 @@
       "id": "minimax/minimax-m2.7",
       "name": "MiniMax: MiniMax M2.7",
       "pricing": {
-        "completion": "0.00000084",
+        "completion": "0.0000018",
         "image": null,
-        "input_cache_read": "0.000000042",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000021",
+        "prompt": "0.0000006",
         "request": null,
         "web_search": null
       },
@@ -8867,7 +8862,6 @@
         "include_reasoning",
         "max_tokens",
         "reasoning",
-        "response_format",
         "seed",
         "stop",
         "temperature",
@@ -8878,7 +8872,7 @@
       "top_provider": {
         "context_length": 196608,
         "is_moderated": false,
-        "max_completion_tokens": 176947
+        "max_completion_tokens": 131072
       }
     },
     "minimax/minimax-m3": {
@@ -22772,61 +22766,6 @@
         "max_completion_tokens": 128000
       }
     },
-    "tencent/hy3-preview": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "tencent/hy3-preview-20260421",
-      "context_length": 262144,
-      "created": 1776878150,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": 0.9,
-        "top_k": null,
-        "top_p": 1
-      },
-      "description": "Hy3 preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production use. It supports configurable reasoning levels across disabled, low, and high modes, allowing it to...",
-      "expiration_date": null,
-      "id": "tencent/hy3-preview",
-      "name": "Tencent: Hy3 preview",
-      "pricing": {
-        "completion": "0.0000006",
-        "image": null,
-        "input_cache_read": "0.00000006",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000018",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "reasoning_effort",
-        "seed",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 235929
-      }
-    },
     "tencent/hy4": {
       "architecture": {
         "input_modalities": [
@@ -23021,7 +22960,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
-        "logprobs",
         "max_completion_tokens",
         "max_tokens",
         "min_p",
@@ -23037,7 +22975,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -24537,7 +24474,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "xiaomi/mimo-v2.6-flash-20260921",
-      "context_length": 1050000,
+      "context_length": 1048576,
       "created": 1790021264,
       "default_parameters": {
         "frequency_penalty": 0,
@@ -24603,7 +24540,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "xiaomi/mimo-v2.6-pro-20260921",
-      "context_length": 1050000,
+      "context_length": 1048576,
       "created": 1790021259,
       "default_parameters": {
         "frequency_penalty": 0,
