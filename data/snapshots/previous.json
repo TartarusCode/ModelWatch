@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T03:01:49.306121Z",
+  "generated_at": "2026-11-20T03:31:46.052719Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3402,12 +3402,12 @@
       "id": "deepseek/deepseek-v4-flash-0731",
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.00000023",
         "image": null,
-        "input_cache_read": "0.00000005",
+        "input_cache_read": "0.000000135",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000001",
+        "prompt": "0.00000014",
         "request": null,
         "web_search": null
       },
@@ -3646,12 +3646,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.0000043",
+        "completion": "0.00000396",
         "image": null,
-        "input_cache_read": "0.000000284",
+        "input_cache_read": "0.000000044",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000285",
+        "prompt": "0.00000132",
         "request": null,
         "web_search": null
       },
@@ -3706,12 +3706,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.000000567",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000018",
+        "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000051",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -3956,12 +3956,12 @@
       "id": "deepseek/deepseek-v4.1-flash-1017:batch",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
       "pricing": {
-        "completion": "0.00000015",
+        "completion": "0.000000149",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.0000000029",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000036",
+        "prompt": "0.000000035",
         "request": null,
         "web_search": null
       },
@@ -25703,12 +25703,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.0000005",
+        "completion": "0.0000000784",
         "image": null,
         "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000000399",
         "request": null,
         "web_search": null
       },
@@ -25737,9 +25737,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048575,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943717
+        "max_completion_tokens": 131072
       }
     },
     "z-ai/glm-5.3-flash:batch": {
@@ -25768,12 +25768,12 @@
       "id": "z-ai/glm-5.3-flash:batch",
       "name": "Z.ai: GLM 5.3 Flash (batch)",
       "pricing": {
-        "completion": "0.000000069",
+        "completion": "0.000000068",
         "image": null,
-        "input_cache_read": "0.00000001",
+        "input_cache_read": "0.000000009",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000024",
+        "prompt": "0.000000023",
         "request": null,
         "web_search": null
       },
@@ -25801,9 +25801,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1048575,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 943717
       }
     },
     "z-ai/glm-5.3-flashx": {
@@ -25998,12 +25998,12 @@
       "id": "z-ai/glm-5.3:batch",
       "name": "Z.ai: GLM 5.3 (batch)",
       "pricing": {
-        "completion": "0.00000125",
+        "completion": "0.000001249",
         "image": null,
-        "input_cache_read": "0.000000062",
+        "input_cache_read": "0.000000061",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000281",
+        "prompt": "0.00000028",
         "request": null,
         "web_search": null
       },
@@ -26031,9 +26031,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1048575,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 943717
       }
     },
     "z-ai/glm-5v-turbo": {
