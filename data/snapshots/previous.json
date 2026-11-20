@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T01:31:48.064293Z",
+  "generated_at": "2026-11-20T02:01:45.113243Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -2922,64 +2922,6 @@
         "max_completion_tokens": 4000
       }
     },
-    "cohere/north-mini-code:free": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Cohere"
-      },
-      "canonical_slug": "cohere/north-mini-code-20260617",
-      "context_length": 256000,
-      "created": 1781723748,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "North Mini Code is Cohere's first agentic coding model and the debut of its North family. A sparse mixture-of-experts model with 30B total parameters and 3B active, it is optimized...",
-      "expiration_date": null,
-      "id": "cohere/north-mini-code:free",
-      "name": "Cohere: North Mini Code (free)",
-      "pricing": {
-        "completion": "0",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 256000,
-        "is_moderated": true,
-        "max_completion_tokens": 64000
-      }
-    },
     "deepseek/deepseek-chat": {
       "architecture": {
         "input_modalities": [
@@ -3704,12 +3646,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.0000115",
+        "completion": "0.0000043",
         "image": null,
-        "input_cache_read": "0.00000021",
+        "input_cache_read": "0.000000284",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000027",
+        "prompt": "0.000000285",
         "request": null,
         "web_search": null
       },
@@ -11048,9 +10990,13 @@
         "reasoning",
         "reasoning_effort",
         "repetition_penalty",
+        "response_format",
         "seed",
         "stop",
+        "structured_outputs",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_k",
         "top_p"
       ],
