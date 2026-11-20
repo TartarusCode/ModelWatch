@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T00:31:45.662091Z",
+  "generated_at": "2026-11-20T01:01:55.921937Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3704,12 +3704,12 @@
       "id": "deepseek/deepseek-v4-pro-0813",
       "name": "DeepSeek: DeepSeek V4 Pro 0813",
       "pricing": {
-        "completion": "0.0000095",
+        "completion": "0.0000115",
         "image": null,
-        "input_cache_read": "0.00000017",
+        "input_cache_read": "0.00000021",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000022",
+        "prompt": "0.00000027",
         "request": null,
         "web_search": null
       },
@@ -24204,7 +24204,7 @@
       "description": "Grok 4.5 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM.",
       "expiration_date": null,
       "id": "x-ai/grok-4.5",
-      "name": "SpaceXAI: Grok 4.5",
+      "name": "SpaceXSI: Grok 4.5",
       "pricing": {
         "completion": "0.000006",
         "image": null,
@@ -24258,7 +24258,7 @@
       "description": "Grok 4.6 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7).",
       "expiration_date": null,
       "id": "x-ai/grok-4.6",
-      "name": "SpaceXAI: Grok 4.6",
+      "name": "SpaceXSI: Grok 4.6",
       "pricing": {
         "completion": "0.000006",
         "image": null,
@@ -24314,7 +24314,7 @@
       "description": "Grok 4.6 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7).",
       "expiration_date": null,
       "id": "x-ai/grok-4.6:batch",
-      "name": "SpaceXAI: Grok 4.6 (batch)",
+      "name": "SpaceXSI: Grok 4.6 (batch)",
       "pricing": {
         "completion": "0.0000048",
         "image": null,
@@ -24371,7 +24371,7 @@
       "description": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and...",
       "expiration_date": null,
       "id": "x-ai/grok-4.7",
-      "name": "SpaceXAI: Grok 4.7",
+      "name": "SpaceXSI: Grok 4.7",
       "pricing": {
         "completion": "0.000006",
         "image": null,
@@ -24430,7 +24430,7 @@
       "description": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and...",
       "expiration_date": null,
       "id": "x-ai/grok-4.7:batch",
-      "name": "SpaceXAI: Grok 4.7 (batch)",
+      "name": "SpaceXSI: Grok 4.7 (batch)",
       "pricing": {
         "completion": "0.0000048",
         "image": null,
