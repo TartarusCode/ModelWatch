@@ -494,23 +494,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "0.210000",
-      "detected_at": "2026-11-16T13:01:44.788884Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.090000",
-      "field": "completion",
-      "model_id": "openai/gpt-oss-20b",
-      "new_per_million_usd": "0.300000",
-      "old_per_million_usd": "0.090000",
-      "pct_change": 2.3333333333333335,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "-1.040000",
       "detected_at": "2026-11-20T15:02:01.517688Z",
       "direction": "cut",
@@ -19953,11 +19936,11 @@
       "new_per_million_usd": "0.300000",
       "old_per_million_usd": "0.090000",
       "pct_change": 2.3333333333333335,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-11-20T21:01:46.038240Z",
+      "recovered_per_million_usd": "0.085000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     },
     {
@@ -20896,8 +20879,25 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-20T20:31:52.054104Z",
+  "generated_at": "2026-11-20T21:01:50.569633Z",
   "recovered_changes": [
+    {
+      "delta_per_million_usd": "0.210000",
+      "detected_at": "2026-11-16T13:01:44.788884Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.090000",
+      "field": "completion",
+      "model_id": "openai/gpt-oss-20b",
+      "new_per_million_usd": "0.300000",
+      "old_per_million_usd": "0.090000",
+      "pct_change": 2.3333333333333335,
+      "recovered_at": "2026-11-20T21:01:46.038240Z",
+      "recovered_per_million_usd": "0.085000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "recovered",
+      "tier": null
+    },
     {
       "delta_per_million_usd": "-0.840000",
       "detected_at": "2026-11-19T01:01:33.544741Z",
