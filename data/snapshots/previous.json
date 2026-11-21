@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T05:01:45.327664Z",
+  "generated_at": "2026-11-21T05:31:41.659128Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3701,12 +3701,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000008",
+        "completion": "0.0000001992",
         "image": null,
-        "input_cache_read": "0.000000002",
+        "input_cache_read": "0.000000000996",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000005",
+        "prompt": "0.0000000498",
         "request": null,
         "web_search": null
       },
@@ -3738,7 +3738,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4.1-flash-1017": {
@@ -23307,12 +23307,12 @@
       "id": "thinkingmachines/inkling-2-mini",
       "name": "Thinking Machines: Inkling 2 Mini",
       "pricing": {
-        "completion": "0.000000362",
+        "completion": "0.0000004",
         "image": null,
-        "input_cache_read": "0.000000018",
+        "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000091",
+        "prompt": "0.0000001",
         "request": null,
         "web_search": null
       },
