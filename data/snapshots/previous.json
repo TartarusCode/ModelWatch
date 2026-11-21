@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T03:01:41.121646Z",
+  "generated_at": "2026-11-21T03:31:32.220322Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -23394,6 +23394,66 @@
         "context_length": 524288,
         "is_moderated": false,
         "max_completion_tokens": 471859
+      }
+    },
+    "thinkingmachines/inkling-2-mini": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "thinkingmachines/inkling-2-mini-20261120",
+      "context_length": 1048576,
+      "created": 1795227585,
+      "default_parameters": {},
+      "description": "Inkling 2 Mini is an open-weight multimodal looped transformer from Thinking Machines Lab, with 3.4B active parameters out of 26.4B total (MoE). Its middle layers run three times with shared...",
+      "expiration_date": null,
+      "id": "thinkingmachines/inkling-2-mini",
+      "name": "Thinking Machines: Inkling 2 Mini",
+      "pricing": {
+        "completion": "0.0000004",
+        "image": null,
+        "input_cache_read": "0.00000002",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.0000001",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_completion_tokens",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 65536
       }
     },
     "thinkingmachines/inkling-2-small": {
