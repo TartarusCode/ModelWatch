@@ -20027,7 +20027,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-21T05:31:41.659128Z",
+  "generated_at": "2026-11-21T06:01:43.954033Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -23685,7 +23685,7 @@
     },
     "deepseek/deepseek-v4.1-flash": {
       "completion": {
-        "anchor": "0.2028000000",
+        "anchor": "0.1992000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -40775,6 +40775,41 @@
       },
       "prompt": {
         "anchor": "1.000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      }
+    },
+    "thinkingmachines/inkling-2-mini": {
+      "completion": {
+        "anchor": "0.4000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_read": {
+        "anchor": "0.02000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt": {
+        "anchor": "0.1000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
