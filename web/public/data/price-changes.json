@@ -20964,26 +20964,8 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-21T20:31:46.418214Z",
-  "recovered_changes": [
-    {
-      "delta_per_million_usd": "0.210000",
-      "detected_at": "2026-11-16T13:01:44.788884Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.090000",
-      "field": "completion",
-      "model_id": "openai/gpt-oss-20b",
-      "new_per_million_usd": "0.300000",
-      "old_per_million_usd": "0.090000",
-      "pct_change": 2.3333333333333335,
-      "recovered_at": "2026-11-20T21:01:46.038240Z",
-      "recovered_per_million_usd": "0.085000",
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "recovered",
-      "tier": null
-    }
-  ],
+  "generated_at": "2026-11-21T21:01:48.267153Z",
+  "recovered_changes": [],
   "settled_changes": [
     {
       "delta_per_million_usd": "-0.997200",
