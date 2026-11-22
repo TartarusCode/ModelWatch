@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T00:04:02.515040Z",
+  "generated_at": "2026-11-22T00:31:44.609256Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6603,12 +6603,12 @@
       "id": "google/gemma-3-4b-it",
       "name": "Google: Gemma 3 4B",
       "pricing": {
-        "completion": "0.0000001",
+        "completion": "0.00000005",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000005",
+        "prompt": "0.00000004",
         "request": null,
         "web_search": null
       },
@@ -6633,7 +6633,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 117964
       }
     },
     "google/gemma-4-26b-a4b-it": {
@@ -7007,12 +7007,12 @@
       "id": "gryphe/mythomax-l2-13b",
       "name": "MythoMax 13B",
       "pricing": {
-        "completion": "0.00000011",
+        "completion": "0.0000005",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.0000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000008",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -7036,9 +7036,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 4096,
+        "context_length": 8192,
         "is_moderated": false,
-        "max_completion_tokens": 3686
+        "max_completion_tokens": 7372
       }
     },
     "ibm-granite/granite-4.2-8b": {
@@ -20179,12 +20179,12 @@
       "id": "qwen/qwen3.5-27b",
       "name": "Qwen: Qwen3.5-27B",
       "pricing": {
-        "completion": "0.00000156",
+        "completion": "0.0000026",
         "image": null,
         "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000195",
+        "prompt": "0.00000026",
         "request": null,
         "web_search": null
       },
@@ -20213,7 +20213,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 81920
       }
     },
     "qwen/qwen3.5-35b-a3b": {
@@ -22760,65 +22760,16 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.000000528",
+        "completion": "0.00000058",
         "image": null,
-        "input_cache_read": "0.000000033",
+        "input_cache_read": "0.000000035",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000132",
+        "prompt": "0.00000014",
         "request": null,
         "web_search": null
       },
-      "pricing_schedule": {
-        "minimum": {
-          "completion": "0.00000033",
-          "input_cache_read": "0.000000020625",
-          "prompt": "0.0000000825"
-        },
-        "rates": {
-          "completion": [
-            "0.00000033",
-            "0.000000528"
-          ],
-          "input_cache_read": [
-            "0.000000020625",
-            "0.000000033"
-          ],
-          "prompt": [
-            "0.0000000825",
-            "0.000000132"
-          ]
-        },
-        "standard": {
-          "completion": "0.000000528",
-          "input_cache_read": "0.000000033",
-          "prompt": "0.000000132"
-        },
-        "windows": [
-          {
-            "label": "Every day 00:00–16:00 UTC",
-            "rates": {
-              "completion": "0.000000528",
-              "input_cache_read": "0.000000033",
-              "prompt": "0.000000132"
-            },
-            "utc_days": null,
-            "utc_end": 1600,
-            "utc_start": 0
-          },
-          {
-            "label": "Every day 16:00–24:00 UTC",
-            "rates": {
-              "completion": "0.00000033",
-              "input_cache_read": "0.000000020625",
-              "prompt": "0.0000000825"
-            },
-            "utc_days": null,
-            "utc_end": 0,
-            "utc_start": 1600
-          }
-        ]
-      },
+      "pricing_schedule": null,
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
@@ -22841,7 +22792,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 128000
+        "max_completion_tokens": 235929
       }
     },
     "tencent/hy4": {
@@ -22889,6 +22840,7 @@
         "reasoning_effort",
         "repetition_penalty",
         "response_format",
+        "seed",
         "stop",
         "structured_outputs",
         "temperature",
@@ -25342,12 +25294,12 @@
       "id": "z-ai/glm-5.1",
       "name": "Z.ai: GLM 5.1",
       "pricing": {
-        "completion": "0.0000044",
+        "completion": "0.00000374",
         "image": null,
-        "input_cache_read": "0.00000026",
+        "input_cache_read": "0.0000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000014",
+        "prompt": "0.00000119",
         "request": null,
         "web_search": null
       },
@@ -25372,7 +25324,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 202752,
+        "context_length": 204800,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
