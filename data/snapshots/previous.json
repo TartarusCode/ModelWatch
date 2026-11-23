@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T01:01:55.177874Z",
+  "generated_at": "2026-11-23T01:31:50.190162Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3763,12 +3763,12 @@
       "id": "deepseek/deepseek-v4.1-flash-1017",
       "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000012",
         "image": null,
-        "input_cache_read": "0.000000003",
+        "input_cache_read": "0.000000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
@@ -8984,12 +8984,12 @@
       "id": "minimax/minimax-m3.1-flash",
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.0000000075",
+        "input_cache_read": "0.000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
