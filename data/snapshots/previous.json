@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T08:01:51.020067Z",
+  "generated_at": "2026-11-23T08:31:50.110397Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -7338,7 +7338,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "inclusionai/ling-3.1-flash-20261002",
-      "context_length": 1000000,
+      "context_length": 1048576,
       "created": 1790950024,
       "default_parameters": {},
       "description": "Ling 3.1 Flash is a hybrid reasoning mixture-of-experts model from inclusionAI, with 25B active parameters out of 560B total.",
@@ -7364,8 +7364,10 @@
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
+        "response_format",
         "seed",
         "stop",
+        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
