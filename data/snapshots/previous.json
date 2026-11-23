@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T02:31:41.613859Z",
+  "generated_at": "2026-11-23T03:01:55.203608Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -11876,7 +11876,7 @@
         "top_p": null
       },
       "description": "NVIDIA Nemotron 3.5 Content Safety is a compact 4B-parameter multimodal guardrail model from NVIDIA, fine-tuned from Google Gemma-3-4B. It moderates both inputs to and responses from LLMs and VLMs, accepting...",
-      "expiration_date": null,
+      "expiration_date": "2026-11-30",
       "id": "nvidia/nemotron-3.5-content-safety",
       "name": "NVIDIA: Nemotron 3.5 Content Safety",
       "pricing": {
