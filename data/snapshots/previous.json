@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T00:02:00.924273Z",
+  "generated_at": "2026-11-23T00:31:48.640589Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -688,7 +688,7 @@
       ],
       "top_provider": {
         "context_length": 1000000,
-        "is_moderated": false,
+        "is_moderated": true,
         "max_completion_tokens": 128000
       }
     },
@@ -6546,9 +6546,9 @@
       "id": "google/gemma-3-27b-it",
       "name": "Google: Gemma 3 27B",
       "pricing": {
-        "completion": "0.00000045",
+        "completion": "0.00000016",
         "image": null,
-        "input_cache_read": "0.00000004",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.00000008",
@@ -6578,7 +6578,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 117964
+        "max_completion_tokens": 16384
       }
     },
     "google/gemma-3-4b-it": {
@@ -17520,12 +17520,12 @@
       "id": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
       "pricing": {
-        "completion": "0.00000036",
+        "completion": "0.00000025",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000009",
+        "prompt": "0.00000005",
         "request": null,
         "web_search": null
       },
@@ -22927,12 +22927,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
@@ -25294,12 +25294,12 @@
       "id": "z-ai/glm-5.1",
       "name": "Z.ai: GLM 5.1",
       "pricing": {
-        "completion": "0.0000044",
+        "completion": "0.00000374",
         "image": null,
-        "input_cache_read": "0.00000026",
+        "input_cache_read": "0.0000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000014",
+        "prompt": "0.00000119",
         "request": null,
         "web_search": null
       },
@@ -25324,7 +25324,7 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 202752,
+        "context_length": 204800,
         "is_moderated": false,
         "max_completion_tokens": 131072
       }
