@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T22:31:42.519259Z",
+  "generated_at": "2026-11-23T23:01:50.153734Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -22808,16 +22808,24 @@
       },
       "pricing_schedule": null,
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "max_completion_tokens",
         "max_tokens",
+        "min_p",
+        "presence_penalty",
         "reasoning",
+        "repetition_penalty",
         "response_format",
+        "seed",
         "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
-        "tools"
+        "tools",
+        "top_k",
+        "top_p"
       ],
       "top_provider": {
         "context_length": 1048576,
