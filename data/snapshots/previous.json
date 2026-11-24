@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T06:31:54.894981Z",
+  "generated_at": "2026-11-24T07:01:50.905265Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3699,12 +3699,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.0000001992",
+        "completion": "0.00000042",
         "image": null,
-        "input_cache_read": "0.000000000996",
+        "input_cache_read": "0.0000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000498",
+        "prompt": "0.00000014",
         "request": null,
         "web_search": null
       },
@@ -7037,7 +7037,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "inclusionai/ling-3.0-flash-20260723",
-      "context_length": 131072,
+      "context_length": 262144,
       "created": 1784818580,
       "default_parameters": {},
       "description": "*Ling-3.0-flash* is a *124B-parameter Mixture-of-Experts (MoE) model*, with approximately *5.1B parameters activated per token*. The model is designed with *token efficiency and production-scale agentic inference* as key priorities, enabling developers...",
@@ -7045,12 +7045,12 @@
       "id": "inclusionai/ling-3.0-flash",
       "name": "inclusionAI: Ling 3.0 Flash",
       "pricing": {
-        "completion": "0.00000018",
+        "completion": "0.000000063",
         "image": null,
-        "input_cache_read": "0.000000012",
+        "input_cache_read": "0.0000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006",
+        "prompt": "0.000000021",
         "request": null,
         "web_search": null
       },
@@ -7059,6 +7059,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -7067,14 +7068,16 @@
         "response_format",
         "seed",
         "stop",
+        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 262144,
         "is_moderated": false,
         "max_completion_tokens": 32768
       }
@@ -10376,60 +10379,6 @@
         "max_completion_tokens": 4096
       }
     },
-    "moonshotai/kimi-k2-0905": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "moonshotai/kimi-k2-0905",
-      "context_length": 262144,
-      "created": 1757021147,
-      "default_parameters": {},
-      "description": "Kimi K2 0905 is the September update of [Kimi K2 0711](moonshotai/kimi-k2). It is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32...",
-      "expiration_date": null,
-      "id": "moonshotai/kimi-k2-0905",
-      "name": "MoonshotAI: Kimi K2 0905",
-      "pricing": {
-        "completion": "0.0000025",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000006",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 98304
-      }
-    },
     "moonshotai/kimi-k2.5": {
       "architecture": {
         "input_modalities": [
@@ -10472,11 +10421,8 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logprobs",
         "max_tokens",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
         "response_format",
         "seed",
         "stop",
@@ -10485,7 +10431,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -25348,12 +25293,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.0000000815",
+        "completion": "0.00000038",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000356",
+        "prompt": "0.00000012",
         "request": null,
         "web_search": null
       },
@@ -25384,7 +25329,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 943718
       }
     },
     "z-ai/glm-5.3-flash:batch": {
