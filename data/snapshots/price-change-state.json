@@ -20333,7 +20333,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-24T03:01:45.422893Z",
+  "generated_at": "2026-11-24T03:31:41.867994Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -23757,7 +23757,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.044000000",
+        "anchor": "0.035000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -27881,15 +27881,15 @@
         "anchor": "0.063000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.063000000",
+        "pending_builds": 1,
+        "pending_price": "0.18000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       },
       "input_cache_read": {
-        "anchor": "0.0042000000",
+        "anchor": "0.012000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -27900,7 +27900,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.021000000",
+        "anchor": "0.06000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -40736,7 +40736,7 @@
     },
     "tencent/hy3": {
       "completion": {
-        "anchor": "0.58000000",
+        "anchor": "0.528000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -40747,7 +40747,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.035000000",
+        "anchor": "0.033000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -40758,7 +40758,7 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.14000000",
+        "anchor": "0.132000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T03:01:45.422893Z",
+  "generated_at": "2026-11-24T03:31:41.867994Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3397,12 +3397,12 @@
       "id": "deepseek/deepseek-v4-flash-0731",
       "name": "DeepSeek: DeepSeek V4 Flash 0731",
       "pricing": {
-        "completion": "0.000000375",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.000000044",
+        "input_cache_read": "0.000000035",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000055",
+        "prompt": "0.0000000443",
         "request": null,
         "web_search": null
       },
@@ -7037,7 +7037,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "inclusionai/ling-3.0-flash-20260723",
-      "context_length": 262144,
+      "context_length": 131072,
       "created": 1784818580,
       "default_parameters": {},
       "description": "*Ling-3.0-flash* is a *124B-parameter Mixture-of-Experts (MoE) model*, with approximately *5.1B parameters activated per token*. The model is designed with *token efficiency and production-scale agentic inference* as key priorities, enabling developers...",
@@ -7045,12 +7045,12 @@
       "id": "inclusionai/ling-3.0-flash",
       "name": "inclusionAI: Ling 3.0 Flash",
       "pricing": {
-        "completion": "0.000000063",
+        "completion": "0.00000018",
         "image": null,
-        "input_cache_read": "0.0000000042",
+        "input_cache_read": "0.000000012",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000021",
+        "prompt": "0.00000006",
         "request": null,
         "web_search": null
       },
@@ -7059,7 +7059,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -7072,11 +7071,10 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 131072,
         "is_moderated": false,
         "max_completion_tokens": 32768
       }
@@ -10378,56 +10376,6 @@
         "max_completion_tokens": 4096
       }
     },
-    "moonshotai/kimi-k2": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "moonshotai/kimi-k2",
-      "context_length": 131072,
-      "created": 1752263252,
-      "default_parameters": {},
-      "description": "Kimi K2 Instruct is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32 billion active per forward pass. It is optimized for...",
-      "expiration_date": null,
-      "id": "moonshotai/kimi-k2",
-      "name": "MoonshotAI: Kimi K2 0711",
-      "pricing": {
-        "completion": "0.0000023",
-        "image": null,
-        "input_cache_read": null,
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.00000057",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 131072,
-        "is_moderated": false,
-        "max_completion_tokens": 98304
-      }
-    },
     "moonshotai/kimi-k2-0905": {
       "architecture": {
         "input_modalities": [
@@ -10474,67 +10422,6 @@
         "tools",
         "top_k",
         "top_logprobs",
-        "top_p"
-      ],
-      "top_provider": {
-        "context_length": 262144,
-        "is_moderated": false,
-        "max_completion_tokens": 98304
-      }
-    },
-    "moonshotai/kimi-k2-thinking": {
-      "architecture": {
-        "input_modalities": [
-          "text"
-        ],
-        "instruct_type": null,
-        "modality": "text->text",
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other"
-      },
-      "canonical_slug": "moonshotai/kimi-k2-thinking-20251106",
-      "context_length": 262144,
-      "created": 1762440622,
-      "default_parameters": {
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null,
-        "temperature": null,
-        "top_k": null,
-        "top_p": null
-      },
-      "description": "Kimi K2 Thinking is Moonshot AI’s most advanced open reasoning model to date, extending the K2 series into agentic, long-horizon reasoning. Built on the trillion-parameter Mixture-of-Experts (MoE) architecture introduced in...",
-      "expiration_date": null,
-      "id": "moonshotai/kimi-k2-thinking",
-      "name": "MoonshotAI: Kimi K2 Thinking",
-      "pricing": {
-        "completion": "0.0000025",
-        "image": null,
-        "input_cache_read": "0.00000015",
-        "input_cache_write": null,
-        "internal_reasoning": null,
-        "prompt": "0.0000006",
-        "request": null,
-        "web_search": null
-      },
-      "pricing_schedule": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
         "top_p"
       ],
       "top_provider": {
@@ -22400,7 +22287,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "stepfun/step-3.7-flash-20260528",
-      "context_length": 262144,
+      "context_length": 256000,
       "created": 1779985069,
       "default_parameters": {
         "frequency_penalty": null,
@@ -22430,18 +22317,14 @@
         "include_reasoning",
         "logprobs",
         "max_tokens",
-        "presence_penalty",
         "reasoning",
         "reasoning_effort",
-        "repetition_penalty",
         "response_format",
-        "seed",
         "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
-        "top_k",
         "top_logprobs",
         "top_p"
       ],
@@ -22679,39 +22562,82 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000058",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000035",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000014",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
-      "pricing_schedule": null,
+      "pricing_schedule": {
+        "minimum": {
+          "completion": "0.00000033",
+          "input_cache_read": "0.000000020625",
+          "prompt": "0.0000000825"
+        },
+        "rates": {
+          "completion": [
+            "0.00000033",
+            "0.000000528"
+          ],
+          "input_cache_read": [
+            "0.000000020625",
+            "0.000000033"
+          ],
+          "prompt": [
+            "0.0000000825",
+            "0.000000132"
+          ]
+        },
+        "standard": {
+          "completion": "0.000000528",
+          "input_cache_read": "0.000000033",
+          "prompt": "0.000000132"
+        },
+        "windows": [
+          {
+            "label": "Every day 00:00–16:00 UTC",
+            "rates": {
+              "completion": "0.000000528",
+              "input_cache_read": "0.000000033",
+              "prompt": "0.000000132"
+            },
+            "utc_days": null,
+            "utc_end": 1600,
+            "utc_start": 0
+          },
+          {
+            "label": "Every day 16:00–24:00 UTC",
+            "rates": {
+              "completion": "0.00000033",
+              "input_cache_read": "0.000000020625",
+              "prompt": "0.0000000825"
+            },
+            "utc_days": null,
+            "utc_end": 0,
+            "utc_start": 1600
+          }
+        ]
+      },
       "supported_parameters": [
-        "frequency_penalty",
         "include_reasoning",
         "max_completion_tokens",
         "max_tokens",
-        "presence_penalty",
         "reasoning",
         "reasoning_effort",
-        "repetition_penalty",
         "response_format",
-        "seed",
         "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
+        "tools"
       ],
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 128000
       }
     },
     "tencent/hy4": {
