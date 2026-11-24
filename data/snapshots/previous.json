@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T17:01:50.503880Z",
+  "generated_at": "2026-11-24T17:31:50.880304Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -20762,12 +20762,12 @@
       "id": "qwen/qwen3.8-27b",
       "name": "Qwen: Qwen3.8 27B",
       "pricing": {
-        "completion": "0.0000015",
+        "completion": "0.00000196",
         "image": null,
-        "input_cache_read": "0.0000000175",
+        "input_cache_read": "0.000000059",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000035",
+        "prompt": "0.00000006",
         "request": null,
         "web_search": null
       },
@@ -20798,7 +20798,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3.8-27b:batch": {
