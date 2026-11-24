@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T13:01:39.301713Z",
+  "generated_at": "2026-11-24T13:31:54.290363Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -16763,7 +16763,7 @@
       ],
       "top_provider": {
         "context_length": 1050000,
-        "is_moderated": false,
+        "is_moderated": true,
         "max_completion_tokens": 128000
       }
     },
@@ -25293,12 +25293,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.00000038",
+        "completion": "0.0000005",
         "image": null,
-        "input_cache_read": "0.00000002",
+        "input_cache_read": "0.00000003",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000012",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -25327,9 +25327,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1048575,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 943717
       }
     },
     "z-ai/glm-5.3-flash:batch": {
