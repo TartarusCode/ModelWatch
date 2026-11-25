@@ -103,23 +103,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "0.380000",
-      "detected_at": "2026-11-24T02:01:52.171965Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.900000",
-      "field": "prompt",
-      "model_id": "deepseek/deepseek-v4-pro",
-      "new_per_million_usd": "1.280000",
-      "old_per_million_usd": "0.900000",
-      "pct_change": 0.4222222222222222,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "3.560000",
       "detected_at": "2026-11-24T05:31:37.278250Z",
       "direction": "hike",
@@ -21109,11 +21092,11 @@
       "new_per_million_usd": "1.280000",
       "old_per_million_usd": "0.900000",
       "pct_change": 0.4222222222222222,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-11-25T14:01:57.923046Z",
+      "recovered_per_million_usd": "0.833204",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     },
     {
@@ -21270,8 +21253,26 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-25T13:31:39.875075Z",
-  "recovered_changes": [],
+  "generated_at": "2026-11-25T14:02:02.851976Z",
+  "recovered_changes": [
+    {
+      "delta_per_million_usd": "0.380000",
+      "detected_at": "2026-11-24T02:01:52.171965Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.900000",
+      "field": "prompt",
+      "model_id": "deepseek/deepseek-v4-pro",
+      "new_per_million_usd": "1.280000",
+      "old_per_million_usd": "0.900000",
+      "pct_change": 0.4222222222222222,
+      "recovered_at": "2026-11-25T14:01:57.923046Z",
+      "recovered_per_million_usd": "0.833204",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "recovered",
+      "tier": null
+    }
+  ],
   "settled_changes": [
     {
       "delta_per_million_usd": "-0.100000",
