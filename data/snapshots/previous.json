@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T04:31:49.142814Z",
+  "generated_at": "2026-11-25T05:01:23.434154Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3010,7 +3010,12 @@
       "supported_parameters": [
         "frequency_penalty",
         "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "repetition_penalty",
         "response_format",
+        "seed",
+        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
