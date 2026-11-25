@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T08:32:02.044241Z",
+  "generated_at": "2026-11-25T09:01:51.973492Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -24815,7 +24815,7 @@
       "pricing": {
         "completion": "0.0000009",
         "image": null,
-        "input_cache_read": "0.000000055",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.0000003",
@@ -24824,15 +24824,9 @@
       },
       "pricing_schedule": null,
       "supported_parameters": [
-        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
         "temperature",
         "tool_choice",
         "tools",
@@ -24922,7 +24916,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-4.7-flash-20260119",
-      "context_length": 200000,
+      "context_length": 131072,
       "created": 1768833913,
       "default_parameters": {
         "frequency_penalty": null,
