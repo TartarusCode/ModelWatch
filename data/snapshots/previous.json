@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T23:31:43.736603Z",
+  "generated_at": "2026-11-25T00:01:58.192991Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3402,7 +3402,7 @@
         "input_cache_read": "0.000000035",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000456",
+        "prompt": "0.000000047",
         "request": null,
         "web_search": null
       },
@@ -20898,8 +20898,10 @@
         "include_reasoning",
         "logprobs",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
+        "repetition_penalty",
         "response_format",
         "seed",
         "stop",
