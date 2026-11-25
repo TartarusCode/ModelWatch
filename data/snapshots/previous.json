@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T17:31:51.665927Z",
+  "generated_at": "2026-11-25T18:01:55.177626Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,7 +3586,7 @@
         "input_cache_read": "0.00000021",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000075726",
+        "prompt": "0.000000745334",
         "request": null,
         "web_search": null
       },
@@ -23264,6 +23264,59 @@
         "context_length": 524288,
         "is_moderated": false,
         "max_completion_tokens": 262144
+      }
+    },
+    "tngtech/deepseek-r1t2-chimera": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "DeepSeek"
+      },
+      "canonical_slug": "tngtech/deepseek-r1t2-chimera",
+      "context_length": 131072,
+      "created": 1751986985,
+      "default_parameters": {},
+      "description": "DeepSeek-TNG-R1T2-Chimera is the second-generation Chimera model from TNG Tech. It is a 671 B-parameter mixture-of-experts text-generation model assembled from DeepSeek-AI’s R1-0528, R1, and V3-0324 checkpoints with an Assembly-of-Experts merge. The...",
+      "expiration_date": null,
+      "id": "tngtech/deepseek-r1t2-chimera",
+      "name": "TNG: DeepSeek R1T2 Chimera",
+      "pricing": {
+        "completion": "0.000002625",
+        "image": null,
+        "input_cache_read": "0.00000002",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.000001",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 131072,
+        "is_moderated": false,
+        "max_completion_tokens": 32768
       }
     },
     "typesafe/jev-router": {
