@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T07:31:52.836081Z",
+  "generated_at": "2026-11-25T08:01:38.229106Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -24400,12 +24400,12 @@
       "id": "xiaomi/mimo-v2.6-flash-mopd",
       "name": "Xiaomi: MiMo-V2.6-Flash-MOPD",
       "pricing": {
-        "completion": "0.00000042",
+        "completion": "0.000001",
         "image": null,
-        "input_cache_read": "0.00000000216",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.0000005",
         "request": null,
         "web_search": null
       },
