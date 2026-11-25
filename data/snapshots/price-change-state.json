@@ -20435,7 +20435,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-25T08:01:38.229106Z",
+  "generated_at": "2026-11-25T08:32:02.044241Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -42297,6 +42297,41 @@
       },
       "prompt": {
         "anchor": "0.14000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      }
+    },
+    "xiaomi/mimo-v2.6-flash-mopd": {
+      "completion": {
+        "anchor": "1.000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "input_cache_read": {
+        "anchor": "0.05000000",
+        "confirmed_at": null,
+        "confirmed_price": null,
+        "direction": null,
+        "episode_start_price": null,
+        "pending_builds": 0,
+        "pending_price": null,
+        "recovery_builds": 0,
+        "status": "idle"
+      },
+      "prompt": {
+        "anchor": "0.5000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
