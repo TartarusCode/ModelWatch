@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T00:01:58.192991Z",
+  "generated_at": "2026-11-25T00:31:44.282400Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3699,12 +3699,12 @@
       "id": "deepseek/deepseek-v4.1-flash",
       "name": "DeepSeek: DeepSeek V4.1 Flash",
       "pricing": {
-        "completion": "0.000000567",
+        "completion": "0.00000042",
         "image": null,
-        "input_cache_read": "0.000000018",
+        "input_cache_read": "0.0000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000051",
+        "prompt": "0.00000014",
         "request": null,
         "web_search": null
       },
@@ -3736,7 +3736,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 393216
       }
     },
     "deepseek/deepseek-v4.1-flash-1017": {
@@ -20758,12 +20758,12 @@
       "id": "qwen/qwen3.8-27b",
       "name": "Qwen: Qwen3.8 27B",
       "pricing": {
-        "completion": "0.00000196",
+        "completion": "0.0000015",
         "image": null,
-        "input_cache_read": "0.000000059",
+        "input_cache_read": "0.0000000175",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000006",
+        "prompt": "0.000000035",
         "request": null,
         "web_search": null
       },
@@ -20794,7 +20794,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 235929
+        "max_completion_tokens": 131072
       }
     },
     "qwen/qwen3.8-27b:batch": {
@@ -22346,12 +22346,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -22521,7 +22521,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
-        "logprobs",
         "max_completion_tokens",
         "max_tokens",
         "min_p",
@@ -22536,7 +22535,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "top_provider": {
@@ -22566,12 +22564,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
@@ -23392,6 +23390,58 @@
         "max_completion_tokens": 5529
       }
     },
+    "upstage/solar-mini-4-5": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "upstage/solar-mini-4-5-20261125",
+      "context_length": 524288,
+      "created": 1795562304,
+      "default_parameters": {},
+      "description": "Solar Mini 4.5 is Upstage's compact language model, built on a proprietary mixture-of-experts architecture with 35B total and 3B active parameters and a 524K context window. It is a step...",
+      "expiration_date": null,
+      "id": "upstage/solar-mini-4-5",
+      "name": "Upstage: Solar Mini 4.5 (Preview)",
+      "pricing": {
+        "completion": "0.00000004",
+        "image": null,
+        "input_cache_read": "0.000000001",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000001",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "parallel_tool_calls",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 524288,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
+      }
+    },
     "upstage/solar-mini4": {
       "architecture": {
         "input_modalities": [
@@ -23419,6 +23469,58 @@
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.00000005",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "parallel_tool_calls",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 524288,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
+      }
+    },
+    "upstage/solar-pro-4-contributor": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "upstage/solar-pro-4-contributor-20261125",
+      "context_length": 524288,
+      "created": 1795562304,
+      "default_parameters": {},
+      "description": "Solar Pro 4 Contributor is the same Solar Pro 4 model from Upstage, offered at a lower rate in exchange for allowing Upstage to use interaction data to improve its...",
+      "expiration_date": null,
+      "id": "upstage/solar-pro-4-contributor",
+      "name": "Upstage: Solar Pro 4 Contributor",
+      "pricing": {
+        "completion": "0.00000036",
+        "image": null,
+        "input_cache_read": "0.000000009",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000009",
         "request": null,
         "web_search": null
       },
@@ -25132,12 +25234,12 @@
       "id": "z-ai/glm-5.3-flash",
       "name": "Z.ai: GLM 5.3 Flash",
       "pricing": {
-        "completion": "0.0000005",
+        "completion": "0.00000038",
         "image": null,
-        "input_cache_read": "0.00000003",
+        "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.00000012",
         "request": null,
         "web_search": null
       },
@@ -25166,9 +25268,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 1048575,
+        "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943717
+        "max_completion_tokens": 943718
       }
     },
     "z-ai/glm-5.3-flash:batch": {
