@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T09:01:51.973492Z",
+  "generated_at": "2026-11-25T09:31:29.646796Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -24634,12 +24634,12 @@
       "id": "z-ai/glm-4.5-air",
       "name": "Z.ai: GLM 4.5 Air",
       "pricing": {
-        "completion": "0.00000085",
+        "completion": "0.00000086",
         "image": null,
-        "input_cache_read": "0.000000025",
+        "input_cache_read": null,
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000013",
+        "prompt": "0.00000014",
         "request": null,
         "web_search": null
       },
@@ -24648,11 +24648,7 @@
         "frequency_penalty",
         "include_reasoning",
         "max_tokens",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
-        "seed",
-        "stop",
         "temperature",
         "tool_choice",
         "tools",
@@ -24662,7 +24658,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 98304
+        "max_completion_tokens": 117964
       }
     },
     "z-ai/glm-4.5v": {
@@ -24702,15 +24698,10 @@
       },
       "pricing_schedule": null,
       "supported_parameters": [
-        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
         "response_format",
-        "seed",
-        "stop",
         "temperature",
         "tool_choice",
         "tools",
