@@ -21253,7 +21253,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-25T17:01:52.617129Z",
+  "generated_at": "2026-11-25T17:31:51.665927Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "0.380000",
@@ -21274,23 +21274,6 @@
     }
   ],
   "settled_changes": [
-    {
-      "delta_per_million_usd": "-0.100000",
-      "detected_at": "2026-11-17T17:31:22.552082Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.300000",
-      "field": "completion",
-      "model_id": "mistralai/mistral-small-3.2-24b-instruct",
-      "new_per_million_usd": "0.200000",
-      "old_per_million_usd": "0.300000",
-      "pct_change": -0.3333333333333333,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-11-24T17:31:44.671584Z",
-      "settled_per_million_usd": "0.200000",
-      "status": "settled",
-      "tier": null
-    },
     {
       "delta_per_million_usd": "-0.090000",
       "detected_at": "2026-11-18T01:01:54.519215Z",
