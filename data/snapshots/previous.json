@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T15:02:02.107062Z",
+  "generated_at": "2026-11-26T15:31:47.924808Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,7 +3586,7 @@
         "input_cache_read": "0.0000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000084514",
+        "prompt": "0.000000833204",
         "request": null,
         "web_search": null
       },
@@ -7389,6 +7389,63 @@
         "max_completion_tokens": 262144
       }
     },
+    "inclusionai/lingsante-3.1-air-vl": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "inclusionai/lingsante-3.1-air-vl-20261126",
+      "context_length": 131072,
+      "created": 1795705284,
+      "default_parameters": {},
+      "description": "LingSante 3.1 Air VL is inclusionAI's medical vision-language model, a 124B total / 5.5B active MoE. It takes text and up to 16 images (scans, skin and meal photos, lab...",
+      "expiration_date": null,
+      "id": "inclusionai/lingsante-3.1-air-vl",
+      "name": "inclusionAI: LingSante 3.1 Air VL",
+      "pricing": {
+        "completion": "0.00000018",
+        "image": null,
+        "input_cache_read": "0.000000012",
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000006",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 131072,
+        "is_moderated": false,
+        "max_completion_tokens": 32768
+      }
+    },
     "inference-net/schematron-v2-small": {
       "architecture": {
         "input_modalities": [
@@ -8985,12 +9042,12 @@
       "id": "minimax/minimax-m3.1-flash",
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "completion": "0.0000006",
+        "completion": "0.0000003",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.0000000075",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000015",
+        "prompt": "0.000000075",
         "request": null,
         "web_search": null
       },
