@@ -20552,9 +20552,26 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.311808",
+      "detected_at": "2026-11-26T00:31:46.662689Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.576380",
+      "field": "prompt",
+      "model_id": "deepseek/deepseek-v4-pro",
+      "new_per_million_usd": "0.888188",
+      "old_per_million_usd": "0.576380",
+      "pct_change": 0.5409764391547243,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-11-26T00:01:52.773064Z",
+  "generated_at": "2026-11-26T00:31:51.481271Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -24129,15 +24146,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.57638000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.888188000000",
+        "confirmed_at": "2026-11-26T00:31:46.662689Z",
+        "confirmed_price": "0.888188000000",
         "direction": "hike",
         "episode_start_price": "0.57638000000",
-        "pending_builds": 1,
-        "pending_price": "0.888188000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "deepseek/deepseek-v4-pro-0813": {
@@ -24223,7 +24240,7 @@
         "status": "confirmed"
       },
       "input_cache_read": {
-        "anchor": "0.018000000",
+        "anchor": "0.0042000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -40315,7 +40332,7 @@
         "status": "idle"
       },
       "input_cache_read": {
-        "anchor": "0.05000000",
+        "anchor": "0.04000000",
         "confirmed_at": null,
         "confirmed_price": null,
         "direction": null,
@@ -40329,12 +40346,12 @@
         "anchor": "0.25000000",
         "confirmed_at": null,
         "confirmed_price": null,
-        "direction": null,
-        "episode_start_price": null,
-        "pending_builds": 0,
-        "pending_price": null,
+        "direction": "hike",
+        "episode_start_price": "0.25000000",
+        "pending_builds": 1,
+        "pending_price": "0.3000000",
         "recovery_builds": 0,
-        "status": "idle"
+        "status": "pending"
       }
     },
     "rekaai/reka-edge": {
