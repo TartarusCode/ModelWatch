@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T13:31:54.856021Z",
+  "generated_at": "2026-11-26T14:01:48.692020Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -10575,6 +10575,56 @@
         "max_completion_tokens": 4096
       }
     },
+    "moonshotai/kimi-k2": {
+      "architecture": {
+        "input_modalities": [
+          "text"
+        ],
+        "instruct_type": null,
+        "modality": "text->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other"
+      },
+      "canonical_slug": "moonshotai/kimi-k2",
+      "context_length": 131072,
+      "created": 1752263252,
+      "default_parameters": {},
+      "description": "Kimi K2 Instruct is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32 billion active per forward pass. It is optimized for...",
+      "expiration_date": null,
+      "id": "moonshotai/kimi-k2",
+      "name": "MoonshotAI: Kimi K2 0711",
+      "pricing": {
+        "completion": "0.0000023",
+        "image": null,
+        "input_cache_read": null,
+        "input_cache_write": null,
+        "internal_reasoning": null,
+        "prompt": "0.00000057",
+        "request": null,
+        "web_search": null
+      },
+      "pricing_schedule": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "presence_penalty",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "top_provider": {
+        "context_length": 131072,
+        "is_moderated": false,
+        "max_completion_tokens": 98304
+      }
+    },
     "moonshotai/kimi-k2.5": {
       "architecture": {
         "input_modalities": [
@@ -18479,7 +18529,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 943718
       }
     },
     "particle-ai/particle-1:free": {
@@ -18538,7 +18588,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 943718
       }
     },
     "perceptron/perceptron-mk1": {
