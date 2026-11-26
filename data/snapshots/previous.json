@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T09:01:34.580404Z",
+  "generated_at": "2026-11-26T09:31:41.598097Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -6549,9 +6549,9 @@
       "id": "google/gemma-3-27b-it",
       "name": "Google: Gemma 3 27B",
       "pricing": {
-        "completion": "0.00000016",
+        "completion": "0.00000045",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000004",
         "input_cache_write": null,
         "internal_reasoning": null,
         "prompt": "0.00000008",
@@ -6581,7 +6581,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 117964
       }
     },
     "google/gemma-3-4b-it": {
@@ -21115,12 +21115,12 @@
       "id": "qwen/qwen3.8-27b",
       "name": "Qwen: Qwen3.8 27B",
       "pricing": {
-        "completion": "0.0000015",
+        "completion": "0.00000196",
         "image": null,
-        "input_cache_read": "0.0000000175",
+        "input_cache_read": "0.000000059",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000035",
+        "prompt": "0.00000006",
         "request": null,
         "web_search": null
       },
@@ -21151,7 +21151,7 @@
       "top_provider": {
         "context_length": 262144,
         "is_moderated": false,
-        "max_completion_tokens": 131072
+        "max_completion_tokens": 235929
       }
     },
     "qwen/qwen3.8-27b:batch": {
