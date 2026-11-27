@@ -20739,9 +20739,43 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.150000",
+      "detected_at": "2026-11-27T10:31:35.929283Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.350000",
+      "field": "prompt",
+      "model_id": "xiaomi/mimo-v2.6-flash-mopd",
+      "new_per_million_usd": "0.500000",
+      "old_per_million_usd": "0.350000",
+      "pct_change": 0.42857142857142855,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "0.300000",
+      "detected_at": "2026-11-27T10:31:35.929283Z",
+      "direction": "hike",
+      "episode_start_per_million_usd": "0.700000",
+      "field": "completion",
+      "model_id": "xiaomi/mimo-v2.6-flash-mopd",
+      "new_per_million_usd": "1.000000",
+      "old_per_million_usd": "0.700000",
+      "pct_change": 0.42857142857142855,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-11-27T10:02:00.544726Z",
+  "generated_at": "2026-11-27T10:31:39.977641Z",
   "models": {
     "ai21/jamba-large-1.7": {
       "completion": {
@@ -42685,15 +42719,15 @@
     },
     "xiaomi/mimo-v2.6-flash-mopd": {
       "completion": {
-        "anchor": "0.7000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "1.000000",
+        "confirmed_at": "2026-11-27T10:31:35.929283Z",
+        "confirmed_price": "1.000000",
         "direction": "hike",
         "episode_start_price": "0.7000000",
-        "pending_builds": 1,
-        "pending_price": "1.000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       },
       "input_cache_read": {
         "anchor": "0.05000000",
@@ -42707,15 +42741,15 @@
         "status": "idle"
       },
       "prompt": {
-        "anchor": "0.35000000",
-        "confirmed_at": null,
-        "confirmed_price": null,
+        "anchor": "0.5000000",
+        "confirmed_at": "2026-11-27T10:31:35.929283Z",
+        "confirmed_price": "0.5000000",
         "direction": "hike",
         "episode_start_price": "0.35000000",
-        "pending_builds": 1,
-        "pending_price": "0.5000000",
+        "pending_builds": 0,
+        "pending_price": null,
         "recovery_builds": 0,
-        "status": "pending"
+        "status": "confirmed"
       }
     },
     "xiaomi/mimo-v2.6-pro": {
