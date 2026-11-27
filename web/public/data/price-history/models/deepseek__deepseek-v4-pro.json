@@ -2,17 +2,6 @@
   "model_id": "deepseek/deepseek-v4-pro",
   "points": [
     {
-      "completion_per_million": "1.896252000000",
-      "image_per_million": null,
-      "input_cache_read_per_million": "0.0790105000000",
-      "input_cache_write_per_million": null,
-      "internal_reasoning_per_million": null,
-      "prompt_per_million": "0.948126000000",
-      "recorded_at": "2026-09-22T14:12:56.918678Z",
-      "request_per_million": null,
-      "web_search_per_million": null
-    },
-    {
       "completion_per_million": "1.892772000000",
       "image_per_million": null,
       "input_cache_read_per_million": "0.0788655000000",
@@ -5498,6 +5487,17 @@
       "internal_reasoning_per_million": null,
       "prompt_per_million": "0.888188000000",
       "recorded_at": "2026-11-27T02:01:54.823186Z",
+      "request_per_million": null,
+      "web_search_per_million": null
+    },
+    {
+      "completion_per_million": "1.5082000000",
+      "image_per_million": null,
+      "input_cache_read_per_million": "0.2000000",
+      "input_cache_write_per_million": null,
+      "internal_reasoning_per_million": null,
+      "prompt_per_million": "0.87725000000",
+      "recorded_at": "2026-11-27T13:02:04.646328Z",
       "request_per_million": null,
       "web_search_per_million": null
     }
