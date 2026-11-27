@@ -21542,7 +21542,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-27T04:31:36.547571Z",
+  "generated_at": "2026-11-27T05:01:54.958073Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "-0.079000",
@@ -21563,57 +21563,6 @@
     }
   ],
   "settled_changes": [
-    {
-      "delta_per_million_usd": "-0.210000",
-      "detected_at": "2026-11-19T04:01:44.759824Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "1.400000",
-      "field": "prompt",
-      "model_id": "z-ai/glm-5.1",
-      "new_per_million_usd": "1.190000",
-      "old_per_million_usd": "1.400000",
-      "pct_change": -0.15,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-11-26T04:31:45.119242Z",
-      "settled_per_million_usd": "1.400000",
-      "status": "settled",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "-0.660000",
-      "detected_at": "2026-11-19T04:01:44.759824Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "4.400000",
-      "field": "completion",
-      "model_id": "z-ai/glm-5.1",
-      "new_per_million_usd": "3.740000",
-      "old_per_million_usd": "4.400000",
-      "pct_change": -0.15,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-11-26T04:31:45.119242Z",
-      "settled_per_million_usd": "4.400000",
-      "status": "settled",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "0.340000",
-      "detected_at": "2026-11-19T04:01:44.759824Z",
-      "direction": "hike",
-      "episode_start_per_million_usd": "0.260000",
-      "field": "input_cache_read",
-      "model_id": "z-ai/glm-5.1",
-      "new_per_million_usd": "0.600000",
-      "old_per_million_usd": "0.260000",
-      "pct_change": 1.3076923076923077,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": "2026-11-26T04:31:45.119242Z",
-      "settled_per_million_usd": "0.260000",
-      "status": "settled",
-      "tier": null
-    },
     {
       "delta_per_million_usd": "0.054400",
       "detected_at": "2026-11-20T00:01:48.413112Z",
