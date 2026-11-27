@@ -698,6 +698,23 @@
       "tier": null
     },
     {
+      "delta_per_million_usd": "-0.060000",
+      "detected_at": "2026-11-27T09:01:57.667659Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.300000",
+      "field": "completion",
+      "model_id": "thinkingmachines/inkling-2-mini",
+      "new_per_million_usd": "0.240000",
+      "old_per_million_usd": "0.300000",
+      "pct_change": -0.2,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
+    },
+    {
       "delta_per_million_usd": "0.240000",
       "detected_at": "2026-11-25T20:01:53.122990Z",
       "direction": "hike",
@@ -21523,9 +21540,26 @@
       "settled_per_million_usd": null,
       "status": "active",
       "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.060000",
+      "detected_at": "2026-11-27T09:01:57.667659Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.300000",
+      "field": "completion",
+      "model_id": "thinkingmachines/inkling-2-mini",
+      "new_per_million_usd": "0.240000",
+      "old_per_million_usd": "0.300000",
+      "pct_change": -0.2,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "active",
+      "tier": null
     }
   ],
-  "generated_at": "2026-11-27T08:31:57.379606Z",
+  "generated_at": "2026-11-27T09:02:01.585622Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "-0.100000",
