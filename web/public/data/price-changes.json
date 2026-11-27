@@ -494,23 +494,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "-0.500000",
-      "detected_at": "2026-11-20T01:01:53.093733Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "3.500000",
-      "field": "completion",
-      "model_id": "moonshotai/kimi-k2.7-code",
-      "new_per_million_usd": "3.000000",
-      "old_per_million_usd": "3.500000",
-      "pct_change": -0.14285714285714285,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "-0.110000",
       "detected_at": "2026-11-23T01:01:49.211610Z",
       "direction": "cut",
@@ -520,23 +503,6 @@
       "new_per_million_usd": "0.250000",
       "old_per_million_usd": "0.360000",
       "pct_change": -0.3055555555555556,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
-      "delta_per_million_usd": "-0.060000",
-      "detected_at": "2026-11-20T01:01:53.093733Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.150000",
-      "field": "prompt",
-      "model_id": "openai/gpt-oss-120b",
-      "new_per_million_usd": "0.090000",
-      "old_per_million_usd": "0.150000",
-      "pct_change": -0.4,
       "recovered_at": null,
       "recovered_per_million_usd": null,
       "settled_at": null,
@@ -20550,9 +20516,9 @@
       "pct_change": -0.14285714285714285,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-11-27T01:31:46.910282Z",
+      "settled_per_million_usd": "3.000000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -20567,9 +20533,9 @@
       "pct_change": -0.4,
       "recovered_at": null,
       "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
+      "settled_at": "2026-11-27T01:31:46.910282Z",
+      "settled_per_million_usd": "0.050000",
+      "status": "settled",
       "tier": null
     },
     {
@@ -21576,7 +21542,7 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-27T01:01:51.563332Z",
+  "generated_at": "2026-11-27T01:31:51.537165Z",
   "recovered_changes": [
     {
       "delta_per_million_usd": "-0.079000",
@@ -21662,6 +21628,40 @@
       "recovered_per_million_usd": null,
       "settled_at": "2026-11-27T00:31:42.971365Z",
       "settled_per_million_usd": "0.047000",
+      "status": "settled",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.500000",
+      "detected_at": "2026-11-20T01:01:53.093733Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "3.500000",
+      "field": "completion",
+      "model_id": "moonshotai/kimi-k2.7-code",
+      "new_per_million_usd": "3.000000",
+      "old_per_million_usd": "3.500000",
+      "pct_change": -0.14285714285714285,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-11-27T01:31:46.910282Z",
+      "settled_per_million_usd": "3.000000",
+      "status": "settled",
+      "tier": null
+    },
+    {
+      "delta_per_million_usd": "-0.060000",
+      "detected_at": "2026-11-20T01:01:53.093733Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.150000",
+      "field": "prompt",
+      "model_id": "openai/gpt-oss-120b",
+      "new_per_million_usd": "0.090000",
+      "old_per_million_usd": "0.150000",
+      "pct_change": -0.4,
+      "recovered_at": null,
+      "recovered_per_million_usd": null,
+      "settled_at": "2026-11-27T01:31:46.910282Z",
+      "settled_per_million_usd": "0.050000",
       "status": "settled",
       "tier": null
     }
