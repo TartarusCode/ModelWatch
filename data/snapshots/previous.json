@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T08:01:57.660879Z",
+  "generated_at": "2026-11-27T08:31:57.379606Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -20237,7 +20237,6 @@
         "max_tokens",
         "presence_penalty",
         "reasoning",
-        "repetition_penalty",
         "response_format",
         "seed",
         "stop",
@@ -21200,7 +21199,7 @@
         "tokenizer": "Qwen"
       },
       "canonical_slug": "qwen/qwen3.8-2.4t-a95b-20260812",
-      "context_length": 1048576,
+      "context_length": 1000000,
       "created": 1786551702,
       "default_parameters": {
         "temperature": 1,
@@ -23420,12 +23419,12 @@
       "id": "thinkingmachines/inkling-2-mini",
       "name": "Thinking Machines: Inkling 2 Mini",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.00000024",
         "image": null,
-        "input_cache_read": "0.000000015",
+        "input_cache_read": "0.000000012",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.00000006",
         "request": null,
         "web_search": null
       },

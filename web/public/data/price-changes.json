@@ -698,23 +698,6 @@
       "tier": null
     },
     {
-      "delta_per_million_usd": "-0.100000",
-      "detected_at": "2026-11-21T18:01:42.168326Z",
-      "direction": "cut",
-      "episode_start_per_million_usd": "0.400000",
-      "field": "completion",
-      "model_id": "thinkingmachines/inkling-2-mini",
-      "new_per_million_usd": "0.300000",
-      "old_per_million_usd": "0.400000",
-      "pct_change": -0.25,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
-      "settled_at": null,
-      "settled_per_million_usd": null,
-      "status": "active",
-      "tier": null
-    },
-    {
       "delta_per_million_usd": "0.240000",
       "detected_at": "2026-11-25T20:01:53.122990Z",
       "direction": "hike",
@@ -20854,11 +20837,11 @@
       "new_per_million_usd": "0.300000",
       "old_per_million_usd": "0.400000",
       "pct_change": -0.25,
-      "recovered_at": null,
-      "recovered_per_million_usd": null,
+      "recovered_at": "2026-11-27T08:31:57.379606Z",
+      "recovered_per_million_usd": "0.240000",
       "settled_at": null,
       "settled_per_million_usd": null,
-      "status": "active",
+      "status": "recovered",
       "tier": null
     },
     {
@@ -21542,8 +21525,25 @@
       "tier": null
     }
   ],
-  "generated_at": "2026-11-27T08:01:57.660879Z",
+  "generated_at": "2026-11-27T08:31:57.379606Z",
   "recovered_changes": [
+    {
+      "delta_per_million_usd": "-0.100000",
+      "detected_at": "2026-11-21T18:01:42.168326Z",
+      "direction": "cut",
+      "episode_start_per_million_usd": "0.400000",
+      "field": "completion",
+      "model_id": "thinkingmachines/inkling-2-mini",
+      "new_per_million_usd": "0.300000",
+      "old_per_million_usd": "0.400000",
+      "pct_change": -0.25,
+      "recovered_at": "2026-11-27T08:31:57.379606Z",
+      "recovered_per_million_usd": "0.240000",
+      "settled_at": null,
+      "settled_per_million_usd": null,
+      "status": "recovered",
+      "tier": null
+    },
     {
       "delta_per_million_usd": "-0.079000",
       "detected_at": "2026-11-24T01:01:52.181374Z",
