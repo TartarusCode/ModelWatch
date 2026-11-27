@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T12:01:54.784663Z",
+  "generated_at": "2026-11-27T12:31:54.654196Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -7335,7 +7335,7 @@
         "max_completion_tokens": 262144
       }
     },
-    "inclusionai/ling-3.2-flash:free": {
+    "inclusionai/ling-3.2-flash": {
       "architecture": {
         "input_modalities": [
           "text",
@@ -7354,15 +7354,15 @@
       "default_parameters": {},
       "description": "Ling 3.2 Flash is a hybrid reasoning model from inclusionAI that accepts text and image input, with a 1M-token context window and up to 200 images per request. Thinking can...",
       "expiration_date": null,
-      "id": "inclusionai/ling-3.2-flash:free",
-      "name": "inclusionAI: Ling 3.2 Flash (free)",
+      "id": "inclusionai/ling-3.2-flash",
+      "name": "inclusionAI: Ling 3.2 Flash",
       "pricing": {
-        "completion": "0",
+        "completion": "0.0000009",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000006",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0",
+        "prompt": "0.0000003",
         "request": null,
         "web_search": null
       },
