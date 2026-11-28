@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T01:01:31.554851Z",
+  "generated_at": "2026-11-28T01:31:40.324464Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,7 +3586,7 @@
         "input_cache_read": "0.00000023",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000493382",
+        "prompt": "0.00000048179",
         "request": null,
         "web_search": null
       },
@@ -9042,12 +9042,12 @@
       "id": "minimax/minimax-m3.1-flash",
       "name": "MiniMax: MiniMax M3.1 Flash",
       "pricing": {
-        "completion": "0.0000003",
+        "completion": "0.0000006",
         "image": null,
-        "input_cache_read": "0.0000000075",
+        "input_cache_read": "0.000000015",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.00000015",
         "request": null,
         "web_search": null
       },
@@ -12044,10 +12044,10 @@
       "pricing": {
         "completion": "0.0000002",
         "image": null,
-        "input_cache_read": "0.00000004",
+        "input_cache_read": "0.00000001",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000007",
+        "prompt": "0.00000005",
         "request": null,
         "web_search": null
       },
@@ -20431,12 +20431,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.00000011",
+        "completion": "0.000000125",
         "image": null,
-        "input_cache_read": "0.000000067",
+        "input_cache_read": "0.0000000765",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000075",
+        "prompt": "0.000000085",
         "request": null,
         "web_search": null
       },
@@ -25525,7 +25525,7 @@
         "tokenizer": "Other"
       },
       "canonical_slug": "z-ai/glm-5.3-20260816",
-      "context_length": 1048576,
+      "context_length": 1050000,
       "created": 1787086655,
       "default_parameters": {
         "temperature": 1,
