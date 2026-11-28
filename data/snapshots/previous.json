@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T00:02:01.598566Z",
+  "generated_at": "2026-11-28T00:31:41.311214Z",
   "models": {
     "aion-labs/aion-2.0": {
       "architecture": {
@@ -3586,7 +3586,7 @@
         "input_cache_read": "0.00000022",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000053249",
+        "prompt": "0.00000051221",
         "request": null,
         "web_search": null
       },
@@ -6606,12 +6606,12 @@
       "id": "google/gemma-3-4b-it",
       "name": "Google: Gemma 3 4B",
       "pricing": {
-        "completion": "0.0000001",
+        "completion": "0.00000005",
         "image": null,
-        "input_cache_read": null,
+        "input_cache_read": "0.00000002",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.00000005",
+        "prompt": "0.00000004",
         "request": null,
         "web_search": null
       },
@@ -6636,7 +6636,7 @@
       "top_provider": {
         "context_length": 131072,
         "is_moderated": false,
-        "max_completion_tokens": 16384
+        "max_completion_tokens": 117964
       }
     },
     "google/gemma-4-26b-a4b-it": {
@@ -12149,7 +12149,7 @@
       "id": "nvidia/nemotron-3.5-super-vl",
       "name": "NVIDIA: Nemotron 3.5 Super VL",
       "pricing": {
-        "completion": "0.00000047",
+        "completion": "0.00000045",
         "image": null,
         "input_cache_read": "0.00000002",
         "input_cache_write": null,
@@ -12183,7 +12183,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 131072
       }
     },
     "nvidia/nemotron-3.5-super-vl:free": {
@@ -15780,7 +15780,7 @@
       ],
       "top_provider": {
         "context_length": 1050000,
-        "is_moderated": true,
+        "is_moderated": false,
         "max_completion_tokens": 128000
       }
     },
@@ -20431,12 +20431,12 @@
       "id": "qwen/qwen3.5-9b",
       "name": "Qwen: Qwen3.5-9B",
       "pricing": {
-        "completion": "0.000000125",
+        "completion": "0.00000011",
         "image": null,
-        "input_cache_read": "0.0000000765",
+        "input_cache_read": "0.000000067",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.000000085",
+        "prompt": "0.000000075",
         "request": null,
         "web_search": null
       },
@@ -21190,9 +21190,9 @@
         "top_p"
       ],
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 1000000,
         "is_moderated": false,
-        "max_completion_tokens": 65536
+        "max_completion_tokens": 900000
       }
     },
     "qwen/qwen3.8-27b": {
@@ -21809,10 +21809,10 @@
       "pricing": {
         "completion": "0.000001",
         "image": null,
-        "input_cache_read": "0.00000004",
+        "input_cache_read": "0.00000005",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000003",
+        "prompt": "0.00000025",
         "request": null,
         "web_search": null
       },
@@ -21842,7 +21842,7 @@
       "top_provider": {
         "context_length": 1048576,
         "is_moderated": false,
-        "max_completion_tokens": 943718
+        "max_completion_tokens": 131072
       }
     },
     "rekaai/reka-edge": {
@@ -22811,12 +22811,12 @@
       "id": "tencent/hy3",
       "name": "Tencent: Hy3",
       "pricing": {
-        "completion": "0.00000033",
+        "completion": "0.000000528",
         "image": null,
-        "input_cache_read": "0.000000020625",
+        "input_cache_read": "0.000000033",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000000825",
+        "prompt": "0.000000132",
         "request": null,
         "web_search": null
       },
@@ -23031,12 +23031,12 @@
       "id": "tencent/hy4-preview",
       "name": "Tencent: Hy4 preview",
       "pricing": {
-        "completion": "0.0000022509",
+        "completion": "0.000002501",
         "image": null,
-        "input_cache_read": "0.0000000378",
+        "input_cache_read": "0.000000042",
         "input_cache_write": null,
         "internal_reasoning": null,
-        "prompt": "0.0000007506",
+        "prompt": "0.000000834",
         "request": null,
         "web_search": null
       },
